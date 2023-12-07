@@ -225,7 +225,11 @@ class CfgAmmo
 			};
 		};
 	};
-	class Bullet_762x39Tracer: Bullet_762x39{};
+	class Bullet_762x39Tracer: Bullet_762x39
+	{
+		damageBarrel = 750;
+		damageBarrelDestroyed = 750;
+	};
 	class Bullet_45ACP: Bullet_Base
 	{
 		class DamageApplied

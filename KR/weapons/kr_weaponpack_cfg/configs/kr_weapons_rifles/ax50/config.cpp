@@ -20,7 +20,7 @@ class cfgWeapons
 	class BoltActionRifle_ExternalMagazine_Base;
 	class kr_AX50_Base: BoltActionRifle_ExternalMagazine_Base
 	{
-		barrelArmor = 2.1;
+		barrelArmor = 1.4;
 		initSpeedMultiplier = 1.2;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {2.2,2.2,1.2};

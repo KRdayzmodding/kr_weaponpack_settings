@@ -16,17 +16,20 @@ class cfgVehicles
 		recoilModifier[] = {1.0,0.7,0.5};
 		swayModifier[] = {0.9,0.9,0.9};
 		adsModifier[] = {0.95,0,1};
+
 		class kr_discription
 		{
 			kr_tier = 1;
 			kr_type = "HK MP5";
 		};
 	};
+
 	class kr_mp5_stock_hk_a3: kr_mp5_stock_Base
 	{
 		recoilModifier[] = {1.0,0.7,0.5};
 		swayModifier[] = {0.9,0.9,0.9};
 		adsModifier[] = {0.95,0,1};
+
 		class kr_discription
 		{
 			kr_tier = 1;

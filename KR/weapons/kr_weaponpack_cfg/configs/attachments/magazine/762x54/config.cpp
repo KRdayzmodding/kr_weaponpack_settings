@@ -101,7 +101,7 @@ class CfgMagazines
 	};
 	class Mag_762x54_svd_10Rnd: kr_magazine_762x54_Base
 	{
-		class kr_discription
+        class kr_discription
 		{
 			kr_tier = 2;
 			kr_caliber = "7.62x54";
@@ -109,7 +109,7 @@ class CfgMagazines
 	};
 	class Mag_762x54_svd_20Rnd: kr_magazine_762x54_Base
 	{
-		class kr_discription
+        class kr_discription
 		{
 			kr_tier = 3;
 			kr_caliber = "7.62x54";

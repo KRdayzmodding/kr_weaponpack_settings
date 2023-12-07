@@ -19,7 +19,7 @@ class cfgWeapons
 	class kr_ASH12_Base: Rifle_Base
 	{
 		PPDOFProperties[] = {1,0.6,50,200,4,10};
-		barrelArmor = 8.5;
+		barrelArmor = 3.7;
 		initSpeedMultiplier = 1.1;
 		recoilModifier[] = {0.7,0.7,0.8};
 		swayModifier[] = {2,1.3,1.1};

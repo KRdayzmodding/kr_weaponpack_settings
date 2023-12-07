@@ -19,7 +19,7 @@ class cfgWeapons
 	class kr_ak74_Base: kr_ak_Base
 	{
 		initSpeedMultiplier = 1.0;
-		barrelArmor = 2.2;
+		barrelArmor = 3.7;
 		recoilModifier[] = {2.5,2.5,4};
 		swayModifier[] = {3.2,3.2,2.85};
 		adsModiefer[] = {0.1,0,0};

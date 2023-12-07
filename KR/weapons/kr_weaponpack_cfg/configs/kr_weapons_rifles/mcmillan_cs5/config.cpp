@@ -20,7 +20,7 @@ class cfgWeapons
 	class kr_mcmillan_cs5_Base: BoltActionRifle_ExternalMagazine_Base
 	{
 		PPDOFProperties[] = {1,0.1,20.0,200.0,10.0,10.0};
-		barrelArmor = 3.5;
+		barrelArmor = 5.0;
 		initSpeedMultiplier = 1.5;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {1.3,1.3,1};

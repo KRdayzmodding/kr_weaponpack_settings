@@ -113,7 +113,7 @@ class CfgMagazines
 		{
 			kr_tier = 3;
 			kr_caliber = "12x76";
-		};
+		};	
 	};
 	class Mag_12x76_maxrounds_powermag_20Rnd: kr_magazine_12x76_Base
 	{

@@ -28,7 +28,7 @@ class cfgWeapons
 	class kr_MK18: kr_MK18_Base
 	{
 		initSpeedMultiplier = 0.9;
-		barrelArmor = 4.5;
+		barrelArmor = 5.3;
 		recoilModifier[] = {2.8,3.1,5.3};
 		swayModifier[] = {3.2,3.2,3.2};
 		adsModiefer[] = {0.1,0,0};

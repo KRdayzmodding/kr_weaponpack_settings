@@ -98,18 +98,18 @@ class CfgMagazines
 			kr_tier = 2;
 			kr_caliber = "7.62x51 (.308)";
 		};
-	};
-	class Mag_762x51_g28_10Rnd: kr_magazine_762x51_Base
-	{
-		class kr_discription
+	};    
+	class Mag_762x51_g28_10Rnd : kr_magazine_762x51_Base
+    {
+        class kr_discription
 		{
 			kr_tier = 2;
 			kr_caliber = "7.62x51 (.308)";
 		};
 	};
-	class Mag_762x51_g28_20Rnd: kr_magazine_762x51_Base
-	{
-		class kr_discription
+    class Mag_762x51_g28_20Rnd : kr_magazine_762x51_Base
+    {
+        class kr_discription
 		{
 			kr_tier = 2;
 			kr_caliber = "7.62x51 (.308)";

@@ -22,7 +22,7 @@ class cfgWeapons
 		swayModifier[] = {1,1,0.9};
 		recoilModifier[] = {1.2,1.25,1.25};
 		adsModiefer[] = {0.0,0,0};
-		barrelArmor = 15.0;
+		barrelArmor = 20.4;
 		initSpeedMultiplier = 0.9;
 		class NoiseShoot
 		{

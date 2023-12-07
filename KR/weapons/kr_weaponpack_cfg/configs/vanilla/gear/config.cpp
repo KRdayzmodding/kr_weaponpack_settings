@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Gear_Medical","DZ_Gear_Consumables"};
 	};
 };
+
 class CfgVehicles
 {
 	class Inventory_Base;
@@ -15,8 +16,9 @@ class CfgVehicles
 	{
 		inventorySlot[] += {"kr_meds"};
 	};
+
 	class DuctTape: Inventory_Base
 	{
-		inventorySlot[] += {"kr_tape"};
+        inventorySlot[] += {"kr_tape"};
 	};
 };

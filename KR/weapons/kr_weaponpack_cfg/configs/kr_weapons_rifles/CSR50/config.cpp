@@ -20,7 +20,7 @@ class cfgWeapons
 	class kr_CSR50_Base: BoltActionRifle_Base
 	{
 		PPDOFProperties[] = {};
-		barrelArmor = 1.5;
+		barrelArmor = 1.4;
 		initSpeedMultiplier = 1.2;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {2.2,2.2,1.2};

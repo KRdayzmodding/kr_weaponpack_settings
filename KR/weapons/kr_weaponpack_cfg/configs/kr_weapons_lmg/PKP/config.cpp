@@ -23,7 +23,7 @@ class cfgWeapons
 		weight = 8200;
 		WeaponLength = 1.15;
 		itemSize[] = {10,4};
-		barrelArmor = 20.0;
+		barrelArmor = 20.5;
 		initSpeedMultiplier = 1.3;
 		recoilModifier[] = {0.8,0.8,0.8};
 		swayModifier[] = {0.9,0.9,0.9};

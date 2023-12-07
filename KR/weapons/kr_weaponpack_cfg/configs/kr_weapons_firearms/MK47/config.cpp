@@ -29,7 +29,7 @@ class cfgWeapons
 	class kr_mk47_256mm: kr_mk47_Base
 	{
 		initSpeedMultiplier = 1.0;
-		barrelArmor = 2.0;
+		barrelArmor = 8.8;
 		recoilModifier[] = {3.9,3.9,5.9};
 		swayModifier[] = {2.8,2.8,2.4};
 		adsModiefer[] = {0.1,0,0};
@@ -53,7 +53,7 @@ class cfgWeapons
 	class kr_mk47_409mm: kr_mk47_Base
 	{
 		initSpeedMultiplier = 1.2;
-		barrelArmor = 2.5;
+		barrelArmor = 10.0;
 		recoilModifier[] = {3.5,3.5,5.5};
 		swayModifier[] = {3.2,3.2,2.85};
 		adsModiefer[] = {0.1,0,0};

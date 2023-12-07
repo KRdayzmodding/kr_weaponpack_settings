@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_weapatt_scar_parts"};
 	};
 };
+
 class cfgVehicles
 {
 	class kr_scar_stock_Base;

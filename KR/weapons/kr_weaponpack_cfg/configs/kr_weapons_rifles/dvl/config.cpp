@@ -20,7 +20,7 @@ class cfgWeapons
 	class BoltActionRifle_ExternalMagazine_Base;
 	class kr_dvl10_Base: BoltActionRifle_ExternalMagazine_Base
 	{
-		initSpeedMultiplier = 1.2;
+		initSpeedMultiplier = 1.69;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {2.2,2.2,1.2};
 		adsModiefer[] = {0.1,0,0};
@@ -35,7 +35,7 @@ class cfgWeapons
 	};
 	class kr_dvl10_M1: kr_dvl10_Base
 	{
-		barrelArmor = 1.7;
+		barrelArmor = 1.69;
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"DVL_M1_Shot_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"};
@@ -46,7 +46,7 @@ class cfgWeapons
 	};
 	class kr_dvl10_M2: kr_dvl10_Base
 	{
-		barrelArmor = 2.7;
+		barrelArmor = 2.25;
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"DVL_M2_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};

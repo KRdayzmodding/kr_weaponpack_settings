@@ -13,22 +13,26 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class cfgWeapons
 {
 	class Rifle_Base;
 	class kr_9a91_Base: Rifle_Base
 	{
-		barrelArmor = 10.0;
+		barrelArmor = 4.5;
 	};
+	
 	class kr_9a91: kr_9a91_Base
 	{
 		recoilModifier[] = {1.5,1.5,1.5};
 		swayModifier[] = {2.0,2.0,1.0};
+
 		class kr_discription
 		{
 			kr_tier = 3;
 			kr_caliber = "9x39";
 		};
+
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"9A91_Shot_SoundSet","CZ61_Tail_SoundSet","CZ61_InteriorTail_SoundSet"};

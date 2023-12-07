@@ -21,7 +21,7 @@ class cfgWeapons
 	class kr_awm_Base: BoltActionRifle_ExternalMagazine_Base
 	{
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
-		barrelArmor = 3.0;
+		barrelArmor = 2.8;
 		initSpeedMultiplier = 1.2;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {2.2,2.2,1.2};

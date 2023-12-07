@@ -19,7 +19,8 @@ class cfgWeapons
 	class kr_M4A1_Base: Rifle_Base
 	{
 		PPDOFProperties[] = {0,0.6,50,200,4,10};
-		magazines[] = {"Mag_556x45_magpulm3_10Rnd","Mag_556x45_magpulm3_20Rnd","Mag_556x45_magpulm3_30Rnd_blck","Mag_556x45_magpulm3_30Rnd_tan","Mag_556x45_magpulm3_40Rnd_blck","Mag_556x45_magpulm3_40Rnd_tan","Mag_556x45_magpulp_60Rnd","Mag_556x45_srfr_mag5_60Rnd","Mag_556x45_srfr_mag5_60Rnd_AP","Mag_556x45_srfr_mag5_100Rnd"};
+        magazines[] = {"Mag_556x45_magpulm3_10Rnd","Mag_556x45_magpulm3_20Rnd","Mag_556x45_magpulm3_30Rnd_blck","Mag_556x45_magpulm3_30Rnd_tan","Mag_556x45_magpulm3_40Rnd_blck","Mag_556x45_magpulm3_40Rnd_tan","Mag_556x45_magpulp_60Rnd","Mag_556x45_srfr_mag5_60Rnd","Mag_556x45_srfr_mag5_60Rnd_AP","Mag_556x45_srfr_mag5_100Rnd"};
+
 		class NoiseShoot
 		{
 			strength = 82;
@@ -29,7 +30,7 @@ class cfgWeapons
 	class kr_m4a1_260mm: kr_M4A1_Base
 	{
 		initSpeedMultiplier = 0.9;
-		barrelArmor = 2.0;
+		barrelArmor = 8.2;
 		recoilModifier[] = {2.4,2.4,4.6};
 		swayModifier[] = {2.4,2.4,2.35};
 		adsModiefer[] = {0.1,0,0};
@@ -53,7 +54,7 @@ class cfgWeapons
 	class kr_m4a1_370mm: kr_M4A1_Base
 	{
 		initSpeedMultiplier = 0.95;
-		barrelArmor = 2.2;
+		barrelArmor = 9.1;
 		recoilModifier[] = {2.5,2.5,4.5};
 		swayModifier[] = {2.6,2.6,2.4};
 		adsModiefer[] = {0.1,0,0};
@@ -77,7 +78,7 @@ class cfgWeapons
 	class kr_m4a1_406mm: kr_M4A1_Base
 	{
 		initSpeedMultiplier = 1.05;
-		barrelArmor = 2.2;
+		barrelArmor = 10.1;
 		recoilModifier[] = {2.6,2.6,4.4};
 		swayModifier[] = {2.7,2.7,2.45};
 		adsModiefer[] = {0.1,0,0};
@@ -101,7 +102,7 @@ class cfgWeapons
 	class kr_m4a1_457mm: kr_M4A1_Base
 	{
 		initSpeedMultiplier = 1.2;
-		barrelArmor = 2.3;
+		barrelArmor = 11.0;
 		recoilModifier[] = {2.7,2.7,4.3};
 		swayModifier[] = {2.8,2.8,2.65};
 		adsModiefer[] = {0.1,0,0};
@@ -125,7 +126,7 @@ class cfgWeapons
 	class kr_m4a1_508mm: kr_M4A1_Base
 	{
 		initSpeedMultiplier = 1.3;
-		barrelArmor = 2.5;
+		barrelArmor = 12.0;
 		recoilModifier[] = {2.8,2.8,4.2};
 		swayModifier[] = {3,3,2.85};
 		adsModiefer[] = {0.1,0,0};

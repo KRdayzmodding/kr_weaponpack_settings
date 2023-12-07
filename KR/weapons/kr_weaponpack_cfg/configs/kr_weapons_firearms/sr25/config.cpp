@@ -30,7 +30,7 @@ class cfgWeapons
 		recoilModifier[] = {3.2,3.7,6.2};
 		swayModifier[] = {2.8,2.8,2.8};
 		adsModiefer[] = {0.1,0,0};
-		barrelArmor = 2.0;
+		barrelArmor = 6.3;
 		initSpeedMultiplier = 1.15;
 		class SemiAuto: Mode_SemiAuto
 		{
@@ -46,7 +46,7 @@ class cfgWeapons
 		recoilModifier[] = {2.8,3.1,5.3};
 		swayModifier[] = {3.2,3.2,3.2};
 		adsModiefer[] = {0.1,0,0};
-		barrelArmor = 2.5;
+		barrelArmor = 5.0;
 		initSpeedMultiplier = 1.3;
 		class SemiAuto: Mode_SemiAuto
 		{

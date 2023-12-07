@@ -9,6 +9,7 @@ class CfgPatches
 		magazines[] = {};
 	};
 };
+
 class CfgMagazines
 {
 	class Magazine_Base;

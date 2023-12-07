@@ -8,9 +8,11 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_weapatt_ak_parts"};
 	};
 };
+
 class cfgVehicles
 {
 	class Inventory_Base;
+
 	class kr_ak_buttpad_gp25: Inventory_Base
 	{
 		class kr_discription
@@ -19,6 +21,7 @@ class cfgVehicles
 			kr_type = "#STR_kr_GUI_stdAKstocks";
 		};
 	};
+
 	class kr_ak_charging_handle_rp1: Inventory_Base
 	{
 		class kr_discription
@@ -27,6 +30,7 @@ class cfgVehicles
 			kr_type = "AK";
 		};
 	};
+
 	class kr_ak_charging_handle_css: Inventory_Base
 	{
 		class kr_discription

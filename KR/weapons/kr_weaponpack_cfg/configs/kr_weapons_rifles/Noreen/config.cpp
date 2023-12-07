@@ -19,7 +19,7 @@ class cfgWeapons
 	class BoltActionRifle_Base;
 	class kr_Noreen_Base: BoltActionRifle_Base
 	{
-		barrelArmor = 1.2;
+		barrelArmor = 2.8;
 		initSpeedMultiplier = 1.2;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {2.2,2.2,1.2};

@@ -19,6 +19,7 @@ class CfgMagazines
 		ammoItems[] = {"Ammo_9x39","Ammo_9x39AP"};
 		weightPerQuantityUnit = 4;
 	};
+
 	class Mag_9x39_6l24_10Rnd: kr_magazine_9x39_Base
 	{
 		class kr_discription
@@ -35,16 +36,18 @@ class CfgMagazines
 			kr_caliber = "9x39";
 		};
 	};
-	class Mag_9x39_sr3m_30Rnd: kr_magazine_9x39_Base
-	{
+
+    class Mag_9x39_sr3m_30Rnd : kr_magazine_9x39_Base
+    {
 		class kr_discription
 		{
 			kr_tier = 3;
 			kr_caliber = "9x39";
 		};
 	};
-	class Mag_9x39_9a91_20Rnd: kr_magazine_9x39_Base
-	{
+
+    class Mag_9x39_9a91_20Rnd : kr_magazine_9x39_Base
+    {
 		class kr_discription
 		{
 			kr_tier = 2;

@@ -19,6 +19,7 @@ class cfgWeapons
 	class kr_vpo205_Base;
 	class kr_vpo205_305: kr_vpo205_Base
 	{
+		barrelArmor = 11.8;
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"Saiga12_Shot_SoundSet","Saiga12_Tail_SoundSet","Saiga12_InteriorTail_SoundSet"};
@@ -30,6 +31,7 @@ class cfgWeapons
 	};
 	class kr_vpo205_430: kr_vpo205_Base
 	{
+		barrelArmor = 13.1;
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"Saiga12_Shot_SoundSet","Saiga12_Tail_SoundSet","Saiga12_InteriorTail_SoundSet"};
@@ -41,6 +43,7 @@ class cfgWeapons
 	};
 	class kr_vpo205_570: kr_vpo205_Base
 	{
+		barrelArmor = 14.8;
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"Saiga12_Shot_SoundSet","Saiga12_Tail_SoundSet","Saiga12_InteriorTail_SoundSet"};

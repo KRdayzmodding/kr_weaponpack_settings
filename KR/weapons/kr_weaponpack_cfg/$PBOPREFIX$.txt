@@ -1,6 +1,1 @@
-//<'kr_weaponpack_cfg.pbo' properties via Mikero's dos tools, dll version 9.36>
-prefix=KR\weapons\kr_weaponpack_cfg;
-Mikero=DePbo.dll.9.36;
-version=23112012;
-//PboType=Arma Addon;
-//</properties>
+KR\weapons\kr_weaponpack_cfg

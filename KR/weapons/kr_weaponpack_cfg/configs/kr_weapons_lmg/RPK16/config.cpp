@@ -18,7 +18,7 @@ class cfgWeapons
 	class kr_rpk16_Base;
 	class kr_rpk16_370mm: kr_rpk16_Base
 	{
-		barrelArmor = 2.3;
+		barrelArmor = 8.6;
 		initSpeedMultiplier = 1.02;
 		recoilModifier[] = {2.8,3.1,4.3};
 		swayModifier[] = {2.8,2.8,2.5};
@@ -45,7 +45,7 @@ class cfgWeapons
 	};
 	class kr_rpk16_550mm: kr_rpk16_Base
 	{
-		barrelArmor = 2.6;
+		barrelArmor = 12.0;
 		itemSize[] = {9,3};
 		initSpeedMultiplier = 1.07;
 		recoilModifier[] = {2.8,2.9,4.3};

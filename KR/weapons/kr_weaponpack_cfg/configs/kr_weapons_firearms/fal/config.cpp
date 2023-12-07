@@ -27,7 +27,7 @@ class cfgWeapons
 	};
 	class kr_fal_280mm: kr_fal_Base
 	{
-		barrelArmor = 2.0;
+		barrelArmor = 6.8;
 		initSpeedMultiplier = 1.35;
 		recoilModifier[] = {3.4,3.9,6.4};
 		swayModifier[] = {2.6,2.6,2.6};
@@ -51,7 +51,7 @@ class cfgWeapons
 	};
 	class kr_fal_406mm: kr_fal_Base
 	{
-		barrelArmor = 2.1;
+		barrelArmor = 8.0;
 		initSpeedMultiplier = 1.15;
 		recoilModifier[] = {3.2,3.6,6};
 		swayModifier[] = {2.8,2.8,2.8};
@@ -75,7 +75,7 @@ class cfgWeapons
 	};
 	class kr_fal_533mm: kr_fal_Base
 	{
-		barrelArmor = 2.3;
+		barrelArmor = 9.0;
 		initSpeedMultiplier = 1.0;
 		recoilModifier[] = {3,3.2,5.5};
 		swayModifier[] = {3,3,3};

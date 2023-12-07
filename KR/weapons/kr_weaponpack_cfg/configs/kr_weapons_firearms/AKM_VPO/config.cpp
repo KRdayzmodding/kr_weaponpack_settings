@@ -26,7 +26,7 @@ class cfgWeapons
 	class kr_vpo_136: kr_akm_vpo_Base
 	{
 		initSpeedMultiplier = 1.0;
-		barrelArmor = 2.1;
+		barrelArmor = 4.67;
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"AKM_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
@@ -38,7 +38,7 @@ class cfgWeapons
 	class kr_vpo_209: kr_akm_vpo_Base
 	{
 		initSpeedMultiplier = 1.0;
-		barrelArmor = 2.2;
+		barrelArmor = 4.67;
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"AKM_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};

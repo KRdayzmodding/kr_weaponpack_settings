@@ -7,7 +7,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports","kr_data","kr_ammunition"};
 		magazines[] = {};
-		ammo[] = {"Bullet_AP20","Bullet_lead_slug","Bullet_FTX_custom","Bullet_RIP","Bullet_Grizzly40","Bullet_buckshot_5","Bullet_buckshot_7","Bullet_buckshot_8","Bullet_338kr_Base","Bullet_338kr_AP","Bullet_338kr_FMJ","Bullet_338kr_TAC","Bullet_338kr_UPZ","Bullet_556x45_KRAP","Bullet_762x54_KRAP","Bullet_762x39_KRAP","Bullet_308Win_KRAP","Bullet_545x39_KRAP"};
+		ammo[] = {};
 	};
 };
 class CfgMagazines
@@ -15,10 +15,12 @@ class CfgMagazines
 	class Magazine_Base;
 	class Ammunition_Base;
 	class KR_Ammo_lapua338_Base;
-	class KR_Ammo_devastator: Ammunition_Base
-	{
-		weight = 35;
-		count = 10;
+
+    class KR_Ammo_devastator: Ammunition_Base
+    {
+        weight = 35;
+        count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 5;
@@ -26,11 +28,13 @@ class CfgMagazines
 			kr_bullettype = 0;
 			kr_range = 100;
 		};
-	};
-	class KR_Ammo_frag_12: Ammunition_Base
-	{
-		weight = 35;
-		count = 10;
+    };
+
+    class KR_Ammo_frag_12: Ammunition_Base
+    {
+        weight = 35;
+        count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 5;
@@ -38,11 +42,13 @@ class CfgMagazines
 			kr_bullettype = 0;
 			kr_range = 100;
 		};
-	};
-	class KR_Ammo_Grizzly40: Ammunition_Base
-	{
-		weight = 35;
-		count = 10;
+    };
+
+    class KR_Ammo_Grizzly40: Ammunition_Base
+    {
+        weight = 35;
+        count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 2;
@@ -50,11 +56,13 @@ class CfgMagazines
 			kr_bullettype = 0;
 			kr_range = 100;
 		};
-	};
+    };
+
 	class KR_Ammo_AP20: Ammunition_Base
 	{
 		weight = 35;
 		count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 3;
@@ -63,10 +71,12 @@ class CfgMagazines
 			kr_range = 100;
 		};
 	};
+
 	class KR_Ammo_lead_slug: Ammunition_Base
 	{
 		weight = 35;
 		count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 2;
@@ -75,10 +85,12 @@ class CfgMagazines
 			kr_range = 100;
 		};
 	};
+
 	class KR_Ammo_FTX_custom: Ammunition_Base
 	{
 		weight = 35;
 		count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 3;
@@ -87,10 +99,12 @@ class CfgMagazines
 			kr_range = 100;
 		};
 	};
+
 	class KR_Ammo_RIP: Ammunition_Base
 	{
 		weight = 35;
 		count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 4;
@@ -99,10 +113,12 @@ class CfgMagazines
 			kr_range = 100;
 		};
 	};
+
 	class KR_Ammo_buckshot_5: Ammunition_Base
 	{
 		weight = 35;
 		count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 0;
@@ -115,6 +131,7 @@ class CfgMagazines
 	{
 		weight = 35;
 		count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 1;
@@ -123,10 +140,12 @@ class CfgMagazines
 			kr_range = 50;
 		};
 	};
+
 	class KR_Ammo_buckshot_8: Ammunition_Base
 	{
 		weight = 35;
 		count = 10;
+
 		class kr_discription
 		{
 			kr_tier = 2;
@@ -135,6 +154,7 @@ class CfgMagazines
 			kr_range = 50;
 		};
 	};
+
 	class KR_Ammo_lapua338_AP: KR_Ammo_lapua338_Base
 	{
 		iconCartridge = 3;
@@ -185,11 +205,13 @@ class CfgMagazines
 		count = 20;
 	};
 };
+
 class CfgAmmo
 {
 	class Bullet_Base;
 	class Bullet_12x76_Base;
 	class Shotgun_Base;
+
 	class Bullet_AP20: Bullet_12x76_Base
 	{
 		hit = 11;
@@ -200,12 +222,15 @@ class CfgAmmo
 		damageBarrel = 750.0;
 		damageBarrelDestroyed = 750.0;
 		weight = 0.028;
+
+
 		class DamageApplied
 		{
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 1.5;
-			defaultDamageOverride[] = {{0.7,1.0}};
+            defaultDamageOverride[] = {{0.7,1.0}};
+            
 			class Health
 			{
 				damage = 130;
@@ -225,6 +250,7 @@ class CfgAmmo
 			type = "shot";
 		};
 	};
+
 	class Bullet_lead_slug: Bullet_12x76_Base
 	{
 		hit = 11;
@@ -235,12 +261,15 @@ class CfgAmmo
 		damageBarrel = 500.0;
 		damageBarrelDestroyed = 500.0;
 		weight = 0.028;
+
+
 		class DamageApplied
 		{
-			defaultDamageOverride[] = {{0.65,1.0}};
+            defaultDamageOverride[] = {{0.65,1.0}};
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 1.2;
+            
 			class Health
 			{
 				damage = 120;
@@ -270,12 +299,15 @@ class CfgAmmo
 		damageBarrel = 550.0;
 		damageBarrelDestroyed = 550.0;
 		weight = 0.028;
+
+
 		class DamageApplied
 		{
-			defaultDamageOverride[] = {{0.4,1.0}};
+            defaultDamageOverride[] = {{0.4,1.0}};
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 1.1;
+            
 			class Health
 			{
 				damage = 165;
@@ -295,6 +327,7 @@ class CfgAmmo
 			type = "shot";
 		};
 	};
+
 	class Bullet_RIP: Bullet_12x76_Base
 	{
 		hit = 11;
@@ -305,12 +338,15 @@ class CfgAmmo
 		damageBarrel = 750.0;
 		damageBarrelDestroyed = 750.0;
 		weight = 0.028;
+
+
 		class DamageApplied
 		{
-			defaultDamageOverride[] = {{0.4,1.0}};
+            defaultDamageOverride[] = {{0.4,1.0}};
 			type = "Projectile";
 			dispersion = 0.5;
 			bleedThreshold = 0.3;
+
 			class Health
 			{
 				damage = 210;
@@ -340,12 +376,15 @@ class CfgAmmo
 		damageBarrel = 690.0;
 		damageBarrelDestroyed = 690.0;
 		weight = 0.028;
+
+
 		class DamageApplied
 		{
-			defaultDamageOverride[] = {{0.6,1.0}};
+            defaultDamageOverride[] = {{0.6,1.0}};
 			type = "Projectile";
 			dispersion = 0.2;
 			bleedThreshold = 0.8;
+
 			class Health
 			{
 				damage = 190;
@@ -359,12 +398,14 @@ class CfgAmmo
 				damage = 80;
 			};
 		};
+
 		class NoiseHit
 		{
 			strength = 10;
 			type = "shot";
 		};
 	};
+
 	class Bullet_buckshot_5: Shotgun_Base
 	{
 		initSpeed = 360;
@@ -375,6 +416,7 @@ class CfgAmmo
 		damageBarrel = 400.0;
 		damageBarrelDestroyed = 400.0;
 		weight = 0.005;
+
 		class DamageApplied
 		{
 			type = "Projectile";
@@ -410,6 +452,7 @@ class CfgAmmo
 		damageBarrel = 550.0;
 		damageBarrelDestroyed = 550.0;
 		weight = 0.005;
+
 		class DamageApplied
 		{
 			type = "Projectile";
@@ -445,6 +488,7 @@ class CfgAmmo
 		damageBarrel = 550.0;
 		damageBarrelDestroyed = 550.0;
 		weight = 0.005;
+
 		class DamageApplied
 		{
 			type = "Projectile";
@@ -470,6 +514,7 @@ class CfgAmmo
 			type = "shot";
 		};
 	};
+
 	class Bullet_338kr_Base: Bullet_Base
 	{
 		hit = 12;
@@ -479,6 +524,8 @@ class CfgAmmo
 		tracerEndTime = 1;
 		damageBarrelDestroyed = 500;
 		weight = 0.01;
+
+
 		class NoiseHit
 		{
 			strength = 10;
@@ -607,6 +654,7 @@ class CfgAmmo
 		damageBarrel = 250;
 		damageBarrelDestroyed = 250;
 		weight = 0.004;
+
 		class DamageApplied
 		{
 			type = "Projectile";
@@ -645,6 +693,7 @@ class CfgAmmo
 		damageBarrel = 500;
 		damageBarrelDestroyed = 500;
 		weight = 0.012;
+
 		class DamageApplied
 		{
 			type = "Projectile";
@@ -683,6 +732,7 @@ class CfgAmmo
 		damageBarrel = 500;
 		damageBarrelDestroyed = 500;
 		weight = 0.008;
+
 		class DamageApplied
 		{
 			type = "Projectile";
@@ -724,6 +774,7 @@ class CfgAmmo
 		damageBarrel = 500;
 		damageBarrelDestroyed = 500;
 		weight = 0.01;
+
 		class DamageApplied
 		{
 			type = "Projectile";
@@ -759,6 +810,7 @@ class CfgAmmo
 		damageBarrel = 214.28572;
 		damageBarrelDestroyed = 214.28572;
 		weight = 0.00343;
+
 		class DamageApplied
 		{
 			type = "Projectile";
@@ -783,5 +835,12 @@ class CfgAmmo
 			strength = 10;
 			type = "shot";
 		};
+	};
+
+	class KR_Bullet_408CheyTac_Base;
+	class KR_Bullet_408cheytac : KR_Bullet_408CheyTac_Base
+	{
+		damageBarrel = 500;
+		damageBarrelDestroyed = 500;
 	};
 };
