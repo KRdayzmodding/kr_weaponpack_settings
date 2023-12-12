@@ -46,5 +46,19 @@ class cfgWeapons
 			strength = 130;
 			type = "shot";
 		};
+
+		class InventorySlotsOffsets
+		{
+			class Shoulder
+			{
+				position[] = {-0.3,0,0};
+				orientation[] = {0,0,0};
+			};
+			class Melee
+			{
+				position[] = {-0.3,0,-0.02};
+				orientation[] = {0,0,0};
+			};
+		};
 	};
 };
