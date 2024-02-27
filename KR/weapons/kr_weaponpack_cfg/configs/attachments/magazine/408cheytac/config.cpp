@@ -15,8 +15,8 @@ class CfgMagazines
 	class mag_408_base: kr_magazine_Base
 	{
 		weightPerQuantityUnit = 10;
-		ammo = "KR_Bullet_408cheytac";
-		ammoItems[] = {"KR_Ammo_408cheytac"};
+		ammo = "Bullet_408cheytac";
+		ammoItems[] = {"kr_Ammo_408cheytac"};
 		hiddenSelections[] = {"camo"};
 		class kr_discription
 		{

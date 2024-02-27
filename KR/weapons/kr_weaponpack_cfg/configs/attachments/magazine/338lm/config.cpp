@@ -14,8 +14,8 @@ class CfgMagazines
 	class kr_magazine_Base;
 	class kr_magazine_338_Base: kr_magazine_Base
 	{
-		ammo = "KR_Bullet_338lm_FMJ";
-		ammoItems[] = {"KR_Ammo_338lm_FMJ","KR_Ammo_338lm_AP","KR_Ammo_338lm_UPZ","KR_Ammo_338lm_TAC"};
+		ammo = "Bullet_338lm_FMJ";
+		ammoItems[] = {"kr_Ammo_338lm_FMJ","kr_Ammo_338lm_AP","kr_Ammo_338lm_UPZ","kr_Ammo_338lm_TAC"};
 		recoilModifier[] = {1.0,1.0,0.95};
 		weightPerQuantityUnit = 35.0;
 		tracersEvery = 0;

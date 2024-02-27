@@ -35,8 +35,11 @@ class cfgVehicles
 		swayModifier[] = {0.6,0.6,0.6};
 		adsModiefer[] = {-0.25,0,0};
 	};
+	/*
 	class kr_foregrip_zenit_b25u_rk_1: kr_foregrip_t4_Base
 	{
-		recoilModifier[] = {0.4,0.6,0.6};
+		recoilModifier[] = {0.01,0.01,0.01};
+		swayModifier[] = {0.01,0.01,0.01};
 	};
+	*/
 };

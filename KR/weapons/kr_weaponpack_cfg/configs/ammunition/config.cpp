@@ -1,26 +1,983 @@
 class CfgPatches
 {
-	class kr_ammunition_cfg
+	class kr_weaponpack_ammunition_looseRounds_cfg
 	{
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports","kr_data","kr_ammunition"};
+		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_ammunition_looseRounds"};
 		magazines[] = {};
 		ammo[] = {};
 	};
 };
+
+
 class CfgMagazines
 {
-	class Magazine_Base;
-	class Ammunition_Base;
-	class KR_Ammo_lapua338_Base;
-
-    class KR_Ammo_devastator: Ammunition_Base
+    class Ammunition_Base;
+    class kr_Ammo_9x19_7n21 : Ammunition_Base
     {
-        weight = 35;
-        count = 10;
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x19";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
 
+    };
+    class kr_Ammo_9x19_7n31 : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x19";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_9x19_ap_63 : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x19";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_9x19_gt : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x19";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_9x19_pso_gz : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x19";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_9x19_quakemaker : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x19";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_9x19_rip : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x19";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+
+	class kr_Ammo_9x18_ppt_gz : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x18";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_9x18_pbm_gz : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x18";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_9x18_pmm_gz : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x18";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_9x18_pso_gz : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x18";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_9x18_pst_gz : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x18";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_9x18_sp7_gz : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x18";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_545x39_BS : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.45x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_545x39_BT : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.45x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_545x39_FMJ : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.45x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_545x39_PRS : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.45x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_545x39_PS : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.45x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_545x39_T : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.45x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_545x39_US : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.45x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_556x45_FMJ : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_556x45_m855 : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_556x45_m855a1 : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_556x45_m856 : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_556x45_m995 : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_556x45_warmageddon : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+	};
+
+	class kr_Ammo_366TKM_custom_ap : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".366TKM";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+	};
+	class kr_Ammo_366TKM_EKO : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".366TKM";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_366TKM_FMJ : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".366TKM";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_366TKM_Geksa : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".366TKM";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_762x39_bp : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_762x39_fmj : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_762x39_mai_ap : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_762x39_pp : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_762x39_ps : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_762x39_t45m : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+	};
+	class kr_Ammo_762x39_us : Ammunition_Base
+	{
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+    class kr_Ammo_762x51_bpz_fmj : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x51 (.308)";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x51_m61 : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x51 (.308)";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x51_m80 : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x51 (.308)";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x51_m993 : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x51 (.308)";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x51_tpz_sp : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x51 (.308)";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x51_ultra_nosler : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x51 (.308)";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+
+    class kr_Ammo_762x54r_bs : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x54";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x54r_bthp : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x54";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x54r_fmj : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x54";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x54r_lps : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x54";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x54r_ps : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x54";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x54r_snb : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x54";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_762x54r_t46m : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x54";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+
+    class kr_Ammo_9x39_bp : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_9x39_pab9 : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_9x39_sp5 : Ammunition_Base
+    {
+		scope = 2;
+		count = 60;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+    class kr_Ammo_9x39_sp6 : Ammunition_Base
+    {
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "9x39";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+        
+
+    };
+
+	class kr_Ammo_762x25_PT_gz : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x25";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_762x25_PST_gz : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x25";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_762x25_FMJ43 : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x25";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_762x25_AKBS : Ammunition_Base
+	{
+		scope = 2;
+		count = 50;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "7.62x25";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_127x55_PS12 : Ammunition_Base
+	{
+		scope = 2;
+		count = 30;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "12.7x55";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_127x55_PS12A : Ammunition_Base
+	{
+		scope = 2;
+		count = 30;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "12.7x55";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_127x55_PS12B : Ammunition_Base
+	{
+		scope = 2;
+		count = 30;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = "12.7x55";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_338LM_ap : Ammunition_Base
+	{
+		scope = 2;
+		count = 20;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".338LM";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_338LM_upz : Ammunition_Base
+	{
+		scope = 2;
+		count = 20;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".338LM";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_338LM_fmj : Ammunition_Base
+	{
+		scope = 2;
+		count = 20;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".338LM";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_338LM_tac_x : Ammunition_Base
+	{
+		scope = 2;
+		count = 20;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".338LM";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_408CheyTac : Ammunition_Base
+	{
+		scope = 2;
+		count = 15;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".408CheyTac";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_50BMG : Ammunition_Base
+	{
+		scope = 2;
+		count = 10;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".50BMG";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_50BMG_AP : Ammunition_Base
+	{
+		scope = 2;
+		count = 10;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".50BMG_AP";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_50BMG_T : Ammunition_Base
+	{
+		scope = 2;
+		count = 10;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".50BMG_T";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+	class kr_Ammo_50BMG_E : Ammunition_Base
+	{
+		scope = 2;
+		count = 10;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".50BMG";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_50BMG_ET : Ammunition_Base
+	{
+		scope = 2;
+		count = 10;
+		class kr_discription
+		{
+			kr_tier = 1;
+			kr_caliber = ".50BMG";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+
+	};
+
+	class kr_Ammo_12x76_devastator: Ammunition_Base
+	{
+		scope = 2;
+		count = 20;
 		class kr_discription
 		{
 			kr_tier = 5;
@@ -28,13 +985,11 @@ class CfgMagazines
 			kr_bullettype = 0;
 			kr_range = 100;
 		};
-    };
-
-    class KR_Ammo_frag_12: Ammunition_Base
-    {
-        weight = 35;
-        count = 10;
-
+	};
+	class kr_Ammo_12x76_frag_12: Ammunition_Base
+	{
+		scope = 2;
+		count = 20;
 		class kr_discription
 		{
 			kr_tier = 5;
@@ -42,13 +997,11 @@ class CfgMagazines
 			kr_bullettype = 0;
 			kr_range = 100;
 		};
-    };
-
-    class KR_Ammo_Grizzly40: Ammunition_Base
-    {
-        weight = 35;
-        count = 10;
-
+	};
+	class kr_Ammo_12x76_Grizzly40: Ammunition_Base
+	{
+		scope = 2;
+		count = 20;
 		class kr_discription
 		{
 			kr_tier = 2;
@@ -56,13 +1009,11 @@ class CfgMagazines
 			kr_bullettype = 0;
 			kr_range = 100;
 		};
-    };
-
-	class KR_Ammo_AP20: Ammunition_Base
+	};
+	class kr_Ammo_12x76_AP20: Ammunition_Base
 	{
-		weight = 35;
-		count = 10;
-
+		scope = 2;
+		count = 20;
 		class kr_discription
 		{
 			kr_tier = 3;
@@ -71,12 +1022,10 @@ class CfgMagazines
 			kr_range = 100;
 		};
 	};
-
-	class KR_Ammo_lead_slug: Ammunition_Base
+	class kr_Ammo_12x76_lead_slug: Ammunition_Base
 	{
-		weight = 35;
-		count = 10;
-
+		scope = 2;
+		count = 40;
 		class kr_discription
 		{
 			kr_tier = 2;
@@ -85,12 +1034,10 @@ class CfgMagazines
 			kr_range = 100;
 		};
 	};
-
-	class KR_Ammo_FTX_custom: Ammunition_Base
+	class kr_Ammo_12x76_FTX_custom: Ammunition_Base
 	{
-		weight = 35;
-		count = 10;
-
+		scope = 2;
+		count = 20;
 		class kr_discription
 		{
 			kr_tier = 3;
@@ -99,12 +1046,10 @@ class CfgMagazines
 			kr_range = 100;
 		};
 	};
-
-	class KR_Ammo_RIP: Ammunition_Base
+	class kr_Ammo_12x76_RIP: Ammunition_Base
 	{
-		weight = 35;
-		count = 10;
-
+		scope = 2;
+		count = 20;
 		class kr_discription
 		{
 			kr_tier = 4;
@@ -113,12 +1058,10 @@ class CfgMagazines
 			kr_range = 100;
 		};
 	};
-
-	class KR_Ammo_buckshot_5: Ammunition_Base
+	class kr_Ammo_12x76_buckshot_5: Ammunition_Base
 	{
-		weight = 35;
-		count = 10;
-
+		scope = 2;
+		count = 40;
 		class kr_discription
 		{
 			kr_tier = 0;
@@ -127,11 +1070,10 @@ class CfgMagazines
 			kr_range = 50;
 		};
 	};
-	class KR_Ammo_buckshot_7: Ammunition_Base
+	class kr_Ammo_12x76_buckshot_7: Ammunition_Base
 	{
-		weight = 35;
-		count = 10;
-
+		scope = 2;
+		count = 40;
 		class kr_discription
 		{
 			kr_tier = 1;
@@ -140,11 +1082,10 @@ class CfgMagazines
 			kr_range = 50;
 		};
 	};
-
-	class KR_Ammo_buckshot_8: Ammunition_Base
+	class kr_Ammo_12x76_buckshot_8: Ammunition_Base
 	{
-		weight = 35;
-		count = 10;
+		scope = 2;
+		count = 40;
 
 		class kr_discription
 		{
@@ -153,694 +1094,5 @@ class CfgMagazines
 			kr_bullettype = 0;
 			kr_range = 50;
 		};
-	};
-
-	class KR_Ammo_lapua338_AP: KR_Ammo_lapua338_Base
-	{
-		iconCartridge = 3;
-		weight = 10;
-		count = 20;
-	};
-	class KR_Ammo_lapua338_FMJ: KR_Ammo_lapua338_Base
-	{
-		iconCartridge = 3;
-		weight = 10;
-		count = 20;
-	};
-	class KR_Ammo_lapua338_TAC: KR_Ammo_lapua338_Base{};
-	class KR_Ammo_lapua338_UPZ: KR_Ammo_lapua338_Base
-	{
-		iconCartridge = 3;
-		weight = 10;
-		count = 20;
-	};
-	class KR_Ammo_556x45_AP: Ammunition_Base
-	{
-		iconCartridge = 2;
-		weight = 4;
-		count = 20;
-	};
-	class KR_Ammo_762x54_AP: Ammunition_Base
-	{
-		iconCartridge = 2;
-		weight = 9;
-		count = 20;
-	};
-	class KR_Ammo_762x39_AP: Ammunition_Base
-	{
-		iconCartridge = 2;
-		weight = 8;
-		count = 20;
-	};
-	class KR_Ammo_308Win_AP: Ammunition_Base
-	{
-		iconCartridge = 2;
-		weight = 10;
-		count = 20;
-	};
-	class KR_Ammo_545x39_AP: Ammunition_Base
-	{
-		iconCartridge = 2;
-		weight = 4;
-		count = 20;
-	};
-};
-
-class CfgAmmo
-{
-	class Bullet_Base;
-	class Bullet_12x76_Base;
-	class Shotgun_Base;
-
-	class Bullet_AP20: Bullet_12x76_Base
-	{
-		hit = 11;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		initSpeed = 500;
-		typicalSpeed = 600;
-		damageBarrel = 750.0;
-		damageBarrelDestroyed = 750.0;
-		weight = 0.028;
-
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0.0;
-			bleedThreshold = 1.5;
-            defaultDamageOverride[] = {{0.7,1.0}};
-            
-			class Health
-			{
-				damage = 130;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 50;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-
-	class Bullet_lead_slug: Bullet_12x76_Base
-	{
-		hit = 11;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		initSpeed = 500;
-		typicalSpeed = 600;
-		damageBarrel = 500.0;
-		damageBarrelDestroyed = 500.0;
-		weight = 0.028;
-
-
-		class DamageApplied
-		{
-            defaultDamageOverride[] = {{0.65,1.0}};
-			type = "Projectile";
-			dispersion = 0.0;
-			bleedThreshold = 1.2;
-            
-			class Health
-			{
-				damage = 120;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 50;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-	class Bullet_FTX_custom: Bullet_12x76_Base
-	{
-		hit = 11;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		initSpeed = 360;
-		typicalSpeed = 450;
-		damageBarrel = 550.0;
-		damageBarrelDestroyed = 550.0;
-		weight = 0.028;
-
-
-		class DamageApplied
-		{
-            defaultDamageOverride[] = {{0.4,1.0}};
-			type = "Projectile";
-			dispersion = 0.0;
-			bleedThreshold = 1.1;
-            
-			class Health
-			{
-				damage = 165;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 80;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-
-	class Bullet_RIP: Bullet_12x76_Base
-	{
-		hit = 11;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		initSpeed = 400;
-		typicalSpeed = 500;
-		damageBarrel = 750.0;
-		damageBarrelDestroyed = 750.0;
-		weight = 0.028;
-
-
-		class DamageApplied
-		{
-            defaultDamageOverride[] = {{0.4,1.0}};
-			type = "Projectile";
-			dispersion = 0.5;
-			bleedThreshold = 0.3;
-
-			class Health
-			{
-				damage = 210;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 80;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-	class Bullet_Grizzly40: Bullet_12x76_Base
-	{
-		hit = 11;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		initSpeed = 520;
-		typicalSpeed = 600;
-		damageBarrel = 690.0;
-		damageBarrelDestroyed = 690.0;
-		weight = 0.028;
-
-
-		class DamageApplied
-		{
-            defaultDamageOverride[] = {{0.6,1.0}};
-			type = "Projectile";
-			dispersion = 0.2;
-			bleedThreshold = 0.8;
-
-			class Health
-			{
-				damage = 190;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 80;
-			};
-		};
-
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-
-	class Bullet_buckshot_5: Shotgun_Base
-	{
-		initSpeed = 360;
-		typicalSpeed = 400;
-		caliber = 0.5;
-		dispersion = 0.02;
-		projectilesCount = 15;
-		damageBarrel = 400.0;
-		damageBarrelDestroyed = 400.0;
-		weight = 0.005;
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0.0;
-			bleedThreshold = 1.0;
-			defaultDamageOverride[] = {{0.7,1.0}};
-			class Health
-			{
-				damage = 15;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 10;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 2;
-			type = "shot";
-		};
-	};
-	class Bullet_buckshot_7: Shotgun_Base
-	{
-		initSpeed = 360;
-		typicalSpeed = 400;
-		caliber = 0.5;
-		dispersion = 0.02;
-		projectilesCount = 12;
-		damageBarrel = 550.0;
-		damageBarrelDestroyed = 550.0;
-		weight = 0.005;
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0.0;
-			bleedThreshold = 1.0;
-			defaultDamageOverride[] = {{0.7,1.0}};
-			class Health
-			{
-				damage = 25;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 15;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 3;
-			type = "shot";
-		};
-	};
-	class Bullet_buckshot_8: Shotgun_Base
-	{
-		initSpeed = 360;
-		typicalSpeed = 400;
-		caliber = 0.5;
-		dispersion = 0.07;
-		projectilesCount = 10;
-		damageBarrel = 550.0;
-		damageBarrelDestroyed = 550.0;
-		weight = 0.005;
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0.0;
-			bleedThreshold = 1.0;
-			defaultDamageOverride[] = {{0.6,1.0}};
-			class Health
-			{
-				damage = 45;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 25;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 5;
-			type = "shot";
-		};
-	};
-
-	class Bullet_338kr_Base: Bullet_Base
-	{
-		hit = 12;
-		airLock = 1;
-		tracerScale = 1.2;
-		tracerStartTime = -1;
-		tracerEndTime = 1;
-		damageBarrelDestroyed = 500;
-		weight = 0.01;
-
-
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-	class Bullet_338kr_AP: Bullet_338kr_Base
-	{
-		caliber = 1;
-		deflecting = 10;
-		damageBarrel = 500;
-		initSpeed = 869;
-		typicalSpeed = 900;
-		hit = 50;
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 150;
-				armorDamage = 3;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 150;
-			};
-		};
-	};
-	class Bullet_338kr_FMJ: Bullet_338kr_Base
-	{
-		caliber = 1;
-		deflecting = 10;
-		damageBarrel = 500;
-		initSpeed = 869;
-		typicalSpeed = 900;
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 150;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 150;
-			};
-		};
-	};
-	class Bullet_338kr_TAC: Bullet_338kr_Base
-	{
-		caliber = 1;
-		deflecting = 10;
-		damageBarrel = 500;
-		initSpeed = 869;
-		typicalSpeed = 900;
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 150;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 150;
-			};
-		};
-	};
-	class Bullet_338kr_UPZ: Bullet_338kr_Base
-	{
-		caliber = 1;
-		deflecting = 10;
-		damageBarrel = 500;
-		initSpeed = 869;
-		typicalSpeed = 900;
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 150;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 150;
-			};
-		};
-	};
-	class Bullet_556x45_KRAP: Bullet_Base
-	{
-		hit = 8;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		initSpeed = 850;
-		typicalSpeed = 1000;
-		caliber = 1;
-		deflecting = 10;
-		tracerScale = 1;
-		tracerStartTime = -1;
-		tracerEndTime = 1;
-		nvgOnly = 0;
-		damageBarrel = 250;
-		damageBarrelDestroyed = 250;
-		weight = 0.004;
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 90;
-				armorDamage = 3;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 110;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-	class Bullet_762x54_KRAP: Bullet_Base
-	{
-		hit = 12;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		airLock = 1;
-		initSpeed = 785;
-		typicalSpeed = 865;
-		caliber = 1;
-		deflecting = 10;
-		damageBarrel = 500;
-		damageBarrelDestroyed = 500;
-		weight = 0.012;
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 150;
-				armorDamage = 3;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 150;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-	class Bullet_762x39_KRAP: Bullet_Base
-	{
-		hit = 9.5;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		airLock = 1;
-		initSpeed = 640;
-		typicalSpeed = 740;
-		caliber = 1;
-		deflecting = 10;
-		damageBarrel = 500;
-		damageBarrelDestroyed = 500;
-		weight = 0.008;
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 110;
-				armorDamage = 3;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 110;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-	class Bullet_308Win_KRAP: Bullet_Base
-	{
-		hit = 12;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		airLock = 1;
-		initSpeed = 770;
-		typicalSpeed = 940;
-		tracerScale = 1.2;
-		tracerStartTime = -1;
-		tracerEndTime = 1;
-		caliber = 1;
-		deflecting = 10;
-		damageBarrel = 500;
-		damageBarrelDestroyed = 500;
-		weight = 0.01;
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 150;
-				armorDamage = 3;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 150;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-	class Bullet_545x39_KRAP: Bullet_Base
-	{
-		hit = 7.2;
-		typicalSpeed = 880;
-		initSpeed = 880;
-		caliber = 0.9;
-		deflecting = 10;
-		damageBarrel = 214.28572;
-		damageBarrelDestroyed = 214.28572;
-		weight = 0.00343;
-
-		class DamageApplied
-		{
-			type = "Projectile";
-			dispersion = 0;
-			bleedThreshold = 1;
-			class Health
-			{
-				damage = 115;
-				armorDamage = 3;
-			};
-			class Blood
-			{
-				damage = 100;
-			};
-			class Shock
-			{
-				damage = 115;
-			};
-		};
-		class NoiseHit
-		{
-			strength = 10;
-			type = "shot";
-		};
-	};
-
-	class KR_Bullet_408CheyTac_Base;
-	class KR_Bullet_408cheytac : KR_Bullet_408CheyTac_Base
-	{
-		damageBarrel = 500;
-		damageBarrelDestroyed = 500;
 	};
 };

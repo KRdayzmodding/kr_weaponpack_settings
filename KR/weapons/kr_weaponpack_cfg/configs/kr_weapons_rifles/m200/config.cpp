@@ -35,7 +35,7 @@ class cfgWeapons
 		};
 	};
 };
-class CfgMagazines
+/* class CfgMagazines
 {
 	class Magazine_Base;
 	class kr_m200_mag: Magazine_Base
@@ -45,7 +45,7 @@ class CfgMagazines
 		itemSize[] = {2,2};
 		count = 10;
 		ammo = "Bullet_762x39";
-		ammoItems[] = {"Ammo_762x39","Ammo_762x39Tracer"};
+		ammoItems[] = {"Ammo_762x39","Ammo_762x39Tracer", "kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
 		tracersEvery = 0;
 	};
-};
+}; */

@@ -1,6 +1,6 @@
 ImageSetClass {
  Name "kr_weapon_icons"
- RefSize 2048 2048
+ RefSize 4096 4096
  Textures {
   ImageSetTextureClass {
    mpix 1
@@ -284,6 +284,42 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
+    ImageSetDefClass kr_light_left {
+     Name "kr_light_left"
+     Pos 256 1280
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_light_right {
+     Name "kr_light_right"
+     Pos 512 1280
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_light_bot {
+     Name "kr_light_bot"
+     Pos 768 1280
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_pointer_1 {
+     Name "kr_pointer_1"
+     Pos 1024 1280
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_val_stock {
+     Name "kr_val_stock"
+     Pos 1536 1280
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_val_mount {
+     Name "kr_val_mount"
+     Pos 1792 1280
+     Size 256 256
+     Flags 0
+    }
    }
   }
   ImageSetGroupClass 7 {
@@ -304,6 +340,30 @@ ImageSetClass {
     ImageSetDefClass kr_muzzle_9_39_9a91 {
      Name "kr_muzzle_9_39_9a91"
      Pos 512 1536
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_muzzle_366 {
+     Name "kr_muzzle_366"
+     Pos 768 1536
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_muzzle_338lm {
+     Name "kr_muzzle_338lm"
+     Pos 1024 1536
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_muzzle_408ct {
+     Name "kr_muzzle_408ct"
+     Pos 1280 1536
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_muzzle_50bmg {
+     Name "kr_muzzle_50bmg"
+     Pos 1536 1536
      Size 256 256
      Flags 0
     }
@@ -342,20 +402,20 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
-    ImageSetDefClass kr_muzzle_939 {
-     Name "kr_muzzle_939"
+    ImageSetDefClass kr_muzzle_127x55 {
+     Name "kr_muzzle_127x55"
      Pos 1280 1792
      Size 256 256
      Flags 0
     }
-    ImageSetDefClass kr_muzzle_919 {
-     Name "kr_muzzle_919"
+    ImageSetDefClass kr_muzzle_9_19 {
+     Name "kr_muzzle_9_19"
      Pos 1536 1792
      Size 256 256
      Flags 0
     }
-    ImageSetDefClass kr_silencer_any {
-     Name "kr_silencer_any"
+    ImageSetDefClass kr_silencer_9_18 {
+     Name "kr_silencer_9_18"
      Pos 1792 1792
      Size 256 256
      Flags 0

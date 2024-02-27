@@ -18,7 +18,7 @@ class CfgMagazines
 		scope = 0;
 		tracersEvery = 0;
 		hiddenSelections[] = {"camo"};
-		inventorySlot[] += {"magazine"};
+		//inventorySlot[] += {"magazine"};
 		soundImpactType = "metal";
 	};
 };

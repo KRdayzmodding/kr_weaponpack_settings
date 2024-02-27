@@ -22,7 +22,7 @@ class CfgMods
 			{
 				files[] = 
 				{
-					"KR/weapons/kr_weaponpack_cfg/data/icons/kr_weapons_icons.imageset",
+					"KR/weapons/kr_weaponpack_cfg/data/icons/kr_weapons_icons.imageset"
 				};
 			};
 		};
@@ -66,6 +66,12 @@ class CfgSlots
 		displayName = "#STR_kr_slot_ak_pistolgrip";
 		ghostIcon = "set:kr_weapon_icons image:kr_pistolgrip";
 	};
+	class Slot_kr_muzzle366
+	{
+		name = "kr_muzzle366";
+		displayName = "#STR_kr_slot_muzzle366";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_366";
+	};
 	class Slot_kr_muzzle545
 	{
 		name = "kr_muzzle545";
@@ -102,7 +108,6 @@ class CfgSlots
 		displayName = "#STR_kr_slot_muzzle762_54";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_762_54";
 	};
-
     class Slot_kr_muzzle762_54_mosin
 	{
 		name = "kr_muzzle762_54_mosin";
@@ -116,11 +121,17 @@ class CfgSlots
 		displayName = "#STR_kr_slot_kr_muzzle12_76";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_12";
 	};
-	 class Slot_kr_muzzle127_55
+	class Slot_kr_muzzle127_55
 	{
 		name = "kr_muzzle127_55";
 		displayName = "#STR_kr_slot_muzzle127_55";
-		ghostIcon = "set:kr_weapon_icons image:kr_silencer_any";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_127x55";
+	};
+	class Slot_kr_muzzle9_19
+	{
+		name = "kr_muzzle9_19";
+		displayName = "#STR_kr_slot_muzzle9_19";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_9_19";
 	};
 
     class Slot_kr_ak_stock
@@ -169,7 +180,12 @@ class CfgSlots
 	// 	displayName = "#STR_kr_slot_weapon_tube";
 	// 	ghostIcon = "set:kr_weapon_icons image:kr_buttstock_tube";
 	// };
-
+    class Slot_kr_pp19_receiver
+	{
+		name = "kr_pp19_receiver";
+		displayName = "#STR_kr_slot_pp19_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_pp19_receiver";
+	};
 	class Slot_kr_ar15_tube
 	{
 		name = "kr_ar15_tube";
@@ -331,14 +347,36 @@ class CfgSlots
 		displayName = "#STR_kr_slot_kr_mp5_mount";
 		ghostIcon = "set:kr_weapon_icons image:kr_mp5_mount";
 	};
+	
+//  ================ ВАЛ =======================
+	class Slot_kr_val_stock
+	{
+		name = "kr_val_stock";
+		displayName = "#STR_kr_slot_kr_val_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_val_stock";
+	};
+	
+	class Slot_kr_val_pistolgrip
+	{
+		name = "kr_val_pistolgrip";
+		displayName = "#STR_kr_slot_kr_val_pistolgrip";
+		ghostIcon = "set:kr_weapon_icons image:kr_val_pistolgrip";
+	};
 
+	class Slot_kr_val_mount
+	{
+		name = "kr_val_mount";
+		displayName = "#STR_kr_slot_kr_val_mount";
+		ghostIcon = "set:kr_weapon_icons image:kr_val_mount";
+	};
+//  ================ СКАР =======================
 	class Slot_kr_scar_stock
 	{
 		name = "kr_scar_stock";
 		displayName = "#STR_kr_slot_kr_scar_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_scar_stock";
 	};
-//  ================ СВД =======================
+//  ================ СДВГ =======================
 	class Slot_kr_svd_stock
 	{
 		name = "kr_svd_stock";
@@ -514,5 +552,30 @@ class CfgSlots
 		name = "kr_foregrip";
 		displayName = "#STR_kr_slot_foregrip";
 		ghostIcon = "set:kr_weapon_icons image:kr_foregrip";
+	};
+
+    class Slot_kr_pointer_1
+	{
+		name = "kr_pointer_1";
+		displayName = "#STR_kr_slot_kr_pointer_1";
+		ghostIcon = "set:kr_weapon_icons image:kr_pointer_1";
+	};
+    class Slot_kr_light_bot
+	{
+		name = "kr_light_bot";
+		displayName = "#STR_kr_slot_kr_light";
+		ghostIcon = "set:kr_weapon_icons image:kr_light_bot";
+	};
+    class Slot_kr_light_right
+	{
+		name = "kr_light_right";
+		displayName = "#STR_kr_slot_kr_light";
+		ghostIcon = "set:kr_weapon_icons image:kr_light_right";
+	};
+    class Slot_kr_light_left
+	{
+		name = "kr_light_left";
+		displayName = "#STR_kr_slot_kr_light";
+		ghostIcon = "set:kr_weapon_icons image:kr_light_left";
 	};
 };

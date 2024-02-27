@@ -16,7 +16,7 @@ class CfgMagazines
 	{
 		scope = 0;
 		ammo = "Bullet_308Win";
-		ammoItems[] = {"Ammo_308Win","Ammo_308WinTracer","KR_Ammo_308Win_AP"};
+		ammoItems[] = {"Ammo_308Win","Ammo_308WinTracer","kr_Ammo_308Win_AP","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","kr_Ammo_762x51_bpz_fmj"};
 		weightPerQuantityUnit = 4;
 		class kr_discription
 		{

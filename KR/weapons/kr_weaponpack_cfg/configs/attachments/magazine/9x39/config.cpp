@@ -16,7 +16,7 @@ class CfgMagazines
 	{
 		scope = 0;
 		ammo = "Bullet_9x39";
-		ammoItems[] = {"Ammo_9x39","Ammo_9x39AP"};
+		ammoItems[] = {"Ammo_9x39","Ammo_9x39AP","kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp"};
 		weightPerQuantityUnit = 4;
 	};
 

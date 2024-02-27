@@ -16,7 +16,7 @@ class CfgMagazines
 	{
 		scope = 0;
 		ammo = "Bullet_762x39";
-		ammoItems[] = {"Ammo_762x39","Ammo_762x39Tracer","KR_Ammo_762x39_AP","KR_Ammo_366tkm_AP","KR_Ammo_366tkm_FMJ","KR_Ammo_366tkm_EKO","KR_Ammo_366tkm_GEKSA"};
+		ammoItems[] = {"Ammo_762x39", "Ammo_762x39Tracer", "kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366tkm_AP","kr_Ammo_366tkm_FMJ","kr_Ammo_366tkm_EKO","kr_Ammo_366tkm_GEKSA"};
 		class kr_discription
 		{
 			kr_tier = 1;

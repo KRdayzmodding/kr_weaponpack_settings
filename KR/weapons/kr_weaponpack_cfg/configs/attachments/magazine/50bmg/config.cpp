@@ -15,8 +15,8 @@ class CfgMagazines
 	class kr_magazine_50bmg_base: kr_magazine_Base
 	{
 		weightPerQuantityUnit = 50;
-		ammo = "KR_Bullet_50bmg";
-		ammoItems[] = {"KR_Ammo_50bmg","KR_Ammo_50bmg_AP","KR_Ammo_50bmg_E","KR_Ammo_50bmg_ET","KR_Ammo_50bmg_Tracer"};
+		ammo = "Bullet_50BMG";
+		ammoItems[] = {"kr_Ammo_50bmg","kr_Ammo_50bmg_AP","kr_Ammo_50bmg_E","kr_Ammo_50bmg_ET","kr_Ammo_50bmg_Tracer"};
 		class kr_discription
 		{
 			kr_tier = 2;

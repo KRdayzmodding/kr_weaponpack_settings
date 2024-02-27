@@ -17,6 +17,7 @@ class CfgPatches
 
 class cfgWeapons
 {
+	class Rifle_Base;
 	class AK74_Base;
 	class M4A1_Base;
 	class Launcher_Base;
@@ -63,6 +64,9 @@ class cfgWeapons
 	class Groza: Groza_Base {scope = 0;};
 	class Mp133Shotgun: Mp133Shotgun_Base {scope = 0;};
 	class Mp133Shotgun_PistolGrip: Mp133Shotgun_Base {scope = 0;};
+	class VSS_Base: Rifle_Base{scope = 0;};
+	class VSS: VSS_Base{scope = 0;};
+	class ASVAL: VSS_Base{scope = 0;};
 };
 class cfgVehicles
 {
