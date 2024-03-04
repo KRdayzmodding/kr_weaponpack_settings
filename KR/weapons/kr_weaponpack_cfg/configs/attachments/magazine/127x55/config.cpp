@@ -14,13 +14,14 @@ class CfgMagazines
 	class Magazine_Base;
 	class Mag_127x55_ash12_base: Magazine_Base
 	{
+		ammo="Bullet_127x55_PS12";
 		class kr_discription
 		{
 			kr_tier = 1;
 			kr_caliber = "12.7x55";
 		};
 	};
-	class Mag_127x55_ash12_10Rnd: mag_127x55_ash12_base
+	class Mag_127x55_ash12_10Rnd: Mag_127x55_ash12_base
 	{
 		class kr_discription
 		{
