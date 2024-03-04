@@ -80,4 +80,44 @@ class cfgWeapons
 			kr_caliber = "7.62x54";
 		};
 	};
+
+	class kr_SVU : kr_SVD_Base
+	{
+		barrelArmor = 2.6;
+		weight = 3500;
+		initSpeedMultiplier = 1.0;
+		recoilModifier[] = {2,2,2};
+		swayModifier[] = {2,2,2};
+		adsModifier[] = {1,1,1};
+		PPDOFProperties[] = {0,0.0,0,0,0,0};
+
+		class SemiAuto: Mode_SemiAuto
+		{
+			soundSetShot[] = {"SVD_silencerHomeMade_SoundSet","SVD_silencerHomeMadeTail_SoundSet","SVD_silencerInteriorHomeMadeTail_SoundSet"};
+			soundSetShotExt[] = {{"SVD_silencerHomeMade_SoundSet","SVD_silencerHomeMadeTail_SoundSet","SVD_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.12;
+			dispersion = 0.0005;
+			magazineSlot = "magazine";
+		};
+
+		class kr_discription
+		{
+			kr_tier = 3;
+			kr_caliber = "7.62x54";
+		};
+
+		class InventorySlotsOffsets
+		{
+			class Shoulder
+			{
+				position[] = {-0.2,-0.02,0.01}; //Левый
+				orientation[] = {0,0,0};
+			};
+			class Melee
+			{
+				position[] = {-0.2,-0.02,-0.01}; //Правый
+				orientation[] = {0,0,0};
+			};
+		};
+	};
 };

@@ -184,7 +184,7 @@ class CfgSlots
 	{
 		name = "kr_pp19_receiver";
 		displayName = "#STR_kr_slot_pp19_receiver";
-		ghostIcon = "set:kr_weapon_icons image:kr_pp19_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak_receiver";
 	};
 	class Slot_kr_ar15_tube
 	{
@@ -543,7 +543,7 @@ class CfgSlots
 	class Slot_kr_muzzle_9_39_9a91
 	{
 		name = "kr_muzzle_9_39_9a91";
-		displayName = "#STR_kr_slot_muzzle";
+		displayName = "#STR_kr_slot_muzzle_9_39_9a91";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_9_39_9a91";
 	};
 

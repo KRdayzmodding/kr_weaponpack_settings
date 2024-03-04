@@ -36,16 +36,3 @@ class cfgWeapons
 		};
 	};
 };
-class CfgMagazines
-{
-	class Magazine_Base;
-	class kr_awm_mag: Magazine_Base
-	{
-		weight = 90;
-		weightPerQuantityUnit = 10;
-		itemSize[] = {2,2};
-		count = 10;
-		ammo = "Bullet_338kr_UPZ";
-		tracersEvery = 0;
-	};
-};
