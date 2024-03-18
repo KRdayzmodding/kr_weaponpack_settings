@@ -25,6 +25,14 @@ class CfgMods
 					"KR/weapons/kr_weaponpack_cfg/data/icons/kr_weapons_icons.imageset"
 				};
 			};
+			class worldScriptModule
+			{
+				value="";
+				files[]=
+				{
+					"KR/weapons/kr_weaponpack_cfg/scripts/4_World"
+				};
+			};
 		};
 	};
 };

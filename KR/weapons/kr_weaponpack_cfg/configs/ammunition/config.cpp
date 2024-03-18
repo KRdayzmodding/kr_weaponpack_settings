@@ -5,9 +5,9 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_ammunition_looseRounds"};
 		magazines[] = {};
 		ammo[] = {};
+		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_ammunition_looseRounds"};
 	};
 };
 
@@ -897,6 +897,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		count = 15;
+		itemSize[]={1, 2};
 		class kr_discription
 		{
 			kr_tier = 1;
@@ -911,6 +912,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		count = 10;
+		itemSize[]={1, 2};
 		class kr_discription
 		{
 			kr_tier = 1;
@@ -924,6 +926,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		count = 10;
+		itemSize[]={1, 2};
 		class kr_discription
 		{
 			kr_tier = 1;
@@ -937,6 +940,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		count = 10;
+		itemSize[]={1, 2};
 		class kr_discription
 		{
 			kr_tier = 1;
@@ -950,6 +954,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		count = 10;
+		itemSize[]={1, 2};
 		class kr_discription
 		{
 			kr_tier = 1;
@@ -964,6 +969,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		count = 10;
+		itemSize[]={1, 2};
 		class kr_discription
 		{
 			kr_tier = 1;

@@ -12,11 +12,11 @@ class CfgPatches
 class CfgMagazines
 {
 	class kr_magazine_Base;
-	class mag_408_base: kr_magazine_Base
+	class kr_magazine_408_base: kr_magazine_Base
 	{
 		weightPerQuantityUnit = 10;
-		ammo = "Bullet_408cheytac";
-		ammoItems[] = {"kr_Ammo_408cheytac"};
+		ammo = "Bullet_408CheyTac";
+		ammoItems[] = {"kr_Ammo_408CheyTac"};
 		hiddenSelections[] = {"camo"};
 		class kr_discription
 		{
@@ -24,5 +24,5 @@ class CfgMagazines
 			kr_caliber = ".408";
 		};
 	};
-	class mag_408_m200_7Rnd: mag_408_base{};
+	class Mag_408_m200_7Rnd: kr_magazine_408_base{};
 };

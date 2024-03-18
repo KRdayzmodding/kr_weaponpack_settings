@@ -1,11 +1,11 @@
 class CfgPatches
 {
-	class kr_magazine_762x54
+	class kr_magazine_762x54_cfg
 	{
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","kr_data","kr_magazine_Base"};
+		requiredAddons[] = {"DZ_Data","kr_data","kr_magazine_Base","kr_magazine_762x54"};
 		magazines[] = {};
 	};
 };

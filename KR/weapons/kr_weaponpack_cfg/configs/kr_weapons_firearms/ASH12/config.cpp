@@ -25,6 +25,7 @@ class cfgWeapons
 		swayModifier[] = {2,1.3,1.1};
 		adsModiefer[] = {0.1,0,0};
 		modes[] = {"SemiAuto","FullAuto"};
+		
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"ASH12_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};

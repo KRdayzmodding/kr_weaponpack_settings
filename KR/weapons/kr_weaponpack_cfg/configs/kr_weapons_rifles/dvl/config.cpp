@@ -32,6 +32,20 @@ class cfgWeapons
 			dispersion = 0.001;
 			magazineSlot = "magazine";
 		};
+
+		class InventorySlotsOffsets
+		{
+			class Shoulder
+			{
+				position[] = {0.0,-0.02,0.01}; //Левый
+				orientation[] = {0,0,0};
+			};
+			class Melee
+			{
+				position[] = {0.0,-0.02,-0.01}; //Правый
+				orientation[] = {0,00,0};
+			};
+		};
 	};
 	class kr_dvl10_M1: kr_dvl10_Base
 	{
@@ -55,18 +69,5 @@ class cfgWeapons
 			dispersion = 0.00045;
 			magazineSlot = "magazine";
 		};
-	};
-};
-class CfgMagazines
-{
-	class Magazine_Base;
-	class kr_dvl10_mag: Magazine_Base
-	{
-		weight = 90;
-		weightPerQuantityUnit = 10;
-		itemSize[] = {1,1};
-		count = 10;
-		ammo = "Bullet_338kr_UPZ";
-		tracersEvery = 0;
 	};
 };

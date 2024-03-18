@@ -1,11 +1,11 @@
 class CfgPatches
 {
-    class kr_attachmetns_optics_dovetail_cfg
+    class kr_attachmetns_support_mounts_cfg
     {
         units[]={};
         weapons[]={};
         requiredVersion=0.1;
-        requiredAddons[]={"DZ_Data","kr_data","kr_attachmetns_optics_dovetail"};
+        requiredAddons[]={"DZ_Data","kr_data","kr_attachmetns_support_mounts"};
     };
 };
 

@@ -2061,6 +2061,299 @@ class CfgAmmo
 		};
     };
 
+	class kr_Bullet_762x54_Base: Bullet_Base
+	{
+		scope = 0;
+		casing = "";
+		round = "";
+		spawnPileType = "";
+		hit = 12;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		airLock = 1;
+		initSpeed = 785;
+		typicalSpeed = 865;
+		airFriction = -0.001;
+		caliber = 1;
+		deflecting = 10;
+		damageBarrel = 500;
+		damageBarrelDestroyed = 500;
+		weight = 0.012;
+		impactBehaviour = 1;
+		hitAnimation = 1;
+		unconRefillModifier = 2.75;
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.94,1.0}};
+			class Health
+			{
+				damage = 150;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 150;
+				damageOverride[] = {{0.86,1.0}};
+			};
+		};
+		class NoiseHit
+		{
+			strength = 10;
+			type = "shot";
+		};
+	};
+    class Bullet_762x54r_bs : kr_Bullet_762x54_Base
+    {
+        scope = 1;
+		casing = "FxCartridge_762x54r_bs";
+		round = "FxRound_762x54r_bs";
+		spawnPileType = "kr_Ammo_762x54r_bs";
+		initSpeed = 785;
+		typicalSpeed = 785;
+		damageBarrel = 1190;
+		damageBarrelDestroyed = 1190;
+		weight = 0.0084;
+
+		unconRefillModifier = 6;
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			class Health
+			{
+				armorPenetration = 1.5;
+				armorDamage = 1.7;
+				damage = 100;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 100;
+			};
+		};
+    };
+    class Bullet_762x54r_bthp : kr_Bullet_762x54_Base
+    {
+        scope = 1;
+		casing = "FxCartridge_762x54r_bthp";
+		round = "FxRound_762x54r_bthp";
+		spawnPileType = "kr_Ammo_762x54r_bthp";
+		initSpeed = 807;
+		typicalSpeed = 807;
+		damageBarrel = 703.5;
+		damageBarrelDestroyed = 703.5;
+		weight = 0.0084;
+		unconRefillModifier = 6;
+
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			class Health
+			{
+				armorPenetration = 0.5;
+				armorDamage = 4.3;
+				damage = 130;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 40;
+			};
+		};
+    };
+    class Bullet_762x54r_fmj : kr_Bullet_762x54_Base
+    {
+        scope = 1;
+		casing = "FxCartridge_762x54r_fmj";
+		round = "FxRound_762x54r_fmj";
+		spawnPileType = "kr_Ammo_762x54r_fmj";
+		initSpeed = 760;
+		typicalSpeed = 760;
+		damageBarrel = 700;
+		damageBarrelDestroyed = 700;
+		weight = 0.0084;
+
+		unconRefillModifier = 6;
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			class Health
+			{
+				armorPenetration = 0.5;
+				armorDamage = 5.0;
+				damage = 115;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 80;
+			};
+		};
+    };
+    class Bullet_762x54r_lps : kr_Bullet_762x54_Base
+    {
+        scope = 1;
+		casing = "FxCartridge_762x54r_lps";
+		round = "FxRound_762x54r_lps";
+		spawnPileType = "kr_Ammo_762x54r_lps";
+		initSpeed = 865;
+		typicalSpeed = 865;
+		damageBarrel = 770;
+		damageBarrelDestroyed = 770;
+		weight = 0.0084;
+
+		unconRefillModifier = 6;
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			class Health
+			{
+				armorPenetration = 6.8;
+				armorDamage = 0.8;
+				damage = 117;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 90;
+			};
+		};
+    };
+    class Bullet_762x54r_ps : kr_Bullet_762x54_Base
+    {
+        scope = 1;
+		casing = "FxCartridge_762x54r_ps";
+		round = "FxRound_762x54r_ps";
+		spawnPileType = "kr_Ammo_762x54r_ps";
+		initSpeed = 875;
+		typicalSpeed = 875;
+		damageBarrel = 798;
+		damageBarrelDestroyed = 798;
+		weight = 0.0084;
+
+		unconRefillModifier = 6;
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			class Health
+			{
+				armorPenetration = 1.0;
+				armorDamage = 6.3;
+				damage = 105;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 85;
+			};
+		};
+    };
+    class Bullet_762x54r_snb : kr_Bullet_762x54_Base
+    {
+        scope = 1;
+		casing = "FxCartridge_762x54r_snb";
+		round = "FxRound_762x54r_snb";
+		spawnPileType = "kr_Ammo_762x54r_snb";
+		initSpeed = 875;
+		typicalSpeed = 875;
+		damageBarrel = 840;
+		damageBarrelDestroyed = 840;
+		weight = 0.0084;
+
+		unconRefillModifier = 6;
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			class Health
+			{
+				armorPenetration = 3.0;
+				armorDamage = 1.9;
+				damage = 110;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 87;
+			};
+		};
+    };
+    class Bullet_762x54r_t46m : kr_Bullet_762x54_Base
+    {
+        scope = 1;
+		casing = "FxCartridge_762x54r_t46m";
+		round = "FxRound_762x54r_t46m";
+		spawnPileType = "kr_Ammo_762x54r_t46m";
+		initSpeed = 800;
+		typicalSpeed = 800;
+		damageBarrel = 700;
+		damageBarrelDestroyed = 700;
+		weight = 0.0084;
+
+		unconRefillModifier = 6;
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			class Health
+			{
+				armorPenetration = 0.5;
+				armorDamage = 4.3;
+				damage = 130;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 98;
+			};
+		};
+    };
+
 
 
 	class kr_Bullet_9x39_Base: Bullet_Base
@@ -2833,7 +3126,7 @@ class CfgAmmo
 		scope = 2;
 		casing = "FxCartridge_50BMG_ET";
 		round = "FxRound_50BMG_ET";
-		spawnPileType = "kr_Ammo_50bmg_ET";
+		spawnPileType = "kr_Ammo_50BMG_ET";
 		hit = 30;
 		visibleFire = 22;
 		audibleFire = 22;
@@ -2883,7 +3176,7 @@ class CfgAmmo
 		scope = 2;
 		casing = "FxCartridge_50BMG_E";
 		round = "FxRound_50BMG_E";
-		spawnPileType = "kr_Ammo_50bmg_E";
+		spawnPileType = "kr_Ammo_50BMG_E";
 		hit = 30;
 		visibleFire = 22;
 		audibleFire = 22;

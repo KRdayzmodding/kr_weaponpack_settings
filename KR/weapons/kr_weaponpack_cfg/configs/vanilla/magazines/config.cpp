@@ -121,7 +121,7 @@ class CfgMagazines
 	};
 	class Mag_FAMAS_25Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_caliber = "5.56x46";
@@ -192,7 +192,7 @@ class CfgMagazines
 	};
 	class Mag_STANAG_30Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_caliber = "5.56x45";
@@ -200,7 +200,7 @@ class CfgMagazines
 	};
 	class Mag_STANAGCoupled_30Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_tier = 2;
@@ -209,7 +209,7 @@ class CfgMagazines
 	};
 	class Mag_STANAG_60Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_tier = 3;
@@ -218,7 +218,7 @@ class CfgMagazines
 	};
 	class Mag_CMAG_10Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_tier = 0;
@@ -227,7 +227,7 @@ class CfgMagazines
 	};
 	class Mag_CMAG_20Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_tier = 0;
@@ -236,7 +236,7 @@ class CfgMagazines
 	};
 	class Mag_CMAG_30Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_caliber = "5.56x45";
@@ -244,7 +244,7 @@ class CfgMagazines
 	};
 	class Mag_CMAG_40Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_tier = 2;
@@ -253,7 +253,7 @@ class CfgMagazines
 	};
 	class Mag_AK101_30Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_caliber = "5.56x45";
@@ -261,7 +261,7 @@ class CfgMagazines
 	};
 	class Mag_Aug_30Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_caliber = "5.56x45";
@@ -303,7 +303,7 @@ class CfgMagazines
 	};
 	class Mag_Scout_5Rnd: Magazine_Base
 	{
-        ammoItems[] += {"kr_Ammo_556x45_55_fmj","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+        ammoItems[] += {"kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		class kr_discription: kr_discription_Base
 		{
 			kr_caliber = "5.56x45";

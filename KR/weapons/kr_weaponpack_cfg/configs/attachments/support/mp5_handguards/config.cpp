@@ -1,11 +1,11 @@
 class CfgPatches
 {
-	class kr_weapatt_mp5_parts_cfg
+	class kr_attachments_mp5_handguards_cfg
 	{
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","kr_data","kr_weapatt_mp5_parts"};
+		requiredAddons[] = {"DZ_Data","kr_data","kr_attachments_mp5_handguards"};
 	};
 };
  
