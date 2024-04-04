@@ -13,6 +13,13 @@ class CfgNonAIVehicles
 {
 	class ProxyAttachment;
 
+	class Proxypp19_receiver: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_pp19_receiver";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\pp19_receiver.p3d";
+	};
+
 	class Proxyak_receiver: ProxyAttachment
 	{
 		scope = 2;
@@ -60,13 +67,6 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "kr_ak_hndgrd";
 		model = "\KR\kr_data\proxy\weapons\attachments\support\ak_handguard.p3d";
-	};
-
-	class Proxyforegrip: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_foregrip";
-		model = "\KR\kr_data\proxy\weapons\attachments\support\foregrip.p3d";
 	};
 
 	class Proxyar_pistolgrip: ProxyAttachment
@@ -171,6 +171,25 @@ class CfgNonAIVehicles
 		model = "\KR\kr_data\proxy\weapons\attachments\support\mp5_mount.p3d";
 	};
 
+	class Proxyval_bttstck: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_val_stock";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\val_bttstck.p3d";
+	};
+	class Proxyval_pistolgrip: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_val_pistolgrip";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\val_pistolgrip.p3d";
+	};
+	class Proxyval_mount: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_val_mount";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\val_mount.p3d";
+	};
+
 	class Proxysvd_handguard: ProxyAttachment
 	{
 		scope = 2;
@@ -193,6 +212,19 @@ class CfgNonAIVehicles
 	};
 
 	////////////////////МАЗЗЛЫ
+	class Proxykr_muzzle9x19: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle9_19";
+		model = "KR\kr_data\proxy\weapons\attachments\muzzles\kr_muzzle9x19.p3d";
+	};
+
+	class Proxykr_muzzle366: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle366";
+		model = "KR\kr_data\proxy\weapons\attachments\muzzles\kr_muzzle366.p3d";
+	};
 
 	class Proxykr_muzzle308: ProxyAttachment
 	{
@@ -251,6 +283,24 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "kr_mosin_mount";
 		model = "KR\kr_data\proxy\weapons\attachments\support\mosin_mount.p3d";
+	};
+
+	class Proxymount_1: ProxyAttachment
+	{
+		inventorySlot = "kr_s_mount_1";
+		model = "KR\kr_data\proxy\weapons\attachments\support\mount_1.p3d";
+	};
+	class Proxymount_2: ProxyAttachment
+	{
+		inventorySlot = "kr_s_mount_2";
+		model = "KR\kr_data\proxy\weapons\attachments\support\mount_2.p3d";
+	};
+	///////////////////////
+	class Proxyforegrip: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_foregrip";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\foregrip.p3d";
 	};
 	///////////////////////Оптика
 	class Proxymount_dovetail: ProxyAttachment
@@ -339,14 +389,28 @@ class CfgNonAIVehicles
 		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_WeaponOpticsMosin.p3d";
 	};
 
-	class Proxymount_1: ProxyAttachment
+	class Proxykr_pointer_1: ProxyAttachment
 	{
-		inventorySlot = "kr_s_mount_1";
-		model = "KR\kr_data\proxy\weapons\attachments\support\mount_1.p3d";
+		scope = 2;
+		inventorySlot = "kr_pointer_1";
+		model = "KR\kr_data\proxy\weapons\attachments\lights\kr_pointer_1.p3d";
 	};
-	class Proxymount_2: ProxyAttachment
+	class Proxykr_light_bot: ProxyAttachment
 	{
-		inventorySlot = "kr_s_mount_2";
-		model = "KR\kr_data\proxy\weapons\attachments\support\mount_2.p3d";
+		scope = 2;
+		inventorySlot = "kr_light_bot";
+		model = "KR\kr_data\proxy\weapons\attachments\lights\kr_light_bot.p3d";
+	};
+	class Proxykr_light_left: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_light_left";
+		model = "KR\kr_data\proxy\weapons\attachments\lights\kr_light_left.p3d";
+	};
+	class Proxykr_light_right: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_light_right";
+		model = "KR\kr_data\proxy\weapons\attachments\lights\kr_light_right.p3d";
 	};
 };
