@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{0D805BE0DAC9586B}KR/weapons/kr_weaponpack_cfg/anm/items/optics/monstrum_compact.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate -234081895
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "monstrum_compact.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

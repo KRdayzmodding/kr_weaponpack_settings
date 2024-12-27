@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{BDFE81931325FE3C}KR/weapons/kr_weaponpack_cfg/anm/items/optics/pk_aa.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate 27046297
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "pk_aa.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

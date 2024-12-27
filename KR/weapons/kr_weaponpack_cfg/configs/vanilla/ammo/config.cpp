@@ -16,7 +16,7 @@ class CfgMagazines
 	class Ammo_45ACP: Ammunition_Base
 	{
 		weight = 15;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = ".45 ACP";
@@ -27,7 +27,7 @@ class CfgMagazines
 	class Ammo_308Win: Ammunition_Base
 	{
 		weight = 18;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 3;
 			kr_caliber = "7.62x54 NATO";
@@ -38,7 +38,7 @@ class CfgMagazines
 	class Ammo_308WinTracer: Ammunition_Base
 	{
 		weight = 18;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "7.62x54 NATO";
@@ -49,7 +49,7 @@ class CfgMagazines
 	class Ammo_9x19: Ammunition_Base
 	{
 		weight = 11;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "9x19";
@@ -60,7 +60,7 @@ class CfgMagazines
 	class Ammo_380: Ammunition_Base
 	{
 		weight = 9;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 0;
 			kr_caliber = ".380";
@@ -71,7 +71,7 @@ class CfgMagazines
 	class Ammo_556x45: Ammunition_Base
 	{
 		weight = 12;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "5.56x45";
@@ -82,7 +82,7 @@ class CfgMagazines
 	class Ammo_556x45Tracer: Ammunition_Base
 	{
 		weight = 10;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "5.56x45";
@@ -93,7 +93,7 @@ class CfgMagazines
 	class Ammo_762x54: Ammunition_Base
 	{
 		weight = 23;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 4;
 			kr_caliber = "7.62x54";
@@ -104,7 +104,7 @@ class CfgMagazines
 	class Ammo_762x54Tracer: Ammunition_Base
 	{
 		weight = 23;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 3;
 			kr_caliber = "7.62x54";
@@ -115,7 +115,7 @@ class CfgMagazines
 	class Ammo_762x39: Ammunition_Base
 	{
 		weight = 18;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 3;
 			kr_caliber = "7.62x39";
@@ -126,7 +126,7 @@ class CfgMagazines
 	class Ammo_762x39Tracer: Ammunition_Base
 	{
 		weight = 18;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "7.62x39";
@@ -137,7 +137,7 @@ class CfgMagazines
 	class Ammo_9x39AP: Ammunition_Base
 	{
 		weight = 21;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 3;
 			kr_caliber = "9x39";
@@ -148,7 +148,7 @@ class CfgMagazines
 	class Ammo_9x39: Ammunition_Base
 	{
 		weight = 21;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "9x39";
@@ -159,7 +159,7 @@ class CfgMagazines
 	class Ammo_22: Ammunition_Base
 	{
 		weight = 8;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 0;
 			kr_caliber = ".22";
@@ -169,7 +169,7 @@ class CfgMagazines
 	};
 	class Ammo_12gaPellets: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "12x76";
@@ -179,7 +179,7 @@ class CfgMagazines
 	};
 	class Ammo_12gaSlug: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "12x76";
@@ -189,7 +189,7 @@ class CfgMagazines
 	};
 	class Ammo_12gaRubberSlug: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "12x76";
@@ -199,7 +199,7 @@ class CfgMagazines
 	};
 	class Ammo_12gaBeanbag: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "12x76";
@@ -210,7 +210,7 @@ class CfgMagazines
 	class Ammo_357: Ammunition_Base
 	{
 		weight = 13;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = ".357";
@@ -221,7 +221,7 @@ class CfgMagazines
 	class Ammo_545x39: Ammunition_Base
 	{
 		weight = 10;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "5.45x39";
@@ -232,7 +232,7 @@ class CfgMagazines
 	class Ammo_545x39Tracer: Ammunition_Base
 	{
 		weight = 10;
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "5.45x39";
@@ -242,7 +242,7 @@ class CfgMagazines
 	};
 	class Ammo_HuntingBolt: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "-";
@@ -252,7 +252,7 @@ class CfgMagazines
 	};
 	class Ammo_ImprovisedBolt_1: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 0;
 			kr_caliber = "-";
@@ -262,7 +262,7 @@ class CfgMagazines
 	};
 	class Ammo_ImprovisedBolt_2: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 2;
 			kr_caliber = "-";
@@ -272,7 +272,7 @@ class CfgMagazines
 	};
 	class Ammo_Flare: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "-";
@@ -282,7 +282,7 @@ class CfgMagazines
 	};
 	class Ammo_FlareRed: Ammo_Flare
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "-";
@@ -292,7 +292,7 @@ class CfgMagazines
 	};
 	class Ammo_FlareGreen: Ammo_Flare
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "-";
@@ -302,7 +302,7 @@ class CfgMagazines
 	};
 	class Ammo_FlareBlue: Ammo_Flare
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "-";
@@ -312,7 +312,7 @@ class CfgMagazines
 	};
 	class Ammo_RPG7_HE: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "-";
@@ -322,7 +322,7 @@ class CfgMagazines
 	};
 	class Ammo_RPG7_AP: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "-";
@@ -332,7 +332,7 @@ class CfgMagazines
 	};
 	class Ammo_LAW_HE: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "-";
@@ -342,7 +342,7 @@ class CfgMagazines
 	};
 	class Ammo_GrenadeM4: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "-";
@@ -352,7 +352,7 @@ class CfgMagazines
 	};
 	class Ammo_40mm_Base: Ammunition_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "40 mm";
@@ -362,7 +362,7 @@ class CfgMagazines
 	};
 	class Ammo_40mm_Explosive: Ammo_40mm_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 4;
 			kr_caliber = "40 mm";
@@ -372,7 +372,7 @@ class CfgMagazines
 	};
 	class Ammo_40mm_ChemGas: Ammo_40mm_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "40 mm";
@@ -382,7 +382,7 @@ class CfgMagazines
 	};
 	class Ammo_40mm_Smoke_ColorBase: Ammo_40mm_Base
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "40 mm";
@@ -392,7 +392,7 @@ class CfgMagazines
 	};
 	class Ammo_40mm_Smoke_Red: Ammo_40mm_Smoke_ColorBase
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "40 mm";
@@ -402,7 +402,7 @@ class CfgMagazines
 	};
 	class Ammo_40mm_Smoke_Green: Ammo_40mm_Smoke_ColorBase
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "40 mm";
@@ -412,7 +412,7 @@ class CfgMagazines
 	};
 	class Ammo_40mm_Smoke_White: Ammo_40mm_Smoke_ColorBase
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "40 mm";
@@ -422,7 +422,7 @@ class CfgMagazines
 	};
 	class Ammo_40mm_Smoke_Black: Ammo_40mm_Smoke_ColorBase
 	{
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "40 mm";

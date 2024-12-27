@@ -1,11 +1,11 @@
 class CfgPatches
 {
-	class kr_weapons_rifles_CSR50_cfg
+	class kr_weapons_rifles_CSR50
 	{
-		units[] = {};
-		weapons[] = {};
+		units[] = {"kr_CSR50_Bipod"};
+		weapons[] = {"kr_CSR50"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"kr_weapons_rifles_CSR50"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data","kr_weapon_sounds_sounds"};
 	};
 };
 class Mode_Safe;
@@ -14,17 +14,45 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class BoltActionRifle_Base;
 	class kr_CSR50_Base: BoltActionRifle_Base
 	{
-		PPDOFProperties[] = {};
-		barrelArmor = 1.4;
+		scope = 0;
+		displayName = "$STR_weapons_rifles_csr50";
+		descriptionShort = "$STR_weapons_rifles_csr50_dsc";
+		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\CSR50.p3d";
+		attachments[] = {"kr_ar_pistolgrip","weaponOpticsB","weaponOptics","weaponWrap"};
+		itemSize[] = {10,3};
+		weight = 9750;
+		absorbency = 0.0;
+		repairableWithKits[] = {1};
+		repairCosts[] = {25.0};
+		WeaponLength = 1.47;
+		DisplayMagazine = 0;
+		chamberSize = 1;
+		chamberedRound = "";
+		chamberableFrom[] = {"kr_Ammo_50BMG","kr_Ammo_50BMG_AP","kr_Ammo_50BMG_E","kr_Ammo_50BMG_ET","kr_Ammo_50BMG_T"};
+		magazineSwitchTime = 0.4;
+		ejectType = 0;
+		barrelArmor = 28.4;
 		initSpeedMultiplier = 1.2;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1.2};
-		adsModiefer[] = {0.1,0,0};
+		recoilModifier[] = {3,3,3};
+		swayModifier[] = {3.2,3.2,1.8};
+		simpleHiddenSelections[] = {"hide_pistolgrip"};
+		hiddenSelections[] = {"camo"};
+		modes[] = {"Single"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 3;
+		};
+		class kr_description
+		{
+			kr_tier = 5;
+			kr_caliber = ".50BMG";
+		};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"csr50_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
@@ -32,6 +60,135 @@ class cfgWeapons
 			reloadTime = 1;
 			dispersion = 0.0005;
 			magazineSlot = "magazine";
+		};
+		class Particles
+		{
+			class OnFire
+			{
+				class SmokeCloud
+				{
+					overrideParticle = "weapon_shot_winded_smoke";
+				};
+				class MuzzleFlash
+				{
+					overrideParticle = "weapon_shot_cz527_01";
+					ignoreIfSuppressed = 1;
+					illuminateWorld = 1;
+					positionOffset[] = {-0.05,0,0};
+				};
+			};
+			class OnOverheating
+			{
+				shotsToStartOverheating = 1;
+				maxOverheatingValue = 4;
+				overheatingDecayInterval = 3;
+				class BarrelSmoke
+				{
+					overrideParticle = "smoking_barrel_small";
+				};
+			};
+			class OnBulletCasingEject
+			{
+				class ChamberSmokeRaise
+				{
+					overrideParticle = "weapon_shot_chamber_smoke_raise";
+					overridePoint = "Nabojnicestart";
+				};
+			};
+		};
+		class NoiseShoot
+		{
+			strength = 200;
+			type = "shot";
+		};
+		class OpticsInfo: OpticsInfoRifle
+		{
+			memoryPointCamera = "eye";
+			discreteDistance[] = {100};
+			discreteDistanceInitIndex = 0;
+			modelOptics = "-";
+			distanceZoomMin = 100;
+			distanceZoomMax = 100;
+		};
+	};
+	class kr_CSR50: kr_CSR50_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\CSR50_co.paa"};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 300;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\CSR50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+};
+class cfgVehicles
+{
+	class Inventory_Base;
+	class kr_CSR50_Bipod: Inventory_Base
+	{
+		scope = 2;
+		displayName = "CSR50 Bipod";
+		descriptionShort = "Not game object";
+		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\bipod.p3d";
+		rotationFlags = 12;
+		reversed = 0;
+		inventorySlot[] = {"weaponBipod"};
+		weight = 376;
+		itemSize[] = {3,3};
+		dispersionModifier = -0.00025;
+		dexterityModifier = -0.2;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_destruct.rvmat"}}};
+				};
+			};
+		};
+		isMeleeWeapon = 1;
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".50BMG";
+		};
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo = "MeleeLightBlunt";
+				range = 1.0;
+			};
+			class Heavy
+			{
+				ammo = "MeleeLightBlunt_Heavy";
+				range = 1.0;
+			};
+			class Sprint
+			{
+				ammo = "MeleeLightBlunt_Heavy";
+				range = 2.8;
+			};
+		};
+		class AnimationSources
+		{
+			class bipod
+			{
+				source = "user";
+				animPeriod = 0.5;
+				initPhase = 1;
+			};
 		};
 	};
 };

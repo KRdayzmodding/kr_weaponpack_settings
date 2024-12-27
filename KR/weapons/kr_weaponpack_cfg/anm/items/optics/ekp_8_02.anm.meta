@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{3DA1A8AE5545314C}KR/weapons/kr_weaponpack_cfg/anm/items/optics/ekp_8_02.anm"
+ Author "desktop-f1qcv1n"
+ ChangeDate 1588900249
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "ekp_8_02.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

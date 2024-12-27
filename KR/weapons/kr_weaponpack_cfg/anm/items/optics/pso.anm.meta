@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{EA827C0EA39AC220}KR/weapons/kr_weaponpack_cfg/anm/items/optics/pso.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate -1710952039
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "pso.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

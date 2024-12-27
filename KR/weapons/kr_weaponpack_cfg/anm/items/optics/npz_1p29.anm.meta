@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{62E75D981314F1B0}KR/weapons/kr_weaponpack_cfg/anm/items/optics/npz_1p29.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate -525536871
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "npz_1p29.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

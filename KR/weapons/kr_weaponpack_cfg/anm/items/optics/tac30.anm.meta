@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{3BE5541A16C022F8}KR/weapons/kr_weaponpack_cfg/anm/items/optics/tac30.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate 574910873
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "tac30.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

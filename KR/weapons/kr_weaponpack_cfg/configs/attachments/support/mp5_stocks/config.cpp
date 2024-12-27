@@ -1,39 +1,82 @@
 class CfgPatches
 {
-	class kr_attachments_mp5_stocks_cfg
+	class kr_attachments_mp5_stocks
 	{
-		units[] = {};
+		units[] = {"kr_mp5_stock_hk_a2","kr_mp5_stock_hk_a3"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","kr_data","kr_attachments_mp5_stocks"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports"};
 	};
 };
+class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class kr_mp5_stock_Base;
 	class kr_mp5_stock_hk_a2: kr_mp5_stock_Base
 	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_mp5_stock_hk_a2";
+		descriptionShort = "$STR_kr_weapons_attachments_mp5_stock_hk_a2_dsc";
+		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\mp5_bttstck_a2.p3d";
+		simpleHiddenSelections[] = {"hide_tubepart"};
+		weight = 472;
 		recoilModifier[] = {1.0,0.7,0.5};
 		swayModifier[] = {0.9,0.9,0.9};
-		adsModifier[] = {0.95,0,1};
-
-		class kr_discription
+		itemSize[] = {2,1};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2.rvmat"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 25;
+		};
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_type = "HK MP5";
 		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 150;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2_destruct.rvmat"}}};
+				};
+			};
+		};
 	};
-
 	class kr_mp5_stock_hk_a3: kr_mp5_stock_Base
 	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_mp5_stock_hk_a3";
+		descriptionShort = "$STR_kr_weapons_attachments_mp5_stock_hk_a3_dsc";
+		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\mp5_bttstck_a3.p3d";
+		weight = 800;
 		recoilModifier[] = {1.0,0.7,0.5};
 		swayModifier[] = {0.9,0.9,0.9};
-		adsModifier[] = {0.95,0,1};
-
-		class kr_discription
+		itemSize[] = {2,1};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3.rvmat"};
+		class kr_Gunplay: kr_Gunplay_Base
 		{
-			kr_tier = 1;
+			ergonomics = 28;
+		};
+		class kr_description
+		{
+			kr_tier = 2;
 			kr_type = "HK MP5";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 150;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3_destruct.rvmat"}}};
+				};
+			};
 		};
 	};
 };

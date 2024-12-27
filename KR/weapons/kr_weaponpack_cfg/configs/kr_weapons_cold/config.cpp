@@ -1,11 +1,20 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: kr_weapons_cold\config.bin
+//Produced from mikero's Dos Tools Dll version 9.89
+//https://mikero.bytex.digital/Downloads
+//'now' is Wed Dec 25 02:07:04 2024 : 'file' last modified on Wed Dec 25 02:07:04 2024
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
 class CfgPatches
 {
-	class kr_weapons_cold_cfg
+	class kr_weapons_cold
 	{
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"kr_weapons_cold"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Melee","kr_data"};
 		ammo[] = {"MeleeKnife_Jagd","MeleeKnife_Jagd_Heavy","Melee_kr_WarriorAxe","Melee_kr_WarriorAxe_Heavy"};
 	};
 };

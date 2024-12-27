@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{B3B91D7BEE2E5484}KR/weapons/kr_weaponpack_cfg/anm/items/optics/amg_uh1.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate 1876701593
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "amg_uh1.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

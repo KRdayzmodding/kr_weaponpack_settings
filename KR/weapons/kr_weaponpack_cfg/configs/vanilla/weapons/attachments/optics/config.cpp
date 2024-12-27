@@ -11,10 +11,7 @@ class CfgPatches
 class cfgVehicles
 {
 	class ItemOptics;
-	class ItemOptics_Base: ItemOptics
-	{
-		adsModiefer[] = {0.7,0,1};
-	};
+	class ItemOptics_Base: ItemOptics{};
 	class StarlightOptic: ItemOptics_Base
 	{
 		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT"};
@@ -35,19 +32,19 @@ class cfgVehicles
 	};
 	class BUISOptic: ItemOptics_Base
 	{
-		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","WeaponHolo1","WeaponHolo2","WeaponHolo3","WeaponHolo4","WeaponHolo5"};
+		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5"};
 	};
 	class M68Optic: ItemOptics_Base
 	{
-		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","WeaponHolo1","WeaponHolo2","WeaponHolo3","WeaponHolo4","WeaponHolo5"};
+		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5"};
 	};
 	class M4_T3NRDSOptic: ItemOptics_Base
 	{
-		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","WeaponHolo1","WeaponHolo2","WeaponHolo3","WeaponHolo4","WeaponHolo5"};
+		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5"};
 	};
 	class ReflexOptic: ItemOptics_Base
 	{
-		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","WeaponHolo1","WeaponHolo2","WeaponHolo3","WeaponHolo4","WeaponHolo5"};
+		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5"};
 	};
 	class M4_CarryHandleOptic: ItemOptics_Base{};
 	class FNP45_MRDSOptic: ItemOptics_Base{};

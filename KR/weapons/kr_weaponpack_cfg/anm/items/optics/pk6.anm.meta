@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{EC155E21CFC2BC0B}KR/weapons/kr_weaponpack_cfg/anm/items/optics/pk6.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate -1079791207
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "pk6.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

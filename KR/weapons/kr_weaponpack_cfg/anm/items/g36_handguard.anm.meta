@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{5D8B7AAAC984C854}KR/weapons/kr_weaponpack_cfg/anm/items/g36_handguard.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate 1148744089
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "g36_handguard.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

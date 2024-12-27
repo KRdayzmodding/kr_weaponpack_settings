@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class kr_weapons_lmg_PKP_cfg
+	class kr_weapons_lmg_PKP
 	{
 		units[] = {};
 		weapons[] = {"kr_PKP"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","kr_data","kr_weapon_sounds_sounds","kr_weapons_lmg_PKP"};
+		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+class kr_Gunplay_Base;
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
@@ -16,24 +17,55 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class kr_ak_Base;
-	class kr_PKP_Base;
-	class kr_PKP: kr_PKP_Base
+	class kr_PKP_Base: kr_ak_Base
 	{
-		scope = 2;
-		weight = 8200;
-		WeaponLength = 1.15;
-		itemSize[] = {10,4};
-		barrelArmor = 20.5;
-		initSpeedMultiplier = 1.3;
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.9,0.9,0.9};
-		adsModiefer[] = {0,0,0};
-		class FullAuto: Mode_FullAuto
+		scope = 0;
+		displayName = "$STR_weapons_firearms_PKP";
+		descriptionShort = "$STR_weapons_firearms_PKP_dsc";
+		attachments[] = {"kr_muzzle762_54","kr_foregrip","weaponOptics","kr_ak_pistolgrip","weaponWrap"};
+		chamberableFrom[] = {"Ammo_762x54","Ammo_762x54Tracer","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m","kr_Ammo_762x54_AP"};
+		magazines[] = {"Mag_762x54_pkp_100Rnd"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP.rvmat"};
+		modes[] = {"FullAuto"};
+		simpleHiddenSelections[] = {"hide_pistolgrip"};
+		class kr_description
 		{
-			soundSetShot[] = {"PKP_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"PKP_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"PKP_silencer_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00065;
+			kr_tier = 5;
+			kr_caliber = "7.62x54";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class kr_firearms
+		{
+			handguardSlotName = "";
+			buttstockSlotName = "";
+		};
+		class NoiseShoot
+		{
+			strength = 150;
+			type = "shot";
+		};
+		class OpticsInfo: OpticsInfoRifle
+		{
+			memoryPointCamera = "eye";
+			discreteDistance[] = {50,100,200,400};
+			discreteDistanceInitIndex = 0;
+			distanceZoomMin = 50;
+			distanceZoomMax = 400;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 400;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP_destruct.rvmat"}}};
+				};
+			};
 		};
 		class Particles
 		{
@@ -110,6 +142,25 @@ class cfgWeapons
 					overridePoint = "Nabojnicestart";
 				};
 			};
+		};
+	};
+	class kr_PKP: kr_PKP_Base
+	{
+		scope = 2;
+		model = "\KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\PKP.p3d";
+		weight = 8200;
+		WeaponLength = 1.15;
+		itemSize[] = {10,4};
+		barrelArmor = 20.5;
+		initSpeedMultiplier = 1.3;
+		recoilModifier[] = {0.8,0.8,0.8};
+		swayModifier[] = {0.9,0.9,0.9};
+		class FullAuto: Mode_FullAuto
+		{
+			soundSetShot[] = {"PKP_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"PKP_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"PKP_silencer_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.1;
+			dispersion = 0.00065;
 		};
 	};
 };

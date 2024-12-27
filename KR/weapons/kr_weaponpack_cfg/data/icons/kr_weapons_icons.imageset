@@ -8,6 +8,12 @@ ImageSetClass {
   }
  }
  Images {
+  ImageSetDefClass kr_dummy {
+   Name "kr_dummy"
+   Pos 3840 3840
+   Size 256 256
+   Flags 0
+  }
  }
  Groups {
   ImageSetGroupClass 1 {
@@ -58,6 +64,54 @@ ImageSetClass {
     ImageSetDefClass kr_ak_handguard {
      Name "kr_ak_handguard"
      Pos 1792 0
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_bipod {
+     Name "kr_bipod"
+     Pos 2048 0
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_sg550_hndgrd {
+     Name "kr_sg550_hndgrd"
+     Pos 2304 0
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_sg552_hndgrd {
+     Name "kr_sg552_hndgrd"
+     Pos 2560 0
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_sg550_stock {
+     Name "kr_sg550_stock"
+     Pos 2816 0
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_sg550_pistolgrip {
+     Name "kr_sg550_pistolgrip"
+     Pos 3072 0
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_m3s_stock {
+     Name "kr_m3s_stock"
+     Pos 3328 0
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_m870_stock {
+     Name "kr_m870_stock"
+     Pos 3584 0
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_m870_pump {
+     Name "kr_m870_pump"
+     Pos 3840 0
      Size 256 256
      Flags 0
     }
@@ -114,6 +168,54 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
+    ImageSetDefClass kr_g36_bipods {
+     Name "kr_g36_bipods"
+     Pos 2048 256
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_g36_stock {
+     Name "kr_g36_stock"
+     Pos 2306 256
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_g36c_handguard {
+     Name "kr_g36c_handguard"
+     Pos 2560 256
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_g36k_handguard {
+     Name "kr_g36k_handguard"
+     Pos 2816 256
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_g36_handguard {
+     Name "kr_g36_handguard"
+     Pos 3072 256
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_g36_ckit {
+     Name "kr_g36_ckit"
+     Pos 3328 256
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_mount_barrel {
+     Name "kr_mount_barrel"
+     Pos 3584 256
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_mount_mag {
+     Name "kr_mount_mag"
+     Pos 3840 256
+     Size 256 256
+     Flags 0
+    }
    }
   }
   ImageSetGroupClass 3 {
@@ -127,7 +229,7 @@ ImageSetClass {
     }
     ImageSetDefClass kr_hk416_handguard {
      Name "kr_hk416_handguard"
-     Pos 256 512
+     Pos 258 512
      Size 256 256
      Flags 0
     }
@@ -167,6 +269,48 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
+    ImageSetDefClass kr_ironsights {
+     Name "kr_ironsights"
+     Pos 2048 512
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_g17_pgrip {
+     Name "kr_g17_pgrip"
+     Pos 2306 512
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_receiver_g17 {
+     Name "kr_receiver_g17"
+     Pos 2560 512
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_mount_g17 {
+     Name "kr_mount_g17"
+     Pos 2816 512
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_pistolHolo {
+     Name "kr_pistolHolo"
+     Pos 3072 512
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_saiga_hndgrd {
+     Name "kr_saiga_hndgrd"
+     Pos 3328 512
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_optics_top_mount {
+     Name "kr_optics_top_mount"
+     Pos 3584 512
+     Size 256 256
+     Flags 0
+    }
    }
   }
   ImageSetGroupClass 4 {
@@ -192,7 +336,7 @@ ImageSetClass {
     }
     ImageSetDefClass kr_spas12_stock {
      Name "kr_spas12_stock"
-     Pos 768 768
+     Pos 770 768
      Size 256 256
      Flags 0
     }
@@ -217,6 +361,36 @@ ImageSetClass {
     ImageSetDefClass kr_mp5_mount {
      Name "kr_mp5_mount"
      Pos 1792 768
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_light_pistol {
+     Name "kr_light_pistol"
+     Pos 2048 768
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_receiver_p226r {
+     Name "kr_receiver_p226r"
+     Pos 2306 768
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_pgrip_p226r {
+     Name "kr_pgrip_p226r"
+     Pos 2560 768
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_tt_laser {
+     Name "kr_tt_laser"
+     Pos 2816 768
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_mp443_mount {
+     Name "kr_mp443_mount"
+     Pos 3072 768
      Size 256 256
      Flags 0
     }
@@ -269,7 +443,7 @@ ImageSetClass {
     }
     ImageSetDefClass kr_hk417_handguard {
      Name "kr_hk417_handguard"
-     Pos 1792 1024
+     Pos 1794 1024
      Size 256 256
      Flags 0
     }
@@ -367,6 +541,18 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
+    ImageSetDefClass kr_muzzle762_25 {
+     Name "kr_muzzle762_25"
+     Pos 2048 1536
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_muzzle277 {
+     Name "kr_muzzle277"
+     Pos 1792 1536
+     Size 256 256
+     Flags 0
+    }
    }
   }
   ImageSetGroupClass 8 {
@@ -414,8 +600,8 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
-    ImageSetDefClass kr_silencer_9_18 {
-     Name "kr_silencer_9_18"
+    ImageSetDefClass kr_muzzle_9_18 {
+     Name "kr_muzzle_9_18"
      Pos 1792 1792
      Size 256 256
      Flags 0

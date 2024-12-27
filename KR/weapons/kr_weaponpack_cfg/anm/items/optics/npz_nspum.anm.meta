@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{0F98EBDBC4D7ED5C}KR/weapons/kr_weaponpack_cfg/anm/items/optics/npz_nspum.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate 1366536602
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "npz_nspum.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

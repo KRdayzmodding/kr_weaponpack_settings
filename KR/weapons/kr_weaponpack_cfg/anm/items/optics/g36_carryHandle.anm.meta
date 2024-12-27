@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{A41E964FF00219B3}KR/weapons/kr_weaponpack_cfg/anm/items/optics/g36_carryHandle.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate -227757670
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "g36_carryHandle.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

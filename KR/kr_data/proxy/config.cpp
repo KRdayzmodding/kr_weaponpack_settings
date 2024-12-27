@@ -302,6 +302,12 @@ class CfgNonAIVehicles
 		inventorySlot = "kr_foregrip";
 		model = "\KR\kr_data\proxy\weapons\attachments\support\foregrip.p3d";
 	};
+	class Proxybipod: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_bipod";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\bipod.p3d";
+	};
 	///////////////////////Оптика
 	class Proxymount_dovetail: ProxyAttachment
 	{
@@ -381,7 +387,18 @@ class CfgNonAIVehicles
 		inventorySlot = "WeaponHolo5";
 		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_WeaponHolo5.p3d";
 	};
-
+	class Proxykr_PistolHolo1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "PistolHolo1";
+		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_PistolHolo1.p3d";
+	};
+	class Proxykr_PistolHolo2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "PistolHolo2";
+		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_PistolHolo2.p3d";
+	};
 	class Proxykr_WeaponOpticsMosin: ProxyAttachment
 	{
 		scope = 2;
@@ -412,5 +429,11 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "kr_light_right";
 		model = "KR\kr_data\proxy\weapons\attachments\lights\kr_light_right.p3d";
+	};
+	class Proxykr_light_pistol: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_light_pistol";
+		model = "KR\kr_data\proxy\weapons\attachments\lights\kr_light_pistol.p3d";
 	};
 };

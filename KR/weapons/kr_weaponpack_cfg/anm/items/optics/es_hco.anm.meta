@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{4C2BDD139472B1A3}KR/weapons/kr_weaponpack_cfg/anm/items/optics/es_hco.anm"
+ Author "desktop-f1qcv1n"
+ ChangeDate 1251209625
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "es_hco.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{8CE45BB530394082}KR/weapons/kr_weaponpack_cfg/anm/items/optics/acog_ta01nsn.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate 998535577
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "acog_ta01nsn.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class kr_weapons_firearms_aks74_cfg
+	class kr_weapons_firearms_aks74
 	{
 		units[] = {};
-		weapons[] = {};
+		weapons[] = {"kr_aks74n","kr_aks74"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"kr_weapons_firearms_aks74"};
+		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+class kr_Gunplay_Base;
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
@@ -18,11 +19,32 @@ class cfgWeapons
 	class kr_ak_Base;
 	class kr_aks74_Base: kr_ak_Base
 	{
+		scope = 0;
+		model = "\KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\aks74.p3d";
+		weight = 2700;
+		WeaponLength = 0.7;
+		itemSize[] = {8,3};
+		chamberableFrom[] = {"Ammo_545x39","Ammo_545x39Tracer","kr_Ammo_545x39_BS","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT","kr_Ammo_545x39_AP"};
+		magazines[] = {"Mag_545x39_6L18_45Rnd","Mag_545x39_6L20_30Rnd","Mag_545x39_6L23_30Rnd","Mag_545x39_6L23_plum_30Rnd","Mag_545x39_6L26_45Rnd","Mag_545x39_6L31_60Rnd","Mag_545x39_ak12_std_30Rnd","Mag_545x39_magpul_pmag_30Rnd","Mag_545x39_rpk16_drum_95Rnd","Mag_545x39_saiga_545_10Rnd"};
 		barrelArmor = 3.7;
 		initSpeedMultiplier = 1.02;
 		recoilModifier[] = {2.5,2.5,4};
 		swayModifier[] = {3.2,3.2,2.85};
-		adsModiefer[] = {0.1,0,0};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_caliber = "5.45x39";
+		};
+		class kr_firearms
+		{
+			receiverSlotName = "kr_ak_receiver";
+			handguardSlotName = "kr_ak_hndgrd";
+			buttstockSlotName = "kr_ak_fstock";
+		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"AK74_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
@@ -39,5 +61,48 @@ class cfgWeapons
 			dispersion = 0.00075;
 			magazineSlot = "magazine";
 		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 300;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74_destruct.rvmat"}}};
+				};
+			};
+		};
+		class OpticsInfo: OpticsInfoRifle
+		{
+			memoryPointCamera = "eye";
+			discreteDistance[] = {100,200,300,400,500};
+			discreteDistanceInitIndex = 0;
+			modelOptics = "-";
+			distanceZoomMin = 100;
+			distanceZoomMax = 500;
+		};
+	};
+	class kr_aks74n: kr_aks74_Base
+	{
+		scope = 2;
+		displayName = "$STR_weapons_firearms_aks74";
+		descriptionShort = "$STR_weapons_firearms_aks74_dsc";
+		attachments[] = {"kr_muzzle545","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74.rvmat"};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "5.45x39";
+		};
+	};
+	class kr_aks74: kr_aks74_Base
+	{
+		scope = 2;
+		displayName = "$STR_weapons_firearms_aks74n";
+		descriptionShort = "$STR_weapons_firearms_aks74n_dsc";
+		attachments[] = {"kr_muzzle545","kr_ak_hndgrd","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_handle","weaponWrap"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\aks74\data\aks74.rvmat"};
 	};
 };

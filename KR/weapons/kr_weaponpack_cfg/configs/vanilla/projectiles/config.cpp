@@ -6,7 +6,7 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Projectiles"};
-		ammo[] = {};
+		ammo[] = {"Bullet_12GaugePellets","Bullet_12GaugeSlug","Bullet_12GaugeRubberSlug","Bullet_12GaugeBeanbag","Bullet_556x45","Bullet_556x45Tracer","Bullet_545x39","Bullet_545x39Tracer","Bullet_762x54","Bullet_762x54Tracer","Bullet_308Win","Bullet_308WinTracer","Bullet_762x39","Bullet_762x39Tracer","Bullet_45ACP","Bullet_357","Bullet_9x19","Bullet_380","Bullet_22","Bullet_9x39AP","Bullet_9x39"};
 	};
 };
 class Entity;
