@@ -20,6 +20,7 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_rpk16_fld_bttstck_tube_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\rpk16_parts\rpk16_fld_bttstck_tube.p3d";
 		weight = 142;
+		attachments[] = {"kr_ar_bttstck"};
 		recoilModifier[] = {0.97,0.97,0.95};
 		swayModifier[] = {0.97,0.97,0.95};
 		itemSize[] = {2,1};
