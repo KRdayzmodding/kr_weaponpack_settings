@@ -258,7 +258,7 @@ class cfgVehicles
 		};
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 4;
 			kr_type = "G36";
 		};
 		class AnimationSources

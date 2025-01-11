@@ -30,7 +30,7 @@ class cfgWeapons
 		chamberedRound = "";
 		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_AP"};
 		magazines[] = {"Mag_556x45_sg550_30Rnd","Mag_556x45_sg550_60Rnd"};
-		magazineSwitchTime = 0.5;
+		magazineSwitchTime = 0.2;
 		ejectType = 1;
 		hiddenSelections[] = {"camo"};
 		spawnDamageRange[] = {0.0,0.6};
@@ -141,6 +141,7 @@ class cfgWeapons
 				};
 			};
 		};
+		weaponStateAnim = "dz\anims\anm\player\reloads\AK101\w_AK101_states.anm";
 	};
 	class kr_sg550: kr_sg550_Base
 	{

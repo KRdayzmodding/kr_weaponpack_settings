@@ -292,6 +292,15 @@ class CfgMagazines
 			kr_tier = 3;
 		};
 	};
+	class Mag_SV98_10Rnd: Magazine_Base
+	{
+		ammoItems[] += {"kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m"};
+		class kr_description: kr_description_Base
+		{
+			kr_caliber = "7.62x54";
+			kr_tier = 3;
+		};
+	};
 	class Mag_FAL_20Rnd: Magazine_Base
 	{
 		ammoItems[] += {"kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","kr_Ammo_762x51_bpz_fmj"};

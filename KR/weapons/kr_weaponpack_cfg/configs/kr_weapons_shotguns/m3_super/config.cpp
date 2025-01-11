@@ -35,7 +35,7 @@ class cfgWeapons
 		ejectType = 1;
 		recoilModifier[] = {1.4,1.4,1.4};
 		swayModifier[] = {2.4,2.4,1.3};
-		simpleHiddenSelections[] = {"hide_grip","hide_mag"};
+		simpleHiddenSelections[] = {"hide_grip","hide_mag","hide_mag4"};
 		cursor = "aimBowGhost";
 		hiddenSelections[] = {"camo"};
 		reloadAction = "ReloadSks";
@@ -155,7 +155,7 @@ class cfgWeapons
 		};
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 2;
 			kr_caliber = "12x76";
 		};
 		class DamageSystem
@@ -174,5 +174,10 @@ class cfgWeapons
 	{
 		scope = 2;
 		chamberSize = 8;
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "12x76";
+		};
 	};
 };

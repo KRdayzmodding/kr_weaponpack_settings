@@ -132,7 +132,7 @@ class cfgWeapons
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85.rvmat"};
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 2;
 			kr_caliber = ".338 LM";
 		};
 		class DamageSystem

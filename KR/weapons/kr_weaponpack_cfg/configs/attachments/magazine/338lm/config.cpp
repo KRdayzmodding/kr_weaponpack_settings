@@ -22,7 +22,7 @@ class CfgMagazines
 		tracersEvery = 0;
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 4;
 			kr_caliber = ".338 LM";
 		};
 		class AnimEvents
@@ -108,6 +108,11 @@ class CfgMagazines
 		{
 			ergonomics = -2;
 		};
+		class kr_description
+		{
+			kr_tier = 4;
+			kr_caliber = ".338 LM";
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -137,6 +142,11 @@ class CfgMagazines
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = -2;
+		};
+		class kr_description
+		{
+			kr_tier = 4;
+			kr_caliber = ".338 LM";
 		};
 		class DamageSystem
 		{
@@ -168,6 +178,11 @@ class CfgMagazines
 		{
 			ergonomics = -2;
 		};
+		class kr_description
+		{
+			kr_tier = 4;
+			kr_caliber = ".338 LM";
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -194,6 +209,11 @@ class CfgMagazines
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85.rvmat"};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_caliber = ".338 LM";
+		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = -2;
@@ -224,6 +244,11 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\tsvl_mag_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\tsvl_mag.rvmat"};
 		soundImpactType = "metal";
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".338 LM";
+		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = -2;

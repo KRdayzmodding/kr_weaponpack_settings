@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: kr_weapons_cold\config.bin
-//Produced from mikero's Dos Tools Dll version 9.89
-//https://mikero.bytex.digital/Downloads
-//'now' is Wed Dec 25 02:07:04 2024 : 'file' last modified on Wed Dec 25 02:07:04 2024
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
 class CfgPatches
 {
 	class kr_weapons_cold

@@ -26,7 +26,8 @@ class cfgWeapons
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {0,0.6,50,200,4,10};
-		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd","weaponOptics","kr_ar15_charging","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponFlashlight","weaponWrap"};
+		//attachments[] = {"kr_muzzle556","kr_ar15_hndgrd","weaponOptics","kr_ar15_charging","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponFlashlight","weaponWrap"};
+		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		WeaponLength = 0.814784;
 		barrelArmor = 2.5;
 		initSpeedMultiplier = 0.9;

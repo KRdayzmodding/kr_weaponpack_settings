@@ -38,7 +38,7 @@ class cfgWeapons
 		};
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 3;
 			kr_caliber = "7.62x39";
 		};
 		class kr_firearms
@@ -179,7 +179,7 @@ class cfgWeapons
 		descriptionShort = "$STR_weapons_firearms_akm_dsc";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 2;
 			kr_caliber = "7.62x39";
 		};
 		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_handle","weaponWrap"};

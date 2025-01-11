@@ -153,7 +153,7 @@ class cfgWeapons
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\m870\data\m870.rvmat"};
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 1;
 			kr_caliber = "12x76";
 		};
 		class DamageSystem
@@ -171,9 +171,20 @@ class cfgWeapons
 	class kr_m870_mag7: kr_m870
 	{
 		chamberSize = 8;
+
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_caliber = "12x76";
+		};
 	};
 	class kr_m870_mag10: kr_m870
 	{
 		chamberSize = 11;
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "12x76";
+		};
 	};
 };

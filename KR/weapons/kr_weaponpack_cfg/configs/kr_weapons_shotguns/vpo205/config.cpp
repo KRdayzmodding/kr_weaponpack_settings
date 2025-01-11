@@ -127,7 +127,7 @@ class cfgWeapons
 		swayModifier[] = {2.1,2.1,2.0};
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 1;
 			kr_caliber = "12x76";
 		};
 		class SemiAuto: Mode_SemiAuto
@@ -167,7 +167,7 @@ class cfgWeapons
 		swayModifier[] = {2.5,2.5,2.2};
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 2;
 			kr_caliber = "12x76";
 		};
 		class SemiAuto: Mode_SemiAuto
@@ -211,7 +211,7 @@ class cfgWeapons
 		};
 		class kr_description
 		{
-			kr_tier = 4;
+			kr_tier = 3;
 			kr_caliber = "12x76";
 		};
 		class SemiAuto: Mode_SemiAuto

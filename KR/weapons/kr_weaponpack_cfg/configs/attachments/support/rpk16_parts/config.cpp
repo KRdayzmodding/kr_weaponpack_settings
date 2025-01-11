@@ -83,6 +83,7 @@ class cfgVehicles
 	{
 		displayName = "$STR_kr_weapons_attachments_rpk16_handguard_std_raild";
 		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
+
 		class kr_firearms
 		{
 			grip = 1;

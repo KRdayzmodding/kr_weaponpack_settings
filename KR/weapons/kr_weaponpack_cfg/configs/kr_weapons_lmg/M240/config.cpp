@@ -49,7 +49,7 @@ class cfgWeapons
 		};
 		class kr_description
 		{
-			kr_tier = 5;
+			kr_tier = 4;
 			kr_caliber = "7.62x51 (.308)";
 		};
 		class FullAuto: Mode_FullAuto

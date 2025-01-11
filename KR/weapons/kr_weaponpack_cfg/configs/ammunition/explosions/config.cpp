@@ -117,6 +117,7 @@ class CfgAmmo
 	class Bullet_12x76_devastator: kr_Bullet_12x76_Base
 	{
 		scope = 1;
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_devastator.p3d";
 		casing = "FxCartridge_12x76_devastator";
 		round = "FxRound_12x76_devastator";
 		spawnPileType = "kr_Ammo_12x76_devastator";
@@ -154,6 +155,7 @@ class CfgAmmo
 	class Bullet_12x76_frag_12: kr_Bullet_12x76_Base
 	{
 		scope = 1;
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_frag_12.p3d";
 		casing = "FxCartridge_12x76_frag_12";
 		round = "FxRound_12x76_frag_12";
 		spawnPileType = "kr_Ammo_12x76_frag_12";

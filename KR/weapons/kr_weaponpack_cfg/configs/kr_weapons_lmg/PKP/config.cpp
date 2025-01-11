@@ -31,7 +31,7 @@ class cfgWeapons
 		simpleHiddenSelections[] = {"hide_pistolgrip"};
 		class kr_description
 		{
-			kr_tier = 5;
+			kr_tier = 4;
 			kr_caliber = "7.62x54";
 		};
 		class kr_Gunplay: kr_Gunplay_Base

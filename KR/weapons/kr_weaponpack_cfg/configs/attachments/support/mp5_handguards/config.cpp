@@ -30,6 +30,7 @@ class cfgVehicles
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\btti99_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\btti99.rvmat"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 14;
@@ -69,6 +70,8 @@ class cfgVehicles
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\caa_hx5_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\caa_hx5.rvmat"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 15;
@@ -141,6 +144,8 @@ class cfgVehicles
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\ptr_trirail_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\ptr_trirail.rvmat"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
+		
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 14;

@@ -235,6 +235,12 @@ class CfgSlots
 		displayName = "#STR_kr_slot_ar15_hndgrd";
 		ghostIcon = "set:kr_weapon_icons image:kr_m4_handguard";
 	};
+	class Slot_kr_m16_hndgrd
+	{
+		name = "kr_m16_hndgrd";
+		displayName = "#STR_kr_slot_m16_hndgrd";
+		ghostIcon = "set:kr_weapon_icons image:kr_m16_handguard";
+	};
 	class Slot_kr_g28_hndgrd
 	{
 		name = "kr_g28_hndgrd";
@@ -714,5 +720,17 @@ class CfgSlots
 		name = "kr_shotgun_mag_mount";
 		displayName = "#STR_kr_slot_mount";
 		ghostIcon = "set:kr_weapon_icons image:kr_mount_mag";
+	};
+	class Slot_kr_sg550_bipods
+	{
+		name = "kr_sg550_bipods";
+		displayName = "#STR_kr_slot_bipod";
+		ghostIcon = "set:kr_weapon_icons image:kr_bipod";
+	};
+	class Slot_kr_csr50_bipods
+	{
+		name = "kr_csr50_bipods";
+		displayName = "#STR_kr_slot_bipod";
+		ghostIcon = "set:kr_weapon_icons image:kr_bipod";
 	};
 };

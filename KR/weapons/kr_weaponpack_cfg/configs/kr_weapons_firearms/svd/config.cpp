@@ -418,7 +418,7 @@ class cfgWeapons
 		};
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 2;
 			kr_caliber = "7.62x54";
 		};
 		class kr_firearms
@@ -572,7 +572,7 @@ class cfgWeapons
 		};
 		class kr_description
 		{
-			kr_tier = 4;
+			kr_tier = 3;
 			kr_caliber = "7.62x54";
 		};
 		class DamageSystem

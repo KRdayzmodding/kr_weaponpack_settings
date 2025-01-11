@@ -24,7 +24,7 @@ class cfgWeapons
 		displayName = "$STR_weapons_rifles_csr50";
 		descriptionShort = "$STR_weapons_rifles_csr50_dsc";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\CSR50.p3d";
-		attachments[] = {"kr_ar_pistolgrip","weaponOpticsB","weaponOptics","weaponWrap"};
+		attachments[] = {"kr_csr50_bipods","kr_ar_pistolgrip","weaponOpticsB","weaponOptics","weaponWrap"};
 		itemSize[] = {10,3};
 		weight = 9750;
 		absorbency = 0.0;
@@ -124,70 +124,6 @@ class cfgWeapons
 					hitpoints = 300;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\CSR50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_destruct.rvmat"}}};
 				};
-			};
-		};
-	};
-};
-class cfgVehicles
-{
-	class Inventory_Base;
-	class kr_CSR50_Bipod: Inventory_Base
-	{
-		scope = 2;
-		displayName = "CSR50 Bipod";
-		descriptionShort = "Not game object";
-		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\bipod.p3d";
-		rotationFlags = 12;
-		reversed = 0;
-		inventorySlot[] = {"weaponBipod"};
-		weight = 376;
-		itemSize[] = {3,3};
-		dispersionModifier = -0.00025;
-		dexterityModifier = -0.2;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints = 100;
-					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_destruct.rvmat"}}};
-				};
-			};
-		};
-		isMeleeWeapon = 1;
-		class kr_description
-		{
-			kr_tier = 3;
-			kr_caliber = ".50BMG";
-		};
-		class MeleeModes
-		{
-			class Default
-			{
-				ammo = "MeleeLightBlunt";
-				range = 1.0;
-			};
-			class Heavy
-			{
-				ammo = "MeleeLightBlunt_Heavy";
-				range = 1.0;
-			};
-			class Sprint
-			{
-				ammo = "MeleeLightBlunt_Heavy";
-				range = 2.8;
-			};
-		};
-		class AnimationSources
-		{
-			class bipod
-			{
-				source = "user";
-				animPeriod = 0.5;
-				initPhase = 1;
 			};
 		};
 	};

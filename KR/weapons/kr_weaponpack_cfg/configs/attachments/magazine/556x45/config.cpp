@@ -29,6 +29,22 @@ class CfgMagazines
 			kr_caliber = "5.56x45";
 		};
 	};
+	class kr_magazine_556x45_G36_Base: kr_magazine_Base
+	{
+		scope = 0;
+		ammo = "Bullet_556x45";
+		ammoItems[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_AP"};
+		weightPerQuantityUnit = 4;
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -3;
+		};
+		class kr_description
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+		};
+	};
 	class Mag_556x45_6L29_30Rnd: kr_magazine_556x45_Base
 	{
 		scope = 2;
@@ -425,7 +441,7 @@ class CfgMagazines
 		};
 		class kr_description
 		{
-			kr_tier = 5;
+			kr_tier = 2;
 			kr_caliber = "5.56x45";
 		};
 		class DamageSystem
@@ -458,7 +474,7 @@ class CfgMagazines
 		};
 		class kr_description
 		{
-			kr_tier = 5;
+			kr_tier = 4;
 			kr_caliber = "5.56x45";
 		};
 		class DamageSystem
@@ -486,11 +502,11 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_100_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -10;
+			ergonomics = -15;
 		};
 		class kr_description
 		{
-			kr_tier = 4;
+			kr_tier = 5;
 			kr_caliber = "5.56x45";
 		};
 		class DamageSystem
@@ -584,7 +600,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_co.paa"};
 		class kr_discription
 		{
-			kr_tier = 1;
+			kr_tier = 3;
 			kr_caliber = "5.56x45";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -604,7 +620,7 @@ class CfgMagazines
 		};
 		soundImpactType = "plastic";
 	};
-	class Mag_556x45_g36_std_30Rnd: kr_magazine_556x45_Base
+	class Mag_556x45_g36_std_30Rnd: kr_magazine_556x45_G36_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_556x45_g36_std_30Rnd";
@@ -637,7 +653,7 @@ class CfgMagazines
 		};
 		soundImpactType = "plastic";
 	};
-	class Mag_556x45_g36_std_60Rnd: kr_magazine_556x45_Base
+	class Mag_556x45_g36_std_60Rnd: kr_magazine_556x45_G36_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_556x45_g36_std_60Rnd";
@@ -650,7 +666,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_co.paa"};
 		class kr_discription
 		{
-			kr_tier = 1;
+			kr_tier = 3;
 			kr_caliber = "5.56x45";
 		};
 		class kr_Gunplay: kr_Gunplay_Base

@@ -24,7 +24,7 @@ class cfgWeapons
 		animName = "cz527";
 		weight = 5300;
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\mcmillan_cs5.p3d";
-		attachments[] = {"kr_foregrip","weaponOpticsB","weaponOptics","kr_ar_pistolgrip","kr_ar_bttstck","weaponFlashlight","kr_bipod","weaponWrap"};
+		attachments[] = {"kr_bipod","kr_foregrip","weaponOpticsB","weaponOptics","kr_ar_pistolgrip","kr_ar_bttstck","weaponFlashlight","weaponWrap"};
 		itemSize[] = {8,3};
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
@@ -175,7 +175,14 @@ class cfgWeapons
 				class Health
 				{
 					hitpoints = 250;
-					healthLevels[] = {{1.0,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5.rvmat"}},{0.7,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5.rvmat"}},{0.5,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5_damage.rvmat"}},{0.3,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5_damage.rvmat"}},{0.0,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5_destruct.rvmat"}}};
+					healthLevels[] = 
+					{
+						{1.0,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5.rvmat"}},
+						{0.7,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5.rvmat"}},
+						{0.5,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5_damage.rvmat"}},
+						{0.3,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5_damage.rvmat"}},
+						{0.0,{"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5_destruct.rvmat"}}
+					};
 				};
 			};
 		};

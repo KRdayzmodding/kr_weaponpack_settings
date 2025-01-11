@@ -25,21 +25,53 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
 		attachments[] = {"kr_muzzle556","kr_g36_handguard","kr_g36_ckit","weaponOptics","kr_weaponOpticsG36","kr_g36_stock","weaponWrap"};
-		simpleHiddenSelections[] = {"hide_mag","hide_rails","hide_barrel","hide_sights","hide_sights1"};
+		simpleHiddenSelections[] = 
+		{
+			"hide_barrel",
+			"magazine",
+			"hide_magwell",
+			"hide_rails",
+			"hide_sights",
+			"hide_sights1"
+		};
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_AP"};
 		magazines[] = {"Mag_556x45_g36_std_30Rnd","Mag_556x45_g36_std_60Rnd","Mag_STANAG_30Rnd","Mag_STANAGCoupled_30Rnd","Mag_STANAG_60Rnd","Mag_CMAG_10Rnd","Mag_CMAG_20Rnd","Mag_CMAG_30Rnd","Mag_CMAG_40Rnd","Mag_CMAG_10Rnd_Green","Mag_CMAG_20Rnd_Green","Mag_CMAG_30Rnd_Green","Mag_CMAG_40Rnd_Green","Mag_CMAG_10Rnd_Black","Mag_CMAG_20Rnd_Black","Mag_CMAG_30Rnd_Black","Mag_CMAG_40Rnd_Black","Mag_556x45_magpulp_60Rnd","Mag_556x45_colt_ar15_std_30Rnd","Mag_556x45_fn_mk16_std_30Rnd","Mag_556x45_hk_polymer_30Rnd","Mag_556x45_hk_gen_2_pm_30Rnd","Mag_556x45_magpulm3_10Rnd","Mag_556x45_magpulm3_20Rnd","Mag_556x45_magpulm3_30Rnd_blck","Mag_556x45_magpulm3_30Rnd_tan","Mag_556x45_magpulm3_40Rnd_Base","Mag_556x45_magpulm3_40Rnd_blck","Mag_556x45_magpulm3_40Rnd_tan","Mag_556x45_steel_maritime_30Rnd","Mag_556x45_srfr_mag5_60Rnd","Mag_556x45_srfr_mag5_100Rnd","Mag_556x45_troy_battlemag_30Rnd"};
-		magazineSwitchTime = 0.5;
+		magazineSwitchTime = 0.2;
 		ejectType = 1;
 		hiddenSelections[] = {"camo"};
 		spawnDamageRange[] = {0.0,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\g36\data\g36k_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\g36\data\g36k.rvmat"};
+		modes[] = {"SemiAuto","FullAuto"};
+		class kr_description
+		{
+			kr_tier = 4;
+			kr_caliber = "5.56x45";
+		};
+		class SemiAuto: Mode_SemiAuto
+		{
+			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.1;
+			dispersion = 0.0007;
+			magazineSlot = "magazine";
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.1;
+			dispersion = 0.0007;
+			magazineSlot = "magazine";
+		};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 0;
 		};
+
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -56,6 +88,7 @@ class cfgWeapons
 			strength = 100;
 			type = "shot";
 		};
+		
 		class OpticsInfo: OpticsInfoRifle
 		{
 			memoryPointCamera = "eye";
@@ -141,6 +174,7 @@ class cfgWeapons
 				};
 			};
 		};
+		weaponStateAnim = "dz\anims\anm\player\reloads\AK101\w_AK101_states.anm";
 	};
 	class kr_g36: kr_g36_Base
 	{
@@ -153,8 +187,8 @@ class cfgWeapons
 		weight = 3800;
 		recoilModifier[] = {2.3,2.7,4.5};
 		swayModifier[] = {1.8,1.8,1.8};
-		barrelArmor = 7.3;
-		initSpeedMultiplier = 1.0;
+		barrelArmor = 8.3;
+		initSpeedMultiplier = 1.1;
 		attachments[] = {"kr_muzzle556","kr_g36_handguard","kr_g36_ckit","weaponOptics","kr_weaponOpticsG36","kr_g36_stock","weaponWrap"};
 		modes[] = {"SemiAuto","FullAuto"};
 		class kr_description
@@ -167,7 +201,7 @@ class cfgWeapons
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.00078;
+			dispersion = 0.0007;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -175,7 +209,7 @@ class cfgWeapons
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.00078;
+			dispersion = 0.0007;
 			magazineSlot = "magazine";
 		};
 	};
@@ -185,9 +219,9 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_g36k";
 		descriptionShort = "$STR_weapons_firearms_g36k_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_firearms\g36\g36k.p3d";
-		WeaponLength = 0.72;
-		itemSize[] = {6,3};
-		weight = 2800;
+		WeaponLength = 0.56;
+		itemSize[] = {7,3};
+		weight = 3200;
 		recoilModifier[] = {2.7,3.1,4.5};
 		swayModifier[] = {1.8,1.8,1.8};
 		barrelArmor = 7.0;
@@ -204,7 +238,7 @@ class cfgWeapons
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.0009;
+			dispersion = 0.00078;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -212,7 +246,7 @@ class cfgWeapons
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.0009;
+			dispersion = 0.00078;
 			magazineSlot = "magazine";
 		};
 	};
@@ -222,16 +256,22 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_g36c";
 		descriptionShort = "$STR_weapons_firearms_g36c_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_firearms\g36\g36c.p3d";
-		WeaponLength = 0.72;
+		WeaponLength = 0.468;
 		itemSize[] = {6,3};
 		weight = 2800;
 		recoilModifier[] = {2.7,3.1,4.5};
 		swayModifier[] = {1.8,1.8,1.8};
-		barrelArmor = 7.0;
-		initSpeedMultiplier = 1.0;
+		barrelArmor = 5.7;
+		initSpeedMultiplier = 0.9;
 		attachments[] = {"kr_muzzle556","kr_g36c_handguard","kr_g36_ckit","weaponOptics","kr_weaponOpticsG36","kr_g36_stock","weaponWrap"};
 		modes[] = {"SemiAuto","FullAuto"};
-		simpleHiddenSelections[] = {"hide_mag","hide_rails","hide_barrel"};
+		simpleHiddenSelections[] = 
+		{
+			"hide_barrel",
+			"magazine",
+			"hide_magwell",
+			"hide_rails"
+		};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\g36\data\g36c_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\g36\data\g36c.rvmat"};
 		class DamageSystem

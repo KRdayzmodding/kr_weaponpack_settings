@@ -171,7 +171,7 @@ class cfgWeapons
 		};
 		class kr_firearms
 		{
-			barreltype = 3;
+			barreltype = 2;
 			handguardSlotName = "kr_ar10_hndgrd";
 		};
 	};
@@ -203,7 +203,7 @@ class cfgWeapons
 		};
 		class kr_firearms
 		{
-			barreltype = 4;
+			barreltype = 3;
 			handguardSlotName = "kr_ar10_hndgrd";
 		};
 	};

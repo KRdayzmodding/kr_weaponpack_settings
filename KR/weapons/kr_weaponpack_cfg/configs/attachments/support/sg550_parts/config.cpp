@@ -89,12 +89,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_sg550_handguard_std_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\sg550_hguard_std.p3d";
 		weight = 350;
-		attachments[] = {};
+		attachments[] = {"kr_sg550_bipods"};
 		itemSize[] = {4,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
+			bipodSlot = "kr_sg550_bipods";
 			ergonomics = 10;
 		};
 		class kr_firearms

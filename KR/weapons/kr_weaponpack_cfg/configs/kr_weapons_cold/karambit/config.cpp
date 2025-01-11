@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: kr_weapons_cold\karambit\config.bin
-//Produced from mikero's Dos Tools Dll version 9.89
-//https://mikero.bytex.digital/Downloads
-//'now' is Wed Dec 25 02:07:05 2024 : 'file' last modified on Wed Dec 25 02:07:05 2024
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
 class CfgPatches
 {
 	class kr_weapons_cold_karambit
@@ -18,6 +9,7 @@ class CfgPatches
 		ammo[] = {};
 	};
 };
+
 class CfgVehicles
 {
 	class CombatKnife;
@@ -39,6 +31,12 @@ class CfgVehicles
 		lootCategory = "Tools";
 		itemInfo[] = {"Knife"};
 		openItemSpillRange[] = {10,20};
+
+		class kr_description
+		{
+			kr_tier = 3;
+		};
+		
 		class DamageSystem
 		{
 			class GlobalHealth

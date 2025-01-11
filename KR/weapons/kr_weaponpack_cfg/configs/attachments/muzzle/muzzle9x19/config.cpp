@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class kr_weapatt_muzzle9x19
 	{
-		units[] = {"kr_muzzle9_19_flashhider_pp19_vityaz_std","kr_muzzle9_19_flashhider_saiga9_std","kr_muzzle9x19_suppressor_rotor_43","kr_muzzle9x19_suppressor_vityaz_std","kr_muzzle9x19_suppressor_sig_srd_9","kr_muzzle9x19_suppressor_osprey_9","kr_muzzle9_19_flashhider_alphawolf_bullnosed","kr_muzzle9_19_flashhider_double_diamond","kr_muzzle9_19_flashhider_lone_wolf","kr_muzzle9_19_flashhider_port_gen_3","kr_muzzle9_19_flashhider_decelerator_3","kr_muzzle9_19_suppressor_fd917","kr_muzzle9_19_flashhider_tj"};
+		units[] = {"kr_muzzle9_19_flashhider_pp19_vityaz_std","kr_muzzle9_19_flashhider_saiga9_std","kr_muzzle9_19_suppressor_rotor_43","kr_muzzle9x19_suppressor_vityaz_std","kr_muzzle9x19_suppressor_sig_srd_9","kr_muzzle9_19_suppressor_osprey_9","kr_muzzle9_19_flashhider_alphawolf_bullnosed","kr_muzzle9_19_flashhider_double_diamond","kr_muzzle9_19_flashhider_lone_wolf","kr_muzzle9_19_flashhider_port_gen_3","kr_muzzle9_19_flashhider_decelerator_3","kr_muzzle9_19_suppressor_fd917","kr_muzzle9_19_flashhider_tj"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_muzzles"};
@@ -72,7 +72,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class kr_muzzle9x19_suppressor_rotor_43: kr_suppressor_t1_Base
+	class kr_muzzle9_19_suppressor_rotor_43: kr_suppressor_t1_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_muzzle9x19_suppressor_rotor_43";
@@ -156,7 +156,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class kr_muzzle9x19_suppressor_osprey_9: kr_suppressor_t3_Base
+	class kr_muzzle9_19_suppressor_osprey_9: kr_suppressor_t3_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_muzzle9x19_suppressor_osprey_9";

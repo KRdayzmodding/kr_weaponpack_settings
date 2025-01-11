@@ -3189,6 +3189,7 @@ class CfgAmmo
 		casing = "FxCartridge_12x76_AP20";
 		round = "FxRound_12x76_AP20";
 		spawnPileType = "kr_Ammo_12x76_AP20";
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_AP20.p3d";
 		initSpeed = 460;
 		typicalSpeed = 510;
 		airFriction = -0.005;
@@ -3221,6 +3222,7 @@ class CfgAmmo
 		casing = "FxCartridge_12x76_lead_slug";
 		round = "FxRound_12x76_lead_slug";
 		spawnPileType = "kr_Ammo_12x76_lead_slug";
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_lead_slug.p3d";
 		initSpeed = 340;
 		typicalSpeed = 370;
 		airFriction = -0.002;
@@ -3252,6 +3254,7 @@ class CfgAmmo
 		casing = "FxCartridge_12x76_FTX_custom";
 		round = "FxRound_12x76_FTX_custom";
 		spawnPileType = "kr_Ammo_12x76_FTX_custom";
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_FTX_custom.p3d";
 		initSpeed = 440;
 		typicalSpeed = 480;
 		airFriction = -0.008;
@@ -3283,6 +3286,7 @@ class CfgAmmo
 		casing = "FxCartridge_12x76_RIP";
 		round = "FxRound_12x76_RIP";
 		spawnPileType = "kr_Ammo_12x76_RIP";
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_RIP.p3d";
 		initSpeed = 370;
 		typicalSpeed = 410;
 		airFriction = -0.0099;
@@ -3319,6 +3323,7 @@ class CfgAmmo
 		casing = "FxCartridge_12x76_Grizzly40";
 		round = "FxRound_12x76_Grizzly40";
 		spawnPileType = "kr_Ammo_12x76_Grizzly40";
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_Grizzly40.p3d";
 		initSpeed = 360;
 		typicalSpeed = 390;
 		airFriction = -0.0099;
@@ -3356,6 +3361,7 @@ class CfgAmmo
 		casing = "FxCartridge_12x76_buckshot_5";
 		round = "FxRound_12x76_buckshot_5";
 		spawnPileType = "kr_Ammo_12x76_buckshot_5";
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_buckshot_5.p3d";
 		initSpeed = 380;
 		typicalSpeed = 415;
 		airFriction = -0.00575;
@@ -3400,6 +3406,7 @@ class CfgAmmo
 		casing = "FxCartridge_12x76_buckshot_7";
 		round = "FxRound_12x76_buckshot_7";
 		spawnPileType = "kr_Ammo_12x76_buckshot_7";
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_buckshot_7.p3d";
 		initSpeed = 330;
 		typicalSpeed = 360;
 		airFriction = -0.00575;
@@ -3444,6 +3451,7 @@ class CfgAmmo
 		casing = "FxCartridge_12x76_buckshot_8";
 		round = "FxRound_12x76_buckshot_8";
 		spawnPileType = "kr_Ammo_12x76_buckshot_8";
+		proxyShape = "\KR\weapons\kr_weaponpack\ammunition\bullets\shotgunshell_buckshot_8.p3d";
 		initSpeed = 300;
 		typicalSpeed = 330;
 		airFriction = -0.1;

@@ -2866,4 +2866,35 @@ class CfgNonAIVehicles
 		inventorySlot = "kr_tt_laser";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\light\laser_tt_dlp_tactical_precision.p3d";
 	};
+
+	class Proxym16a2_handguard_std: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_m16_hndgrd";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\m16a2_handguard_std.p3d";
+	};
+	class Proxym16a1_handguard_std: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_m16_hndgrd";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\m16a1_handguard_std.p3d";
+	};
+	class Proxyar_buttstock_m16a1_std: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ar_bttstck";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\ar_buttstock_m16a1_std.p3d";
+	};
+	class Proxybipods_sg550: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_sg550_bipods";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\bipods\bipods_sg550.p3d";
+	};
+	class Proxycsr50_bipods: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_csr50_bipods";
+		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\csr50_bipods.p3d";
+	};
 };

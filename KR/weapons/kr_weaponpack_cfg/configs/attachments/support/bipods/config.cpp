@@ -120,4 +120,72 @@ class cfgVehicles
 			};
 		};
 	};
+	class kr_bipod_bipods_sg550: kr_bipods_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_bipod_bipods_sg550";
+		descriptionShort = "$STR_kr_weapons_attachments_bipod_bipods_sg550_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\bipods\bipods_sg550.p3d";
+		inventorySlot[] = {"kr_sg550_bipods"};
+		attachments[] = {};
+		simpleHiddenSelections[] = {};
+		weight = 250;
+		itemSize[] = {2,1};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard.rvmat"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -2;
+		};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_type = "sg550";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class kr_bipod_bipods_csr50: kr_bipods_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_bipod_bipods_csr50";
+		descriptionShort = "$STR_kr_weapons_attachments_bipod_bipods_csr50_dsc";
+		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\csr50_bipods.p3d";
+		inventorySlot[] = {"kr_csr50_bipods"};
+		weight = 490;
+		itemSize[] = {3,2};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"};
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -7;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_destruct.rvmat"}}};
+				};
+			};
+		};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_type = "CSR50";
+		};
+	};
 };

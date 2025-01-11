@@ -12,7 +12,7 @@ class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class Switchable_Base;
-	class kr_FlashlightBase: Switchable_Base
+	class kr_Flashlight_Base: Switchable_Base
 	{
 		scope = 0;
 		inventorySlot[] = {"weaponFlashlight","helmetFlashlight","kr_pointer_1","kr_light_right","kr_light_bot","kr_light_left"};
@@ -24,7 +24,7 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","reflector","glass","reflector_far"};
 		soundImpactType = "plastic";
 	};
-	class kr_LaserPointer_base: kr_FlashlightBase
+	class kr_LaserPointer_Base: kr_Flashlight_Base
 	{
 		scope = 0;
 		rotationFlags = 17;
@@ -35,7 +35,7 @@ class cfgVehicles
 		hiddenSelections[] = {"laser_reflector"};
 		soundImpactType = "plastic";
 	};
-	class kr_TacticalBlock_base: kr_LaserPointer_base
+	class kr_TacticalBlock_Base: kr_LaserPointer_Base
 	{
 		scope = 0;
 		rotationFlags = 17;
@@ -46,7 +46,7 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","reflector","glass","laser_reflector","reflector_far"};
 		soundImpactType = "plastic";
 	};
-	class kr_light_steiner_las_tac_2: kr_FlashlightBase
+	class kr_light_steiner_las_tac_2: kr_Flashlight_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_light_steiner_las_tac_2";
@@ -89,7 +89,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_light_surefire_xc1: kr_FlashlightBase
+	class kr_light_surefire_xc1: kr_Flashlight_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_surefire_xc1";
@@ -132,7 +132,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_light_insight_wmx200: kr_FlashlightBase
+	class kr_light_insight_wmx200: kr_Flashlight_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_light_insight_wmx200";
@@ -174,7 +174,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_light_armytek_xhp35: kr_FlashlightBase
+	class kr_light_armytek_xhp35: kr_Flashlight_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_light_armytek_xhp35";
@@ -216,7 +216,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_light_ultrafire_WF501B: kr_FlashlightBase
+	class kr_light_ultrafire_WF501B: kr_Flashlight_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_light_ultrafire_WF501B";
@@ -258,7 +258,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_light_zenit_2u: kr_FlashlightBase
+	class kr_light_zenit_2u: kr_Flashlight_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_light_zenit_2u";
@@ -300,7 +300,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_steiner_dbal: kr_TacticalBlock_base
+	class kr_laser_steiner_dbal: kr_TacticalBlock_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_steiner_dbal";
@@ -343,7 +343,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_olight_baldr_pro: kr_TacticalBlock_base
+	class kr_laser_olight_baldr_pro: kr_TacticalBlock_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_light_olight_baldr_pro";
@@ -386,7 +386,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_surefire_x400: kr_TacticalBlock_base
+	class kr_laser_surefire_x400: kr_TacticalBlock_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_light_surefire_x400";
@@ -429,7 +429,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_zenit_2p: kr_TacticalBlock_base
+	class kr_laser_zenit_2p: kr_TacticalBlock_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_light_zenit_2p";
@@ -473,7 +473,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_insight_anpeq2: kr_FlashlightBase
+	class kr_laser_insight_anpeq2: kr_Flashlight_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_insight_anpeq2";
@@ -515,7 +515,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_anpeq15: kr_LaserPointer_base
+	class kr_laser_anpeq15: kr_LaserPointer_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_anpeq15";
@@ -557,7 +557,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_tt_dlp_tactical_precision: kr_LaserPointer_base
+	class kr_laser_tt_dlp_tactical_precision: kr_LaserPointer_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_tt_dlp_tactical_precision";
@@ -600,7 +600,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_zenit_perst_3: kr_LaserPointer_base
+	class kr_laser_zenit_perst_3: kr_LaserPointer_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_zenit_perst_3";
@@ -642,7 +642,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_insight_la5: kr_LaserPointer_base
+	class kr_laser_insight_la5: kr_LaserPointer_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_insight_la5";
@@ -684,7 +684,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_holosun_ls321: kr_LaserPointer_base
+	class kr_laser_holosun_ls321: kr_LaserPointer_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_holosun_ls321";
@@ -727,7 +727,7 @@ class cfgVehicles
 		};
 	};
 	
-	class kr_laser_bemeyers_mawl_c1: kr_LaserPointer_base
+	class kr_laser_bemeyers_mawl_c1: kr_LaserPointer_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_attachments_laser_bemeyers_mawl_c1";

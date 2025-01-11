@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: kr_weapons_cold\skullaxe\config.bin
-//Produced from mikero's Dos Tools Dll version 9.89
-//https://mikero.bytex.digital/Downloads
-//'now' is Wed Dec 25 02:07:05 2024 : 'file' last modified on Wed Dec 25 02:07:05 2024
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
 class CfgPatches
 {
 	class kr_weapons_cold_skullaxe
@@ -42,6 +33,12 @@ class CfgVehicles
 		itemInfo[] = {"Axe"};
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
+
+		class kr_description
+		{
+			kr_tier = 2;
+		};
+		
 		class DamageSystem
 		{
 			class GlobalHealth

@@ -31,6 +31,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor.rvmat"};
 		class kr_description
 		{
+			kr_tier = 1;
 			kr_caliber = "9x18: APB";
 		};
 		class DamageSystem

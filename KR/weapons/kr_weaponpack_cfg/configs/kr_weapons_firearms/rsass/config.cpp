@@ -145,7 +145,7 @@ class cfgWeapons
 	};
 	class kr_rsass: kr_rsass_Base
 	{
-		scope = 0;
+		scope = 2;
 		displayName = "$STR_weapons_firearms_rsass";
 		descriptionShort = "$STR_weapons_firearms_rsass_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_firearms\rsass\rsass.p3d";

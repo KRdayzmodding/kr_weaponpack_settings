@@ -159,6 +159,13 @@ class cfgWeapons
 		attachments[] = {"kr_val_mount","kr_s_mount_1","weaponOpticsAK","kr_val_stock","kr_val_pistolgrip","kr_ak_pistolgrip","weaponOpticsDT","weaponWrap"};
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\val\val.p3d";
 		itemSize[] = {6,3};
+
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "9x39";
+		};
+		
 		class DamageSystem
 		{
 			class GlobalHealth

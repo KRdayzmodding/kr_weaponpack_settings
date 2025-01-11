@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: kr_weapons_cold\katana\config.bin
-//Produced from mikero's Dos Tools Dll version 9.89
-//https://mikero.bytex.digital/Downloads
-//'now' is Wed Dec 25 02:07:05 2024 : 'file' last modified on Wed Dec 25 02:07:05 2024
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
 class CfgPatches
 {
 	class kr_weapons_cold_katana
@@ -40,6 +31,12 @@ class CfgVehicles
 		lootCategory = "Tools";
 		itemInfo[] = {"Axe"};
 		openItemSpillRange[] = {20,40};
+
+		class kr_description
+		{
+			kr_tier = 3;
+		};
+		
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -261,7 +258,12 @@ class CfgVehicles
 			male = "\KR\weapons\kr_weaponpack\kr_weapons_cold\katana\katana_case.p3d";
 			female = "\KR\weapons\kr_weaponpack\kr_weapons_cold\katana\katana_case.p3d";
 		};
-		class DamageSystem
+				class kr_description
+		{
+			kr_tier = 3;
+
+		};
+class DamageSystem
 		{
 			class GlobalHealth
 			{

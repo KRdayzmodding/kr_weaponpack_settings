@@ -13,7 +13,7 @@ class CfgVehicles
 	class Inventory_Base;
 	class kr_items_repairKit: Inventory_Base
 	{
-		scope = 2;
+		scope = 0;
 		displayName = "$STR_kr_weapons_items_repairKit";
 		descriptionShort = "$STR_kr_weapons_items_repairKit_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\items\repairKit\repairKit.p3d";

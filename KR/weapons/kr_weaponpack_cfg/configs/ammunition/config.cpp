@@ -82,7 +82,7 @@ class CfgMagazines
 		ammo = "Bullet_9x19_ap_63";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 4;
 			kr_caliber = "9x19";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -140,7 +140,7 @@ class CfgMagazines
 		ammo = "Bullet_9x19_pso_gz";
 		class kr_description
 		{
-			kr_tier = 0;
+			kr_tier = 1;
 			kr_caliber = "9x19";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -227,7 +227,7 @@ class CfgMagazines
 		ammo = "Bullet_9x18_ppt_gz";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 0;
 			kr_caliber = "9x18";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -256,7 +256,7 @@ class CfgMagazines
 		ammo = "Bullet_9x18_pbm_gz";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 3;
 			kr_caliber = "9x18";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -372,7 +372,7 @@ class CfgMagazines
 		ammo = "Bullet_9x18_sp7_gz";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 2;
 			kr_caliber = "9x18";
 			kr_bullettype = 1;
 			kr_range = 100;
@@ -401,7 +401,7 @@ class CfgMagazines
 		ammo = "Bullet_545x39_BS";
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 4;
 			kr_caliber = "5.45x39";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -430,7 +430,7 @@ class CfgMagazines
 		ammo = "Bullet_545x39_BT";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 3;
 			kr_caliber = "5.45x39";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -662,7 +662,7 @@ class CfgMagazines
 		ammo = "Bullet_556x45_m855a1";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 3;
 			kr_caliber = "5.56x45";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -720,7 +720,7 @@ class CfgMagazines
 		ammo = "Bullet_556x45_m995";
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 4;
 			kr_caliber = "5.56x45";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -865,7 +865,7 @@ class CfgMagazines
 		ammo = "Bullet_366TKM_Geksa";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 2;
 			kr_caliber = ".366TKM";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -952,7 +952,7 @@ class CfgMagazines
 		ammo = "Bullet_762x39_mai_ap";
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 4;
 			kr_caliber = "7.62x39";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -981,7 +981,7 @@ class CfgMagazines
 		ammo = "Bullet_762x39_pp";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 3;
 			kr_caliber = "7.62x39";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1039,7 +1039,7 @@ class CfgMagazines
 		ammo = "Bullet_762x39_t45m";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 0;
 			kr_caliber = "7.62x39";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1242,7 +1242,7 @@ class CfgMagazines
 		ammo = "Bullet_762x51_ultra_nosler";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 3;
 			kr_caliber = "7.62x51 (.308)";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1300,7 +1300,7 @@ class CfgMagazines
 		ammo = "Bullet_762x54r_bthp";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 0;
 			kr_caliber = "7.62x54";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1329,7 +1329,7 @@ class CfgMagazines
 		ammo = "Bullet_762x54r_fmj";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 1;
 			kr_caliber = "7.62x54";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1358,7 +1358,7 @@ class CfgMagazines
 		ammo = "Bullet_762x54r_lps";
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 2;
 			kr_caliber = "7.62x54";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1416,7 +1416,7 @@ class CfgMagazines
 		ammo = "Bullet_762x54r_snb";
 		class kr_description
 		{
-			kr_tier = 4;
+			kr_tier = 3;
 			kr_caliber = "7.62x54";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1445,7 +1445,7 @@ class CfgMagazines
 		ammo = "Bullet_762x54r_t46m";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 1;
 			kr_caliber = "7.62x54";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1474,7 +1474,7 @@ class CfgMagazines
 		ammo = "Bullet_9x39_bp";
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 4;
 			kr_caliber = "9x39";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1503,7 +1503,7 @@ class CfgMagazines
 		ammo = "Bullet_9x39_pab9";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 3;
 			kr_caliber = "9x39";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1561,7 +1561,7 @@ class CfgMagazines
 		ammo = "Bullet_9x39_sp6";
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 2;
 			kr_caliber = "9x39";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1590,7 +1590,7 @@ class CfgMagazines
 		ammo = "Bullet_762x25_PT_gz";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 0;
 			kr_caliber = "7.62x25";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1619,7 +1619,7 @@ class CfgMagazines
 		ammo = "Bullet_762x25_PST_gz";
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 0;
 			kr_caliber = "7.62x25";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1648,7 +1648,7 @@ class CfgMagazines
 		ammo = "Bullet_762x25_FMJ43";
 		class kr_description
 		{
-			kr_tier = 0;
+			kr_tier = 2;
 			kr_caliber = "7.62x25";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1677,7 +1677,7 @@ class CfgMagazines
 		ammo = "Bullet_762x25_AKBS";
 		class kr_description
 		{
-			kr_tier = 0;
+			kr_tier = 1;
 			kr_caliber = "7.62x25";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1708,7 +1708,7 @@ class CfgMagazines
 		ammo = "Bullet_127x55_PS12";
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 2;
 			kr_caliber = "12.7x55";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -1739,7 +1739,7 @@ class CfgMagazines
 		ammo = "Bullet_127x55_PS12A";
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 3;
 			kr_caliber = "12.7x55";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -2010,7 +2010,7 @@ class CfgMagazines
 		ammo = "Bullet_50BMG_T";
 		class kr_description
 		{
-			kr_tier = 5;
+			kr_tier = 4;
 			kr_caliber = ".50BMG";
 			kr_bullettype = 0;
 			kr_range = 100;
@@ -2094,8 +2094,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_devastator: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_devastator";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_devastator_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_devastator";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_devastator_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\devastator_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2123,8 +2123,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_frag_12: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_frag_12";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_frag_12_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_frag_12";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_frag_12_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\frag_12_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2152,8 +2152,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_Grizzly40: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_Grizzly40";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_Grizzly40_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_Grizzly40";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_Grizzly40_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\Grizzly40_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2181,8 +2181,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_AP20: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_AP20";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_AP20_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_AP20";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_AP20_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\AP20_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2210,8 +2210,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_lead_slug: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_lead_slug";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_lead_slug_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_lead_slug";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_lead_slug_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\lead_slug_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2268,8 +2268,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_RIP: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_RIP";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_RIP_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_RIP";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_RIP_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\RIP_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2297,8 +2297,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_buckshot_5: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_buckshot_5";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_buckshot_5_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_5";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_5_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\buckshot_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2328,8 +2328,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_buckshot_7: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_buckshot_7";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_buckshot_7_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_7";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_7_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\buckshot_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2359,8 +2359,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_buckshot_8: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_ammo_12x76_buckshot_8";
-		descriptionShort = "$STR_kr_weapons_ammo_12x76_buckshot_8_dsc";
+		displayName = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_8";
+		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_8_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\buckshot_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;

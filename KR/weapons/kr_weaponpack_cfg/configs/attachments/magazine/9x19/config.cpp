@@ -125,7 +125,7 @@ class CfgMagazines
 		};
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 4;
 			kr_caliber = "9x19: MP5";
 		};
 	};
@@ -158,7 +158,7 @@ class CfgMagazines
 		};
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 1;
 			kr_caliber = "9x19: PP19-1, Saiga-9";
 		};
 	};
@@ -191,7 +191,7 @@ class CfgMagazines
 		};
 		class kr_description
 		{
-			kr_tier = 3;
+			kr_tier = 2;
 			kr_caliber = "9x19: PP19-1, Saiga-9";
 		};
 	};
@@ -224,7 +224,7 @@ class CfgMagazines
 		};
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 0;
 			kr_caliber = "9x19: PP19-1, Saiga-9";
 		};
 	};

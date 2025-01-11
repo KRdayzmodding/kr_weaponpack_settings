@@ -95,7 +95,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\g28_10_co.paa"};
 		class kr_description
 		{
-			kr_tier = 2;
+			kr_tier = 1;
 			kr_caliber = "7.62x51 (.308)";
 		};
 		class kr_Gunplay: kr_Gunplay_Base

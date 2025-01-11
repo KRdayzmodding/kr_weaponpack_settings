@@ -419,7 +419,7 @@ class cfgVehicles
 		class kr_description
 		{
 			kr_type = "Remington M870";
-			kr_tier = 1;
+			kr_tier = 2;
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -440,8 +440,8 @@ class cfgVehicles
 	class kr_handguard_m870_magpul_moe: kr_support_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_attachments_handguard_m870_fd_pr870";
-		descriptionShort = "$STR_kr_weapons_attachments_handguard_m870_fd_pr870_dsc";
+		displayName = "$STR_kr_weapons_attachments_handguard_m870_magpul_moe";
+		descriptionShort = "$STR_kr_weapons_attachments_handguard_m870_magpul_moe_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\handguard_m870_magpul_moe.p3d";
 		weight = 300;
 		recoilModifier[] = {1.0,1.0,1.0};
@@ -450,12 +450,13 @@ class cfgVehicles
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\magpul_moe_870_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\magpul_moe_870.rvmat"};
 		soundImpactType = "plastic";
+		simpleHiddenSelections[]={"hide_rails"};
 		inventorySlot[] = {"kr_m870_pump"};
-		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
+		attachments[] = {"kr_rail_mount"};
 		class kr_description
 		{
 			kr_type = "Remington M870";
-			kr_tier = 1;
+			kr_tier = 3;
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -472,5 +473,10 @@ class cfgVehicles
 				};
 			};
 		};
+	};
+	class kr_handguard_m870_magpul_moe_raild: kr_handguard_m870_magpul_moe
+	{
+		displayName = "$STR_kr_weapons_attachments_handguard_m870_magpul_moe_raild";
+		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
 	};
 };
