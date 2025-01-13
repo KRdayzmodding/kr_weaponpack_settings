@@ -164,7 +164,7 @@ class cfgWeapons
 		initSpeedMultiplier = 1.2;
 		recoilModifier[] = {1.7,1.7,1.7};
 		swayModifier[] = {2.1,2.1,1.9};
-		attachments[] = {"kr_mp5_hndgrd","kr_foregrip","kr_mp5_mount","weaponOptics","weaponOptics1","kr_mp5_stock","weaponFlashlight"};
+		attachments[] = {"kr_mp5_hndgrd","kr_mp5_mount","weaponOptics","weaponOptics1","kr_mp5_stock"};
 		simpleHiddenSelections[] = {"hide_barrel","hide_stock"};
 		class kr_firearms
 		{

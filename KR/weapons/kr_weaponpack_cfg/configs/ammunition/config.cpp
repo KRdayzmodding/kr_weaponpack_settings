@@ -2094,8 +2094,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_devastator: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_devastator";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_devastator_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_devastator";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_devastator_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\devastator_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2123,8 +2123,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_frag_12: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_frag_12";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_frag_12_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_frag_12";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_frag_12_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\frag_12_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2152,8 +2152,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_Grizzly40: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_Grizzly40";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_Grizzly40_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_Grizzly40";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_Grizzly40_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\Grizzly40_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2181,8 +2181,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_AP20: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_AP20";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_AP20_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_AP20";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_AP20_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\AP20_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2210,8 +2210,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_lead_slug: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_lead_slug";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_lead_slug_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_lead_slug";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_lead_slug_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\lead_slug_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2268,8 +2268,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_RIP: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_RIP";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_RIP_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_RIP";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_RIP_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\RIP_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2297,8 +2297,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_buckshot_5: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_5";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_5_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_buckshot_5";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_buckshot_5_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\buckshot_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2328,8 +2328,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_buckshot_7: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_7";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_7_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_buckshot_7";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_buckshot_7_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\buckshot_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;
@@ -2359,8 +2359,8 @@ class CfgMagazines
 	class kr_Ammo_12x76_buckshot_8: Ammunition_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_8";
-		descriptionShort = "$STR_kr_weapons_kr_Ammo_12x76_buckshot_8_dsc";
+		displayName = "$STR_kr_weapons_Ammo_12x76_buckshot_8";
+		descriptionShort = "$STR_kr_weapons_Ammo_12x76_buckshot_8_dsc";
 		model = "KR\weapons\kr_weaponpack\ammunition\looseRounds\buckshot_LooseRound.p3d";
 		iconCartridge = 4;
 		weight = 35;

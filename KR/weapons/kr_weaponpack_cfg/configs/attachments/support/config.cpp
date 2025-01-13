@@ -1028,7 +1028,7 @@ class cfgVehicles
 		class kr_description
 		{
 			kr_tier = 1;
-			kr_type = "#STR_kr_GUI_forRaild";
+			kr_type = "#STR_kr_slot_foregrip";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -1046,7 +1046,7 @@ class cfgVehicles
 		class kr_description
 		{
 			kr_tier = 1;
-			kr_type = "#STR_kr_GUI_forRaild";
+			kr_type = "#STR_kr_slot_foregrip";
 		};
 	};
 	class kr_foregrip_t2_Base: kr_foregrip_Base
@@ -1059,8 +1059,8 @@ class cfgVehicles
 		};
 		class kr_description
 		{
-			kr_tier = 4;
-			kr_type = "#STR_kr_GUI_forRaild";
+			kr_tier = 2;
+			kr_type = "#STR_kr_slot_foregrip";
 		};
 	};
 	class kr_foregrip_t3_Base: kr_foregrip_Base
@@ -1074,7 +1074,7 @@ class cfgVehicles
 		class kr_description
 		{
 			kr_tier = 3;
-			kr_type = "#STR_kr_GUI_forRaild";
+			kr_type = "#STR_kr_slot_foregrip";
 		};
 	};
 	class kr_foregrip_t4_Base: kr_foregrip_Base
@@ -1087,8 +1087,8 @@ class cfgVehicles
 		};
 		class kr_description
 		{
-			kr_tier = 8;
-			kr_type = "#STR_kr_GUI_forRaild";
+			kr_tier = 4;
+			kr_type = "#STR_kr_slot_foregrip";
 		};
 	};
 	class kr_muzzle_adapter_Base: Inventory_Base

@@ -724,13 +724,13 @@ class CfgSlots
 	class Slot_kr_sg550_bipods
 	{
 		name = "kr_sg550_bipods";
-		displayName = "#STR_kr_slot_bipod";
+		displayName = "#STR_kr_slot_sg550_bipods";
 		ghostIcon = "set:kr_weapon_icons image:kr_bipod";
 	};
 	class Slot_kr_csr50_bipods
 	{
 		name = "kr_csr50_bipods";
-		displayName = "#STR_kr_slot_bipod";
+		displayName = "#STR_kr_slot_csr50_bipods";
 		ghostIcon = "set:kr_weapon_icons image:kr_bipod";
 	};
 };

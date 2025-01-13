@@ -260,16 +260,16 @@ class cfgVehicles
 			opticsDisablePeripherialVision = 0.67;
 			opticsFlare = 1;
 			opticsPPEffects[] = {"OpticsCHAbera3","OpticsBlur1"};
-			opticsZoomMin = 0.5236;
-			opticsZoomMax = 0.5236;
-			opticsZoomInit = 0.5236;
+			opticsZoomMin = "0.52/1.5";
+			opticsZoomMax = "0.52/1.5";
+			opticsZoomInit = "0.52/1.5";
 			distanceZoomMin = 100;
 			distanceZoomMax = 100;
 			discreteDistance[] = {100};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.4,0.05};
-			PPLensProperties[] = {1,0.15,0,0};
-			PPBlurProperties = 0.2;
+			PPMaskProperties[] = {0.5,0.5,0.13,0.01};
+			PPLensProperties[] = {0.9,0.01,0.0,0.0};
+			PPBlurProperties = 0.05;
 			opticSightTexture = "KR\weapons\kr_weaponpack\attachments\optics\reticles\pk_aa_reticle_ca.paa";
 		};
 		class EnergyManager
@@ -340,9 +340,9 @@ class cfgVehicles
 			distanceZoomMax = 300;
 			discreteDistance[] = {50,75,100,125,150,200,250,300};
 			discreteDistanceInitIndex = 5;
-			PPMaskProperties[] = {0.5,0.5,0.36,0.045};
-			PPLensProperties[] = {0.75,0.25,0,0};
-			PPBlurProperties = 0.6;
+			PPMaskProperties[] = {0.5,0.5,0.37,0.01};
+			PPLensProperties[] = {1.2,0.02,0.0,0.0};
+			PPBlurProperties = 0.45;
 		};
 		class EnergyManager
 		{
@@ -412,9 +412,9 @@ class cfgVehicles
 			distanceZoomMax = 300;
 			discreteDistance[] = {50,75,100,125,150,200,250,300};
 			discreteDistanceInitIndex = 5;
-			PPMaskProperties[] = {0.5,0.5,0.36,0.045};
-			PPLensProperties[] = {0.75,0.25,0,0};
-			PPBlurProperties = 0.6;
+			PPMaskProperties[] = {0.5,0.5,0.37,0.01};
+			PPLensProperties[] = {1.2,0.02,0.0,0.0};
+			PPBlurProperties = 0.45;
 		};
 		class EnergyManager
 		{
@@ -554,9 +554,9 @@ class cfgVehicles
 			distanceZoomMax = 20;
 			discreteDistance[] = {50,100,150,200};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.4,0.1};
-			PPLensProperties[] = {-1.25,1.0,0,0};
-			PPBlurProperties = 0.75;
+			PPMaskProperties[] = {0.5,0.5,1.0,0.01};
+			PPLensProperties[] = {0.5,0.1,0.0,0.0};
+			PPBlurProperties = 0.45;
 		};
 		class AnimationSources
 		{

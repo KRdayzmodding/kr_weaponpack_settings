@@ -12,9 +12,9 @@ class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class kr_tt_grip_Base;
-	class kr_LaserPointer_base;
+	class kr_LaserPointer_Base;
 
-	class kr_tt_grip_PM_laser: kr_LaserPointer_base
+	class kr_tt_grip_PM_laser: kr_LaserPointer_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_tt_grip_PM_laser";
@@ -24,13 +24,22 @@ class cfgVehicles
 		itemSize[] = {1,1};
 		recoilModifier[] = {0.85,0.85,0.85};
 		swayModifier[] = {0.8,0.8,0.8};
-		attachments[] = {};
+		//attachments[] = {};
 		inventorySlot[] = {"kr_tt_grip"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\data\laser_tt_206_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\data\laser_tt_206.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 1;
+		};
+		class EnergyManager
+		{
+			hasIcon = 1;
+			autoSwitchOffWhenInCargo = 1;
+			energyUsagePerSecond = 0.01;
+			plugType = 1;
+			attachmentAction = 1;
+			updateInterval = 40;
 		};
 		class kr_description
 		{

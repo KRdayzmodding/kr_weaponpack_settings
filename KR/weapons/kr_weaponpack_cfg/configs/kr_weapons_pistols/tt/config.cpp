@@ -117,6 +117,7 @@ class cfgWeapons
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\tt.p3d";
 		attachments[] = {"kr_muzzle762_25","kr_tt_laser","kr_tt_grip"};
 		itemSize[] = {3,2};
+		simpleHiddenSelections[] = {"hide_grip"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt.rvmat"};
 		class kr_description

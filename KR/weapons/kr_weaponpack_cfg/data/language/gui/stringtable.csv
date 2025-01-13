@@ -127,7 +127,7 @@ STR_kr_GUI_damagebarrel,Damage to weapon,Damage to weapon,Poškození zbraně,Sc
 STR_kr_GUI_resource,Resource,Resource,Zdroj,Ressource,Ресурс,Ratunek,Forrás,Risorsa,Recurso,Ressource,资源,リソース,Recurso,资源
 STR_kr_GUI_capacity,Capacity,Capacity,Kapacita,Kapazität,Вместимость,Pojemność,Kapacitás,Capacità,Capacidad,Capacité,容量,容量,Capacidade,容量
 STR_kr_GUI_chancetojam,Chance to jam,Chance to jam,Šance na jam,Chance zum Jammen,Подача патрона,Szansa na jam,Lekvár,Possibilità di marmellata,Oportunidad de improvisar,Chance de jouer,堵塞的机会,ジャムのチャンス,Chance de improvisar,堵塞的机会
-STR_kr_GUI_ctj_bad,Big,Big,Velký,Groß,Плохая,Duży,Nagy,Grande,Grande,Grand,大的,大きい,Grande,大的
+STR_kr_GUI_ctj_bad,High,High,Vysoký,Hoch,Плохая,Wysoki,Magas,Alto,Alto,Haut,高的,高い,Alto,高的
 STR_kr_GUI_ctj_normal,Normal,Normal,Normální,Normal,Нормальная,Normalna,Normál,Normale,Normal,Normale,普通的,普通,Normal,普通的
 STR_kr_GUI_ctj_good,Small,Small,Malý,Klein,Хорошая,Mały,Kicsi,Piccolo,Pequeño,Petit,小的,小さい,Pequeno,小的
 STR_kr_GUI_protection,PROTECTION,PROTECTION,OCHRANA,SCHUTZ,ЗАЩИТА,OCHRONA,VÉDELEM,PROTEZIONE,PROTECCIÓN,PROTECTION,保护,保護,PROTEÇÃO,保护
@@ -174,3 +174,5 @@ STR_kr_slot_kr_receiver_p226r,P226r Receiver,P226r Receiver,Přijímač P226r,P2
 STR_kr_slot_m870_pump,M870 pump,M870 pump,čerpadlo M870,M870-Pumpe,Затвор M870,Pompa M870,M870 szivattyú,Pompa M870,bomba m870,Pompe M870,M870泵,M870ポンプ,Bomba M870,M870泵
 STR_kr_slot_shotgun_mag,Tube magazine,Tube magazine,Trubkový časopis,Röhrenmagazin,Трубчатый магазин,Magazyn tubowy,Cső magazin,Rivista a tubo,Revista de tubos,Revue de tubes,管杂志,チューブマガジン,Revista de tubo,管杂志
 STR_kr_slot_sg550_bipods,SG550 Bipods,SG550 Bipods,Dvojnožky SG550,SG550 Zweibeine,Сошки SG550,Dwójnogi SG550,SG550 kétlábúak,Bipiedi SG550,Bípodes SG550,Bipieds SG550,SG550 两脚架,SG550 バイポッド,Bipés SG550,SG550 两脚架
+STR_kr_slot_csr50_bipods,CSR50 Bipods,CSR50 Bipods,Dvojnožky CSR50,CSR50 Zweibeine,CSR50 SG550,Dwójnogi CSR50,CSR50 kétlábúak,Bipiedi CSR50,Bípodes CSR50,Bipieds CSR50,CSR50 两脚架,CSR50 バイポッド,Bipés CSR50,CSR50 两脚架
+STR_kr_slot_m16_hndgrd,M16A2 handguard,M16A2 handguard,Předpažbí M16A2,M16A2 Handschutz,Цевье M16A2,Łoże M16A2,M16A2 kézvédő,Paramano M16A2,Guardamanos M16A2,Garde-main M16A2,M16A2护木,M16A2 ハンドガード,Protetor de mão M16A2,M16A2护木

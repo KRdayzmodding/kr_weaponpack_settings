@@ -27,7 +27,6 @@ class cfgVehicles
 		weight = 800;
 		itemSize[] = {3,1};
 		inventorySlot[] = {"kr_weaponOpticsMosin"};
-		simpleHiddenSelections[] = {"hide"};
 		simulation = "itemoptics";
 		dispersionModifier = -0.001;
 		dispersionCondition = "false";
@@ -35,6 +34,17 @@ class cfgVehicles
 		swayModifier[] = {1,1,1};
 		memoryPointCamera = "eyeScope";
 		cameraDir = "cameraDir";
+/*
+		class AnimationSources
+		{
+			class hide
+			{
+				source = "user";
+				animPeriod = 0.01;
+				initPhase = 0;
+			};
+		};
+*/
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = -5;
@@ -63,16 +73,16 @@ class cfgVehicles
 			opticsDisablePeripherialVision = 0.67;
 			opticsFlare = 1;
 			opticsPPEffects[] = {"OpticsCHAbera3","OpticsBlur1"};
-			opticsZoomMin = "0.3926/3.5";
-			opticsZoomMax = "0.3926/3.5";
-			opticsZoomInit = "0.3926/3.5";
+			opticsZoomMin = "0.3926/2.5";
+			opticsZoomMax = "0.3926/2.5";
+			opticsZoomInit = "0.3926/2.5";
 			distanceZoomMin = 100;
 			distanceZoomMax = 1300;
 			discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.39,0.05};
-			PPLensProperties[] = {1.0,0.25,0.0,0.0};
-			PPBlurProperties = 0.5;
+			PPMaskProperties[] = {0.5,0.5,0.28,0.01};
+			PPLensProperties[] = {1.0,0.1,0.0,0.0};
+			PPBlurProperties = 0.2;
 		};
 	};
 	class kr_optics_F2000_scope: ItemOptics_Base
@@ -132,9 +142,12 @@ class cfgVehicles
 			distanceZoomMax = 300;
 			discreteDistance[] = {50,100,200,300};
 			discreteDistanceInitIndex = 1;
-			PPMaskProperties[] = {0.5,0.5,0.15,0.025};
-			PPLensProperties[] = {1.0,0.15,0,0};
-			PPBlurProperties = 0.1;
+			PPMaskProperties[] = {0.5,0.5,0.08,0.01};
+			PPLensProperties[] = {1.4,0.1,0.0,0.0};
+			PPBlurProperties = 0.05;
+			PPMaskProperties_x2[] = {0.5,0.5,0.135,0.01};
+			PPLensProperties_x2[] = {1.4,0.1,0.0,0.0};
+			PPBlurProperties_x2 = 0.15;
 		};
 		class OpticsInfoWeaponOverride
 		{
@@ -216,9 +229,9 @@ class cfgVehicles
 			distanceZoomMax = 1000;
 			discreteDistance[] = {100,200,300,400,500};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.43,0.1};
-			PPLensProperties[] = {0.3,0.15,0,0};
-			PPBlurProperties = 0.3;
+			PPMaskProperties[] = {0.5,0.5,0.42,0.1};
+			PPLensProperties[] = {0.3,0.02,0.0,0.0};
+			PPBlurProperties = 0.35;
 		};
 		class OpticsInfoWeaponOverride
 		{
@@ -300,9 +313,9 @@ class cfgVehicles
 			distanceZoomMax = 1000;
 			discreteDistance[] = {100,200,300,400,500};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.43,0.1};
-			PPLensProperties[] = {0.3,0.15,0,0};
-			PPBlurProperties = 0.3;
+			PPMaskProperties[] = {0.5,0.5,0.42,0.35};
+			PPLensProperties[] = {0.3,0.02,0.0,0.0};
+			PPBlurProperties = 0.35;
 		};
 		class OpticsInfoWeaponOverride
 		{

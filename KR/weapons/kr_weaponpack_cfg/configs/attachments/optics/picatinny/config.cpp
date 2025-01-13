@@ -241,6 +241,207 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
+	class kr_holosight_burris_fast_fire: kr_ItemOpticsPicatinny_base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_optics_reflex_burris_fast_fire";
+		descriptionShort = "$STR_kr_weapons_attachments_optics_reflex_burris_fast_fire_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\holosight_burris_fast_fire.p3d";
+		inventorySlot[] = {"weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","PistolHolo1","PistolHolo2"};
+		reversed = 0;
+		weight = 90;
+		itemSize[] = {2,1};
+		dispersionModifier = -0.001;
+		dispersionCondition = "false";
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
+		memoryPointCamera = "eyeScope";
+		cameraDir = "cameraDir";
+		attachments[] = {"BatteryD"};
+		hiddenSelections[] = {"reddot"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 10;
+		};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_type = "#STR_Picattinny";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = {{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\burris_fast_fire.rvmat"}},{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\burris_fast_fire_worn.rvmat"}},{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\burris_fast_fire_damage.rvmat"}},{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\burris_fast_fire_badlydamage.rvmat"}},{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\burris_fast_fire_destruct.rvmat"}}};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera = "eyeScope";
+			cameraDir = "cameraDir";
+			modelOptics = "-";
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsPPEffects[] = {};
+			opticSightTexture = "KR\weapons\kr_weaponpack_2\attachments\optics\reticles\trijicon_rmr_mark_ca.paa";
+			opticsZoomMin = 0.5236;
+			opticsZoomMax = 0.5236;
+			opticsZoomInit = 0.5236;
+			distanceZoomMin = 25;
+			distanceZoomMax = 200;
+			discreteDistance[] = {25,50,100,200};
+			discreteDistanceInitIndex = 0;
+			PPMaskProperties[] = {0.5,0.5,0.4,0.05};
+			PPLensProperties[] = {1,0.15,0,0};
+			PPBlurProperties = 0.2;
+			PPDOFProperties[] = {0,0.1,20,200,4,10};
+		};
+		class EnergyManager
+		{
+			hasIcon = 1;
+			energyUsagePerSecond = 0.02;
+			plugType = 1;
+			attachmentAction = 1;
+		};
+	};
+	class kr_holosight_leupold_deltapoint: kr_ItemOpticsPicatinny_base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_optics_reflex_leupold_deltapoint";
+		descriptionShort = "$STR_kr_weapons_attachments_optics_reflex_leupold_deltapoint_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\holosight_leupold_deltapoint.p3d";
+		inventorySlot[] = {"weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","PistolHolo1","PistolHolo2"};
+		reversed = 0;
+		weight = 90;
+		itemSize[] = {2,1};
+		dispersionModifier = -0.001;
+		dispersionCondition = "false";
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
+		memoryPointCamera = "eyeScope";
+		cameraDir = "cameraDir";
+		attachments[] = {"BatteryD"};
+		hiddenSelections[] = {"reddot"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 10;
+		};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_type = "#STR_Picattinny";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = {{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_deltapoint.rvmat"}},{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_deltapoint_worn.rvmat"}},{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_deltapoint_damage.rvmat"}},{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_deltapoint_badlydamage.rvmat"}},{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_deltapoint_destruct.rvmat"}}};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera = "eyeScope";
+			cameraDir = "cameraDir";
+			modelOptics = "-";
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsPPEffects[] = {};
+			opticSightTexture = "KR\weapons\kr_weaponpack_2\attachments\optics\reticles\deltapoint_mark_ca.paa";
+			opticsZoomMin = 0.5236;
+			opticsZoomMax = 0.5236;
+			opticsZoomInit = 0.5236;
+			distanceZoomMin = 25;
+			distanceZoomMax = 200;
+			discreteDistance[] = {25,50,100,200};
+			discreteDistanceInitIndex = 0;
+			PPMaskProperties[] = {0.5,0.5,0.4,0.05};
+			PPLensProperties[] = {1,0.15,0,0};
+			PPBlurProperties = 0.2;
+			PPDOFProperties[] = {0,0.1,20,200,4,10};
+		};
+		class EnergyManager
+		{
+			hasIcon = 1;
+			energyUsagePerSecond = 0.02;
+			plugType = 1;
+			attachmentAction = 1;
+		};
+	};
+	class kr_holosight_trijicon_rmr: kr_ItemOpticsPicatinny_base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_optics_reflex_trijicon_rmr";
+		descriptionShort = "$STR_kr_weapons_attachments_optics_reflex_trijicon_rmr_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\holosight_trijicon_rmr.p3d";
+		inventorySlot[] = {"weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","PistolHolo1","PistolHolo2"};
+		reversed = 0;
+		weight = 90;
+		itemSize[] = {2,1};
+		dispersionModifier = -0.001;
+		dispersionCondition = "false";
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
+		memoryPointCamera = "eyeScope";
+		cameraDir = "cameraDir";
+		attachments[] = {"BatteryD"};
+		hiddenSelections[] = {"reddot"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 10;
+		};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_type = "#STR_Picattinny";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = {{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\trijicon_rmr.rvmat"}},{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\trijicon_rmr_worn.rvmat"}},{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\trijicon_rmr_damage.rvmat"}},{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\trijicon_rmr_badlydamage.rvmat"}},{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\trijicon_rmr_destruct.rvmat"}}};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera = "eyeScope";
+			cameraDir = "cameraDir";
+			modelOptics = "-";
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsPPEffects[] = {};
+			opticSightTexture = "KR\weapons\kr_weaponpack_2\attachments\optics\reticles\trijicon_rmr_mark_ca.paa";
+			opticsZoomMin = 0.5236;
+			opticsZoomMax = 0.5236;
+			opticsZoomInit = 0.5236;
+			distanceZoomMin = 25;
+			distanceZoomMax = 200;
+			discreteDistance[] = {25,50,100,200};
+			discreteDistanceInitIndex = 0;
+			PPMaskProperties[] = {0.5,0.5,0.4,0.05};
+			PPLensProperties[] = {1,0.15,0,0};
+			PPBlurProperties = 0.2;
+			PPDOFProperties[] = {0,0.1,20,200,4,10};
+		};
+		class EnergyManager
+		{
+			hasIcon = 1;
+			energyUsagePerSecond = 0.02;
+			plugType = 1;
+			attachmentAction = 1;
+		};
+	};
 	class kr_holosight_eotech_xps3: kr_ItemOpticsPicatinny_base
 	{
 		scope = 2;
@@ -519,9 +720,9 @@ class cfgVehicles
 			distanceZoomMax = 200;
 			discreteDistance[] = {25,50,100,200};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.15,0.001};
-			PPLensProperties[] = {1,0.15,0,0};
-			PPBlurProperties = 0.01;
+			PPMaskProperties[] = {0.5,0.5,0.135,0.01};
+			PPLensProperties[] = {0.75,0.02,0.0,0.0};
+			PPBlurProperties = 0.05;
 		};
 		class EnergyManager
 		{
@@ -839,16 +1040,16 @@ class cfgVehicles
 			opticsDisablePeripherialVision = 0.67;
 			opticsFlare = 1;
 			opticsPPEffects[] = {};
-			opticsZoomMin = "0.3926/4";
-			opticsZoomMax = "0.3926/4";
-			opticsZoomInit = "0.3926/4";
+			opticsZoomMin = "0.3926/3";
+			opticsZoomMax = "0.3926/3";
+			opticsZoomInit = "0.3926/3";
 			distanceZoomMin = 100;
 			distanceZoomMax = 600;
 			discreteDistance[] = {100,200,300,400,500,600};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.375,0.05};
-			PPLensProperties[] = {0.5,0.15,0,0};
-			PPBlurProperties = 0.6;
+			PPMaskProperties[] = {0.5,0.5,0.26,0.01};
+			PPLensProperties[] = {2.0,0.01,0.0,0.0};
+			PPBlurProperties = 0.15;
 		};
 		class EnergyManager
 		{
@@ -907,16 +1108,16 @@ class cfgVehicles
 			opticsDisablePeripherialVision = 0.67;
 			opticsFlare = 1;
 			opticsPPEffects[] = {};
-			opticsZoomMin = "0.3926/4";
-			opticsZoomMax = "0.3926/4";
-			opticsZoomInit = "0.3926/4";
+			opticsZoomMin = "0.3926/3";
+			opticsZoomMax = "0.3926/3";
+			opticsZoomInit = "0.3926/3";
 			distanceZoomMin = 100;
 			distanceZoomMax = 600;
 			discreteDistance[] = {100,200,300,400,500,600};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.375,0.05};
-			PPLensProperties[] = {0.5,0.15,0,0};
-			PPBlurProperties = 0.6;
+			PPMaskProperties[] = {0.5,0.5,0.29,0.01};
+			PPLensProperties[] = {1.4,0.01,0.0,0.0};
+			PPBlurProperties = 0.45;
 		};
 		class OpticsInfoWeaponOverride
 		{
@@ -988,9 +1189,9 @@ class cfgVehicles
 			distanceZoomMax = 600;
 			discreteDistance[] = {100,200,300,400,500,600};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.375,0.05};
-			PPLensProperties[] = {0.5,0.15,0,0};
-			PPBlurProperties = 0.6;
+			PPMaskProperties[] = {0.5,0.5,0.27,0.01};
+			PPLensProperties[] = {0.5,0.02,0.0,0.0};
+			PPBlurProperties = 0.1;
 		};
 	};
 	class kr_scope_leupold_mark4_hamr: kr_ItemOpticsPicatinny_base
@@ -998,7 +1199,7 @@ class cfgVehicles
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_scope_leupold_mark4_hamr";
 		descriptionShort = "$STR_kr_weapons_attachments_scope_leupold_mark4_hamr_dsc";
-		model = "\KR\weapons\kr_weaponpack\attachments\optics\picatinny\scope_leupold_mark4_hamr.p3d";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\scope_leupold_mark4_hamr.p3d";
 		inventorySlot[] = {"weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT"};
 		debug_ItemCategory = 3;
 		animClass = "Binoculars";
@@ -1030,7 +1231,7 @@ class cfgVehicles
 				class Health
 				{
 					hitpoints = 50;
-					healthLevels[] = {{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\leupold_mark4_hamr.rvmat"}},{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\leupold_mark4_hamr_worn.rvmat"}},{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\leupold_mark4_hamr_damage.rvmat"}},{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\leupold_mark4_hamr_badlydamage.rvmat"}},{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\leupold_mark4_hamr_destruct.rvmat"}}};
+					healthLevels[] = {{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_mark4_hamr.rvmat"}},{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_mark4_hamr_worn.rvmat"}},{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_mark4_hamr_damage.rvmat"}},{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_mark4_hamr_badlydamage.rvmat"}},{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\leupold_mark4_hamr_destruct.rvmat"}}};
 				};
 			};
 		};
@@ -1042,16 +1243,16 @@ class cfgVehicles
 			opticsDisablePeripherialVision = 0.67;
 			opticsFlare = 1;
 			opticsPPEffects[] = {};
-			opticsZoomMin = "0.3926/4";
-			opticsZoomMax = "0.3926/4";
-			opticsZoomInit = "0.3926/4";
+			opticsZoomMin = "0.6/4";
+			opticsZoomMax = "0.6/4";
+			opticsZoomInit = "0.6/4";
 			distanceZoomMin = 100;
 			distanceZoomMax = 600;
 			discreteDistance[] = {100,200,300,400,500,600};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.5,0.05};
-			PPLensProperties[] = {0.5,0.15,0,0};
-			PPBlurProperties = 0.6;
+			PPMaskProperties[] = {0.5,0.5,0.28,0.01};
+			PPLensProperties[] = {1.2,0.01,0.0,0.0};
+			PPBlurProperties = 0.3;
 		};
 	};
 	class kr_scope_elcan_specter_dr4: kr_ItemOpticsPicatinny_base
@@ -1103,16 +1304,16 @@ class cfgVehicles
 			opticsDisablePeripherialVision = 0.67;
 			opticsFlare = 1;
 			opticsPPEffects[] = {};
-			opticsZoomMin = "0.6/4";
-			opticsZoomMax = "0.6/4";
-			opticsZoomInit = "0.6/4";
+			opticsZoomMin = "0.6/3";
+			opticsZoomMax = "0.6/3";
+			opticsZoomInit = "0.6/3";
 			distanceZoomMin = 100;
 			distanceZoomMax = 600;
 			discreteDistance[] = {100,200,300,400,500,600};
 			discreteDistanceInitIndex = 0;
-			PPMaskProperties[] = {0.5,0.5,0.3,0.05};
-			PPLensProperties[] = {0.5,0.15,0,0};
-			PPBlurProperties = 0.6;
+			PPMaskProperties[] = {0.5,0.5,0.23,0.01};
+			PPLensProperties[] = {1.2,0.0,0.0,0.0};
+			PPBlurProperties = 0.3;
 		};
 		class OpticsInfoWeaponOverride
 		{
@@ -1183,17 +1384,21 @@ class cfgVehicles
 			opticsZoomInit = "0.3926/6";
 			discretefov[] = {"0.1","0.3926/6"};
 			*/
-			opticsZoomMin = "0.45/1";
-			opticsZoomMax = "0.45/6";
-			opticsZoomInit = "0.45/6";
-			discretefov[] = {"0.45/1","0.45/6"};
+			opticsZoomMin = "0.3926/2";
+			opticsZoomMax = "0.3926/6.0";
+			opticsZoomInit = "0.3926/6.0";
+			discretefov[] = {"0.3926/2","0.3926/6.0"};
 			distanceZoomMin = 100;
 			distanceZoomMax = 600;
 			discreteDistance[] = {100,200,300,400,500,600};
 			discreteDistanceInitIndex = 2;
-			PPMaskProperties[] = {0.5,0.5,0.2,0};
-			PPLensProperties[] = {0.7,0.15,0,0};
-			PPBlurProperties = 0.0;
+			PPMaskProperties[] = {0.5,0.5,0.09,0.01};
+			PPLensProperties[] = {0.5,0.0,0.0,0.0};
+			PPBlurProperties = 0.1;
+
+			PPMaskProperties_x6[] = {0.5,0.5,0.35,0.005};
+			PPLensProperties_x6[] = {0.7,0.015,0.0,0.0};
+			PPBlurProperties_x6 = 0.45;
 		};
 	};
 	class kr_optics_sb_pm2: kr_ItemOpticsPicatinny_base
