@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class kr_ak_Base;
@@ -37,7 +38,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 66;
+			strength = 60;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -122,10 +123,12 @@ class cfgWeapons
 		attachments[] = {"kr_muzzle9_19","kr_ak_hndgrd","kr_pp19_receiver","kr_ak_pistolgrip","kr_ak_fstock","kr_ar_bttstck","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOpticsAK","weaponOptics","weaponOpticsDT","kr_ak_handle","weaponWrap"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01.rvmat"};
-		initSpeedMultiplier = 1.0;
-		barrelArmor = 3.7;
-		recoilModifier[] = {2.5,2.5,4};
-		swayModifier[] = {2.5,2.7,2.25};
+		initSpeedMultiplier = 1.1;
+		barrelArmor = 12;
+		weight = 2300;
+		WeaponLength = 0.435;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		itemSize[] = {6,3};
 		modes[] = {"SemiAuto","FullAuto"};
 		class SemiAuto: Mode_SemiAuto
@@ -133,15 +136,15 @@ class cfgWeapons
 			soundSetShot[] = {"Bizon_Shot_SoundSet","Bizon_Tail_SoundSet","Bizon_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"Bizon_silencer_SoundSet","Bizon_silencerTail_SoundSet","Bizon_silencerInteriorTail_SoundSet"},{"Bizon_silencerHomeMade_SoundSet","Bizon_silencerHomeMadeTail_SoundSet","Bizon_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.125;
-			dispersion = 0.00085;
+			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"Bizon_Shot_SoundSet","Bizon_Tail_SoundSet","Bizon_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"Bizon_silencer_SoundSet","Bizon_silencerTail_SoundSet","Bizon_silencerInteriorTail_SoundSet"},{"Bizon_silencerHomeMade_SoundSet","Bizon_silencerHomeMadeTail_SoundSet","Bizon_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.085;
-			dispersion = 0.00085;
+			reloadTime = 0.09;
+			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -155,7 +158,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01_destruct.rvmat"}}};
 				};
 			};
@@ -167,21 +170,24 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_saiga9";
 		descriptionShort = "$STR_weapons_firearms_saiga9_dsc";
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\saiga9.p3d";
-		attachments[] = {"kr_muzzle9_19","kr_ak_hndgrd","kr_pp19_receiver","kr_ak_pistolgrip","kr_ak_fstock","kr_ar_bttstck","kr_foregrip","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOpticsDT","kr_ak_handle","weaponFlashlight","weaponWrap"};
+		attachments[] = {"kr_muzzle9_19","kr_ak_hndgrd","kr_pp19_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOpticsDT","kr_ak_handle","weaponWrap"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9.rvmat"};
 		initSpeedMultiplier = 1.0;
-		barrelArmor = 3.7;
-		recoilModifier[] = {2.5,2.5,4};
-		swayModifier[] = {2.5,2.7,2.25};
+		barrelArmor = 9;
+		weight = 2450;
+		WeaponLength = 0.541;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		itemSize[] = {7,3};
 		modes[] = {"SemiAuto"};
+		
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"Bizon_Shot_SoundSet","Bizon_Tail_SoundSet","Bizon_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"Bizon_silencer_SoundSet","Bizon_silencerTail_SoundSet","Bizon_silencerInteriorTail_SoundSet"},{"Bizon_silencerHomeMade_SoundSet","Bizon_silencerHomeMadeTail_SoundSet","Bizon_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.00085;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -195,7 +201,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9_destruct.rvmat"}}};
 				};
 			};

@@ -10,7 +10,8 @@ class CfgPatches
 	};
 };
 
-class CfgVehicles
+class kr_Gunplay_Base;
+class cfgVehicles
 {
 	class CombatKnife;
 	class kr_karambit: CombatKnife

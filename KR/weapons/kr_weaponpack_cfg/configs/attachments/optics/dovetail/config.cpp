@@ -45,9 +45,9 @@ class cfgVehicles
 		weight = 273;
 		itemSize[] = {2,2};
 		dispersionModifier = -0.0005;
-		dispersionCondition = "false";
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {1.0,1.0,0.95};
 		hiddenSelections[] = {"reddot"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -108,9 +108,9 @@ class cfgVehicles
 		weight = 295;
 		itemSize[] = {2,2};
 		dispersionModifier = -0.0005;
-		dispersionCondition = "false";
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {1.0,1.0,0.95};
 		hiddenSelections[] = {"reddot"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -170,15 +170,15 @@ class cfgVehicles
 		reversed = 0;
 		weight = 520;
 		itemSize[] = {2,2};
-		dispersionModifier = -0.0005;
-		dispersionCondition = "false";
+		dispersionModifier = -0.0006;
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {1.0,1.0,0.94};
 		hiddenSelections[] = {};
 		attachments[] = {};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 10;
+			ergonomics = 6;
 		};
 		class kr_description
 		{
@@ -227,14 +227,14 @@ class cfgVehicles
 		reversed = 0;
 		weight = 450;
 		itemSize[] = {2,2};
-		dispersionModifier = -0.0005;
-		dispersionCondition = "false";
+		dispersionModifier = -0.0007;
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {1.0,1.0,0.93};
 		hiddenSelections[] = {"reddot"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 7;
 		};
 		class kr_description
 		{
@@ -296,16 +296,16 @@ class cfgVehicles
 		simulation = "itemoptics";
 		memoryPointCamera = "eyeScope";
 		cameraDir = "cameraDir";
-		dispersionModifier = -0.001;
-		dispersionCondition = "false";
+		dispersionModifier = -0.0009;
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
-		hiddenSelections[] = {"reddot","reticle_nonglow"};
-		hiddenSelectionsTextures[] = {"","KR\weapons\kr_weaponpack\attachments\optics\reticles\pso_1_reticle_ca.paa"};
-		hiddenSelectionsMaterials[] = {"","dz\weapons\attachments\optics\data\default_black.rvmat"};
+		swayModifier[] = {1.0,1.0,0.9};
+		hiddenSelections[] = {"reddot","reticle_nonglow","camo"};
+		hiddenSelectionsTextures[] = {"","KR\weapons\kr_weaponpack\attachments\optics\reticles\pso_1_reticle_ca.paa","kr\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1_co.paa"};
+		hiddenSelectionsMaterials[] = {"","dz\weapons\attachments\optics\data\default_black.rvmat","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = -5;
 		};
 		class kr_description
 		{
@@ -319,7 +319,14 @@ class cfgVehicles
 				class Health
 				{
 					hitpoints = 50;
-					healthLevels[] = {{1.0,{"DZ\weapons\attachments\optics\data\lensglass_ca.paa","DZ\weapons\attachments\data\svd_scope.rvmat"}},{0.7,{}},{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","DZ\weapons\attachments\data\svd_scope_damage.rvmat"}},{0.3,{}},{0.0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa","DZ\weapons\attachments\data\svd_scope_destruct.rvmat"}}};
+					healthLevels[] = 
+					{	
+						{1.0,{"DZ\weapons\attachments\optics\data\lensglass_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1.rvmat"}},
+						{0.7,{"DZ\weapons\attachments\optics\data\lensglass_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1_worn.rvmat"}},
+						{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1_damage.rvmat"}},
+						{0.3,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1_badlydamage.rvmat"}},
+						{0.0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1_destruct.rvmat"}}
+					};
 				};
 			};
 		};
@@ -369,15 +376,15 @@ class cfgVehicles
 		memoryPointCamera = "eyeScope";
 		cameraDir = "cameraDir";
 		dispersionModifier = -0.001;
-		dispersionCondition = "false";
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {1.0,1.0,0.88};
 		hiddenSelections[] = {"reddot","reticle_nonglow"};
 		hiddenSelectionsTextures[] = {"","KR\weapons\kr_weaponpack\attachments\optics\reticles\pso_1m2_1_reticle_ca.paa"};
 		hiddenSelectionsMaterials[] = {"","dz\weapons\attachments\optics\data\default_black.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -391,7 +398,14 @@ class cfgVehicles
 				class Health
 				{
 					hitpoints = 50;
-					healthLevels[] = {{1.0,{"DZ\weapons\attachments\optics\data\lensglass_ca.paa","DZ\weapons\attachments\data\svd_scope.rvmat"}},{0.7,{}},{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","DZ\weapons\attachments\data\svd_scope_damage.rvmat"}},{0.3,{}},{0.0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa","DZ\weapons\attachments\data\svd_scope_destruct.rvmat"}}};
+					healthLevels[] = 
+					{	
+						{1.0,{"DZ\weapons\attachments\optics\data\lensglass_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1m2_1.rvmat"}},
+						{0.7,{"DZ\weapons\attachments\optics\data\lensglass_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1m2_1_worn.rvmat"}},
+						{0.5,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1m2_1_damage.rvmat"}},
+						{0.3,{"DZ\weapons\attachments\optics\data\lensglass_damage_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1m2_1_badlydamage.rvmat"}},
+						{0.0,{"DZ\weapons\attachments\optics\data\lensglass_destruct_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\dovetail\data\pso_1m2_1_destruct.rvmat"}}
+					};
 				};
 			};
 		};
@@ -434,16 +448,16 @@ class cfgVehicles
 		itemSize[] = {4,3};
 		inventorySlot[] = {"weaponOpticsDT","weaponOpticsAK"};
 		dispersionModifier = -0.001;
-		dispersionCondition = "false";
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {0.9,1.0,0.9};
 		memoryPointCamera = "eyeScope";
 		cameraDir = "cameraDir";
 		repairableWithKits[] = {};
 		repairCosts[] = {};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -15;
+			ergonomics = -10;
 		};
 		class kr_description
 		{
@@ -508,10 +522,10 @@ class cfgVehicles
 		weight = 1900;
 		itemSize[] = {4,3};
 		inventorySlot[] = {"weaponOpticsDT","weaponOpticsAK"};
-		dispersionModifier = -0.001;
-		dispersionCondition = "false";
+		dispersionModifier = -0.0012;
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {0.88,1.0,0.88};
 		memoryPointCamera = "eyeScope_temp";
 		cameraDir = "cameraDir";
 		NVOptic = 1;

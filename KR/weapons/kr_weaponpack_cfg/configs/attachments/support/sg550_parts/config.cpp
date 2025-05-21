@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -56,8 +57,8 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\sg550_stock_tactical.p3d";
 		simpleHiddenSelections[] = {};
 		weight = 480;
-		recoilModifier[] = {1.0,0.7,0.5};
-		swayModifier[] = {0.9,0.9,0.9};
+		recoilModifier[] = {0.9,0.6,0.5};
+		swayModifier[] = {0.85,0.85,0.85};
 		itemSize[] = {3,2};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_stock_tactical_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_stock_tactical.rvmat"};
@@ -91,12 +92,14 @@ class cfgVehicles
 		weight = 350;
 		attachments[] = {"kr_sg550_bipods"};
 		itemSize[] = {4,1};
+		recoilModifier[] = {0.8,0.8,1};	
+		swayModifier[] = {0.8,1,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			bipodSlot = "kr_sg550_bipods";
-			ergonomics = 10;
+			ergonomics = 20;
 		};
 		class kr_firearms
 		{
@@ -133,9 +136,12 @@ class cfgVehicles
 		itemSize[] = {3,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_tactical_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_handguard_tactical.rvmat"};
+		recoilModifier[] = {0.8,0.8,1};	
+		swayModifier[] = {0.55,1,0.55};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 25;
 		};
 		class kr_firearms
 		{
@@ -173,9 +179,12 @@ class cfgVehicles
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg552_handguard_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg552_handguard.rvmat"};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 14;
+			ergonomics = 25;
 		};
 		class kr_firearms
 		{
@@ -209,9 +218,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\sg550_pgrip.p3d";
 		weight = 100;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\sig550_parts\data\sg550_pgrip_co.paa"};
+		recoilModifier[] = {1,1,0.8};	
+		swayModifier[] = {1,1,1};
+		
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 4;
+			ergonomics = 15;
 		};
 		class DamageSystem
 		{

@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -25,9 +26,12 @@ class cfgVehicles
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_colt_m4_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_colt_m4_std.rvmat"};
+		recoilModifier[] = {0.7,0.7,1};	
+		swayModifier[] = {0.65,1,0.65};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 10;
+			ergonomics = 12;
 		};
 		class DamageSystem
 		{
@@ -68,9 +72,12 @@ class cfgVehicles
 		weight = 385;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_adar_wood_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_adar_wood.rvmat"};
+		recoilModifier[] = {0.7,0.7,1};	
+		swayModifier[] = {0.65,1,0.65};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 10;
+			ergonomics = 12;
 		};
 		class DamageSystem
 		{
@@ -108,9 +115,12 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_magpul_moe_sl_s_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_magpul_moe_sl_s.rvmat"};
+		recoilModifier[] = {0.7,0.85,1};	
+		swayModifier[] = {0.85,1,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 11;
+			ergonomics = 8;
 		};
 		class kr_description
 		{
@@ -167,9 +177,12 @@ class cfgVehicles
 		weight = 300;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_fsp_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_fsp.rvmat"};
+		recoilModifier[] = {0.85,0.7,1};	
+		swayModifier[] = {0.85,1,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 12;
+			ergonomics = 8;
 		};
 		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
 		class kr_description
@@ -214,9 +227,12 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_geissele_smr_mk16_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_geissele_smr_mk16.rvmat"};
+		recoilModifier[] = {0.75,0.7,1};	
+		swayModifier[] = {0.75,1,0.75};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 11;
+			ergonomics = 6;
 		};
 		class kr_description
 		{
@@ -295,6 +311,9 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_strike_industries_viper_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_strike_industries_viper.rvmat"};
+		recoilModifier[] = {0.7,0.6,1};	
+		swayModifier[] = {0.7,1,0.7};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 13;
@@ -352,9 +371,12 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar15_hguard_stmarms_9_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_stmarms_9.p3d";
 		weight = 155;
-		attachments[] = {"kr_pointer_1","kr_rail_mount"};
+		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_stmarms_9_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_stmarms_9.rvmat"};
+		recoilModifier[] = {0.6,0.7,1};	
+		swayModifier[] = {0.7,1,0.7};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 14;
@@ -401,7 +423,7 @@ class cfgVehicles
 	class kr_ar15_hguard_stmarms_9_raild: kr_ar15_hguard_stmarms_9
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_stmarms_9_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_left"};
 		class kr_firearms
 		{
 			class barreltype1
@@ -435,9 +457,12 @@ class cfgVehicles
 		itemSize[] = {4,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_unique_ars_was_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_unique_ars_was.rvmat"};
+		recoilModifier[] = {0.55,0.55,1};	
+		swayModifier[] = {0.55,1,0.55};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 25;
 		};
 		class kr_description
 		{
@@ -481,6 +506,9 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_magpul_moe_sl_m_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_magpul_moe_sl_m.rvmat"};
+		recoilModifier[] = {0.65,0.65,1};	
+		swayModifier[] = {0.75,1,0.65};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 13;
@@ -543,6 +571,9 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_aeroknox_ax15_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_aeroknox_ax15.rvmat"};
+		recoilModifier[] = {0.6,0.7,1};	
+		swayModifier[] = {0.65,1,0.75};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 14;
@@ -588,7 +619,7 @@ class cfgVehicles
 	class kr_ar15_hguard_aeroknox_ax15_raild: kr_ar15_hguard_aeroknox_ax15
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_aeroknox_ax15_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right"};
+		attachments[] = {"kr_foregrip","kr_light_right"};
 		class kr_firearms
 		{
 			class barreltype2
@@ -621,9 +652,12 @@ class cfgVehicles
 		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_95_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_95.rvmat"};
+		recoilModifier[] = {0.7,0.7,1};	
+		swayModifier[] = {0.6,1,0.7};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 14;
 		};
 		class kr_description
 		{
@@ -672,9 +706,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_stmarms_12.p3d";
 		weight = 200;
 		itemSize[] = {4,1};
-		attachments[] = {"kr_pointer_1","kr_rail_mount"};
+		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_stmarms_12_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_stmarms_12.rvmat"};
+		recoilModifier[] = {0.6,0.6,1};	
+		swayModifier[] = {0.6,1,0.6};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 16;
@@ -720,7 +757,7 @@ class cfgVehicles
 	class kr_ar15_hguard_stmarms_12_raild: kr_ar15_hguard_stmarms_12
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_stmarms_12_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right"};
+		attachments[] = {"kr_foregrip","kr_light_right"};
 		class kr_firearms
 		{
 			class barreltype2
@@ -751,9 +788,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_stmarms_15.p3d";
 		weight = 220;
 		itemSize[] = {5,1};
-		attachments[] = {"kr_pointer_1","kr_rail_mount"};
+		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_stmarms_15_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_stmarms_15.rvmat"};
+		recoilModifier[] = {0.5,0.7,1};	
+		swayModifier[] = {0.5,1,0.7};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 17;
@@ -791,7 +831,7 @@ class cfgVehicles
 	class kr_ar15_hguard_stmarms_15_raild: kr_ar15_hguard_stmarms_15
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_stmarms_15_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right"};
+		attachments[] = {"kr_foregrip","kr_light_right"};
 		class kr_firearms
 		{
 			class barreltype3
@@ -817,6 +857,9 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_precision_reflex_carbon_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_precision_reflex_carbon.rvmat"};
+		recoilModifier[] = {0.7,0.5,1};	
+		swayModifier[] = {0.7,1,0.5};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 16;
@@ -881,9 +924,12 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_stngr_vypr_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_stngr_vypr.rvmat"};
+		recoilModifier[] = {0.65,0.55,1};	
+		swayModifier[] = {0.65,1,0.65};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 17;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -927,7 +973,7 @@ class cfgVehicles
 	class kr_ar15_hguard_stngr_vypr_raild: kr_ar15_hguard_stngr_vypr
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_stngr_vypr_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right"};
+		attachments[] = {"kr_foregrip","kr_light_right"};
 		class kr_firearms
 		{
 			class barreltype1
@@ -959,13 +1005,14 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_sai_qd_rail_short.p3d";
 		weight = 305;
 		attachments[] = {"kr_rail_mount"};
-		recoilModifier[] = {0.7,0.7,0.7};
-		swayModifier[] = {0.9,0.9,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_sai_qd_rail_short_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_sai_qd_rail_short.rvmat"};
+		recoilModifier[] = {0.55,0.65,1};	
+		swayModifier[] = {0.65,1,0.65};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 16;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -999,7 +1046,7 @@ class cfgVehicles
 	class kr_ar15_hguard_sai_qd_rail_short_raild: kr_ar15_hguard_sai_qd_rail_short
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_sai_qd_rail_short_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
 		class kr_firearms
 		{
 			class barreltype1
@@ -1024,6 +1071,9 @@ class cfgVehicles
 		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_1225_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_1225.rvmat"};
+		recoilModifier[] = {0.8,0.4,1};	
+		swayModifier[] = {0.8,1,0.4};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 17;
@@ -1067,9 +1117,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_sai_qd_rail_long.p3d";
 		weight = 355;
 		itemSize[] = {5,1};
-		attachments[] = {"kr_pointer_1","kr_light_right","kr_light_left","kr_rail_mount"};
+		attachments[] = {"kr_light_right","kr_light_left","kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_sai_qd_rail_long_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_sai_qd_rail_long.rvmat"};
+		recoilModifier[] = {0.45,0.75,1};	
+		swayModifier[] = {0.45,1,0.75};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 18;
@@ -1108,7 +1161,7 @@ class cfgVehicles
 	class kr_ar15_hguard_sai_qd_rail_long_raild: kr_ar15_hguard_sai_qd_rail_long
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_sai_qd_rail_long_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
 		class kr_firearms
 		{
 			class barreltype2
@@ -1132,9 +1185,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_war_sport_lvoa_c.p3d";
 		weight = 650;
 		itemSize[] = {5,1};
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_rail_mount"};
+		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_war_sport_lvoa_c_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_war_sport_lvoa_c.rvmat"};
+		recoilModifier[] = {0.8,0.8,1};	
+		swayModifier[] = {0.4,1,0.4};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 19;
@@ -1173,7 +1229,7 @@ class cfgVehicles
 	class kr_ar15_hguard_war_sport_lvoa_c_raild: kr_ar15_hguard_war_sport_lvoa_c
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_war_sport_lvoa_c_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right"};
+		attachments[] = {"kr_foregrip","kr_light_right"};
 		class kr_firearms
 		{
 			class barreltype2
@@ -1197,9 +1253,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_war_sport_lvoa_s.p3d";
 		weight = 500;
 		itemSize[] = {4,1};
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_rail_mount"};
+		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_war_sport_lvoa_s_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_war_sport_lvoa_s.rvmat"};
+		recoilModifier[] = {0.6,0.5,1};	
+		swayModifier[] = {0.6,1,0.6};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 20;
@@ -1239,7 +1298,7 @@ class cfgVehicles
 	class kr_ar15_hguard_war_sport_lvoa_s_raild: kr_ar15_hguard_war_sport_lvoa_s
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_war_sport_lvoa_s_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right"};
+		attachments[] = {"kr_foregrip","kr_light_right"};
 		class kr_firearms
 		{
 			class barreltype1
@@ -1264,9 +1323,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_lone_star_ion_lite.p3d";
 		weight = 380;
 		itemSize[] = {6,1};
-		attachments[] = {"kr_pointer_1","kr_rail_mount"};
+		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_lone_star_ion_lite_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_lone_star_ion_lite.rvmat"};
+		recoilModifier[] = {0.45,0.45,1};	
+		swayModifier[] = {0.8,1,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 20;
@@ -1303,7 +1365,7 @@ class cfgVehicles
 	class kr_ar15_hguard_lone_star_ion_lite_raild: kr_ar15_hguard_lone_star_ion_lite
 	{
 		displayName = "$STR_kr_weapons_attachments_ar15_hguard_lone_star_ion_lite_raild";
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right"};
+		attachments[] = {"kr_foregrip","kr_light_right"};
 		class kr_firearms
 		{
 			class barreltype4
@@ -1328,9 +1390,12 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_alexander_arms_mk10_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_alexander_arms_mk10.rvmat"};
+		recoilModifier[] = {0.5,0.6,1};	
+		swayModifier[] = {0.75,1,0.75};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 18;
+			ergonomics = 23;
 		};
 		class kr_description
 		{

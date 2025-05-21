@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -138,10 +139,10 @@ class cfgWeapons
 		WeaponLength = 0.811549;
 		itemSize[] = {8,3};
 		weight = 3860;
-		recoilModifier[] = {3.2,3.7,6.2};
-		swayModifier[] = {2.8,2.8,2.8};
-		barrelArmor = 6.3;
-		initSpeedMultiplier = 1.15;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		barrelArmor = 10;
+		initSpeedMultiplier = 1.3;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\g28\data\g28_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\g28\data\g28.rvmat"};
 		modes[] = {"SemiAuto"};
@@ -156,6 +157,15 @@ class cfgWeapons
 				};
 			};
 		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class NoiseShoot
+		{
+			strength = 100;
+			type = "shot";
+		};
 		class kr_description
 		{
 			kr_tier = 4;
@@ -163,10 +173,10 @@ class cfgWeapons
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.12;
-			dispersion = 0.00065;
+			soundSetShot[] = {"G28_Shot_SoundSet","G28_Tail_SoundSet","G28_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"G28_silencerHomeMade_SoundSet","G28_silencerHomeMadeTail_SoundSet","G28_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.135;
+			dispersion = 0.0037;
 			magazineSlot = "magazine";
 		};
 		class kr_firearms

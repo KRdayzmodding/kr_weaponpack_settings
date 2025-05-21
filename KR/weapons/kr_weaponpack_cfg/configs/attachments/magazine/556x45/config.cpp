@@ -16,9 +16,11 @@ class CfgMagazines
 	class kr_magazine_556x45_Base: kr_magazine_Base
 	{
 		scope = 0;
-		ammo = "Bullet_556x45";
+		ammo = "Bullet_556x45_FMJ";
 		ammoItems[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_AP"};
 		weightPerQuantityUnit = 4;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = -3;
@@ -32,9 +34,11 @@ class CfgMagazines
 	class kr_magazine_556x45_G36_Base: kr_magazine_Base
 	{
 		scope = 0;
-		ammo = "Bullet_556x45";
+		ammo = "Bullet_556x45_FMJ";
 		ammoItems[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_AP"};
 		weightPerQuantityUnit = 4;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = -3;
@@ -45,6 +49,7 @@ class CfgMagazines
 			kr_caliber = "5.56x45";
 		};
 	};
+
 	class Mag_556x45_6L29_30Rnd: kr_magazine_556x45_Base
 	{
 		scope = 2;
@@ -71,7 +76,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 100;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\6L29.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\6L29_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\6L29_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\6L29_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\6L29_destruct.rvmat"}}};
 				};
 			};
@@ -91,7 +96,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\CWP_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -2;
+			ergonomics = 2;
 		};
 		class kr_description
 		{
@@ -104,7 +109,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 100;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\CWP.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\CWP_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\CWP_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\CWP_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\CWP_destruct.rvmat"}}};
 				};
 			};
@@ -124,7 +129,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\colt_ar15_std_30Rnd_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -5;
+			ergonomics = -3;
 		};
 		class kr_description
 		{
@@ -137,7 +142,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 100;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\colt_ar15_std_30Rnd.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\colt_ar15_std_30Rnd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\colt_ar15_std_30Rnd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\colt_ar15_std_30Rnd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\colt_ar15_std_30Rnd_destruct.rvmat"}}};
 				};
 			};
@@ -157,7 +162,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\fn_mk16_std_30Rnd_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -4;
+			ergonomics = -1;
 		};
 		class kr_description
 		{
@@ -170,7 +175,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 100;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\fn_mk16_std_30Rnd.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\fn_mk16_std_30Rnd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\fn_mk16_std_30Rnd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\fn_mk16_std_30Rnd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\fn_mk16_std_30Rnd_destruct.rvmat"}}};
 				};
 			};
@@ -203,7 +208,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 100;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_polymer_30Rnd.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_polymer_30Rnd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_polymer_30Rnd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_polymer_30Rnd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_polymer_30Rnd_destruct.rvmat"}}};
 				};
 			};
@@ -236,7 +241,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 100;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_gen_2_pm_30Rnd.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_gen_2_pm_30Rnd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_gen_2_pm_30Rnd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_gen_2_pm_30Rnd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\hk_gen_2_pm_30Rnd_destruct.rvmat"}}};
 				};
 			};
@@ -256,7 +261,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_10_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 7;
 		};
 		class kr_description
 		{
@@ -269,7 +274,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 100;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_10.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_10_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_10_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_10_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_10_destruct.rvmat"}}};
 				};
 			};
@@ -289,7 +294,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_20_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -302,7 +307,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_20.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_20_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_20_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_20_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_20_destruct.rvmat"}}};
 				};
 			};
@@ -320,7 +325,7 @@ class CfgMagazines
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_30.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -333,7 +338,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_30.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_30_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_30_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_30_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_30_destruct.rvmat"}}};
 				};
 			};
@@ -358,10 +363,11 @@ class CfgMagazines
 		weight = 240;
 		itemSize[] = {1,4};
 		count = 40;
+		swayModifier[] = {1.0,1.1,1.1};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_40.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -5;
+			ergonomics = -3;
 		};
 		class kr_description
 		{
@@ -374,7 +380,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_40.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_40_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_40_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_40_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_m3_40_destruct.rvmat"}}};
 				};
 			};
@@ -400,11 +406,12 @@ class CfgMagazines
 		weight = 240;
 		itemSize[] = {2,3};
 		count = 60;
+		swayModifier[] = {1.0,1.15,1.15};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_pmag60.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_pmag60_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -7;
+			ergonomics = -5;
 		};
 		class kr_description
 		{
@@ -417,7 +424,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_pmag60.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_pmag60_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_pmag60_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_pmag60_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\magpul_pmag60_destruct.rvmat"}}};
 				};
 			};
@@ -437,7 +444,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\steel_maritime_30Rnd_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 1;
 		};
 		class kr_description
 		{
@@ -450,7 +457,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\steel_maritime_30Rnd.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\steel_maritime_30Rnd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\steel_maritime_30Rnd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\steel_maritime_30Rnd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\steel_maritime_30Rnd_destruct.rvmat"}}};
 				};
 			};
@@ -466,11 +473,12 @@ class CfgMagazines
 		weight = 240;
 		itemSize[] = {2,3};
 		count = 60;
+		swayModifier[] = {1.0,1.15,1.15};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_60.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_60_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -8;
+			ergonomics = -6;
 		};
 		class kr_description
 		{
@@ -483,7 +491,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_60.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_60_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_60_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_60_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_60_destruct.rvmat"}}};
 				};
 			};
@@ -498,6 +506,7 @@ class CfgMagazines
 		weight = 240;
 		itemSize[] = {2,4};
 		count = 100;
+		swayModifier[] = {1.0,1.35,1.35};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_100.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_100_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -515,7 +524,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_100.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_100_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_100_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_100_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\surefire_mag5_100_destruct.rvmat"}}};
 				};
 			};
@@ -534,7 +543,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\troy_battlemag_30Rnd_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 2;
 		};
 		class kr_description
 		{
@@ -547,7 +556,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\troy_battlemag_30Rnd.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\troy_battlemag_30Rnd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\troy_battlemag_30Rnd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\troy_battlemag_30Rnd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\troy_battlemag_30Rnd_destruct.rvmat"}}};
 				};
 			};
@@ -565,7 +574,7 @@ class CfgMagazines
 		count = 30;
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_co.paa"};
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "5.56x45";
@@ -580,7 +589,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_destruct.rvmat"}}};
 				};
 			};
@@ -596,16 +605,17 @@ class CfgMagazines
 		weight = 360;
 		itemSize[] = {2,3};
 		count = 60;
+		swayModifier[] = {1.0,1.15,1.15};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_co.paa"};
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 3;
 			kr_caliber = "5.56x45";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -4;
+			ergonomics = -5;
 		};
 		class DamageSystem
 		{
@@ -613,7 +623,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\sg550_magazine_destruct.rvmat"}}};
 				};
 			};
@@ -631,7 +641,7 @@ class CfgMagazines
 		count = 30;
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_co.paa"};
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "5.56x45";
@@ -646,7 +656,7 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_destruct.rvmat"}}};
 				};
 			};
@@ -662,16 +672,17 @@ class CfgMagazines
 		weight = 280;
 		itemSize[] = {2,3};
 		count = 60;
+		swayModifier[] = {1.0,1.15,1.15};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_co.paa"};
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 3;
 			kr_caliber = "5.56x45";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -6;
+			ergonomics = -5;
 		};
 		class DamageSystem
 		{
@@ -679,8 +690,130 @@ class CfgMagazines
 			{
 				class Health
 				{
-					hitpoints = 400;
+					hitpoints = 50;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\g36_std_destruct.rvmat"}}};
+				};
+			};
+		};
+		soundImpactType = "plastic";
+	};
+
+	class Mag_556x45_aug_10Rnd: kr_magazine_556x45_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_556x45_aug_10Rnd";
+		descriptionShort = "$STR_kr_magazines_556x45_aug_10Rnd_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\Mag_556x45_aug_10Rnd.p3d";
+		weight = 80;
+		itemSize[] = {1,1};
+		count = 10;
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_10rnd.rvmat"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_10rnd_co.paa"};
+		class kr_description
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 5;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_10rnd.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_10rnd_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_10rnd_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_10rnd_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_10rnd_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		soundImpactType = "plastic";
+	};
+	class Mag_556x45_aug_30Rnd: kr_magazine_556x45_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_556x45_aug_30Rnd";
+		descriptionShort = "$STR_kr_magazines_556x45_aug_30Rnd_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\Mag_556x45_aug_30Rnd.p3d";
+		weight = 150;
+		itemSize[] = {1,3};
+		count = 30;
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_30rnd.rvmat"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_30rnd_co.paa"};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_caliber = "5.56x45";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_30rnd.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_30rnd_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_30rnd_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_30rnd_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_30rnd_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		soundImpactType = "plastic";
+	};
+	class Mag_556x45_aug_42Rnd: kr_magazine_556x45_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_556x45_aug_42Rnd";
+		descriptionShort = "$STR_kr_magazines_556x45_aug_42Rnd_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\Mag_556x45_aug_42Rnd.p3d";
+		weight = 210;
+		itemSize[] = {1,4};
+		count = 42;
+		swayModifier[] = {1,1.1,1.1};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd.rvmat"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd_co.paa"};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "5.56x45";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -5;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd_destruct.rvmat"}}
+					};
 				};
 			};
 		};

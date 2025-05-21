@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","DZ_Weapons_Firearms"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class kr_ak_Base;
@@ -27,8 +28,8 @@ class cfgWeapons
 		WeaponLength = 0.7;
 		barrelArmor = 2.9;
 		initSpeedMultiplier = 1.02;
-		recoilModifier[] = {3,3,4};
-		swayModifier[] = {3.2,3.2,2.85};
+		recoilModifier[] = {1.2,1.2,1.2};
+		swayModifier[] = {1.4,1.2,1.1};
 		magazines[] = {"Mag_762x39_sawed_off_10Rnd","Mag_762x39_6L10_30Rnd","Mag_762x39_ak103_std_30Rnd","Mag_762x39_akms_aluminium_30Rnd","Mag_762x39_fab_defense_ultimag_30Rnd","Mag_762x39_magpul_pmag_30Rnd","Mag_762x39_us_palm_30Rnd","Mag_762x39_rpk_std_40Rnd","Mag_762x39_rpk_std_bakelite_40Rnd","Mag_762x39_x_products_drum_50Rnd","Mag_762x39_promag_drum_73Rnd","Mag_762x39_molot_rpk_drum_75Rnd"};
 		modes[] = {"SemiAuto"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -139,8 +140,10 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_vpo_136";
 		descriptionShort = "$STR_weapons_firearms_vpo_136_dsc";
 		initSpeedMultiplier = 1.0;
-		barrelArmor = 4.67;
-		chamberableFrom[] = {"Ammo_762x39","Ammo_762x39Tracer","kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa"};
+		barrelArmor = 15.0;
+		recoilModifier[] = {1.2,1.2,1.2};
+		swayModifier[] = {1.4,1.2,1.1};
+		chamberableFrom[] = {"Ammo_762x39","Ammo_762x39Tracer","kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa"};
 		kr_bannedAmmo[] = {"Bullet_366TKM_EKO","Bullet_366TKM_FMJ","Bullet_366TKM_Geksa","Bullet_366TKM_custom_ap"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm_vpo\data\vpo_136_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm_vpo\data\vpo_136.rvmat"};
@@ -153,8 +156,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"AKM_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AKM_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.0009;
+			reloadTime = 0.13;
+			dispersion = 0.0035;
 		};
 		class DamageSystem
 		{
@@ -177,7 +180,9 @@ class cfgWeapons
 		attachments[] = {"kr_muzzle366","kr_ak_hndgrd","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","kr_ak_handle","weaponWrap"};
 		initSpeedMultiplier = 1.0;
 		barrelArmor = 4.67;
-		chamberableFrom[] = {"Ammo_762x39","Ammo_762x39Tracer","kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa"};
+		recoilModifier[] = {1.2,1.2,1.2};
+		swayModifier[] = {1.4,1.2,1.1};
+		chamberableFrom[] = {"Ammo_762x39","Ammo_762x39Tracer","kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm_vpo\data\vpo_209_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm_vpo\data\vpo_209.rvmat"};
 		kr_bannedAmmo[] = {"Bullet_762x39_bp","Bullet_762x39_fmj","Bullet_762x39_mai_ap","Bullet_762x39_pp","Bullet_762x39_ps","Bullet_762x39_t45m","Bullet_762x39_us"};
@@ -190,8 +195,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"AKM_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AKM_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.0008;
+			reloadTime = 0.09;
+			dispersion = 0.004;
 		};
 		class DamageSystem
 		{

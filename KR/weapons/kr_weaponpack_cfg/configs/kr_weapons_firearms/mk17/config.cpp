@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -41,6 +42,11 @@ class cfgWeapons
 		{
 			ergonomics = 0;
 		};
+		class NoiseShoot
+		{
+			strength = 100;
+			type = "shot";
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -52,11 +58,7 @@ class cfgWeapons
 				};
 			};
 		};
-		class NoiseShoot
-		{
-			strength = 100;
-			type = "shot";
-		};
+
 		class OpticsInfo: OpticsInfoRifle
 		{
 			memoryPointCamera = "eye";
@@ -154,14 +156,23 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_mk17";
 		descriptionShort = "$STR_weapons_firearms_mk17_dsc";
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_firearms\mk17\mk17_330.p3d";
-		WeaponLength = 0.811549;
+		WeaponLength = 0.543;
 		itemSize[] = {6,3};
 		weight = 3800;
-		barrelArmor = 11.0;
-		initSpeedMultiplier = 1.15;
-		recoilModifier[] = {3.4,3.9,6.4};
-		swayModifier[] = {2.6,2.6,2.6};
+		barrelArmor = 17.0;
+		initSpeedMultiplier = 0.95;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {0.9,0.9,0.9};
 		modes[] = {"SemiAuto","FullAuto"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class NoiseShoot
+		{
+			strength = 80;
+			type = "shot";
+		};
 		class kr_description
 		{
 			kr_tier = 2;
@@ -169,18 +180,18 @@ class cfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00085;
+			soundSetShot[] = {"MK17_Shot_SoundSet","MK17_Tail_SoundSet","MK17_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"MK17_silencerHomeMade_SoundSet","MK17_silencerHomeMadeTail_SoundSet","MK17_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.09;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot[] = {"MK17_Shot_SoundSet","MK17_Tail_SoundSet","MK17_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"MK17_silencerHomeMade_SoundSet","MK17_silencerHomeMadeTail_SoundSet","MK17_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.125;
-			dispersion = 0.00085;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 	};
@@ -190,14 +201,23 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_mk17_406";
 		descriptionShort = "$STR_weapons_firearms_mk17_dsc";
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_firearms\mk17\mk17_406.p3d";
-		WeaponLength = 0.535;
+		WeaponLength = 0.62;
 		itemSize[] = {7,3};
 		weight = 3900;
-		barrelArmor = 12.5;
-		initSpeedMultiplier = 1.1;
-		recoilModifier[] = {3.2,3.6,6};
-		swayModifier[] = {2.8,2.8,2.8};
+		barrelArmor = 17.0;
+		initSpeedMultiplier = 1.0;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
 		modes[] = {"SemiAuto","FullAuto"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class NoiseShoot
+		{
+			strength = 90;
+			type = "shot";
+		};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -205,18 +225,18 @@ class cfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00075;
+			soundSetShot[] = {"MK17_Shot_SoundSet","MK17_Tail_SoundSet","MK17_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"MK17_silencerHomeMade_SoundSet","MK17_silencerHomeMadeTail_SoundSet","MK17_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.09;
+			dispersion = 0.0036;
 			magazineSlot = "magazine";
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot[] = {"MK17_Shot_SoundSet","MK17_Tail_SoundSet","MK17_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"MK17_silencerHomeMade_SoundSet","MK17_silencerHomeMadeTail_SoundSet","MK17_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.125;
-			dispersion = 0.00075;
+			dispersion = 0.0036;
 			magazineSlot = "magazine";
 		};
 	};
@@ -229,11 +249,20 @@ class cfgWeapons
 		WeaponLength = 0.71;
 		itemSize[] = {8,3};
 		weight = 4000;
-		recoilModifier[] = {3,3.2,5.5};
-		swayModifier[] = {3,3,3};
-		barrelArmor = 14.0;
-		initSpeedMultiplier = 1.0;
+		barrelArmor = 17.0;
+		initSpeedMultiplier = 1.1;
+		recoilModifier[] = {1.1,1.1,1.1};
+		swayModifier[] = {1.1,1.1,1.1};
 		modes[] = {"SemiAuto","FullAuto"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class NoiseShoot
+		{
+			strength = 100;
+			type = "shot";
+		};
 		class kr_description
 		{
 			kr_tier = 4;
@@ -241,18 +270,18 @@ class cfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00065;
+			soundSetShot[] = {"MK17_Shot_SoundSet","MK17_Tail_SoundSet","MK17_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"MK17_silencerHomeMade_SoundSet","MK17_silencerHomeMadeTail_SoundSet","MK17_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.09;
+			dispersion = 0.0034;
 			magazineSlot = "magazine";
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot[] = {"MK17_Shot_SoundSet","MK17_Tail_SoundSet","MK17_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"MK17_silencerHomeMade_SoundSet","MK17_silencerHomeMadeTail_SoundSet","MK17_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.125;
-			dispersion = 0.00065;
+			dispersion = 0.0034;
 			magazineSlot = "magazine";
 		};
 	};

@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_weapons_firearms_g28","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -19,14 +20,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_g28_handguard_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\g28_handguards\g28_handguard_extended.p3d";
 		weight = 420;
-		recoilModifier[] = {0.35,0.75,0.75};
-		swayModifier[] = {0.4,0.4,0.4};
+		recoilModifier[] = {0.85,0.85,1};	
+		swayModifier[] = {0.85,1,0.85};
 		itemSize[] = {5,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\g28_handguards\data\extended_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\g28_handguards\data\extended.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 30;
+			ergonomics = 10;
 		};
 		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_bipod","kr_light_left"};
 		class kr_firearms
@@ -69,14 +70,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_g28_handguard_patrol_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\g28_handguards\g28_handguard_patrol.p3d";
 		weight = 420;
-		recoilModifier[] = {0.35,0.75,0.75};
-		swayModifier[] = {0.4,0.4,0.4};
+		recoilModifier[] = {0.7,0.7,1};	
+		swayModifier[] = {0.7,1,0.7};
 		itemSize[] = {4,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\g28_handguards\data\patrol_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\g28_handguards\data\patrol.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 25;
+			ergonomics = 15;
 		};
 		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
 		class kr_description

@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -33,7 +34,7 @@ class cfgWeapons
 		magazineSwitchTime = 0.38;
 		ejectType = 1;
 		spawnDamageRange[] = {0.0,0.6};
-		WeaponLength = 0.8;
+		WeaponLength = 0.7;
 		barrelArmor = 7.5;
 		hiddenSelections[] = {"camo"};
 		simpleHiddenSelections[] = {"hide_muzzle","hide_rails"};
@@ -41,7 +42,7 @@ class cfgWeapons
 		attachments[] = {"kr_muzzle556","weaponOptics","kr_weaponOpticsF2000","weaponWrap"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 30;
 		};
 		class NoiseShoot
 		{
@@ -146,10 +147,10 @@ class cfgWeapons
 	class kr_FN_F2000: kr_FN_F2000_Base
 	{
 		scope = 2;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1.1,1.1,1};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {0.8,0.8,0.8};
 		PPDOFProperties[] = {1,0.1,20.0,200.0,10.0,10.0};
-		initSpeedMultiplier = 1.2;
+		initSpeedMultiplier = 1.1;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\F2000\data\F2000_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\F2000\data\F2000.rvmat"};
 		modes[] = {"SemiAuto","FullAuto"};
@@ -162,16 +163,16 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AUG_silencer_SoundSet","AUG_silencerTail_SoundSet","AUG_silencerInteriorTail_SoundSet"},{"AUG_silencerHomeMade_SoundSet","AUG_silencerHomeMadeTail_SoundSet","AUG_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.095;
-			dispersion = 0.00085;
+			reloadTime = 0.12;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"AUG_Shot_SoundSet","AUG_Tail_SoundSet","AUG_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AUG_silencer_SoundSet","AUG_silencerTail_SoundSet","AUG_silencerInteriorTail_SoundSet"},{"AUG_silencerHomeMade_SoundSet","AUG_silencerHomeMadeTail_SoundSet","AUG_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.065;
-			dispersion = 0.00085;
+			reloadTime = 0.09;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class DamageSystem

@@ -13,6 +13,7 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoPistol;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -27,7 +28,7 @@ class cfgWeapons
 		PPDOFProperties[] = {1,0.55,10,220,4,10};
 		WeaponLength = 0.237;
 		ShoulderDistance = 0.4;
-		barrelArmor = 15;
+		barrelArmor = 10;
 		initSpeedMultiplier = 1;
 		chamberSize = 1;
 		chamberedRound = "";
@@ -35,11 +36,11 @@ class cfgWeapons
 		magazines[] = {"Mag_9x19_pl15_16Rnd"};
 		chamberableFrom[] = {"Ammo_9x19","kr_Ammo_9x19_7n21","kr_Ammo_9x19_7n31","kr_Ammo_9x19_ap_63","kr_Ammo_9x19_gt","kr_Ammo_9x19_pso_gz","kr_Ammo_9x19_rip","kr_Ammo_9x19_quakemaker"};
 		ejectType = 1;
-		recoilModifier[] = {1.2,1.1,1.0};
-		swayModifier[] = {1.1,1.1,0.8};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		class NoiseShoot
 		{
-			strength = 60;
+			strength = 70;
 			type = "shot";
 		};
 		modes[] = {"SemiAuto"};
@@ -47,8 +48,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"aps_Shot_SoundSet","CZ75_Tail_SoundSet","CZ75_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"apb_silencerPro_SoundSet","CZ75_silencerTail_SoundSet","CZ75_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00099;
+			reloadTime = 0.12;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoPistol
@@ -130,7 +131,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 170;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\pl15\data\pl15.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\pl15\data\pl15_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\pl15\data\pl15_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\pl15\data\pl15_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\pl15\data\pl15_destruct.rvmat"}}};
 				};
 			};

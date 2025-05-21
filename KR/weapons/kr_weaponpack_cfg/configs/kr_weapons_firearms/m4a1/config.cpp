@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data","kr_magazine_556x45"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -50,7 +51,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 82;
+			strength = 80;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -152,22 +153,34 @@ class cfgWeapons
 		itemSize[] = {7,3};
 		weight = 3406;
 		WeaponLength = 0.646;
-		initSpeedMultiplier = 0.9;
-		barrelArmor = 8.2;
-		recoilModifier[] = {2.4,2.4,4.6};
-		swayModifier[] = {2.4,2.4,2.35};
+		initSpeedMultiplier = 0.95;
+		barrelArmor = 13;
+		recoilModifier[] = {1.25,1.25,1.2};
+		swayModifier[] = {1.3,1.2,1.6};
 		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "5.56x45";
 		};
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -15;
+		};
+		class NoiseShoot
+		{
+			strength = 70;
+			type = "shot";
+		};
+
 		modes[] = {"SemiAuto","FullAuto"};
+
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.00099;
+			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -175,7 +188,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.065;
-			dispersion = 0.00099;
+			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
 		class DamageSystem
@@ -203,17 +216,17 @@ class cfgWeapons
 		itemSize[] = {8,3};
 		weight = 3449;
 		WeaponLength = 0.744;
-		initSpeedMultiplier = 0.95;
+		initSpeedMultiplier = 1.0;
 		barrelArmor = 9.1;
-		recoilModifier[] = {2.5,2.5,4.5};
-		swayModifier[] = {2.6,2.6,2.4};
+		recoilModifier[] = {1.35,1.35,1.3};
+		swayModifier[] = {1.4,1.3,1.6};
 		modes[] = {"SemiAuto","FullAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.00085;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -221,7 +234,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.065;
-			dispersion = 0.00085;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 		class DamageSystem
@@ -245,6 +258,15 @@ class cfgWeapons
 			barreltype = 2;
 			handguardSlotName = "kr_ar15_hndgrd";
 		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -20;
+		};
+		class NoiseShoot
+		{
+			strength = 75;
+			type = "shot";
+		};
 	};
 	class kr_m4a1_406mm: kr_M4A1_Base
 	{
@@ -256,8 +278,8 @@ class cfgWeapons
 		WeaponLength = 0.772;
 		initSpeedMultiplier = 1.05;
 		barrelArmor = 10.1;
-		recoilModifier[] = {2.6,2.6,4.4};
-		swayModifier[] = {2.7,2.7,2.45};
+		recoilModifier[] = {1.35,1.35,1.3};
+		swayModifier[] = {1.5,1.4,1.6};
 		modes[] = {"SemiAuto","FullAuto"};
 		class DamageSystem
 		{
@@ -275,7 +297,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.008;
+			dispersion = 0.0035;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -283,7 +305,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.065;
-			dispersion = 0.0008;
+			dispersion = 0.0035;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -296,6 +318,15 @@ class cfgWeapons
 			barreltype = 3;
 			handguardSlotName = "kr_ar15_hndgrd";
 		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -25;
+		};
+		class NoiseShoot
+		{
+			strength = 80;
+			type = "shot";
+		};
 	};
 	class kr_m4a1_457mm: kr_M4A1_Base
 	{
@@ -305,10 +336,10 @@ class cfgWeapons
 		itemSize[] = {9,3};
 		weight = 3839;
 		WeaponLength = 0.823;
-		initSpeedMultiplier = 1.2;
+		initSpeedMultiplier = 1.1;
 		barrelArmor = 11.0;
-		recoilModifier[] = {2.7,2.7,4.3};
-		swayModifier[] = {2.8,2.8,2.65};
+		recoilModifier[] = {1.4,1.4,1.3};
+		swayModifier[] = {1.55,1.45,1.65};
 		modes[] = {"SemiAuto","FullAuto"};
 		class DamageSystem
 		{
@@ -326,7 +357,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.0007;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -334,7 +365,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.065;
-			dispersion = 0.0007;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -347,6 +378,15 @@ class cfgWeapons
 			barreltype = 2;
 			handguardSlotName = "kr_ar15_hndgrd";
 		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -30;
+		};
+		class NoiseShoot
+		{
+			strength = 85;
+			type = "shot";
+		};
 	};
 	class kr_m4a1_508mm: kr_M4A1_Base
 	{
@@ -358,8 +398,8 @@ class cfgWeapons
 		WeaponLength = 0.874;
 		initSpeedMultiplier = 1.3;
 		barrelArmor = 12.0;
-		recoilModifier[] = {2.8,2.8,4.2};
-		swayModifier[] = {3,3,2.85};
+		recoilModifier[] = {1.4,1.4,1.3};
+		swayModifier[] = {1.6,1.5,1.7};
 		modes[] = {"SemiAuto","FullAuto"};
 		class kr_description
 		{
@@ -371,7 +411,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.00065;
+			dispersion = 0.0025;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -379,7 +419,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.065;
-			dispersion = 0.00065;
+			dispersion = 0.0025;
 			magazineSlot = "magazine";
 		};
 		class DamageSystem
@@ -397,6 +437,15 @@ class cfgWeapons
 		{
 			barreltype = 5;
 			handguardSlotName = "kr_ar15_hndgrd";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -35;
+		};
+		class NoiseShoot
+		{
+			strength = 90;
+			type = "shot";
 		};
 	};
 };

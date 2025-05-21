@@ -14,6 +14,7 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -25,8 +26,8 @@ class cfgWeapons
 		descriptionShort = "$STR_weapons_rifles_csr50_dsc";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\CSR50.p3d";
 		attachments[] = {"kr_csr50_bipods","kr_ar_pistolgrip","weaponOpticsB","weaponOptics","weaponWrap"};
-		itemSize[] = {10,3};
-		weight = 9750;
+		itemSize[] = {14,3};
+		weight = 9600;
 		absorbency = 0.0;
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
@@ -37,16 +38,16 @@ class cfgWeapons
 		chamberableFrom[] = {"kr_Ammo_50BMG","kr_Ammo_50BMG_AP","kr_Ammo_50BMG_E","kr_Ammo_50BMG_ET","kr_Ammo_50BMG_T"};
 		magazineSwitchTime = 0.4;
 		ejectType = 0;
-		barrelArmor = 28.4;
+		barrelArmor = 20;
 		initSpeedMultiplier = 1.2;
-		recoilModifier[] = {3,3,3};
-		swayModifier[] = {3.2,3.2,1.8};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {0.8,1,1};
 		simpleHiddenSelections[] = {"hide_pistolgrip"};
 		hiddenSelections[] = {"camo"};
 		modes[] = {"Single"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 30;
 		};
 		class kr_description
 		{
@@ -58,7 +59,7 @@ class cfgWeapons
 			soundSetShot[] = {"csr50_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1;
-			dispersion = 0.0005;
+			dispersion = 0.0018;
 			magazineSlot = "magazine";
 		};
 		class Particles
@@ -71,10 +72,10 @@ class cfgWeapons
 				};
 				class MuzzleFlash
 				{
-					overrideParticle = "weapon_shot_cz527_01";
 					ignoreIfSuppressed = 1;
 					illuminateWorld = 1;
-					positionOffset[] = {-0.05,0,0};
+					overrideParticle = "weapon_shot_50BMG";
+					overrideDirectionVector[] = {180,0,0};
 				};
 			};
 			class OnOverheating
@@ -98,7 +99,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 200;
+			strength = 120;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -121,7 +122,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 350;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\CSR50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\data\csr50_destruct.rvmat"}}};
 				};
 			};

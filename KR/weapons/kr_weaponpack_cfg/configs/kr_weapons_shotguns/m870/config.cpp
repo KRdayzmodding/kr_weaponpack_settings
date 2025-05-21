@@ -14,6 +14,7 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoShotgun;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Shotgun_Base;
@@ -40,7 +41,7 @@ class cfgWeapons
 			soundSetShot[] = {"kr_mp133_Shot_SoundSet","Mp133_Tail_SoundSet","Mp133_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_mp133_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1;
-			dispersion = 0.003;
+			dispersion = 0.0038;
 			firespreadangle = 1.1;
 			magazineSlot = "magazine";
 		};
@@ -92,6 +93,13 @@ class cfgWeapons
 				{
 					overrideParticle = "weapon_shot_mp133_01";
 					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
+				};
+				class MuzzleFlash1
+				{
+					overrideParticle = "weapon_shot_pellets";
+					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
 				};
 				class BadlyDamagedChamberSmoke
 				{
@@ -144,11 +152,11 @@ class cfgWeapons
 		itemSize[] = {8,3};
 		weight = 3300;
 		chamberSize = 5;
-		initSpeedMultiplier = 1.75;
+		initSpeedMultiplier = 1.1;
 		WeaponLength = 1.03525;
-		barrelArmor = 12.0;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.3,2.3,1.2};
+		barrelArmor = 20;
+		recoilModifier[] = {1.2,1.2,1.2};
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\m870\data\m870_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\m870\data\m870.rvmat"};
 		class kr_description
@@ -162,7 +170,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\m870\data\m870.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\m870\data\m870_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\m870\data\m870_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\m870\data\m870_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\m870\data\m870_destruct.rvmat"}}};
 				};
 			};

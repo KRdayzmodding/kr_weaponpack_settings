@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -34,15 +35,15 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\pm_parts\pgrip_pm_fd.p3d";
 		weight = 50;
 		itemSize[] = {1,1};
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.8,0.8,0.6};
+		recoilModifier[] = {0.8,0.8,0.8};	
+		swayModifier[] = {0.8,0.8,0.8};
 		attachments[] = {};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\pm_parts\data\pm_fd_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\pm_parts\data\pm_fd.rvmat"};
 		soundImpactType = "plastic";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -69,15 +70,15 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\pm_parts\pgrip_pm_tk.p3d";
 		weight = 220;
 		itemSize[] = {2,1};
-		recoilModifier[] = {0.6,0.7,0.6};
-		swayModifier[] = {0.7,0.7,0.7};
+		recoilModifier[] = {0.75,0.75,0.75};	
+		swayModifier[] = {0.75,0.75,0.75};
 		attachments[] = {"kr_light_pistol"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\pm_parts\data\PM_TK_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\pm_parts\data\PM_TK.rvmat"};
 		soundImpactType = "plastic";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 7;
 		};
 		class kr_description
 		{

@@ -13,6 +13,7 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoPistol;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -20,27 +21,27 @@ class cfgWeapons
 	class kr_p226r_Base: Pistol_Base
 	{
 		scope = 0;
-		weight = 850;
+		weight = 690;
 		absorbency = 0.0;
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.55,10,200,4,10};
-		WeaponLength = 0.22;
+		WeaponLength = 0.21;
 		ShoulderDistance = 0.4;
-		barrelArmor = 11;
-		initSpeedMultiplier = 1;
+		barrelArmor = 7;
+		initSpeedMultiplier = 1.1;
 		chamberSize = 1;
 		chamberedRound = "";
 		magazines[] = {"Mag_9x19_p226r_15Rnd","Mag_9x19_p226r_20Rnd"};
 		chamberableFrom[] = {"Ammo_9x19","kr_Ammo_9x19_7n21","kr_Ammo_9x19_7n31","kr_Ammo_9x19_ap_63","kr_Ammo_9x19_gt","kr_Ammo_9x19_pso_gz","kr_Ammo_9x19_rip","kr_Ammo_9x19_quakemaker"};
 		ejectType = 1;
-		recoilModifier[] = {1.0,1.4,0.95};
-		swayModifier[] = {1.1,1.1,1.2};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		simpleHiddenSelections[] = {"hide_bolt","hide_pgrip"};
 		hiddenSelections[] = {"camo"};
 		class NoiseShoot
 		{
-			strength = 50;
+			strength = 65;
 			type = "shot";
 		};
 		modes[] = {"SemiAuto"};
@@ -48,8 +49,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"p226_Shot_SoundSet","CZ75_Tail_SoundSet","CZ75_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"p226_silencerPro_SoundSet","CZ75_silencerTail_SoundSet","CZ75_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.0045;
+			reloadTime = 0.12;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoPistol
@@ -131,7 +132,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 170;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\p226\data\p226r.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\p226\data\p226r_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\p226\data\p226r_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\p226\data\p226r_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\p226\data\p226r_destruct.rvmat"}}};
 				};
 			};

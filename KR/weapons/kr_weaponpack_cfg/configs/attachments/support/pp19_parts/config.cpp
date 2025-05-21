@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -20,8 +21,8 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\pp19_parts\pp19_receiver_sn.p3d";
 		weight = 240;
 		inventorySlot[] = {"kr_pp19_receiver"};
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {1.0,1.0,1.0};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1.05,1.05,1.05};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\pp19_parts\data\receiver_pp19_sn_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\pp19_parts\data\receiver_pp19_sn.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -65,7 +66,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\pp19_parts\data\receiver_pp19_std.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 0;
 		};
 		class kr_firearms
 		{

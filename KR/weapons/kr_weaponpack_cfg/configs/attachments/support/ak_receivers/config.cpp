@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -19,14 +20,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ak_receiver_akademia_bastion_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_receivers\ak_receiver_akademia_bastion.p3d";
 		weight = 240;
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {1.0,1.0,1.0};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1.3};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_receivers\data\akademia_bastion_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_receivers\data\akademia_bastion.rvmat"};
 		itemSize[] = {3,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 6;
 		};
 		class kr_firearms
 		{
@@ -58,14 +59,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ak_receiver_zenit_b33_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_receivers\ak_receiver_zenit_b33.p3d";
 		weight = 210;
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {1.0,1.0,1.0};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_receivers\data\zenit_b33_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_receivers\data\zenit_b33.rvmat"};
 		itemSize[] = {3,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 3;
 		};
 		class kr_description
 		{
@@ -97,14 +98,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ak_receiver_tws_dog_leg_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_receivers\ak_receiver_tws_dog_leg.p3d";
 		weight = 195;
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {1.0,1.0,1.0};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_receivers\data\tws_dog_leg_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_receivers\data\tws_dog_leg.rvmat"};
 		itemSize[] = {3,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 2;
 		};
 		class kr_firearms
 		{
@@ -136,14 +137,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ak_receiver_fab_defence_pdc_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_receivers\ak_receiver_fab_defence_pdc.p3d";
 		weight = 200;
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {1.0,1.0,1.0};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1.2};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_receivers\data\fab_defence_pdc_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_receivers\data\fab_defence_pdc.rvmat"};
 		itemSize[] = {3,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 5;
 		};
 		class kr_firearms
 		{
@@ -182,7 +183,7 @@ class cfgVehicles
 		itemSize[] = {3,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics = 0;
 		};
 		class kr_firearms
 		{

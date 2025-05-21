@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class kr_ak_Base;
@@ -36,7 +37,7 @@ class cfgWeapons
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 70;
 		};
 		class kr_firearms
 		{
@@ -151,16 +152,16 @@ class cfgWeapons
 		weight = 8200;
 		WeaponLength = 1.15;
 		itemSize[] = {10,4};
-		barrelArmor = 20.5;
-		initSpeedMultiplier = 1.3;
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.9,0.9,0.9};
+		barrelArmor = 8;
+		initSpeedMultiplier = 1.35;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"PKP_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"PKP_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"PKP_silencer_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00065;
+			reloadTime = 0.09;
+			dispersion = 0.003;
 		};
 	};
 };

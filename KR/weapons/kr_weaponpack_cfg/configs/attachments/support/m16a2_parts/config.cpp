@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -27,10 +28,12 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\m16a1_handguard.rvmat"};
 		inventorySlot[] = {"kr_m16_hndgrd"};
 		soundImpactType = "plastic";
+		recoilModifier[] = {0.8,0.8,1};	
+		swayModifier[] = {0.8,1,0.8};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 10;
+			ergonomics = 20;
 		};
 		class DamageSystem
 		{
@@ -63,10 +66,12 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\m16a2_handguard.rvmat"};
 		inventorySlot[] = {"kr_m16_hndgrd"};
 		soundImpactType = "plastic";
+		recoilModifier[] = {0.6,0.6,1};	
+		swayModifier[] = {0.6,1,0.6};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -93,12 +98,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_m16a1_std_dsc";
 		model = "KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\ar_buttstock_m16a1_std.p3d";
 		weight = 280;
+		recoilModifier[] = {1,1,0.85};
+		swayModifier[] = {1,0.9,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\m16_stock_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\m16_stock.rvmat"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 25;
+			ergonomics = 14;
 		};
 
 		class kr_description

@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data","kr_magazine_556x45"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -27,8 +28,8 @@ class cfgWeapons
 		PPDOFProperties[] = {0,0.6,50,200,4,10};
 		attachments[] = {"kr_muzzle556","kr_m16_hndgrd","kr_ar_pistolgrip","kr_ar_bttstck","weaponWrap"};
 		WeaponLength = 0.856;
-		barrelArmor = 4.5;
-		initSpeedMultiplier = 0.8;
+		barrelArmor = 7.5;
+		initSpeedMultiplier = 1.2;
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_AP"};
@@ -38,7 +39,7 @@ class cfgWeapons
 		magazineSwitchTime = 0.5;
 		ejectType = 1;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2,2,1.1};
+		swayModifier[] = {1,1,1};
 		simpleHiddenSelections[] = {"hide_pistolgrip","hide_tube"};
 		reloadAction = "ReloadM4";
 		hiddenSelections[] = {"camo"};
@@ -48,7 +49,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 82;
+			strength = 75;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -140,10 +141,10 @@ class cfgWeapons
 		itemSize[] = {8,3};
 		weight = 3100;
 		WeaponLength = 0.845;
-		initSpeedMultiplier = 0.85;
-		barrelArmor = 10.2;
-		recoilModifier[] = {2.0,2.0,3.6};
-		swayModifier[] = {2.0,2.0,2.0};
+		initSpeedMultiplier = 1.2;
+		barrelArmor = 7.5;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
 		class kr_description
 		{
 			kr_tier = 1;
@@ -154,8 +155,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"M16_Shot_SoundSet","M16_Tail_SoundSet","M16_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M16_silencer_SoundSet","M16_silencerTail_SoundSet","M16_silencerInteriorTail_SoundSet"},{"M16_silencerHomeMade_SoundSet","M16_silencerHomeMadeTail_SoundSet","M16_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.12;
-			dispersion = 0.0006;
+			reloadTime = 0.09;
+			dispersion = 0.0025;
 			magazineSlot = "magazine";
 		};
 		class Burst: Mode_Burst
@@ -164,7 +165,7 @@ class cfgWeapons
 			soundSetShotExt[] = {{"M16_silencer_SoundSet","M16_silencerTail_SoundSet","M16_silencerInteriorTail_SoundSet"},{"M16_silencerHomeMade_SoundSet","M16_silencerHomeMadeTail_SoundSet","M16_silencerInteriorHomeMadeTail_SoundSet"}};
 			burst = 3;
 			reloadTime = 0.065;
-			dispersion = 0.00065;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -185,7 +186,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 300;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\m16a2\data\m16a2.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\m16a2\data\m16a2_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\m16a2\data\m16a2_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\m16a2\data\m16a2_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\m16a2\data\m16a2_destruct.rvmat"}}};
 				};
 			};

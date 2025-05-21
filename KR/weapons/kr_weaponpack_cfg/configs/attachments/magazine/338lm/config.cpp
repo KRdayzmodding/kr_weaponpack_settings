@@ -17,7 +17,8 @@ class CfgMagazines
 	{
 		ammo = "Bullet_338LM_fmj";
 		ammoItems[] = {"kr_Ammo_338LM_fmj","kr_Ammo_338LM_ap","kr_Ammo_338LM_upz","kr_Ammo_338LM_tac_x"};
-		recoilModifier[] = {1.0,1.0,0.95};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};		
 		weightPerQuantityUnit = 35.0;
 		tracersEvery = 0;
 		class kr_description
@@ -101,12 +102,14 @@ class CfgMagazines
 		weight = 150;
 		itemSize[] = {2,2};
 		count = 10;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\338lm\data\mk18_mag_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\338lm\data\mk18_mag.rvmat"};
 		soundImpactType = "metal";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -2;
+			ergonomics = -3;
 		};
 		class kr_description
 		{
@@ -134,6 +137,8 @@ class CfgMagazines
 		weight = 90;
 		itemSize[] = {2,2};
 		count = 10;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		tracersEvery = 0;
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\338lm\data\awm_mag_co.paa"};
@@ -141,7 +146,7 @@ class CfgMagazines
 		soundImpactType = "metal";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -2;
+			ergonomics = -3;
 		};
 		class kr_description
 		{
@@ -170,13 +175,15 @@ class CfgMagazines
 		weightPerQuantityUnit = 10;
 		itemSize[] = {2,2};
 		count = 10;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		tracersEvery = 0;
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\DVL_10\data\dvl10_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\DVL_10\data\DVL_10.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -2;
+			ergonomics = -3;
 		};
 		class kr_description
 		{
@@ -199,12 +206,14 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_338lm_sako85_4Rnd";
-		descriptionShort = "STR_kr_magazines_338lm_sako85_4Rnd_dsc";
+		descriptionShort = "$STR_kr_magazines_338lm_sako85_4Rnd_dsc";
 		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\Mag_338lm_sako85_4Rnd.p3d";
 		weight = 90;
 		weightPerQuantityUnit = 10;
 		itemSize[] = {1,1};
 		count = 4;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		tracersEvery = 0;
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85_co.paa"};
@@ -216,7 +225,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -2;
+			ergonomics = -3;
 		};
 		class DamageSystem
 		{
@@ -239,6 +248,8 @@ class CfgMagazines
 		weight = 90;
 		itemSize[] = {2,2};
 		count = 10;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		tracersEvery = 0;
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\tsvl_mag_co.paa"};
@@ -251,7 +262,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -2;
+			ergonomics = -3;
 		};
 		class DamageSystem
 		{
@@ -261,6 +272,91 @@ class CfgMagazines
 				{
 					hitpoints = 70;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\tsvl_mag.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\tsvl_mag_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\tsvl_mag_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\tsvl_mag_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\tsvl_mag_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class Mag_338lm_axmc_10Rnd: kr_magazine_338_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_338lm_axmc_10Rnd";
+		descriptionShort = "$STR_kr_magazines_338lm_axmc_10Rnd_dsc";
+		model = "KR\weapons\kr_weaponpack\attachments\magazine\338lm\Mag_338_axmc_10Rnd.p3d";
+		weight = 90;
+		itemSize[] = {2,2};
+		count = 10;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
+		tracersEvery = 0;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\axmc\data\axmc_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\axmc\data\axmc.rvmat"};
+
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".338 LM AXMC";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -3;
+		};
+
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\axmc\data\axmc.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\axmc\data\axmc_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\axmc\data\axmc_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\axmc\data\axmc_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\axmc\data\axmc_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class Mag_338lm_mrad_10Rnd: kr_magazine_338_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_338lm_mrad";
+		descriptionShort = "$STR_kr_magazines_338lm_mrad_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\Mag_338lm_mrad_10Rnd.p3d";
+		weight = 125;
+		itemSize[] = {2,2};
+		count = 10;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
+		tracersEvery = 0;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\mrad_mag_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\mrad_mag.rvmat"};
+
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".338 LM MRAD";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -3;
+		};
+
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\mrad_mag.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\mrad_mag_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\mrad_mag_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\mrad_mag_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\data\mrad_mag_destruct.rvmat"}}
+					};
 				};
 			};
 		};

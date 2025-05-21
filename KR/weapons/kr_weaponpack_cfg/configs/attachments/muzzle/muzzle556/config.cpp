@@ -8,6 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_muzzles"};
 	};
 };
+
+class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class kr_suppressor_t1_Base;
@@ -28,6 +30,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qd_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qd.rvmat"};
+		recoilModifier[] = {0.98,0.98,0.98};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = 0;
+		noiseShootModifier = -0.05;
+		barrelArmor = 20000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 10;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "5.56x45";
@@ -38,7 +51,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qd.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qd_destruct.rvmat"}}};
 				};
 			};
@@ -55,6 +68,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_complite_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_complite.rvmat"};
+		recoilModifier[] = {0.98,0.98,0.93};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0005;
+		noiseShootModifier = -0.05;
+		barrelArmor = 20000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 6;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "5.56x45";
@@ -65,7 +89,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_complite.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_complite_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_complite_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_complite_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_complite_destruct.rvmat"}}};
 				};
 			};
@@ -82,6 +106,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_incomplete_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_incomplete.rvmat"};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0008;
+		noiseShootModifier = 0;
+		barrelArmor = 20000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "5.56x45";
@@ -92,7 +127,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_incomplete.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_incomplete_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_incomplete_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_incomplete_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_incomplete_destruct.rvmat"}}};
 				};
 			};
@@ -109,6 +144,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\bulletec_st_6012_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\bulletec_st_6012.rvmat"};
+		recoilModifier[] = {0.97,0.97,0.9};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0005;
+		noiseShootModifier = -0.1;
+		barrelArmor = 15000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 8;
+		};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -120,7 +166,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\bulletec_st_6012.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\bulletec_st_6012_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\bulletec_st_6012_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\bulletec_st_6012_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\bulletec_st_6012_destruct.rvmat"}}};
 				};
 			};
@@ -138,6 +184,17 @@ class cfgVehicles
 		simpleHiddenSelections[] = {"hide_part"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans.rvmat"};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0009;
+		noiseShootModifier = 0;
+		barrelArmor = 15000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -149,7 +206,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_destruct.rvmat"}}};
 				};
 			};
@@ -166,6 +223,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_long_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_long.rvmat"};
+		recoilModifier[] = {0.95,0.95,0.95};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0003;
+		noiseShootModifier = 0;
+		barrelArmor = 15000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 3;
+		};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -177,7 +245,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_long.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_long_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_long_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_long_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle556\data\g36_long_destruct.rvmat"}}};
 				};
 			};
@@ -194,6 +262,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc_3_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc_3.rvmat"};
+		recoilModifier[] = {0.95,0.95,0.87};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0005;
+		noiseShootModifier = -0.15;
+		barrelArmor = 12000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 12;
+		};
+
 		class kr_description
 		{
 			kr_tier = 3;
@@ -205,7 +284,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc_3.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc_3_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc_3_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc_3_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc_3_destruct.rvmat"}}};
 				};
 			};
@@ -222,6 +301,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans.rvmat"};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.001;
+		noiseShootModifier = 0;
+		barrelArmor = 12000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+
 		class kr_description
 		{
 			kr_tier = 3;
@@ -233,7 +323,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\ferfrans_destruct.rvmat"}}};
 				};
 			};
@@ -250,6 +340,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\troy_claymore_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\troy_claymore.rvmat"};
+		recoilModifier[] = {0.93,0.93,0.85};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0005;
+		noiseShootModifier = -0.15;
+		barrelArmor = 9000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 12;
+		};
+
 		class kr_description
 		{
 			kr_tier = 4;
@@ -261,7 +362,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\troy_claymore.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\troy_claymore_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\troy_claymore_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\troy_claymore_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\troy_claymore_destruct.rvmat"}}};
 				};
 			};
@@ -278,6 +379,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\vp_09_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\vp_09.rvmat"};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0011;
+		noiseShootModifier = 0;
+		barrelArmor = 9000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+
 		class kr_description
 		{
 			kr_tier = 4;
@@ -289,7 +401,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\vp_09.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\vp_09_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\vp_09_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\vp_09_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\vp_09_destruct.rvmat"}}};
 				};
 			};
@@ -306,6 +418,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\sdqd_griffin_m4sd_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\sdqd_griffin_m4sd.rvmat"};
+		recoilModifier[] = {0.9,0.9,0.9};
+		swayModifier[] = {1.1,1.1,1.1};
+		dispersionModifier = 0;
+		noiseShootModifier = -0.98;
+		barrelArmor = 5000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -5;
+		};
+
 		class kr_description
 		{
 			kr_tier = 3;
@@ -334,6 +457,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_qdc.rvmat"};
+		recoilModifier[] = {1.0,0.9,0.9};
+		swayModifier[] = {1.2,1.0,1.2};
+		dispersionModifier = 0.0001;
+		noiseShootModifier = -0.95;
+		barrelArmor = 6000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -8;
+		};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -362,6 +496,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle556"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_nt4_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle556\data\kac_nt4.rvmat"};
+		recoilModifier[] = {1.0,1.0,0.9};
+		swayModifier[] = {1.2,1.2,1.2};
+		dispersionModifier = 0.0002;
+		noiseShootModifier = -0.93;
+		barrelArmor = 7000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -10;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "5.56x45";

@@ -28,8 +28,8 @@ class cfgVehicles
 		itemSize[] = {3,1};
 		inventorySlot[] = {"kr_weaponOpticsMosin"};
 		simulation = "itemoptics";
-		dispersionModifier = -0.001;
-		dispersionCondition = "false";
+		dispersionModifier = 0;
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {1,1,1};
 		memoryPointCamera = "eyeScope";
@@ -47,12 +47,12 @@ class cfgVehicles
 */
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -5;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
 			kr_tier = 3;
-			kr_type = "Mosin";
+			kr_type = "#STR_Mosin";
 		};
 		class DamageSystem
 		{
@@ -100,15 +100,15 @@ class cfgVehicles
 		inventorySlot[] = {"kr_weaponOpticsF2000"};
 		selectionFireAnim = "zasleh";
 		simulation = "itemoptics";
-		dispersionModifier = -0.001;
-		dispersionCondition = "false";
+		dispersionModifier = -0.0015;
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {0.75,0.75,0.75};
 		memoryPointCamera = "eyeScope";
 		cameraDir = "cameraDir";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 25;
 		};
 		class kr_description
 		{
@@ -174,21 +174,21 @@ class cfgVehicles
 		itemSize[] = {3,1};
 		rotationFlags = 17;
 		dispersionModifier = -0.001;
-		dispersionCondition = "false";
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {0.6,0.6,0.6};
 		memoryPointCamera = "eyeScope";
 		cameraDir = "cameraDir";
 		inventorySlot[] = {"kr_weaponOpticsG36"};
 		simpleHiddenSelections[] = {"hide"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -5;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
 			kr_tier = 3;
-			kr_type = "G36";
+			kr_type = "H&K G36";
 		};
 		class DamageSystem
 		{
@@ -257,22 +257,22 @@ class cfgVehicles
 		reversed = 0;
 		weight = 680;
 		itemSize[] = {3,2};
-		dispersionModifier = -0.001;
-		dispersionCondition = "false";
+		dispersionModifier = -0.0015;
+		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1,1,1};
+		swayModifier[] = {0.75,0.75,0.75};
 		memoryPointCamera = "eyeScope";
 		cameraDir = "cameraDir";
 		inventorySlot[] = {"kr_weaponOpticsG36"};
 		rotationFlags = 17;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -5;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
 			kr_tier = 4;
-			kr_type = "G36";
+			kr_type = "H&K G36";
 		};
 		class AnimationSources
 		{
@@ -342,7 +342,7 @@ class cfgVehicles
 		reversed = 0;
 		weight = 20;
 		itemSize[] = {1,1};
-		dispersionModifier = -0.0001;
+		dispersionModifier = -0.002;
 		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {1,1,1};
@@ -353,7 +353,7 @@ class cfgVehicles
 		rotationFlags = 17;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics = 4;
 		};
 		class kr_description
 		{
@@ -404,7 +404,7 @@ class cfgVehicles
 		reversed = 0;
 		weight = 20;
 		itemSize[] = {1,1};
-		dispersionModifier = -0.0002;
+		dispersionModifier = -0.0015;
 		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {1,1,1};
@@ -415,7 +415,7 @@ class cfgVehicles
 		rotationFlags = 17;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 3;
 		};
 		class kr_description
 		{
@@ -466,7 +466,7 @@ class cfgVehicles
 		reversed = 0;
 		weight = 20;
 		itemSize[] = {1,1};
-		dispersionModifier = -0.0003;
+		dispersionModifier = -0.001;
 		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {1,1,1};
@@ -477,7 +477,7 @@ class cfgVehicles
 		rotationFlags = 17;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 2;
 		};
 		class kr_description
 		{
@@ -515,6 +515,51 @@ class cfgVehicles
 			PPLensProperties[] = {0,0.0,0,0};
 			PPDOFProperties[] = {0,0.1,20,200,4,10};
 			PPBlurProperties = 0.0;
+		};
+	};
+
+	class kr_optics_AUG_a1: ItemOptics
+	{
+		scope = 1;
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\other\scope_aug_a1.p3d";
+		weight = 1;
+		inventorySlot[] = {"kr_weaponOpticsAUG"};
+		reversed = 0;
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera = "eyeScope";
+			cameraDir = "cameraDir";
+			modelOptics = "-";
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsPPEffects[] = {};
+			opticsZoomMin = "0.5236/1.5";
+			opticsZoomMax = "0.5236/1.5";
+			opticsZoomInit = "0.5236/1.5";
+			distanceZoomMin = 50;
+			distanceZoomMax = 400;
+			discreteDistance[] = {50,100,150,200,300,400};
+			discreteDistanceInitIndex = 1;
+			PPMaskProperties[] = {0.5,0.5,0.185,0.01};
+			PPLensProperties[] = {0.5,0.15,0,0};
+			PPBlurProperties = 0.1;
+		};
+		class OpticsInfoWeaponOverride
+		{
+			memoryPointCamera = "eyeIronsights";
+			cameraDir = "cameraDirIronsights";
+			opticsZoomMin = 0.5236;
+			opticsZoomMax = 0.5236;
+			opticsZoomInit = 0.5236;
+			distanceZoomMin = 50;
+			distanceZoomMax = 400;
+			discreteDistance[] = {50,100,150,200,300,400};
+			discreteDistanceInitIndex = 1;
+			PPDOFProperties[] = {1,0.1,20,200,4,10};
 		};
 	};
 };

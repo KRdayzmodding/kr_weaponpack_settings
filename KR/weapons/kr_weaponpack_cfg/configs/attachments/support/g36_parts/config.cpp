@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -34,11 +35,13 @@ class cfgVehicles
 		itemSize[] = {3,1};
 		attachments[] = {"kr_g36_bipods"};
 		simpleHiddenSelections[] = {};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\g36_a1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\g36_a1.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 17;
+			ergonomics = 5;
 			bipodSlot = "kr_g36_bipods";
 		};
 		class kr_description
@@ -66,8 +69,11 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\g36_handguard_c.p3d";
 		weight = 230;
 		itemSize[] = {2,1};
+		simpleHiddenSelections[] = {"hide_mount"};
 		attachments[] = {"kr_rail_mount"};
 		inventorySlot[] = {"kr_g36c_handguard"};
+		recoilModifier[] = {0.8,0.75,1};	
+		swayModifier[] = {0.8,1,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\g36_c_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\g36_c.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -109,13 +115,16 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\g36_handguard_k.p3d";
 		weight = 280;
 		itemSize[] = {2,1};
+		simpleHiddenSelections[] = {"hide_mount"};
 		attachments[] = {"kr_rail_mount"};
 		inventorySlot[] = {"kr_g36k_handguard"};
+		recoilModifier[] = {0.8,0.8,1};	
+		swayModifier[] = {0.8,1,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\g36_k_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\g36_k.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 16;
+			ergonomics = 10;
 		};
 		class kr_description
 		{
@@ -164,6 +173,8 @@ class cfgVehicles
 		attachments[] = {};
 		simpleHiddenSelections[] = {};
 		weight = 450;
+		recoilModifier[] = {1.0,0.7,0.5};
+		swayModifier[] = {0.9,0.9,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\stock_g36_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\stock_g36_std.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -197,6 +208,8 @@ class cfgVehicles
 		attachments[] = {};
 		simpleHiddenSelections[] = {};
 		weight = 900;
+		recoilModifier[] = {0.95,0.6,0.45};
+		swayModifier[] = {0.85,0.85,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\stock_g36_adjustable_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\stock_g36_adjustable.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -234,7 +247,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\g36_parts\data\g36_ar15_conversion_kit.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = -5;
 		};
 		class kr_description
 		{

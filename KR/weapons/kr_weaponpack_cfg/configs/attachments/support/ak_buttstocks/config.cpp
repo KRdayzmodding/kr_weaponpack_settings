@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_attachments_support"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -24,11 +25,13 @@ class cfgVehicles
 		attachments[] = {"kr_ak_buttpad","kr_tape","kr_meds"};
 		simpleHiddenSelections[] = {"hide_tape","hide_meds"};
 		weight = 350;
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.85,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\plastic_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\plastic.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 22;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -83,11 +86,13 @@ class cfgVehicles
 		attachments[] = {"kr_ak_buttpad","kr_tape","kr_meds"};
 		simpleHiddenSelections[] = {"hide_tape","hide_meds"};
 		weight = 450;
+		recoilModifier[] = {1,1,0.75};
+		swayModifier[] = {1,0.75,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\wood_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\wood.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 21;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -116,11 +121,13 @@ class cfgVehicles
 		attachments[] = {"kr_ak_buttpad","kr_tape","kr_meds"};
 		simpleHiddenSelections[] = {"hide_tape","hide_meds"};
 		weight = 450;
+		recoilModifier[] = {1,1,0.9};
+		swayModifier[] = {1,0.8,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\akm_wood_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\akm_wood.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 20;
+			ergonomics = 10;
 		};
 		class kr_description
 		{
@@ -144,11 +151,13 @@ class cfgVehicles
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_ak_stock_vpo_136";
 		descriptionShort = "$STR_kr_weapons_attachments_ak_stock_vpo_136_dsc";
+		recoilModifier[] = {1,1,0.9};
+		swayModifier[] = {1,0.8,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\vpo_136_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\vpo_136.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 20;
+			ergonomics = 10;
 		};
 		class kr_description
 		{
@@ -172,11 +181,13 @@ class cfgVehicles
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_ak_stock_vpo_209";
 		descriptionShort = "$STR_kr_weapons_attachments_ak_stock_vpo_209_dsc";
+		recoilModifier[] = {1,1,0.9};
+		swayModifier[] = {1,0.8,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\vpo_209_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\vpo_209.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 20;
+			ergonomics = 10;
 		};
 		class kr_description
 		{
@@ -207,13 +218,13 @@ class cfgVehicles
 		weight = 240;
 		haveTube = 1;
 		isTube = 1;
-		recoilModifier[] = {0.97,0.97,0.95};
-		swayModifier[] = {0.97,0.97,0.95};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\akts_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\akts.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -242,11 +253,13 @@ class cfgVehicles
 		attachments[] = {"kr_ak_buttpad","kr_tape"};
 		simpleHiddenSelections[] = {"hide_tape"};
 		weight = 0.264;
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.85,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\rail_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\rail.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 20;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -284,11 +297,13 @@ class cfgVehicles
 		attachments[] = {"kr_ak_buttpad","kr_tape","kr_meds"};
 		simpleHiddenSelections[] = {"hide_tape","hide_meds"};
 		weight = 0.264;
+		recoilModifier[] = {1,1,0.75};
+		swayModifier[] = {1,0.75,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\plastic_f_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\plastic_f.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 22;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -325,11 +340,13 @@ class cfgVehicles
 		inventorySlot[] = {"kr_ak_fstock"};
 		attachments[] = {"kr_ak_buttpad"};
 		weight = 0.37;
+		recoilModifier[] = {1,1,0.9};
+		swayModifier[] = {1,0.8,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\vpo205_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\vpo205.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 22;
+			ergonomics = 10;
 		};
 		class kr_description
 		{
@@ -368,13 +385,13 @@ class cfgVehicles
 		weight = 0.264;
 		haveTube = 1;
 		isTube = 1;
-		recoilModifier[] = {0.97,0.97,0.95};
-		swayModifier[] = {0.97,0.97,0.95};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\akts_fold_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\akts_fold.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -401,6 +418,8 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_bttstck_hexagon_kocherga.p3d";
 		inventorySlot[] = {"kr_ak_stock"};
 		weight = 180;
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.8,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\hexagon_kocherga_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\hexagon_kocherga.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -432,11 +451,13 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_bttstck_fab_defense_uas.p3d";
 		inventorySlot[] = {"kr_ak_stock"};
 		weight = 450;
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.7,0.7};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\fab_defense_uas_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\fab_defense_uas.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 26;
+			ergonomics = 20;
 		};
 		class kr_description
 		{
@@ -463,11 +484,13 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_bttstck_zenit_pt_1.p3d";
 		inventorySlot[] = {"kr_ak_stock"};
 		weight = 320;
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.7,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\zenit_pt_1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\zenit_pt_1.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 27;
+			ergonomics = 18;
 		};
 		class kr_description
 		{
@@ -494,11 +517,13 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_fld_bttstck_zenit_pt_1.p3d";
 		inventorySlot[] = {"kr_ak_fstock"};
 		weight = 320;
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.7,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\zenit_pt_1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\zenit_pt_1.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 27;
+			ergonomics = 18;
 		};
 		class kr_description
 		{
@@ -525,11 +550,13 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_bttstck_promag_archangel_opfor.p3d";
 		inventorySlot[] = {"kr_ak_stock"};
 		weight = 390;
+		recoilModifier[] = {1,1,0.75};
+		swayModifier[] = {1,0.62,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\promag_archangel_opfor_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\promag_archangel_opfor.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 30;
+			ergonomics = 22;
 		};
 		class kr_description
 		{
@@ -556,11 +583,13 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_bttstck_magpul_zhukov_s.p3d";
 		inventorySlot[] = {"kr_ak_stock"};
 		weight = 425;
+		recoilModifier[] = {1,1,0.6};
+		swayModifier[] = {1,0.62,0.75};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\magpul_zhukov_s_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\magpul_zhukov_s.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 31;
+			ergonomics = 20;
 		};
 		class kr_description
 		{
@@ -588,11 +617,13 @@ class cfgVehicles
 		inventorySlot[] = {"kr_ak_stock"};
 		weight = 525;
 		itemSize[] = {3,2};
+		recoilModifier[] = {1,1,0.5};
+		swayModifier[] = {1,0.5,0.5};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\hera_arms_cqr47_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\hera_arms_cqr47.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 32;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -619,11 +650,13 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_bttstck_zenit_pt_3.p3d";
 		inventorySlot[] = {"kr_ak_stock"};
 		weight = 248;
+		recoilModifier[] = {1,1,0.62};
+		swayModifier[] = {1,0.6,0.75};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\zenit_pt_3_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\zenit_pt_3.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 33;
+			ergonomics = 12;
 		};
 		class kr_description
 		{
@@ -650,11 +683,13 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_fld_bttstck_zenit_pt_3.p3d";
 		inventorySlot[] = {"kr_ak_fstock"};
 		weight = 248;
+		recoilModifier[] = {1,1,0.62};
+		swayModifier[] = {1,0.6,0.75};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\zenit_pt_3_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\data\zenit_pt_3.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 33;
+			ergonomics = 12;
 		};
 		class kr_description
 		{

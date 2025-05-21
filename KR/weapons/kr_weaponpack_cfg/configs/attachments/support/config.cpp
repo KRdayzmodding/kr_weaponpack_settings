@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -289,7 +290,7 @@ class cfgVehicles
 			ergonomics = 11;
 		};
 	};
-	class kr_mp5_hndgrd_Base: kr_stock_Base
+	class kr_mp5_hndgrd_Base: kr_hguard_Base
 	{
 		scope = 0;
 		inventorySlot[] = {"kr_mp5_hndgrd"};
@@ -303,7 +304,7 @@ class cfgVehicles
 			ergonomics = 4;
 		};
 	};
-	class kr_g28_hndgrd_Base: kr_stock_Base
+	class kr_g28_hndgrd_Base: kr_hguard_Base
 	{
 		scope = 0;
 		inventorySlot[] = {"kr_g28_hndgrd"};
@@ -538,8 +539,8 @@ class cfgVehicles
 	class kr_ar15_hguard_Base: kr_hguard_Base
 	{
 		scope = 0;
-		simpleHiddenSelections[] = {"hide_mount"};
-		inventorySlot[] = {"kr_ar15_hndgrd"};
+		simpleHiddenSelections[] = {"hide_mount","fold","unfold","front_sights"};
+		inventorySlot[] = {"kr_ar15_hndgrd","kr_ar10_ar15_hndgrd"};
 		itemSize[] = {3,1};
 		soundImpactType = "metal";
 		class kr_description
@@ -670,9 +671,9 @@ class cfgVehicles
 	class kr_ar10_hguard_Base: kr_hguard_Base
 	{
 		scope = 0;
-		inventorySlot[] = {"kr_ar10_hndgrd"};
+		inventorySlot[] = {"kr_ar10_ar15_hndgrd","kr_ar10_hndgrd"};
 		itemSize[] = {4,1};
-		simpleHiddenSelections[] = {"hide_mount"};
+		simpleHiddenSelections[] = {"hide_mount","fold","unfold","front_sights"};
 		soundImpactType = "metal";
 		class kr_description
 		{
@@ -901,7 +902,7 @@ class cfgVehicles
 		swayModifier[] = {0.8,0.8,0.8};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 20;
 		};
 		class kr_description
 		{
@@ -1055,7 +1056,7 @@ class cfgVehicles
 		swayModifier[] = {0.7,0.7,0.7};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 4;
 		};
 		class kr_description
 		{
@@ -1118,6 +1119,44 @@ class cfgVehicles
 		class kr_description
 		{
 			kr_type = "TT";
+		};
+	};
+
+	class kr_mcx_spear_hguard_Base: kr_hguard_Base
+	{
+		scope = 0;
+		inventorySlot[] = {"kr_spear_handguard"};
+		soundImpactType = "metal";
+		simpleHiddenSelections[] = 
+		{
+			"hide_mount",
+			"fold",
+			"unfold",
+			"front_sights"
+		};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_type = "MCX SPEAR";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 11;
+		};
+	};
+	class kr_mcx_spear_stock_Base: kr_stock_Base
+	{
+		scope = 0;
+		inventorySlot[] = {"kr_spear_stock"};
+		soundImpactType = "metal";
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_type = "MCX SPEAR";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 11;
 		};
 	};
 };

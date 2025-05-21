@@ -8,6 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_muzzles"};
 	};
 };
+
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -20,7 +22,7 @@ class cfgVehicles
 	class kr_muzzle_t4_Base;
 	class kr_muzzle277_suppressor_SLX68: kr_suppressor_t2_Base
 	{
-		scope = 2;
+		scope = 0;
 		displayName = "$STR_kr_weapons_attachments_muzzle277_suppressor_SLX68";
 		descriptionShort = "$STR_kr_weapons_attachments_muzzle277_suppressor_SLX68_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle277\muzzle277_suppressor_SLX68.p3d";

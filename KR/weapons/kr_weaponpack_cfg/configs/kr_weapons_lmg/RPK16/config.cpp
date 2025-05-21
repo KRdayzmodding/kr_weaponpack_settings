@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class kr_ak_Base;
@@ -56,7 +57,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 350;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\rpk16\data\rpk16.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\rpk16\data\rpk16_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\rpk16\data\rpk16_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\rpk16\data\rpk16_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_lmg\rpk16\data\rpk16_destruct.rvmat"}}};
 				};
 			};
@@ -69,10 +70,10 @@ class cfgWeapons
 		weight = 3820;
 		WeaponLength = 0.595;
 		itemSize[] = {8,3};
-		barrelArmor = 8.6;
-		initSpeedMultiplier = 1.02;
-		recoilModifier[] = {2.8,3.1,4.3};
-		swayModifier[] = {2.8,2.8,2.5};
+		barrelArmor = 10;
+		initSpeedMultiplier = 1.3;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {0.85,0.85,0.85};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -83,14 +84,14 @@ class cfgWeapons
 			soundSetShot[] = {"AK_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AK_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.125;
-			dispersion = 0.00075;
+			dispersion = 0.0032;
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"AK_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AK_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.092;
-			dispersion = 0.00075;
+			reloadTime = 0.09;
+			dispersion = 0.0032;
 		};
 	};
 	class kr_rpk16_550mm: kr_rpk16_Base
@@ -100,30 +101,34 @@ class cfgWeapons
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_lmg\rpk16\rpk16_550.p3d";
 		weight = 4250;
 		WeaponLength = 0.795;
-		barrelArmor = 12.0;
+		barrelArmor = 12.244;
 		itemSize[] = {9,3};
-		initSpeedMultiplier = 1.07;
-		recoilModifier[] = {2.8,2.9,4.3};
-		swayModifier[] = {2.8,2.8,2.5};
+		initSpeedMultiplier = 1.5;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		class kr_description
 		{
 			kr_tier = 4;
 			kr_caliber = "5.45x39";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -5;
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"AK_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AK_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.125;
-			dispersion = 0.0006;
+			dispersion = 0.0029;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"AK_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AK_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.092;
-			dispersion = 0.0006;
+			reloadTime = 0.09;
+			dispersion = 0.0029;
 			magazineSlot = "magazine";
 		};
 	};

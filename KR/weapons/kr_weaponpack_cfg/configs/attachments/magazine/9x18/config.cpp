@@ -18,6 +18,8 @@ class CfgMagazines
 		scope = 0;
 		ammo = "Bullet_9x18_ppt_gz";
 		ammoItems[] = {"Ammo_380","kr_Ammo_9x18_ppt_gz","kr_Ammo_9x18_pbm_gz","kr_Ammo_9x18_pmm_gz","kr_Ammo_9x18_pso_gz","kr_Ammo_9x18_pst_gz","kr_Ammo_9x18_sp7_gz"};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		weightPerQuantityUnit = 4;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -104,6 +106,7 @@ class CfgMagazines
 		weight = 240;
 		itemSize[] = {3,3};
 		count = 84;
+		swayModifier[] = {1.0,1.25,1.25};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x18\data\pm_mag_84.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x18\data\pm_mag_84_co.paa"};
 		soundImpactType = "metal";
@@ -120,7 +123,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -9;
+			ergonomics = -20;
 		};
 		class kr_description
 		{

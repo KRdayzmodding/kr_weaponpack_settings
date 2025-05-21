@@ -10,6 +10,7 @@ class CfgPatches
 	};
 };
 class Entity;
+class kr_Gunplay_Base;
 class CfgAmmo
 {
 	class ShotgunCore;

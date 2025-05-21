@@ -13,6 +13,7 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoPistol;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -27,20 +28,20 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {0,0.55,10,280,4,10};
 		ShoulderDistance = 0.4;
-		barrelArmor = 8;
-		initSpeedMultiplier = 0.8;
+		barrelArmor = 5;
+		initSpeedMultiplier = 1.02;
 		chamberSize = 1;
 		chamberedRound = "";
 		magazines[] = {"Mag_9x18_apb_20Rnd"};
 		chamberableFrom[] = {"Ammo_380","kr_Ammo_9x18_ppt_gz","kr_Ammo_9x18_pbm_gz","kr_Ammo_9x18_pmm_gz","kr_Ammo_9x18_pso_gz","kr_Ammo_9x18_pst_gz","kr_Ammo_9x18_sp7_gz"};
 		ejectType = 1;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1.2,1.2,0.8};
+		swayModifier[] = {1,1,1};
 		itemSize[] = {3,2};
 		hiddenSelections[] = {"camo"};
 		class NoiseShoot
 		{
-			strength = 45;
+			strength = 70;
 			type = "shot";
 		};
 		modes[] = {"SemiAuto","FullAuto"};
@@ -48,16 +49,16 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"aps_Shot_SoundSet","Makarov_Tail_SoundSet","Makarov_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"apb_silencerPro_SoundSet","Makarov_silencerTail_SoundSet","Makarov_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.125;
-			dispersion = 0.0045;
+			reloadTime = 0.12;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"aps_Shot_SoundSet","Makarov_Tail_SoundSet","Makarov_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"apb_silencerPro_SoundSet","Makarov_silencerTail_SoundSet","Makarov_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.099;
-			dispersion = 0.0099;
+			reloadTime = 0.12;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoPistol
@@ -124,11 +125,12 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
 			kr_tier = 1;
+			kr_caliber = "9x18";
 		};
 		class DamageSystem
 		{
@@ -136,7 +138,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 220;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_destruct.rvmat"}}};
 				};
 			};
@@ -152,9 +154,12 @@ class cfgWeapons
 		WeaponLength = 0.272;
 		weight = 1600;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_co.paa"};
+		swayModifier[] = {1,1,1};
+		barrelArmor = 4;
+		initSpeedMultiplier = 1.05;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -167,7 +172,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 220;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\aps\data\aps_destruct.rvmat"}}};
 				};
 			};

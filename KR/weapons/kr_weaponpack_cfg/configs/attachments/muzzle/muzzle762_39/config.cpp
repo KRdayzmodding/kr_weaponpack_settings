@@ -8,6 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_muzzles"};
 	};
 };
+
+class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class kr_suppressor_t1_Base;
@@ -28,6 +30,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\akm_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\akm_std.rvmat"};
+		recoilModifier[] = {0.98,0.98,0.93};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0003;
+		noiseShootModifier = -0.05;
+		barrelArmor = 20000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 6;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "7.62x39";
@@ -38,7 +51,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\akm_std.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\akm_std_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\akm_std_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\akm_std_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\akm_std_destruct.rvmat"}}};
 				};
 			};
@@ -55,6 +68,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\izhmash_akml_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\izhmash_akml.rvmat"};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0008;
+		noiseShootModifier = 0;
+		barrelArmor = 20000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "7.62x39";
@@ -65,7 +89,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\izhmash_akml.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\izhmash_akml_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\izhmash_akml_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\izhmash_akml_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\izhmash_akml_destruct.rvmat"}}};
 				};
 			};
@@ -94,6 +118,16 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\spike_tactical_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\spike_tactical.rvmat"};
+		recoilModifier[] = {0.97,0.97,0.9};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0005;
+		noiseShootModifier = -0.1;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 8;
+		};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -105,7 +139,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\spike_tactical.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\spike_tactical_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\spike_tactical_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\spike_tactical_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\spike_tactical_destruct.rvmat"}}};
 				};
 			};
@@ -119,10 +153,20 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\muzzle762_39_flashhider_srvv.p3d";
 		weight = 435;
 		itemModelLength = 0.095;
-		barrelArmor = 20000;
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\srvv_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\srvv.rvmat"};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.001;
+		noiseShootModifier = 0;
+		barrelArmor = 12000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+
 		class kr_description
 		{
 			kr_tier = 3;
@@ -134,12 +178,13 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\srvv.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\srvv_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\srvv_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\srvv_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\srvv_destruct.rvmat"}}};
 				};
 			};
 		};
 	};
+
 	class kr_muzzle762_39_flashhider_venom_antidote: kr_muzzle_t4_Base
 	{
 		scope = 2;
@@ -148,10 +193,20 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\muzzle762_39_flashhider_venom_antidote.p3d";
 		weight = 435;
 		itemModelLength = 0.082;
-		barrelArmor = 20000;
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\venom_antidote_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\venom_antidote.rvmat"};
+		recoilModifier[] = {0.93,0.93,0.85};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = -0.0005;
+		noiseShootModifier = -0.15;
+		barrelArmor = 9000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 12;
+		};
+
 		class kr_description
 		{
 			kr_tier = 4;
@@ -163,7 +218,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 10;
+					hitpoints = 25;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\venom_antidote.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\venom_antidote_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\venom_antidote_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\venom_antidote_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\venom_antidote_destruct.rvmat"}}};
 				};
 			};
@@ -180,6 +235,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\hexagon_akm_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\hexagon_akm.rvmat"};
+		recoilModifier[] = {1.0,1.0,0.9};
+		swayModifier[] = {1.2,1.2,1.2};
+		dispersionModifier = 0.0002;
+		noiseShootModifier = -0.93;
+		barrelArmor = 7000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -10;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "7.62x39";
@@ -207,6 +273,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\hexagon_dtkp_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\hexagon_dtkp.rvmat"};
+		recoilModifier[] = {1.0,0.9,0.9};
+		swayModifier[] = {1.2,1.0,1.2};
+		dispersionModifier = 0.0001;
+		noiseShootModifier = -0.95;
+		barrelArmor = 6000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -8;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "7.62x39";
@@ -235,6 +312,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\pbs1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\pbs1.rvmat"};
+		recoilModifier[] = {1.0,0.9,0.9};
+		swayModifier[] = {1.0,1.2,1.2};
+		dispersionModifier = 0.0001;
+		noiseShootModifier = -0.95;
+		barrelArmor = 6000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -8;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "7.62x39";
@@ -263,6 +351,17 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle762_39"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\zenit_dtk4m_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\zenit_dtk4m.rvmat"};
+		recoilModifier[] = {0.93,0.93,0.85};
+		swayModifier[] = {1.0,1.0,1.0};
+		dispersionModifier = 0;
+		noiseShootModifier = -0.98;
+		barrelArmor = 5000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -5;
+		};
+
 		class kr_description
 		{
 			kr_caliber = "7.62x39";

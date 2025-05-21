@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Weapons_Optics"};
 	};
 };
+class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class ItemOptics;

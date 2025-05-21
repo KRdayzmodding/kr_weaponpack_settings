@@ -9,6 +9,7 @@ class CfgPatches
 		magazines[] = {};
 	};
 };
+class kr_Gunplay_Base;
 class CfgMagazines
 {
 	class Magazine_Base;

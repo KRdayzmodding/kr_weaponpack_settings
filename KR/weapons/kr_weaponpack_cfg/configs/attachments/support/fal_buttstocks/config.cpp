@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -21,8 +22,8 @@ class cfgVehicles
 		simpleHiddenSelections[] = {"hide_tubepart"};
 		attachments[] = {"kr_ar_bttstck"};
 		weight = 472;
-		recoilModifier[] = {0.97,0.97,0.95};
-		swayModifier[] = {0.97,0.97,0.95};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		itemSize[] = {2,1};
 		haveTube = 1;
 		isTube = 1;
@@ -30,7 +31,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\buffertube_apadter.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -56,13 +57,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_fal_stock_humpback_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\fal_bttstck_humpback.p3d";
 		weight = 800;
-		recoilModifier[] = {0.8,0.4,0.4};
-		swayModifier[] = {0.85,0.85,0.85};
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.85,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\humpback_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\humpback.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 20;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -88,13 +89,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_fal_stock_magpul_prs_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\fal_bttstck_magpul_prs.p3d";
 		weight = 860;
-		recoilModifier[] = {0.73,0.33,0.33};
-		swayModifier[] = {0.7,0.6,0.5};
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.7,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\magpul_prs_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\magpul_prs.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 30;
+			ergonomics = 11;
 		};
 		class kr_description
 		{
@@ -120,13 +121,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_fal_stock_para_brs_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\fal_bttstck_para_brs.p3d";
 		weight = 810;
-		recoilModifier[] = {0.75,0.35,0.35};
-		swayModifier[] = {0.75,0.65,0.55};
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.7,0.7};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\para_brs_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\para_brs.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 25;
+			ergonomics = 13;
 		};
 		class kr_description
 		{
@@ -152,13 +153,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_fal_stock_para_folding_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\fal_bttstck_para_folding.p3d";
 		weight = 800;
-		recoilModifier[] = {0.8,0.4,0.4};
-		swayModifier[] = {0.85,0.85,0.85};
+		recoilModifier[] = {1,1,0.9};
+		swayModifier[] = {1,0.8,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\para_folding_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\para_folding.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 27;
+			ergonomics = 8;
 		};
 		class kr_description
 		{
@@ -184,13 +185,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_fal_stock_para_spr_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\fal_bttstck_para_spr.p3d";
 		weight = 950;
-		recoilModifier[] = {0.73,0.33,0.33};
-		swayModifier[] = {0.7,0.6,0.5};
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.65,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\para_spr_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_buttstocks\data\para_spr.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 30;
+			ergonomics = 15;
 		};
 		class kr_description
 		{

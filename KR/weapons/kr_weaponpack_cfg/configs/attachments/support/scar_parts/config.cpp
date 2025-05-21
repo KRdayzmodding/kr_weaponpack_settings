@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -22,11 +23,11 @@ class cfgVehicles
 		weight = 0.25;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\scar_parts\data\scar_stock_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\scar_parts\data\scar_stock_std.rvmat"};
-		recoilModifier[] = {0.3,0.3,0.3};
-		swayModifier[] = {0.3,0.3,0.3};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 29;
+			ergonomics = 20;
 		};
 		class kr_description
 		{

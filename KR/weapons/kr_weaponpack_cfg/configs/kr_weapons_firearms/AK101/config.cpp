@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class kr_ak_Base;
@@ -22,25 +23,25 @@ class cfgWeapons
 		scope = 0;
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_firearms\ak101\ak101.p3d";
 		attachments[] = {"kr_muzzle556","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
-		weight = 2400;
-		WeaponLength = 0.56;
+		weight = 2600;
+		WeaponLength = 0.66;
 		itemSize[] = {8,3};
 		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_AP"};
 		magazines[] = {"Mag_556x45_CWP_30Rnd","Mag_556x45_6L29_30Rnd"};
 		barrelArmor = 6.6;
 		initSpeedMultiplier = 1.1;
-		recoilModifier[] = {2.5,2.5,4};
-		swayModifier[] = {3,3,2.85};
+		recoilModifier[] = {1.15,1.15,1.2};
+		swayModifier[] = {1.5,1.3,1.1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = -10;
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"AK_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AK_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.092;
-			dispersion = 0.00065;
+			reloadTime = 0.09;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class SemiAuto: Mode_SemiAuto
@@ -48,7 +49,7 @@ class cfgWeapons
 			soundSetShot[] = {"AK_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AK_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.00065;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -64,17 +65,17 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 100;
+			strength = 80;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
 		{
 			memoryPointCamera = "eye";
-			discreteDistance[] = {100,200,300,400,500};
+			discreteDistance[] = {100,200,300};
 			discreteDistanceInitIndex = 0;
 			modelOptics = "-";
 			distanceZoomMin = 100;
-			distanceZoomMax = 500;
+			distanceZoomMax = 300;
 		};
 		class DamageSystem
 		{

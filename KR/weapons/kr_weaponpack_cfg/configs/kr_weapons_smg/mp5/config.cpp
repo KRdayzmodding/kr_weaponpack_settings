@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -38,39 +39,39 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 66;
+			strength = 60;
 			type = "shot";
 		};
 		modes[] = {"SemiAuto","Burst","FullAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"MP5K_Shot_SoundSet","MP5K_Tail_SoundSet","MP5K_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"MP5K_silencerPro_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"}};
+			soundSetShotExt[] = {{"MP5K_1st_silencer_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"}};
 			reloadTime = 0.12;
 			recoil = "recoil_mp5";
 			recoilProne = "recoil_mp5_prone";
-			dispersion = 0.003;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 		class Burst: Mode_Burst
 		{
 			soundSetShot[] = {"MP5K_Shot_SoundSet","MP5K_Tail_SoundSet","MP5K_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"MP5K_silencerPro_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"}};
+			soundSetShotExt[] = {{"MP5K_1st_silencer_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"}};
 			burst = 3;
 			reloadTime = 0.065;
 			recoil = "recoil_mp5";
 			recoilProne = "recoil_mp5_prone";
-			dispersion = 0.003;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			soundSetShot[] = {"MP5K_Shot_SoundSet","MP5K_Tail_SoundSet","MP5K_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"MP5K_silencerPro_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.065;
+			soundSetShot[] = {"MP5K_Shot_1st_SoundSet","MP5K_Shot_1st_iterior_SoundSet","MP5K_Tail_SoundSet","MP5K_InteriorTail_SoundSet","MP5K_Slapback_SoundSet","MP5K_Tail_2D_SoundSet"};
+			soundSetShotExt[] = {{"MP5K_1st_silencer_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"},{"MP5K_1st_silencerHomeMade_SoundSet","MP5K_silencerHomeMadeTail_SoundSet","MP5K_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.09;
 			recoil = "recoil_mp5";
 			recoilProne = "recoil_mp5_prone";
-			dispersion = 0.003;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -160,11 +161,11 @@ class cfgWeapons
 		weight = 2300;
 		model = "KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\MP5.p3d";
 		WeaponLength = 0.391;
-		barrelArmor = 9;
-		initSpeedMultiplier = 1.2;
-		recoilModifier[] = {1.7,1.7,1.7};
-		swayModifier[] = {2.1,2.1,1.9};
-		attachments[] = {"kr_mp5_hndgrd","kr_mp5_mount","weaponOptics","weaponOptics1","kr_mp5_stock"};
+		barrelArmor = 10;
+		initSpeedMultiplier = 1;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
+		attachments[] = {"kr_muzzle9_19","kr_mp5_hndgrd","kr_mp5_mount","weaponOptics","weaponOptics1","kr_mp5_stock"};
 		simpleHiddenSelections[] = {"hide_barrel","hide_stock"};
 		class kr_firearms
 		{
@@ -174,6 +175,11 @@ class cfgWeapons
 		itemSize[] = {6,3};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5_CO.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5.rvmat"};
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
 		class kr_description
 		{
 			kr_tier = 2;
@@ -185,7 +191,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5_destruct.rvmat"}}};
 				};
 			};
@@ -199,15 +205,19 @@ class cfgWeapons
 		weight = 1840;
 		model = "KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\MP5k.p3d";
 		WeaponLength = 0.272;
-		barrelArmor = 7.6;
-		initSpeedMultiplier = 1.0;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1.3,1.3,1.2};
+		barrelArmor = 13;
+		initSpeedMultiplier = 0.9;
+		recoilModifier[] = {0.7,0.7,0.7};
+		swayModifier[] = {0.8,0.8,0.8};
 		attachments[] = {"kr_mp5_hndgrd","kr_mp5_mount","weaponOptics"};
 		class kr_firearms
 		{
 			barreltype = 2;
 			handguardSlotName = "kr_mp5_hndgrd";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 30;
 		};
 		itemSize[] = {4,3};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5k_CO.paa"};
@@ -223,7 +233,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5k.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5k_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5k_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5k_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5k_destruct.rvmat"}}};
 				};
 			};
@@ -237,10 +247,10 @@ class cfgWeapons
 		weight = 2700;
 		model = "KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\MP5sd.p3d";
 		WeaponLength = 0.477;
-		barrelArmor = 5.7;
+		barrelArmor = 7;
 		initSpeedMultiplier = 0.9;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1.5,1.5,1.7};
+		recoilModifier[] = {0.7,0.7,0.7};
+		swayModifier[] = {0.8,0.8,0.8};
 		attachments[] = {"kr_mp5_hndgrd","kr_mp5_mount","weaponOptics","weaponOptics1","kr_mp5_stock"};
 		class kr_firearms
 		{
@@ -250,6 +260,11 @@ class cfgWeapons
 		itemSize[] = {6,3};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5sd_CO.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5sd.rvmat"};
+		class NoiseShoot
+		{
+			strength = 10;
+			type = "sound";
+		};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -257,15 +272,28 @@ class cfgWeapons
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"MP5K_silencerPro_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"};
+			soundSetShot[] = {"MP5K_1st_silencer_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"};
+			soundSetShotExt[] = {};
+			reloadTime = 0.12;
+			dispersion = 0.004;
+			magazineSlot = "magazine";
 		};
 		class Burst: Mode_Burst
 		{
-			soundSetShot[] = {"MP5K_silencerPro_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"};
+			soundSetShot[] = {"MP5K_1st_silencer_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"};
+			soundSetShotExt[] = {};
+			burst = 3;
+			reloadTime = 0.065;
+			dispersion = 0.004;
+			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			soundSetShot[] = {"MP5K_silencerPro_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"};
+			soundSetShot[] = {"MP5K_1st_silencer_SoundSet","MP5K_silencerTail_SoundSet","MP5K_silencerInteriorTail_SoundSet"};
+			soundSetShotExt[] = {};
+			reloadTime = 0.09;
+			dispersion = 0.004;
+			magazineSlot = "magazine";
 		};
 		class DamageSystem
 		{
@@ -273,7 +301,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5k.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5sd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5sd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5sd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_smg\mp5\data\mp5sd_destruct.rvmat"}}};
 				};
 			};

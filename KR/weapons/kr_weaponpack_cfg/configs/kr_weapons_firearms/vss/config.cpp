@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -28,44 +29,46 @@ class cfgWeapons
 		WeaponLength = 0.78;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
+		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_HP","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
 		magazines[] = {"Mag_VSS_10Rnd","Mag_VAL_20Rnd","Mag_9x39_6l24_10Rnd","Mag_9x39_6l25_20Rnd","Mag_9x39_sr3m_30Rnd"};
 		ejectType = 1;
-		barrelArmor = 2.4;
+		barrelArmor = 12;
 		magazineSwitchTime = 0.38;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1.2};
+		initSpeedMultiplier = 1.25;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,0.7,0.7};
 		simpleHiddenSelections[] = {"hide_barrel","hide_pistolgrip"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_co.paa","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std.rvmat"};
 		hiddenSelections[] = {"camo","camo1"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 21;
 		};
 		class NoiseShoot
 		{
-			strength = 5;
+			strength = 3;
 			type = "sound";
 		};
 		modes[] = {"SemiAuto","FullAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"VSS_Vintorez_Shot_SoundSet","VSS_Vintorez_Tail_SoundSet","VSS_Vintorez_InteriorTail_SoundSet"};
+			soundSetShot[] = {"VSS_Shot_SoundSet","VSS_Tail_SoundSet","VSS_InteriorTail_SoundSet"};
 			envShootingDecrease = 0.05;
-			reloadTime = 0.12;
+			reloadTime = 0.1;
 			recoil = "recoil_VSS";
 			recoilProne = "recoil_VSS_prone";
-			dispersion = 0.002;
+			dispersion = 0.0027;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			soundSetShot[] = {"VSS_Vintorez_Shot_SoundSet","VSS_Vintorez_Tail_SoundSet","VSS_Vintorez_InteriorTail_SoundSet"};
-			reloadTime = 0.065;
+			soundSetShot[] = {"VSS_Shot_SoundSet","VSS_Tail_SoundSet","VSS_InteriorTail_SoundSet"};
+			envShootingDecrease = 0.05;
+			reloadTime = 0.13;
 			recoil = "recoil_VSS";
 			recoilProne = "recoil_VSS_prone";
-			dispersion = 0.002;
+			dispersion = 0.0027;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -172,7 +175,14 @@ class cfgWeapons
 				class Health
 				{
 					hitpoints = 250;
-					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_worn.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_damage.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_badlydamage.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_destruct.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std_destruct.rvmat"}}};
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_worn.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_damage.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_badlydamage.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_destruct.rvmat","KR\weapons\kr_weaponpack\kr_weapons_firearms\vss\data\vss_stock_std_destruct.rvmat"}}
+					};
 				};
 			};
 		};

@@ -16,8 +16,10 @@ class CfgMagazines
 	class kr_magazine_762x51_Base: kr_magazine_Base
 	{
 		scope = 0;
-		ammo = "Bullet_308Win";
+		ammo = "Bullet_762x51_tpz_sp";
 		ammoItems[] = {"Ammo_308Win","Ammo_308WinTracer","kr_Ammo_308Win_AP","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","kr_Ammo_762x51_bpz_fmj"};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		class kr_description
 		{
 			kr_tier = 1;
@@ -39,7 +41,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\dsarms_10_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = 3;
 		};
 		class DamageSystem
 		{
@@ -65,9 +67,16 @@ class CfgMagazines
 		count = 10;
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\kac_steel_10.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\kac_steel_10_co.paa"};
+
+		class kr_description
+		{
+			kr_tier = 1;
+			kr_caliber = ".308 (SR25, M40A5, RSASS, SPEAR)";
+		};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = 7;
 		};
 		class DamageSystem
 		{
@@ -100,7 +109,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = 7;
 		};
 		class DamageSystem
 		{
@@ -124,16 +133,17 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {1,2};
 		count = 20;
+		swayModifier[] = {1,1.1,1.1};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\kac_steel_20.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\kac_steel_20_co.paa"};
 		class kr_description
 		{
 			kr_tier = 2;
-			kr_caliber = "7.62x51 (.308)";
+			kr_caliber = ".308 (SR25, M40A5, RSASS, SPEAR)";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -5;
+			ergonomics = -3;
 		};
 		class DamageSystem
 		{
@@ -190,12 +200,13 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {1,2};
 		count = 20;
+		swayModifier[] = {1,1.05,1.05};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\pmag_20.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\pmag_20_co.paa"};
 		class kr_description
 		{
-			kr_tier = 2;
-			kr_caliber = "7.62x51 (.308)";
+			kr_tier = 3;
+			kr_caliber = ".308 (SR25, M40A5, RSASS, SPEAR)";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -223,6 +234,7 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {1,2};
 		count = 20;
+		swayModifier[] = {1.0,1.05,1.05};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\dsarms_20.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\dsarms_20_co.paa"};
 		class kr_description
@@ -232,7 +244,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = 0;
 		};
 		class DamageSystem
 		{
@@ -256,6 +268,7 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {1,3};
 		count = 30;
+		swayModifier[] = {1.0,1.15,1.15};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\dsarms_30_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\dsarms_30.rvmat"};
 		class kr_description
@@ -289,6 +302,7 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {1,2};
 		count = 20;
+		swayModifier[] = {1.0,1.1,1.1};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mmw_20.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mmw_20_co.paa"};
 		class kr_description
@@ -298,7 +312,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = 1;
 		};
 		class DamageSystem
 		{
@@ -355,6 +369,7 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {1,3};
 		count = 30;
+		swayModifier[] = {1.0,1.15,1.15};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\sarco_30.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\sarco_30_co.paa"};
 		class kr_description
@@ -364,7 +379,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -2;
+			ergonomics = -4;
 		};
 		class DamageSystem
 		{
@@ -388,6 +403,7 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {1,2};
 		count = 20;
+		swayModifier[] = {1,1.05,1.05};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\g28_20.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\g28_20_co.paa"};
 		class kr_description
@@ -397,7 +413,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -4;
+			ergonomics = -3;
 		};
 		class DamageSystem
 		{
@@ -421,6 +437,7 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {2,3};
 		count = 50;
+		swayModifier[] = {1.0,1.3,1.3};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50_co.paa"};
 		class kr_description
@@ -430,7 +447,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -8;
+			ergonomics = -10;
 		};
 		class DamageSystem
 		{
@@ -447,23 +464,24 @@ class CfgMagazines
 	class Mag_762x51_g28_xproduct_50Rnd: kr_magazine_762x51_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_magazines_762x51_xproduct_50Rnd";
-		descriptionShort = "$STR_kr_magazines_762x51_xproduct_50Rnd_dsc";
+		displayName = "$STR_kr_magazines_762x51_g28_xproduct_50Rnd";
+		descriptionShort = "$STR_kr_magazines_762x51_g28_xproduct_50Rnd_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\magazine\762x51\Mag_762x51_g28_xproduct_50Rnd.p3d";
 		weight = 230;
 		weightPerQuantityUnit = 4;
 		itemSize[] = {2,3};
 		count = 50;
+		swayModifier[] = {1.0,1.3,1.3};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50_co.paa"};
-		class kr_discription
+		class kr_description
 		{
 			kr_tier = 5;
 			kr_caliber = "7.62x51 (G28/HK417/Mk17)";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -8;
+			ergonomics = -10;
 		};
 		class DamageSystem
 		{
@@ -515,6 +533,7 @@ class CfgMagazines
 		weightPerQuantityUnit = 4;
 		itemSize[] = {1,2};
 		count = 20;
+		swayModifier[] = {1,1.05,1.05};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mcmillan_cs5_20.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mcmillan_cs5_20_co.paa"};
 		class kr_description
@@ -534,6 +553,41 @@ class CfgMagazines
 				{
 					hitpoints = 100;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mcmillan_cs5_20.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mcmillan_cs5_20_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mcmillan_cs5_20_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mcmillan_cs5_20_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\mcmillan_cs5_20_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class Mag_762x51_kac_xproduct_50Rnd: kr_magazine_762x51_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_762x51_kac_xproduct_50Rnd";
+		descriptionShort = "$STR_kr_magazines_762x51_kac_xproduct_50Rnd_dsc";
+		model = "KR\weapons\kr_weaponpack\attachments\magazine\762x51\Mag_762x51_kac_xproduct_50Rnd.p3d";
+		weight = 230;
+		weightPerQuantityUnit = 4;
+		itemSize[] = {2,3};
+		count = 50;
+		swayModifier[] = {1.0,1.3,1.3};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50.rvmat"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50_co.paa"};
+		class kr_description
+		{
+			kr_tier = 5;
+			kr_caliber = ".308 (SR25/RSASS/SPEAR)";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -20;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\magazine\762x51\data\xproduct_50_destruct.rvmat"}}};
 				};
 			};
 		};

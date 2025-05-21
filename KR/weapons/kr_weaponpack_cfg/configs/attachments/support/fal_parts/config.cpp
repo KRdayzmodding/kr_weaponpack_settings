@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -26,13 +27,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_fal_receiver_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\fal_parts\fal_receiver.p3d";
 		weight = 240;
-		recoilModifier[] = {0.8,0.8,0.7};
-		swayModifier[] = {1.0,1.0,0.9};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1.05,1.05,1.05};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_parts\data\fal_receiver_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_parts\data\fal_receiver.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics = 2;
 		};
 		class kr_description
 		{

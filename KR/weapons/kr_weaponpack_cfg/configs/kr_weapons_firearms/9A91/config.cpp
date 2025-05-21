@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -29,15 +30,16 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.5,50,180.1,4,10};
 		WeaponLength = 0.4;
-		barrelArmor = 4.5;
+		barrelArmor = 17;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
+		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_HP","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
 		magazines[] = {"Mag_9x39_9a91_20Rnd"};
 		magazineSwitchTime = 0.38;
 		ejectType = 1;
-		recoilModifier[] = {1.5,1.5,1.5};
-		swayModifier[] = {2.0,2.0,1.0};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		initSpeedMultiplier = 0.88;
 		reloadAction = "ReloadVSS";
 		class DamageSystem
 		{
@@ -52,7 +54,7 @@ class cfgWeapons
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 5;
 		};
 		class NoiseShoot
 		{
@@ -133,7 +135,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		itemSize[] = {6,3};
-		attachments[] = {"kr_muzzle_9_39_9a91","weaponOpticsAK","kr_9a91_stock","weaponOpticsDT","weaponWrap"};
+		attachments[] = {"kr_muzzle_9_39_9a91","weaponOpticsAK","kr_9a91_stock","weaponOpticsDT","PistolHolo1","weaponWrap"};
 		simpleHiddenSelections[] = {"hide_muzzle"};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\9A91\data\9a91_co.paa"};
@@ -149,15 +151,15 @@ class cfgWeapons
 			soundSetShot[] = {"9A91_Shot_SoundSet","CZ61_Tail_SoundSet","CZ61_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"9A91_silencer_SoundSet","VSS_Vintorez_Tail_SoundSet","VSS_Vintorez_InteriorTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.0008;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"9A91_Shot_SoundSet","CZ61_Tail_SoundSet","CZ61_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"9A91_silencer_SoundSet","VSS_Vintorez_Tail_SoundSet","VSS_Vintorez_InteriorTail_SoundSet"}};
-			reloadTime = 0.08;
-			dispersion = 0.0008;
+			reloadTime = 0.065;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 	};

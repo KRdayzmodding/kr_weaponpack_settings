@@ -8,7 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Single;
@@ -17,6 +17,7 @@ class Mode_Double;
 class Mode_FullAuto;
 class Muzzle_Base;
 class OpticsInfoShotgun;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -36,12 +37,12 @@ class cfgWeapons
 		winchesterTypeOpticsMount = 1;
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
 		WeaponLength = 0.85;
-		barrelArmor = 1.6;
-		initSpeedMultiplier = 1.05;
+		barrelArmor = 30;
+		initSpeedMultiplier = 1;
 		muzzles[] = {"this","SecondMuzzle"};
 		ejectType = 3;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1};
+		swayModifier[] = {1,1,1};
 		hiddenSelections[] = {"camo"};
 		simpleHiddenSelections[] = {"bullet","bullet2","hide_barrel"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\toz34\data\toz34_co.paa"};
@@ -57,7 +58,7 @@ class cfgWeapons
 			soundSetShot[] = {"IZH43_Shot_SoundSet","IZH43_Tail_SoundSet","IZH43_InteriorTail_SoundSet"};
 			reloadTime = 1.0;
 			firespreadangle = 1.5;
-			dispersion = 0.00075;
+			dispersion = 0.002;
 			magazineSlot = "magazine";
 		};
 		class Double: Mode_Double
@@ -65,7 +66,7 @@ class cfgWeapons
 			soundSetShot[] = {"IZH43_Shot_SoundSet","IZH43_Tail_SoundSet","IZH43_InteriorTail_SoundSet"};
 			reloadTime = 1.0;
 			firespreadangle = 1.5;
-			dispersion = 0.01;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 		class SecondMuzzle: Muzzle_Base
@@ -77,8 +78,8 @@ class cfgWeapons
 			cartridgeVel = "nabojniceend_2";
 			magazines[] = {};
 			chamberableFrom[] = {"kr_Ammo_12x76_buckshot_5","kr_Ammo_12x76_buckshot_7","kr_Ammo_12x76_buckshot_8","kr_Ammo_12x76_RIP","kr_Ammo_12x76_FTX_custom","kr_Ammo_12x76_lead_slug","kr_Ammo_12x76_AP20","kr_Ammo_12x76_Grizzly40","kr_Ammo_12x76_frag_12","kr_Ammo_12x76_devastator","Ammo_12gaPellets","Ammo_12gaSlug","Ammo_12gaRubberSlug","Ammo_12gaBeanbag"};
-			barrelArmor = 1.6;
-			initSpeedMultiplier = 1.05;
+			barrelArmor = 30;
+			initSpeedMultiplier = 1;
 			irDistance = 0.0;
 			irLaserPos = "laser pos";
 			irLaserEnd = "laser dir";
@@ -88,7 +89,7 @@ class cfgWeapons
 				soundSetShot[] = {"IZH43_Shot_SoundSet","IZH43_Tail_SoundSet","IZH43_InteriorTail_SoundSet"};
 				reloadTime = 1.0;
 				firespreadangle = 1.5;
-				dispersion = 0.00075;
+				dispersion = 0.002;
 				magazineSlot = "magazine";
 			};
 			class Double: Mode_Double
@@ -96,7 +97,7 @@ class cfgWeapons
 				soundSetShot[] = {"IZH43_Shot_SoundSet","IZH43_Tail_SoundSet","IZH43_InteriorTail_SoundSet"};
 				reloadTime = 1.0;
 				firespreadangle = 1.5;
-				dispersion = 0.01;
+				dispersion = 0.004;
 				magazineSlot = "magazine";
 			};
 			class OpticsInfo: OpticsInfoShotgun
@@ -196,6 +197,12 @@ class cfgWeapons
 					illuminateWorld = 1;
 					muzzleIndex = 1;
 				};
+				class MuzzleFlash1
+				{
+					overrideParticle = "weapon_shot_pellets";
+					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
+				};
 				class BadlyDamagedChamberSmoke_2
 				{
 					overrideParticle = "weapon_shot_chamber_smoke";
@@ -241,7 +248,7 @@ class cfgWeapons
 		boneRemap[] = {"release","Weapon_Bone_02","barrel","Weapon_Bone_01","trigger","Weapon_Trigger","ejector","Weapon_Bone_03","bullet","Weapon_Bullet","bullet2","Weapon_Bone_04","snaploader","Weapon_Bone_05"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 20;
 		};
 	};
 	class kr_toz34: kr_toz34_Base
@@ -251,16 +258,16 @@ class cfgWeapons
 		descriptionShort = "$STR_weapons_shotguns_toz34_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\toz34\toz34.p3d";
 		attachments[] = {"weaponWrap"};
-		barrelArmor = 24.0;
-		initSpeedMultiplier = 1.05;
+		barrelArmor = 30;
+		initSpeedMultiplier = 1;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1};
+		swayModifier[] = {1,1,1};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"IZH43_Shot_SoundSet","IZH43_Tail_SoundSet","IZH43_InteriorTail_SoundSet"};
 			reloadTime = 1.0;
 			firespreadangle = 1.0;
-			dispersion = 0.00099;
+			dispersion = 0.002;
 			magazineSlot = "magazine";
 		};
 		class Double: Mode_Double
@@ -268,7 +275,7 @@ class cfgWeapons
 			soundSetShot[] = {"IZH43_Shot_SoundSet","IZH43_Tail_SoundSet","IZH43_InteriorTail_SoundSet"};
 			reloadTime = 1.0;
 			firespreadangle = 1.5;
-			dispersion = 0.00099;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 		class SecondMuzzle: Muzzle_Base
@@ -280,8 +287,8 @@ class cfgWeapons
 			cartridgeVel = "nabojniceend_2";
 			magazines[] = {};
 			chamberableFrom[] = {"kr_Ammo_12x76_buckshot_5","kr_Ammo_12x76_buckshot_7","kr_Ammo_12x76_buckshot_8","kr_Ammo_12x76_RIP","kr_Ammo_12x76_FTX_custom","kr_Ammo_12x76_lead_slug","kr_Ammo_12x76_AP20","kr_Ammo_12x76_Grizzly40","kr_Ammo_12x76_frag_12","kr_Ammo_12x76_devastator","Ammo_12gaPellets","Ammo_12gaSlug","Ammo_12gaRubberSlug","Ammo_12gaBeanbag"};
-			barrelArmor = 24.0;
-			initSpeedMultiplier = 1.05;
+			barrelArmor = 30;
+			initSpeedMultiplier = 1;
 			irDistance = 0.0;
 			irLaserPos = "laser pos";
 			irLaserEnd = "laser dir";
@@ -291,7 +298,7 @@ class cfgWeapons
 				soundSetShot[] = {"IZH43_Shot_SoundSet","IZH43_Tail_SoundSet","IZH43_InteriorTail_SoundSet"};
 				reloadTime = 1.0;
 				firespreadangle = 1.0;
-				dispersion = 0.00099;
+				dispersion = 0.002;
 				magazineSlot = "magazine";
 			};
 			class Double: Mode_Double
@@ -299,7 +306,7 @@ class cfgWeapons
 				soundSetShot[] = {"IZH43_Shot_SoundSet","IZH43_Tail_SoundSet","IZH43_InteriorTail_SoundSet"};
 				reloadTime = 1.0;
 				firespreadangle = 1.5;
-				dispersion = 0.00099;
+				dispersion = 0.004;
 				magazineSlot = "magazine";
 			};
 			class OpticsInfo: OpticsInfoShotgun
@@ -339,10 +346,10 @@ class cfgWeapons
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\toz34\toz34_sawed.p3d";
 		weight = 2000;
 		itemSize[] = {5,2};
-		barrelArmor = 17.5;
-		initSpeedMultiplier = 1.05;
-		recoilModifier[] = {1.5,1.5,1.5};
-		swayModifier[] = {1.8,1.8,1};
+		barrelArmor = 30;
+		initSpeedMultiplier = 0.9;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		WeaponLength = 0.56;
 		class kr_description
 		{
@@ -351,22 +358,22 @@ class cfgWeapons
 		};
 		class Single: Single
 		{
-			dispersion = 0.0025;
+			dispersion = 0.006;
 		};
 		class Double: Double
 		{
-			dispersion = 0.003;
+			dispersion = 0.012;
 		};
 		class SecondMuzzle: SecondMuzzle
 		{
-			initSpeedMultiplier = 0.75;
+			initSpeedMultiplier = 0.9;
 			class Single: Single
 			{
-				dispersion = 0.0025;
+				dispersion = 0.006;
 			};
 			class Double: Double
 			{
-				dispersion = 0.003;
+				dispersion = 0.012;
 			};
 		};
 		attachments[] = {};
@@ -382,6 +389,10 @@ class cfgWeapons
 				position[] = {-0.05,-0.01,-0.03};
 				orientation[] = {0,0,-10};
 			};
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 30;
 		};
 	};
 };

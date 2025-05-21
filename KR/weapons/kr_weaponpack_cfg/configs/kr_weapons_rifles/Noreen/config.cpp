@@ -14,6 +14,7 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -37,16 +38,16 @@ class cfgWeapons
 		chamberableFrom[] = {"kr_Ammo_408CheyTac"};
 		magazineSwitchTime = 0.38;
 		ejectType = 0;
-		barrelArmor = 2.8;
-		initSpeedMultiplier = 1.2;
+		barrelArmor = 3;
+		initSpeedMultiplier = 1.25;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1.2};
+		swayModifier[] = {1.7,1.7,1.2};
 		hiddenSelections[] = {"camo"};
 		simpleHiddenSelections[] = {"hide_pistolgrip"};
 		modes[] = {"Single"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 45;
 		};
 		class kr_description
 		{
@@ -58,7 +59,7 @@ class cfgWeapons
 			soundSetShot[] = {"Noreen_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {};
 			reloadTime = 1;
-			dispersion = 0.0005;
+			dispersion = 0.00195;
 			magazineSlot = "magazine";
 		};
 		class Particles
@@ -71,10 +72,10 @@ class cfgWeapons
 				};
 				class MuzzleFlash
 				{
-					overrideParticle = "weapon_shot_cz527_01";
 					ignoreIfSuppressed = 1;
 					illuminateWorld = 1;
-					positionOffset[] = {-0.05,0,0};
+					overrideParticle = "weapon_shot_50BMG";
+					overrideDirectionVector[] = {180,0,0};
 				};
 			};
 			class OnOverheating
@@ -98,7 +99,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 150;
+			strength = 130;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -121,7 +122,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 350;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\Noreen\Data\Noreen.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\Noreen\Data\Noreen.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\Noreen\Data\Noreen_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\Noreen\Data\Noreen_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\Noreen\Data\Noreen_destruct.rvmat"}}};
 				};
 			};

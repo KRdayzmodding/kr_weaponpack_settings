@@ -2,12 +2,13 @@ class CfgPatches
 {
 	class kr_attachments_ar_buttstocks
 	{
-		units[] = {"kr_ar_stock_ace_socom","kr_ar_stock_sb_tac_sba3","kr_ar_stock_hs_m4ss","kr_ar_stock_adar_wood","kr_ar_stock_cmmg_ripstock","kr_ar_stock_fab_defense_gls","kr_ar_stock_hk_417_as","kr_ar_stock_magpul_ubr_gen2","kr_ar_stock_viper_pdw","kr_ar_stock_hk_slimline","kr_ar_stock_mcmillan_cs5","kr_ar_stock_b5_precision","kr_ar_stock_fab_defense_glr","kr_ar_stock_mft_bus","kr_ar_stock_magpul_ctr","kr_ar_stock_kriss_defiance","kr_ar_stock_hk_417_concave","kr_ar_stock_hk_e1","kr_ar_stock_troy_m7a1_pdw","kr_ar_stock_hera_cqr","kr_ar_stock_fab_defense_glc","kr_ar_stock_vltor_emod","kr_ar_stock_magpul_prs_gen3","kr_ar_stock_magpul_prs_gen2","kr_ar_stock_magpul_moe","kr_ar_stock_lmt_sopmod","kr_ar_stock_viper_m1"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -56,11 +57,13 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_ace_socom.p3d";
 		weight = 270;
 		haveTube = 1;
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.85,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\ace_socom_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\ace_socom.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 21;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -87,11 +90,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_sb_tac_sba3_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_sb_tac_sba3.p3d";
 		weight = 213;
+		recoilModifier[] = {1,1,0.9};
+		swayModifier[] = {1,0.8,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\sb_tac_sba3_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\sb_tac_sba3.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 22;
+			ergonomics = 8;
 		};
 		class kr_description
 		{
@@ -118,11 +123,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_hs_m4ss_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_hs_m4ss.p3d";
 		weight = 695;
+		recoilModifier[] = {1,1,0.85};
+		swayModifier[] = {1,0.9,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hs_m4ss_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hs_m4ss.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 20;
+			ergonomics = 9;
 		};
 		class kr_description
 		{
@@ -149,11 +156,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_adar_wood_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_adar_wood.p3d";
 		weight = 695;
+		recoilModifier[] = {1,1,0.85};
+		swayModifier[] = {1,0.85,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\adar_wood_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\adar_wood.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 20;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -180,11 +189,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_cmmg_ripstock_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_cmmg_ripstock.p3d";
 		weight = 280;
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.7,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\cmmg_ripstock_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\cmmg_ripstock.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 25;
+			ergonomics = 11;
 		};
 		class kr_description
 		{
@@ -211,11 +222,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_fab_defense_gls_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_fab_defense_gls.p3d";
 		weight = 308;
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.7,0.7};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\fab_defense_gls_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\fab_defense_gls.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 26;
+			ergonomics = 13;
 		};
 		class kr_description
 		{
@@ -242,11 +255,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_hk_417_as_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_hk_417_as.p3d";
 		weight = 350;
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.8,0.7};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hk_417_as_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hk_417_as.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 27;
+			ergonomics = 12;
 		};
 		class kr_description
 		{
@@ -275,11 +290,13 @@ class cfgVehicles
 		weight = 610;
 		haveTube = 1;
 		itemSize[] = {3,2};
+		recoilModifier[] = {1,1,0.85};
+		swayModifier[] = {1,0.65,0.7};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_ubr_gen2_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_ubr_gen2.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 28;
+			ergonomics = 13;
 		};
 		class kr_description
 		{
@@ -307,11 +324,13 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_viper_pdw.p3d";
 		weight = 573;
 		itemSize[] = {2,1};
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.85,0.65};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\viper_pdw_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\viper_pdw.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 29;
+			ergonomics = 13;
 		};
 		haveTube = 1;
 		class kr_description
@@ -339,11 +358,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_hk_slimline_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_hk_slimline.p3d";
 		weight = 695;
+		recoilModifier[] = {1,1,0.65};
+		swayModifier[] = {1,0.7,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hk_slimline_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hk_slimline.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 25;
+			ergonomics = 11;
 		};
 		class kr_description
 		{
@@ -371,14 +392,15 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_mcmillan_cs5.p3d";
 		weight = 450;
 		itemSize[] = {2,2};
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.7,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\mcmillan_cs5_stock_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\mcmillan_cs5_stock.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 29;
+			ergonomics = 15;
 		};
-		recoilModifier[] = {0.75,0.8,0.5};
-		swayModifier[] = {0.75,0.75,0.7};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -404,11 +426,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_b5_precision_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_b5_precision.p3d";
 		weight = 160;
+		recoilModifier[] = {1,1,0.62};
+		swayModifier[] = {1,0.6,0.75};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\b5_precision_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\b5_precision.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 30;
+			ergonomics = 14;
 		};
 		class kr_description
 		{
@@ -435,11 +459,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_fab_defense_glr_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_fab_defense_glr.p3d";
 		weight = 276;
+		recoilModifier[] = {1,1,0.6};
+		swayModifier[] = {1,0.62,0.75};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\fab_defense_glr_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\fab_defense_glr.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 31;
+			ergonomics = 16;
 		};
 		class kr_description
 		{
@@ -466,11 +492,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_mft_bus_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_mft_bus.p3d";
 		weight = 255;
+		recoilModifier[] = {1,1,0.75};
+		swayModifier[] = {1,0.6,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\mft_bus_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\mft_bus.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 32;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -497,11 +525,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_magpul_ctr_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_magpul_ctr.p3d";
 		weight = 226;
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.65,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_ctr_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_ctr.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 33;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -528,11 +558,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_kriss_defiance_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_kriss_defiance.p3d";
 		weight = 400;
+		recoilModifier[] = {1,1,0.6};
+		swayModifier[] = {1,0.65,0.65};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\kriss_defiance_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\kriss_defiance.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 34;
+			ergonomics = 14;
 		};
 		class kr_description
 		{
@@ -559,11 +591,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_hk_417_concave_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_hk_417_concave.p3d";
 		weight = 395;
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.6,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hk_417_concave_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hk_417_concave.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 30;
+			ergonomics = 14;
 		};
 		class kr_description
 		{
@@ -590,11 +624,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_hk_e1_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_hk_e1.p3d";
 		weight = 350;
+		recoilModifier[] = {1,1,0.6};
+		swayModifier[] = {1,0.6,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hk_e1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hk_e1.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 31;
+			ergonomics = 16;
 		};
 		class kr_description
 		{
@@ -622,11 +658,13 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_troy_m7a1_pdw.p3d";
 		weight = 400;
 		itemSize[] = {2,1};
+		recoilModifier[] = {1,1,0.75};
+		swayModifier[] = {1,0.65,0.65};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\troy_m7a1_pdw_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\troy_m7a1_pdw.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 32;
+			ergonomics = 17;
 		};
 		haveTube = 1;
 		class kr_description
@@ -655,11 +693,13 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_hera_cqr.p3d";
 		weight = 350;
 		itemSize[] = {3,2};
+		recoilModifier[] = {1,1,0.6};
+		swayModifier[] = {1,0.6,0.65};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hera_arms_cqr_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\hera_arms_cqr.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 35;
+			ergonomics = 14;
 		};
 		class kr_description
 		{
@@ -685,11 +725,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_fab_defense_glc_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_fab_defense_glc.p3d";
 		weight = 271;
+		recoilModifier[] = {1,1,0.65};
+		swayModifier[] = {1,0.6,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\fab_defense_glc_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\fab_defense_glc.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 35;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -715,11 +757,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_vltor_emod_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_vltor_emod.p3d";
 		weight = 390;
+		recoilModifier[] = {1,1,0.6};
+		swayModifier[] = {1,0.65,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\vltor_emod_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\vltor_emod.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 35;
+			ergonomics = 18;
 		};
 		class kr_description
 		{
@@ -746,11 +790,13 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_magpul_prs_gen3.p3d";
 		weight = 780;
 		itemSize[] = {3,2};
+		recoilModifier[] = {1,1,0.5};
+		swayModifier[] = {1,0.7,0.65};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_prs_gen3_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_prs_gen3.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 35;
+			ergonomics = 14;
 		};
 		class kr_description
 		{
@@ -777,11 +823,13 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_magpul_prs_gen2.p3d";
 		weight = 790;
 		itemSize[] = {3,2};
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.5,0.65};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_prs_gen2_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_prs_gen2.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 35;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -807,11 +855,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_magpul_moe_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_magpul_moe.p3d";
 		weight = 226;
+		recoilModifier[] = {1,1,0.65};
+		swayModifier[] = {1,0.7,0.5};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_moe_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\magpul_moe.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 35;
+			ergonomics = 14;
 		};
 		class kr_description
 		{
@@ -837,11 +887,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_lmt_sopmod_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_lmt_sopmod.p3d";
 		weight = 148;
+		recoilModifier[] = {1,1,0.5};
+		swayModifier[] = {1,0.5,0.5};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\lmt_sopmod_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\lmt_sopmod.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 35;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -867,11 +919,13 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar_stock_viper_m1_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\ar_buttstock_viper_m1.p3d";
 		weight = 188;
+		recoilModifier[] = {1,1,0.8};
+		swayModifier[] = {1,0.8,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\viper_m1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_buttstocks\data\viper_m1.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 35;
+			ergonomics = 27;
 		};
 		class kr_description
 		{

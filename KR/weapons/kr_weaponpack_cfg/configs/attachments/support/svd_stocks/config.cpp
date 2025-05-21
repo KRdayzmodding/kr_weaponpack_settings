@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -23,13 +24,13 @@ class cfgVehicles
 		weight = 0.25;
 		haveTube = 1;
 		isTube = 1;
-		recoilModifier[] = {0.97,0.97,0.95};
-		swayModifier[] = {0.97,0.97,0.95};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\svd_stocks\data\lynx_arms_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\svd_stocks\data\lynx_arms.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -56,11 +57,13 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\svd_stocks\svd_bttstck_std.p3d";
 		inventorySlot[] = {"kr_svd_stock"};
 		weight = 0.25;
+		recoilModifier[] = {1,0.7,0.5};
+		swayModifier[] = {0.8,0.8,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\svd_stocks\data\svd_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\svd_stocks\data\svd_std.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 25;
+			ergonomics = 20;
 		};
 		class kr_description
 		{

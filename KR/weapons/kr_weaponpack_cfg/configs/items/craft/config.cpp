@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data"};
 	};
 };
-class CfgVehicles
+class kr_Gunplay_Base;
+class cfgVehicles
 {
 	class Inventory_Base;
 	class kr_items_ferfrans_crd: Inventory_Base

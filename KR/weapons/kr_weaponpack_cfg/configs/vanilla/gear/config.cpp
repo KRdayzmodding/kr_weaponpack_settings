@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Gear_Medical","DZ_Gear_Consumables"};
 	};
 };
-class CfgVehicles
+class kr_Gunplay_Base;
+class cfgVehicles
 {
 	class Inventory_Base;
 	class BandageDressing: Inventory_Base

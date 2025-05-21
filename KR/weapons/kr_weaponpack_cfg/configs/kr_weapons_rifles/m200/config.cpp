@@ -14,6 +14,7 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -37,7 +38,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"kr_Ammo_408CheyTac"};
-		magazines[] = {"mag_408_m200_7Rnd"};
+		magazines[] = {"Mag_408_m200_7Rnd"};
 		magazineSwitchTime = 0.38;
 		ejectType = 0;
 		reloadAction = "Reloadcz527";
@@ -46,23 +47,23 @@ class cfgWeapons
 		modes[] = {"Single"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 0;
 		};
 		attachments[] = {"kr_m200_hndgrd","weaponOpticsB","weaponOptics","kr_ar_pistolgrip","kr_m200_stock","weaponWrap"};
 		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\m200\m200.p3d";
 		itemSize[] = {9,2};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\m200\data\m200.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\m200\data\m200_co.paa"};
-		barrelArmor = 1.4;
-		initSpeedMultiplier = 1.2;
+		barrelArmor = 5.5;
+		initSpeedMultiplier = 1.0;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1.2};
+		swayModifier[] = {1.6,1.6,1.2};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"m200_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"m200_silencer_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1;
-			dispersion = 0.00055;
+			dispersion = 0.0015;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -96,10 +97,10 @@ class cfgWeapons
 				};
 				class MuzzleFlash
 				{
-					overrideParticle = "weapon_shot_cz527_01";
 					ignoreIfSuppressed = 1;
 					illuminateWorld = 1;
-					positionOffset[] = {-0.05,0,0};
+					overrideParticle = "weapon_shot_50BMG";
+					overrideDirectionVector[] = {180,0,0};
 				};
 			};
 			class OnOverheating
@@ -123,7 +124,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 100;
+			strength = 120;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -140,12 +141,14 @@ class cfgWeapons
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\m200\data\m200_co.paa"};
+		recoilModifier[] = {1.0,1.0,1.0};
+		
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"CR527_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"CR527_silencerHomeMade_SoundSet","CR527_silencerHomeMadeTail_SoundSet","CR527_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1;
-			dispersion = 0.00055;
+			dispersion = 0.0022;
 			magazineSlot = "magazine";
 		};
 	};

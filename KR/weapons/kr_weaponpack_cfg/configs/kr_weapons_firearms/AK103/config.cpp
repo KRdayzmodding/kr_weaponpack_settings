@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class kr_ak_Base;
@@ -22,28 +23,29 @@ class cfgWeapons
 		scope = 0;
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_firearms\ak103\ak103.p3d";
 		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
-		weight = 2400;
-		WeaponLength = 0.829067;
+		weight = 2600;
+		WeaponLength = 0.66;
 		itemSize[] = {8,3};
-		chamberableFrom[] = {"Ammo_762x39","Ammo_762x39Tracer","kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa"};
+		chamberableFrom[] = {"Ammo_762x39","Ammo_762x39Tracer","kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa"};
+		kr_bannedAmmo[] = {"Bullet_366TKM_EKO","Bullet_366TKM_FMJ","Bullet_366TKM_Geksa","Bullet_366TKM_custom_ap"};
 		magazines[] = {"Mag_762x39_sawed_off_10Rnd","Mag_762x39_6L10_30Rnd","Mag_762x39_ak103_std_30Rnd","Mag_762x39_akms_aluminium_30Rnd","Mag_762x39_fab_defense_ultimag_30Rnd","Mag_762x39_magpul_pmag_30Rnd","Mag_762x39_us_palm_30Rnd","Mag_762x39_rpk_std_40Rnd","Mag_762x39_rpk_std_bakelite_40Rnd","Mag_762x39_x_products_drum_50Rnd","Mag_762x39_promag_drum_73Rnd","Mag_762x39_molot_rpk_drum_75Rnd"};
 		barrelArmor = 12.8;
-		initSpeedMultiplier = 1.17;
-		recoilModifier[] = {3,3,4.5};
-		swayModifier[] = {3.2,3.2,2.85};
+		initSpeedMultiplier = 1.15;
+		recoilModifier[] = {1.25,1.25,1.3};
+		swayModifier[] = {1.8,1.6,1.2};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"AK_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AK_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.095;
-			dispersion = 0.00065;
+			reloadTime = 0.09;
+			dispersion = 0.003;
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"AK_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"AK_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.00065;
+			dispersion = 0.003;
 		};
 		class kr_description
 		{
@@ -58,7 +60,7 @@ class cfgWeapons
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = -20;
 		};
 		class DamageSystem
 		{
@@ -66,7 +68,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 350;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak103\data\ak103.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak103\data\ak103_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak103\data\ak103_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak103\data\ak103_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak103\data\ak103_destruct.rvmat"}}};
 				};
 			};
@@ -158,7 +160,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 100;
+			strength = 90;
 			type = "shot";
 		};
 	};

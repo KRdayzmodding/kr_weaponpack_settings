@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_weapons_rifles_m200","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -19,8 +20,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_m200_std_handguard_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\m200_parts\m200_std_handguard.p3d";
 		weight = 420;
-		recoilModifier[] = {0.35,0.75,0.75};
-		swayModifier[] = {0.4,0.4,0.4};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		itemSize[] = {3,1};
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\m200_parts\data\m200_std_handguard_co.paa"};
@@ -93,7 +94,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\m200_parts\data\m200_std_stock.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 25;
+			ergonomics = 15;
 		};
 		class kr_description
 		{

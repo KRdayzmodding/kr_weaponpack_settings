@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -26,11 +27,11 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
 		attachments[] = {"kr_muzzle308","kr_ar10_hndgrd","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
-		simpleHiddenSelections[] = {"hide_gasblock","hide_gasblock_low","hide_pistolgrip","hide_sight_front","hide_sight_rear","hide_tube"};
+		simpleHiddenSelections[] = {"fold","unfold","hide_pistolgrip","rear_sights","hide_tube"};
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_308Win","Ammo_308WinTracer","kr_Ammo_308Win_AP","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","kr_Ammo_762x51_bpz_fmj"};
-		magazines[] = {"Mag_762x51_kac_steel_10Rnd","Mag_762x51_pmag_20Rnd","Mag_762x51_kac_steel_20Rnd"};
+		chamberableFrom[] = {"kr_Ammo_762x51_bpz_fmj","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","Ammo_308Win","Ammo_308WinTracer","kr_Ammo_308Win_AP"};
+		magazines[] = {"Mag_762x51_kac_steel_10Rnd","Mag_762x51_pmag_20Rnd","Mag_762x51_kac_steel_20Rnd","Mag_762x51_kac_xproduct_50Rnd"};
 		magazineSwitchTime = 0.5;
 		ejectType = 1;
 		hiddenSelections[] = {"camo"};
@@ -50,11 +51,11 @@ class cfgWeapons
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 15;
 		};
 		class NoiseShoot
 		{
-			strength = 100;
+			strength = 90;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -151,11 +152,22 @@ class cfgWeapons
 		WeaponLength = 0.811549;
 		itemSize[] = {8,3};
 		weight = 3860;
-		recoilModifier[] = {3.2,3.7,6.2};
-		swayModifier[] = {2.8,2.8,2.8};
-		barrelArmor = 6.3;
-		initSpeedMultiplier = 1.15;
+		recoilModifier[] = {1.5,1.5,1.5};
+		swayModifier[] = {1.25,1.0,1.1};
+		barrelArmor = 18;
+		initSpeedMultiplier = 1.2;
 		modes[] = {"SemiAuto"};
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 15;
+		};
+		class NoiseShoot
+		{
+			strength = 90;
+			type = "shot";
+		};
+
 		class kr_description
 		{
 			kr_tier = 3;
@@ -163,10 +175,10 @@ class cfgWeapons
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.12;
-			dispersion = 0.00065;
+			soundSetShot[] = {"SR25_Shot_SoundSet","SR25_Tail_SoundSet","SR25_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"SR25_silencerHomeMade_SoundSet","SR25_silencerHomeMadeTail_SoundSet","SR25_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.09;
+			dispersion = 0.0034;
 			magazineSlot = "magazine";
 		};
 		class kr_firearms
@@ -183,11 +195,22 @@ class cfgWeapons
 		WeaponLength = 0.913149;
 		itemSize[] = {9,3};
 		weight = 4400;
-		recoilModifier[] = {2.8,3.1,5.3};
-		swayModifier[] = {3.2,3.2,3.2};
-		barrelArmor = 5.0;
-		initSpeedMultiplier = 1.3;
+		recoilModifier[] = {1.5,1.5,1.5};
+		swayModifier[] = {1.3,1.1,1.15};
+		barrelArmor = 18.0;
+		initSpeedMultiplier = 1.35;
 		modes[] = {"SemiAuto"};
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 15;
+		};
+		class NoiseShoot
+		{
+			strength = 100;
+			type = "shot";
+		};
+
 		class kr_description
 		{
 			kr_tier = 4;
@@ -195,10 +218,10 @@ class cfgWeapons
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.12;
-			dispersion = 0.00055;
+			soundSetShot[] = {"SR25_Shot_SoundSet","SR25_Tail_SoundSet","SR25_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"SR25_silencerHomeMade_SoundSet","SR25_silencerHomeMadeTail_SoundSet","SR25_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.09;
+			dispersion = 0.0032;
 			magazineSlot = "magazine";
 		};
 		class kr_firearms

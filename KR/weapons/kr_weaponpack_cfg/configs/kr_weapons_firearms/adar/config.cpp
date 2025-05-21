@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data","kr_magazine_556x45"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class kr_M4A1_Base;
@@ -28,10 +29,10 @@ class cfgWeapons
 		itemSize[] = {8,3};
 		weight = 3819;
 		WeaponLength = 0.772;
-		initSpeedMultiplier = 1.0;
-		barrelArmor = 15.1;
-		recoilModifier[] = {2.6,2.6,4.4};
-		swayModifier[] = {2.7,2.7,2.45};
+		initSpeedMultiplier = 1.1;
+		barrelArmor = 15.0;
+		recoilModifier[] = {1.35,1.35,1.2};
+		swayModifier[] = {1.3,1.2,1.3};
 		modes[] = {"SemiAuto"};
 		class OpticsInfo: OpticsInfoRifle
 		{
@@ -48,7 +49,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 300;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\adar\data\adar.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\adar\data\adar_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\adar\data\adar_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\adar\data\adar_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\adar\data\adar_destruct.rvmat"}}};
 				};
 			};
@@ -58,7 +59,7 @@ class cfgWeapons
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.00099;
+			dispersion = 0.0035;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -73,7 +74,12 @@ class cfgWeapons
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = -15;
+		};
+		class NoiseShoot
+		{
+			strength = 75;
+			type = "shot";
 		};
 	};
 };

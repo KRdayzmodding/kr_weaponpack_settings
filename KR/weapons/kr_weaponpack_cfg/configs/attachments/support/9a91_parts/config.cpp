@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {

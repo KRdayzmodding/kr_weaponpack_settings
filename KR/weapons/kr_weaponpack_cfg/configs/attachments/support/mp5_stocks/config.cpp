@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -20,14 +21,14 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\mp5_bttstck_a2.p3d";
 		simpleHiddenSelections[] = {"hide_tubepart"};
 		weight = 472;
-		recoilModifier[] = {1.0,0.7,0.5};
-		swayModifier[] = {0.9,0.9,0.9};
+		recoilModifier[] = {1,1,0.85};
+		swayModifier[] = {1,0.9,0.9};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a2.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 25;
+			ergonomics = 14;
 		};
 		class kr_description
 		{
@@ -53,14 +54,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_mp5_stock_hk_a3_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\mp5_bttstck_a3.p3d";
 		weight = 800;
-		recoilModifier[] = {1.0,0.7,0.5};
-		swayModifier[] = {0.9,0.9,0.9};
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.7,0.8};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_stocks\data\mp5_stock_hk_a3.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 28;
+			ergonomics = 11;
 		};
 		class kr_description
 		{

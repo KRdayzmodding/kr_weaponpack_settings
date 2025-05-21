@@ -17,7 +17,7 @@ class CfgMagazines
 	{
 		scope = 0;
 		ammo = "Bullet_762x25_PT_gz";
-		ammoItems[] = {"kr_Ammo_762x25_PT_gz","kr_Ammo_762x25_PST_gz","kr_Ammo_762x25_FMJ43","kr_Ammo_762x25_AKBS"};
+		ammoItems[] = {"kr_Ammo_762x25_PT_gz","kr_Ammo_762x25_PST_gz","kr_Ammo_762x25_FMJ43","kr_Ammo_762x25_AKBS","kr_Ammo_762x25_HP"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = -3;

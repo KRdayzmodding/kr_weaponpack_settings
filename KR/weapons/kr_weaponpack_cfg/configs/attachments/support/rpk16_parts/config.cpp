@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -53,13 +54,13 @@ class cfgVehicles
 		weight = 167;
 		itemSize[] = {2,1};
 		attachments[] = {"kr_foregrip","kr_rail_mount"};
-		recoilModifier[] = {0.35,0.75,0.75};
-		swayModifier[] = {0.4,0.4,0.4};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\rpk16_parts\data\rpk16_handguard_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\rpk16_parts\data\rpk16_handguard_std.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 10;
 		};
 		class kr_firearms
 		{

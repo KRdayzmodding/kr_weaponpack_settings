@@ -233,6 +233,13 @@ class CfgNonAIVehicles
 		model = "KR\kr_data\proxy\weapons\attachments\muzzles\kr_muzzle308.p3d";
 	};
 
+	class Proxykr_muzzle338: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle338";
+		model = "KR\kr_data\proxy\weapons\attachments\muzzles\kr_muzzle338.p3d";
+	};
+
 	class Proxykr_muzzle12x76: ProxyAttachment
 	{
 		scope = 2;
@@ -435,5 +442,12 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "kr_light_pistol";
 		model = "KR\kr_data\proxy\weapons\attachments\lights\kr_light_pistol.p3d";
+	};
+
+	class Proxyar10_ar15_handguard: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ar10_ar15_hndgrd";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\ar10_ar15_handguard.p3d";
 	};
 };

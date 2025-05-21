@@ -14,6 +14,7 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -25,12 +26,12 @@ class cfgWeapons
 		descriptionShort = "$STR_weapons_rifles_sako85_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\sako85.p3d";
 		weight = 2700;
-		initSpeedMultiplier = 0.85;
-		recoilModifier[] = {2.5,2.5,2.5};
-		swayModifier[] = {2.2,2.2,1.2};
+		initSpeedMultiplier = 1;
+		recoilModifier[] = {0.5,0.5,0.5};
+		swayModifier[] = {0.5,0.5,0.5};
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
 		WeaponLength = 0.71;
-		barrelArmor = 6.0;
+		barrelArmor = 7;
 		chamberableFrom[] = {"kr_Ammo_338LM_fmj","kr_Ammo_338LM_ap","kr_Ammo_338LM_upz","kr_Ammo_338LM_tac_x"};
 		magazines[] = {"Mag_338lm_sako85_4Rnd"};
 		absorbency = 0.0;
@@ -48,20 +49,20 @@ class cfgWeapons
 		hiddenSelections[] = {"camo"};
 		class NoiseShoot
 		{
-			strength = 120;
+			strength = 100;
 			type = "shot";
 		};
 		modes[] = {"Single"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 0;
 		};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"B95_Shot_SoundSet","B95_Tail_SoundSet","B95_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"CZ550_silencerHomeMade_SoundSet","CZ550_silencerHomeMadeTail_SoundSet","CZ550_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1;
-			dispersion = 0.00085;
+			dispersion = 0.0026;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -126,10 +127,12 @@ class cfgWeapons
 	class kr_sako85: kr_sako85_Base
 	{
 		scope = 2;
-		attachments[] = {"kr_optics_top_mount","weaponOptics","weaponWrap"};
+		attachments[] = {"kr_muzzle338","kr_optics_top_mount","weaponOptics","weaponWrap"};
 		itemSize[] = {9,3};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85.rvmat"};
+		recoilModifier[] = {1.0,1.0,1.0};
+		
 		class kr_description
 		{
 			kr_tier = 2;
@@ -141,7 +144,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\sako85\data\sako85_destruct.rvmat"}}};
 				};
 			};

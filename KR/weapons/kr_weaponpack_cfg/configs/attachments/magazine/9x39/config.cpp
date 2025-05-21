@@ -16,8 +16,10 @@ class CfgMagazines
 	class kr_magazine_9x39_Base: kr_magazine_Base
 	{
 		scope = 0;
-		ammo = "Bullet_9x39";
+		ammo = "Bullet_9x39_sp5";
 		ammoItems[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		weightPerQuantityUnit = 4;
 	};
 	class Mag_9x39_6l24_10Rnd: kr_magazine_9x39_Base
@@ -27,7 +29,7 @@ class CfgMagazines
 		descriptionShort = "$STR_kr_magazines_9x39_6l24_10Rnd_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\magazine\9x39\Mag_9x39_6l24_10Rnd.p3d";
 		weight = 250;
-		itemSize[] = {1.0,1};
+		itemSize[] = {1,1};
 		count = 10;
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x39\data\6L24.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x39\data\6L24_co.paa"};
@@ -60,8 +62,10 @@ class CfgMagazines
 		descriptionShort = "$STR_kr_magazines_9x39_6l25_20Rnd_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\magazine\9x39\Mag_9x39_6l25_20Rnd.p3d";
 		weight = 300;
-		itemSize[] = {1.0,2};
+		itemSize[] = {1,2};
 		count = 20;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1.05,1.05};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x39\data\6L25.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x39\data\6L25_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -93,13 +97,15 @@ class CfgMagazines
 		descriptionShort = "$STR_kr_magazines_9x39_sr3m_30Rnd_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\magazine\9x39\Mag_9x39_sr3m_30Rnd.p3d";
 		weight = 450;
-		itemSize[] = {1.0,3};
+		itemSize[] = {1,3};
 		count = 30;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1.15,1.15};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x39\data\sr3m130_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x39\data\sr3m130.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = -5;
 		};
 		class kr_description
 		{
@@ -126,8 +132,10 @@ class CfgMagazines
 		descriptionShort = "$STR_kr_magazines_9x39_9a91_20Rnd_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\magazine\9x39\Mag_9x39_9a91_20Rnd.p3d";
 		weight = 150;
-		itemSize[] = {1.0,2};
+		itemSize[] = {1,2};
 		count = 20;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x39\data\9a91_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x39\data\9a91.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base

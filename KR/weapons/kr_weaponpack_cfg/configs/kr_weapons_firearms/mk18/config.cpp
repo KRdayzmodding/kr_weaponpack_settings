@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -23,8 +24,8 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_mk18";
 		descriptionShort = "$STR_weapons_firearms_mk18_dsc";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\MK18\MK18.p3d";
-		weight = 2350;
-		attachments[] = {"kr_mk18_hndgrd","weaponOpticsB","kr_ar_pistolgrip","kr_ar_bttstck","weaponWrap"};
+		weight = 5500;
+		attachments[] = {"kr_muzzle338","kr_mk18_hndgrd","weaponOpticsB","kr_ar_pistolgrip","kr_ar_bttstck","weaponWrap"};
 		chamberableFrom[] = {"kr_Ammo_338LM_fmj","kr_Ammo_338LM_ap","kr_Ammo_338LM_upz","kr_Ammo_338LM_tac_x"};
 		magazines[] = {"Mag_338lm_mk18_10Rnd"};
 		absorbency = 0.0;
@@ -39,22 +40,22 @@ class cfgWeapons
 		hiddenSelections[] = {"camo"};
 		itemSize[] = {8,3};
 		WeaponLength = 1.2;
-		initSpeedMultiplier = 0.9;
-		barrelArmor = 5.3;
-		recoilModifier[] = {2.8,3.1,5.3};
-		swayModifier[] = {3.2,3.2,3.2};
+		initSpeedMultiplier = 1.0;
+		barrelArmor = 12;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
 		modes[] = {"SemiAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"MK18_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {};
-			reloadTime = 0.4;
-			dispersion = 0.0006;
+			soundSetShotExt[] = {{"Repeater_silencerHomeMade_SoundSet","Repeater_silencerHomeMadeTail_SoundSet","Repeater_silencerInteriorHomeMadeTail_SoundSet"}};
+			reloadTime = 0.15;
+			dispersion = 0.0026;
 			magazineSlot = "magazine";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = -15;
 		};
 		class NoiseShoot
 		{
@@ -146,7 +147,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 240;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK18\data\MK18.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK18\data\MK18_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK18\data\MK18_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK18\data\MK18_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK18\data\MK18_destruct.rvmat"}}};
 				};
 			};

@@ -197,12 +197,7 @@ class CfgNonAIVehicles
 		inventorySlot = "magazine";
 		model = "\KR\weapons\kr_weaponpack\attachments\magazine\12x76\Mag_12x76_promag_sai_02_10Rnd.p3d";
 	};
-	class ProxyMag_50bmg_AX50_5Rnd: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "magazine";
-		model = "KR\weapons\kr_weaponpack\attachments\magazine\50bmg\Mag_50bmg_ax50_5Rnd.p3d";
-	};
+
 	class Proxyash_mag10: ProxyAttachment
 	{
 		scope = 2;
@@ -479,6 +474,13 @@ class CfgNonAIVehicles
 		inventorySlot = "magazine";
 		model = "KR\weapons\kr_weaponpack\attachments\magazine\762x51\Mag_762x51_mcmillan_cs5_10Rnd.p3d";
 	};
+	class ProxyMag_762x51_m240_150Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack\attachments\magazine\762x51\Mag_762x51_m240_150Rnd.p3d";
+	};
+	
 	class ProxyMag_762x51_mcmillan_cs5_20Rnd: ProxyAttachment
 	{
 		scope = 2;
@@ -490,6 +492,12 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "magazine";
 		model = "KR\weapons\kr_weaponpack\attachments\magazine\762x51\Mag_762x51_kac_steel_10Rnd.p3d";
+	};
+	class ProxyMag_762x51_kac_xproduct_50Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack\attachments\magazine\762x51\Mag_762x51_kac_xproduct_50Rnd.p3d";
 	};
 	class ProxyMag_762x51_kac_steel_20Rnd: ProxyAttachment
 	{
@@ -670,6 +678,12 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "weaponOpticsB";
 		model = "\KR\weapons\kr_weaponpack\attachments\optics\picatinny\optic_sb_pm2.p3d";
+	};
+	class Proxyoptic_vortex_viper: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "weaponOpticsB";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\optic_vortex_viper.p3d";
 	};
 	class Proxyoptic_vomz_pilad: ProxyAttachment
 	{
@@ -2896,5 +2910,176 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "kr_csr50_bipods";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\CSR50\csr50_bipods.p3d";
+	};
+	class Proxyan_94_stock: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_an_94_stock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\an_94_parts\an_94_stock.p3d";
+	};
+
+	class ProxyMag_50bmg_AX50_5Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\50bmg\Mag_50bmg_AX50_5Rnd.p3d";
+	};
+
+	class ProxyMag_338_axmc_10Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack\attachments\magazine\338lm\Mag_338_axmc_10Rnd.p3d";
+	};
+
+	class Proxyax50_handguard: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ax50_handguard";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\ax50_parts\ax50_handguard.p3d";
+	};
+	class Proxyax50_stock: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ax50_stock";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\ax50_parts\ax50_stock.p3d";
+	};
+	class Proxymuzzle50bmg_flashhider_ax50: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle50bmg";
+		model = "KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle50BMG\muzzle50bmg_flashhider_ax50.p3d";
+	};
+	class Proxymuzzle50bmg_flashhider_m82: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle50bmg";
+		model = "KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle50BMG\muzzle50bmg_flashhider_m82.p3d";
+	};
+	class Proxymuzzle50bmg_flashhider_m99: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle50bmg";
+		model = "KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle50BMG\muzzle50bmg_flashhider_m99.p3d";
+	};
+	class Proxymuzzle50bmg_suppressor_barrett: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle50bmg";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle50BMG\muzzle50bmg_suppressor_barrett.p3d";
+	};
+
+	class Proxyscope_aug_a1: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_weaponOpticsAUG";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\other\scope_aug_a1.p3d";
+	};
+
+	class ProxyMag_556x45_aug_10Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\Mag_556x45_aug_10Rnd.p3d";
+	};
+	class ProxyMag_556x45_aug_30Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\Mag_556x45_aug_30Rnd.p3d";
+	};
+	class ProxyMag_556x45_aug_42Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\Mag_556x45_aug_42Rnd.p3d";
+	};
+
+
+	class Proxymcx_spear_hguard: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_spear_handguard";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\mcx_spear_parts\mcx_spear_hguard.p3d";
+	};
+	class Proxymcx_spear_stock_std: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_spear_stock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\mcx_spear_parts\mcx_spear_stock_std.p3d";
+	};
+	class Proxymcx_spear_stock_tube: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_spear_stock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\mcx_spear_parts\mcx_spear_stock_tube.p3d";
+	};
+
+	class Proxyamb_17_stock: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_amb17_stock";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\amb_17_parts\amb_17_stock.p3d";
+	};
+
+	class Proxybipods_m82: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_m82_bipods";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\bipods\bipods_m82.p3d";
+	};
+
+	class ProxyMag_50bmg_m82_10Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\50bmg\Mag_50bmg_m82_10Rnd.p3d";
+	};
+
+	class ProxyMag_338lm_mrad_10Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\338lm\Mag_338lm_mrad_10Rnd.p3d";
+	};
+
+	class Proxymuzzle338lm_flashhider_mrad: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle338";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle338lm\muzzle338lm_flashhider_mrad.p3d";
+	};
+
+	class Proxystock_mrad: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_mrad_stock";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\mrad_parts\stock_mrad.p3d";
+	};
+
+	class Proxystock_svch: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_svch_stock";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\svch_parts\stock_svch.p3d";
+	};
+
+	class Proxykr_muzzle127x55_vssk: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle127_55_vssk";
+		model = "KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle127x55\kr_muzzle127x55_vssk.p3d";
+	};
+	class Proxybipods_vssk: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_bipod_vssk";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\bipods\bipods_vssk.p3d";
+	};
+	class ProxyMag_127x55_vssk_10Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\127x55\Mag_127x55_vssk_10Rnd.p3d";
 	};
 };

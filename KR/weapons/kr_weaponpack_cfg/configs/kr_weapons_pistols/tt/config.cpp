@@ -13,6 +13,7 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoPistol;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -27,17 +28,17 @@ class cfgWeapons
 		PPDOFProperties[] = {1,0.9,10,250,4,10};
 		WeaponLength = 0.21;
 		ShoulderDistance = 0.4;
-		barrelArmor = 9;
+		barrelArmor = 12;
 		initSpeedMultiplier = 1;
 		chamberSize = 1;
 		chamberedRound = "";
 		simpleHiddenSelections[] = {"hide_grip"};
 		magazines[] = {"Mag_762x25_tt_std_8Rnd"};
-		chamberableFrom[] = {"kr_Ammo_762x25_PT_gz","kr_Ammo_762x25_PST_gz","kr_Ammo_762x25_FMJ43","kr_Ammo_762x25_AKBS"};
+		chamberableFrom[] = {"kr_Ammo_762x25_PT_gz","kr_Ammo_762x25_PST_gz","kr_Ammo_762x25_FMJ43","kr_Ammo_762x25_AKBS","kr_Ammo_762x25_HP"};
 		magazineSwitchTime = 0.1;
 		ejectType = 1;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1.3,1.3,0.8};
+		swayModifier[] = {1,1,1};
 		hiddenSelections[] = {"camo"};
 		class NoiseShoot
 		{
@@ -49,8 +50,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"Colt1911_Shot_SoundSet","Colt1911_Tail_SoundSet","Colt1911_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"Colt1911_silencerPro_SoundSet","Colt1911_silencerTail_SoundSet","Colt1911_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.099;
-			dispersion = 0.00099;
+			reloadTime = 0.12;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoPistol
@@ -127,7 +128,7 @@ class cfgWeapons
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 0;
 		};
 		class GlobalHealth
 		{

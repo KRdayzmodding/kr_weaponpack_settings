@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -39,13 +40,18 @@ class cfgWeapons
 		simpleHiddenSelections[] = {"hide_barrel","ammobelt","hide_muzzle"};
 		hiddenSelections[] = {"camo","camo1"};
 		modes[] = {"FullAuto"};
-		swayModifier[] = {1,1,0.9};
-		recoilModifier[] = {1.2,1.25,1.25};
+		swayModifier[] = {1,1,1};
+		recoilModifier[] = {1,1,1};
 		barrelArmor = 15.0;
-		initSpeedMultiplier = 0.9;
+		initSpeedMultiplier = 1.5;
+		class NoiseShoot
+		{
+			strength = 150;
+			type = "shot";
+		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 150;
 		};
 		class kr_description
 		{
@@ -56,9 +62,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"Magnum_Shot_SoundSet","Magnum_Tail_SoundSet","Magnum_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.088;
-			dispersion = 0.0009;
-			magazineSlot = "magazine";
+			reloadTime = 0.12;
+			dispersion = 0.0025;
 		};
 		class OpticsInfo: OpticsInfoRifle
 		{
@@ -161,18 +166,17 @@ class cfgWeapons
 	{
 		scope = 2;
 		PPDOFProperties[] = {1,0.5,20,170,4,10};
-		swayModifier[] = {1,1,0.9};
-		recoilModifier[] = {1.2,1.25,1.25};
-		barrelArmor = 20.4;
-		initSpeedMultiplier = 0.9;
+		swayModifier[] = {1.5,1.8,1.5};
+		recoilModifier[] = {1,1,1};
+		barrelArmor = 15;
+		initSpeedMultiplier = 1.5;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_lmg\M240\data\m240_1_co.paa","KR\weapons\kr_weaponpack\kr_weapons_lmg\M240\data\m240_2_co.paa"};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"Magnum_Shot_SoundSet","Magnum_Tail_SoundSet","Magnum_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.088;
-			dispersion = 0.0009;
-			magazineSlot = "magazine";
+			reloadTime = 0.12;
+			dispersion = 0.0025;
 		};
 	};
 };

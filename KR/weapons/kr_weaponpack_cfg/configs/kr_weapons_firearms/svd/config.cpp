@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -351,10 +352,10 @@ class cfgWeapons
 		attachments[] = {"kr_muzzle762_54","kr_svd_hndgrd","weaponOpticsAK","kr_ak_pistolgrip","kr_svd_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponOptics","weaponOpticsDT","weaponWrap"};
 		WeaponLength = 0.885;
 		weight = 3150;
-		barrelArmor = 5.7;
-		initSpeedMultiplier = 1.0;
-		recoilModifier[] = {2,2,2};
-		swayModifier[] = {2,2,2};
+		barrelArmor = 12.0;
+		initSpeedMultiplier = 1.15;
+		recoilModifier[] = {1.5,1.5,1.5};
+		swayModifier[] = {1.5,1.5,1.5};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd_s_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd_s.rvmat"};
 		modes[] = {"SemiAuto"};
@@ -365,7 +366,7 @@ class cfgWeapons
 			envShootingDecrease = 0.8;
 			envShootingDecreaseExt[] = {0.05,0.05};
 			reloadTime = 0.12;
-			dispersion = 0.0005;
+			dispersion = 0.0031;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -390,6 +391,7 @@ class cfgWeapons
 			};
 		};
 	};
+
 	class kr_SVD: kr_SVD_Base
 	{
 		scope = 2;
@@ -401,10 +403,10 @@ class cfgWeapons
 		weight = 3500;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd.rvmat"};
-		barrelArmor = 7.3;
-		initSpeedMultiplier = 1.0;
-		recoilModifier[] = {2,2,2};
-		swayModifier[] = {2,2,2};
+		barrelArmor = 16;
+		initSpeedMultiplier = 1.15;
+		recoilModifier[] = {1.5,1.5,1.5};
+		swayModifier[] = {1.5,1.5,1.5};
 		modes[] = {"SemiAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
@@ -413,7 +415,7 @@ class cfgWeapons
 			envShootingDecrease = 0.8;
 			envShootingDecreaseExt[] = {0.05,0.05};
 			reloadTime = 0.12;
-			dispersion = 0.0005;
+			dispersion = 0.0032;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -542,6 +544,7 @@ class cfgWeapons
 			};
 		};
 	};
+
 	class kr_SVU: kr_SVD_Base
 	{
 		scope = 2;
@@ -550,11 +553,11 @@ class cfgWeapons
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\svu.p3d";
 		attachments[] = {"weaponOpticsAK","kr_ak_pistolgrip","weaponHolo1","weaponHolo2","weaponHolo3","weaponOptics","weaponOpticsDT","weaponWrap"};
 		WeaponLength = 0.62;
-		barrelArmor = 2.6;
+		barrelArmor = 10;
 		weight = 3500;
-		initSpeedMultiplier = 1.0;
-		recoilModifier[] = {2,2,2};
-		swayModifier[] = {2,2,2};
+		initSpeedMultiplier = 0.9;
+		recoilModifier[] = {0.8,0.8,0.8};
+		swayModifier[] = {0.8,0.8,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svu_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svu.rvmat"};
 		PPDOFProperties[] = {0,0.0,0,0,0,0};
@@ -567,7 +570,7 @@ class cfgWeapons
 			envShootingDecrease = 0.8;
 			envShootingDecreaseExt[] = {0.05,0.05};
 			reloadTime = 0.12;
-			dispersion = 0.0005;
+			dispersion = 0.0028;
 			magazineSlot = "magazine";
 		};
 		class kr_description
@@ -585,6 +588,11 @@ class cfgWeapons
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\svd\data\svd_destruct.rvmat"}}};
 				};
 			};
+		};
+		class NoiseShoot
+		{
+			strength = 10;
+			type = "sound";
 		};
 		class InventorySlotsOffsets
 		{

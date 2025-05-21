@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -23,6 +24,9 @@ class cfgVehicles
 		weight = 399;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\hk_quad_rail_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\hk_quad_rail.rvmat"};
+		recoilModifier[] = {0.7,0.8,1};	
+		swayModifier[] = {0.7,1,0.8};
+
 		class kr_description
 		{
 			kr_tier = 1;
@@ -30,7 +34,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 11;
+			ergonomics = 8;
 		};
 		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left","kr_bipod"};
 		class kr_firearms
@@ -66,6 +70,9 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\midwest_9_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\midwest_9.rvmat"};
+		recoilModifier[] = {0.7,0.7,1};	
+		swayModifier[] = {0.8,1,0.7};
+
 		class kr_description
 		{
 			kr_tier = 1;
@@ -73,7 +80,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 12;
+			ergonomics = 10;
 		};
 		class kr_firearms
 		{
@@ -129,6 +136,9 @@ class cfgVehicles
 		itemSize[] = {6,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\hk_quad_rail_extended_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\hk_quad_rail_extended.rvmat"};
+		recoilModifier[] = {0.7,0.5,1};	
+		swayModifier[] = {0.65,1,0.88};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -136,7 +146,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 13;
+			ergonomics = 15;
 		};
 		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_bipod","kr_light_left"};
 		class kr_firearms
@@ -173,6 +183,9 @@ class cfgVehicles
 		attachments[] = {"kr_pointer_1","kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\midwest_13_5_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\midwest_13_5.rvmat"};
+		recoilModifier[] = {0.65,0.55,1};	
+		swayModifier[] = {0.6,1,0.8};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -180,7 +193,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 14;
+			ergonomics = 12;
 		};
 		class kr_firearms
 		{
@@ -237,6 +250,9 @@ class cfgVehicles
 		attachments[] = {"kr_pointer_1","kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\si_crux_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\si_crux.rvmat"};
+		recoilModifier[] = {0.7,0.6,1};	
+		swayModifier[] = {0.6,1,0.6};
+
 		class kr_description
 		{
 			kr_tier = 3;
@@ -244,7 +260,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 16;
+			ergonomics = 24;
 		};
 		class kr_firearms
 		{
@@ -301,6 +317,9 @@ class cfgVehicles
 		attachments[] = {"kr_pointer_1","kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\troy_carbon_fiber_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\troy_carbon_fiber.rvmat"};
+		recoilModifier[] = {0.6,0.5,1};	
+		swayModifier[] = {0.55,1,0.8};
+
 		class kr_description
 		{
 			kr_tier = 3;
@@ -308,7 +327,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 17;
+			ergonomics = 20;
 		};
 		class kr_firearms
 		{
@@ -365,6 +384,9 @@ class cfgVehicles
 		attachments[] = {"kr_pointer_1","kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\hk_mrs_keymod_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\hk416_handguards\data\hk_mrs_keymod.rvmat"};
+		recoilModifier[] = {0.45,0.45,1};	
+		swayModifier[] = {0.7,1,0.8};
+
 		class kr_description
 		{
 			kr_tier = 3;
@@ -372,7 +394,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 18;
+			ergonomics = 15;
 		};
 		class kr_firearms
 		{

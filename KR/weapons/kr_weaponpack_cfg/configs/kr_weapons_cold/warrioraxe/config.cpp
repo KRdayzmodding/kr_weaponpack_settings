@@ -9,7 +9,8 @@ class CfgPatches
 		ammo[] = {};
 	};
 };
-class CfgVehicles
+class kr_Gunplay_Base;
+class cfgVehicles
 {
 	class FirefighterAxe;
 	class kr_warrioraxe: FirefighterAxe

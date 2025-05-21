@@ -17,7 +17,7 @@ class CfgMagazines
 	{
 		ammoItems[] = {"kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_Geksa"};
 		ammo = "Bullet_366tkm_FMJ";
-		recoilModifier[] = {1.0,1.0,0.95};
+		
 		weightPerQuantityUnit = 35.0;
 		tracersEvery = 0;
 		class kr_description
@@ -101,6 +101,8 @@ class CfgMagazines
 		weight = 200;
 		itemSize[] = {1,1};
 		count = 4;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\366\data\vpo215_mag_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\366\data\vpo215_mag.rvmat"};
 		soundImpactType = "metal";

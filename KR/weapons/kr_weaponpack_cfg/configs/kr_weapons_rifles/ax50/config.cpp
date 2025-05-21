@@ -3,17 +3,19 @@ class CfgPatches
 	class kr_weapons_rifles_ax50
 	{
 		units[] = {};
-		weapons[] = {"kr_AX50"};
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data","kr_weapon_sounds_sounds"};
 	};
 };
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -23,7 +25,7 @@ class cfgWeapons
 		scope = 0;
 		displayName = "$STR_weapons_rifles_ax50";
 		descriptionShort = "$STR_weapons_rifles_ax50_dsc";
-		weight = 12000;
+		weight = 10300;
 		absorbency = 0;
 		repairableWithKits[] = {1};
 		repairCosts[] = {25};
@@ -32,30 +34,31 @@ class cfgWeapons
 		distanceZoomMax = 100;
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
 		opticsFlare = 0;
-		winchesterTypeOpticsMount = 1;
-		WeaponLength = 0.934214;
+		winchesterTypeOpticsMount = 0;
+		WeaponLength = 1.03;
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"kr_Ammo_50BMG","kr_Ammo_50BMG_AP","kr_Ammo_50BMG_E","kr_Ammo_50BMG_ET","kr_Ammo_50BMG_T"};
-		magazines[] = {"mag_50bmg_AX50_5Rnd"};
+		magazines[] = {"Mag_50bmg_ax50_5Rnd"};
 		magazineSwitchTime = 0.38;
 		ejectType = 0;
 		reloadAction = "Reloadcz527";
 		shotAction = "Reloadcz527Shot";
 		hiddenSelections[] = {"camo"};
-		attachments[] = {"weaponOpticsB","weaponOptics","weaponWrap"};
-		model = "KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\AX50.p3d";
-		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\data\AX50.rvmat"};
-		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\data\AX50_co.paa"};
-		barrelArmor = 1.4;
-		initSpeedMultiplier = 1.2;
+		simpleHiddenSelections[] = {"hide_barrel"};
+		attachments[] = {"kr_muzzle50bmg","kr_ax50_handguard","weaponOpticsB1","kr_ax50_stock","weaponWrap"};
+		model = "KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\AX50.p3d";
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\data\AX50.rvmat"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\data\AX50_co.paa"};
+		barrelArmor = 2.6;
+		initSpeedMultiplier = 1.1;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1.2};
-		itemSize[] = {9,2};
+		swayModifier[] = {1,1,1};
+		itemSize[] = {12,2};
 		modes[] = {"Single"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 30;
 		};
 		class kr_description
 		{
@@ -67,7 +70,7 @@ class cfgWeapons
 			soundSetShot[] = {"CR527_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"CR527_silencerHomeMade_SoundSet","CR527_silencerHomeMadeTail_SoundSet","CR527_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1;
-			dispersion = 0.0005;
+			dispersion = 0.0024;
 			magazineSlot = "magazine";
 		};
 		class DamageSystem
@@ -76,8 +79,8 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
-					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\data\AX50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\data\AX50_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\data\AX50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\data\AX50_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\data\AX50_destruct.rvmat"}}};
+					hitpoints = 350;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\data\AX50.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\data\AX50_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\data\AX50_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\data\AX50_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\data\AX50_destruct.rvmat"}}};
 				};
 			};
 		};
@@ -91,10 +94,10 @@ class cfgWeapons
 				};
 				class MuzzleFlash
 				{
-					overrideParticle = "weapon_shot_cz527_01";
 					ignoreIfSuppressed = 1;
 					illuminateWorld = 1;
-					positionOffset[] = {-0.05,0,0};
+					overrideParticle = "weapon_shot_50BMG";
+					overrideDirectionVector[] = {180,0,0};
 				};
 			};
 			class OnOverheating
@@ -118,7 +121,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 100;
+			strength = 110;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -126,14 +129,15 @@ class cfgWeapons
 			memoryPointCamera = "eye";
 			modelOptics = "-";
 			distanceZoomMin = 100;
-			distanceZoomMax = 1000;
-			discreteDistance[] = {100,150,200,300,400,500,600,700,800,900,1000};
+			distanceZoomMax = 100;
+			discreteDistance[] = {100};
 			discreteDistanceInitIndex = 0;
 		};
 	};
+
 	class kr_AX50: kr_AX50_Base
 	{
 		scope = 2;
-		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\AX50\data\AX50_co.paa"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_rifles\AX50\data\AX50_co.paa"};
 	};
 };

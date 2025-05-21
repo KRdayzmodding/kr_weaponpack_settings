@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -20,8 +21,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_saiga12k_handguard_saiga12k_std_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\saiga12k_handguard_saiga12k_std.p3d";
 		weight = 180;
-		recoilModifier[] = {0.6,0.85,0.85};
-		swayModifier[] = {0.75,0.75,0.75};
+		recoilModifier[] = {0.7,0.8,1};	
+		swayModifier[] = {0.7,1,0.8};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\saiga12k_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\saiga12k_std.rvmat"};
@@ -60,8 +61,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_saiga12k_handguard_bravo18_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\saiga12k_handguard_bravo18.p3d";
 		weight = 370;
-		recoilModifier[] = {0.45,0.8,0.8};
-		swayModifier[] = {0.55,0.55,0.55};
+		recoilModifier[] = {0.7,0.7,1};	
+		swayModifier[] = {0.8,1,0.7};
 		itemSize[] = {3,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\bravo18_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\bravo18.rvmat"};
@@ -100,8 +101,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_saiga12k_handguard_cg340_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\saiga12k_handguard_cg340.p3d";
 		weight = 240;
-		recoilModifier[] = {0.45,0.8,0.8};
-		swayModifier[] = {0.55,0.55,0.55};
+		recoilModifier[] = {0.7,0.5,1};	
+		swayModifier[] = {0.65,1,0.88};
 		itemSize[] = {3,1};
 		haveTube = 1;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\cg340_co.paa"};
@@ -157,8 +158,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_saiga12k_handguard_utg_pro_short_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\saiga12k_handguard_utg_pro_short.p3d";
 		weight = 408;
-		recoilModifier[] = {0.35,0.75,0.75};
-		swayModifier[] = {0.4,0.4,0.4};
+		recoilModifier[] = {0.6,0.5,1};	
+		swayModifier[] = {0.55,1,0.8};
 		itemSize[] = {3,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\utg_pro_short_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\utg_pro_short.rvmat"};
@@ -195,8 +196,8 @@ class cfgVehicles
 		descriptionlong = "$STR_kr_weapons_attachments_saiga12k_handguard_utg_pro_long_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\saiga12k_handguard_utg_pro_long.p3d";
 		weight = 428;
-		recoilModifier[] = {0.25,0.7,0.7};
-		swayModifier[] = {0.3,0.3,0.3};
+		recoilModifier[] = {0.6,0.6,1};	
+		swayModifier[] = {0.5,1,0.95};
 		itemSize[] = {4,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\utg_pro_long_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\utg_pro_long.rvmat"};
@@ -233,8 +234,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_spas12_stock_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\spas12_stock.p3d";
 		weight = 300;
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.75,0.75,0.75};
+		recoilModifier[] = {1,1,0.9};
+		swayModifier[] = {1,0.8,0.85};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\spas12_stock_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\shotguns_parts\data\spas12_stock.rvmat"};
@@ -247,7 +248,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 23;
+			ergonomics = -23;
 		};
 		class DamageSystem
 		{
@@ -268,8 +269,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_m3s_synthetic_stock_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\stock_m3s_synthetic.p3d";
 		weight = 300;
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.75,0.75,0.75};
+		recoilModifier[] = {1,1,0.7};
+		swayModifier[] = {1,0.85,0.65};
 		itemSize[] = {2,2};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\m3s_synthetic_stock_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\m3s_synthetic_stock.rvmat"};
@@ -282,7 +283,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 27;
+			ergonomics = -20;
 		};
 		class DamageSystem
 		{
@@ -303,8 +304,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_m3s_telescopic_stock_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\stock_m3s_telescopic.p3d";
 		weight = 300;
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.75,0.75,0.75};
+		recoilModifier[] = {1,1,0.85};
+		swayModifier[] = {1,0.85,0.85};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\m3_telescopic_stock_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\m3_telescopic_stock.rvmat"};
@@ -317,7 +318,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 23;
+			ergonomics = -10;
 		};
 		class DamageSystem
 		{
@@ -338,8 +339,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_stock_m870_magpul_sga_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\stock_m870_magpul_sga.p3d";
 		weight = 300;
-		recoilModifier[] = {0.75,0.85,0.55};
-		swayModifier[] = {0.75,0.75,0.75};
+		recoilModifier[] = {1,1,0.85};
+		swayModifier[] = {1,0.9,0.9};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\m870_magpul_sga_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\m870_magpul_sga.rvmat"};
@@ -352,7 +353,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 14;
 		};
 		class DamageSystem
 		{
@@ -373,8 +374,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_stock_m870_raptor_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\stock_m870_raptor.p3d";
 		weight = 300;
-		recoilModifier[] = {1.0,1.0,1.3};
-		swayModifier[] = {1.1,1.2,0.8};
+		recoilModifier[] = {1,1,1.2};
+		swayModifier[] = {1,1.1,1.1};
 		itemSize[] = {1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\m870_raptor_grip_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\m870_raptor_grip.rvmat"};
@@ -387,7 +388,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 28;
+			ergonomics = 35;
 		};
 		class DamageSystem
 		{
@@ -408,8 +409,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_handguard_m870_fd_pr870_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\handguard_m870_pr870.p3d";
 		weight = 300;
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {1.0,1.0,1.0};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {0.9,1,0.9};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\fab_defence_pr870_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\fab_defence_pr870.rvmat"};
@@ -444,8 +445,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_handguard_m870_magpul_moe_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\handguard_m870_magpul_moe.p3d";
 		weight = 300;
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {1.0,1.0,1.0};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {0.8,1,0.8};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\magpul_moe_870_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\magpul_moe_870.rvmat"};

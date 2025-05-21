@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -72,7 +73,7 @@ class cfgVehicles
 	{
 		barrelArmor = 20000;
 		dispersionModifier = -0.0001;
-		noiseShootModifier = -0.1;
+		noiseShootModifier = 0.0;
 		recoilModifier[] = {0.9,0.95,0.95};
 		swayModifier[] = {1.0,1.0,1.0};
 		class kr_description
@@ -88,7 +89,7 @@ class cfgVehicles
 	{
 		barrelArmor = 15000;
 		dispersionModifier = -0.00012;
-		noiseShootModifier = -0.12;
+		noiseShootModifier = -0.1;
 		recoilModifier[] = {0.85,0.9,0.9};
 		swayModifier[] = {1.0,1.0,1.0};
 		class kr_description
@@ -97,14 +98,14 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 2;
 		};
 	};
 	class kr_muzzle_t3_Base: kr_muzzle_Base
 	{
 		barrelArmor = 12000;
 		dispersionModifier = -0.00017;
-		noiseShootModifier = -0.13;
+		noiseShootModifier = -0.2;
 		recoilModifier[] = {0.8,0.9,0.85};
 		swayModifier[] = {1.0,1.0,1.0};
 		class kr_description
@@ -113,14 +114,14 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 3;
 		};
 	};
 	class kr_muzzle_t4_Base: kr_muzzle_Base
 	{
 		barrelArmor = 9000;
 		dispersionModifier = -0.00025;
-		noiseShootModifier = -0.15;
+		noiseShootModifier = -0.3;
 		recoilModifier[] = {0.75,0.8,0.85};
 		swayModifier[] = {1.0,1.0,1.0};
 		class kr_description
@@ -129,7 +130,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 4;
 		};
 	};
 	class kr_suppressor_Base: ItemSuppressor
@@ -170,31 +171,32 @@ class cfgVehicles
 				};
 			};
 		};
+
 		class Particles
 		{
 			class OnFire
 			{
-				class MuzzleFlashAssault
+				class MuzzleFlash
 				{
 					overrideParticle = "weapon_shot_silencer_01";
 					onlyWithinHealthLabel[] = {0,3};
-					positionOffset[] = {0,0,0};
 				};
 			};
 			class OnOverheating
 			{
-				shotsToStartOverheating = 2;
-				maxOverheatingValue = 20;
+				shotsToStartOverheating = 3;
+				maxOverheatingValue = 10;
 				overheatingDecayInterval = 1;
-				class SmokingBarrel
+				class SmokeTrail
 				{
 					overrideParticle = "smoking_barrel_small";
-					onlyWithinRainLimits[] = {0,0.2};
+					onlyWithinRainLimits[] = {0.0,0.2};
 				};
 				class SmokingBarrelHotSteamSmall
 				{
 					overrideParticle = "smoking_barrel_steam_small";
 					positionOffset[] = {0.0,0.1,0};
+					onlyWithinOverheatLimits[] = {0,1};
 					onlyWithinRainLimits[] = {0.2,1};
 				};
 			};
@@ -203,10 +205,10 @@ class cfgVehicles
 	class kr_suppressor_t1_Base: kr_suppressor_Base
 	{
 		barrelArmor = 7000;
-		noiseShootModifier = -0.8;
+		noiseShootModifier = -0.9;
 		recoilModifier[] = {0.9,0.85,0.9};
-		swayModifier[] = {1.0,1.1,1.0};
-		dispersionModifier = -5e-05;
+		swayModifier[] = {1.0,1.05,1.0};
+		dispersionModifier = -0.9;
 		class kr_description
 		{
 			kr_tier = 1;
@@ -220,7 +222,7 @@ class cfgVehicles
 	{
 		barrelArmor = 6000;
 		dispersionModifier = -0.0001;
-		noiseShootModifier = -0.85;
+		noiseShootModifier = -0.93;
 		recoilModifier[] = {0.85,0.8,0.85};
 		swayModifier[] = {1.0,1.1,1.0};
 		class kr_description
@@ -236,7 +238,7 @@ class cfgVehicles
 	{
 		barrelArmor = 5000;
 		dispersionModifier = -0.00015;
-		noiseShootModifier = -0.93;
+		noiseShootModifier = -0.96;
 		recoilModifier[] = {0.8,0.75,0.8};
 		swayModifier[] = {1.0,1.15,1.0};
 		class kr_description

@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -27,13 +28,14 @@ class cfgWeapons
 		PPDOFProperties[] = {1,0.5,50,150,4,10};
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
+		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_HP","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
 		magazines[] = {"Mag_VSS_10Rnd","Mag_VAL_20Rnd","Mag_9x39_6l24_10Rnd","Mag_9x39_6l25_20Rnd","Mag_9x39_sr3m_30Rnd"};
 		WeaponLength = 0.78;
-		barrelArmor = 2.4;
+		barrelArmor = 15.0;
 		magazineSwitchTime = 0.38;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1.2};
+		swayModifier[] = {1.2,1.2,1.2};
+		initSpeedMultiplier = 0.95;
 		simpleHiddenSelections[] = {"hide_barrel","hide_pistolgrip"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\val\data\val_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\val\data\val.rvmat"};
@@ -44,27 +46,27 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 5;
+			strength = 7;
 			type = "sound";
 		};
 		modes[] = {"SemiAuto","FullAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"VSS_Vintorez_Shot_SoundSet","VSS_Vintorez_Tail_SoundSet","VSS_Vintorez_InteriorTail_SoundSet"};
+			soundSetShot[] = {"VAL_Shot_SoundSet","VAL_Tail_SoundSet","VAL_InteriorTail_SoundSet"};
 			envShootingDecrease = 0.05;
 			reloadTime = 0.12;
 			recoil = "recoil_VSS";
 			recoilProne = "recoil_VSS_prone";
-			dispersion = 0.002;
+			dispersion = 0.0038;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			soundSetShot[] = {"VSS_Vintorez_Shot_SoundSet","VSS_Vintorez_Tail_SoundSet","VSS_Vintorez_InteriorTail_SoundSet"};
-			reloadTime = 0.065;
+			soundSetShot[] = {"VAL_Shot_SoundSet","VAL_Tail_SoundSet","VAL_InteriorTail_SoundSet"};
+			reloadTime = 0.09;
 			recoil = "recoil_VSS";
 			recoilProne = "recoil_VSS_prone";
-			dispersion = 0.002;
+			dispersion = 0.0038;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -158,7 +160,7 @@ class cfgWeapons
 		descriptionShort = "$STR_weapons_firearms_val_dsc";
 		attachments[] = {"kr_val_mount","kr_s_mount_1","weaponOpticsAK","kr_val_stock","kr_val_pistolgrip","kr_ak_pistolgrip","weaponOpticsDT","weaponWrap"};
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\val\val.p3d";
-		itemSize[] = {6,3};
+		itemSize[] = {8,3};
 
 		class kr_description
 		{

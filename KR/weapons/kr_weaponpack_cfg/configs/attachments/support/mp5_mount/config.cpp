@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -27,7 +28,7 @@ class cfgVehicles
 		isMount = 1;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = -2;
 		};
 		class kr_description
 		{
@@ -61,7 +62,7 @@ class cfgVehicles
 		isMount = 1;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = -3;
 		};
 		class kr_description
 		{

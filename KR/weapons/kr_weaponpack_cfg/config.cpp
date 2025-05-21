@@ -20,6 +20,15 @@ class CfgMods
 			{
 				files[] = {"KR/weapons/kr_weaponpack_cfg/data/icons/kr_weapons_icons.imageset"};
 			};
+
+			class worldScriptModule
+			{
+				value="";
+				files[]=
+				{
+					"KR/weapons/kr_weaponpack_cfg/scripts/4_World"
+				};
+			};
 		};
 	};
 };
@@ -49,6 +58,12 @@ class CfgSlots
 		displayName = "#STR_kr_slot_ak_pistolgrip";
 		ghostIcon = "set:kr_weapon_icons image:kr_pistolgrip";
 	};
+	class Slot_kr_muzzle50bmg
+	{
+		name = "kr_muzzle50bmg";
+		displayName = "#STR_kr_slot_muzzle50bmg";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_50bmg";
+	};
 	class Slot_kr_muzzle366
 	{
 		name = "kr_muzzle366";
@@ -71,7 +86,7 @@ class CfgSlots
 	{
 		name = "kr_muzzle338";
 		displayName = "#STR_kr_slot_muzzle338";
-		ghostIcon = "set:kr_weapon_icons image:kr_silencer_any";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_338lm";
 	};
 	class Slot_kr_muzzle308
 	{
@@ -187,6 +202,14 @@ class CfgSlots
 		displayName = "#STR_kr_slot_ar10_hndgrd";
 		ghostIcon = "set:kr_weapon_icons image:kr_ar10_handguard";
 	};
+
+	class Slot_kr_ar10_ar15_hndgrd
+	{
+		name = "kr_ar10_ar15_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_ar10_ar15_handguard";
+	};
+
 	class Slot_kr_rpk16_hndgrd
 	{
 		name = "kr_rpk16_hndgrd";
@@ -478,7 +501,7 @@ class CfgSlots
 	class Slot_kr_s_mount_2
 	{
 		name = "kr_s_mount_2";
-		displayName = "#STR_kr_slot_s_mount";
+		displayName = "#STR_kr_slot_mount";
 		ghostIcon = "set:kr_weapon_icons image:kr_s_mount";
 	};
 	class Slot_kr_9a91_stock
@@ -732,5 +755,87 @@ class CfgSlots
 		name = "kr_csr50_bipods";
 		displayName = "#STR_kr_slot_csr50_bipods";
 		ghostIcon = "set:kr_weapon_icons image:kr_bipod";
+	};
+
+	class Slot_kr_an_94_stock
+	{
+		name = "kr_an_94_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_an_94_stock";
+	};
+
+	class Slot_kr_ax50_stock
+	{
+		name = "kr_ax50_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_ax50_stock";
+	};
+	class Slot_kr_ax50_handguard
+	{
+		name = "kr_ax50_handguard";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_ax50_handguard";
+	};
+
+	class Slot_kr_weaponOpticsAUG
+	{
+		name = "kr_weaponOpticsAUG";
+		displayName = "";
+		ghostIcon = "";
+		show = "false";
+	};
+
+	class Slot_kr_spear_stock
+	{
+		name = "kr_spear_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_spear_stock";
+	};
+	class Slot_kr_spear_handguard
+	{
+		name = "kr_spear_handguard";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_spear_handguard";
+	};
+
+	class Slot_kr_amb17_stock
+	{
+		name = "kr_amb17_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_amb17_stock";
+	};
+
+	class Slot_kr_m82_bipods
+	{
+		name = "kr_m82_bipods";
+		displayName = "#STR_kr_slot_bipod";
+		ghostIcon = "set:kr_weapon_icons image:kr_m82_bipods";
+	};
+
+	class Slot_kr_mrad_stock
+	{
+		name = "kr_mrad_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_mrad_stock";
+	};
+
+	class Slot_kr_svch_stock
+	{
+		name = "kr_svch_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_svch_stock";
+	};
+
+	class Slot_kr_muzzle127_55_vssk
+	{
+		name = "kr_muzzle127_55_vssk";
+		displayName = "#STR_kr_slot_muzzle127_55";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle127_55_vssk";
+	};
+	class Slot_kr_bipod_vssk
+	{
+		name = "kr_bipod_vssk";
+		displayName = "#STR_kr_slot_bipod";
+		ghostIcon = "set:kr_weapon_icons image:kr_bipod_vssk";
 	};
 };

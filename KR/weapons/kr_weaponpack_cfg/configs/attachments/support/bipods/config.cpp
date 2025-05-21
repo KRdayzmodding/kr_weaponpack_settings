@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Scripts"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -186,6 +187,88 @@ class cfgVehicles
 		{
 			kr_tier = 3;
 			kr_type = "CSR50";
+		};
+	};
+
+	class kr_bipod_bipods_m82: kr_bipods_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_bipod_bipods_m82";
+		descriptionShort = "$STR_kr_weapons_attachments_bipod_bipods_m82_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\bipods\bipods_m82.p3d";
+		inventorySlot[] = {"kr_m82_bipods"};
+		weight = 490;
+		itemSize[] = {3,2};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\m82_bipods_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\m82_bipods.rvmat"};
+	
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -7;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\m82_bipods.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\m82_bipods.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\m82_bipods_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\m82_bipods_damage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\m82_bipods_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_type = "Barrett M82";
+		};
+	};
+
+	class kr_bipod_bipods_vssk: kr_bipods_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_bipod_bipods_vssk";
+		descriptionShort = "$STR_kr_weapons_attachments_bipod_bipods_vssk_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\bipods\bipods_vssk.p3d";
+		inventorySlot[] = {"kr_bipod_vssk"};
+		weight = 250;
+		itemSize[] = {2,1};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\vssk_bipods_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\vssk_bipods.rvmat"};
+	
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -7;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\vssk_bipods.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\vssk_bipods.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\vssk_bipods_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\vssk_bipods_damage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\bipods\data\vssk_bipods_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_type = "VSSK";
 		};
 	};
 };

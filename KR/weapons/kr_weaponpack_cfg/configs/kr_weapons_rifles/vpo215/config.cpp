@@ -14,6 +14,7 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -24,13 +25,13 @@ class cfgWeapons
 		displayName = "$STR_weapons_rifles_vpo215";
 		descriptionShort = "$STR_weapons_rifles_vpo215_dsc";
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_rifles\vpo215\vpo215.p3d";
-		weight = 3200;
+		weight = 3575;
 		initSpeedMultiplier = 1.4;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.2,2.2,1.2};
+		swayModifier[] = {1,1,1};
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
-		WeaponLength = 0.71;
-		barrelArmor = 3.0;
+		WeaponLength = 0.7;
+		barrelArmor = 8;
 		chamberableFrom[] = {"kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_Geksa"};
 		magazines[] = {"Mag_366_vpo215_4Rnd"};
 		absorbency = 0.0;
@@ -48,20 +49,20 @@ class cfgWeapons
 		hiddenSelections[] = {"camo"};
 		class NoiseShoot
 		{
-			strength = 100;
+			strength = 80;
 			type = "shot";
 		};
 		modes[] = {"Single"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 50;
 		};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"CR527_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"CR527_silencerHomeMade_SoundSet","CR527_silencerHomeMadeTail_SoundSet","CR527_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1;
-			dispersion = 0.00065;
+			dispersion = 0.0025;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -128,6 +129,7 @@ class cfgWeapons
 		scope = 2;
 		attachments[] = {"kr_muzzle366","weaponOpticsB","weaponWrap"};
 		itemSize[] = {10,3};
+		recoilModifier[] = {1.0,1.0,1.0};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\vpo215\data\vpo215_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\vpo215\data\vpo215.rvmat"};
 		class kr_description
@@ -141,7 +143,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\vpo215\data\vpo215.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\vpo215\data\vpo215.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\vpo215\data\vpo215_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\vpo215\data\vpo215_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_rifles\vpo215\data\vpo215_destruct.rvmat"}}};
 				};
 			};

@@ -14,6 +14,7 @@ class kr_firearms_Base
 	light = 0;
 	holo = 0;
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -25,15 +26,15 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_mp5_hguard_btti99_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\mp5_handguard_btti99.p3d";
 		weight = 278;
-		recoilModifier[] = {0.45,0.8,0.8};
-		swayModifier[] = {0.55,0.55,0.55};
+		recoilModifier[] = {0.7,0.7,1};	
+		swayModifier[] = {0.65,1,0.8};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\btti99_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\btti99.rvmat"};
 		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 14;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -65,8 +66,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_mp5_hguard_caa_hx5_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\mp5_handguard_caa_hx5.p3d";
 		weight = 308;
-		recoilModifier[] = {0.35,0.75,0.75};
-		swayModifier[] = {0.4,0.4,0.4};
+		recoilModifier[] = {0.6,0.5,1};	
+		swayModifier[] = {0.55,1,0.8};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\caa_hx5_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\caa_hx5.rvmat"};
@@ -74,7 +75,7 @@ class cfgVehicles
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 20;
 		};
 		class kr_description
 		{
@@ -106,8 +107,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_mp5_hguard_kurtz_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\mp5_handguard_kurtz.p3d";
 		weight = 241;
-		recoilModifier[] = {0.85,0.85,0.85};
-		swayModifier[] = {0.75,0.75,0.75};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		itemSize[] = {1,2};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\kurtz_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\kurtz.rvmat"};
@@ -118,7 +119,7 @@ class cfgVehicles
 		class kr_description
 		{
 			kr_tier = 1;
-			kr_type = "HK MP5";
+			kr_type = "HK MP5k";
 		};
 		class DamageSystem
 		{
@@ -139,8 +140,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_mp5_hguard_ptr_trirail_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\mp5_handguard_ptr_trirail.p3d";
 		weight = 308;
-		recoilModifier[] = {0.45,0.8,0.8};
-		swayModifier[] = {0.55,0.55,0.55};
+		recoilModifier[] = {0.6,0.4,1};	
+		swayModifier[] = {0.5,1,0.9};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\ptr_trirail_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\ptr_trirail.rvmat"};
@@ -148,7 +149,7 @@ class cfgVehicles
 		
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 14;
+			ergonomics = 23;
 		};
 		class kr_description
 		{
@@ -180,8 +181,8 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_mp5_hguard_sd_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\mp5_handguard_sd.p3d";
 		weight = 130;
-		recoilModifier[] = {0.85,0.85,0.85};
-		swayModifier[] = {0.85,0.55,0.55};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\sd_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\sd.rvmat"};
@@ -213,14 +214,14 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_mp5_hguard_wide_tropical_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\mp5_handguard_wide_tropical.p3d";
 		weight = 241;
-		recoilModifier[] = {0.6,0.85,0.85};
-		swayModifier[] = {0.75,0.75,0.75};
+		recoilModifier[] = {0.7,0.8,1};	
+		swayModifier[] = {0.7,1,0.8};
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\wide_tropical_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\mp5_handguards\data\wide_tropical.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 10;
+			ergonomics = 8;
 		};
 		class kr_description
 		{

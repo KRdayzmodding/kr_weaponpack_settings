@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_attachments_support"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -23,9 +24,12 @@ class cfgVehicles
 		weight = 70;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_parts\data\ak_buttpad_gp25_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_parts\data\ak_buttpad_gp25.rvmat"};
+		recoilModifier[] = {1.0,1.0,0.85};	
+		swayModifier[] = {1,0.85,0.85};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 7;
 		};
 		class kr_description
 		{

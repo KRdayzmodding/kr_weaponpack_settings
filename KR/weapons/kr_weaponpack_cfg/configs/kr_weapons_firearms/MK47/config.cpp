@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -35,14 +36,14 @@ class cfgWeapons
 		initSpeedMultiplier = 0.9;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_762x39","Ammo_762x39Tracer","kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa"};
-		magazines[] = {"Mag_762x39_sawed_off_10Rnd","Mag_762x39_6L10_30Rnd","Mag_762x39_ak103_std_30Rnd","Mag_762x39_akms_aluminium_30Rnd","Mag_762x39_fab_defense_ultimag_30Rnd","Mag_762x39_magpul_pmag_30Rnd","Mag_762x39_us_palm_30Rnd","Mag_762x39_promag_drum_73Rnd","Mag_762x39_molot_rpk_drum_75Rnd"};
+		chamberableFrom[] = {"Ammo_762x39","Ammo_762x39Tracer","kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa"};
+		magazines[] = {"Mag_762x39_sawed_off_10Rnd","Mag_762x39_6L10_30Rnd","Mag_762x39_ak103_std_30Rnd","Mag_762x39_akms_aluminium_30Rnd","Mag_762x39_fab_defense_ultimag_30Rnd","Mag_762x39_magpul_pmag_30Rnd","Mag_762x39_us_palm_30Rnd","Mag_762x39_x_products_drum_50Rnd","Mag_762x39_promag_drum_73Rnd","Mag_762x39_molot_rpk_drum_75Rnd"};
 		kr_bannedAmmo[] = {"Bullet_366TKM_EKO","Bullet_366TKM_FMJ","Bullet_366TKM_Geksa","Bullet_366TKM_custom_ap"};
 		magazineSwitchTime = 0.5;
 		ejectType = 1;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {2,2,1.1};
-		simpleHiddenSelections[] = {"hide_barrel","hide_pistolgrip","grip_lower","grip_upper","hide_muzzle","hide_sight_rear","hide_sight_front","hide_tube"};
+		simpleHiddenSelections[] = {"hide_barrel","hide_pistolgrip","hide_muzzle","fold","unfold","rear_sights","hide_tube"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47.rvmat"};
 		reloadAction = "ReloadM4";
@@ -141,7 +142,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 320;
+					hitpoints = 350;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47_destruct.rvmat"}}};
 				};
 			};
@@ -156,9 +157,9 @@ class cfgWeapons
 		weight = 2322;
 		WeaponLength = 0.635;
 		initSpeedMultiplier = 1.0;
-		barrelArmor = 8.8;
-		recoilModifier[] = {3.9,3.9,5.9};
-		swayModifier[] = {2.8,2.8,2.4};
+		barrelArmor = 14;
+		recoilModifier[] = {1.3,1.3,1.5};
+		swayModifier[] = {1.2,1.0,1.35};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -170,7 +171,7 @@ class cfgWeapons
 			soundSetShot[] = {"CR527_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"IZH18_silencerHomeMade_SoundSet","IZH18_silencerHomeMadeTail_SoundSet","IZH18_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.00085;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -178,13 +179,22 @@ class cfgWeapons
 			soundSetShot[] = {"CR527_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"IZH18_silencerHomeMade_SoundSet","IZH18_silencerHomeMadeTail_SoundSet","IZH18_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.09;
-			dispersion = 0.00085;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class kr_firearms
 		{
 			barreltype = 1;
 			handguardSlotName = "kr_ar10_hndgrd";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 10;
+		};
+		class NoiseShoot
+		{
+			strength = 80;
+			type = "shot";
 		};
 	};
 	class kr_mk47_409mm: kr_mk47_Base
@@ -195,10 +205,10 @@ class cfgWeapons
 		itemSize[] = {8,3};
 		weight = 2982;
 		WeaponLength = 0.794;
-		initSpeedMultiplier = 1.2;
+		initSpeedMultiplier = 1.15;
 		barrelArmor = 10.0;
-		recoilModifier[] = {3.5,3.5,5.5};
-		swayModifier[] = {3.2,3.2,2.85};
+		recoilModifier[] = {1.4,1.4,1.6};
+		swayModifier[] = {1.3,1.3,1.5};
 		class kr_description
 		{
 			kr_tier = 4;
@@ -210,7 +220,7 @@ class cfgWeapons
 			soundSetShot[] = {"CR527_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"IZH18_silencerHomeMade_SoundSet","IZH18_silencerHomeMadeTail_SoundSet","IZH18_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.0006;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
@@ -218,13 +228,22 @@ class cfgWeapons
 			soundSetShot[] = {"CR527_Shot_SoundSet","CR527_Tail_SoundSet","CR527_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"IZH18_silencerHomeMade_SoundSet","IZH18_silencerHomeMadeTail_SoundSet","IZH18_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.09;
-			dispersion = 0.0006;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class kr_firearms
 		{
 			barreltype = 2;
 			handguardSlotName = "kr_ar10_hndgrd";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class NoiseShoot
+		{
+			strength = 100;
+			type = "shot";
 		};
 	};
 };

@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","DZ_Weapons_Firearms_VSS"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -52,7 +53,7 @@ class cfgWeapons
 	};
 	class CZ527_Base: BoltActionRifle_ExternalMagazine_Base
 	{
-		chamberableFrom[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
+		chamberableFrom[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
 	};
 	class CZ550_Base: BoltActionRifle_ExternalMagazine_Base
 	{
@@ -64,7 +65,7 @@ class cfgWeapons
 	};
 	class Izh18_Base: Rifle_Base
 	{
-		chamberableFrom[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
+		chamberableFrom[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
 	};
 	class M14_Base: Rifle_Base
 	{
@@ -81,11 +82,11 @@ class cfgWeapons
 	};
 	class SKS_Base: Rifle_Base
 	{
-		chamberableFrom[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
+		chamberableFrom[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
 	};
 	class SSG82_Base: BoltActionRifle_ExternalMagazine_Base
 	{
-		chamberableFrom[] += {"kr_Ammo_545x39_BS","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT"};
+		chamberableFrom[] += {"kr_Ammo_545x39_BS","kr_Ammo_545x39_HP","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT"};
 	};
 	class Winchester70_Base: BoltActionRifle_InnerMagazine_Base
 	{

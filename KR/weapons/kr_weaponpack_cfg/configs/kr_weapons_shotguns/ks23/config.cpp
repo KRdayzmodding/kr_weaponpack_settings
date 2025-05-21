@@ -8,13 +8,14 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoShotgun;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Shotgun_Base;
@@ -44,7 +45,7 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"kr_ks23_Shot_SoundSet","Mp133_Tail_SoundSet","Mp133_InteriorTail_SoundSet"};
 			reloadTime = 1;
-			dispersion = 0.0009;
+			dispersion = 0.0025;
 			firespreadangle = 1.1;
 			magazineSlot = "magazine";
 		};
@@ -91,6 +92,13 @@ class cfgWeapons
 				{
 					overrideParticle = "weapon_shot_mp133_01";
 					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
+				};
+				class MuzzleFlash1
+				{
+					overrideParticle = "weapon_shot_pellets";
+					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
 				};
 				class BadlyDamagedChamberSmoke
 				{
@@ -135,7 +143,7 @@ class cfgWeapons
 		boneRemap[] = {"bolt","Weapon_Bolt","pump","Weapon_Bone_01","feedRamp","Weapon_Bone_02","trigger","Weapon_Trigger","bullet","Weapon_Bullet","boltrelease","Weapon_Bone_03"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 30;
+			ergonomics = 50;
 		};
 	};
 	class kr_ks23: kr_ks23_Base
@@ -149,9 +157,9 @@ class cfgWeapons
 		chamberSize = 4;
 		initSpeedMultiplier = 1.0;
 		WeaponLength = 0.65;
-		barrelArmor = 40.0;
-		recoilModifier[] = {1.7,1.7,1.7};
-		swayModifier[] = {1.3,1.3,1.3};
+		barrelArmor = 22;
+		recoilModifier[] = {2,2,2};
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\ks23\data\ks23_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\ks23\data\ks23.rvmat"};
 		class kr_description
@@ -165,7 +173,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\ks23\data\ks23.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\ks23\data\ks23_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\ks23\data\ks23_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\ks23\data\ks23_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\ks23\data\ks23_destruct.rvmat"}}};
 				};
 			};

@@ -14,6 +14,7 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -60,7 +61,7 @@ class cfgWeapons
 		modes[] = {"Single"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 25;
 		};
 		class OpticsInfo: OpticsInfoRifle
 		{
@@ -132,18 +133,22 @@ class cfgWeapons
 		attachments[] = {"kr_muzzle762_54_mosin","kr_mosin_mount","kr_weaponOpticsMosin","kr_mosin_buttpad","weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","kr_muzzle762_39","kr_muzzle308","weaponFlashlight","weaponBayonetMosin","weaponWrap"};
 		weight = 3000;
 		WeaponLength = 1.02;
-		barrelArmor = 8.1;
-		initSpeedMultiplier = 1.05;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.5,2.5,1.3};
+		barrelArmor = 12;
+		initSpeedMultiplier = 1.2;
+		recoilModifier[] = {0.85,0.85,0.85};
+		swayModifier[] = {0.85,0.85,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\mosin\data\mosin_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\mosin\data\mosin.rvmat"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 25;
+		};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"Mosin_Shot_SoundSet","Mosin_Tail_SoundSet","Mosin_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"Mosin_silencerHomeMade_SoundSet","Mosin_silencerHomeMadeTail_SoundSet","Mosin_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1.0;
-			dispersion = 0.0007;
+			dispersion = 0.0029;
 			magazineSlot = "magazine";
 		};
 	};
@@ -156,12 +161,16 @@ class cfgWeapons
 		attachments[] = {"kr_muzzle762_54_mosin","kr_mosin_mount","kr_weaponOpticsMosin","kr_mosin_buttpad","weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","kr_muzzle762_39","kr_muzzle308","weaponFlashlight","weaponBayonetMosin","weaponWrap"};
 		weight = 3700;
 		WeaponLength = 1.236;
-		barrelArmor = 10.0;
-		initSpeedMultiplier = 1.15;
+		barrelArmor = 15;
+		initSpeedMultiplier = 1.3;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.5,2.5,1.3};
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\mosin\data\mosin_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\mosin\data\mosin.rvmat"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 20;
+		};
 		class kr_description
 		{
 			kr_tier = 2;
@@ -172,7 +181,7 @@ class cfgWeapons
 			soundSetShot[] = {"Mosin_Shot_SoundSet","Mosin_Tail_SoundSet","Mosin_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"Mosin_silencerHomeMade_SoundSet","Mosin_silencerHomeMadeTail_SoundSet","Mosin_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1.0;
-			dispersion = 0.0005;
+			dispersion = 0.0028;
 			magazineSlot = "magazine";
 		};
 	};
@@ -183,21 +192,25 @@ class cfgWeapons
 		descriptionShort = "$STR_weapons_rifles_mosin_sawed_dsc";
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_rifles\mosin\mosin_sawed.p3d";
 		itemSize[] = {5,2};
-		attachments[] = {"kr_muzzle308","kr_mosin_mount","weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","weaponFlashlight","weaponWrap"};
+		attachments[] = {"kr_muzzle308","kr_mosin_mount","weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","weaponWrap"};
 		weight = 1200;
 		WeaponLength = 0.53;
-		barrelArmor = 5.0;
-		initSpeedMultiplier = 0.8;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.5,2.5,1.3};
+		barrelArmor = 20;
+		initSpeedMultiplier = 1;
+		recoilModifier[] = {1.3,1,1.3};
+		swayModifier[] = {0.4, 0.4, 0.4};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\mosin\data\mosin_sawed_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_rifles\mosin\data\mosin_sawed.rvmat"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 12;
+		};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"Mosin_Shot_SoundSet","Mosin_Tail_SoundSet","Mosin_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"Mosin_silencerHomeMade_SoundSet","Mosin_silencerHomeMadeTail_SoundSet","Mosin_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1.0;
-			dispersion = 0.005;
+			dispersion = 0.0055;
 			magazineSlot = "magazine";
 		};
 		class DamageSystem

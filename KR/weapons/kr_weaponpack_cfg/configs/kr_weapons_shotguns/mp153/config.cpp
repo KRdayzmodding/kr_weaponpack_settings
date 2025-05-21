@@ -3,17 +3,18 @@ class CfgPatches
 	class kr_weapons_shotguns_mp153
 	{
 		units[] = {};
-		weapons[] = {"kr_mp153"};
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoShotgun;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -30,14 +31,14 @@ class cfgWeapons
 		PPDOFProperties[] = {1,0.6,50,160,4,10};
 		DisplayMagazine = 0;
 		WeaponLength = 1.11042;
-		barrelArmor = 1.667;
-		initSpeedMultiplier = 1.1;
+		barrelArmor = 25;
+		initSpeedMultiplier = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"kr_Ammo_12x76_buckshot_5","kr_Ammo_12x76_buckshot_7","kr_Ammo_12x76_buckshot_8","kr_Ammo_12x76_RIP","kr_Ammo_12x76_FTX_custom","kr_Ammo_12x76_lead_slug","kr_Ammo_12x76_AP20","kr_Ammo_12x76_Grizzly40","kr_Ammo_12x76_frag_12","kr_Ammo_12x76_devastator","Ammo_12gaPellets","Ammo_12gaSlug","Ammo_12gaRubberSlug","Ammo_12gaBeanbag"};
 		magazines[] = {};
 		ejectType = 1;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.4,2.4,1.3};
+		swayModifier[] = {1,1,1};
 		simpleHiddenSelections[] = {"hide_barrel"};
 		cursor = "aimBowGhost";
 		hiddenSelections[] = {"camo"};
@@ -92,6 +93,13 @@ class cfgWeapons
 				{
 					overrideParticle = "weapon_shot_mp133_01";
 					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
+				};
+				class MuzzleFlash1
+				{
+					overrideParticle = "weapon_shot_pellets";
+					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
 				};
 				class BadlyDamagedChamberSmoke
 				{
@@ -136,25 +144,25 @@ class cfgWeapons
 		boneRemap[] = {"bolt","Weapon_Bolt","trigger","Weapon_Trigger","bullet","Weapon_Bullet","follower","Weapon_Bone_02","clip","Weapon_Magazine","cliprounds","Weapon_Bone_01"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 0;
 		};
 	};
 	class kr_mp153: kr_mp153_Base
 	{
 		scope = 2;
 		attachments[] = {"kr_muzzle12_76","kr_shotgun_mag_mount","kr_shotgun_barrel_mount","weaponOptics","kr_optics_top_mount","weaponHolo1","weaponWrap"};
-		barrelArmor = 13.7;
-		initSpeedMultiplier = 1.1;
+		barrelArmor = 25;
+		initSpeedMultiplier = 1;
 		chamberSize = 5;
 		recoilModifier[] = {1,1,1};
-		swayModifier[] = {2.4,2.4,1.3};
+		swayModifier[] = {0.8,0.8,0.8};
 		modes[] = {"SemiAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"kr_mp153_Shot_SoundSet","Mp133_Tail_SoundSet","Mp133_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_mp133_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.3;
-			dispersion = 0.01;
+			reloadTime = 0.9;
+			dispersion = 0.004;
 			firespreadangle = 1.5;
 			magazineSlot = "magazine";
 		};
@@ -169,7 +177,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 200;
+					hitpoints = 250;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\mp153\data\mp153.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\mp153\data\mp153_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\mp153\data\mp153_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\mp153\data\mp153_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\mp153\data\mp153_destruct.rvmat"}}};
 				};
 			};

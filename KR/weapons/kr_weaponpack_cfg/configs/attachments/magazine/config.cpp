@@ -15,9 +15,13 @@ class CfgMagazines
 	class kr_magazine_Base: Magazine_Base
 	{
 		scope = 0;
+		ammo = "";
+		ammoItems[] = {};
 		tracersEvery = 0;
 		hiddenSelections[] = {"camo"};
 		soundImpactType = "metal";
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
 		class AnimEvents
 		{
 			class SoundWeapon

@@ -1,178 +1,191 @@
-Language,original,english,czech,german,russian,polish,hungarian,italian,spanish,french,chinese,japanese,portuguese,chinesesimp
-STR_kr_slot_bipod,Bipod,Bipod,Dvojnožka,Zweibein,Сошки,Dwójnóg,Kétlábú állvány,Bipiede,Bípode,Bipied,两脚架,バイポッド,Bipé,两脚架
-STR_kr_slot_m4_pistolgrip,AR pistol grip,AR pistol grip,AR pistolová rukojeť,AR-Pistolengriff,Пистолетная рукоять AR,Chwyt pistoletowy AR,AR pisztoly markolat,Impugnatura a pistola AR,empuñadura de pistola AR,Poignée pistolet AR,AR手枪式握把,ARピストルグリップ,Punho de pistola AR,AR手枪式握把
-STR_kr_slot_fal_pistolgrip,FAL pistol grip,FAL pistol grip,Pistolová rukojeť FAL,FAL-Pistolengriff,Пистолетная рукоять FAL,Chwyt pistoletowy FAL,FAL pisztolymarkolat,Impugnatura a pistola FAL,Empuñadura de pistola FAL,Poignée pistolet FAL,FAL 手枪式握把,FAL ピストルグリップ,Punho de pistola FAL,FAL 手枪式握把
-STR_kr_slot_ak_pistolgrip,AK pistol grip,AK pistol grip,Pistolová rukojeť AK,AK-Pistolengriff,Пистолетная рукоять АК,Chwyt pistoletowy AK,AK pisztoly markolat,Impugnatura a pistola AK,Empuñadura de pistola AK,Poignée pistolet AK,AK手枪式握把,AKピストルグリップ,Punho de pistola AK,AK手枪式握把
-STR_kr_slot_muzzle338,muzzle .338,muzzle .338,tlama .338,Mündung .338,Дульное устройство .338,kufa .338,pofa .338,museruola .338,hocico .338,museau .338,枪口.338,マズル.338,focinho .338,枪口.338
-STR_kr_slot_muzzle308,muzzle .308,muzzle .308,tlama .308,Mündung .308,Дульное устройство .308,kufa .308,pofa .308,museruola .308,hocico .308,museau .308,枪口.308,マズル.308,focinho .308,枪口.308
-STR_kr_slot_muzzle762_39,muzzle 7.62x39,muzzle 7.62x39,"náhubek 7,62x39","Schnauze 7,62x39",Дульное устройство 7.62x39,"kufa 7,62x39","pofa 7,62x39",museruola 7.62x39,bozal 7.62x39,"museau 7,62x39",枪口7.62x39,マズル 7.62x39,"focinho 7,62x39",枪口7.62x39
-STR_kr_slot_muzzle762_54_mosin,muzzle 7.62x54 Mosin,muzzle 7.62x54 Mosin,"čenich 7,62x54 Mosin","Schnauze 7,62x54 Mosin",ДУ для винтовки Мосина,"kufa 7,62x54 Mosin","szájkosár 7,62x54 Mosin","museruola 7,62x54 Mosin",bozal 7.62x54 Mosin,museau 7.62x54 Mosin,枪口 7.62x54 莫辛,マズル 7.62x54 モシン,"focinho 7,62x54 Mosin",枪口 7.62x54 莫辛
-STR_kr_slot_muzzle762_54,muzzle 7.62x54,muzzle 7.62x54,"náhubek 7,62x54","Schnauze 7,62x54",Дульное устройство 7.62x54,"kufa 7,62x54","fang 7,62x54",museruola 7.62x54,bozal 7.62x54,"museau 7,62x54",枪口7.62x54,マズル 7.62x54,"focinho 7,62x54",枪口7.62x54
-STR_kr_slot_kr_muzzle12_76,muzzle 12x76,muzzle 12x76,náhubek 12x76,Schnauze 12x76,Дульное устройство 12x76,kaganiec 12x76,szájkosár 12x76,museruola 12x76,bozal 12x76,museau 12x76,枪口12x76,マズル 12x76,focinho 12x76,枪口12x76
-STR_kr_slot_muzzle127_55,muzzle 12.7x55,muzzle 12.7x55,"náhubek 12,7x55","Schnauze 12,7x55",Дульное устройство 12.7x55,"kufa 12,7x55","pofa 12,7x55","museruola 12,7x55",bozal 12.7x55,"museau 12,7x55",枪口12.7x55,マズル 12.7x55,"focinho 12,7x55",枪口12.7x55
-STR_kr_slot_muzzle545,muzzle 5.45x39,muzzle 5.45x39,"náhubek 5,45x39","Schnauze 5,45x39",Дульное устройство 5.45x39,"kufa 5,45x39","pofa 5,45x39",museruola 5.45x39,bozal 5.45x39,museau 5.45x39,枪口5.45x39,マズル 5.45x39,"focinho 5,45x39",枪口5.45x39
-STR_kr_slot_muzzle556,muzzle 5.56x45,muzzle 5.56x45,"náhubek 5,56x45","Schnauze 5,56x45",Дульное устройство 5.56x45,"kufa 5,56x45","pofa 5,56x45","museruola 5,56x45",bozal 5.56x45,museau 5.56x45,枪口5.56x45,マズル 5.56x45,"focinho 5,56x45",枪口5.56x45
-STR_kr_slot_ak_bttstck,AK buttstock,AK buttstock,Pažba AK,AK-Hinterschaft,Приклад АК,Kolba AK,AK popsi,Calcio AK,Culata AK,Crosse AK,AK枪托,AK銃床,Coronha AK,AK枪托
-STR_kr_slot_ak_fbttstck,AK folding buttstock,AK folding buttstock,AK sklopná pažba,AK-Klappschaft,Складной приклад АК,Składana kolba AK,AK összecsukható fenék,Calcio pieghevole AK,Culata plegable AK,Crosse repliable AK,AK折叠枪托,AK折りたたみ銃床,Coronha dobrável AK,AK折叠枪托
-STR_kr_slot_aks74u_hndgrd,aks74u handguard,aks74u handguard,předpažbí aks74u,aks74u Handschutz,Цевье АКС74у,łoże aks74u,aks74u kézvédő,paramano aks74u,guardamanos aks74u,garde-main aks74u,aks74u护木,aks74u ハンドガード,protetor de mão aks74u,aks74u护木
-STR_kr_slot_ak_receiver,AK receiver,AK receiver,přijímač AK,AK-Empfänger,Крышка АК,Odbiornik AK,AK vevő,Ricevitore AK,receptor AK,Récepteur AK,AK接收器,AK受信機,Receptor AK,AK接收器
-STR_kr_slot_ak_hndgrd,AK handguard,AK handguard,AK předpažbí,AK-Handschutz,Цевье АК,łoże AK,AK kézvédő,Paramano AK,Guardamanos AK,Garde-main AK,AK护木,AKハンドガード,Protetor de mão AK,AK护木
-STR_kr_slot_weapon_tube,Tube,Tube,Trubice,Rohr,Трубка,Rura,Cső,Tubo,Tubo,Tube,管子,チューブ,Tubo,管子
-STR_kr_slot_kr_ar15_tube,AR tube,AR tube,AR trubice,AR-Röhre,Трубка AR,Rurka AR,AR cső,Tubo AR,tubo AR,Tube AR,AR管,ARチューブ,Tubo AR,AR管
-STR_kr_slot_kr_ar15_charging,AR charging handle,AR charging handle,AR nabíjecí rukojeť,AR-Ladegriff,Рукоять затвора AR,Uchwyt do ładowania AR,AR töltő fogantyú,Maniglia di ricarica AR,Mango de carga AR,Poignée de chargement AR,AR充电手柄,ARチャージングハンドル,Alça de carregamento AR,AR充电手柄
-STR_kr_slot_katana,Katana,Katana,Katana,Katana,Катана,Katana,Katana,Katana,Katana,Katana,武士刀,カタナ,Katana,武士刀
-STR_kr_slot_ar10_hndgrd,AR10 handguard,AR10 handguard,Předpažbí AR10,AR10-Handschutz,Цевье AR10,Łoże AR10,AR10 kézvédő,Paramano AR10,guardamanos AR10,Garde-main AR10,AR10护木,AR10 ハンドガード,Protetor de mão AR10,AR10护木
-STR_kr_slot_rpk16_hndgrd,RPK16 handguard,RPK16 handguard,Předpažbí RPK16,RPK16-Handschutz,Цевье РПК16,Łoże RPK16,RPK16 kézvédő,Paramano RPK16,guardamanos RPK16,Garde-main RPK16,RPK16护木,RPK16 ハンドガード,Protetor de mão RPK16,RPK16护木
-STR_kr_slot_mk18_hndgrd,MK18 handguard,MK18 handguard,Předpažbí MK18,MK18 Handschutz,Цевье Mk18,Chwyt MK18,MK18 kézvédő,Paramano MK18,guardamanos MK18,Garde-main MK18,MK18护木,MK18 ハンドガード,Protetor de mão MK18,MK18护木
-STR_kr_slot_rpk16_bttstck,RPK16 buttstock,RPK16 buttstock,Pažba RPK16,RPK16-Schaft,Приклад РПК16,Kolba RPK16,RPK16 fenék,Calcio RPK16,Culata RPK16,Crosse RPK16,RPK16枪托,RPK16 銃床,Coronha RPK16,RPK16枪托
-STR_kr_slot_kr_ar_bttstck,AR buttstock,AR buttstock,AR pažba,AR-Gesäß,Приклад AR,Kolba AR,AR fenék,Calcio AR,culata AR,Crosse AR,AR枪托,AR 銃床,Coronha AR,AR枪托
-STR_kr_slot_hk416_hndgrd,HK416 handguard,HK416 handguard,Předpažbí HK416,HK416 Handschutz,Цевье HK416,Chwyt HK416,HK416 kézvédő,Paramano HK416,guardamanos HK416,Garde-main HK416,HK416护木,HK416 ハンドガード,Protetor de mão HK416,HK416护木
-STR_kr_slot_fal_bttstck,FAL buttstock,FAL buttstock,Pažba FAL,FAL-Hinterschaft,Приклад FAL,Kolba FAL,FAL fenék,Calcio FAL,culata FAL,Crosse FAL,FAL枪托,FAL 銃床,Coronha FAL,FAL枪托
-STR_kr_slot_fal_hndgrd,FAL handguard,FAL handguard,Předpažbí FAL,FAL-Handschutz,Цевье FAL,Łoże FAL,FAL kézvédő,Paramano FAL,Guardamanos FAL,Garde-main FAL,FAL护木,FAL ハンドガード,Protetor de mão FAL,FAL护木
-STR_kr_slot_ar15_hndgrd,AR15 handguard,AR15 handguard,Předpažbí AR15,AR15-Handschutz,Цевье AR15,Łoże AR15,AR15 kézvédő,Paramano AR15,guardamanos AR15,Garde-main AR15,AR15护木,AR15ハンドガード,Protetor de mão AR15,AR15护木
-STR_kr_slot_foregrip,Tactical grip,Tactical grip,Taktická rukojeť,Taktischer Griff,Тактическая рукоять,Chwyt taktyczny,Taktikai fogás,Presa tattica,Agarre táctico,Prise tactique,战术握把,タクティカルグリップ,Aperto tático,战术握把
-STR_kr_slot_fal_receiver,FAL receiver,FAL receiver,Přijímač FAL,FAL-Empfänger,Крышка FAL,Odbiornik FAL,FAL vevő,Ricevitore FAL,Receptor FAL,Récepteur FAL,FAL接收器,FAL受信機,Receptor FAL,FAL接收器
-STR_kr_slot_ak_buttpad,AK buttpad,AK buttpad,Zadek AK,AK-Schaftpolster,Тыльник приклада,Tyłek AK,AK popsipad,Calciolo AK,cantonera AK,Coussinet AK,AK 屁股垫,AK バットパッド,Teclado AK,AK 屁股垫
-STR_kr_slot_kr_ak_handle,AK bolt handle,AK bolt handle,Rukojeť AK šroubu,AK-Bolzengriff,Ручка затвора,Uchwyt rygla AK,AK csavaros fogantyú,Maniglia del bullone AK,Mango de perno AK,Poignée à boulon AK,AK 螺栓手柄,AKボルトハンドル,Alça de parafuso AK,AK 螺栓手柄
-STR_kr_slot_nato_optics,Picatinny rail optic,Picatinny rail optic,Picatinny kolejnicová optika,Picatinny-Schienenoptik,Планка Пикаттини,Optyka na szynę Picatinny,Picatinny sínes optika,Ottica con guida Picatinny,Óptica de carril Picatinny,Optique sur rail Picatinny,皮卡汀尼导轨光学器件,ピカティニーレール光学系,Óptica de trilho Picatinny,皮卡汀尼导轨光学器件
-STR_kr_slot_weaponHolo,Holo sight,Holo sight,Holo pohled,Holo-Sicht,Колиматорный прицел,Holograficzny widok,Holo látvány,Vista olografica,Vista holográfica,Viseur holographique,全息瞄准镜,ホロサイト,Visão holográfica,全息瞄准镜
-STR_kr_slot_ak_optics,Dovetail optic,Dovetail optic,Rybinová optika,Schwalbenschwanzoptik,Ласточкин хвост,Optyka jaskółczego ogona,Fecskefarkú optika,Ottica a coda di rondine,Óptica de cola de milano,Optique à queue d'aronde,燕尾光学元件,アリ溝光学系,Ótica em cauda de andorinha,燕尾光学元件
-STR_kr_slot_pt_lock,PT-lock,PT-lock,PT-zámek,PT-Schloss,Замок ПТ,Blokada PT,PT-zár,Blocco PT,bloqueo PT,Verrouillage PT,PT锁,PTロック,Bloqueio PT,PT锁
-STR_kr_slot_rail_mount,Mount,Mount,Mount,Montieren,Планка,Uchwyt,Hegy,Montare,Montar,Monter,山,マウント,Montar,山
-STR_kr_slot_mosin_buttpad,Mosin Rifle Buttpad,Mosin Rifle Buttpad,Button Mosin pro pušku,Mosin-Gewehr-Schaftpolster,Тыльник,Kolba karabinu Mosin,Mosin puska fenékpad,Calciolo per fucile Mosin,Culata para rifle Mosin,Coussinet de crosse pour fusil Mosin,莫辛步枪枪托,モシンライフルのバットパッド,Comando do rifle Mosin,莫辛步枪枪托
-STR_kr_slot_mosin_mount,Mosin Rifle Mount,Mosin Rifle Mount,Držák na pušku Mosin,Mosin-Gewehrhalterung,Планка,Uchwyt karabinowy Mosin,Mosin puskatartó,Supporto per fucile Mosin,Montura para rifle Mosin,Monture de fusil Mosin,莫辛步枪支架,モシン ライフル マウント,Suporte para rifle Mosin,莫辛步枪支架
-STR_kr_slot_weaponOpticsMosin,Kochetov Mount,Kochetov Mount,Kočetovská hora,Berg Kochetov,Крепление Кочетова,Góra Koczetowa,Kochetov-hegy,Monte Kochetov,Monte Kochetov,Mont Kochetov,科切托夫山,コチェトフ山,Monte Kochetov,科切托夫山
-STR_kr_slot_svd_hndgrd,SVD handguard,SVD handguard,SVD předpažbí,SVD-Handschutz,Цевье СВД,Łoże SVD,SVD kézvédő,Paramano SVD,guardamanos SVD,Garde-main SVD,SVD护木,SVDハンドガード,Protetor de mão SVD,SVD护木
-STR_kr_slot_kr_svd_stock,SVD stock,SVD stock,skladem SVD,SVD-Aktie,Приклад СВД,akcje SVD,SVD készlet,Calcio SVD,acciones de la SVD,Actions SVD,SVD库存,SVDストック,Estoque SVD,SVD库存
-STR_kr_slot_kr_mp5_mount,MP5 Mount,MP5 Mount,Držák MP5,MP5-Halterung,Планка MP5,Uchwyt MP5,MP5 tartó,Supporto MP5,Montaje MP5,Support MP5,MP5支架,MP5 マウント,Suporte MP5,MP5支架
-STR_kr_slot_kr_mp5_hndgrd,MP5 handguard,MP5 handguard,Předpažbí MP5,MP5-Handschutz,Цевье MP5,Chwyt MP5,MP5 kézvédő,Paramano MP5,guardamanos MP5,garde-main MP5,MP5护木,MP5 ハンドガード,Protetor de mão MP5,MP5护木
-STR_kr_slot_kr_mp5_stock,MP5 stock,MP5 stock,Sklad MP5,MP5-Lager,Приклад MP5,Kolba MP5,MP5 készlet,Archivio MP5,existencias de MP5,Stock MP5,MP5库存,MP5ストック,Estoque MP5,MP5库存
-STR_kr_slot_saiga_hndgrd,Saiga handguard,Saiga handguard,Předpažbí Saiga,Saiga-Handschutz,Цевье Сайга,Łoże Saigi,Saiga kézvédő,Paramano Saiga,guardamanos saiga,Garde-main Saïga,赛加羚羊护手,サイガハンドガード,Protetor de mão Saiga,赛加羚羊护手
-STR_kr_slot_spas12_stock,SPAS12 stock,SPAS12 stock,Skladem SPAS12,SPAS12-Lager,Приклад SPAS12,Magazyn SPAS12,SPAS12 készlet,Calcio SPAS12,Valores SPAS12,Action SPAS12,SPAS12库存,SPAS12在庫,Estoque SPAS12,SPAS12库存
-STR_kr_slot_g28_hndgrd,HK417/G28 handguard,HK417/G28 handguard,Předpažbí HK417/G28,HK417/G28 Handschutz,Цевье HK417/G28,Chwyt HK417/G28,HK417/G28 kézvédő,Paramano HK417/G28,Guardamanos HK417/G28,Garde-main HK417/G28,HK417/G28护木,HK417/G28 ハンドガード,Protetor de mão HK417/G28,HK417/G28护木
-STR_kr_slot_m200_hndgrd,M200 handguard,M200 handguard,Předpažbí M200,M200-Handschutz,M200 Цевье,Chwyt M200,M200 kézvédő,Paramano M200,guardamanos m200,Garde-main M200,M200护木,M200 ハンドガード,Protetor de mão M200,M200护木
-STR_kr_slot_kr_m200_stock,M200 stock,M200 stock,Zásoba M200,M200-Lager,M200 Приклад,Kolba M200,M200 készlet,Calcio M200,culata M200,Crosse M200,M200库存,M200ストック,Estoque M200,M200库存
-STR_kr_slot_kr_scar_stock,SCAR stock,SCAR stock,Zásoba SCAR,SCAR-Aktie,Приклад SCAR,zapasy SCAR,SCAR részvény,Titolo SCAR,acciones de cicatriz,Action CICATRICE,SCAR库存,スカーストック,Estoque de cicatrizes,SCAR库存
-STR_kr_slot_mount,Mount,Mount,Mount,Montieren,Крепление,Uchwyt,Hegy,Montare,Montar,Monter,山,マウント,Montar,山
-STR_kr_slot_stock,Stovk,Stovk,Stovk,Stovk,Приклад,Stovk,Stovk,Stovk,Stovk,Poêle,斯托夫克,ストフク,Fogão,斯托夫克
-STR_kr_slot_handguard,Handguard,Handguard,Předpažbí,Handschutz,Цевье,Chwyt,Sátorvas,Paramano,guardamanos,Garde-main,护手,ハンドガード,Protetor de mão,护手
-STR_kr_slot_muzzle,Muzzle,Muzzle,Čenich,Schnauze,ДТК/Глушитель,Pysk,Szájkosár,Museruola,Bozal,Museau,枪口,銃口,Focinho,枪口
-STR_kr_action_warp,Warp around,Warp around,Warp kolem,Warp herum,Обмотать,Rozejrzyj się,Körbefordulni,Girati intorno,deformarse,Se déformer,扭曲,ワープして回る,Deformar,扭曲
-STR_kr_action_screw,Screw,Screw,Šroub,Schrauben,Прикрутить,Śruba,Csavar,Vite,Tornillo,Vis,拧紧,スクリュー,Parafuso,拧紧
-STR_kr_action_changebarrel,Сhange barrel,Сhange barrel,Vyměňte hlaveň,Lauf wechseln,Сменить ствол,Zmień beczkę,Cserélje ki a hordót,Cambia canna,Cambiar barril,Changer le canon,更换桶,バレルを変更する,Trocar barril,更换桶
-STR_kr_action_connect_lock,Connect PT-lock,Connect PT-lock,Připojte PT zámek,PT-Schloss anschließen,Присоединить замок,Podłącz blokadę PT,Csatlakoztassa a PT-zárat,Collegare il blocco PT,Conecte el bloqueo PT,Connectez le PT-lock,连接 PT 锁,PTロックを接続する,Conecte o bloqueio PT,连接 PT 锁
-STR_kr_action_disconnect_lock,Disconnect PT-lock,Disconnect PT-lock,Odpojte zámek PT,Trennen Sie die PT-Sperre,Отсоединить замок,Odłącz blokadę PT,Válassza le a PT-zárat,Scollegare il blocco PT,Desconectar el bloqueo PT,Déconnecter le PT-lock,断开 PT 锁,PTロックを解除する,Desconecte o bloqueio PT,断开 PT 锁
-STR_kr_connect_mount,Connect mount,Connect mount,Připojte držák,Halterung anschließen,Прикрутить планку,Podłącz uchwyt,Csatlakoztassa a tartót,Collegare il supporto,Conectar montaje,Connecter le support,连接安装座,コネクトマウント,Conectar montagem,连接安装座
-STR_kr_disconnect_mount,Disconnect mount,Disconnect mount,Odpojte držák,Halterung trennen,Открутить планку,Odłącz uchwyt,Csatlakoztassa le a tartót,Scollegare il supporto,Desconectar el soporte,Déconnecter le support,断开安装,ディスコネクトマウント,Desconecte a montagem,断开安装
-STR_kr_GUI_Tier,Tier,Tier,Tier,Stufe,Тип,Szczebel,Tier,Livello,Nivel,Étage,等级,階層,Nível,等级
-STR_kr_GUI_Caliber,Caliber,Caliber,Ráže,Kaliber,Калибр,Kaliber,Kaliber,Calibro,Calibre,Calibre,口径,口径,Calibre,口径
-STR_kr_GUI_RPM,RPM,RPM,RPM,U/min,Скорострельность,obr./min,FORDULAT,giri al minuto,RPM,RPM,转速,回転数,RPM,转速
-STR_kr_GUI_Muzzle_Energy,Muzzle Energy,Muzzle Energy,Energie tlamy,Mündungsenergie,Дульная энергия,Energia wylotowa,Pofa energia,Energia della museruola,Energía del hocico,Énergie initiale,枪口能量,マズルエネルギー,Energia do focinho,枪口能量
-STR_kr_GUI_Horizontal_Recoil,Horizontal Recoil,Horizontal Recoil,Horizontální zpětný ráz,Horizontaler Rückstoß,Горизонтальная отдача,Odrzut poziomy,Vízszintes visszarúgás,Rinculo orizzontale,Retroceso horizontal,Recul horizontal,水平反冲,水平反動,Recuo horizontal,水平反冲
-STR_kr_GUI_Vertical_Recoil,Vertical Recoil,Vertical Recoil,Vertikální zpětný ráz,Vertikaler Rückstoß,Вертикальная отдача,Odrzut pionowy,Függőleges visszarúgás,Rinculo verticale,Retroceso vertical,Recul vertical,垂直后坐力,垂直反動,Recuo vertical,垂直后坐力
-STR_kr_GUI_Kick,Kick,Kick,Kop,Kick,Пинок,Rzut,Rúgás,Calcio,Patada,Coup,踢,キック,Chute,踢
-STR_kr_GUI_Ergonomics,Ergonomics,Ergonomics,Ergonomie,Ergonomie,Эргономика,Ergonomia,Ergonómia,Ergonomia,Ergonomía,Ergonomie,人体工学,人間工学,Ergonomia,人体工学
-STR_kr_GUI_ADS,ADS,ADS,ADS,ANZEIGEN,Вход в прицел,REKLAM,ADS,ANNUNCI,ANUNCIOS,Annonces,ADS,ADS,ANÚNCIOS,ADS
-STR_kr_GUI_Durability,Barrel resource,Barrel resource,Barel zdroj,Barrel-Ressource,Ресурс ствола,Zasób beczki,Hordó erőforrás,Risorsa barile,recurso barril,Ressource de baril,桶资源,バレルリソース,Recurso de barril,桶资源
-STR_kr_GUI_Accuracy,Accuracy,Accuracy,Přesnost,Genauigkeit,Кучность,Dokładność,Pontosság,Precisione,Exactitud,Précision,准确性,正確さ,Precisão,准确性
-STR_kr_GUI_Weapon_Type,Weapon Type,Weapon Type,Typ zbraně,Waffentyp,Подходит для:,Rodzaj broni,Fegyver típusa,Tipo di arma,Tipo de arma,Type d'arme,武器类型,武器の種類,Tipo de arma,武器类型
-STR_kr_GUI_Additional_Mount,Additional Mount,Additional Mount,Přídavná montáž,Zusätzliche Halterung,Дополнительные планки,Dodatkowe mocowanie,Kiegészítő rögzítés,Supporto aggiuntivo,Montaje adicional,Support supplémentaire,附加安装座,追加マウント,Montagem Adicional,附加安装座
-STR_kr_GUI_Yes,Yes,Yes,Ano,Ja,Да,Tak,Igen,SÌ,Sí,Oui,是的,はい,Sim,是的
-STR_kr_GUI_No,No,No,Žádný,NEIN,Нет,NIE,Nem,NO,No,Non,不,いいえ,Não,不
-STR_kr_GUI_Suppression,Suppression,Suppression,Potlačení,Unterdrückung,Шумоподавление,Tłumienie,Elnyomás,Soppressione,Supresión,Suppression,抑制,抑制,Supressão,抑制
-STR_kr_GUI_Optimal_range,Optimal range,Optimal range,Optimální dosah,Optimale Reichweite,Оптимальная дальность,Optymalny zasięg,Optimális hatótávolság,Gamma ottimale,Rango óptimo,Portée optimale,最佳范围,最適な範囲,Alcance ideal,最佳范围
-STR_kr_GUI_Armor_piercing,Armor-piercing,Armor-piercing,Průbojné brnění,Panzerbrechend,Бронепробитие,Przebijanie pancerza,Páncéltörő,Perforante,Perforación de armaduras,Perforant,穿甲弹,徹甲弾,Perfurante de armadura,穿甲弹
-STR_kr_GUI_Shock,Shock,Shock,Šokovat,Schock,Останавливающее действие,Zaszokować,Sokk,Shock,Choque,Choc,震惊,ショック,Choque,震惊
-STR_kr_GUI_hitpoints,Hitpoints,Hitpoints,Hitpointy,Trefferpunkte,Убойное действие,Punkty życia,Életpontok,Hitpoint,Puntos de vida,Points de vie,生命值,ヒットポイント,Pontos de vida,生命值
-STR_kr_GUI_blood,Blood,Blood,Krev,Blut,Проникающее ранение,Krew,Vér,Sangue,Sangre,Sang,血,血,Sangue,血
-STR_kr_GUI_tier_0,Trash,Trash,Odpadky,Müll,Хлам,Śmieci,Szemét,Spazzatura,Basura,Poubelle,垃圾,ごみ,Lixo,垃圾
-STR_kr_GUI_tier_1,Common,Common,Společný,Gemeinsam,Обычный,Wspólny,Közös,Comune,Común,Commun,常见的,一般,Comum,常见的
-STR_kr_GUI_tier_2,Uncommon,Uncommon,Méně časté,Ungewöhnlich,Нечастый,Niezwykły,Ritka,Non comune,Poco común,Rare,罕见,珍しい,Incomum,罕见
-STR_kr_GUI_tier_3,Rare,Rare,Vzácný,Selten,Редкий,Rzadki,Ritka,Raro,Extraño,Rare,稀有的,レア,Cru,稀有的
-STR_kr_GUI_tier_4,Very Rare,Very Rare,Velmi vzácné,Sehr selten,Очень редкий,Bardzo rzadkie,Nagyon ritka,Molto raro,muy raro,Très rare,非常罕见,とても珍しい,Muito Raro,非常罕见
-STR_kr_GUI_tier_5,Fairytale,Fairytale,Pohádkový,Märchen,Раритет,Bajka,Tündérmese,Fiaba,cuento de hadas,Conte de fées,童话,おとぎ話,Conto de fadas,童话
-STR_kr_GUI_tier_6,Unique,Unique,Unikátní,Einzigartig,Уникальный,Unikalny,Egyedülálló,Unico,Único,Unique,独特的,個性的,Exclusivo,独特的
-STR_kr_GUI_tier_7,HOLY FUCK!,HOLY FUCK!,SAKRA!,HEILIGER FICK!,HOLY FUCK!,ŚWIĘTA KURWA!,SZENT BASZK!,SANTA CAZZATA!,¡SANTA MIERDA!,PUTAIN DE PUTAIN !,天哪！,なんてことだ！,SANTA PORRA!,天哪！
-STR_kr_GUI_CanAttach,Can be attached,Can be attached,Lze připevnit,Kann angebracht werden,Можно установить,Można dołączyć,Csatolható,Può essere allegato,Se puede adjuntar,Peut être attaché,可以附上,取り付け可能,Pode ser anexado,可以附上
-STR_kr_GUI_attached,Attached,Attached,Připojeno,Beigefügt,Установлены,Przyłączony,Csatolt,Allegato,Adjunto,Ci-joint,随附的,添付,Apegado,随附的
-STR_kr_GUI_CantAttach,Cannot be attached,Cannot be attached,Nelze připojit,Kann nicht angehängt werden,Нельзя установить,Nie można dołączyć,Nem csatolható,Non può essere allegato,No se puede adjuntar,Ne peut pas être attaché,无法附加,取り付けられない,Não é possível anexar,无法附加
-STR_kr_GUI_terrible,Terrible,Terrible,Hrozný,Schrecklich,Ужасная,Straszny,Szörnyű,Terribile,Horrible,Terrible,糟糕的,ひどい,Terrível,糟糕的
-STR_kr_GUI_bad,Bad,Bad,Špatný,Schlecht,Плохая,Zły,Rossz,Cattivo,Malo,Mauvais,坏的,悪い,Ruim,坏的
-STR_kr_GUI_normal,Normal,Normal,Normální,Normal,Нормальная,Normalna,Normál,Normale,Normal,Normale,普通的,普通,Normal,普通的
-STR_kr_GUI_good,Good,Good,Dobrý,Gut,Хорошая,Dobry,Jó,Bene,Bien,Bien,好的,良い,Bom,好的
-STR_kr_GUI_excellent,Excellent,Excellent,Vynikající,Exzellent,Отличная,Doskonały,Kiváló,Eccellente,Excelente,Excellent,出色的,素晴らしい,Excelente,出色的
-STR_kr_GUI_akstock,AK (fixed stock),AK (fixed stock),AK (pevné zásoby),AK (Festbestand),АК (фикс. приклад),AK (stały magazyn),AK (fix készlet),AK (azione fissa),AK (stock fijo),AK (stock fixe),AK（固定库存）,AK（固定ストック）,AK (estoque fixo),AK（固定库存）
-STR_kr_GUI_akfstock,AK (folding stock),AK (folding stock),AK (skládací pažba),AK (Klappschaft),АК (складной приклад),AK (kolba składana),AK (összecsukható készlet),AK (calcio pieghevole),AK (culata plegable),AK (crosse pliante),AK（折叠枪托）,AK（フォールディングストック）,AK (estoque dobrável),AK（折叠枪托）
-STR_kr_GUI_forRaild,Handguards with Picatinny rail,Handguards with Picatinny rail,Chrániče rukou s příčkou Picatinny,Handschützer mit Picatinny-Schiene,Цевья с планкой Пикаттини,Łoże z szyną Picatinny,Kézvédők Picatinny sínnel,Paramani con slitta Picatinny,Paramanos con carril Picatinny,Protège-mains avec rail Picatinny,带皮卡汀尼导轨的护木,ピカティニーレール付きハンドガード,Protetores de mão com trilho Picatinny,带皮卡汀尼导轨的护木
-STR_kr_GUI_DoesNotAffect,Does not affect,Does not affect,Neovlivňuje,Beeinflusst nicht,Не влияет,Nie wpływa,Nem befolyásolja,Non influisce,No afecta,N'affecte pas,不影响,影響しない,Não afeta,不影响
-STR_kr_GUI_stdAKstocks,Standrt AK Stocks,Standrt AK Stocks,Standrt AK Stocks,Standrt AK Stocks,Штатные приклады АК,Standardowe akcje AK,Standrt AK Stocks,Azioni AK standard,Acciones estándar de AK,Actions Standrt AK,Standrt AK 股票,スタンダートAK株,Ações Standard AK,Standrt AK 股票
-STR_kr_GUI_arSystems,AR-like systems,AR-like systems,systémy podobné AR,AR-ähnliche Systeme,AR-системы,Systemy typu AR,AR-szerű rendszerek,Sistemi simili alla realtà aumentata,Sistemas tipo AR,Systèmes de type AR,类AR系统,AR のようなシステム,Sistemas semelhantes a AR,类AR系统
-STR_kr_GUI_arAny,AR-like systems and others,AR-like systems and others,systémy podobné AR a další,AR-ähnliche Systeme und andere,AR-системы и прочие,Systemy typu AR i inne,AR-szerű rendszerek és mások,Sistemi simili a AR e altri,Sistemas tipo AR y otros,Systèmes de type AR et autres,类 AR 系统及其他,AR風のシステムなど,Sistemas semelhantes a AR e outros,类 AR 系统及其他
-STR_kr_GUI_bullet_Common,Common,Common,Společný,Gemeinsam,Обычные,Wspólny,Közös,Comune,Común,Commun,常见的,一般,Comum,常见的
-STR_kr_GUI_bullet_AP,Armor Piercing,Armor Piercing,Brnění piercing,Panzerbrechend,Бронебойные,Przebijanie zbroi,Páncél Piercing,Perforazione dell'armatura,Perforación de armadura,Perforant,穿甲弹,アーマーピアス,Perfuração de Armadura,穿甲弹
-STR_kr_GUI_bullet_Fire,Fire,Fire,Oheň,Feuer,Зажигательные,Ogień,Tűz,Fuoco,Fuego,Feu,火,火,Fogo,火
-STR_kr_GUI_bullet_Tracer,Tracer,Tracer,Tracer,Tracer,Трасер,Kreślarka,Nyomkövető,Tracciante,Trazador,Traceur,示踪剂,トレーサー,Rastreador,示踪剂
-STR_kr_GUI_bullet_Expansion,Expansion,Expansion,Rozšíření,Erweiterung,Экспансивные,Ekspansja,Terjeszkedés,Espansione,Expansión,Expansion,扩张,拡大,Expansão,扩张
-STR_kr_GUI_bullet_nonLethal,Non-Lethal,Non-Lethal,Nesmrtící,Nicht tödlich,Нелетальные,Nieśmiercionośny,Nem halálos,Non letale,No letal,Non mortel,非致命性,非致死性,Não letal,非致命性
-STR_kr_GUI_bullet_Explosive,Explosive,Explosive,Explozivní,Explosiv,Разрывные,Materiał wybuchowy,Robbanó,Esplosivo,Explosivo,Explosif,炸药,爆発物,Explosivo,炸药
-STR_kr_GUI_bullet_Subsonic,Subsonic,Subsonic,Podzvukový,Unterschall,Дозвуковые,Poddźwiękowy,Szubszonikus,Subsonico,Subsónico,Subsonique,亚音速,亜音速,Subsônico,亚音速
-STR_kr_GUI_bullet_Lighting,Lighting,Lighting,Osvětlení,Beleuchtung,Осветительные,Oświetlenie,Világítás,Illuminazione,Iluminación,Éclairage,灯光,点灯,Iluminação,灯光
-STR_kr_GUI_bullet_Gas,Gas,Gas,Plyn,Gas,Газовые,Gaz,Gáz,Gas,Gas,Gaz,气体,ガス,Gás,气体
-STR_kr_GUI_bullet_Smoke,Smoke,Smoke,Kouř,Rauch,Дымовые,Dym,Füst,Fumo,Fumar,Fumée,抽烟,煙,Fumaça,抽烟
-STR_kr_GUI_bullet_Bolt,Bolt,Bolt,Šroub,Bolzen,Болт,Śruba,Csavar,Bullone,Tornillo,Boulon,螺栓,ボルト,Parafuso,螺栓
-STR_kr_GUI_bullet_Arrow,Arrow,Arrow,Šipka,Pfeil,Стрела,Strzałka,Nyíl,Freccia,Flecha,Flèche,箭,矢印,Seta,箭
-STR_kr_GUI_type,Type,Type,Typ,Typ,Тип,Typ,Írja be,Tipo,Tipo,Taper,类型,タイプ,Tipo,类型
-STR_kr_GUI_speed,Speed,Speed,Rychlost,Geschwindigkeit,Скорость,Prędkość,Sebesség,Velocità,Velocidad,Vitesse,速度,スピード,Velocidade,速度
-STR_kr_GUI_damagebarrel,Damage to weapon,Damage to weapon,Poškození zbraně,Schaden an der Waffe,Влияние на износ,Uszkodzenie broni,A fegyver sérülése,Danni all'arma,Daño al arma,Dommages à l'arme,武器损坏,武器へのダメージ,Danos à arma,武器损坏
-STR_kr_GUI_resource,Resource,Resource,Zdroj,Ressource,Ресурс,Ratunek,Forrás,Risorsa,Recurso,Ressource,资源,リソース,Recurso,资源
-STR_kr_GUI_capacity,Capacity,Capacity,Kapacita,Kapazität,Вместимость,Pojemność,Kapacitás,Capacità,Capacidad,Capacité,容量,容量,Capacidade,容量
-STR_kr_GUI_chancetojam,Chance to jam,Chance to jam,Šance na jam,Chance zum Jammen,Подача патрона,Szansa na jam,Lekvár,Possibilità di marmellata,Oportunidad de improvisar,Chance de jouer,堵塞的机会,ジャムのチャンス,Chance de improvisar,堵塞的机会
-STR_kr_GUI_ctj_bad,High,High,Vysoký,Hoch,Плохая,Wysoki,Magas,Alto,Alto,Haut,高的,高い,Alto,高的
-STR_kr_GUI_ctj_normal,Normal,Normal,Normální,Normal,Нормальная,Normalna,Normál,Normale,Normal,Normale,普通的,普通,Normal,普通的
-STR_kr_GUI_ctj_good,Small,Small,Malý,Klein,Хорошая,Mały,Kicsi,Piccolo,Pequeño,Petit,小的,小さい,Pequeno,小的
-STR_kr_GUI_protection,PROTECTION,PROTECTION,OCHRANA,SCHUTZ,ЗАЩИТА,OCHRONA,VÉDELEM,PROTEZIONE,PROTECCIÓN,PROTECTION,保护,保護,PROTEÇÃO,保护
-STR_kr_GUI_projectile,Projectile,Projectile,Projektil,Projektil,От пуль,Pocisk,Lövedék,Proiettile,Proyectil,Projectile,弹丸,発射物,Projétil,弹丸
-STR_kr_GUI_melee,Melee,Melee,Melee,Nahkampf,От ударов,Bijatyka,Közelharc,Mischia,Pelea confusa,Mêlée,近战,近接攻撃,Corpo a corpo,近战
-STR_kr_GUI_infected,Infected,Infected,Infikovaný,Infiziert,От зараженных,Zainfekowany,Fertőzött,Infetto,Infectado,Infecté,已感染,感染した,Infetado,已感染
-STR_kr_GUI_frag,Frag Grenade,Frag Grenade,Frag Grenade,Splittergranate,От осколков,Granat odłamkowy,Frag Grenade,Granata a frammentazione,Granada de fragmentación,Grenade à fragmentation,破片手榴弹,フラググレネード,Granada de Fragmentação,破片手榴弹
-STR_kr_GUI_chem,Chemical,Chemical,Chemikálie,Chemisch,Химическая,Chemiczny,Kémiai,Chimico,Químico,Chimique,化学,化学薬品,Químico,化学
-STR_kr_GUI_bio,Biological,Biological,Biologický,Biologisch,Биологическая,Biologiczny,Biológiai,Biologico,Biológico,Biologique,生物,生物学的,Biológico,生物
-STR_kr_GUI_itemDurability,Durability,Durability,Trvanlivost,Haltbarkeit,Прочность,Trwałość,Tartósság,Durabilità,Durabilidad,Durabilité,耐用性,耐久性,Durabilidade,耐用性
-STR_kr_GUI_protectionType,Health/Blood/Shock,Health/Blood/Shock,Zdraví/Krev/Šok,Gesundheit/Blut/Schock,Здоровье/Кровь/Шок,Zdrowie/Krew/Szok,Egészség/Vér/Sokk,Salute/Sangue/Shock,Salud/Sangre/Choque,Santé/Sang/Choc,生命/血液/休克,健康/血液/ショック,Saúde/Sangue/Choque,生命/血液/休克
-STR_kr_slot_kr_light,Rail interface,Rail interface,Železniční rozhraní,Schienenschnittstelle,Рельса,Interfejs kolejowy,Rail interfész,Interfaccia ferroviaria,Interfaz ferroviaria,Interface ferroviaire,导轨接口,レールインターフェース,Interface ferroviária,导轨接口
-STR_kr_slot_kr_pointer_1,Upper rail,Upper rail,Horní kolejnice,Obere Schiene,Верхняя рельса,Górna szyna,Felső sín,Binario superiore,Riel superior,Traverse supérieure,上轨,アッパーレール,Trilho superior,上轨
-STR_kr_slot_muzzle_9_39_9a91,9a-91 suppressor,9a-91 suppressor,9a-91 supresor,9a-91 Schalldämpfer,Глушитель 9a-91,tłumik 9a-91,9a-91 szupresszor,Soppressore 9a-91,supresor 9a-91,suppresseur 9a-91,9a-91抑制器,9a-91 サプレッサー,Supressor 9a-91,9a-91抑制器
-STR_kr_slot_kr_val_mount,Mount on suppressor,Mount on suppressor,Namontujte na tlumič,Auf Schalldämpfer montieren,Крепление на глушитель,Zamontuj na tłumiku,Szerelje fel a szupresszorra,Montare sul soppressore,Montar en supresor,Monter sur le suppresseur,安装在抑制器上,サプレッサーに取り付ける,Monte no supressor,安装在抑制器上
-STR_kr_slot_kr_val_pistolgrip,«VAL» pistol grip,«VAL» pistol grip,"Pistolová rukojeť ""VAL"".",Pistolengriff „VAL“.,Пистолетная рукоять АС Вал,Chwyt pistoletowy «VAL»,«VAL» pisztolymarkolat,Impugnatura a pistola «VAL».,Empuñadura de pistola «VAL»,Poignée pistolet «VAL»,«VAL» 手枪式握把,«VAL» ピストルグリップ,Punho de pistola «VAL»,«VAL» 手枪式握把
-STR_kr_slot_kr_val_stock,«VAL» stock,«VAL» stock,skladem „VAL“.,Lagerbestand «VAL»,Приклад АС Вал,zapasy «VAL»,«VAL» készlet,Calcio «VAL».,Valores «VAL»,Crosse «VAL»,«VAL»股票,≪ヴァル≫在庫,Estoque «VAL»,«VAL»股票
-STR_kr_slot_pp19_receiver,PP19 receiver,PP19 receiver,Přijímač PP19,PP19-Empfänger,Крышка Ств. Коробки ПП-19,Odbiornik PP19,PP19 vevő,Ricevitore PP19,receptor PP19,Récepteur PP19,PP19接收器,PP19受信機,Receptor PP19,PP19接收器
-STR_kr_slot_muzzle9_19,9x19 muzzle,9x19 muzzle,9x19 náhubek,9x19 Schnauze,ДТК 9x19,Kaganiec 9x19,9x19-es szájkosár,Muso 9x19,bozal 9x19,museau 9x19,9x19 枪口,9x19 銃口,Focinho 9x19,9x19 枪口
-STR_kr_slot_muzzle366,.366TKM muzzle,.366TKM muzzle,Náhubek .366TKM,.366TKM Mündung,ДТК .366TKM,Lufa .366TKM,.366TKM szájkosár,Volata .366TKM,Bozal .366TKM,Bouche .366TKM,.366TKM枪口,.366TKM銃口,Focinho .366TKM,.366TKM枪口
-STR_kr_slot_bipod,Bipod,Bipod,Dvojnožka,Zweibein,Сошки,Dwójnóg,Kétlábú állvány,Bipiede,Bípode,Bipied,两脚架,バイポッド,Bipé,两脚架
-STR_kr_slot_light_pistol,Light,Light,Světlo,Licht,Фонарь,Światło,Fény,Leggero,Luz,Lumière,光,ライト,Luz,光
-STR_kr_slot_shotgun_mp_mag,Shotgun mag,Shotgun mag,Brokovnice mag,Schrotflintenmagazin,Трубчатый магазин,Magazynek do strzelby,Shotgun mag,Caricatore per fucile,cargador de escopeta,Chargeur de fusil de chasse,霰弹枪弹匣,ショットガンマガジン,Revista de espingarda,霰弹枪弹匣
-STR_kr_slot_sg550_pistolgrip,SG 550 Pistol grip,SG 550 Pistol grip,Pistolová rukojeť SG 550,SG 550 Pistolengriff,Пистолетная рукоять SG550,Chwyt pistoletowy SG 550,SG 550 pisztoly markolat,SG 550 Impugnatura a pistola,SG 550 Empuñadura de pistola,Poignée pistolet SG 550,SG 550 手枪式握把,SG 550 ピストルグリップ,Punho da pistola SG 550,SG 550 手枪式握把
-STR_kr_slot_sg550_hndgrd,SG 550 Handguard,SG 550 Handguard,Předpažbí SG 550,SG 550 Handschutz,Цевье SG 550,Chwyt SG 550,SG 550 kézvédő,Paramano SG 550,Guardamanos SG 550,Garde-main SG 550,SG 550 护木,SG 550 ハンドガード,Protetor de mão SG 550,SG 550 护木
-STR_kr_slot_sg552_hndgrd,SG 552 Handguard,SG 552 Handguard,Předpažbí SG 552,SG 552 Handschutz,Цевье SG 552,Łoże SG 552,SG 552 kézvédő,Paramano SG 552,SG 552 Guardamanos,Garde-main SG 552,SG 552 护木,SG 552 ハンドガード,Protetor de mão SG 552,SG 552 护木
-STR_kr_slot_sg550_stock,SG 550 Stock,SG 550 Stock,Sklad SG 550,SG 550 Lager,Приклад SG 550,Kolba SG 550,SG 550 készlet,SG 550 Stock,Culata SG 550,Crosse SG550,SG 550 库存,SG550ストック,Estoque SG 550,SG 550 库存
-STR_kr_slot_g36_stock,G36 Stock,G36 Stock,Sklad G36,G36-Schaft,Приклад G36,Kolba G36,G36 készlet,Calcio G36,Valores G36,Crosse G36,G36库存,G36ストック,Estoque G36,G36库存
-STR_kr_slot_g36c_handguard,G36C Handguard,G36C Handguard,Předpažbí G36C,G36C Handschutz,Цевье G36c,Chwyt G36C,G36C kézvédő,Paramano G36C,Guardamanos G36C,Garde-main G36C,G36C护木,G36C ハンドガード,Protetor de mão G36C,G36C护木
-STR_kr_slot_g36k_handguard,G36K Handguard,G36K Handguard,Předpažbí G36K,G36K Handschutz,Цевье G36k,Chwyt G36K,G36K kézvédő,Paramano G36K,Guardamanos G36K,Garde-main G36K,G36K护木,G36K ハンドガード,Protetor de mão G36K,G36K护木
-STR_kr_slot_g36_handguard,G36 Handguard,G36 Handguard,Předpažbí G36,G36 Handschutz,Цевье G36,Chwyt G36,G36 kézvédő,Paramano G36,Guardamanos G36,Garde-main G36,G36护木,G36 ハンドガード,Protetor de mão G36,G36护木
-STR_kr_slot_g36_optic,G36 Optics,G36 Optics,Optika G36,G36-Optik,Оптика G36,Optyka G36,G36 optika,Ottica G36,Óptica G36,Optique G36,G36光学,G36 光学系,Óptica G36,G36光学
-STR_kr_slot_g36_ckit,G36 Magwell,G36 Magwell,G36 Magwell,G36 Magwell,Шахта магазина,G36 Magwella,G36 Magwell,G36Magwell,G36 Magwell,G36 Magwell,G36 麦格韦尔,G36 マグウェル,G36 Magwell,G36 麦格韦尔
-STR_kr_slot_g36_bipods,G36 Bipods,G36 Bipods,Dvojnožky G36,G36 Zweibeine,Сошки G36,Dwójnogi G36,G36 kétlábúak,Bipiedi G36,Bípodes G36,Bipieds G36,G36 两脚架,G36 バイポッド,Bipés G36,G36 两脚架
-STR_kr_slot_tt_laser,Laser pointer TT,Laser pointer TT,Laserové ukazovátko TT,Laserpointer TT,ЛЦУ ТТ,Wskaźnik laserowy TT,TT lézermutató,Puntatore laserTT,Puntero láser TT,Pointeur laser TT,激光笔 TT,レーザーポインターTT,Ponteiro laser TT,激光笔 TT
-STR_kr_slot_tt_grip,TT Grip,TT Grip,TT Grip,TT-Griff,Рукоять ТТ,Uchwyt TT,TT markolat,Impugnatura TT,Agarre contrarreloj,Poignée TT,TT 握把,TTグリップ,Punho TT,TT 握把
-STR_kr_slot_muzzle762_25,Muzzle 7.62x25,Muzzle 7.62x25,"Náhubek 7,62x25","Schnauze 7,62x25",Дульное устройство 7.62x25,"Kufa 7,62x25","Pofa 7,62x25",Muso 7.62x25,Bozal 7.62x25,"Muselière 7,62x25",枪口7.62x25,マズル 7.62x25,"Focinho 7,62x25",枪口7.62x25
-STR_kr_slot_ironsights,Ironsigts,Ironsigts,Ironsigts,Ironsigts,Механический прицел,Ironsigty,Ironsigts,Ironsigts,Hierros,Signes de fer,艾恩西茨,アイアンサイン,Ironsigts,艾恩西茨
-STR_kr_slot_kr_receiver_g17,Glock17 Receiver,Glock17 Receiver,Přijímač Glock17,Glock17-Empfänger,Затвор Glock17,Odbiornik Glock17,Glock17 vevő,Ricevitore Glock17,Receptor Glock17,Récepteur Glock17,Glock17 接收器,グロック17レシーバー,Receptor Glock17,Glock17 接收器
-STR_kr_slot_kr_pistolgrip,Pistol grip,Pistol grip,Pistolová rukojeť,Pistolengriff,Рукоять,Uchwyt pistoletowy,Pisztoly markolat,Impugnatura a pistola,empuñadura de pistola,Poignée pistolet,手枪式握把,ピストルグリップ,Punho de pistola,手枪式握把
-STR_kr_slot_kr_mount,Mount,Mount,Mount,Montieren,Крепление,Uchwyt,Hegy,Montare,Montar,Monter,山,マウント,Montar,山
-STR_kr_slot_muzzle9_18,9x18 muzzle,9x18 muzzle,9x18 náhubek,9x18 Maulkorb,ДТК 9x18,Kufa 9x18,9x18-as szájkosár,Muso 9x18,bozal 9x18,museau 9x18,9x18 枪口,9x18 銃口,Focinho 9x18,9x18 枪口
-STR_kr_slot_kr_receiver_p226r,P226r Receiver,P226r Receiver,Přijímač P226r,P226r-Empfänger,Затвор P226r,Odbiornik P226r,P226r vevő,Ricevitore P226r,Receptor P226r,Récepteur P226r,P226r 接收器,P226r レシーバー,Receptor P226r,P226r 接收器
-STR_kr_slot_m870_pump,M870 pump,M870 pump,čerpadlo M870,M870-Pumpe,Затвор M870,Pompa M870,M870 szivattyú,Pompa M870,bomba m870,Pompe M870,M870泵,M870ポンプ,Bomba M870,M870泵
-STR_kr_slot_shotgun_mag,Tube magazine,Tube magazine,Trubkový časopis,Röhrenmagazin,Трубчатый магазин,Magazyn tubowy,Cső magazin,Rivista a tubo,Revista de tubos,Revue de tubes,管杂志,チューブマガジン,Revista de tubo,管杂志
-STR_kr_slot_sg550_bipods,SG550 Bipods,SG550 Bipods,Dvojnožky SG550,SG550 Zweibeine,Сошки SG550,Dwójnogi SG550,SG550 kétlábúak,Bipiedi SG550,Bípodes SG550,Bipieds SG550,SG550 两脚架,SG550 バイポッド,Bipés SG550,SG550 两脚架
-STR_kr_slot_csr50_bipods,CSR50 Bipods,CSR50 Bipods,Dvojnožky CSR50,CSR50 Zweibeine,CSR50 SG550,Dwójnogi CSR50,CSR50 kétlábúak,Bipiedi CSR50,Bípodes CSR50,Bipieds CSR50,CSR50 两脚架,CSR50 バイポッド,Bipés CSR50,CSR50 两脚架
-STR_kr_slot_m16_hndgrd,M16A2 handguard,M16A2 handguard,Předpažbí M16A2,M16A2 Handschutz,Цевье M16A2,Łoże M16A2,M16A2 kézvédő,Paramano M16A2,Guardamanos M16A2,Garde-main M16A2,M16A2护木,M16A2 ハンドガード,Protetor de mão M16A2,M16A2护木
+Language,original,english,czech,german,russian,polish,hungarian,italian,spanish,french,chinese,japanese,portuguese,chinesesimp,
+STR_kr_slot_bipod,Bipod,Bipod,Dvojnožka,Zweibein,Сошки,Dwójnóg,Kétlábú állvány,Bipiede,Bípode,Bipied,两脚架,バイポッド,Bipé,两脚架,
+STR_kr_slot_m4_pistolgrip,AR pistol grip,AR pistol grip,AR pistolová rukojeť,AR-Pistolengriff,Пистолетная рукоять AR,Chwyt pistoletowy AR,AR pisztoly markolat,Impugnatura a pistola AR,empuñadura de pistola AR,Poignée pistolet AR,AR手枪式握把,ARピストルグリップ,Punho de pistola AR,AR手枪式握把,
+STR_kr_slot_fal_pistolgrip,FAL pistol grip,FAL pistol grip,Pistolová rukojeť FAL,FAL-Pistolengriff,Пистолетная рукоять FAL,Chwyt pistoletowy FAL,FAL pisztolymarkolat,Impugnatura a pistola FAL,Empuñadura de pistola FAL,Poignée pistolet FAL,FAL 手枪式握把,FAL ピストルグリップ,Punho de pistola FAL,FAL 手枪式握把,
+STR_kr_slot_ak_pistolgrip,AK pistol grip,AK pistol grip,Pistolová rukojeť AK,AK-Pistolengriff,Пистолетная рукоять АК,Chwyt pistoletowy AK,AK pisztoly markolat,Impugnatura a pistola AK,Empuñadura de pistola AK,Poignée pistolet AK,AK手枪式握把,AKピストルグリップ,Punho de pistola AK,AK手枪式握把,
+STR_kr_slot_muzzle338,muzzle .338,muzzle .338,tlama .338,Mündung .338,Дульное устройство .338,kufa .338,pofa .338,museruola .338,hocico .338,museau .338,枪口.338,マズル.338,focinho .338,枪口.338,
+STR_kr_slot_muzzle308,muzzle .308,muzzle .308,tlama .308,Mündung .308,Дульное устройство .308,kufa .308,pofa .308,museruola .308,hocico .308,museau .308,枪口.308,マズル.308,focinho .308,枪口.308,
+STR_kr_slot_muzzle762_39,muzzle 7.62x39,muzzle 7.62x39,"náhubek 7,62x39","Schnauze 7,62x39",Дульное устройство 7.62x39,"kufa 7,62x39","pofa 7,62x39",museruola 7.62x39,bozal 7.62x39,"museau 7,62x39",枪口7.62x39,マズル 7.62x39,"focinho 7,62x39",枪口7.62x39,
+STR_kr_slot_muzzle762_54_mosin,muzzle 7.62x54 Mosin,muzzle 7.62x54 Mosin,"čenich 7,62x54 Mosin","Schnauze 7,62x54 Mosin",ДУ для винтовки Мосина,"kufa 7,62x54 Mosin","szájkosár 7,62x54 Mosin","museruola 7,62x54 Mosin",bozal 7.62x54 Mosin,museau 7.62x54 Mosin,枪口 7.62x54 莫辛,マズル 7.62x54 モシン,"focinho 7,62x54 Mosin",枪口 7.62x54 莫辛,
+STR_kr_slot_muzzle762_54,muzzle 7.62x54,muzzle 7.62x54,"náhubek 7,62x54","Schnauze 7,62x54",Дульное устройство 7.62x54,"kufa 7,62x54","fang 7,62x54",museruola 7.62x54,bozal 7.62x54,"museau 7,62x54",枪口7.62x54,マズル 7.62x54,"focinho 7,62x54",枪口7.62x54,
+STR_kr_slot_kr_muzzle12_76,muzzle 12x76,muzzle 12x76,náhubek 12x76,Schnauze 12x76,Дульное устройство 12x76,kaganiec 12x76,szájkosár 12x76,museruola 12x76,bozal 12x76,museau 12x76,枪口12x76,マズル 12x76,focinho 12x76,枪口12x76,
+STR_kr_slot_muzzle127_55,muzzle 12.7x55,muzzle 12.7x55,"náhubek 12,7x55","Schnauze 12,7x55",Дульное устройство 12.7x55,"kufa 12,7x55","pofa 12,7x55","museruola 12,7x55",bozal 12.7x55,"museau 12,7x55",枪口12.7x55,マズル 12.7x55,"focinho 12,7x55",枪口12.7x55,
+STR_kr_slot_muzzle545,muzzle 5.45x39,muzzle 5.45x39,"náhubek 5,45x39","Schnauze 5,45x39",Дульное устройство 5.45x39,"kufa 5,45x39","fang 5,45x39",museruola 5.45x39,bozal 5.45x39,museau 5.45x39,枪口5.45x39,マズル 5.45x39,"focinho 5,45x39",枪口5.45x39,
+STR_kr_slot_muzzle50bmg,muzzle .50 BMG,muzzle .50 BMG,tlama .50 BMG,Mündung .50 BMG,Дульное устройство .50BMG,kufa .50 BMG,szájkosár .50 BMG,volata .50 BMG,bozal .50 BMG,museau .50 BMG,枪口.50 BMG,銃口.50BMG,focinho .50 BMG,枪口.50 BMG,
+STR_kr_slot_muzzle556,muzzle 5.56x45,muzzle 5.56x45,"náhubek 5,56x45","Schnauze 5,56x45",Дульное устройство 5.56x45,"kufa 5,56x45","fang 5,56x45","museruola 5,56x45",bozal 5.56x45,museau 5.56x45,枪口5.56x45,マズル 5.56x45,"focinho 5,56x45",枪口5.56x45,
+STR_kr_slot_ak_bttstck,AK buttstock,AK buttstock,Pažba AK,AK-Hinterschaft,Приклад АК,Kolba AK,AK popsi,Calcio AK,Culata AK,Crosse AK,AK枪托,AK銃床,Coronha AK,AK枪托,
+STR_kr_slot_ak_fbttstck,AK folding buttstock,AK folding buttstock,AK sklopná pažba,AK-Klappschaft,Складной приклад АК,Składana kolba AK,AK összecsukható fenék,Calcio pieghevole AK,Culata plegable AK,Crosse repliable AK,AK折叠枪托,AK折りたたみ銃床,Coronha dobrável AK,AK折叠枪托,
+STR_kr_slot_aks74u_hndgrd,aks74u handguard,aks74u handguard,předpažbí aks74u,aks74u Handschutz,Цевье АКС74у,łoże aks74u,aks74u kézvédő,paramano aks74u,guardamanos aks74u,garde-main aks74u,aks74u护木,aks74u ハンドガード,protetor de mão aks74u,aks74u护木,
+STR_kr_slot_ak_receiver,AK receiver,AK receiver,přijímač AK,AK-Empfänger,Крышка АК,Odbiornik AK,AK vevő,Ricevitore AK,receptor AK,Récepteur AK,AK接收器,AK受信機,Receptor AK,AK接收器,
+STR_kr_slot_ak_hndgrd,AK handguard,AK handguard,AK předpažbí,AK-Handschutz,Цевье АК,łoże AK,AK kézvédő,Paramano AK,Guardamanos AK,Garde-main AK,AK护木,AKハンドガード,Protetor de mão AK,AK护木,
+STR_kr_slot_weapon_tube,Tube,Tube,Trubice,Rohr,Трубка,Rura,Cső,Tubo,Tubo,Tube,管子,チューブ,Tubo,管子,
+STR_kr_slot_kr_ar15_tube,AR tube,AR tube,AR trubice,AR-Röhre,Трубка AR,Rurka AR,AR cső,Tubo AR,tubo AR,Tube AR,AR管,ARチューブ,Tubo AR,AR管,
+STR_kr_slot_kr_ar15_charging,AR charging handle,AR charging handle,AR nabíjecí rukojeť,AR-Ladegriff,Рукоять затвора AR,Uchwyt do ładowania AR,AR töltő fogantyú,Maniglia di ricarica AR,Mango de carga AR,Poignée de chargement AR,AR充电手柄,ARチャージングハンドル,Alça de carregamento AR,AR充电手柄,
+STR_kr_slot_katana,Katana,Katana,Katana,Katana,Катана,Katana,Katana,Katana,Katana,Katana,武士刀,カタナ,Katana,武士刀,
+STR_kr_slot_ar10_hndgrd,AR10 handguard,AR10 handguard,Předpažbí AR10,AR10-Handschutz,Цевье AR10,Łoże AR10,AR10 kézvédő,Paramano AR10,guardamanos AR10,Garde-main AR10,AR10护木,AR10 ハンドガード,Protetor de mão AR10,AR10护木,
+STR_kr_slot_rpk16_hndgrd,RPK16 handguard,RPK16 handguard,Předpažbí RPK16,RPK16 Handschutz,Цевье РПК16,Łoże RPK16,RPK16 kézvédő,Paramano RPK16,guardamanos RPK16,Garde-main RPK16,RPK16护木,RPK16 ハンドガード,Protetor de mão RPK16,RPK16护木,
+STR_kr_slot_mk18_hndgrd,MK18 handguard,MK18 handguard,Předpažbí MK18,MK18 Handschutz,Цевье Mk18,Chwyt MK18,MK18 kézvédő,Paramano MK18,guardamanos MK18,Garde-main MK18,MK18护木,MK18 ハンドガード,Protetor de mão MK18,MK18护木,
+STR_kr_slot_rpk16_bttstck,RPK16 buttstock,RPK16 buttstock,Pažba RPK16,RPK16-Schaft,Приклад РПК16,Kolba RPK16,RPK16 fenék,Calcio RPK16,Culata RPK16,Crosse RPK16,RPK16枪托,RPK16 銃床,Coronha RPK16,RPK16枪托,
+STR_kr_slot_kr_ar_bttstck,AR buttstock,AR buttstock,AR pažba,AR-Gesäß,Приклад AR,Kolba AR,AR popsi,Calcio AR,culata AR,Crosse AR,AR枪托,AR 銃床,Coronha AR,AR枪托,
+STR_kr_slot_hk416_hndgrd,HK416 handguard,HK416 handguard,Předpažbí HK416,HK416 Handschutz,Цевье HK416,Chwyt HK416,HK416 kézvédő,Paramano HK416,guardamanos HK416,Garde-main HK416,HK416护木,HK416 ハンドガード,Protetor de mão HK416,HK416护木,
+STR_kr_slot_fal_bttstck,FAL buttstock,FAL buttstock,Pažba FAL,FAL-Hinterschaft,Приклад FAL,Kolba FAL,FAL fenék,Calcio FAL,culata FAL,Crosse FAL,FAL枪托,FAL 銃床,Coronha FAL,FAL枪托,
+STR_kr_slot_fal_hndgrd,FAL handguard,FAL handguard,Předpažbí FAL,FAL-Handschutz,Цевье FAL,Łoże FAL,FAL kézvédő,Paramano FAL,Guardamanos FAL,Garde-main FAL,FAL护木,FAL ハンドガード,Protetor de mão FAL,FAL护木,
+STR_kr_slot_ar15_hndgrd,AR15 handguard,AR15 handguard,Předpažbí AR15,AR15-Handschutz,Цевье AR15,Łoże AR15,AR15 kézvédő,Paramano AR15,guardamanos AR15,Garde-main AR15,AR15护木,AR15ハンドガード,Protetor de mão AR15,AR15护木,
+STR_kr_slot_foregrip,Tactical grip,Tactical grip,Taktická rukojeť,Taktischer Griff,Тактическая рукоять,Chwyt taktyczny,Taktikai fogás,Presa tattica,Agarre táctico,Prise tactique,战术握把,タクティカルグリップ,Aperto tático,战术握把,
+STR_kr_slot_fal_receiver,FAL receiver,FAL receiver,Přijímač FAL,FAL-Empfänger,Крышка FAL,Odbiornik FAL,FAL vevő,Ricevitore FAL,Receptor FAL,Récepteur FAL,FAL接收器,FAL受信機,Receptor FAL,FAL接收器,
+STR_kr_slot_ak_buttpad,AK buttpad,AK buttpad,Zadek AK,AK-Schaftpolster,Тыльник приклада,Tyłek AK,AK popsipad,Calciolo AK,cantonera AK,Coussinet AK,AK 屁股垫,AK バットパッド,Teclado AK,AK 屁股垫,
+STR_kr_slot_kr_ak_handle,AK bolt handle,AK bolt handle,Rukojeť AK šroubu,AK-Bolzengriff,Ручка затвора,Uchwyt rygla AK,AK csavaros fogantyú,Maniglia del bullone AK,Mango de perno AK,Poignée à boulon AK,AK 螺栓手柄,AKボルトハンドル,Alça de parafuso AK,AK 螺栓手柄,
+STR_kr_slot_nato_optics,Picatinny rail optic,Picatinny rail optic,Picatinny kolejnicová optika,Picatinny-Schienenoptik,Планка Пикаттини,Optyka na szynę Picatinny,Picatinny sínes optika,Ottica con guida Picatinny,Óptica de carril Picatinny,Optique sur rail Picatinny,皮卡汀尼导轨光学器件,ピカティニーレール光学系,Óptica de trilho Picatinny,皮卡汀尼导轨光学器件,
+STR_kr_slot_weaponHolo,Holo sight,Holo sight,Holo pohled,Holo-Sicht,Колиматорный прицел,Holograficzny widok,Holo látvány,Vista olografica,Vista holográfica,Viseur holographique,全息瞄准镜,ホロサイト,Visão holográfica,全息瞄准镜,
+STR_kr_slot_ak_optics,Dovetail optic,Dovetail optic,Rybinová optika,Schwalbenschwanzoptik,Ласточкин хвост,Optyka jaskółczego ogona,Fecskefarkú optika,Ottica a coda di rondine,Óptica de cola de milano,Optique à queue d'aronde,燕尾光学元件,アリ溝光学系,Ótica em cauda de andorinha,燕尾光学元件,
+STR_kr_slot_pt_lock,PT-lock,PT-lock,PT-zámek,PT-Schloss,Замок ПТ,Blokada PT,PT-zár,Blocco PT,bloqueo PT,Verrouillage PT,PT锁,PTロック,Bloqueio PT,PT锁,
+STR_kr_slot_rail_mount,Mount,Mount,Mount,Montieren,Планка,Uchwyt,Hegy,Montare,Montar,Monter,山,マウント,Montar,山,
+STR_kr_slot_mosin_buttpad,Mosin Rifle Buttpad,Mosin Rifle Buttpad,Button Mosin pro pušku,Mosin-Gewehr-Schaftpolster,Тыльник,Kolba karabinu Mosin,Mosin puska fenékpad,Calciolo per fucile Mosin,Culata para rifle Mosin,Coussinet de crosse pour fusil Mosin,莫辛步枪枪托,モシンライフルのバットパッド,Comando do rifle Mosin,莫辛步枪枪托,
+STR_kr_slot_mosin_mount,Mosin Rifle Mount,Mosin Rifle Mount,Držák na pušku Mosin,Mosin-Gewehrhalterung,Планка,Uchwyt karabinowy Mosin,Mosin puskatartó,Supporto per fucile Mosin,Montura para rifle Mosin,Monture de fusil Mosin,莫辛步枪支架,モシン ライフル マウント,Suporte para rifle Mosin,莫辛步枪支架,
+STR_kr_slot_weaponOpticsMosin,Kochetov Mount,Kochetov Mount,Kočetovská hora,Berg Kochetov,Крепление Кочетова,Góra Koczetowa,Kochetov-hegy,Monte Kochetov,Monte Kochetov,Mont Kochetov,科切托夫山,コチェトフ山,Monte Kochetov,科切托夫山,
+STR_kr_slot_svd_hndgrd,SVD handguard,SVD handguard,SVD předpažbí,SVD-Handschutz,Цевье СВД,Łoże SVD,SVD kézvédő,Paramano SVD,guardamanos SVD,Garde-main SVD,SVD护木,SVDハンドガード,Protetor de mão SVD,SVD护木,
+STR_kr_slot_kr_svd_stock,SVD stock,SVD stock,skladem SVD,SVD-Aktie,Приклад СВД,akcje SVD,SVD készlet,Calcio SVD,acciones de la SVD,Actions SVD,SVD库存,SVDストック,Estoque SVD,SVD库存,
+STR_kr_slot_kr_mp5_mount,MP5 Mount,MP5 Mount,Držák MP5,MP5-Halterung,Планка MP5,Uchwyt MP5,MP5 tartó,Supporto MP5,Montaje MP5,Support MP5,MP5支架,MP5 マウント,Suporte MP5,MP5支架,
+STR_kr_slot_kr_mp5_hndgrd,MP5 handguard,MP5 handguard,Předpažbí MP5,MP5-Handschutz,Цевье MP5,Chwyt MP5,MP5 kézvédő,Paramano MP5,guardamanos MP5,garde-main MP5,MP5护木,MP5 ハンドガード,Protetor de mão MP5,MP5护木,
+STR_kr_slot_kr_mp5_stock,MP5 stock,MP5 stock,Sklad MP5,MP5-Lager,Приклад MP5,Kolba MP5,MP5 készlet,Archivio MP5,existencias de MP5,Stock MP5,MP5库存,MP5ストック,Estoque MP5,MP5库存,
+STR_kr_slot_saiga_hndgrd,Saiga handguard,Saiga handguard,Předpažbí Saiga,Saiga-Handschutz,Цевье Сайга,Łoże Saigi,Saiga kézvédő,Paramano Saiga,guardamanos saiga,Garde-main Saïga,赛加羚羊护手,サイガハンドガード,Protetor de mão Saiga,赛加羚羊护手,
+STR_kr_slot_spas12_stock,SPAS12 stock,SPAS12 stock,Skladem SPAS12,SPAS12-Lager,Приклад SPAS12,Magazyn SPAS12,SPAS12 készlet,Calcio SPAS12,Valores SPAS12,Action SPAS12,SPAS12库存,SPAS12在庫,Estoque SPAS12,SPAS12库存,
+STR_kr_slot_g28_hndgrd,HK417/G28 handguard,HK417/G28 handguard,Předpažbí HK417/G28,HK417/G28 Handschutz,Цевье HK417/G28,Chwyt HK417/G28,HK417/G28 kézvédő,Paramano HK417/G28,Guardamanos HK417/G28,Garde-main HK417/G28,HK417/G28护木,HK417/G28 ハンドガード,Protetor de mão HK417/G28,HK417/G28护木,
+STR_kr_slot_m200_hndgrd,M200 handguard,M200 handguard,Předpažbí M200,M200-Handschutz,M200 Цевье,Chwyt M200,M200 kézvédő,Paramano M200,guardamanos m200,Garde-main M200,M200护木,M200 ハンドガード,Protetor de mão M200,M200护木,
+STR_kr_slot_kr_m200_stock,M200 stock,M200 stock,Zásoba M200,M200-Lager,M200 Приклад,Kolba M200,M200 készlet,Calcio M200,culata M200,Crosse M200,M200库存,M200ストック,Estoque M200,M200库存,
+STR_kr_slot_kr_scar_stock,SCAR stock,SCAR stock,Zásoba SCAR,SCAR-Aktie,Приклад SCAR,zapasy SCAR,SCAR részvény,Titolo SCAR,acciones de cicatriz,Action CICATRICE,SCAR库存,スカーストック,Estoque de cicatrizes,SCAR库存,
+STR_kr_slot_mount,Mount,Mount,Mount,Montieren,Крепление,Uchwyt,Hegy,Montare,Montar,Monter,山,マウント,Montar,山,
+STR_kr_slot_stock,Stovk,Stovk,Stovk,Stovk,Приклад,Stovk,Stovk,Stovk,Stovk,Poêle,斯托夫克,ストフク,Fogão,斯托夫克,
+STR_kr_slot_handguard,Handguard,Handguard,Předpažbí,Handschutz,Цевье,Łoże,Sátorvas,Paramano,guardamanos,Garde-main,护手,ハンドガード,Protetor de mão,护手,
+STR_kr_slot_muzzle,Muzzle,Muzzle,Čenich,Schnauze,ДТК/Глушитель,Pysk,Szájkosár,Museruola,Bozal,Museau,枪口,銃口,Focinho,枪口,
+STR_kr_action_warp,Warp around,Warp around,Warp kolem,Warp herum,Обмотать,Rozejrzyj się,Körbefordulni,Girati intorno,deformarse,Se déformer,扭曲,ワープして回る,Deformar,扭曲,
+STR_kr_action_screw,Screw,Screw,Šroub,Schrauben,Прикрутить,Śruba,Csavar,Vite,Tornillo,Vis,拧紧,スクリュー,Parafuso,拧紧,
+STR_kr_action_changebarrel,Сhange barrel,Сhange barrel,Vyměňte hlaveň,Lauf wechseln,Сменить ствол,Zmień beczkę,Cserélje ki a hordót,Cambia canna,Cambiar barril,Changer le canon,更换桶,バレルを変更する,Trocar barril,更换桶,
+STR_kr_action_connect_lock,Connect PT-lock,Connect PT-lock,Připojte PT zámek,PT-Schloss anschließen,Присоединить замок,Podłącz blokadę PT,Csatlakoztassa a PT-zárat,Collegare il blocco PT,Conecte el bloqueo PT,Connectez le PT-lock,连接 PT 锁,PTロックを接続する,Conecte o bloqueio PT,连接 PT 锁,
+STR_kr_action_disconnect_lock,Disconnect PT-lock,Disconnect PT-lock,Odpojte zámek PT,Trennen Sie die PT-Sperre,Отсоединить замок,Odłącz blokadę PT,Válassza le a PT-zárat,Scollegare il blocco PT,Desconectar el bloqueo PT,Déconnecter le PT-lock,断开 PT 锁,PTロックを解除する,Desconecte o bloqueio PT,断开 PT 锁,
+STR_kr_connect_mount,Connect mount,Connect mount,Připojte držák,Halterung anschließen,Прикрутить планку,Podłącz uchwyt,Csatlakoztassa a tartót,Collegare il supporto,Conectar montaje,Connecter le support,连接安装座,コネクトマウント,Conectar montagem,连接安装座,
+STR_kr_disconnect_mount,Disconnect mount,Disconnect mount,Odpojte držák,Halterung trennen,Открутить планку,Odłącz uchwyt,Csatlakoztassa le a tartót,Scollegare il supporto,Desconectar el soporte,Déconnecter le support,断开安装,ディスコネクトマウント,Desconecte a montagem,断开安装,
+STR_kr_GUI_Tier,Tier,Tier,Tier,Stufe,Тип,Szczebel,Szint,Livello,Nivel,Étage,等级,階層,Nível,等级,
+STR_kr_GUI_Caliber,Caliber,Caliber,Ráže,Kaliber,Калибр,Kaliber,Kaliber,Calibro,Calibre,Calibre,口径,口径,Calibre,口径,
+STR_kr_GUI_RPM,RPM,RPM,RPM,U/min,Скорострельность,obr./min,FORDULAT,giri al minuto,RPM,RPM,转速,回転数,RPM,转速,
+STR_kr_GUI_Muzzle_Energy,Muzzle Energy,Muzzle Energy,Energie tlamy,Mündungsenergie,Дульная энергия,Energia wylotowa,Pofa energia,Energia della museruola,Energía del hocico,Énergie initiale,枪口能量,マズルエネルギー,Energia do focinho,枪口能量,
+STR_kr_GUI_Horizontal_Recoil,Horizontal Recoil,Horizontal Recoil,Horizontální zpětný ráz,Horizontaler Rückstoß,Горизонтальная отдача,Odrzut poziomy,Vízszintes visszarúgás,Rinculo orizzontale,Retroceso horizontal,Recul horizontal,水平反冲,水平反動,Recuo horizontal,水平反冲,
+STR_kr_GUI_Vertical_Recoil,Vertical Recoil,Vertical Recoil,Vertikální zpětný ráz,Vertikaler Rückstoß,Вертикальная отдача,Odrzut pionowy,Függőleges visszarúgás,Rinculo verticale,Retroceso vertical,Recul vertical,垂直后坐力,垂直反動,Recuo vertical,垂直后坐力,
+STR_kr_GUI_Kick,Kick,Kick,Kop,Kick,Пинок,Rzut,Rúgás,Calcio,Patada,Coup,踢,キック,Chute,踢,
+STR_kr_GUI_Ergonomics,Ergonomics,Ergonomics,Ergonomie,Ergonomie,Эргономика,Ergonomia,Ergonómia,Ergonomia,Ergonomía,Ergonomie,人体工学,人間工学,Ergonomia,人体工学,
+STR_kr_GUI_ADS,ADS,ADS,ADS,ANZEIGEN,Вход в прицел,REKLAM,ADS,ANNUNCI,ANUNCIOS,Annonces,ADS,ADS,ANÚNCIOS,ADS,
+STR_kr_GUI_Durability,Barrel resource,Barrel resource,Barel zdroj,Barrel-Ressource,Ресурс ствола,Zasób beczki,Hordó erőforrás,Risorsa barile,recurso barril,Ressource de baril,桶资源,バレルリソース,Recurso de barril,桶资源,
+STR_kr_GUI_Accuracy,Accuracy,Accuracy,Přesnost,Genauigkeit,Кучность,Dokładność,Pontosság,Precisione,Exactitud,Précision,准确性,正確さ,Precisão,准确性,
+STR_kr_GUI_Weapon_Type,Weapon Type,Weapon Type,Typ zbraně,Waffentyp,Подходит для:,Rodzaj broni,Fegyver típusa,Tipo di arma,Tipo de arma,Type d'arme,武器类型,武器の種類,Tipo de arma,武器类型,
+STR_kr_GUI_Additional_Mount,Additional Mount,Additional Mount,Přídavná montáž,Zusätzliche Halterung,Дополнительные планки,Dodatkowe mocowanie,Kiegészítő rögzítés,Supporto aggiuntivo,Montaje adicional,Support supplémentaire,附加安装座,追加マウント,Montagem Adicional,附加安装座,
+STR_kr_GUI_Yes,Yes,Yes,Ano,Ja,Да,Tak,Igen,SÌ,Sí,Oui,是的,はい,Sim,是的,
+STR_kr_GUI_No,No,No,Žádný,NEIN,Нет,NIE,Nem,NO,No,Non,不,いいえ,Não,不,
+STR_kr_GUI_Suppression,Suppression,Suppression,Potlačení,Unterdrückung,Шумоподавление,Tłumienie,Elnyomás,Soppressione,Supresión,Suppression,抑制,抑制,Supressão,抑制,
+STR_kr_GUI_Optimal_range,Optimal range,Optimal range,Optimální dosah,Optimale Reichweite,Оптимальная дальность,Optymalny zasięg,Optimális hatótávolság,Gamma ottimale,Rango óptimo,Portée optimale,最佳范围,最適な範囲,Alcance ideal,最佳范围,
+STR_kr_GUI_Armor_piercing,Armor-piercing,Armor-piercing,Průbojné brnění,Panzerbrechend,Бронепробитие,Przebijanie pancerza,Páncéltörő,Perforante,Perforación de armaduras,Perforant,穿甲弹,徹甲弾,Perfurante de armadura,穿甲弹,
+STR_kr_GUI_Shock,Shock,Shock,Šokovat,Schock,Останавливающее действие,Zaszokować,Sokk,Shock,Choque,Choc,震惊,ショック,Choque,震惊,
+STR_kr_GUI_hitpoints,Hitpoints,Hitpoints,Hitpointy,Trefferpunkte,Убойное действие,Punkty życia,Életpontok,Hitpoint,Puntos de vida,Points de vie,生命值,ヒットポイント,Pontos de vida,生命值,
+STR_kr_GUI_blood,Blood,Blood,Krev,Blut,Проникающее ранение,Krew,Vér,Sangue,Sangre,Sang,血,血,Sangue,血,
+STR_kr_GUI_tier_0,Trash,Trash,Odpadky,Müll,Хлам,Śmieci,Szemét,Spazzatura,Basura,Poubelle,垃圾,ごみ,Lixo,垃圾,
+STR_kr_GUI_tier_1,Common,Common,Společný,Gemeinsam,Обычный,Wspólny,Közös,Comune,Común,Commun,常见的,一般,Comum,常见的,
+STR_kr_GUI_tier_2,Uncommon,Uncommon,Méně časté,Ungewöhnlich,Нечастый,Niezwykły,Ritka,Non comune,Poco común,Rare,罕见,珍しい,Incomum,罕见,
+STR_kr_GUI_tier_3,Rare,Rare,Vzácný,Selten,Редкий,Rzadki,Ritka,Raro,Extraño,Rare,稀有的,レア,Cru,稀有的,
+STR_kr_GUI_tier_4,Very Rare,Very Rare,Velmi vzácné,Sehr selten,Очень редкий,Bardzo rzadkie,Nagyon ritka,Molto raro,muy raro,Très rare,非常罕见,とても珍しい,Muito Raro,非常罕见,
+STR_kr_GUI_tier_5,Fairytale,Fairytale,Pohádkový,Märchen,Раритет,Bajka,Tündérmese,Fiaba,cuento de hadas,Conte de fées,童话,おとぎ話,Conto de fadas,童话,
+STR_kr_GUI_tier_6,Unique,Unique,Unikátní,Einzigartig,Уникальный,Unikalny,Egyedülálló,Unico,Único,Unique,独特的,個性的,Exclusivo,独特的,
+STR_kr_GUI_tier_7,HOLY FUCK!,HOLY FUCK!,SAKRA!,HEILIGER FICK!,HOLY FUCK!,ŚWIĘTA KURWA!,SZENT BASZK!,SANTA CAZZATA!,¡SANTA MIERDA!,PUTAIN DE PUTAIN !,天哪！,なんてことだ！,SANTA PORRA!,天哪！,
+STR_kr_GUI_CanAttach,Can be attached,Can be attached,Lze připevnit,Kann angebracht werden,Можно установить,Można dołączyć,Csatolható,Può essere allegato,Se puede adjuntar,Peut être attaché,可以附上,取り付け可能,Pode ser anexado,可以附上,
+STR_kr_GUI_attached,Attached,Attached,Připojeno,Beigefügt,Установлены,Przyłączony,Csatolt,Allegato,Adjunto,Ci-joint,随附的,添付,Apegado,随附的,
+STR_kr_GUI_CantAttach,Cannot be attached,Cannot be attached,Nelze připojit,Kann nicht angehängt werden,Нельзя установить,Nie można dołączyć,Nem csatolható,Non può essere allegato,No se puede adjuntar,Ne peut pas être attaché,无法附加,取り付けられない,Não é possível anexar,无法附加,
+STR_kr_GUI_terrible,Terrible,Terrible,Hrozný,Schrecklich,Ужасная,Straszny,Szörnyű,Terribile,Horrible,Terrible,糟糕的,ひどい,Terrível,糟糕的,
+STR_kr_GUI_bad,Bad,Bad,Špatný,Schlecht,Плохая,Zły,Rossz,Cattivo,Malo,Mauvais,坏的,悪い,Ruim,坏的,
+STR_kr_GUI_normal,Normal,Normal,Normální,Normal,Нормальная,Normalna,Normál,Normale,Normal,Normale,普通的,普通,Normal,普通的,
+STR_kr_GUI_good,Good,Good,Dobrý,Gut,Хорошая,Dobry,Jó,Bene,Bien,Bien,好的,良い,Bom,好的,
+STR_kr_GUI_excellent,Excellent,Excellent,Vynikající,Exzellent,Отличная,Doskonały,Kiváló,Eccellente,Excelente,Excellent,出色的,素晴らしい,Excelente,出色的,
+STR_kr_GUI_akstock,AK (fixed stock),AK (fixed stock),AK (pevné zásoby),AK (Festbestand),АК (фикс. приклад),AK (stały magazyn),AK (fix készlet),AK (azione fissa),AK (stock fijo),AK (stock fixe),AK（固定库存）,AK（固定ストック）,AK (estoque fixo),AK（固定库存）,
+STR_kr_GUI_akfstock,AK (folding stock),AK (folding stock),AK (skládací pažba),AK (Klappschaft),АК (складной приклад),AK (kolba składana),AK (összecsukható készlet),AK (calcio pieghevole),AK (culata plegable),AK (crosse pliante),AK（折叠枪托）,AK（フォールディングストック）,AK (estoque dobrável),AK（折叠枪托）,
+STR_kr_GUI_forRaild,Handguards with Picatinny rail,Handguards with Picatinny rail,Předpažbí s příčkou Picatinny,Handschützer mit Picatinny-Schiene,Цевья с планкой Пикаттини,Łoże z szyną Picatinny,Kézvédők Picatinny sínnel,Paramani con slitta Picatinny,Paramanos con carril Picatinny,Protège-mains avec rail Picatinny,带皮卡汀尼导轨的护木,ピカティニーレール付きハンドガード,Protetores de mão com trilho Picatinny,带皮卡汀尼导轨的护木,
+STR_kr_GUI_DoesNotAffect,Does not affect,Does not affect,Neovlivňuje,Beeinflusst nicht,Не влияет,Nie wpływa,Nem befolyásolja,Non influisce,No afecta,N'affecte pas,不影响,影響しない,Não afeta,不影响,
+STR_kr_GUI_stdAKstocks,Standrt AK Stocks,Standrt AK Stocks,Standrt AK Stocks,Standrt AK Stocks,Штатные приклады АК,Standardowe akcje AK,Standrt AK Stocks,Azioni AK standard,Acciones estándar de AK,Actions Standrt AK,Standrt AK 股票,スタンダートAK株,Ações Standard AK,Standrt AK 股票,
+STR_kr_GUI_arSystems,AR-like systems,AR-like systems,systémy podobné AR,AR-ähnliche Systeme,AR-системы,Systemy typu AR,AR-szerű rendszerek,Sistemi simili alla realtà aumentata,Sistemas tipo AR,Systèmes de type AR,类AR系统,AR のようなシステム,Sistemas semelhantes a AR,类AR系统,
+STR_kr_GUI_arAny,AR-like systems and others,AR-like systems and others,systémy podobné AR a další,AR-ähnliche Systeme und andere,AR-системы и прочие,Systemy typu AR i inne,AR-szerű rendszerek és mások,Sistemi simili a AR e altri,Sistemas tipo AR y otros,Systèmes de type AR et autres,类 AR 系统及其他,AR風のシステムなど,Sistemas semelhantes a AR e outros,类 AR 系统及其他,
+STR_kr_GUI_bullet_Common,Common,Common,Společný,Gemeinsam,Обычные,Wspólny,Közös,Comune,Común,Commun,常见的,一般,Comum,常见的,
+STR_kr_GUI_bullet_AP,Armor Piercing,Armor Piercing,Brnění piercing,Panzerbrechend,Бронебойные,Przebijanie zbroi,Páncél Piercing,Perforazione dell'armatura,Perforación de armadura,Perforant,穿甲弹,アーマーピアス,Perfuração de Armadura,穿甲弹,
+STR_kr_GUI_bullet_Fire,Fire,Fire,Oheň,Feuer,Зажигательные,Ogień,Tűz,Fuoco,Fuego,Feu,火,火,Fogo,火,
+STR_kr_GUI_bullet_Tracer,Tracer,Tracer,Tracer,Tracer,Трасер,Kreślarka,Nyomkövető,Tracciante,Trazador,Traceur,示踪剂,トレーサー,Rastreador,示踪剂,
+STR_kr_GUI_bullet_HallowPoint,Expansion,Expansion,Rozšíření,Erweiterung,Экспансивные,Ekspansja,Terjeszkedés,Espansione,Expansión,Expansion,扩张,拡大,Expansão,扩张,
+STR_kr_GUI_bullet_nonLethal,Non-Lethal,Non-Lethal,Nesmrtící,Nicht tödlich,Нелетальные,Nieśmiercionośny,Nem halálos,Non letale,No letal,Non mortel,非致命性,非致死性,Não letal,非致命性,
+STR_kr_GUI_bullet_Explosive,Explosive,Explosive,Explozivní,Explosiv,Разрывные,Materiał wybuchowy,Robbanó,Esplosivo,Explosivo,Explosif,炸药,爆発物,Explosivo,炸药,
+STR_kr_GUI_bullet_Subsonic,Subsonic,Subsonic,Podzvukový,Unterschall,Дозвуковые,Poddźwiękowy,Szubszonikus,Subsonico,Subsónico,Subsonique,亚音速,亜音速,Subsônico,亚音速,
+STR_kr_GUI_bullet_Lighting,Lighting,Lighting,Osvětlení,Beleuchtung,Осветительные,Oświetlenie,Világítás,Illuminazione,Iluminación,Éclairage,灯光,点灯,Iluminação,灯光,
+STR_kr_GUI_bullet_Gas,Gas,Gas,Plyn,Gas,Газовые,Gaz,Gáz,Gas,Gas,Gaz,气体,ガス,Gás,气体,
+STR_kr_GUI_bullet_Smoke,Smoke,Smoke,Kouř,Rauch,Дымовые,Dym,Füst,Fumo,Fumar,Fumée,抽烟,煙,Fumaça,抽烟,
+STR_kr_GUI_bullet_Bolt,Bolt,Bolt,Šroub,Bolzen,Болт,Śruba,Csavar,Bullone,Tornillo,Boulon,螺栓,ボルト,Parafuso,螺栓,
+STR_kr_GUI_bullet_Arrow,Arrow,Arrow,Šipka,Pfeil,Стрела,Strzałka,Nyíl,Freccia,Flecha,Flèche,箭,矢印,Seta,箭,
+STR_kr_GUI_type,Type,Type,Typ,Typ,Тип,Typ,Írja be,Tipo,Tipo,Taper,类型,タイプ,Tipo,类型,
+STR_kr_GUI_speed,Speed,Speed,Rychlost,Geschwindigkeit,Скорость,Prędkość,Sebesség,Velocità,Velocidad,Vitesse,速度,スピード,Velocidade,速度,
+STR_kr_GUI_damagebarrel,Damage to weapon,Damage to weapon,Poškození zbraně,Schaden an der Waffe,Влияние на износ,Uszkodzenie broni,A fegyver sérülése,Danni all'arma,Daño al arma,Dommages à l'arme,武器损坏,武器へのダメージ,Danos à arma,武器损坏,
+STR_kr_GUI_resource,Resource,Resource,Zdroj,Ressource,Ресурс,Ratunek,Forrás,Risorsa,Recurso,Ressource,资源,リソース,Recurso,资源,
+STR_kr_GUI_capacity,Capacity,Capacity,Kapacita,Kapazität,Вместимость,Pojemność,Kapacitás,Capacità,Capacidad,Capacité,容量,容量,Capacidade,容量,
+STR_kr_GUI_chancetojam,Chance to jam,Chance to jam,Šance na jam,Chance zum Jammen,Подача патрона,Szansa na jam,Lekvár,Possibilità di marmellata,Oportunidad de improvisar,Chance de jouer,堵塞的机会,ジャムのチャンス,Chance de improvisar,堵塞的机会,
+STR_kr_GUI_ctj_bad,High,High,Vysoký,Hoch,Плохая,Wysoki,Magas,Alto,Alto,Haut,高的,高い,Alto,高的,
+STR_kr_GUI_ctj_normal,Normal,Normal,Normální,Normal,Нормальная,Normalna,Normál,Normale,Normal,Normale,普通的,普通,Normal,普通的,
+STR_kr_GUI_ctj_good,Small,Small,Malý,Klein,Хорошая,Mały,Kicsi,Piccolo,Pequeño,Petit,小的,小さい,Pequeno,小的,
+STR_kr_GUI_protection,PROTECTION,PROTECTION,OCHRANA,SCHUTZ,ЗАЩИТА,OCHRONA,VÉDELEM,PROTEZIONE,PROTECCIÓN,PROTECTION,保护,保護,PROTEÇÃO,保护,
+STR_kr_GUI_projectile,Projectile,Projectile,Projektil,Projektil,От пуль,Pocisk,Lövedék,Proiettile,Proyectil,Projectile,弹丸,発射体,Projétil,弹丸,
+STR_kr_GUI_melee,Melee,Melee,Melee,Nahkampf,От ударов,Bijatyka,Közelharc,Mischia,Pelea confusa,Mêlée,近战,近接攻撃,Corpo a corpo,近战,
+STR_kr_GUI_infected,Infected,Infected,Infikovaný,Infiziert,От зараженных,Zainfekowany,Fertőzött,Infetto,Infectado,Infecté,已感染,感染した,Infetado,已感染,
+STR_kr_GUI_frag,Frag Grenade,Frag Grenade,Frag Grenade,Splittergranate,От осколков,Granat odłamkowy,Frag Grenade,Granata a frammentazione,Granada de fragmentación,Grenade à fragmentation,破片手榴弹,フラググレネード,Granada de Fragmentação,破片手榴弹,
+STR_kr_GUI_chem,Chemical,Chemical,Chemikálie,Chemisch,Химическая,Chemiczny,Kémiai,Chimico,Químico,Chimique,化学,化学薬品,Químico,化学,
+STR_kr_GUI_bio,Biological,Biological,Biologický,Biologisch,Биологическая,Biologiczny,Biológiai,Biologico,Biológico,Biologique,生物,生物学的,Biológico,生物,
+STR_kr_GUI_itemDurability,Durability,Durability,Trvanlivost,Haltbarkeit,Прочность,Trwałość,Tartósság,Durabilità,Durabilidad,Durabilité,耐用性,耐久性,Durabilidade,耐用性,
+STR_kr_GUI_protectionType,Health/Blood/Shock,Health/Blood/Shock,Zdraví/Krev/Šok,Gesundheit/Blut/Schock,Здоровье/Кровь/Шок,Zdrowie/Krew/Szok,Egészség/Vér/Sokk,Salute/Sangue/Shock,Salud/Sangre/Choque,Santé/Sang/Choc,生命/血液/休克,健康/血液/ショック,Saúde/Sangue/Choque,生命/血液/休克,
+STR_kr_GUI_typicalspeed,Typical Speed,Typical Speed,Typická rychlost,Typische Geschwindigkeit,Базовая скорость,Typowa prędkość,Tipikus sebesség,Velocità tipica,Velocidad típica,Vitesse typique,典型速度,標準速度,Velocidade típica,典型速度,
+STR_kr_GUI_initspeed,Init Speed,Init Speed,Rychlost zahájení,Initialisierungsgeschwindigkeit,Фактическая скорость,Prędkość inicjalizacji,Kezdeti sebesség,Velocità di inizializzazione,Velocidad de inicialización,Vitesse d'initialisation,初始速度,初期速度,Velocidade de inicialização,初始速度,
+STR_kr_slot_kr_light,Rail interface,Rail interface,Železniční rozhraní,Schienenschnittstelle,Рельса,Interfejs kolejowy,Rail interfész,Interfaccia ferroviaria,Interfaz ferroviaria,Interface ferroviaire,导轨接口,レールインターフェース,Interface ferroviária,导轨接口,
+STR_kr_slot_kr_pointer_1,Upper rail,Upper rail,Horní kolejnice,Obere Schiene,Верхняя рельса,Górna szyna,Felső sín,Binario superiore,Riel superior,Traverse supérieure,上轨,アッパーレール,Trilho superior,上轨,
+STR_kr_slot_muzzle_9_39_9a91,9a-91 suppressor,9a-91 suppressor,9a-91 supresor,9a-91 Schalldämpfer,Глушитель 9a-91,tłumik 9a-91,9a-91 szupresszor,Soppressore 9a-91,supresor 9a-91,suppresseur 9a-91,9a-91抑制器,9a-91 サプレッサー,Supressor 9a-91,9a-91抑制器,
+STR_kr_slot_kr_val_mount,Mount on suppressor,Mount on suppressor,Namontujte na tlumič,Auf Schalldämpfer montieren,Крепление на глушитель,Zamontuj na tłumiku,Szerelje fel a szupresszorra,Montare sul soppressore,Montar en supresor,Monter sur le suppresseur,安装在抑制器上,サプレッサーに取り付ける,Monte no supressor,安装在抑制器上,
+STR_kr_slot_kr_val_pistolgrip,«VAL» pistol grip,«VAL» pistol grip,"Pistolová rukojeť ""VAL"".",Pistolengriff „VAL“.,Пистолетная рукоять АС Вал,Chwyt pistoletowy «VAL»,«VAL» pisztolymarkolat,Impugnatura a pistola «VAL».,Empuñadura de pistola «VAL»,Poignée pistolet «VAL»,«VAL» 手枪式握把,«VAL» ピストルグリップ,Punho de pistola «VAL»,«VAL» 手枪式握把,
+STR_kr_slot_kr_val_stock,«VAL» stock,«VAL» stock,skladem „VAL“.,Lagerbestand «VAL»,Приклад АС Вал,zapasy «VAL»,«VAL» készlet,Calcio «VAL».,Valores «VAL»,Crosse «VAL»,«VAL»股票,≪ヴァル≫在庫,Estoque «VAL»,«VAL»股票,
+STR_kr_slot_pp19_receiver,PP19 receiver,PP19 receiver,Přijímač PP19,PP19-Empfänger,Крышка Ств. Коробки ПП-19,Odbiornik PP19,PP19 vevő,Ricevitore PP19,receptor PP19,Récepteur PP19,PP19接收器,PP19受信機,Receptor PP19,PP19接收器,
+STR_kr_slot_muzzle9_19,9x19 muzzle,9x19 muzzle,9x19 náhubek,9x19 Schnauze,ДТК 9x19,Kaganiec 9x19,9x19-es szájkosár,Muso 9x19,bozal 9x19,museau 9x19,9x19 枪口,9x19 銃口,Focinho 9x19,9x19 枪口,
+STR_kr_slot_muzzle366,.366TKM muzzle,.366TKM muzzle,Náhubek .366TKM,.366TKM Mündung,ДТК .366TKM,Lufa .366TKM,.366TKM szájkosár,Volata .366TKM,Bozal .366TKM,Bouche .366TKM,.366TKM枪口,.366TKM銃口,Focinho .366TKM,.366TKM枪口,
+STR_kr_slot_bipod,Bipod,Bipod,Dvojnožka,Zweibein,Сошки,Dwójnóg,Kétlábú állvány,Bipiede,Bípode,Bipied,两脚架,バイポッド,Bipé,两脚架,
+STR_kr_slot_light_pistol,Light,Light,Světlo,Licht,Фонарь,Światło,Fény,Leggero,Luz,Lumière,光,ライト,Luz,光,
+STR_kr_slot_shotgun_mp_mag,Shotgun mag,Shotgun mag,Brokovnice mag,Schrotflintenmagazin,Трубчатый магазин,Magazynek do strzelby,Shotgun mag,Caricatore per fucile,cargador de escopeta,Chargeur de fusil de chasse,霰弹枪弹匣,ショットガンマガジン,Revista de espingarda,霰弹枪弹匣,
+STR_kr_slot_sg550_pistolgrip,SG 550 Pistol grip,SG 550 Pistol grip,Pistolová rukojeť SG 550,SG 550 Pistolengriff,Пистолетная рукоять SG550,Chwyt pistoletowy SG 550,SG 550 pisztoly markolat,SG 550 Impugnatura a pistola,SG 550 Empuñadura de pistola,Poignée pistolet SG 550,SG 550 手枪式握把,SG 550 ピストルグリップ,Punho da pistola SG 550,SG 550 手枪式握把,
+STR_kr_slot_sg550_hndgrd,SG 550 Handguard,SG 550 Handguard,Předpažbí SG 550,SG 550 Handschutz,Цевье SG 550,Chwyt SG 550,SG 550 kézvédő,Paramano SG 550,Guardamanos SG 550,Garde-main SG 550,SG 550 护木,SG 550 ハンドガード,Protetor de mão SG 550,SG 550 护木,
+STR_kr_slot_sg552_hndgrd,SG 552 Handguard,SG 552 Handguard,Předpažbí SG 552,SG 552 Handschutz,Цевье SG 552,Łoże SG 552,SG 552 kézvédő,Paramano SG 552,SG 552 Guardamanos,Garde-main SG 552,SG 552 护木,SG 552 ハンドガード,Protetor de mão SG 552,SG 552 护木,
+STR_kr_slot_sg550_stock,SG 550 Stock,SG 550 Stock,Sklad SG 550,SG 550 Lager,Приклад SG 550,Kolba SG 550,SG 550 készlet,SG 550 Stock,Culata SG 550,Crosse SG550,SG 550 库存,SG550ストック,Estoque SG 550,SG 550 库存,
+STR_kr_slot_g36_stock,G36 Stock,G36 Stock,Sklad G36,G36-Schaft,Приклад G36,Kolba G36,G36 készlet,Calcio G36,Valores G36,Crosse G36,G36库存,G36ストック,Estoque G36,G36库存,
+STR_kr_slot_g36c_handguard,G36C Handguard,G36C Handguard,Předpažbí G36C,G36C Handschutz,Цевье G36c,Chwyt G36C,G36C kézvédő,Paramano G36C,Guardamanos G36C,Garde-main G36C,G36C护木,G36C ハンドガード,Protetor de mão G36C,G36C护木,
+STR_kr_slot_g36k_handguard,G36K Handguard,G36K Handguard,Předpažbí G36K,G36K Handschutz,Цевье G36k,Chwyt G36K,G36K kézvédő,Paramano G36K,Guardamanos G36K,Garde-main G36K,G36K护木,G36K ハンドガード,Protetor de mão G36K,G36K护木,
+STR_kr_slot_g36_handguard,G36 Handguard,G36 Handguard,Předpažbí G36,G36 Handschutz,Цевье G36,Chwyt G36,G36 kézvédő,Paramano G36,Guardamanos G36,Garde-main G36,G36护木,G36 ハンドガード,Protetor de mão G36,G36护木,
+STR_kr_slot_g36_optic,G36 Optics,G36 Optics,Optika G36,G36-Optik,Оптика G36,Optyka G36,G36 optika,Ottica G36,Óptica G36,Optique G36,G36光学,G36 光学系,Óptica G36,G36光学,
+STR_kr_slot_g36_ckit,G36 Magwell,G36 Magwell,G36 Magwell,G36 Magwell,Шахта магазина,G36 Magwella,G36 Magwell,G36Magwell,G36 Magwell,G36 Magwell,G36 麦格韦尔,G36 マグウェル,G36 Magwell,G36 麦格韦尔,
+STR_kr_slot_g36_bipods,G36 Bipods,G36 Bipods,Dvojnožky G36,G36 Zweibeine,Сошки G36,Dwójnogi G36,G36 kétlábúak,Bipiedi G36,Bípodes G36,Bipieds G36,G36 两脚架,G36 バイポッド,Bipés G36,G36 两脚架,
+STR_kr_slot_tt_laser,Laser pointer TT,Laser pointer TT,Laserové ukazovátko TT,Laserpointer TT,ЛЦУ ТТ,Wskaźnik laserowy TT,TT lézermutató,Puntatore laserTT,Puntero láser TT,Pointeur laser TT,激光笔 TT,レーザーポインターTT,Ponteiro laser TT,激光笔 TT,
+STR_kr_slot_tt_grip,TT Grip,TT Grip,TT Grip,TT-Griff,Рукоять ТТ,Uchwyt TT,TT markolat,Impugnatura TT,Agarre contrarreloj,Poignée TT,TT 握把,TTグリップ,Punho TT,TT 握把,
+STR_kr_slot_muzzle762_25,Muzzle 7.62x25,Muzzle 7.62x25,"Náhubek 7,62x25","Schnauze 7,62x25",Дульное устройство 7.62x25,"Kufa 7,62x25","Pofa 7,62x25",Muso 7.62x25,Bozal 7.62x25,"Muselière 7,62x25",枪口7.62x25,マズル 7.62x25,"Focinho 7,62x25",枪口7.62x25,
+STR_kr_slot_ironsights,Ironsigts,Ironsigts,Ironsigts,Ironsigts,Механический прицел,Ironsigty,Ironsigts,Ironsigts,Hierros,Signes de fer,艾恩西茨,アイアンサイン,Ironsigts,艾恩西茨,
+STR_kr_slot_kr_receiver_g17,Glock17 Receiver,Glock17 Receiver,Přijímač Glock17,Glock17-Empfänger,Затвор Glock17,Odbiornik Glock17,Glock17 vevő,Ricevitore Glock17,Receptor Glock17,Récepteur Glock17,Glock17 接收器,グロック17レシーバー,Receptor Glock17,Glock17 接收器,
+STR_kr_slot_kr_pistolgrip,Pistol grip,Pistol grip,Pistolová rukojeť,Pistolengriff,Рукоять,Uchwyt pistoletowy,Pisztoly markolat,Impugnatura a pistola,empuñadura de pistola,Poignée pistolet,手枪式握把,ピストルグリップ,Punho de pistola,手枪式握把,
+STR_kr_slot_kr_mount,Mount,Mount,Mount,Montieren,Крепление,Uchwyt,Hegy,Montare,Montar,Monter,山,マウント,Montar,山,
+STR_kr_slot_muzzle9_18,9x18 muzzle,9x18 muzzle,9x18 náhubek,9x18 Maulkorb,ДТК 9x18,Kufa 9x18,9x18-as szájkosár,Muso 9x18,bozal 9x18,museau 9x18,9x18 枪口,9x18 銃口,Focinho 9x18,9x18 枪口,
+STR_kr_slot_kr_receiver_p226r,P226r Receiver,P226r Receiver,Přijímač P226r,P226r-Empfänger,Затвор P226r,Odbiornik P226r,P226r vevő,Ricevitore P226r,Receptor P226r,Récepteur P226r,P226r 接收器,P226r レシーバー,Receptor P226r,P226r 接收器,
+STR_kr_slot_m870_pump,M870 pump,M870 pump,čerpadlo M870,M870-Pumpe,Затвор M870,Pompa M870,M870 szivattyú,Pompa M870,bomba m870,Pompe M870,M870泵,M870ポンプ,Bomba M870,M870泵,
+STR_kr_slot_shotgun_mag,Tube magazine,Tube magazine,Trubkový časopis,Röhrenmagazin,Трубчатый магазин,Magazyn tubowy,Cső magazin,Rivista a tubo,Revista de tubos,Magazine Tube,管杂志,チューブマガジン,Revista de tubo,管杂志,
+STR_kr_slot_sg550_bipods,SG550 Bipods,SG550 Bipods,Dvojnožky SG550,SG550 Zweibeine,Сошки SG550,Dwójnogi SG550,SG550 kétlábúak,Bipiedi SG550,Bípodes SG550,Bipieds SG550,SG550 两脚架,SG550 バイポッド,Bipés SG550,SG550 两脚架,
+STR_kr_GUI_RPM_add,rounds per minute,rounds per minute,kol za minutu,Schuss pro Minute,выстрелов в минуту,rund na minutę,kör percenként,giri al minuto,rondas por minuto,tours par minute,每分钟转数,毎分回転数,rodadas por minuto,每分钟转数,
+STR_kr_GUI_Recoil,Recoil,Recoil,Zpětný ráz,Rückstoß,Отдача,Odrzut,Visszarúg,Rinculo,Retroceso,Recul,畏缩,反動,Recuo,畏缩,
+STR_kr_GUI_Sway,Sway,Sway,Houpat,Schwanken,Стабильность,Kołysać,Inog,Ondeggia,Influencia,Se balancer,摇摆,揺れる,Balançar,摇摆,
+STR_kr_GUI_dispersion_add,cm/100 meters,cm/100 meters,cm/100 metrů,cm/100 Meter,см/100 метров,cm/100 metrów,cm/100 méter,cm/100 metri,centímetros/100 metros,cm/100 mètres,厘米/100米,センチメートル/100メートル,cm/100 metros,厘米/100米,
+STR_kr_GUI_Durability_add,shots,shots,výstřely,Schüsse,выстрелов,strzały,lövések,colpi,tiros,coups de feu,镜头,ショット,tiros,镜头,
+STR_kr_GUI_stack,stack:,stack:,stoh:,Stapel:,стак:,stos:,verem:,pila:,pila:,empiler:,堆：,スタック：,pilha:,堆：,
+STR_kr_GUI_pts,pts.,pts.,bodů,Punkte.,шт.,pkt.,pontok,punti.,puntos,points.,分。,点,pontos.,分。,
+STR_kr_GUI_NoiseShoot,Noise Shoot,Noise Shoot,Noise Shoot,Lärmschießen,Громкость выстрела,Strzał w hałasie,Noise Shoot,Spara rumore,Disparo de ruido,Tir de bruit,噪音射击,ノイズシュート,Tiro de ruído,噪音射击,
+STR_kr_GUI_mps,m/s,m/s,paní,MS,м/с,SM,m/s,SM,EM,MS,多发性硬化症,MS,EM,多发性硬化症,
+STR_Picattinny,Picatinny rail,Picatinny rail,Picatinny kolejnice,Picatinny-Schiene,Планка Пикаттини,Szyna Picatinny,Picatinny sín,Rotaia Picatinny,carril picatinny,Rail Picatinny,皮卡汀尼导轨,ピカティニーレール,Trilho Picatinny,皮卡汀尼导轨,
+STR_Dovetail,Dovetail,Dovetail,Rybina,Schwalbenschwanz,Ласточкин хвост,Zazębiać,Fecskefark,A coda di rondine,Encajar,Queue d'aronde,燕尾榫,ダブテール,Cauda de andorinha,燕尾榫,
+STR_Mosin,Kochetov's mount,Kochetov's mount,Kochetova hora,Kochetovs Reittier,Крепление Кочетова,Wierzchowiec Kochetova,Kocsetov hegye,La cavalcatura di Kochetov,La montura de Kochetov,La monture de Kochetov,科切托夫的坐骑,コチェトフの馬,A montaria de Kochetov,科切托夫的坐骑,

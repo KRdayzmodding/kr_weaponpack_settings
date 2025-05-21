@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -23,6 +24,9 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_dlg_123.p3d";
 		weight = 100;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_dlg_123_co.paa"};
+		recoilModifier[] = {1,1,0.8};	
+		swayModifier[] = {1,0.75,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 2;
@@ -47,9 +51,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_hera_arms_hg15.p3d";
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_hera_arms_hg15_co.paa"};
+		recoilModifier[] = {1,1,0.7};	
+		swayModifier[] = {1,0.9,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 2;
 		};
 		class DamageSystem
 		{
@@ -71,6 +78,9 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_sig_mcx_std.p3d";
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_sig_mcx_std_co.paa"};
+		recoilModifier[] = {1,1,0.95};	
+		swayModifier[] = {1,0.8,0.75};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 2;
@@ -95,6 +105,9 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_f1_firearms_st1_skeletonized.p3d";
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_f1_firearms_st1_skeletonized_co.paa"};
+		recoilModifier[] = {1,1,0.75};	
+		swayModifier[] = {1,0.75,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 4;
@@ -119,9 +132,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_hk_grip_v2.p3d";
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_hk_grip_v2_co.paa"};
+		recoilModifier[] = {1,1,0.8};	
+		swayModifier[] = {1,0.8,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 6;
 		};
 		class DamageSystem
 		{
@@ -143,9 +159,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_magpul_miad_gen_1_fde.p3d";
 		weight = 50;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_magpul_miad_gen_1_fde_co.paa"};
+		recoilModifier[] = {1,1,0.75};	
+		swayModifier[] = {1,0.85,0.85};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 4;
+			ergonomics = 5;
 		};
 		class DamageSystem
 		{
@@ -167,9 +186,11 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_hogue_overmolded.p3d";
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_hogue_overmolded_co.paa"};
+		recoilModifier[] = {1,1,0.7};	
+		swayModifier[] = {1,0.7,0.7};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 3;
 		};
 		class DamageSystem
 		{
@@ -191,9 +212,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_hk_battle_grip_beavertail.p3d";
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_hk_battle_grip_beavertail_co.paa"};
+		recoilModifier[] = {1,1,0.7};	
+		swayModifier[] = {1,0.9,0.85};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 4;
+			ergonomics = 6;
 		};
 		class DamageSystem
 		{
@@ -215,9 +239,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_f1_firearms_st2_skeletonized.p3d";
 		weight = 90;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_f1_firearms_st2_skeletonized_co.paa"};
+		recoilModifier[] = {1,0.85,0.7};	
+		swayModifier[] = {1,0.8,0.7};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 6;
+			ergonomics = 3;
 		};
 		class DamageSystem
 		{
@@ -239,9 +266,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_magpul_moe.p3d";
 		weight = 50;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_magpul_moe_co.paa"};
+		recoilModifier[] = {0.85,1,0.8};	
+		swayModifier[] = {0.9,0.8,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics = 3;
 		};
 		class DamageSystem
 		{
@@ -263,9 +293,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_hk_battle_grip.p3d";
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_hk_battle_grip_co.paa"};
+		recoilModifier[] = {1,1,0.7};	
+		swayModifier[] = {1,0.7,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 6;
+			ergonomics = 5;
 		};
 		class DamageSystem
 		{
@@ -287,9 +320,11 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_f1_firearms_st2_pc_skeletonized.p3d";
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_f1_firearms_st2_pc_skeletonized_co.paa"};
+		recoilModifier[] = {0.9,0.9,0.9};	
+		swayModifier[] = {0.9,0.9,0.9};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 8;
+			ergonomics = 12;
 		};
 		class DamageSystem
 		{
@@ -311,9 +346,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_hk_ergo_psg1_style_grip.p3d";
 		weight = 110;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_hk_ergo_psg1_style_grip_co.paa"};
+		recoilModifier[] = {0.85,0.85,0.5};	
+		swayModifier[] = {0.9,0.8,0.8};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 8;
+			ergonomics = 6;
 		};
 		class DamageSystem
 		{
@@ -335,9 +373,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_naroh_arms_gral_s.p3d";
 		weight = 92;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_naroh_arms_gral_s_co.paa"};
+		recoilModifier[] = {0.85,0.9,0.95};	
+		swayModifier[] = {0.8,0.6,0.6};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 8;
+			ergonomics = 6;
 		};
 		class DamageSystem
 		{
@@ -359,6 +400,9 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_stark_ar_rifle_grip.p3d";
 		weight = 90;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_stark_ar_rifle_grip_co.paa"};
+		recoilModifier[] = {0.9,0.85,0.5};	
+		swayModifier[] = {0.9,0.6,0.6};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 8;
@@ -383,9 +427,12 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\ar_pgrip_tactical_dynamics_hexgrip.p3d";
 		weight = 64;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar_pistolgrips\data\ar_pgrip_tactical_dynamics_hexgrip_co.paa"};
+		recoilModifier[] = {0.9,0.6,0.6};	
+		swayModifier[] = {0.9,0.85,0.5};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 8;
+			ergonomics = 9;
 		};
 		class DamageSystem
 		{

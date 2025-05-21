@@ -16,9 +16,11 @@ class CfgMagazines
 	class kr_magazine_762x54_Base: kr_magazine_Base
 	{
 		ammoItems[] = {"Ammo_762x54","Ammo_762x54Tracer","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m","kr_Ammo_762x54_AP"};
-		ammo = "Bullet_762x54";
-		recoilModifier[] = {1.0,1.0,0.95};
+		ammo = "Bullet_762x54r_fmj";
+		
 		weightPerQuantityUnit = 35.0;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		tracersEvery = 0;
 		class kr_description
 		{
@@ -101,6 +103,8 @@ class CfgMagazines
 		weight = 900;
 		itemSize[] = {4,3};
 		count = 100;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x54\data\pkp_magazine_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x54\data\pkp_magazine.rvmat"};
 		soundImpactType = "metal";
@@ -177,6 +181,8 @@ class CfgMagazines
 		weight = 170;
 		itemSize[] = {1,2};
 		count = 20;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1.1,1.1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x54\data\svd_20_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\762x54\data\svd_20.rvmat"};
 		soundImpactType = "metal";

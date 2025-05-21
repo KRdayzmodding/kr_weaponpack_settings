@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -49,7 +50,7 @@ class cfgWeapons
 		};
 		class NoiseShoot
 		{
-			strength = 120;
+			strength = 100;
 			type = "shot";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -144,7 +145,7 @@ class cfgWeapons
 			{
 				class Health
 				{
-					hitpoints = 300;
+					hitpoints = 350;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\fal\data\fal.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\fal\data\fal_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\fal\data\fal_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\fal\data\fal_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\kr_weapons_firearms\fal\data\fal_destruct.rvmat"}}};
 				};
 			};
@@ -158,11 +159,22 @@ class cfgWeapons
 		itemSize[] = {7,3};
 		weight = 3751;
 		WeaponLength = 0.531;
-		barrelArmor = 6.8;
-		initSpeedMultiplier = 1.35;
-		recoilModifier[] = {3.4,3.9,6.4};
-		swayModifier[] = {2.6,2.6,2.6};
+		barrelArmor = 15;
+		initSpeedMultiplier = 0.9;
+		recoilModifier[] = {0.9,0.9,0.9};
+		swayModifier[] = {0.8,0.8,0.8};
 		modes[] = {"SemiAuto","FullAuto"};
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -25;
+		};
+		class NoiseShoot
+		{
+			strength = 80;
+			type = "shot";
+		};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -173,15 +185,15 @@ class cfgWeapons
 			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.0009;
+			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.098;
-			dispersion = 0.0009;
+			reloadTime = 0.12;
+			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
 		class kr_firearms
@@ -198,30 +210,39 @@ class cfgWeapons
 		itemSize[] = {8,3};
 		weight = 3951;
 		WeaponLength = 0.663;
-		barrelArmor = 8.0;
-		initSpeedMultiplier = 1.15;
-		recoilModifier[] = {3.2,3.6,6};
-		swayModifier[] = {2.8,2.8,2.8};
+		barrelArmor = 13.0;
+		initSpeedMultiplier = 1.0;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {0.9,0.9,0.9};
 		modes[] = {"SemiAuto","FullAuto"};
 		class kr_description
 		{
 			kr_tier = 3;
 			kr_caliber = "7.62x51 (.308)";
 		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -20;
+		};
+		class NoiseShoot
+		{
+			strength = 90;
+			type = "shot";
+		};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.00085;
+			dispersion = 0.0037;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.098;
-			dispersion = 0.00085;
+			reloadTime = 0.12;
+			dispersion = 0.0037;
 			magazineSlot = "magazine";
 		};
 		class kr_firearms
@@ -238,30 +259,39 @@ class cfgWeapons
 		itemSize[] = {9,3};
 		weight = 4126;
 		WeaponLength = 0.785;
-		barrelArmor = 9.0;
+		barrelArmor = 11.0;
 		initSpeedMultiplier = 1.0;
-		recoilModifier[] = {3,3.2,5.5};
-		swayModifier[] = {3,3,3};
+		recoilModifier[] = {1.1,1.1,1.1};
+		swayModifier[] = {1.0,1.0,1.0};
 		modes[] = {"SemiAuto","FullAuto"};
 		class kr_description
 		{
 			kr_tier = 4;
 			kr_caliber = "7.62x51 (.308)";
 		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -22;
+		};
+		class NoiseShoot
+		{
+			strength = 100;
+			type = "shot";
+		};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
-			dispersion = 0.00075;
+			dispersion = 0.0033;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"FNFAL_silencerHomeMade_SoundSet","FNFAL_silencerHomeMadeTail_SoundSet","FNFAL_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.098;
-			dispersion = 0.00075;
+			reloadTime = 0.12;
+			dispersion = 0.0033;
 			magazineSlot = "magazine";
 		};
 		class kr_firearms

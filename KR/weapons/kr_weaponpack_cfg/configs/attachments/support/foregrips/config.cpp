@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -25,9 +26,12 @@ class cfgVehicles
 		itemSize[] = {1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\rtm_pillau_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\rtm_pillau.rvmat"};
+		recoilModifier[] = {0.7,0.9,1};	
+		swayModifier[] = {0.9,0.8,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 2;
 		};
 		class DamageSystem
 		{
@@ -51,6 +55,9 @@ class cfgVehicles
 		itemSize[] = {1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_0_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_0.rvmat"};
+		recoilModifier[] = {0.9,0.7,1};	
+		swayModifier[] = {0.8,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 2;
@@ -77,9 +84,12 @@ class cfgVehicles
 		itemSize[] = {1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_6_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_6.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.7,0.8,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 4;
 		};
 		class DamageSystem
 		{
@@ -102,9 +112,12 @@ class cfgVehicles
 		weight = 72;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\bgv_mk46k_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\bgv_mk46k.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.8,0.7,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 4;
 		};
 		class DamageSystem
 		{
@@ -131,9 +144,12 @@ class cfgVehicles
 		weight = 107;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\vtac_uvg_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\vtac_uvg.rvmat"};
+		recoilModifier[] = {0.6,0.9,1};	
+		swayModifier[] = {0.9,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 4;
 		};
 		class DamageSystem
 		{
@@ -157,6 +173,9 @@ class cfgVehicles
 		itemSize[] = {1,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_4_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_4.rvmat"};
+		recoilModifier[] = {0.9,0.6,1};	
+		swayModifier[] = {0.9,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 4;
@@ -182,9 +201,12 @@ class cfgVehicles
 		weight = 127;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_5_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_5.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.6,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 6;
 		};
 		class DamageSystem
 		{
@@ -207,9 +229,12 @@ class cfgVehicles
 		weight = 80;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\ckib_ash12_std_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\ckib_ash12_std.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.9,0.6,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 6;
 		};
 		class DamageSystem
 		{
@@ -233,9 +258,12 @@ class cfgVehicles
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\cobra_tactical_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\cobra_tactical.rvmat"};
+		recoilModifier[] = {0.6,0.6,1};	
+		swayModifier[] = {0.9,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 4;
+			ergonomics = -5;
 		};
 		class DamageSystem
 		{
@@ -258,9 +286,12 @@ class cfgVehicles
 		weight = 68;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\sturmgriff_assault_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\sturmgriff_assault.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.6,0.6,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = -10;
 		};
 		class DamageSystem
 		{
@@ -284,6 +315,9 @@ class cfgVehicles
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\magpul_afg_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\magpul_afg.rvmat"};
+		recoilModifier[] = {0.55,0.9,1};	
+		swayModifier[] = {0.9,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 6;
@@ -321,9 +355,12 @@ class cfgVehicles
 		weight = 82;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\magpul_rvg_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\magpul_rvg.rvmat"};
+		recoilModifier[] = {0.9,0.55,1};	
+		swayModifier[] = {0.9,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics = 6;
 		};
 		class DamageSystem
 		{
@@ -350,9 +387,12 @@ class cfgVehicles
 		weight = 133;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\td_al_skltn_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\td_al_skltn.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.55,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 6;
+			ergonomics = 8;
 		};
 		class DamageSystem
 		{
@@ -375,9 +415,11 @@ class cfgVehicles
 		weight = 170;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_1.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.9,0.55,0.9};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics = -8;
 		};
 		class DamageSystem
 		{
@@ -401,9 +443,12 @@ class cfgVehicles
 		itemSize[] = {2,2};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\hera_arms_cqr_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\hera_arms_cqr.rvmat"};
+		recoilModifier[] = {0.6,0.6,1};	
+		swayModifier[] = {0.9,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 6;
+			ergonomics = -8;
 		};
 		class DamageSystem
 		{
@@ -426,9 +471,12 @@ class cfgVehicles
 		weight = 72;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\kac_vertical_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\kac_vertical.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.6,0.6,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics = -5;
 		};
 		class DamageSystem
 		{
@@ -452,9 +500,12 @@ class cfgVehicles
 		itemSize[] = {2,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\stark_se_5_express_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\stark_se_5_express.rvmat"};
+		recoilModifier[] = {0.8,0.8,0.8};	
+		swayModifier[] = {0.8,0.8,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 8;
+			ergonomics = 3;
 		};
 		class DamageSystem
 		{
@@ -478,9 +529,12 @@ class cfgVehicles
 		itemSize[] = {1,3};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_2_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_rk_2.rvmat"};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {0.75,0.75,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 9;
+			ergonomics = 8;
 		};
 		class DamageSystem
 		{
@@ -503,9 +557,12 @@ class cfgVehicles
 		weight = 180;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_b25u_rk_1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\zenit_b25u_rk_1.rvmat"};
+		recoilModifier[] = {0.5,0.7,0.7};	
+		swayModifier[] = {0.5,0.7,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 8;
+			ergonomics = -9;
 		};
 		class DamageSystem
 		{
@@ -528,9 +585,12 @@ class cfgVehicles
 		weight = 170;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\fortis_shift_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\foregrips\data\fortis_shift.rvmat"};
+		recoilModifier[] = {0.95,0.95,0.95};	
+		swayModifier[] = {0.95,0.95,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 9;
+			ergonomics = 15;
 		};
 		class DamageSystem
 		{

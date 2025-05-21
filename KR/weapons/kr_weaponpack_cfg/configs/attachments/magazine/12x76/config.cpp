@@ -16,8 +16,9 @@ class CfgMagazines
 	class kr_magazine_12x76_Base: kr_magazine_Base
 	{
 		ammoItems[] = {"kr_Ammo_12x76_buckshot_5","kr_Ammo_12x76_buckshot_7","kr_Ammo_12x76_buckshot_8","kr_Ammo_12x76_RIP","kr_Ammo_12x76_FTX_custom","kr_Ammo_12x76_lead_slug","kr_Ammo_12x76_AP20","kr_Ammo_12x76_Grizzly40","kr_Ammo_12x76_frag_12","kr_Ammo_12x76_devastator","Ammo_12gaPellets","Ammo_12gaSlug","Ammo_12gaRubberSlug","Ammo_12gaBeanbag"};
-		ammo = "Bullet_12GaugePellets";
-		recoilModifier[] = {1.0,1.0,0.95};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
+		ammo = "Bullet_12x76_buckshot_5";
 		weightPerQuantityUnit = 35.0;
 		tracersEvery = 0;
 		class kr_Gunplay: kr_Gunplay_Base
@@ -110,7 +111,7 @@ class CfgMagazines
 		soundImpactType = "metal";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics = 3;
 		};
 		class kr_description
 		{
@@ -143,7 +144,7 @@ class CfgMagazines
 		soundImpactType = "metal";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -2;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -171,6 +172,7 @@ class CfgMagazines
 		weight = 150;
 		itemSize[] = {1,3};
 		count = 10;
+		swayModifier[] = {1,1.15,1.15};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\12x76\data\promag_sai_02_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\12x76\data\promag_sai_02.rvmat"};
 		soundImpactType = "metal";
@@ -204,12 +206,13 @@ class CfgMagazines
 		weight = 660;
 		itemSize[] = {3,3};
 		count = 20;
+		swayModifier[] = {1.0,1.25,1.25};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\12x76\data\maxrounds_powermag_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\12x76\data\maxrounds_powermag.rvmat"};
 		soundImpactType = "metal";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -10;
+			ergonomics = -15;
 		};
 		class kr_description
 		{

@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -19,12 +20,12 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_fal_pgrip_ds_arms_saw_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\fal_pistolgrips\fal_pgrip_ds_arms_saw.p3d";
 		weight = 110;
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {0.75,0.75,0.7};
+		recoilModifier[] = {0.85,1,0.8};	
+		swayModifier[] = {0.9,0.8,0.8};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_pistolgrips\data\ds_arms_saw_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 6;
+			ergonomics = 3;
 		};
 		class kr_description
 		{
@@ -50,12 +51,12 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_fal_pgrip_fab_defense_ag_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\fal_pistolgrips\fal_pgrip_fab_defense_ag.p3d";
 		weight = 110;
-		recoilModifier[] = {1.0,1.0,1.0};
-		swayModifier[] = {0.8,0.8,0.7};
+		recoilModifier[] = {0.9,0.9,0.9};	
+		swayModifier[] = {0.9,0.9,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\fal_pistolgrips\data\fab_defense_ag_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 8;
+			ergonomics = 10;
 		};
 		class kr_description
 		{

@@ -10,6 +10,7 @@ class CfgPatches
 	};
 };
 class Entity;
+
 class kr_Gunplay_Base;
 class CfgAmmo
 {
@@ -81,15 +82,15 @@ class CfgAmmo
 		round = "FxRound_50BMG_ET";
 		spawnPileType = "kr_Ammo_50BMG_ET";
 		soundSetExplosion[] = {};
-		typicalSpeed = 1700;
-		initSpeed = 1700;
-		airFriction = -0.0012;
+		typicalSpeed = 650;
+		initSpeed = 650;
+		airFriction = -0.0015;
 		damageBarrel = 4000;
 		damageBarrelDestroyed = 4000;
-		tracerScale = 0.5;
+		tracerScale = 1.5;
 		tracerStartTime = 0.0125;
 		tracerEndTime = 3.5;
-		weight = 0.009;
+		weight = 0.02;
 		model = "\KR\weapons\kr_weaponpack\ammunition\bullets\big_tracer_red.p3d";
 	};
 	class Bullet_50bmg_E: kr_Bullet_50bmg_expl_Base
@@ -106,12 +107,12 @@ class CfgAmmo
 		explosive = 1;
 		caliber = 0.1;
 		soundSetExplosion[] = {};
-		typicalSpeed = 1700;
-		initSpeed = 1700;
-		airFriction = -0.0012;
+		typicalSpeed = 350;
+		initSpeed = 350;
+		airFriction = -0.0005;
 		damageBarrel = 3000;
 		damageBarrelDestroyed = 3000;
-		weight = 0.009;
+		weight = 0.02;
 	};
 	class kr_Bullet_12x76_Base;
 	class Bullet_12x76_devastator: kr_Bullet_12x76_Base
@@ -287,7 +288,7 @@ class CfgAmmo
 		};
 	};
 };
-class cfgAmmoTypes
+class CfgAmmoTypes
 {
 	class AType_Bullet_50bmg_E
 	{
@@ -306,7 +307,8 @@ class cfgAmmoTypes
 		name = "Bullet_12x76_frag_12";
 	};
 };
-class CfgVehicles
+
+class cfgVehicles
 {
 	class FxRound;
 	class FxCartridge;

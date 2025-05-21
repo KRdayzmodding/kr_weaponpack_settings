@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -22,15 +23,15 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\pgrip_tt_PM_laser.p3d";
 		weight = 60;
 		itemSize[] = {1,1};
-		recoilModifier[] = {0.85,0.85,0.85};
-		swayModifier[] = {0.8,0.8,0.8};
+		recoilModifier[] = {0.9,0.9,0.9};	
+		swayModifier[] = {0.9,0.9,0.9};
 		//attachments[] = {};
 		inventorySlot[] = {"kr_tt_grip"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\data\laser_tt_206_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\data\laser_tt_206.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 1;
+			ergonomics = 4;
 		};
 		class EnergyManager
 		{
@@ -66,14 +67,14 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\pgrip_tt_rubberized.p3d";
 		weight = 50;
 		itemSize[] = {1,1};
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.8,0.8,0.8};
+		recoilModifier[] = {0.85,0.85,0.85};	
+		swayModifier[] = {0.85,0.85,0.85};
 		attachments[] = {};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\data\tt_grip_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\data\tt_grip.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 8;
 		};
 		class kr_description
 		{
@@ -100,14 +101,14 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\pgrip_tt_razor_arms.p3d";
 		weight = 50;
 		itemSize[] = {1,1};
-		recoilModifier[] = {0.7,0.7,0.7};
-		swayModifier[] = {0.6,0.6,0.8};
+		recoilModifier[] = {0.8,0.8,0.8};	
+		swayModifier[] = {0.8,0.8,0.8};
 		attachments[] = {};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\data\razor_arms_grip_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\tt_grips\data\razor_arms_grip.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 12;
 		};
 		class kr_description
 		{

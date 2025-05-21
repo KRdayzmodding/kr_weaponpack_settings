@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoShotgun;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -31,28 +32,33 @@ class cfgWeapons
 		magazineSwitchTime = 0.2;
 		PPDOFProperties[] = {1,0.5,10,140,4,10};
 		WeaponLength = 0.95;
-		barrelArmor = 8.0;
+		barrelArmor = 17;
 		ejectType = 1;
-		recoilModifier[] = {3.2,3.3,3.1};
-		swayModifier[] = {3.5,3.5,2.3};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		modes[] = {"SemiAuto","FullAuto"};
 		hiddenSelections[] = {"camo"};
-		initSpeedMultiplier = 1.3;
+		initSpeedMultiplier = 1.1;
 		simpleHiddenSelections[] = {"hide_pistolgrip"};
+		class NoiseShoot
+		{
+			strength = 100;
+			type = "shot";
+		};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"kr_saiga12_Shot_SoundSet","Mp133_Tail_SoundSet","Mp133_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_saiga12_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.13;
-			dispersion = 0.01;
+			dispersion = 0.004;
 			firespreadangle = 1.5;
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"kr_saiga12_Shot_SoundSet","Mp133_Tail_SoundSet","Mp133_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_saiga12_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.13;
-			dispersion = 0.01;
+			reloadTime = 0.12;
+			dispersion = 0.004;
 			firespreadangle = 1.5;
 			magazineSlot = "magazine";
 		};
@@ -80,8 +86,22 @@ class cfgWeapons
 		};
 		class Particles
 		{
+
 			class OnFire
 			{
+				class MuzzleFlash
+				{
+					overrideParticle = "weapon_shot_mp133_01";
+					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
+				};
+				class MuzzleFlash1
+				{
+					overrideParticle = "weapon_shot_pellets";
+					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
+				};
+				
 				class SmokeCloud
 				{
 					overrideParticle = "weapon_shot_winded_smoke";
@@ -94,11 +114,7 @@ class cfgWeapons
 				{
 					overrideParticle = "weapon_shot_winded_smoke";
 					onlyWithinHealthLabel[] = {3,4};
-				};
-				class MuzzleFlash
-				{
-					overrideParticle = "weapon_shot_mp133_01";
-					illuminateWorld = 1;
+					positionOffset[] = {-0.05,0,0};
 				};
 				class BadlyDamagedChamberSmoke
 				{
@@ -114,6 +130,7 @@ class cfgWeapons
 					onlyWithinHealthLabel[] = {3,4};
 				};
 			};
+	
 			class OnOverheating
 			{
 				maxOverheatingValue = 4;
@@ -142,7 +159,7 @@ class cfgWeapons
 		weaponStateAnim = "dz\anims\anm\player\reloads\Saiga\w_Saiga_states.anm";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 15;
+			ergonomics = 0;
 		};
 	};
 	class kr_saiga12k: kr_saiga_Base
@@ -154,10 +171,10 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\saiga12k\data\saiga12k_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\saiga12k\data\saiga12k.rvmat"};
 		itemSize[] = {7,3};
-		barrelArmor = 11.1;
-		recoilModifier[] = {3.2,3.3,3.1};
-		swayModifier[] = {3.5,3.5,2.3};
-		initSpeedMultiplier = 1.3;
+		barrelArmor = 17;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
+		initSpeedMultiplier = 1.1;
 		attachments[] = {"kr_muzzle12_76","kr_saiga_hndgrd","weaponOpticsAK","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponOptics","weaponOptics1","weaponOpticsDT","weaponWrap"};
 		class kr_firearms
 		{

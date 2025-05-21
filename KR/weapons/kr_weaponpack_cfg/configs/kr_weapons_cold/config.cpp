@@ -9,6 +9,7 @@ class CfgPatches
 		ammo[] = {"MeleeKnife_Jagd","MeleeKnife_Jagd_Heavy","Melee_kr_WarriorAxe","Melee_kr_WarriorAxe_Heavy"};
 	};
 };
+class kr_Gunplay_Base;
 class CfgAmmo
 {
 	class Bullet_Base;

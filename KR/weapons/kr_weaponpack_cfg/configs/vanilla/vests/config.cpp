@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Characters","DZ_Characters_Vests"};
 	};
 };
-class CfgVehicles
+class kr_Gunplay_Base;
+class cfgVehicles
 {
 	class PlateCarrierVest;
 	class kr_test_PC_09: PlateCarrierVest

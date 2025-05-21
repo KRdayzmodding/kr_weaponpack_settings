@@ -8,6 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_muzzles"};
 	};
 };
+
+class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class kr_suppressor_t1_Base;
@@ -22,9 +24,20 @@ class cfgVehicles
 		inventorySlot[] = {"kr_muzzle366"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle366\data\rotor_43_366_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle366\data\rotor_43_366.rvmat"};
+
+		recoilModifier[] = {0.9,0.9,0.9};
+		swayModifier[] = {1.1,1.1,1.1};
+		dispersionModifier = 0;
+		noiseShootModifier = -0.98;
+		barrelArmor = 5000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -5;
+		};
 		class kr_description
 		{
-			kr_tier = 1;
+			kr_tier = 3;
 			kr_caliber = ".336TKM";
 		};
 		class DamageSystem

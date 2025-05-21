@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Melee","kr_data"};
 	};
 };
-class CfgVehicles
+class kr_Gunplay_Base;
+class cfgVehicles
 {
 	class CombatKnife;
 	class kr_wrenchKnife: CombatKnife

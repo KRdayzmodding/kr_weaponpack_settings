@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoShotgun;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class kr_ak_Base;
@@ -61,6 +62,13 @@ class cfgWeapons
 				{
 					overrideParticle = "weapon_shot_mp133_01";
 					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
+				};
+				class MuzzleFlash1
+				{
+					overrideParticle = "weapon_shot_pellets";
+					illuminateWorld = 1;
+					ignoreIfSuppressed = 1;
 				};
 				class BadlyDamagedChamberSmoke
 				{
@@ -118,13 +126,13 @@ class cfgWeapons
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\vpo205_305.p3d";
 		WeaponLength = 0.825;
 		weight = 3900;
-		barrelArmor = 11.8;
+		barrelArmor = 18;
 		itemSize[] = {6,3};
-		initSpeedMultiplier = 1.5;
+		initSpeedMultiplier = 1;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\data\vpo205_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\data\vpo205.rvmat"};
-		recoilModifier[] = {2.0,2.2,3.2};
-		swayModifier[] = {2.1,2.1,2.0};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {0.95,0.95,0.95};
 		class kr_description
 		{
 			kr_tier = 1;
@@ -134,8 +142,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"Saiga12_Shot_SoundSet","Saiga12_Tail_SoundSet","Saiga12_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_saiga12_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00099;
+			reloadTime = 0.12;
+			dispersion = 0.004;
 			firespreadangle = 1.5;
 			magazineSlot = "magazine";
 		};
@@ -158,13 +166,13 @@ class cfgWeapons
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\vpo205_430.p3d";
 		WeaponLength = 0.95;
 		weight = 4300;
-		barrelArmor = 13.1;
+		barrelArmor = 18;
 		itemSize[] = {7,3};
-		initSpeedMultiplier = 1.35;
+		initSpeedMultiplier = 1.1;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\data\vpo205_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\data\vpo205.rvmat"};
-		recoilModifier[] = {2.1,2.3,3.2};
-		swayModifier[] = {2.5,2.5,2.2};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		class kr_description
 		{
 			kr_tier = 2;
@@ -174,8 +182,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"Saiga12_Shot_SoundSet","Saiga12_Tail_SoundSet","Saiga12_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_saiga12_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.0009;
+			reloadTime = 0.12;
+			dispersion = 0.0037;
 			firespreadangle = 1.2;
 			magazineSlot = "magazine";
 		};
@@ -198,13 +206,13 @@ class cfgWeapons
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\vpo205_570.p3d";
 		WeaponLength = 1.09;
 		weight = 4700;
-		barrelArmor = 14.8;
+		barrelArmor = 18;
 		itemSize[] = {9,3};
 		initSpeedMultiplier = 1.2;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\data\vpo205_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\vpo205\data\vpo205.rvmat"};
-		recoilModifier[] = {2.3,2.5,3.5};
-		swayModifier[] = {2.8,2.8,2.5};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 15;
@@ -218,8 +226,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"Saiga12_Shot_SoundSet","Saiga12_Tail_SoundSet","Saiga12_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_saiga12_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00085;
+			reloadTime = 0.12;
+			dispersion = 0.0035;
 			firespreadangle = 1.0;
 			magazineSlot = "magazine";
 		};

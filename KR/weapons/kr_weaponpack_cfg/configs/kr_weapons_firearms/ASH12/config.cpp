@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -23,18 +24,18 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_ASH12";
 		descriptionShort = "$STR_weapons_firearms_ASH12_dsc";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\ASH12\ASH12.p3d";
-		weight = 2350;
+		weight = 5200;
 		attachments[] = {"kr_muzzle127_55","kr_foregrip","weaponOpticsB","kr_light_right","weaponWrap"};
-		chamberableFrom[] = {"kr_Ammo_127x55_PS12","kr_Ammo_127x55_PS12A","kr_Ammo_127x55_PS12B"};
+		chamberableFrom[] = {"kr_Ammo_127x55_PS12","kr_Ammo_127x55_PS12A","kr_Ammo_127x55_PS12B","kr_Ammo_127x55_PS12HP"};
 		magazines[] = {"Mag_127x55_ash12_10Rnd","Mag_127x55_ash12_20Rnd"};
 		absorbency = 0.0;
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.6,50,200,4,10};
-		barrelArmor = 3.7;
-		initSpeedMultiplier = 1.1;
-		recoilModifier[] = {0.7,0.7,0.8};
-		swayModifier[] = {2,1.3,1.1};
+		barrelArmor = 9;
+		initSpeedMultiplier = 1.0;
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		chamberSize = 1;
 		chamberedRound = "";
 		magazineSwitchTime = 0.5;
@@ -47,7 +48,7 @@ class cfgWeapons
 		modes[] = {"SemiAuto","FullAuto"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 22;
 		};
 		class kr_description
 		{
@@ -59,15 +60,15 @@ class cfgWeapons
 			soundSetShot[] = {"ASH12_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"ASH12_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"}};
 			reloadTime = 0.125;
-			dispersion = 0.00075;
+			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"ASH12_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"ASH12_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.092;
-			dispersion = 0.00075;
+			reloadTime = 0.1;
+			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
 		class NoiseShoot

@@ -14,6 +14,7 @@ class Mode_Single;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -22,7 +23,7 @@ class cfgWeapons
 	{
 		scope = 0;
 		animName = "cz527";
-		weight = 5300;
+		weight = 4400;
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\mcmillan_cs5.p3d";
 		attachments[] = {"kr_bipod","kr_foregrip","weaponOpticsB","weaponOptics","kr_ar_pistolgrip","kr_ar_bttstck","weaponFlashlight","weaponWrap"};
 		itemSize[] = {8,3};
@@ -30,35 +31,35 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.1,20.0,200.0,10.0,10.0};
 		WeaponLength = 0.853;
-		barrelArmor = 3.5;
-		initSpeedMultiplier = 1.5;
+		barrelArmor = 4;
+		initSpeedMultiplier = 1.2;
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"Ammo_308Win","Ammo_308WinTracer","kr_Ammo_308Win_AP","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","kr_Ammo_762x51_bpz_fmj"};
 		magazines[] = {"Mag_762x51_mcmillan_cs5_10Rnd","Mag_762x51_mcmillan_cs5_20Rnd"};
 		magazineSwitchTime = 0.38;
 		ejectType = 0;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1.3,1.3,1};
+		recoilModifier[] = {0.7,0.7,0.7};
+		swayModifier[] = {0.8,0.8,0.8};
 		simpleHiddenSelections[] = {"hide_pistolgrip"};
 		hiddenSelectionsTextures[] = {"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5_co.paa"};
 		hiddenSelectionsMaterials[] = {"\KR\weapons\kr_weaponpack\kr_weapons_rifles\mcmillan_cs5\data\mcmillan_cs5.rvmat"};
 		class NoiseShoot
 		{
-			strength = 20;
+			strength = 10;
 			type = "sound";
 		};
 		modes[] = {"Single"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics = 29;
 		};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"SCOUT_silencer_SoundSet","SCOUT_silencerTail_SoundSet","SCOUT_silencerInteriorTail_SoundSet"};
 			envShootingDecrease = 0.05;
 			reloadTime = 1;
-			dispersion = 0.0003;
+			dispersion = 0.00285;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoRifle
@@ -150,17 +151,17 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_rifles_mcmillan_cs5";
 		descriptionShort = "$STR_weapons_rifles_mcmillan_cs5_dsc";
-		barrelArmor = 5.0;
-		initSpeedMultiplier = 1.5;
-		recoilModifier[] = {1,1,1};
-		swayModifier[] = {1.3,1.3,1};
+		barrelArmor = 4;
+		initSpeedMultiplier = 1.2;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
 		PPDOFProperties[] = {1,0.1,20.0,200.0,10.0,10.0};
 		class Single: Mode_Single
 		{
 			soundSetShot[] = {"SCOUT_silencer_SoundSet","SCOUT_silencerTail_SoundSet","SCOUT_silencerInteriorTail_SoundSet"};
 			envShootingDecrease = 0.05;
-			reloadTime = 0.3;
-			dispersion = 0.0003;
+			reloadTime = 1;
+			dispersion = 0.00285;
 			magazineSlot = "magazine";
 		};
 		class kr_description

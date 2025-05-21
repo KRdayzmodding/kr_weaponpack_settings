@@ -8,7 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Characters","kr_data"};
 	};
 };
-class CfgVehicles
+class kr_Gunplay_Base;
+class cfgVehicles
 {
 	class Clothing_Base;
 	class Clothing;

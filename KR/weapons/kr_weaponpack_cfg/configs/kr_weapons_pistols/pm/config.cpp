@@ -13,6 +13,7 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoPistol;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -27,20 +28,20 @@ class cfgWeapons
 		PPDOFProperties[] = {1,0.55,10,200,4,10};
 		WeaponLength = 0.19;
 		ShoulderDistance = 0.4;
-		barrelArmor = 15;
-		initSpeedMultiplier = 0.9;
+		barrelArmor = 5;
+		initSpeedMultiplier = 1.03;
 		chamberSize = 1;
 		chamberedRound = "";
 		magazines[] = {"Mag_9x18_pm_8Rnd","Mag_9x18_pm_84Rnd"};
 		chamberableFrom[] = {"Ammo_380","kr_Ammo_9x18_ppt_gz","kr_Ammo_9x18_pbm_gz","kr_Ammo_9x18_pmm_gz","kr_Ammo_9x18_pso_gz","kr_Ammo_9x18_pst_gz","kr_Ammo_9x18_sp7_gz"};
 		ejectType = 1;
-		recoilModifier[] = {1.2,1.2,1.2};
-		swayModifier[] = {1.2,1.2,1.2};
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {1,1,1};
 		simpleHiddenSelections[] = {"hide_pgrip"};
 		hiddenSelections[] = {"camo"};
 		class NoiseShoot
 		{
-			strength = 40;
+			strength = 50;
 			type = "shot";
 		};
 		modes[] = {"SemiAuto"};
@@ -48,8 +49,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"pm_Shot_SoundSet","Makarov_Tail_SoundSet","Makarov_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"Makarov_silencerPro_SoundSet","Makarov_silencerTail_SoundSet","Makarov_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.005;
+			reloadTime = 0.09;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoPistol
@@ -118,7 +119,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\pm\data\pm_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -10;
+			ergonomics = 0;
 		};
 		class kr_description
 		{

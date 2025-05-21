@@ -19,6 +19,8 @@ class CfgMagazines
 		ammo = "Bullet_408CheyTac";
 		ammoItems[] = {"kr_Ammo_408CheyTac"};
 		hiddenSelections[] = {"camo"};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -34,6 +36,8 @@ class CfgMagazines
 		weight = 90;
 		itemSize[] = {2,2};
 		count = 7;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		tracersEvery = 0;
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\408cheytac\data\m200_mag_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\408cheytac\data\m200_mag.rvmat"};

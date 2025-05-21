@@ -2,12 +2,13 @@ class CfgPatches
 {
 	class kr_attachments_ar10_handguards
 	{
-		units[] = {"kr_ar10_hguard_cmmg_mk3_rml9","kr_ar10_hguard_cmmg_mk3_rml9_raild","kr_ar10_hguard_noveske_sws_n6","kr_ar10_hguard_noveske_sws_n6_long","kr_ar10_hguard_cmmg_mk3_rml15","kr_ar10_hguard_cmmg_mk3_rml15_raild","kr_ar10_hguard_kac_urx4","kr_ar10_hguard_kac_urx4_raild","kr_ar10_hguard_jp_rsass_std","kr_ar10_hguard_jp_rsass_std_raild","kr_ar10_hguard_lancer_lch7","kr_ar10_hguard_lancer_lch7_raild"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -25,9 +26,11 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\cmmg_mk3_rml9_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\cmmg_mk3_rml9.rvmat"};
+		recoilModifier[] = {0.85,0.85,1};	
+		swayModifier[] = {0.85,1,0.85};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 10;
+			ergonomics = 16;
 		};
 		class kr_description
 		{
@@ -103,16 +106,19 @@ class cfgVehicles
 		itemSize[] = {3,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\noveske_sws_n6_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\noveske_sws_n6.rvmat"};
+		recoilModifier[] = {0.9,0.9,1};	
+		swayModifier[] = {0.9,1,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 11;
+			ergonomics = 25;
 		};
 		class kr_description
 		{
 			kr_tier = 1;
 			kr_type = "Mk47 409, SR25 406/508";
 		};
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_bipod","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
 		class kr_firearms
 		{
 			class barreltype2
@@ -159,9 +165,12 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar10_hguard_noveske_sws_n6_long_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\ar10_handguard_noveske_sws_n6_long.p3d";
 		weight = 360;
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_bipod","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\noveske_sws_n6_long_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\noveske_sws_n6_long.rvmat"};
+		recoilModifier[] = {0.8,0.8,1};	
+		swayModifier[] = {0.9,1,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 12;
@@ -218,12 +227,15 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\ar10_handguard_cmmg_mk3_rml15.p3d";
 		weight = 360;
 		itemSize[] = {5,1};
-		attachments[] = {"kr_pointer_1","kr_rail_mount"};
+		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\cmmg_mk3_rml15_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\cmmg_mk3_rml15.rvmat"};
+		recoilModifier[] = {0.75,0.75,1};	
+		swayModifier[] = {0.75,1,0.75};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 13;
+			ergonomics = 15;
 		};
 		class kr_description
 		{
@@ -264,7 +276,7 @@ class cfgVehicles
 	};
 	class kr_ar10_hguard_cmmg_mk3_rml15_raild: kr_ar10_hguard_cmmg_mk3_rml15
 	{
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_bipod","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
 		displayName = "$STR_kr_weapons_attachments_ar10_hguard_cmmg_mk3_rml15_raild";
 		class kr_firearms
 		{
@@ -295,12 +307,15 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\ar10_handguard_kac_urx4.p3d";
 		weight = 360;
 		itemSize[] = {5,1};
-		attachments[] = {"kr_pointer_1","kr_rail_mount"};
+		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\kac_urx4_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\kac_urx4.rvmat"};
+		recoilModifier[] = {0.65,0.65,1};	
+		swayModifier[] = {0.65,1,0.65};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 14;
+			ergonomics = 8;
 		};
 		class kr_description
 		{
@@ -341,7 +356,7 @@ class cfgVehicles
 	};
 	class kr_ar10_hguard_kac_urx4_raild: kr_ar10_hguard_kac_urx4
 	{
-		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
 		displayName = "$STR_kr_weapons_attachments_ar10_hguard_kac_urx4_raild";
 		class kr_firearms
 		{
@@ -372,11 +387,14 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\ar10_handguard_jp_rsass_std.p3d";
 		weight = 360;
 		attachments[] = {"kr_rail_mount"};
-		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\jp_rsass_std_co.paa"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\jp_rsass_std_fde_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\jp_rsass_std.rvmat"};
+		recoilModifier[] = {0.6,0.6,1};	
+		swayModifier[] = {0.7,1,0.7};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 16;
+			ergonomics = 18;
 		};
 		class kr_description
 		{
@@ -415,6 +433,12 @@ class cfgVehicles
 			};
 		};
 	};
+
+	class kr_ar10_hguard_jp_rsass_blk : kr_ar10_hguard_jp_rsass_std
+	{
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\jp_rsass_std_co.paa"};
+	};
+
 	class kr_ar10_hguard_jp_rsass_std_raild: kr_ar10_hguard_jp_rsass_std
 	{
 		attachments[] = {"kr_foregrip","kr_light_right"};
@@ -440,6 +464,12 @@ class cfgVehicles
 			class barreltype4: barreltype3{};
 		};
 	};
+
+	class kr_ar10_hguard_jp_rsass_blk_raild : kr_ar10_hguard_jp_rsass_std_raild
+	{
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\jp_rsass_std_co.paa"};
+	};
+
 	class kr_ar10_hguard_lancer_lch7: kr_ar10_hguard_t3_Base
 	{
 		scope = 2;
@@ -450,9 +480,12 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\lancer_lch7_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\lancer_lch7.rvmat"};
+		recoilModifier[] = {0.5,0.5,1};	
+		swayModifier[] = {0.6,1,0.6};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 17;
+			ergonomics = 16;
 		};
 		class kr_description
 		{

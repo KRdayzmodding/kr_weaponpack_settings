@@ -13,6 +13,7 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoPistol;
+
 class kr_Gunplay_Base;
 class cfgWeapons
 {
@@ -20,26 +21,26 @@ class cfgWeapons
 	class kr_glock19_Base: Pistol_Base
 	{
 		scope = 0;
-		weight = 790;
+		weight = 625;
 		absorbency = 0.0;
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.55,10,100,4,10};
 		WeaponLength = 0.185;
 		ShoulderDistance = 0.4;
-		barrelArmor = 8;
-		initSpeedMultiplier = 1;
+		barrelArmor = 7;
+		initSpeedMultiplier = 1.15;
 		chamberSize = 1;
 		chamberedRound = "";
 		magazines[] = {"Mag_9x19_glock17_std_17Rnd","Mag_9x19_glock17_pmag_21Rnd","Mag_9x19_glock17_33Rnd","Mag_9x19_glock17_50Rnd"};
 		chamberableFrom[] = {"Ammo_9x19","kr_Ammo_9x19_7n21","kr_Ammo_9x19_7n31","kr_Ammo_9x19_ap_63","kr_Ammo_9x19_gt","kr_Ammo_9x19_pso_gz","kr_Ammo_9x19_rip","kr_Ammo_9x19_quakemaker"};
 		ejectType = 1;
 		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.75,0.75,0.5};
+		swayModifier[] = {0.8,0.8,0.8};
 		hiddenSelections[] = {"camo"};
 		class NoiseShoot
 		{
-			strength = 45;
+			strength = 50;
 			type = "shot";
 		};
 		modes[] = {"SemiAuto"};
@@ -47,8 +48,8 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"glock17_Shot_SoundSet","Glock19_Tail_SoundSet","Glock19_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"glock17_silencerPro_SoundSet","Glock19_silencerTail_SoundSet","Glock19_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.099;
-			dispersion = 0.00075;
+			reloadTime = 0.12;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 		class OpticsInfo: OpticsInfoPistol
@@ -117,7 +118,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\glock19\data\glock19_co.paa"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics = 5;
 		};
 		class kr_description
 		{

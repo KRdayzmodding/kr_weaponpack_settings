@@ -14,6 +14,7 @@ class kr_description_Base
 	kr_tier = 1;
 	kr_caliber = "не указано";
 };
+class kr_Gunplay_Base;
 class CfgMagazines
 {
 	class DefaultMagazine;
@@ -159,7 +160,7 @@ class CfgMagazines
 	};
 	class Mag_AKM_30Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
+		ammoItems[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
 		class kr_description: kr_description_Base
 		{
 			kr_caliber = "7.62x39";
@@ -167,7 +168,7 @@ class CfgMagazines
 	};
 	class Mag_AKM_Drum75Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
+		ammoItems[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
 		class kr_description: kr_description_Base
 		{
 			kr_tier = 3;
@@ -176,7 +177,7 @@ class CfgMagazines
 	};
 	class Mag_AKM_Palm30Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
+		ammoItems[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
 		class kr_description: kr_description_Base
 		{
 			kr_caliber = "7.62x39";
@@ -184,7 +185,7 @@ class CfgMagazines
 	};
 	class Mag_CZ527_5rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
+		ammoItems[] += {"kr_Ammo_762x39_AP","kr_Ammo_762x39_fmj","kr_Ammo_762x39_HP","kr_Ammo_762x39_t45m","kr_Ammo_762x39_mai_ap","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_us","kr_Ammo_762x39_bp"};
 		class kr_description: kr_description_Base
 		{
 			kr_caliber = "7.62x39";
@@ -269,7 +270,7 @@ class CfgMagazines
 	};
 	class Mag_AK74_30Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_545x39_BS","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT"};
+		ammoItems[] += {"kr_Ammo_545x39_BS","kr_Ammo_545x39_HP","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT"};
 		class kr_description: kr_description_Base
 		{
 			kr_caliber = "5.45x39";
@@ -277,7 +278,7 @@ class CfgMagazines
 	};
 	class Mag_AK74_45Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_545x39_BS","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT"};
+		ammoItems[] += {"kr_Ammo_545x39_BS","kr_Ammo_545x39_HP","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT"};
 		class kr_description: kr_description_Base
 		{
 			kr_caliber = "5.45x39";
@@ -327,7 +328,7 @@ class CfgMagazines
 	};
 	class Mag_VSS_10Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp"};
+		ammoItems[] += {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_HP","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp"};
 		class kr_description: kr_description_Base
 		{
 			kr_tier = 2;
@@ -336,7 +337,7 @@ class CfgMagazines
 	};
 	class Mag_VAL_20Rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp"};
+		ammoItems[] += {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_HP","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp"};
 		class kr_description: kr_description_Base
 		{
 			kr_tier = 3;
@@ -372,7 +373,7 @@ class CfgMagazines
 	};
 	class Mag_SSG82_5rnd: Magazine_Base
 	{
-		ammoItems[] += {"kr_Ammo_545x39_BS","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT"};
+		ammoItems[] += {"kr_Ammo_545x39_BS","kr_Ammo_545x39_HP","kr_Ammo_545x39_US","kr_Ammo_545x39_T","kr_Ammo_545x39_PS","kr_Ammo_545x39_PRS","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_BT"};
 		class kr_description: kr_description_Base
 		{
 			kr_caliber = "5.45x39";

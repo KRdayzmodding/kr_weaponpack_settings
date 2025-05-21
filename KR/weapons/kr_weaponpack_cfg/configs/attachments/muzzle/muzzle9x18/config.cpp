@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data","kr_weaponpack_muzzles"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -25,23 +26,42 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_muzzle9_18_suppressor_apb_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\muzzle9_18_suppressor_apb.p3d";
 		weight = 60;
+		barrelArmor = 10000;
+		dispersionModifier = -0.002;
+		noiseShootModifier = -0.05;
+		recoilModifier[] = {0.8,0.8,0.8};
+		swayModifier[] = {0.8,0.8,0.8};
 		itemModelLength = 0.098;
 		inventorySlot[] = {"kr_muzzle9_18"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor.rvmat"};
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 6;
+		};
+
 		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "9x18: APB";
 		};
+		
 		class DamageSystem
 		{
 			class GlobalHealth
 			{
 				class Health
 				{
-					hitpoints = 10;
-					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_destruct.rvmat"}}};
+					hitpoints = 5;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle9x18\data\apb_suppressor_destruct.rvmat"}}
+					};
 				};
 			};
 		};

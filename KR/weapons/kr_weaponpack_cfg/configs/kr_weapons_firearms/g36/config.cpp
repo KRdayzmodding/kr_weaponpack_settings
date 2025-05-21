@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -53,17 +54,17 @@ class cfgWeapons
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.0007;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.0007;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 
@@ -185,12 +186,21 @@ class cfgWeapons
 		WeaponLength = 0.92;
 		itemSize[] = {8,3};
 		weight = 3800;
-		recoilModifier[] = {2.3,2.7,4.5};
-		swayModifier[] = {1.8,1.8,1.8};
-		barrelArmor = 8.3;
-		initSpeedMultiplier = 1.1;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,0.8,1.0};
+		barrelArmor = 20;
+		initSpeedMultiplier = 1.3;
 		attachments[] = {"kr_muzzle556","kr_g36_handguard","kr_g36_ckit","weaponOptics","kr_weaponOpticsG36","kr_g36_stock","weaponWrap"};
 		modes[] = {"SemiAuto","FullAuto"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -15;
+		};
+		class NoiseShoot
+		{
+			strength = 100;
+			type = "shot";
+		};
 		class kr_description
 		{
 			kr_tier = 4;
@@ -199,17 +209,17 @@ class cfgWeapons
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.0007;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.0007;
+			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
 	};
@@ -222,12 +232,21 @@ class cfgWeapons
 		WeaponLength = 0.56;
 		itemSize[] = {7,3};
 		weight = 3200;
-		recoilModifier[] = {2.7,3.1,4.5};
-		swayModifier[] = {1.8,1.8,1.8};
-		barrelArmor = 7.0;
-		initSpeedMultiplier = 1.0;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,0.7,1.0};
+		barrelArmor = 15.0;
+		initSpeedMultiplier = 1.1;
 		attachments[] = {"kr_muzzle556","kr_g36k_handguard","kr_g36_ckit","weaponOptics","kr_weaponOpticsG36","kr_g36_stock","weaponWrap"};
 		modes[] = {"SemiAuto","FullAuto"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -15;
+		};
+		class NoiseShoot
+		{
+			strength = 90;
+			type = "shot";
+		};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -236,17 +255,17 @@ class cfgWeapons
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.00078;
+			dispersion = 0.0035;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"}};
 			reloadTime = 0.1;
-			dispersion = 0.00078;
+			dispersion = 0.0035;
 			magazineSlot = "magazine";
 		};
 	};
@@ -259,9 +278,9 @@ class cfgWeapons
 		WeaponLength = 0.468;
 		itemSize[] = {6,3};
 		weight = 2800;
-		recoilModifier[] = {2.7,3.1,4.5};
-		swayModifier[] = {1.8,1.8,1.8};
-		barrelArmor = 5.7;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {0.85,0.6,0.85};
+		barrelArmor = 12;
 		initSpeedMultiplier = 0.9;
 		attachments[] = {"kr_muzzle556","kr_g36c_handguard","kr_g36_ckit","weaponOptics","kr_weaponOpticsG36","kr_g36_stock","weaponWrap"};
 		modes[] = {"SemiAuto","FullAuto"};
@@ -274,6 +293,15 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\g36\data\g36c_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\g36\data\g36c.rvmat"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class NoiseShoot
+		{
+			strength = 80;
+			type = "shot";
+		};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -293,17 +321,17 @@ class cfgWeapons
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.0009;
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"}};
+			reloadTime = 0.12;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"g36_Shot_SoundSet","g36_Tail_SoundSet","g36_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencerHomeMade_SoundSet","g36_silencerHomeMadeTail_SoundSet","g36_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.0009;
+			soundSetShotExt[] = {{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"},{"g36_silencer_SoundSet","g36_silencerTail_SoundSet","g36_silencerInteriorTail_SoundSet"}};
+			reloadTime = 0.09;
+			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
 	};

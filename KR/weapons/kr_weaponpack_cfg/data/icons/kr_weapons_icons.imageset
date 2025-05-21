@@ -311,6 +311,12 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
+    ImageSetDefClass kr_an_94_stock {
+     Name "kr_an_94_stock"
+     Pos 3840 512
+     Size 256 256
+     Flags 0
+    }
    }
   }
   ImageSetGroupClass 4 {
@@ -394,6 +400,24 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
+    ImageSetDefClass kr_ax50_handguard {
+     Name "kr_ax50_handguard"
+     Pos 3328 768
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_ax50_stock {
+     Name "kr_ax50_stock"
+     Pos 3584 768
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_svch_stock {
+     Name "kr_svch_stock"
+     Pos 3840 768
+     Size 256 256
+     Flags 0
+    }
    }
   }
   ImageSetGroupClass 5 {
@@ -444,6 +468,48 @@ ImageSetClass {
     ImageSetDefClass kr_hk417_handguard {
      Name "kr_hk417_handguard"
      Pos 1794 1024
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_ar10_ar15_handguard {
+     Name "kr_ar10_ar15_handguard"
+     Pos 2048 1024
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_spear_handguard {
+     Name "kr_spear_handguard"
+     Pos 2306 1024
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_spear_stock {
+     Name "kr_spear_stock"
+     Pos 2560 1024
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_amb17_stock {
+     Name "kr_amb17_stock"
+     Pos 2816 1024
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_m82_bipods {
+     Name "kr_m82_bipods"
+     Pos 3072 1024
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_mrad_stock {
+     Name "kr_mrad_stock"
+     Pos 3328 1024
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_bipod_vssk {
+     Name "kr_bipod_vssk"
+     Pos 3584 1024
      Size 256 256
      Flags 0
     }
@@ -603,6 +669,12 @@ ImageSetClass {
     ImageSetDefClass kr_muzzle_9_18 {
      Name "kr_muzzle_9_18"
      Pos 1792 1792
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_muzzle127_55_vssk {
+     Name "kr_muzzle127_55_vssk"
+     Pos 2048 1792
      Size 256 256
      Flags 0
     }

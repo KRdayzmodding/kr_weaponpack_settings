@@ -8,12 +8,13 @@ class CfgPatches
 		requiredAddons[] = {"DZ_data","kr_data"};
 	};
 };
-class kr_Gunplay_Base;
+
 class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class OpticsInfoRifle;
+class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -36,10 +37,7 @@ class cfgWeapons
 		spawnDamageRange[] = {0.0,0.6};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\sg550\data\sg550_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\sg550\data\sg550.rvmat"};
-		class kr_Gunplay: kr_Gunplay_Base
-		{
-			ergonomics = 0;
-		};
+
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -50,6 +48,10 @@ class cfgWeapons
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\sg550\data\sg550.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\sg550\data\sg550.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\sg550\data\sg550_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\sg550\data\sg550_damage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\sg550\data\sg550_destruct.rvmat"}}};
 				};
 			};
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
 		};
 		class NoiseShoot
 		{
@@ -152,11 +154,20 @@ class cfgWeapons
 		WeaponLength = 0.92;
 		itemSize[] = {8,3};
 		weight = 3800;
-		recoilModifier[] = {2.3,2.7,4.5};
-		swayModifier[] = {1.8,1.8,1.8};
-		barrelArmor = 7.3;
-		initSpeedMultiplier = 1.0;
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		barrelArmor = 20.0;
+		initSpeedMultiplier = 0.85;
 		modes[] = {"SemiAuto","FullAuto"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class NoiseShoot
+		{
+			strength = 80;
+			type = "shot";
+		};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -166,16 +177,16 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00078;
+			reloadTime = 0.13;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.00078;
+			reloadTime = 0.13;
+			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};
 	};
@@ -188,12 +199,21 @@ class cfgWeapons
 		WeaponLength = 0.72;
 		itemSize[] = {6,3};
 		weight = 2800;
-		recoilModifier[] = {2.7,3.1,4.5};
-		swayModifier[] = {1.8,1.8,1.8};
-		barrelArmor = 7.0;
-		initSpeedMultiplier = 1.0;
+		recoilModifier[] = {0.6,1.0,1.0};
+		swayModifier[] = {0.5,0.5,0.6};
+		barrelArmor = 15;
+		initSpeedMultiplier = 0.8;
 		attachments[] = {"kr_muzzle556","kr_sg552_hndgrd","weaponOptics","kr_sg550_pistolgrip","kr_sg550_stock","weaponWrap"};
 		modes[] = {"SemiAuto","FullAuto"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class NoiseShoot
+		{
+			strength = 70;
+			type = "shot";
+		};
 		class kr_description
 		{
 			kr_tier = 2;
@@ -203,16 +223,16 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.0009;
+			reloadTime = 0.13;
+			dispersion = 0.006;
 			magazineSlot = "magazine";
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.1;
-			dispersion = 0.0009;
+			reloadTime = 0.13;
+			dispersion = 0.006;
 			magazineSlot = "magazine";
 		};
 	};

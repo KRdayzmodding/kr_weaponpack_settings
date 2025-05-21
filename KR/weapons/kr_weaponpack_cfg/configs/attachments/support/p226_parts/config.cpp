@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -49,9 +50,12 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\receiver_p226_axelson_tactical_mk25.p3d";
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\axelson_tactical_mk25_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\axelson_tactical_mk25.rvmat"};
+		recoilModifier[] = {0.95,0.95,0.95};	
+		swayModifier[] = {0.95,0.95,0.95};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 7;
 		};
 		class kr_description
 		{
@@ -78,6 +82,9 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\receiver_p226_legion_full_size.p3d";
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\legion_full_size_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\legion_full_size.rvmat"};
+		recoilModifier[] = {0.9,0.9,0.9};	
+		swayModifier[] = {0.9,0.9,0.9};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 5;
@@ -107,9 +114,12 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\receiver_p226_emperor_scorpion.p3d";
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\emperor_scorpion_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\emperor_scorpion.rvmat"};
+		recoilModifier[] = {0.97,0.97,0.97};	
+		swayModifier[] = {0.97,0.97,0.97};
+		
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 13;
 		};
 		class kr_description
 		{
@@ -134,13 +144,13 @@ class cfgVehicles
 		displayName = "$STR_kr_weapons_attachments_p226_grip_axelson_tactical_mk25";
 		descriptionShort = "$STR_kr_weapons_attachments_p226_grip_axelson_tactical_mk25_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\pgrip_p226_axelson_tactical_mk25.p3d";
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.8,0.8,0.8};
+		recoilModifier[] = {0.97,0.97,0.97};	
+		swayModifier[] = {0.97,0.97,0.97};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_axelson_tactical_mk25_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_axelson_tactical_mk25.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 10;
 		};
 		class kr_description
 		{
@@ -165,13 +175,13 @@ class cfgVehicles
 		displayName = "$STR_kr_weapons_attachments_p226_grip_chain_link_g10";
 		descriptionShort = "$STR_kr_weapons_attachments_p226_grip_chain_link_g10_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\pgrip_p226_chain_link_g10.p3d";
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.8,0.8,0.8};
+		recoilModifier[] = {0.95,0.95,0.95};	
+		swayModifier[] = {0.95,0.95,0.95};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_chain_link_g10_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_chain_link_g10.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 8;
 		};
 		class kr_description
 		{
@@ -196,13 +206,13 @@ class cfgVehicles
 		displayName = "$STR_kr_weapons_attachments_p226_grip_emperor_scorpion";
 		descriptionShort = "$STR_kr_weapons_attachments_p226_grip_emperor_scorpion_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\pgrip_p226_emperor_scorpion.p3d";
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.8,0.8,0.8};
+		recoilModifier[] = {0.9,0.9,0.9};	
+		swayModifier[] = {0.9,0.9,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_emperor_scorpion_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_emperor_scorpion.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 6;
 		};
 		class kr_description
 		{
@@ -227,13 +237,13 @@ class cfgVehicles
 		displayName = "$STR_kr_weapons_attachments_p226_grip_stainless_elite";
 		descriptionShort = "$STR_kr_weapons_attachments_p226_grip_stainless_elite_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\pgrip_p226_stainless_elite.p3d";
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.8,0.8,0.8};
+		recoilModifier[] = {0.85,0.85,0.85};	
+		swayModifier[] = {0.85,0.85,0.85};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_stainless_elite_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_stainless_elite.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 4;
 		};
 		class kr_description
 		{
@@ -258,8 +268,8 @@ class cfgVehicles
 		displayName = "$STR_kr_weapons_attachments_p226_grip_rubber_w_grooves";
 		descriptionShort = "$STR_kr_weapons_attachments_p226_grip_rubber_w_grooves_dsc";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\pgrip_p226_rubber_w_grooves.p3d";
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.8,0.8,0.8};
+		recoilModifier[] = {0.8,0.8,0.8};	
+		swayModifier[] = {0.8,0.8,0.8};	
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_rubber_w_grooves_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\p226_parts\data\pgrip_rubber_w_grooves.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base

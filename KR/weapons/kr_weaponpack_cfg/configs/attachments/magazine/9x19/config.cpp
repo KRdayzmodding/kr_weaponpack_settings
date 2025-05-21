@@ -20,6 +20,8 @@ class CfgMagazines
 		ammoItems[] = {"Ammo_9x19","kr_Ammo_9x19_7n21","kr_Ammo_9x19_7n31","kr_Ammo_9x19_ap_63","kr_Ammo_9x19_gt","kr_Ammo_9x19_pso_gz","kr_Ammo_9x19_rip","kr_Ammo_9x19_quakemaker"};
 		weightPerQuantityUnit = 4;
 		hiddenSelections[] = {"camo"};
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 0;
@@ -42,9 +44,10 @@ class CfgMagazines
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x19\data\mp5_kurtz_std.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x19\data\mp5_kurtz_std_co.paa"};
 		soundImpactType = "metal";
+		
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -105,6 +108,7 @@ class CfgMagazines
 		weight = 230;
 		itemSize[] = {2,3};
 		count = 50;
+		swayModifier[] = {1.0,1.15,1.15};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x19\data\mp5_x_product50.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\9x19\data\mp5_x_product50_co.paa"};
 		soundImpactType = "metal";
@@ -154,7 +158,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = 3;
 		};
 		class kr_description
 		{
@@ -187,7 +191,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics = 0;
 		};
 		class kr_description
 		{
@@ -220,7 +224,7 @@ class CfgMagazines
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -3;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -235,7 +239,7 @@ class CfgMagazines
 		count = 30;
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 1;
 		};
 		class kr_description
 		{
@@ -285,6 +289,7 @@ class CfgMagazines
 		weight = 600;
 		itemSize[] = {2,3};
 		count = 50;
+		swayModifier[] = {1.0,1.25,1.25};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x19\data\mag_glock_50.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x19\data\mag_glock_50_co.paa"};
 		soundImpactType = "plastic";
@@ -318,6 +323,7 @@ class CfgMagazines
 		weight = 200;
 		itemSize[] = {1,3};
 		count = 33;
+		swayModifier[] = {1.0,1.1,1.1};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x19\data\mag_glock_big_stick.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x19\data\mag_glock_big_stick_co.paa"};
 		soundImpactType = "plastic";
@@ -351,6 +357,7 @@ class CfgMagazines
 		weight = 110;
 		itemSize[] = {1,2};
 		count = 21;
+		swayModifier[] = {1.0,1.05,1.05};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x19\data\glock_magpul_pmag_21.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x19\data\glock_magpul_pmag_21_co.paa"};
 		soundImpactType = "plastic";
@@ -487,6 +494,7 @@ class CfgMagazines
 		weight = 90;
 		itemSize[] = {1,2};
 		count = 20;
+		swayModifier[] = {1.0,1.05,1.05};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x19\data\p226_mag_20.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\9x19\data\p226_mag_20_co.paa"};
 		soundImpactType = "plastic";

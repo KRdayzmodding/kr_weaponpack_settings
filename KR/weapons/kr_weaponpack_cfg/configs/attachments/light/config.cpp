@@ -2,12 +2,13 @@ class CfgPatches
 {
 	class kr_attachments_light
 	{
-		units[] = {"kr_light_steiner_las_tac_2","kr_light_surefire_xc1","kr_light_insight_wmx200","kr_light_armytek_xhp35","kr_light_ultrafire_WF501B","kr_light_zenit_2u","kr_laser_steiner_dbal","kr_laser_olight_baldr_pro","kr_laser_surefire_x400","kr_laser_zenit_2p","kr_laser_insight_anpeq2","kr_laser_anpeq15","kr_laser_tt_dlp_tactical_precision","kr_laser_zenit_perst_3","kr_laser_insight_la5","kr_laser_holosun_ls321","kr_laser_bemeyers_mawl_c1"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Magazines"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -46,6 +47,7 @@ class cfgVehicles
 		hiddenSelections[] = {"camo","reflector","glass","laser_reflector","reflector_far"};
 		soundImpactType = "plastic";
 	};
+
 	class kr_light_steiner_las_tac_2: kr_Flashlight_Base
 	{
 		scope = 2;
@@ -64,7 +66,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -107,7 +109,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -149,7 +151,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -191,7 +193,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -233,7 +235,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -275,7 +277,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -7;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -300,6 +302,7 @@ class cfgVehicles
 			updateInterval = 40;
 		};
 	};
+
 	class kr_laser_steiner_dbal: kr_TacticalBlock_Base
 	{
 		scope = 2;
@@ -318,7 +321,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 6;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -361,7 +364,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -404,7 +407,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -448,7 +451,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = -1;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -490,7 +493,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 9;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -532,7 +535,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 3;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -577,7 +580,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\light\data\tt_laser.rvmat","KR\weapons\kr_weaponpack_2\attachments\light\data\tt_laser.rvmat"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -617,7 +620,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 8;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -659,7 +662,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 6;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -701,7 +704,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 10;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{
@@ -744,7 +747,7 @@ class cfgVehicles
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics	= -5;
 		};
 		class DamageSystem
 		{

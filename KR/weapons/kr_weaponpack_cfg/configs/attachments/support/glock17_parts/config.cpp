@@ -8,6 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
+
 class kr_Gunplay_Base;
 class cfgVehicles
 {
@@ -34,9 +35,11 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\reciever_gspc_moto.p3d";
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\reciever_gspc_moto_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\reciever_gspc_moto.rvmat"};
+		recoilModifier[] = {0.9,0.9,0.9};	
+		swayModifier[] = {0.9,0.9,0.9};	
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 2;
 		};
 		class kr_description
 		{
@@ -63,9 +66,11 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\reciever_gspc_viper.p3d";
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\reciever_gspc_viper_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\reciever_gspc_viper.rvmat"};
+		recoilModifier[] = {0.97,0.97,0.97};	
+		swayModifier[] = {0.97,0.97,0.97};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 5;
+			ergonomics = 7;
 		};
 		class kr_description
 		{
@@ -93,9 +98,12 @@ class cfgVehicles
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\reciever_zev_hex_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\reciever_zev_hex.rvmat"};
 		weight = 190;
+		recoilModifier[] = {0.85,0.85,0.85};
+		swayModifier[] = {0.85,0.85,0.85};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
@@ -123,9 +131,12 @@ class cfgVehicles
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\reciever_zev_spartan_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\reciever_zev_spartan.rvmat"};
 		weight = 190;
+		recoilModifier[] = {0.95,0.95,0.95};
+		swayModifier[] = {0.95,0.95,0.95};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 7;
+			ergonomics = 9;
 		};
 		class kr_description
 		{
@@ -152,8 +163,8 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\pgrip_glock17_pachmayr_tactical.p3d";
 		weight = 50;
 		itemSize[] = {1,1};
-		recoilModifier[] = {0.8,0.8,0.8};
-		swayModifier[] = {0.8,0.8,0.8};
+		recoilModifier[] = {0.75,0.75,0.75};	
+		swayModifier[] = {0.75,0.75,0.75};	
 		attachments[] = {};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\pachmayr_tactical_rubber_grip_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\glock17_parts\data\pachmayr_tactical_rubber_grip.rvmat"};
@@ -161,7 +172,7 @@ class cfgVehicles
 		soundImpactType = "plastic";
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 2;
+			ergonomics = 5;
 		};
 		class kr_description
 		{
