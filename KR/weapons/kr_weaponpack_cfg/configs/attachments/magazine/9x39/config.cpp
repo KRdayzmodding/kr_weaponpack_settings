@@ -17,7 +17,7 @@ class CfgMagazines
 	{
 		scope = 0;
 		ammo = "Bullet_9x39_sp5";
-		ammoItems[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
+		ammoItems[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","kr_Ammo_9x39_HP","Ammo_9x39","Ammo_9x39AP"};
 		recoilModifier[] = {1,1,1};	
 		swayModifier[] = {1,1,1};
 		weightPerQuantityUnit = 4;

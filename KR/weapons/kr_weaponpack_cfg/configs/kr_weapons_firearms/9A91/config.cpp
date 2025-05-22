@@ -33,7 +33,7 @@ class cfgWeapons
 		barrelArmor = 17;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_HP","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
+		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","kr_Ammo_9x39_HP","Ammo_9x39","Ammo_9x39AP"};
 		magazines[] = {"Mag_9x39_9a91_20Rnd"};
 		magazineSwitchTime = 0.38;
 		ejectType = 1;

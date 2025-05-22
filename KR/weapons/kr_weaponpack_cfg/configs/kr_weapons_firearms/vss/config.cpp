@@ -29,7 +29,7 @@ class cfgWeapons
 		WeaponLength = 0.78;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_HP","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","Ammo_9x39","Ammo_9x39AP"};
+		chamberableFrom[] = {"kr_Ammo_9x39_sp5","kr_Ammo_9x39_pab9","kr_Ammo_9x39_sp6","kr_Ammo_9x39_bp","kr_Ammo_9x39_HP","Ammo_9x39","Ammo_9x39AP"};
 		magazines[] = {"Mag_VSS_10Rnd","Mag_VAL_20Rnd","Mag_9x39_6l24_10Rnd","Mag_9x39_6l25_20Rnd","Mag_9x39_sr3m_30Rnd"};
 		ejectType = 1;
 		barrelArmor = 12;

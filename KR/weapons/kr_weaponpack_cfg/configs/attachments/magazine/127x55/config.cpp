@@ -17,7 +17,7 @@ class CfgMagazines
 	{
 		scope = 0;
 		ammo = "Bullet_127x55_PS12";
-		ammoItems[] = {"kr_Ammo_127x55_PS12","kr_Ammo_127x55_PS12A","kr_Ammo_127x55_PS12B"};
+		ammoItems[] = {"kr_Ammo_127x55_PS12","kr_Ammo_127x55_PS12A","kr_Ammo_127x55_PS12B","kr_Ammo_127x55_PS12HP"};
 		tracersEvery = 0;
 		recoilModifier[] = {1,1,1};	
 		swayModifier[] = {1,1,1};

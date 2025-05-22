@@ -32,7 +32,7 @@ class cfgWeapons
 		magazineSwitchTime = 0.38;
 		ejectType = 0;
 		opticsFlare = 0;
-		chamberableFrom[] = {"kr_Ammo_127x55_PS12","kr_Ammo_127x55_PS12A","kr_Ammo_127x55_PS12B","kr_Ammo_127x55_PS12HP"};
+		chamberableFrom[] = {"kr_Ammo_127x55_PS12","kr_Ammo_127x55_PS12A","kr_Ammo_127x55_PS12B","kr_Ammo_127x55_PS12HP","kr_Ammo_127x55_PS12HP"};
 		magazines[] = {"Mag_127x55_vssk_10Rnd"};
 		hiddenSelections[] = {"camo"};
 		simpleHiddenSelections[] = 

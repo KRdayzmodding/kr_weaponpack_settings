@@ -26,7 +26,7 @@ class cfgWeapons
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\ASH12\ASH12.p3d";
 		weight = 5200;
 		attachments[] = {"kr_muzzle127_55","kr_foregrip","weaponOpticsB","kr_light_right","weaponWrap"};
-		chamberableFrom[] = {"kr_Ammo_127x55_PS12","kr_Ammo_127x55_PS12A","kr_Ammo_127x55_PS12B","kr_Ammo_127x55_PS12HP"};
+		chamberableFrom[] = {"kr_Ammo_127x55_PS12","kr_Ammo_127x55_PS12A","kr_Ammo_127x55_PS12B","kr_Ammo_127x55_PS12HP","kr_Ammo_127x55_PS12HP"};
 		magazines[] = {"Mag_127x55_ash12_10Rnd","Mag_127x55_ash12_20Rnd"};
 		absorbency = 0.0;
 		repairableWithKits[] = {1};
