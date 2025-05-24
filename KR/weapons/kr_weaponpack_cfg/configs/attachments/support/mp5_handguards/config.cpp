@@ -2,10 +2,10 @@ class CfgPatches
 {
 	class kr_attachments_mp5_handguards
 	{
-		units[] = {"kr_mp5_hndgrd_bttl99","kr_mp5_hndgrd_caa_hx5","kr_mp5_hndgrd_kurtz","kr_mp5_hndgrd_ptr_trirail","kr_mp5_hndgrd_sd","kr_mp5_hndgrd_wide_tropical"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports","kr_data","kr_attachments_support"};
 	};
 };
 class kr_firearms_Base

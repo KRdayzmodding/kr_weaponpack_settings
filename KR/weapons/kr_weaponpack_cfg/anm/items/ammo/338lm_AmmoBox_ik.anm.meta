@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{25040908C311B12B}KR/weapons/kr_weaponpack_cfg/anm/items/ammo/338lm_AmmoBox_ik.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate -621546825
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "338lm_AmmoBox_ik.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

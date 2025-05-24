@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{FEA7878B38048070}KR/weapons/kr_weaponpack_cfg/anm/items/muzzles/ax50_muzzle_IK.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate 1623995063
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "ax50_muzzle_IK.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

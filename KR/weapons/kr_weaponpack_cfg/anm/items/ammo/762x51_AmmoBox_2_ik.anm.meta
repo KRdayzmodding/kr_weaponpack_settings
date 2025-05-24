@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{92792CED7B3063AE}KR/weapons/kr_weaponpack_cfg/anm/items/ammo/762x51_AmmoBox_2_ik.txa"
+ Author "desktop-f1qcv1n"
+ ChangeDate -587992393
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "762x51_AmmoBox_2_ik.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

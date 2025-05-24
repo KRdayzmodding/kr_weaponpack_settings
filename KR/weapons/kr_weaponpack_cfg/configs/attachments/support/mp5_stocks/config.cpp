@@ -2,10 +2,10 @@ class CfgPatches
 {
 	class kr_attachments_mp5_stocks
 	{
-		units[] = {"kr_mp5_stock_hk_a2","kr_mp5_stock_hk_a3"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports","kr_data","kr_attachments_support"};
 	};
 };
 
