@@ -13,7 +13,12 @@ class CfgMods
 	class kr_weaponpack_cfg_scr
 	{
 		type = "mod";
-		author = "Kramtsov, Orng";
+		author = "Kramtsov Arms";
+		defines[] = 
+		{
+			//"KR_DAMAGE_DEBUG" //Запускает дебагер урона
+		};
+
 		class defs
 		{
 			class imageSets
