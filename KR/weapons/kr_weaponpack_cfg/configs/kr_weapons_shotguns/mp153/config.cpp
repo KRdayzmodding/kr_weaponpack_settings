@@ -40,11 +40,10 @@ class cfgWeapons
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {1,1,1};
 		simpleHiddenSelections[] = {"hide_barrel"};
-		cursor = "aimBowGhost";
+		ObstructionDistance = 0.807;
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\mp153\data\mp153_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\mp153\data\mp153.rvmat"};
-		reloadAction = "ReloadSks";
 		class NoiseShoot
 		{
 			strength = 100;
@@ -140,8 +139,9 @@ class cfgWeapons
 				};
 			};
 		};
-		weaponStateAnim = "dz\anims\anm\player\reloads\SKS\w_SKS_states.anm";
-		boneRemap[] = {"bolt","Weapon_Bolt","trigger","Weapon_Trigger","bullet","Weapon_Bullet","follower","Weapon_Bone_02","clip","Weapon_Magazine","cliprounds","Weapon_Bone_01"};
+		weaponStateAnim = "dz\anims\anm\player\reloads\R12\w_R12_states.anm";
+		boneRemap[] = {"bolt","Weapon_Bolt","bolt_link","Weapon_Bone_01","loading","Weapon_Bone_02","trigger","Weapon_Trigger","bullet","Weapon_Bullet"};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 0;
@@ -157,11 +157,12 @@ class cfgWeapons
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {0.8,0.8,0.8};
 		modes[] = {"SemiAuto"};
+		animName = "ShotgunR12";
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"kr_mp153_Shot_SoundSet","Mp133_Tail_SoundSet","Mp133_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_mp133_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.9;
+			reloadTime = 0.09;
 			dispersion = 0.004;
 			firespreadangle = 1.5;
 			magazineSlot = "magazine";
