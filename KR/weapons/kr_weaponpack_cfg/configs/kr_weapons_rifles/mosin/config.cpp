@@ -31,7 +31,7 @@ class cfgWeapons
 		DisplayMagazine = 0;
 		chamberSize = 5;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_762x54","Ammo_762x54Tracer","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m","kr_Ammo_762x54_AP"};
+		chamberableFrom[] = {"Ammo_762x54","Ammo_762x54Tracer","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m"};
 		magazines[] = {};
 		ejectType = 0;
 		simpleHiddenSelections[] = {"hide_sight"};

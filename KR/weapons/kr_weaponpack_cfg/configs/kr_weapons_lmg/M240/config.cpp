@@ -34,7 +34,7 @@ class cfgWeapons
 		WeaponLength = 1.23;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_308Win","Ammo_308WinTracer","kr_Ammo_308Win_AP","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","kr_Ammo_762x51_bpz_fmj"};
+		chamberableFrom[] = {"Ammo_308Win","Ammo_308WinTracer","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","kr_Ammo_762x51_bpz_fmj"};
 		magazines[] = {"Mag_762x51_m240_150Rnd"};
 		ejectType = 1;
 		simpleHiddenSelections[] = {"hide_barrel","ammobelt","hide_muzzle"};

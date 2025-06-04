@@ -29,7 +29,7 @@ class cfgWeapons
 		simpleHiddenSelections[] = {"hide_muzzle","hide_pistolgrip","hide_stock"};
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_AP"};
+		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
 		magazines[] = {"Mag_556x45_sg550_30Rnd","Mag_556x45_sg550_60Rnd"};
 		magazineSwitchTime = 0.2;
 		ejectType = 1;

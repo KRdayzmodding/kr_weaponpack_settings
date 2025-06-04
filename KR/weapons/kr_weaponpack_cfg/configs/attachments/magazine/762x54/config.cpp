@@ -15,7 +15,7 @@ class CfgMagazines
 	class kr_magazine_Base;
 	class kr_magazine_762x54_Base: kr_magazine_Base
 	{
-		ammoItems[] = {"Ammo_762x54","Ammo_762x54Tracer","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m","kr_Ammo_762x54_AP"};
+		ammoItems[] = {"Ammo_762x54","Ammo_762x54Tracer","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m"};
 		ammo = "Bullet_762x54r_fmj";
 		
 		weightPerQuantityUnit = 35.0;
