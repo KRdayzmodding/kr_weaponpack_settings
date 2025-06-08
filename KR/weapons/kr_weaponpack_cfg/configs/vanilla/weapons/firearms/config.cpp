@@ -86,7 +86,7 @@ class cfgWeapons
 	};
 	class SSG82_Base: BoltActionRifle_ExternalMagazine_Base
 	{
-		chamberableFrom[] += {"Ammo_545x39","kr_Ammo_545x39_PRS","kr_Ammo_545x39_T","kr_Ammo_545x39_US","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_PS","kr_Ammo_545x39_BT","kr_Ammo_545x39_HP","kr_Ammo_545x39_BS","Ammo_545x39Tracer"};
+		chamberableFrom[] += {"kr_Ammo_545x39_T","kr_Ammo_545x39_PRS","kr_Ammo_545x39_US","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_PS","kr_Ammo_545x39_BT","kr_Ammo_545x39_HP","kr_Ammo_545x39_BS","Ammo_545x39Tracer","Ammo_545x39"};
 	};
 	class Winchester70_Base: BoltActionRifle_InnerMagazine_Base
 	{

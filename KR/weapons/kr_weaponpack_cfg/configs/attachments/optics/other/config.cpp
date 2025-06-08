@@ -26,7 +26,7 @@ class cfgVehicles
 		reversed = 0;
 		weight = 800;
 		itemSize[] = {3,1};
-		inventorySlot[] = {"kr_weaponOpticsMosin"};
+		inventorySlot[] = {"kr_weaponOpticsMosin","weaponOpticsMosin"};
 		simulation = "itemoptics";
 		dispersionModifier = 0;
 		dispersionCondition = "true";

@@ -33,7 +33,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		magazines[] = {"Mag_9x18_pm_8Rnd","Mag_9x18_pm_84Rnd"};
-		chamberableFrom[] = {"Ammo_380","kr_Ammo_9x18_ppt_gz","kr_Ammo_9x18_pbm_gz","kr_Ammo_9x18_pmm_gz","kr_Ammo_9x18_pso_gz","kr_Ammo_9x18_pst_gz","kr_Ammo_9x18_sp7_gz"};
+		chamberableFrom[] = {"kr_Ammo_9x18_pso_gz","kr_Ammo_9x18_ppt_gz","kr_Ammo_9x18_pbm_gz","kr_Ammo_9x18_pmm_gz","kr_Ammo_9x18_pst_gz","kr_Ammo_9x18_sp7_gz","Ammo_380"};
 		ejectType = 1;
 		recoilModifier[] = {0.9,0.9,0.9};
 		swayModifier[] = {1.1,1.1,1.1};

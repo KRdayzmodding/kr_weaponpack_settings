@@ -645,8 +645,8 @@ class cfgVehicles
 	class kr_ak_stock_zenit_pt_3: kr_ak_stock_t3_Base
 	{
 		scope = 2;
-		displayName = "$STR_kr_weapons_attachments_ak_fstock_zenit_pt_3";
-		descriptionShort = "$STR_kr_weapons_attachments_ak_fstock_zenit_pt_3_dsc";
+		displayName = "$STR_kr_weapons_attachments_ak_stock_zenit_pt_3";
+		descriptionShort = "$STR_kr_weapons_attachments_ak_stock_zenit_pt_3_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_bttstck_zenit_pt_3.p3d";
 		inventorySlot[] = {"kr_ak_stock"};
 		weight = 248;

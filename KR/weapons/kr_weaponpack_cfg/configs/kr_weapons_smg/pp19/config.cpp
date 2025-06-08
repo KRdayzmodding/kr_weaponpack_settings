@@ -23,7 +23,7 @@ class cfgWeapons
 		scope = 0;
 		weight = 2700;
 		WeaponLength = 0.7;
-		chamberableFrom[] = {"kr_Ammo_9x19_7n21","kr_Ammo_9x19_7n31","kr_Ammo_9x19_ap_63","kr_Ammo_9x19_gt","kr_Ammo_9x19_pso_gz","kr_Ammo_9x19_rip","kr_Ammo_9x19_quakemaker","Ammo_9x19"};
+		chamberableFrom[] = {"kr_Ammo_9x19_gt","kr_Ammo_9x19_7n21","kr_Ammo_9x19_7n31","kr_Ammo_9x19_ap_63","kr_Ammo_9x19_pso_gz","kr_Ammo_9x19_rip","kr_Ammo_9x19_quakemaker","Ammo_9x19"};
 		magazines[] = {"Mag_9x19_pp19_pufgun_sg919_20Rnd","Mag_9x19_pp19_pufgun_sg919_30Rnd","Mag_9x19_pp19_izhmash_sb7_10Rnd","Mag_9x19_pp19_izhmash_std_30Rnd"};
 		isShort = 1;
 		class kr_Gunplay: kr_Gunplay_Base

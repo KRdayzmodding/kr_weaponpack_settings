@@ -182,10 +182,10 @@ class cfgWeapons
 		barrelArmor = 4.67;
 		recoilModifier[] = {1.2,1.2,1.2};
 		swayModifier[] = {1.4,1.2,1.1};
-		chamberableFrom[] = {"kr_Ammo_762x39_t45m","kr_Ammo_762x39_fmj","kr_Ammo_762x39_us","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_bp","kr_Ammo_762x39_HP","kr_Ammo_762x39_mai_ap","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa","Ammo_762x39","Ammo_762x39Tracer"};
+		chamberableFrom[] = {"kr_Ammo_366TKM_FMJ","kr_Ammo_366TKM_custom_ap","kr_Ammo_366TKM_EKO","kr_Ammo_366TKM_Geksa","kr_Ammo_762x39_t45m","kr_Ammo_762x39_fmj","kr_Ammo_762x39_us","kr_Ammo_762x39_ps","kr_Ammo_762x39_pp","kr_Ammo_762x39_bp","kr_Ammo_762x39_HP","kr_Ammo_762x39_mai_ap","Ammo_762x39","Ammo_762x39Tracer"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm_vpo\data\vpo_209_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm_vpo\data\vpo_209.rvmat"};
-		kr_bannedAmmo[] = {"Bullet_762x39_bp","Bullet_762x39_fmj","Bullet_762x39_mai_ap","Bullet_762x39_pp","Bullet_762x39_ps","Bullet_762x39_t45m","Bullet_762x39_us"};
+		kr_bannedAmmo[] = {"Bullet_762x39_t45m","Bullet_762x39_fmj","Bullet_762x39_us","Bullet_762x39_ps","Bullet_762x39_pp","Bullet_762x39_bp","Bullet_762x39_HP","Bullet_762x39_mai_ap","Bullet_762x39","Bullet_762x39Tracer"};
 		class kr_description
 		{
 			kr_tier = 1;

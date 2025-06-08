@@ -108,6 +108,12 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\noveske_sws_n6.rvmat"};
 		recoilModifier[] = {0.9,0.9,1};	
 		swayModifier[] = {0.9,1,0.9};
+		simpleHiddenSelections[] = 
+		{
+			"front_sights",
+			"fold",
+			"unfold"
+		};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -170,6 +176,12 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\noveske_sws_n6_long.rvmat"};
 		recoilModifier[] = {0.8,0.8,1};	
 		swayModifier[] = {0.9,1,0.9};
+		simpleHiddenSelections[] = 
+		{
+			"front_sights",
+			"fold",
+			"unfold"
+		};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{

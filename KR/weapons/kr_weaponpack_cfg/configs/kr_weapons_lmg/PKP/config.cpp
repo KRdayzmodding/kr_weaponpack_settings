@@ -24,7 +24,7 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_PKP";
 		descriptionShort = "$STR_weapons_firearms_PKP_dsc";
 		attachments[] = {"kr_muzzle762_54","kr_foregrip","weaponOptics","kr_ak_pistolgrip","weaponWrap"};
-		chamberableFrom[] = {"Ammo_762x54","Ammo_762x54Tracer","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m"};
+		chamberableFrom[] = {"kr_Ammo_762x54r_t46m","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","Ammo_762x54","Ammo_762x54Tracer"};
 		magazines[] = {"Mag_762x54_pkp_100Rnd"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_lmg\PKP\data\PKP.rvmat"};

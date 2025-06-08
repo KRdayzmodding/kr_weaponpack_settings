@@ -16,20 +16,14 @@ class cfgVehicles
 	class StarlightOptic: ItemOptics_Base
 	{
 		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT"};
-		dispersionModifier = -0.0001;
-		dispersionCondition = "true";
 	};
 	class ACOGOptic: ItemOptics_Base
 	{
 		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT"};
-		dispersionModifier = -0.0001;
-		dispersionCondition = "true";
 	};
 	class ACOGOptic_6x: ItemOptics_Base
 	{
 		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT"};
-		dispersionModifier = -0.0001;
-		dispersionCondition = "true";
 	};
 	class BUISOptic: ItemOptics_Base
 	{
@@ -47,6 +41,11 @@ class cfgVehicles
 	{
 		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5"};
 	};
+	class MK4Optic_ColorBase: ItemOptics_Base 
+	{
+		inventorySlot[] += {"weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT"};
+	};
+
 	class M4_CarryHandleOptic: ItemOptics_Base{};
 	class FNP45_MRDSOptic: ItemOptics_Base{};
 	class PUScopeOptic: ItemOptics_Base{};

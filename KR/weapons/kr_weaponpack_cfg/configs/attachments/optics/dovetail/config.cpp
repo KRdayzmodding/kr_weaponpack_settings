@@ -12,7 +12,7 @@ class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class ItemOptics_Base;
-	class kr_ItemOpticsDovetail_base: ItemOptics_Base
+	class kr_ItemOpticsDovetail_Base: ItemOptics_Base
 	{
 		scope = 0;
 		inventorySlot[] = {"weaponOpticsAK"};
@@ -34,7 +34,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class kr_holosight_ekp_8_02: kr_ItemOpticsDovetail_base
+	class kr_holosight_ekp_8_02: kr_ItemOpticsDovetail_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_ekp_8_02";
@@ -97,7 +97,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_okp7: kr_ItemOpticsDovetail_base
+	class kr_holosight_okp7: kr_ItemOpticsDovetail_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_okp7";
@@ -160,7 +160,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_pk_1: kr_ItemOpticsDovetail_base
+	class kr_holosight_pk_1: kr_ItemOpticsDovetail_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_pk_1";
@@ -217,7 +217,7 @@ class cfgVehicles
 			opticSightTexture = "KR\weapons\kr_weaponpack\attachments\optics\reticles\npz_pk_1_reticle_ca.paa";
 		};
 	};
-	class kr_holosight_pk_aa: kr_ItemOpticsDovetail_base
+	class kr_holosight_pk_aa: kr_ItemOpticsDovetail_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_pk_aa";
@@ -280,7 +280,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_scope_pso1: kr_ItemOpticsDovetail_base
+	class kr_scope_pso1: kr_ItemOpticsDovetail_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_pso1";
@@ -359,7 +359,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_scope_pso1m2_1: kr_ItemOpticsDovetail_base
+	class kr_scope_pso1m2_1: kr_ItemOpticsDovetail_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_pso1m2_1";
@@ -438,7 +438,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_optics_npz_1p29: kr_ItemOpticsDovetail_base
+	class kr_optics_npz_1p29: kr_ItemOpticsDovetail_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_npz_1p29";
@@ -513,7 +513,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_optics_npz_nspum: kr_ItemOpticsDovetail_base
+	class kr_optics_npz_nspum: kr_ItemOpticsDovetail_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_npz_nspum";

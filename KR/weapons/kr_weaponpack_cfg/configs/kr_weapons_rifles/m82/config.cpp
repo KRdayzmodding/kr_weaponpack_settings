@@ -374,7 +374,7 @@ class cfgWeapons
 		};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"M82_shot_SoundSet","M82_Tail_SoundSet","M82_InteriorTail_SoundSet"};
+			soundSetShot[] = {"M82_Shot_SoundSet","M82_Shot_iterior_SoundSet","M82_Tail_SoundSet","M82_InteriorTail_SoundSet","M82_Tail_2D_SoundSet"};
 			soundSetShotExt[] = {{"M82_silencer_SoundSet","M82_silencerTail_SoundSet","M82_silencerInteriorTail_SoundSet"}};
 			reloadTime = 1;
 			dispersion = 0.0025;

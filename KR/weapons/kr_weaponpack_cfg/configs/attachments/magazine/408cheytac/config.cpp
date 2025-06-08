@@ -13,7 +13,7 @@ class kr_Gunplay_Base;
 class CfgMagazines
 {
 	class kr_magazine_Base;
-	class kr_magazine_408_base: kr_magazine_Base
+	class kr_magazine_408_Base: kr_magazine_Base
 	{
 		weightPerQuantityUnit = 10;
 		ammo = "Bullet_408CheyTac";
@@ -27,7 +27,7 @@ class CfgMagazines
 			kr_caliber = ".408";
 		};
 	};
-	class Mag_408_m200_7Rnd: kr_magazine_408_base
+	class Mag_408_m200_7Rnd: kr_magazine_408_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_408_m200_7Rnd";

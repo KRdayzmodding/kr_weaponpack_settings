@@ -13,7 +13,7 @@ class kr_Gunplay_Base;
 class CfgMagazines
 {
 	class Magazine_Base;
-	class Mag_127x55_ash12_base: Magazine_Base
+	class Mag_127x55_ash12_Base: Magazine_Base
 	{
 		scope = 0;
 		ammo = "Bullet_127x55_PS12";
@@ -94,7 +94,7 @@ class CfgMagazines
 			};
 		};
 	};
-	class Mag_127x55_ash12_10Rnd: Mag_127x55_ash12_base
+	class Mag_127x55_ash12_10Rnd: Mag_127x55_ash12_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_127x55_ASH12mag_10rnd";
@@ -124,7 +124,7 @@ class CfgMagazines
 			};
 		};
 	};
-	class Mag_127x55_ash12_20Rnd: Mag_127x55_ash12_base
+	class Mag_127x55_ash12_20Rnd: Mag_127x55_ash12_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_127x55_ASH12mag_20rnd";
@@ -157,7 +157,7 @@ class CfgMagazines
 		};
 	};
 
-	class Mag_127x55_vssk_10Rnd: Mag_127x55_ash12_base
+	class Mag_127x55_vssk_10Rnd: Mag_127x55_ash12_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_127x55_vssk_10rnd";

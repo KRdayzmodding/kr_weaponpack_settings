@@ -18,7 +18,7 @@ class kr_Gunplay_Base;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class kr_mp5_base: Rifle_Base
+	class kr_mp5_Base: Rifle_Base
 	{
 		scope = 0;
 		absorbency = 0;
@@ -27,7 +27,7 @@ class cfgWeapons
 		PPDOFProperties[] = {1,0.75,40,180,4,10};
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"kr_Ammo_9x19_7n21","kr_Ammo_9x19_7n31","kr_Ammo_9x19_ap_63","kr_Ammo_9x19_gt","kr_Ammo_9x19_pso_gz","kr_Ammo_9x19_rip","kr_Ammo_9x19_quakemaker","Ammo_9x19"};
+		chamberableFrom[] = {"kr_Ammo_9x19_gt","kr_Ammo_9x19_7n21","kr_Ammo_9x19_7n31","kr_Ammo_9x19_ap_63","kr_Ammo_9x19_pso_gz","kr_Ammo_9x19_rip","kr_Ammo_9x19_quakemaker","Ammo_9x19"};
 		magazines[] = {"Mag_9x19_mp5_kurtz_std_20Rnd","Mag_9x19_mp5_std_curved_30Rnd","Mag_9x19_mp5_x_product_50Rnd"};
 		magazineSwitchTime = 0.5;
 		ejectType = 1;
@@ -153,7 +153,7 @@ class cfgWeapons
 		};
 		weaponStateAnim = "dz\anims\anm\player\reloads\MP5\w_mp5k_states.anm";
 	};
-	class kr_mp5: kr_mp5_base
+	class kr_mp5: kr_mp5_Base
 	{
 		scope = 2;
 		displayName = "$STR_weapons_smg_mp5";
@@ -197,7 +197,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class kr_mp5k: kr_mp5_base
+	class kr_mp5k: kr_mp5_Base
 	{
 		scope = 2;
 		displayName = "$STR_weapons_smg_mp5k";
@@ -239,7 +239,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class kr_mp5sd: kr_mp5_base
+	class kr_mp5sd: kr_mp5_Base
 	{
 		scope = 2;
 		displayName = "$STR_weapons_smg_mp5sd";

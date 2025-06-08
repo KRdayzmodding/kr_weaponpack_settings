@@ -32,7 +32,7 @@ class cfgWeapons
 		initSpeedMultiplier = 0.9;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_308Win","Ammo_308WinTracer","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","kr_Ammo_762x51_bpz_fmj"};
+		chamberableFrom[] = {"kr_Ammo_762x51_bpz_fmj","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","Ammo_308Win","Ammo_308WinTracer"};
 		attachments[] = {"kr_muzzle308","kr_fal_hndgrd","kr_fal_receiver","kr_fal_pistolgrip","kr_fal_stock","weaponHolo1","weaponOptics","weaponWrap"};
 		magazines[] = {"Mag_762x51_sarco_30Rnd","Mag_762x51_dsarms_10Rnd","Mag_762x51_dsarms_20Rnd","Mag_762x51_dsarms_30Rnd","Mag_762x51_mmw_20Rnd","Mag_762x51_xproduct_50Rnd"};
 		magazineSwitchTime = 0.45;

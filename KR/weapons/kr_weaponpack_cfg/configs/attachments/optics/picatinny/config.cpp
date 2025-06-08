@@ -14,7 +14,7 @@ class cfgVehicles
 	class Inventory_Base;
 	class ItemOptics;
 	class ItemOptics_Base;
-	class kr_ItemOpticsPicatinny_base: ItemOptics_Base
+	class kr_ItemOpticsPicatinny_Base: ItemOptics_Base
 	{
 		scope = 0;
 		inventorySlot[] = {"weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT"};
@@ -38,7 +38,7 @@ class cfgVehicles
 /////////////////////////////HOLOSIGHTS
 
 /////// T1
-	class kr_holosight_belomo_pk06: kr_ItemOpticsPicatinny_base
+	class kr_holosight_belomo_pk06: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_belomo_pk6";
@@ -105,7 +105,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_burris_fast_fire: kr_ItemOpticsPicatinny_base
+	class kr_holosight_burris_fast_fire: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_burris_fast_fire";
@@ -172,7 +172,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_aimpoint_pro: kr_ItemOpticsPicatinny_base
+	class kr_holosight_aimpoint_pro: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_aimpoint_pro";
@@ -247,7 +247,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class kr_holosight_aksion_ekp_8: kr_ItemOpticsPicatinny_base
+	class kr_holosight_aksion_ekp_8: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_aksion_ekp_8";
@@ -315,7 +315,7 @@ class cfgVehicles
 	};
 
 /////// T2
-	class kr_holosight_monstrum_compact: kr_ItemOpticsPicatinny_base
+	class kr_holosight_monstrum_compact: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_monstrum_compact";
@@ -381,7 +381,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_leupold_deltapoint: kr_ItemOpticsPicatinny_base
+	class kr_holosight_leupold_deltapoint: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_leupold_deltapoint";
@@ -448,7 +448,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_valday_1p87: kr_ItemOpticsPicatinny_base
+	class kr_holosight_valday_1p87: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_valday_1p87";
@@ -514,7 +514,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_trijicon_rmr: kr_ItemOpticsPicatinny_base
+	class kr_holosight_trijicon_rmr: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_trijicon_rmr";
@@ -583,7 +583,7 @@ class cfgVehicles
 	};
 
 	/////// T3
-	class kr_holosight_eotech_xps3: kr_ItemOpticsPicatinny_base
+	class kr_holosight_eotech_xps3: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_eotech_xps3";
@@ -649,7 +649,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_OKP_7: kr_ItemOpticsPicatinny_base
+	class kr_holosight_OKP_7: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_OKP_7";
@@ -715,7 +715,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_valday_krechet: kr_ItemOpticsPicatinny_base
+	class kr_holosight_valday_krechet: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_valday_krechet";
@@ -781,7 +781,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_vortex_razor_amg_uh1: kr_ItemOpticsPicatinny_base
+	class kr_holosight_vortex_razor_amg_uh1: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_holosight_vortex_razor_amg_uh1";
@@ -849,7 +849,7 @@ class cfgVehicles
 	};
 
 	/////// T4
-	class kr_holosight_es_hco: kr_ItemOpticsPicatinny_base
+	class kr_holosight_es_hco: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_es_hco";
@@ -915,7 +915,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_holosight_holosun_aems: kr_ItemOpticsPicatinny_base
+	class kr_holosight_holosun_aems: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_reflex_holosun_aems";
@@ -1016,7 +1016,7 @@ class cfgVehicles
 /////////////////////////////SCOPES
 
 /////// T1
-	class kr_scope_elcan_specter_dr4: kr_ItemOpticsPicatinny_base
+	class kr_scope_elcan_specter_dr4: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_scope_elcan_specter_dr4";
@@ -1090,7 +1090,7 @@ class cfgVehicles
 			PPDOFProperties[] = {1,0.1,20,200,4,10};
 		};
 	};
-	class kr_scope_acog_ta01nsn: kr_ItemOpticsPicatinny_base
+	class kr_scope_acog_ta01nsn: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_scope_acog_ta01nsn";
@@ -1166,7 +1166,7 @@ class cfgVehicles
 	};
 
 /////// T2
-	class kr_scope_sig_bravo4: kr_ItemOpticsPicatinny_base
+	class kr_scope_sig_bravo4: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_scope_sig_bravo4";
@@ -1229,7 +1229,7 @@ class cfgVehicles
 			attachmentAction = 1;
 		};
 	};
-	class kr_scope_leupold_mark4_hamr: kr_ItemOpticsPicatinny_base
+	class kr_scope_leupold_mark4_hamr: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_scope_leupold_mark4_hamr";
@@ -1292,7 +1292,7 @@ class cfgVehicles
 	};
 
 /////// T3
-	class kr_scope_acog_ta11: kr_ItemOpticsPicatinny_base
+	class kr_scope_acog_ta11: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_scope_acog_ta11";
@@ -1353,7 +1353,7 @@ class cfgVehicles
 			PPBlurProperties = 0.1;
 		};
 	};
-	class kr_scope_valday_ps320: kr_ItemOpticsPicatinny_base
+	class kr_scope_valday_ps320: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_scope_valday_ps320";
@@ -1444,7 +1444,7 @@ class cfgVehicles
 /////////////////////////////OPTICS
 
 /////// T1
-	class kr_optics_sb_pm2: kr_ItemOpticsPicatinny_base
+	class kr_optics_sb_pm2: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_sb_pm2";
@@ -1504,7 +1504,7 @@ class cfgVehicles
 			PPBlurProperties = 0.3;
 		};
 	};
-	class kr_optics_hunting: kr_ItemOpticsPicatinny_base
+	class kr_optics_hunting: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_cfgVehicles_HuntingOptic0";
@@ -1577,7 +1577,7 @@ class cfgVehicles
 	};
 
 /////// T2
-class kr_optics_vomz_pilad: kr_ItemOpticsPicatinny_base
+class kr_optics_vomz_pilad: kr_ItemOpticsPicatinny_Base
 {
 	scope = 2;
 	displayName = "$STR_kr_weapons_attachments_optics_vomz_pilad";
@@ -1639,7 +1639,7 @@ class kr_optics_vomz_pilad: kr_ItemOpticsPicatinny_base
 };
 
 /////// T3
-class kr_optics_burris_fullfield_tac30: kr_ItemOpticsPicatinny_base
+class kr_optics_burris_fullfield_tac30: kr_ItemOpticsPicatinny_Base
 {
 	scope = 2;
 	displayName = "$STR_kr_weapons_attachments_optics_burris_fullfield_tac30";
@@ -1702,7 +1702,7 @@ class kr_optics_burris_fullfield_tac30: kr_ItemOpticsPicatinny_base
 
 
 /////// T4
-	class kr_optics_vortex_viper: kr_ItemOpticsPicatinny_base
+	class kr_optics_vortex_viper: kr_ItemOpticsPicatinny_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_optics_vortex_viper";

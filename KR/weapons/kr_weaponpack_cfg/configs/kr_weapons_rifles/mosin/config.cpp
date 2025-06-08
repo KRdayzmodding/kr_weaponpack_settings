@@ -31,7 +31,7 @@ class cfgWeapons
 		DisplayMagazine = 0;
 		chamberSize = 5;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_762x54","Ammo_762x54Tracer","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","kr_Ammo_762x54r_t46m"};
+		chamberableFrom[] = {"kr_Ammo_762x54r_t46m","kr_Ammo_762x54r_bs","kr_Ammo_762x54r_bthp","kr_Ammo_762x54r_fmj","kr_Ammo_762x54r_lps","kr_Ammo_762x54r_ps","kr_Ammo_762x54r_snb","Ammo_762x54","Ammo_762x54Tracer"};
 		magazines[] = {};
 		ejectType = 0;
 		simpleHiddenSelections[] = {"hide_sight"};
@@ -145,8 +145,8 @@ class cfgWeapons
 		};
 		class Single: Mode_Single
 		{
-			soundSetShot[] = {"Mosin_Shot_SoundSet","Mosin_Tail_SoundSet","Mosin_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"Mosin_silencerHomeMade_SoundSet","Mosin_silencerHomeMadeTail_SoundSet","Mosin_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot[] = {"Mosin9130_Shot_SoundSet","Mosin9130_Shot_iterior_SoundSet","Mosin9130_Tail_SoundSet","Mosin9130_InteriorTail_SoundSet","Mosin9130_Tail_2D_SoundSet"};
+			soundSetShotExt[] = {{"Mosin9130_silencerHomeMade_SoundSet","Mosin9130_silencerHomeMadeTail_SoundSet","Mosin9130_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1.0;
 			dispersion = 0.0029;
 			magazineSlot = "magazine";
@@ -178,8 +178,8 @@ class cfgWeapons
 		};
 		class Single: Mode_Single
 		{
-			soundSetShot[] = {"Mosin_Shot_SoundSet","Mosin_Tail_SoundSet","Mosin_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"Mosin_silencerHomeMade_SoundSet","Mosin_silencerHomeMadeTail_SoundSet","Mosin_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot[] = {"Mosin9130_Shot_SoundSet","Mosin9130_Shot_iterior_SoundSet","Mosin9130_Tail_SoundSet","Mosin9130_InteriorTail_SoundSet","Mosin9130_Tail_2D_SoundSet"};
+			soundSetShotExt[] = {{"Mosin9130_silencerHomeMade_SoundSet","Mosin9130_silencerHomeMadeTail_SoundSet","Mosin9130_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1.0;
 			dispersion = 0.0028;
 			magazineSlot = "magazine";
@@ -207,8 +207,8 @@ class cfgWeapons
 		};
 		class Single: Mode_Single
 		{
-			soundSetShot[] = {"Mosin_Shot_SoundSet","Mosin_Tail_SoundSet","Mosin_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"Mosin_silencerHomeMade_SoundSet","Mosin_silencerHomeMadeTail_SoundSet","Mosin_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot[] = {"Mosin9130_Shot_SoundSet","Mosin9130_Shot_iterior_SoundSet","Mosin9130_Tail_SoundSet","Mosin9130_InteriorTail_SoundSet","Mosin9130_Tail_2D_SoundSet"};
+			soundSetShotExt[] = {{"Mosin9130_silencerHomeMade_SoundSet","Mosin9130_silencerHomeMadeTail_SoundSet","Mosin9130_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 1.0;
 			dispersion = 0.0055;
 			magazineSlot = "magazine";
