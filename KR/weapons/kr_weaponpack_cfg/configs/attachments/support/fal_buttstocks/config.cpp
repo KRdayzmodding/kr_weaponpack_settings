@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"kr_fal_stock_buffertube_adapter","kr_fal_stock_humpback","kr_fal_stock_magpul_prs","kr_fal_stock_para_brs","kr_fal_stock_para_folding","kr_fal_stock_para_spr"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports","kr_data"};
 	};
 };
 

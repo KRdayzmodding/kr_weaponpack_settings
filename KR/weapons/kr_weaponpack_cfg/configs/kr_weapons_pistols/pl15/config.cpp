@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"kr_pl15"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Pistols"};
+		requiredAddons[] = {"DZ_Data","DZ_Pistols","kr_data"};
 	};
 };
 class Mode_Safe;

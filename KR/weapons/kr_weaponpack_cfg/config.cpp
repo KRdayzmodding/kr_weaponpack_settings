@@ -105,6 +105,12 @@ class CfgSlots
 		displayName = "#STR_kr_slot_muzzle762_39";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_762";
 	};
+	class Slot_kr_muzzle762_39_sks
+	{
+		name = "kr_muzzle762_39_sks";
+		displayName = "#STR_kr_slot_muzzle762_39_sks";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_762_sks";
+	};
 	class Slot_kr_muzzle762_54
 	{
 		name = "kr_muzzle762_54";
@@ -842,5 +848,19 @@ class CfgSlots
 		name = "kr_bipod_vssk";
 		displayName = "#STR_kr_slot_bipod";
 		ghostIcon = "set:kr_weapon_icons image:kr_bipod_vssk";
+	};
+
+	class Slot_kr_sks_receiver
+	{
+		name = "kr_sks_receiver";
+		displayName = "#STR_kr_slot_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_sks_receiver";
+	};
+
+	class Slot_kr_sks_hndgrd
+	{
+		name = "kr_sks_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_sks_handguard";
 	};
 };

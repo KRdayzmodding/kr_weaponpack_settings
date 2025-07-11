@@ -362,7 +362,7 @@ class cfgWeapons
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"SVD_Shot_SoundSet","SVD_Tail_SoundSet","SVD_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"SVD_silencerHomeMade_SoundSet","SVD_silencerHomeMadeTail_SoundSet","SVD_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShotExt[] = {{"SVD_silencer_SoundSet","SVD_silencerTail_SoundSet","SVD_silencerInteriorTail_SoundSet"},{"SVD_silencerHomeMade_SoundSet","SVD_silencerHomeMadeTail_SoundSet","SVD_silencerInteriorHomeMadeTail_SoundSet"}};
 			envShootingDecrease = 0.8;
 			envShootingDecreaseExt[] = {0.05,0.05};
 			reloadTime = 0.12;
@@ -411,7 +411,7 @@ class cfgWeapons
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"SVD_Shot_SoundSet","SVD_Tail_SoundSet","SVD_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"SVD_silencerHomeMade_SoundSet","SVD_silencerHomeMadeTail_SoundSet","SVD_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShotExt[] = {{"SVD_silencer_SoundSet","SVD_silencerTail_SoundSet","SVD_silencerInteriorTail_SoundSet"},{"SVD_silencerHomeMade_SoundSet","SVD_silencerHomeMadeTail_SoundSet","SVD_silencerInteriorHomeMadeTail_SoundSet"}};
 			envShootingDecrease = 0.8;
 			envShootingDecreaseExt[] = {0.05,0.05};
 			reloadTime = 0.12;
@@ -565,8 +565,8 @@ class cfgWeapons
 		modes[] = {"SemiAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"SVD_silencerHomeMade_SoundSet","SVD_silencerHomeMadeTail_SoundSet","SVD_silencerInteriorHomeMadeTail_SoundSet"};
-			soundSetShotExt[] = {{"SVD_silencerHomeMade_SoundSet","SVD_silencerHomeMadeTail_SoundSet","SVD_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot[] = {"SVD_silencer_SoundSet","SVD_silencerTail_SoundSet","SVD_silencerInteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"SVD_silencer_SoundSet","SVD_silencerTail_SoundSet","SVD_silencerInteriorTail_SoundSet"}};
 			envShootingDecrease = 0.8;
 			envShootingDecreaseExt[] = {0.05,0.05};
 			reloadTime = 0.12;

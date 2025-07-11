@@ -19,6 +19,9 @@ class cfgVehicles
 	class kr_muzzle_t2_Base;
 	class kr_muzzle_t3_Base;
 	class kr_muzzle_t4_Base;
+
+	class kr_muzzle_adapter_Base;
+
 	class kr_muzzle762_39_flashhider_akm_std: kr_muzzle_t1_Base
 	{
 		scope = 2;
@@ -375,6 +378,75 @@ class cfgVehicles
 				{
 					hitpoints = 5;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\zenit_dtk4m.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\zenit_dtk4m_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\zenit_dtk4m_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\zenit_dtk4m_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle762_39\data\zenit_dtk4m_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class kr_muzzle762_39_sks_adapter_wt0032: kr_muzzle_adapter_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_muzzle762_39_adapter_sks_wt0032";
+		descriptionShort = "$STR_kr_weapons_attachments_muzzle762_39_adapter_sks_wt0032_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\muzzle762_39_adapter_wt0032.p3d";
+		weight = 60;
+		inventorySlot[] = {"kr_muzzle762_39_sks"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\muzzle_sks_wt0032_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\muzzle_sks_wt0032.rvmat"};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_type = "SKS";
+			kr_caliber = "7.62x39 SKS";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 25;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\muzzle_sks_wt0032.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\muzzle_sks_wt0032_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\muzzle_sks_wt0032_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\muzzle_sks_wt0032_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\muzzle_sks_wt0032_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class kr_muzzle762_39_sks_suppressor_hexagon: kr_suppressor_t2_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_muzzle762_39_suppressor_hexagon";
+		descriptionShort = "$STR_kr_weapons_attachments_muzzle762_39_suppressor_hexagon_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\muzzle762_39_suppressor_hexagon.p3d";
+		weight = 60;
+		itemModelLength = 0.209;
+		inventorySlot[] = {"kr_muzzle762_39_sks"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\hexagon_sks_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\hexagon_sks.rvmat"};
+		recoilModifier[] = {1.0,0.9,0.9};
+		swayModifier[] = {1.2,1.0,1.2};
+		dispersionModifier = 0.0001;
+		noiseShootModifier = -0.95;
+		barrelArmor = 6000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -8;
+		};
+
+		class kr_description
+		{
+			kr_caliber = "7.62x39 SKS";
+			kr_tier = 2;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 5;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\hexagon_sks.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\hexagon_sks_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\hexagon_sks_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\hexagon_sks_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\data\hexagon_sks_destruct.rvmat"}}};
 				};
 			};
 		};

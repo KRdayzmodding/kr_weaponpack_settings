@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Magazines","kr_magazine_Base"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Magazines","kr_data","kr_magazine_Base"};
 		magazines[] = {"Mag_9x19_mp5_kurtz_std_20Rnd","Mag_9x19_mp5_std_curved_30Rnd","Mag_9x19_mp5_x_product_50Rnd","Mag_9x19_pp19_pufgun_sg919_20Rnd","Mag_9x19_pp19_pufgun_sg919_30Rnd","Mag_9x19_pp19_izhmash_sb7_10Rnd","Mag_9x19_pp19_izhmash_std_30Rnd","Mag_9x19_mp443_std_18Rnd","Mag_9x19_glock17_50Rnd","Mag_9x19_glock17_33Rnd","Mag_9x19_glock17_pmag_21Rnd","Mag_9x19_glock17_std_17Rnd","Mag_9x19_m9a3_17Rnd","Mag_9x19_m9a3_blk_17Rnd","Mag_9x19_p226r_15Rnd","Mag_9x19_p226r_20Rnd","Mag_9x19_pl15_16Rnd"};
 	};
 };

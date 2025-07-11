@@ -3082,4 +3082,29 @@ class CfgNonAIVehicles
 		inventorySlot = "magazine";
 		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\127x55\Mag_127x55_vssk_10Rnd.p3d";
 	};
+
+	class Proxymuzzle762_39_adapter_wt0032: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle762_39_sks";
+		model = "KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\muzzle762_39_adapter_wt0032.p3d";
+	};
+	class Proxymuzzle762_39_suppressor_hexagon: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle762_39_sks";
+		model = "KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle762_39\muzzle762_39_suppressor_hexagon.p3d";
+	};
+	class Proxyreciever_sks_mtu017: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_sks_receiver";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\sks_parts\reciever_sks_mtu017.p3d";
+	};
+	class Proxymount_sks_utg_socom: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_sks_hndgrd";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\sks_parts\mount_sks_utg_socom.p3d";
+	};
 };

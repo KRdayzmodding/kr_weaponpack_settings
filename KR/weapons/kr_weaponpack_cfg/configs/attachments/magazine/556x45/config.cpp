@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Magazines","kr_magazine_Base"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Magazines","kr_data","kr_magazine_Base"};
 		magazines[] = {"Mag_556x45_6L29_30Rnd","Mag_556x45_CWP_30Rnd","Mag_556x45_colt_ar15_std_30Rnd","Mag_556x45_fn_mk16_std_30Rnd","Mag_556x45_hk_polymer_30Rnd","Mag_556x45_hk_gen_2_pm_30Rnd","Mag_556x45_magpulm3_10Rnd","Mag_556x45_magpulm3_20Rnd","Mag_556x45_magpulm3_30Rnd_blck","Mag_556x45_magpulm3_30Rnd_tan","Mag_556x45_magpulm3_40Rnd_blck","Mag_556x45_magpulm3_40Rnd_tan","Mag_556x45_magpulp_60Rnd","Mag_556x45_steel_maritime_30Rnd","Mag_556x45_srfr_mag5_60Rnd","Mag_556x45_srfr_mag5_100Rnd","Mag_556x45_troy_battlemag_30Rnd","Mag_556x45_sg550_30Rnd","Mag_556x45_sg550_60Rnd","Mag_556x45_g36_std_30Rnd","Mag_556x45_g36_std_60Rnd"};
 	};
 };

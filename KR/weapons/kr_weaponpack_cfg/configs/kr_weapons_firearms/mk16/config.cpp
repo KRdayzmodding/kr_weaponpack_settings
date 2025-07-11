@@ -26,7 +26,7 @@ class cfgWeapons
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
-		attachments[] = {"kr_muzzle556","weaponOptics","kr_ar_pistolgrip","kr_scar_stock","kr_foregrip","weaponFlashlight","weaponWrap"};
+		attachments[] = {"kr_muzzle556","weaponOptics","weaponHolo1","kr_ar_pistolgrip","kr_scar_stock","kr_foregrip","weaponFlashlight","weaponWrap"};
 		simpleHiddenSelections[] = {"hide_pistolgrip","hide_sight_front","hide_sight_rear"};
 		chamberSize = 1;
 		chamberedRound = "";

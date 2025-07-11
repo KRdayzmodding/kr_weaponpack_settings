@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"kr_bipod_atlas_v8_bt10","kr_bipod_bipods_g36_a1"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Scripts"};
+		requiredAddons[] = {"DZ_Data","DZ_Scripts","kr_data"};
 	};
 };
 

@@ -560,6 +560,18 @@ ImageSetClass {
      Size 256 256
      Flags 0
     }
+    ImageSetDefClass kr_sks_handguard {
+     Name "kr_sks_handguard"
+     Pos 2048 1280
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_sks_receiver {
+     Name "kr_sks_receiver"
+     Pos 2306 1280
+     Size 256 256
+     Flags 0
+    }
    }
   }
   ImageSetGroupClass 7 {
@@ -616,6 +628,12 @@ ImageSetClass {
     ImageSetDefClass kr_muzzle277 {
      Name "kr_muzzle277"
      Pos 1792 1536
+     Size 256 256
+     Flags 0
+    }
+    ImageSetDefClass kr_muzzle_762_sks {
+     Name "kr_muzzle_762_sks"
+     Pos 2306 1536
      Size 256 256
      Flags 0
     }

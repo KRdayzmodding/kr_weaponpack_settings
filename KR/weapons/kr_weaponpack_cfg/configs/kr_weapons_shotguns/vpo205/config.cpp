@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"kr_vpo205_305","kr_vpo205_430","kr_vpo205_570"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","kr_data"};
 	};
 };
 

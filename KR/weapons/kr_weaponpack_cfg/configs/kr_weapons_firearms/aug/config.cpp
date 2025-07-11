@@ -70,15 +70,19 @@ class cfgWeapons
 			dispersion = 0.002;
 			magazineSlot = "magazine";
 		};
+		
 		class OpticsInfo: OpticsInfoRifle
 		{
 			modelOptics = "-";
 			opticsZoomMin = 0.28;
 			opticsZoomMax = 0.28;
 			opticsZoomInit = 0.28;
-			distanceZoomMin = 100;
-			distanceZoomMax = 100;
+			discreteDistance[] = {50,100,200};
+			discreteDistanceInitIndex = 1;
+			distanceZoomMin = 300;
+			distanceZoomMax = 300;
 		};
+
 		class InventorySlotsOffsets
 		{
 			class Shoulder
@@ -247,15 +251,6 @@ class cfgWeapons
 				};
 			};
 		};
-		class OpticsInfo: OpticsInfoRifle
-		{
-			modelOptics = "-";
-			opticsZoomMin = 0.28;
-			opticsZoomMax = 0.28;
-			opticsZoomInit = 0.28;
-			distanceZoomMin = 300;
-			distanceZoomMax = 300;
-		};
 	};
 
 	class kr_AUG_A3: kr_AUG_Base
@@ -333,15 +328,6 @@ class cfgWeapons
 					};
 				};
 			};
-		};
-		class OpticsInfo: OpticsInfoRifle
-		{
-			modelOptics = "-";
-			opticsZoomMin = 0.28;
-			opticsZoomMax = 0.28;
-			opticsZoomInit = 0.28;
-			distanceZoomMin = 300;
-			distanceZoomMax = 300;
 		};
 	};
 };

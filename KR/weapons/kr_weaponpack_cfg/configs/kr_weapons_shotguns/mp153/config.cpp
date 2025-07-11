@@ -162,7 +162,7 @@ class cfgWeapons
 		{
 			soundSetShot[] = {"kr_mp153_Shot_SoundSet","Mp133_Tail_SoundSet","Mp133_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"kr_mp133_silencer_SoundSet","Ruger1022_silencerHomeMadeTail_SoundSet","Ruger1022_silencerInteriorHomeMadeTail_SoundSet"}};
-			reloadTime = 0.09;
+			reloadTime = 0.18;
 			dispersion = 0.004;
 			firespreadangle = 1.5;
 			magazineSlot = "magazine";

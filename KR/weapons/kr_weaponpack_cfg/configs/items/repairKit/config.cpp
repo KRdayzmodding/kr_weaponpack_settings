@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"kr_items_repairKit","kr_items_opticKit"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data"};
+		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
 class kr_Gunplay_Base;

@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data"};
+		requiredAddons[] = {"DZ_Data","kr_data"};
 		magazines[] = {"Mag_762x51_dsarms_10Rnd","Mag_762x51_kac_steel_10Rnd","Mag_762x51_g28_10Rnd","Mag_762x51_kac_steel_20Rnd","Mag_762x51_m240_150Rnd","Mag_762x51_pmag_20Rnd","Mag_762x51_dsarms_20Rnd","Mag_762x51_dsarms_30Rnd","Mag_762x51_mmw_20Rnd","Mag_762x51_mk17_20Rnd","Mag_762x51_sarco_30Rnd","Mag_762x51_g28_20Rnd","Mag_762x51_xproduct_50Rnd","Mag_762x51_g28_xproduct_50Rnd","Mag_762x51_mcmillan_cs5_10Rnd","Mag_762x51_mcmillan_cs5_20Rnd"};
 	};
 };

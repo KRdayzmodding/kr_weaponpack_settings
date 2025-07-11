@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"kr_items_ferfrans_crd","kr_items_paracord","kr_items_multitool","kr_items_universal_rails","kr_items_zenit_fixed_lock","kr_items_zenit_fold_lock","kr_items_zenit_pt_1","kr_items_zenit_pt_3"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data"};
+		requiredAddons[] = {"DZ_Data","kr_data"};
 	};
 };
 class kr_Gunplay_Base;

@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"kr_9a91_stock_std"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Supports","kr_data"};
 	};
 };
 

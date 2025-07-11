@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Magazines","kr_magazine_Base"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Magazines","kr_data","kr_magazine_Base"};
 		magazines[] = {"Mag_9x18_apb_20Rnd","Mag_9x18_pm_8Rnd","Mag_9x18_pm_84Rnd"};
 	};
 };
