@@ -69,6 +69,9 @@ class cfgWeapons
 		};
 		class OpticsInfo: OpticsInfoRifle
 		{
+			memoryPointCamera = "eye";
+			discreteDistance[] = {100,200,300};
+			discreteDistanceInitIndex = 0;
 			modelOptics = "-";
 			distanceZoomMin = 100;
 			distanceZoomMax = 100;

@@ -184,7 +184,7 @@ class cfgVehicles
 		{
 			ergonomics = 8;
 		};
-		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"/*,"kr_gl"*/};
 		class kr_description
 		{
 			kr_tier = 1;
@@ -649,7 +649,7 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ar15_hguard_dd_ris_ii_95_dsc";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_dd_ris_ii_95.p3d";
 		weight = 440;
-		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"/*,"kr_gl"*/};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_95_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_95.rvmat"};
 		recoilModifier[] = {0.7,0.7,1};	
@@ -1068,7 +1068,7 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_dd_ris_ii_1225.p3d";
 		weight = 502;
 		itemSize[] = {4,1};
-		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"};
+		attachments[] = {"kr_foregrip","kr_light_right","kr_bipod","kr_light_left"/*,"kr_gl"*/};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_1225_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\data\ar15_handguard_dd_ris_ii_1225.rvmat"};
 		recoilModifier[] = {0.8,0.4,1};	

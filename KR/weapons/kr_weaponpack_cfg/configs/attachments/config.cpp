@@ -3107,4 +3107,10 @@ class CfgNonAIVehicles
 		inventorySlot = "kr_sks_hndgrd";
 		model = "KR\weapons\kr_weaponpack_2\attachments\support\sks_parts\mount_sks_utg_socom.p3d";
 	};
+	class Proxygl_m203: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_gl";
+		model = "KR\weapons\kr_weaponpack_2\attachments\gl\m203\gl_m203.p3d";
+	};
 };

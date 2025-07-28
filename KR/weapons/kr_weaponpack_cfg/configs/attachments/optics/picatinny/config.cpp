@@ -72,7 +72,14 @@ class cfgVehicles
 				class Health
 				{
 					hitpoints = 50;
-					healthLevels[] = {{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6.rvmat"}},{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6_worn.rvmat"}},{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6_damage.rvmat"}},{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6_badlydamage.rvmat"}},{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6_destruct.rvmat"}}};
+					healthLevels[] = 
+					{
+						{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6.rvmat"}},
+						{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6_worn.rvmat"}},
+						{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6_damage.rvmat"}},
+						{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6_badlydamage.rvmat"}},
+						{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack\attachments\optics\picatinny\data\belomo_pk6_destruct.rvmat"}}
+					};
 				};
 			};
 		};

@@ -14,9 +14,10 @@ class CfgMods
 	{
 		type = "mod";
 		author = "Kramtsov Arms";
+		version = "1.3.11";
 		defines[] = 
 		{
-			//"KR_DAMAGE_DEBUG" //Запускает дебагер урона
+			//"KR_DAMAGE_DEBUG" //Запускает дебагер урона		
 		};
 
 		class defs
@@ -862,5 +863,12 @@ class CfgSlots
 		name = "kr_sks_hndgrd";
 		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_sks_handguard";
+	};
+
+	class Slot_kr_gl
+	{
+		name = "kr_gl";
+		displayName = "#STR_kr_gl";
+		ghostIcon = "set:kr_weapon_icons image:kr_gl";
 	};
 };

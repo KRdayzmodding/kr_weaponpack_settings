@@ -13,6 +13,7 @@ class Mode_Safe;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class Mode_kr_GL;
 class OpticsInfoRifle;
 class kr_Gunplay_Base;
 class cfgWeapons
@@ -173,7 +174,7 @@ class cfgWeapons
 			type = "shot";
 		};
 
-		modes[] = {"SemiAuto","FullAuto"};
+		modes[] = {"SemiAuto","FullAuto","GL"};
 
 		class SemiAuto: Mode_SemiAuto
 		{
@@ -191,6 +192,15 @@ class cfgWeapons
 			dispersion = 0.0045;
 			magazineSlot = "magazine";
 		};
+
+		class GL: Mode_kr_GL
+		{
+			soundSetShot[] = {};
+			soundSetShotExt[] = {};
+			reloadTime = 0.1;
+			dispersion = 0.001;
+		};
+
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -220,7 +230,7 @@ class cfgWeapons
 		barrelArmor = 9.1;
 		recoilModifier[] = {1.35,1.35,1.3};
 		swayModifier[] = {1.4,1.3,1.6};
-		modes[] = {"SemiAuto","FullAuto"};
+		modes[] = {"SemiAuto","FullAuto","GL"};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
@@ -236,6 +246,13 @@ class cfgWeapons
 			reloadTime = 0.065;
 			dispersion = 0.004;
 			magazineSlot = "magazine";
+		};
+		class GL: Mode_kr_GL
+		{
+			soundSetShot[] = {};
+			soundSetShotExt[] = {};
+			reloadTime = 0.1;
+			dispersion = 0.001;
 		};
 		class DamageSystem
 		{
@@ -280,7 +297,7 @@ class cfgWeapons
 		barrelArmor = 10.1;
 		recoilModifier[] = {1.35,1.35,1.3};
 		swayModifier[] = {1.5,1.4,1.6};
-		modes[] = {"SemiAuto","FullAuto"};
+		modes[] = {"SemiAuto","FullAuto","GL"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -307,6 +324,13 @@ class cfgWeapons
 			reloadTime = 0.065;
 			dispersion = 0.0035;
 			magazineSlot = "magazine";
+		};
+		class GL: Mode_kr_GL
+		{
+			soundSetShot[] = {};
+			soundSetShotExt[] = {};
+			reloadTime = 0.1;
+			dispersion = 0.001;
 		};
 		class kr_description
 		{
@@ -340,7 +364,7 @@ class cfgWeapons
 		barrelArmor = 11.0;
 		recoilModifier[] = {1.4,1.4,1.3};
 		swayModifier[] = {1.55,1.45,1.65};
-		modes[] = {"SemiAuto","FullAuto"};
+		modes[] = {"SemiAuto","FullAuto","GL"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -367,6 +391,13 @@ class cfgWeapons
 			reloadTime = 0.065;
 			dispersion = 0.003;
 			magazineSlot = "magazine";
+		};
+		class GL: Mode_kr_GL
+		{
+			soundSetShot[] = {};
+			soundSetShotExt[] = {};
+			reloadTime = 0.1;
+			dispersion = 0.001;
 		};
 		class kr_description
 		{
@@ -400,7 +431,7 @@ class cfgWeapons
 		barrelArmor = 12.0;
 		recoilModifier[] = {1.4,1.4,1.3};
 		swayModifier[] = {1.6,1.5,1.7};
-		modes[] = {"SemiAuto","FullAuto"};
+		modes[] = {"SemiAuto","FullAuto","GL"};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -421,6 +452,13 @@ class cfgWeapons
 			reloadTime = 0.065;
 			dispersion = 0.0025;
 			magazineSlot = "magazine";
+		};
+		class GL: Mode_kr_GL
+		{
+			soundSetShot[] = {};
+			soundSetShotExt[] = {};
+			reloadTime = 0.1;
+			dispersion = 0.001;
 		};
 		class DamageSystem
 		{
