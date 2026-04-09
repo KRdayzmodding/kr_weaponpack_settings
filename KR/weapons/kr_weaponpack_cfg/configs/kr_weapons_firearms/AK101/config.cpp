@@ -26,8 +26,9 @@ class cfgWeapons
 		weight = 2600;
 		WeaponLength = 0.66;
 		itemSize[] = {8,3};
-		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
-		magazines[] = {"Mag_556x45_CWP_30Rnd","Mag_556x45_6L29_30Rnd"};
+		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_300_m62","kr_Ammo_300_ap","kr_Ammo_300_vmax","kr_Ammo_300_bpz_fmj"};
+		kr_bannedAmmo[] = {"Bullet_300_m62","Bullet_300_ap","Bullet_300_vmax","Bullet_300_bpz_fmj"};
+		magazines[] = {"Mag_556x45_CWP_30Rnd","Mag_556x45_6L29_30Rnd","Mag_556x45_molot_45Rnd"};
 		barrelArmor = 6.6;
 		initSpeedMultiplier = 1.1;
 		recoilModifier[] = {1.15,1.15,1.2};

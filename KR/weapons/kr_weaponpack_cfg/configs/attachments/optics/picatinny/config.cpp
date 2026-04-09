@@ -107,7 +107,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -174,7 +174,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -240,7 +240,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -315,7 +315,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -383,7 +383,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -450,7 +450,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -516,7 +516,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -583,7 +583,73 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
+			plugType = 1;
+			attachmentAction = 1;
+		};
+	};
+	class kr_holosight_eotech_552: kr_ItemOpticsPicatinny_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_optics_holosight_eotech_552";
+		descriptionShort = "$STR_kr_weapons_attachments_optics_holosight_eotech_552_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\holosight_eotech_552.p3d";
+		inventorySlot[] = {"weaponOpticsB","weaponOpticsB1","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT","weaponOptics","weaponOptics1","weaponOptics2","weaponOpticsDT"};
+		reversed = 0;
+		weight = 312;
+		itemSize[] = {2,1};
+		dispersionModifier = -0.0003;
+		dispersionCondition = "true";
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,0.93};
+		memoryPointCamera = "eyeScope";
+		cameraDir = "cameraDir";
+		attachments[] = {"BatteryD"};
+		hiddenSelections[] = {"reddot"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 7;
+		};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_type = "#STR_Picattinny";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = {{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\eotech_552.rvmat"}},{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\eotech_552_worn.rvmat"}},{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\eotech_552_damage.rvmat"}},{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\eotech_552_badlydamage.rvmat"}},{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\picatinny\data\eotech_552_destruct.rvmat"}}};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera = "eyeScope";
+			cameraDir = "cameraDir";
+			modelOptics = "-";
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsPPEffects[] = {};
+			opticSightTexture = "KR\weapons\kr_weaponpack\attachments\optics\reticles\eotech_xps3_1_red_ca.paa";
+			opticsZoomMin = 0.5236;
+			opticsZoomMax = 0.5236;
+			opticsZoomInit = 0.5236;
+			distanceZoomMin = 25;
+			distanceZoomMax = 200;
+			discreteDistance[] = {25,50,100,200};
+			discreteDistanceInitIndex = 0;
+			PPMaskProperties[] = {0.5,0.5,0.4,0.05};
+			PPLensProperties[] = {1,0.15,0,0};
+			PPBlurProperties = 0.2;
+		};
+		class EnergyManager
+		{
+			hasIcon = 1;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -651,7 +717,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -717,7 +783,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -783,7 +849,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -849,7 +915,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -917,7 +983,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -983,7 +1049,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -1231,7 +1297,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -1442,7 +1508,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};

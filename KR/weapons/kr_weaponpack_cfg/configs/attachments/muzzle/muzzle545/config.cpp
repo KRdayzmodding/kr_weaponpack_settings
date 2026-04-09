@@ -59,6 +59,7 @@ class cfgVehicles
 			};
 		};
 	};
+
 	class kr_muzzle545_flashhider_hexagon_reactor: kr_muzzle_t2_Base
 	{
 		scope = 2;
@@ -243,6 +244,92 @@ class cfgVehicles
 				{
 					hitpoints = 5;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle545\data\tgpa.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle545\data\tgpa_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle545\data\tgpa_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle545\data\tgpa_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle545\data\tgpa_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+////////////////////////////// AK12
+
+	class kr_muzzle545_flashhider_ak12: kr_muzzle_t2_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_muzzle545_flashhider_ak12";
+		descriptionShort = "$STR_kr_weapons_attachments_muzzle545_flashhider_ak12_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\muzzle545_flashhider_ak12.p3d";
+		weight = 90;
+		itemModelLength = 0.08;
+		barrelArmor = 15000;
+		noiseShootModifier = -0.1;
+		dispersionModifier = -0.0005;
+		recoilModifier[] = {0.97,0.97,0.9};
+		swayModifier[] = {1.0,1.0,1.0};
+		inventorySlot[] = {"kr_muzzleAK12"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_muzzle_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_muzzle.rvmat"};
+
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_caliber = "5.45x39";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 10;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 25;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_muzzle.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_muzzle_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_muzzle_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_muzzle_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_muzzle_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class kr_muzzle545_suppressor_ak12: kr_suppressor_t2_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_muzzle545_suppressor_ak12";
+		descriptionShort = "$STR_kr_weapons_attachments_muzzle545_suppressor_ak12_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\muzzle545_suppressor_ak12.p3d";
+		weight = 700;
+		itemModelLength = 0.22;
+		inventorySlot[] = {"kr_muzzleAK12"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_suppressor_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_suppressor.rvmat"};
+		barrelArmor = 6000;
+		noiseShootModifier = -0.95;
+		dispersionModifier = 0.0001;
+		recoilModifier[] = {1.0,0.9,0.6};
+		swayModifier[] = {1.0,1.2,1.2};
+		class kr_description
+		{
+			
+			kr_tier = 2;
+			kr_caliber = "5.45x39";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -10;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 5;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_suppressor.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_suppressor_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_suppressor_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_suppressor_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\data\ak12_suppressor_destruct.rvmat"}}
+					};
 				};
 			};
 		};

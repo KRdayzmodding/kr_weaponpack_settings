@@ -33,7 +33,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			receiverSlotName = "kr_pp19_receiver";
-			handguardSlotName = "kr_ak_hndgrd";
+			handguardSlotName = "kr_ak_hndgrd_short";
 			buttstockSlotName = "kr_ak_fstock";
 		};
 		class NoiseShoot
@@ -120,7 +120,7 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_pp19_01";
 		descriptionShort = "$STR_weapons_firearms_pp19_01_dsc";
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\pp19_01.p3d";
-		attachments[] = {"kr_muzzle9_19","kr_ak_hndgrd","kr_pp19_receiver","kr_ak_pistolgrip","kr_ak_fstock","kr_ar_bttstck","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOpticsAK","weaponOptics","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle9_19","kr_ak_hndgrd_short","kr_pp19_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOpticsAK","weaponOptics","weaponOpticsDT","kr_ak_handle","weaponWrap"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\pp19_01.rvmat"};
 		initSpeedMultiplier = 1.1;
@@ -170,7 +170,7 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_saiga9";
 		descriptionShort = "$STR_weapons_firearms_saiga9_dsc";
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\saiga9.p3d";
-		attachments[] = {"kr_muzzle9_19","kr_ak_hndgrd","kr_pp19_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle9_19","kr_ak_hndgrd_short","kr_pp19_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOpticsDT","kr_ak_handle","weaponWrap"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_smg\pp19\data\saiga9.rvmat"};
 		initSpeedMultiplier = 1.0;

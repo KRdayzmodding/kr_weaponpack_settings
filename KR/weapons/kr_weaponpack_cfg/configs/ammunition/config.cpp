@@ -1313,6 +1313,126 @@ class CfgMagazines
 		};
 	};
 
+
+	class kr_Ammo_300_m62: Ammunition_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_ammo_300_m62";
+		descriptionShort = "$STR_kr_weapons_ammo_300_m62_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\looseRounds\300_m62_LooseRounds.p3d";
+		iconCartridge = 2;
+		iconType = 1;
+		weight = 16;
+		count = 60;
+		ammo = "Bullet_300_m62";
+		class kr_description
+		{
+			kr_tier = 0;
+			kr_caliber = ".300 Blackout";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_m62.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_m62_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_m62_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_m62_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_m62_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+	class kr_Ammo_300_bpz_fmj: Ammunition_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_ammo_300_bpz_fmj";
+		descriptionShort = "$STR_kr_weapons_ammo_300_bpz_fmj_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\looseRounds\300_bpz_fmj_LooseRounds.p3d";
+		iconCartridge = 2;
+		weight = 16;
+		count = 60;
+		ammo = "Bullet_300_bpz_fmj";
+		class kr_description
+		{
+			kr_tier = 1;
+			kr_caliber = ".300 Blackout";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+	class kr_Ammo_300_ap: Ammunition_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_ammo_300_ap";
+		descriptionShort = "$STR_kr_weapons_ammo_300_ap_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\looseRounds\300_ap_LooseRounds.p3d";
+		iconCartridge = 2;
+		iconType = 2;
+		weight = 16;
+		count = 60;
+		ammo = "Bullet_300_ap";
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".300 Blackout";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_ap.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_ap_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_ap_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_ap_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_ap_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+	class kr_Ammo_300_vmax: Ammunition_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_ammo_300_vmax";
+		descriptionShort = "$STR_kr_weapons_ammo_300_vmax_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\looseRounds\300_vmax_LooseRounds.p3d";
+		iconCartridge = 2;
+		weight = 16;
+		count = 60;
+		ammo = "Bullet_300_vmax";
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".300 Blackout";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\300_bpz_fmj_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
 	class kr_Ammo_762x51_bpz_fmj: Ammunition_Base
 	{
 		scope = 2;
@@ -2664,6 +2784,154 @@ class CfgMagazines
 				{
 					hitpoints = 100;
 					healthLevels[] = {{1.0,{"\KR\weapons\kr_weaponpack_2\ammunition\data\barrikade_23x75.rvmat"}},{0.7,{"\KR\weapons\kr_weaponpack_2\ammunition\data\barrikade_23x75.rvmat"}},{0.5,{"\KR\weapons\kr_weaponpack_2\ammunition\data\barrikade_23x75_damage.rvmat"}},{0.3,{"\KR\weapons\kr_weaponpack_2\ammunition\data\barrikade_23x75_damage.rvmat"}},{0.0,{"\KR\weapons\kr_weaponpack_2\ammunition\data\barrikade_23x75_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+
+	class kr_Ammo_303_British_T: Ammunition_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_ammo_303_British_T";
+		descriptionShort = "$STR_kr_weapons_ammo_303_British_T_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\looseRounds\303_British_T_LooseRounds.p3d";
+		iconCartridge = 2;
+		iconType = 1;
+		weight = 16;
+		count = 60;
+		ammo = "Bullet_303_British_T";
+		class kr_description
+		{
+			kr_tier = 0;
+			kr_caliber = ".303 British";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class kr_Ammo_303_British: Ammunition_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_ammo_303_British";
+		descriptionShort = "$STR_kr_weapons_ammo_303_British_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\looseRounds\303_British_LooseRounds.p3d";
+		iconCartridge = 2;
+		weight = 16;
+		count = 60;
+		ammo = "Bullet_303_British";
+		class kr_description
+		{
+			kr_tier = 1;
+			kr_caliber = ".303 British";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class kr_Ammo_303_British_AP: Ammunition_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_ammo_303_British_AP";
+		descriptionShort = "$STR_kr_weapons_ammo_303_British_AP_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\looseRounds\303_British_AP_LooseRounds.p3d";
+		iconCartridge = 2;
+		iconType = 2;
+		weight = 16;
+		count = 60;
+		ammo = "Bullet_303_British_AP";
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".303 British";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class kr_Ammo_303_British_HP: Ammunition_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_ammo_303_British_HP";
+		descriptionShort = "$STR_kr_weapons_ammo_303_British_HP_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\looseRounds\303_British_HP_LooseRounds.p3d";
+		iconCartridge = 2;
+		weight = 16;
+		count = 60;
+		ammo = "Bullet_303_British_HP";
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".303 British";
+			kr_bullettype = 0;
+			kr_range = 100;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\data\303_British_destruct.rvmat"}}
+					};
 				};
 			};
 		};

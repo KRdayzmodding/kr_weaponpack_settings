@@ -30,6 +30,7 @@ class cfgWeapons
 		barrelArmor = 7;
 		recoilModifier[] = {1.0,1.0,1.0};
 		swayModifier[] = {1.0,1.0,1.0};
+		simpleHiddenSelections[]={"hide_muzzle"};
 		modes[] = {"SemiAuto","Burst","FullAuto"};
 
 		class kr_Gunplay: kr_Gunplay_Base
@@ -104,7 +105,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_firearms_aek_971";
 		descriptionShort = "$STR_weapons_firearms_aek_971_dsc";
-		attachments[] = {"weaponOpticsAK","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle545","kr_foregrip","kr_light_right","weaponOpticsAK","weaponOpticsDT","kr_ak_handle","weaponWrap"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\aek_971\data\aek_971_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\aek_971\data\aek_971.rvmat"};
 
@@ -112,6 +113,5 @@ class cfgWeapons
 		{
 			ergonomics = 35;
 		};
-
 	};
 };

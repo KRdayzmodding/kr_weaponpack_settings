@@ -39,7 +39,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			receiverSlotName = "kr_ak_receiver";
-			handguardSlotName = "kr_ak_hndgrd";
+			handguardSlotName = "kr_ak_hndgrd_short";
 			buttstockSlotName = "kr_ak_fstock";
 		};
 		class kr_description
@@ -93,6 +93,12 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_firearms_ak105";
 		descriptionShort = "$STR_weapons_firearms_ak105_dsc";
+		attachments[] = 
+		{
+			"kr_muzzle545","kr_ak_hndgrd_short","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock",
+			"weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT",
+			"kr_ak_handle","weaponWrap"
+		};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak105\data\ak105_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak105\data\ak105.rvmat"};
 	};

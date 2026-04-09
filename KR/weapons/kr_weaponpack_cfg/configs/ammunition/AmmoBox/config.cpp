@@ -3798,4 +3798,178 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class kr_AmmoBox_303_British_T_20Rnd: kr_Box_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_AmmoBox_303_British_T";
+		descriptionShort = "$STR_kr_weapons_AmmoBox_303_British_T";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\AmmoBox_303_British.p3d";
+		weight = 320;
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_T_co.paa"};
+		class kr_description
+		{
+			kr_tier = 0;
+			kr_caliber = "303_British";
+			kr_bullettype = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+        
+		class Resources
+		{
+			class kr_Ammo_303_British_T
+			{
+				value = 20;
+				variable = "quantity";
+			};
+		};
+	};
+	class kr_AmmoBox_303_British_AP_20Rnd: kr_Box_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_AmmoBox_303_British_AP";
+		descriptionShort = "$STR_kr_weapons_AmmoBox_303_British_AP";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\AmmoBox_303_British.p3d";
+		weight = 320;
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_AP_co.paa"};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "303_British";
+			kr_bullettype = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+        
+		class Resources
+		{
+			class kr_Ammo_303_British_AP
+			{
+				value = 20;
+				variable = "quantity";
+			};
+		};
+	};
+	class kr_AmmoBox_303_British_20Rnd: kr_Box_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_AmmoBox_303_British";
+		descriptionShort = "$STR_kr_weapons_AmmoBox_303_British";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\AmmoBox_303_British.p3d";
+		weight = 320;
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_co.paa"};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "303_British";
+			kr_bullettype = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_destruct.rvmat"}}
+					};
+					
+				};
+			};
+		};
+        
+		class Resources
+		{
+			class kr_Ammo_303_British
+			{
+				value = 20;
+				variable = "quantity";
+			};
+		};
+	};
+	class kr_AmmoBox_303_British_hp_20Rnd: kr_Box_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_AmmoBox_303_British_hp";
+		descriptionShort = "$STR_kr_weapons_AmmoBox_303_British_hp";
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\AmmoBox_303_British.p3d";
+		weight = 320;
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_HP_co.paa"};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_caliber = "303_British";
+			kr_bullettype = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\ammunition\ammoBoxes\data\AmmoBox_303_British_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+        
+		class Resources
+		{
+			class kr_Ammo_303_British_HP
+			{
+				value = 20;
+				variable = "quantity";
+			};
+		};
+	};
 };

@@ -25,17 +25,17 @@ class cfgWeapons
 		absorbency = 0.0;
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
-		PPDOFProperties[] = {1,0.9,10,250,4,10};
+		PPDOFProperties[] = {1,0.9,10,200,4,10};
 		WeaponLength = 0.21;
 		ShoulderDistance = 0.4;
-		barrelArmor = 12;
 		initSpeedMultiplier = 1;
+		ObstructionDistance = 0.431;
 		chamberSize = 1;
 		chamberedRound = "";
 		simpleHiddenSelections[] = {"hide_grip"};
 		magazines[] = {"Mag_762x25_tt_std_8Rnd"};
 		chamberableFrom[] = {"kr_Ammo_762x25_PT_gz","kr_Ammo_762x25_PST_gz","kr_Ammo_762x25_FMJ43","kr_Ammo_762x25_AKBS","kr_Ammo_762x25_HP"};
-		magazineSwitchTime = 0.1;
+		magazineSwitchTime = 0.24;
 		ejectType = 1;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {1,1,1};
@@ -117,29 +117,96 @@ class cfgWeapons
 		hiddenSelections[] = {"camo"};
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\tt.p3d";
 		attachments[] = {"kr_muzzle762_25","kr_tt_laser","kr_tt_grip"};
+		barrelArmor = 22;
 		itemSize[] = {3,2};
 		simpleHiddenSelections[] = {"hide_grip"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt.rvmat"};
+
 		class kr_description
 		{
 			kr_tier = 1;
 			kr_caliber = "7.62x25";
 		};
+		
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 0;
 		};
-		class GlobalHealth
+		class DamageSystem
 		{
-			class Health
+			class GlobalHealth
 			{
-				hitpoints = 250;
-				healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_destruct.rvmat"}}};
+				class Health
+				{
+					hitpoints = 250;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_destruct.rvmat"}}
+					};
+				};
 			};
 		};
 	};
+
+	class kr_tt_gold: kr_tt_Base
+	{
+		scope = 2;
+		displayName = "$STR_weapons_pistols_tt_gold";
+		descriptionShort = "$STR_weapons_pistols_tt_gold_dsc";
+		hiddenSelections[] = {"camo"};
+		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\tt_gold.p3d";
+		attachments[] = {"kr_tt_laser"};
+		itemSize[] = {3,2};
+		simpleHiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_gold_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_gold.rvmat"};
+		barrelArmor = 30;
+		initSpeedMultiplier = 1.5;
+
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "7.62x25";
+		};
+		
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 250;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_gold.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_gold_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_gold_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_gold_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\data\tt_gold_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class SemiAuto: Mode_SemiAuto
+		{
+			soundSetShot[] = {"Colt1911_Shot_SoundSet","Colt1911_Tail_SoundSet","Colt1911_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"Colt1911_silencerPro_SoundSet","Colt1911_silencerTail_SoundSet","Colt1911_silencerInteriorTail_SoundSet"}};
+			reloadTime = 0.12;
+			dispersion = 0.0038;
+			magazineSlot = "magazine";
+		};
+	};
 };
+
 class CfgNonAIVehicles
 {
 	class ProxyAttachment;
@@ -148,5 +215,11 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "pistol";
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\tt.p3d";
+	};
+	class Proxytt_gold: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "pistol";
+		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_pistols\tt\tt_gold.p3d";
 	};
 };

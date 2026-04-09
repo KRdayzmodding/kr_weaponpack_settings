@@ -35,7 +35,7 @@ class cfgWeapons
 		chamberedRound = "";
 		magazineSwitchTime = 0.5;
 		ejectType = 1;
-		simpleHiddenSelections[] = {"hide_pistolgrip","hide_sight_rear","hide_sight_front","hide_tube"};
+		simpleHiddenSelections[] = {"hide_pistolgrip","hide_sight_rear","hide_sight_front","hide_tube","hide_stockpart"};
 		reloadAction = "ReloadM4";
 		hiddenSelections[] = {"camo"};
 		itemSize[] = {8,3};

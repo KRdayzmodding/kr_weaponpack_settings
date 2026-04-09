@@ -22,7 +22,7 @@ class cfgWeapons
 	{
 		scope = 0;
 		descriptionShort = "$STR_weapons_shotguns_vpo205_dsc";
-		attachments[] = {"kr_muzzle12_76","kr_ak_hndgrd","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponWrap"};
+		attachments[] = {"kr_muzzle12_76","kr_ak_hndgrd_short","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponWrap"};
 		absorbency = 0.0;
 		repairableWithKits[] = {1};
 		repairCosts[] = {25.0};
@@ -38,7 +38,7 @@ class cfgWeapons
 		isShort = 1;
 		class kr_firearms
 		{
-			handguardSlotName = "kr_ak_hndgrd";
+			handguardSlotName = "kr_ak_hndgrd_short";
 			buttstockSlotName = "kr_ak_fstock";
 		};
 		class Particles

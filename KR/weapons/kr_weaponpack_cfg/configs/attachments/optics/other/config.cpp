@@ -562,4 +562,77 @@ class cfgVehicles
 			PPDOFProperties[] = {1,0.1,20,200,4,10};
 		};
 	};
+
+	class kr_LeeEnfieldOptic: ItemOptics_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_optics_LeeEnfield";
+		descriptionShort = "$STR_kr_weapons_optics_LeeEnfield_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\other\scope_smle.p3d";
+		debug_ItemCategory = 3;
+		animClass = "Binoculars";
+		rotationFlags = 16;
+		reversed = 0;
+		weight = 800;
+		itemSize[] = {3,1};
+		inventorySlot[] = {"kr_weaponOpticsSmle"};
+		simulation = "itemoptics";
+		recoilModifier[] = {1,1,1};
+		swayModifier[] = {0.5,0.5,1};
+		dispersionCondition = "true";
+		dispersionModifier = -0.00025;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\optics\other\data\SMLE_scope_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\optics\other\data\smle_optic.rvmat"};
+		memoryPointCamera = "eyeScope";
+		cameraDir = "cameraDir";
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -15;
+		};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_type = "Lee-Enfield Mk.III";
+		};
+
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = 
+					{
+						{1.0,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\other\data\smle_optic.rvmat"}},
+						{0.7,{"DZ\weapons\attachments\data\scope_alpha_clear_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\other\data\smle_optic_worn.rvmat"}},
+						{0.5,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\other\data\smle_optic_damage.rvmat"}},
+						{0.3,{"DZ\weapons\attachments\data\scope_alpha_damaged_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\other\data\smle_optic_badlydamage.rvmat"}},
+						{0.0,{"DZ\weapons\attachments\data\scope_alpha_destroyed_ca.paa","KR\weapons\kr_weaponpack_2\attachments\optics\other\data\smle_optic_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		class OpticsInfo
+		{
+			memoryPointCamera = "eyeScope";
+			cameraDir = "cameraDir";
+			modelOptics = "-";
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsPPEffects[] = {"OpticsCHAbera3","OpticsBlur1"};
+			opticsZoomMin = "0.3926/1.75";
+			opticsZoomMax = "0.3926/1.75";
+			opticsZoomInit = "0.3926/1.75";
+			distanceZoomMin = 100;
+			distanceZoomMax = 600;
+			discreteDistance[] = {100,200,300,400,500,600};
+			discreteDistanceInitIndex = 0;
+			PPMaskProperties[] = {0.5,0.5,0.13,0.01};
+			PPLensProperties[] = {2.0,0.15,0,0};
+			PPBlurProperties = 0.45;
+		};
+	};
 };

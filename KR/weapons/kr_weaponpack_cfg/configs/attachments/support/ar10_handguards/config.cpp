@@ -26,8 +26,9 @@ class cfgVehicles
 		attachments[] = {"kr_rail_mount"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\cmmg_mk3_rml9_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ar10_handguards\data\cmmg_mk3_rml9.rvmat"};
-		recoilModifier[] = {0.85,0.85,1};	
+		recoilModifier[] = {0.85,0.85,1};
 		swayModifier[] = {0.85,1,0.85};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 16;

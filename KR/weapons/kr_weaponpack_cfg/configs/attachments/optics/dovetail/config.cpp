@@ -92,7 +92,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -155,7 +155,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -275,7 +275,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -354,7 +354,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -433,7 +433,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -446,7 +446,7 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\optics\dovetail\optic_npz_1p29.p3d";
 		weight = 795;
 		itemSize[] = {4,3};
-		inventorySlot[] = {"weaponOpticsDT","weaponOpticsAK"};
+		inventorySlot[] = {"weaponOpticsAK"};
 		dispersionModifier = -0.001;
 		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
@@ -508,7 +508,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};
@@ -521,7 +521,7 @@ class cfgVehicles
 		model = "KR\weapons\kr_weaponpack\attachments\optics\dovetail\optic_npz_nspum.p3d";
 		weight = 1900;
 		itemSize[] = {4,3};
-		inventorySlot[] = {"weaponOpticsDT","weaponOpticsAK"};
+		inventorySlot[] = {"weaponOpticsAK"};
 		dispersionModifier = -0.0012;
 		dispersionCondition = "true";
 		recoilModifier[] = {1,1,1};
@@ -584,7 +584,7 @@ class cfgVehicles
 		class EnergyManager
 		{
 			hasIcon = 1;
-			energyUsagePerSecond = 0.02;
+			energyUsagePerSecond = 0.0023;
 			plugType = 1;
 			attachmentAction = 1;
 		};

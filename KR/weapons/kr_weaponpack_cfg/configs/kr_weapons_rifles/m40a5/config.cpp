@@ -56,7 +56,7 @@ class cfgWeapons
 		};
 		class Single: Mode_Single
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
+			soundSetShot[] = {"M40A5_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {"SCOUT_silencer_SoundSet","SCOUT_silencerTail_SoundSet","SCOUT_silencerInteriorTail_SoundSet"};
 			envShootingDecrease = 0.05;
 			reloadTime = 1;
@@ -178,7 +178,7 @@ class cfgWeapons
 		PPDOFProperties[] = {1,0.1,20.0,200.0,10.0,10.0};
 		class Single: Mode_Single
 		{
-			soundSetShot[] = {"FNFAL_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
+			soundSetShot[] = {"M40A5_Shot_SoundSet","FNFAL_Tail_SoundSet","FNFAL_InteriorTail_SoundSet"};
 			soundSetShotExt[] = {{"SCOUT_silencer_SoundSet","SCOUT_silencerTail_SoundSet","SCOUT_silencerInteriorTail_SoundSet"}};
 			envShootingDecrease = 0.05;
 			reloadTime = 1.0;

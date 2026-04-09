@@ -835,77 +835,17 @@ class CfgNonAIVehicles
 		inventorySlot = "kr_ak_fstock";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_buttstocks\ak_fld_bttstck_akts_fold.p3d";
 	};
-	class Proxyak_handguard_plastic: ProxyAttachment
+	class Proxyak_stock_akms_std: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_plastic.p3d";
-	};
-	class Proxyak_handguard_wood: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_wood.p3d";
+		inventorySlot = "kr_akms_stock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\ak_stock_akms_std.p3d";
 	};
 	class Proxyak_handguard_aks74u: ProxyAttachment
 	{
 		scope = 2;
 		inventorySlot = "kr_aks74u_hndgrd";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_aks74u.p3d";
-	};
-	class Proxyak_handguard_agressor: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_agressor.p3d";
-	};
-	class Proxyak_handguard_hexagon: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_hexagon.p3d";
-	};
-	class Proxyak_handguard_krebs_ufm: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_krebs_ufm.p3d";
-	};
-	class Proxyak_handguard_magpul_moe: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_magpul_moe.p3d";
-	};
-	class Proxyak_handguard_magpul_zhukov: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_magpul_zhukov.p3d";
-	};
-	class Proxyak_handguard_vltor_cmrd: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_vltor_cmrd.p3d";
-	};
-	class Proxyak_handguard_zenit_b10m_b19: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_zenit_b10m_b19.p3d";
-	};
-	class Proxyak_handguard_zenit_b31c: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_zenit_b31c.p3d";
-	};
-	class Proxyak_handguard_RS47: ProxyAttachment
-	{
-		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
-		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_RS47.p3d";
 	};
 	class Proxyak_handguard_zenit_b11: ProxyAttachment
 	{
@@ -925,23 +865,107 @@ class CfgNonAIVehicles
 		inventorySlot = "kr_aks74u_hndgrd";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_xrsu47su.p3d";
 	};
+	class Proxyak_handguard_plastic: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_plastic.p3d";
+	};
+	class Proxyak_handguard_akm_wood: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_akm_wood.p3d";
+	};
+	class Proxyak_handguard_akm_wood_damaged: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_akm_wood_damaged.p3d";
+	};
+	class Proxyak_handguard_wood: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_wood.p3d";
+	};
+	class Proxyak_handguard_ak100_plastic: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_ak100_plastic.p3d";
+	};
+	class Proxyak_handguard_agressor: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_agressor.p3d";
+	};
+	class Proxyak_handguard_magpul_moe: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_magpul_moe.p3d";
+	};
+	class Proxyak_handguard_magpul_zhukov: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_magpul_zhukov.p3d";
+	};
+	class Proxyak_handguard_zenit_b10m_b19: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_zenit_b10m_b19.p3d";
+	};
+	class Proxyak_handguard_zenit_b31c: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_zenit_b31c.p3d";
+	};
+	class Proxyak_handguard_RS47: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_RS47.p3d";
+	};
 	class Proxyak_handguard_b10_swiss: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
+		inventorySlot = "kr_ak_hndgrd_short";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_b10_swiss.p3d";
 	};
 	class Proxyak_handguard_m1b_mk3: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
+		inventorySlot = "kr_ak_hndgrd_short";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_m1b_mk3.p3d";
 	};
 	class Proxyak_handguard_m1b_tdi: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ak_hndgrd";
+		inventorySlot = "kr_ak_hndgrd_short";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_m1b_tdi.p3d";
+	};
+	class Proxyak_handguard_hexagon: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_hexagon.p3d";
+	};
+	class Proxyak_handguard_krebs_ufm: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_krebs_ufm.p3d";
+	};
+	class Proxyak_handguard_vltor_cmrd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd";
+		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_vltor_cmrd.p3d";
 	};
 	class Proxyak_handguard_troy_combo: ProxyAttachment
 	{
@@ -1360,127 +1384,127 @@ class CfgNonAIVehicles
 	class Proxyar15_handguard_strike_industries_viper: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_strike_industries_viper.p3d";
 	};
 	class Proxyar15_handguard_lone_star_ion_lite: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_lone_star_ion_lite.p3d";
 	};
 	class Proxyar15_handguard_war_sport_lvoa_s: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_war_sport_lvoa_s.p3d";
 	};
 	class Proxyar15_handguard_war_sport_lvoa_c: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_war_sport_lvoa_c.p3d";
 	};
 	class Proxyar15_handguard_unique_ars_was: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_unique_ars_was.p3d";
 	};
 	class Proxyar15_handguard_stngr_vypr: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_stngr_vypr.p3d";
 	};
 	class Proxyar15_handguard_stmarms_15: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_stmarms_15.p3d";
 	};
 	class Proxyar15_handguard_stmarms_12: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_stmarms_12.p3d";
 	};
 	class Proxyar15_handguard_stmarms_9: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_stmarms_9.p3d";
 	};
 	class Proxyar15_handguard_sai_qd_rail_short: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_sai_qd_rail_short.p3d";
 	};
 	class Proxyar15_handguard_sai_qd_rail_long: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_sai_qd_rail_long.p3d";
 	};
 	class Proxyar15_handguard_precision_reflex_carbon: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_precision_reflex_carbon.p3d";
 	};
 	class Proxyar15_handguard_geissele_smr_mk16: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_geissele_smr_mk16.p3d";
 	};
 	class Proxyar15_handguard_dd_ris_ii_fsp: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_dd_ris_ii_fsp.p3d";
 	};
 	class Proxyar15_handguard_dd_ris_ii_1225: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_dd_ris_ii_1225.p3d";
 	};
 	class Proxyar15_handguard_dd_ris_ii_95: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_dd_ris_ii_95.p3d";
 	};
 	class Proxyar15_handguard_colt_m4_std: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_colt_m4_std.p3d";
 	};
 	class Proxyar15_handguard_adar_wood: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_adar_wood.p3d";
 	};
 	class Proxyar15_handguard_aeroknox_ax15: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_aeroknox_ax15.p3d";
 	};
 	class Proxyar15_handguard_alexander_arms_mk10: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_alexander_arms_mk10.p3d";
 	};
 	class Proxyar15_handguard_magpul_moe_sl_s: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
+		inventorySlot = "kr_ar15_hndgrd_2";
 		model = "KR\weapons\kr_weaponpack\attachments\support\ar15_handguards\ar15_handguard_magpul_moe_sl_s.p3d";
 	};
 	class Proxyfal_bttstck_humpback: ProxyAttachment
@@ -1852,7 +1876,7 @@ class CfgNonAIVehicles
 	class Proxyrpk16_fld_bttstck_tube: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_rpk16_stock";
+		inventorySlot = "kr_ak_fstock";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\rpk16_parts\rpk16_fld_bttstck_tube.p3d";
 	};
 	class Proxyscar_bttstck_std: ProxyAttachment
@@ -2887,6 +2911,12 @@ class CfgNonAIVehicles
 		inventorySlot = "kr_m16_hndgrd";
 		model = "KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\m16a2_handguard_std.p3d";
 	};
+	class Proxymount_promag_delta_style: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_mount_m16";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\mount_promag_delta_style.p3d";
+	};
 	class Proxym16a1_handguard_std: ProxyAttachment
 	{
 		scope = 2;
@@ -3112,5 +3142,145 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "kr_gl";
 		model = "KR\weapons\kr_weaponpack_2\attachments\gl\m203\gl_m203.p3d";
+	};
+//////////// AK12
+	class Proxymuzzle545_suppressor_ak12: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzleAK12";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\muzzle545_suppressor_ak12.p3d";
+	};
+	class Proxymuzzle545_flashhider_ak12: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzleAK12";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle545\muzzle545_flashhider_ak12.p3d";
+	};
+	class Proxyak12_stock_tube: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_fstock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak12_parts\ak12_stock_tube.p3d";
+	};
+	class Proxyak12_stock_evo: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_fstock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak12_parts\ak12_stock_evo.p3d";
+	};
+	class Proxyak12_handguard: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak12_hndgrd";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak12_parts\ak12_handguard.p3d";
+	};
+	class Proxyak12_receiver: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak12_receiver";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak12_parts\ak12_receiver.p3d";
+	};
+
+/////////// AK545
+	class Proxyak545_stock_tube: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak545_stock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak545_parts\ak545_stock_tube.p3d";
+	};
+	class Proxyak545_handguard: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak545_hndgrd";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak545_parts\ak545_handguard.p3d";
+	};
+	class Proxyak545_receiver: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak545_receiver";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak545_parts\ak545_receiver.p3d";
+	};
+
+//////////// AK308
+	class ProxyMag_762_51_ak308_std_20Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\Mag_762_51_ak308_std_20Rnd.p3d";
+	};
+	class ProxyMag_762_51_ak308_promag_24Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\Mag_762_51_ak308_promag_24Rnd.p3d";
+	};
+	class Proxymuzzle308_suppressor_ak308: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzleAK308";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\muzzle308_suppressor_ak308.p3d";
+	};
+	class Proxyak308_receiver: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak308_receiver";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak308_parts\ak308_receiver.p3d";
+	};
+
+////// AK50
+
+	class Proxymuzzle50bmg_flashhider_AK50: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle50bmgAK";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle50BMG\muzzle50bmg_flashhider_AK50.p3d";
+	};
+	class Proxyak50_receiver: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak50_receiver";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak50_parts\ak50_receiver.p3d";
+	};
+
+/////// Vector
+
+	class Proxyvector_stock_std: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_vector_stock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\vector_parts\vector_stock_std.p3d";
+	};
+	class Proxyvector_stock_tube: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_vector_stock";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\vector_parts\vector_stock_tube.p3d";
+	};
+
+	class ProxyMag_45ACP_glock21_std_13Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\45ACP\Mag_45ACP_glock21_std_13Rnd.p3d";
+	};
+	class ProxyMag_45ACP_magex_g30_30Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "magazine";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\45ACP\Mag_45ACP_magex_g30_30Rnd.p3d";
+	};
+
+	class Proxymuzzle45ACP_suppressor_omega_45k: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_muzzle45ACP";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle45ACP\muzzle45ACP_suppressor_omega_45k.p3d";
+	};
+
+	class Proxyscope_smle: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_weaponOpticsSmle";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\other\scope_smle.p3d";
 	};
 };

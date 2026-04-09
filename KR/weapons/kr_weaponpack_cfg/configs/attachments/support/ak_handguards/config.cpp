@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class kr_attachments_ak_handguards
 	{
-		units[] = {"kr_ak_hguard_akm_wood","kr_ak_hguard_vpo_136","kr_ak_hguard_vpo_209","kr_ak_hguard_akm_wood_damaged","kr_ak_hguard_wood","kr_ak_hguard_plastic","kr_ak_hguard_plastic_plum","kr_ak_hguard_ak100_plastic","kr_ak_hguard_m1b_mk3","kr_ak_hguard_m1b_mk3_raild","kr_ak_hguard_m1b_tdi","kr_ak_hguard_m1b_tdi_gld","kr_ak_hguard_m1b_tdi_red","kr_ak_hguard_m1b_tdi_raild","kr_ak_hguard_m1b_tdi_gld_raild","kr_ak_hguard_m1b_tdi_red_raild","kr_ak_hguard_aks74u","kr_ak_hguard_magpul_moe","kr_ak_hguard_magpul_moe_fde","kr_ak_hguard_magpul_moe_od","kr_ak_hguard_magpul_moe_plm","kr_ak_hguard_magpul_moe_sg","kr_ak_hguard_magpul_moe_raild","kr_ak_hguard_magpul_moe_fde_raild","kr_ak_hguard_magpul_moe_od_raild","kr_ak_hguard_magpul_moe_plm_raild","kr_ak_hguard_magpul_moe_sg_raild","kr_ak_hguard_magpul_zhukov","kr_ak_hguard_magpul_zhukov_fde","kr_ak_hguard_magpul_zhukov_plm","kr_ak_hguard_magpul_zhukov_raild","kr_ak_hguard_magpul_zhukov_fde_raild","kr_ak_hguard_magpul_zhukov_plm_raild","kr_ak_hguard_b10_swiss","kr_ak_hguard_zenit_b10m_b19","kr_ak_hguard_RS47","kr_ak_hguard_zenit_b11","kr_ak_hguard_hexagon","kr_ak_hguard_hexagon_red","kr_ak_hguard_hexagon_raild","kr_ak_hguard_hexagon_red_raild","kr_ak_hguard_agressor","kr_ak_hguard_krebs_ufm","kr_ak_hguard_krebs_ufm_raild","kr_ak_hguard_xrsu47su","kr_ak_hguard_vltor_cmrd","kr_ak_hguard_vltor_cmrd_raild","kr_ak_hguard_troy_combo","kr_ak_hguard_troy_combo_raild","kr_ak_hguard_vs_24_33c","kr_ak_hguard_vs_24_33c_wht","kr_ak_hguard_vs_24_33c_raild","kr_ak_hguard_vs_24_33c_wht_raild","kr_ak_hguard_zenit_b31c","kr_ak_hguard_alfa_arms_goliaf"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","kr_data","kr_attachments_support"};
@@ -31,6 +31,8 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\akm_wood.rvmat"};
 		recoilModifier[] = {0.7,0.8,1};	
 		swayModifier[] = {0.7,1,0.8};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
+		
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -59,7 +61,7 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ak_hguard_vpo_136_dsc";
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\vpo_136_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\vpo_136.rvmat"};
-
+		
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 8;
@@ -150,6 +152,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\wood.rvmat"};
 		recoilModifier[] = {0.7,0.7,1};	
 		swayModifier[] = {0.8,1,0.7};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -186,6 +189,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\plastic.rvmat"};
 		recoilModifier[] = {0.7,0.7,1};	
 		swayModifier[] = {0.8,1,0.8};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -231,6 +235,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\ak100_plastic.rvmat"};
 		recoilModifier[] = {0.8,0.8,1};	
 		swayModifier[] = {0.7,1,0.7};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -274,6 +279,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\m1b_mk3.rvmat"};
 		recoilModifier[] = {0.85,0.85,1};	
 		swayModifier[] = {0.85,1,0.85};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -328,6 +334,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\m1b_tdi.rvmat"};
 		recoilModifier[] = {0.8,0.7,1};	
 		swayModifier[] = {0.85,1,0.75};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -451,6 +458,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\magpul_moe.rvmat"};
 		recoilModifier[] = {0.7,0.5,1};	
 		swayModifier[] = {0.65,1,0.88};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -563,6 +571,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\magpul_zhukov.rvmat"};
 		recoilModifier[] = {0.65,0.55,1};	
 		swayModifier[] = {0.6,1,0.8};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -644,6 +653,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\b10_swiss.rvmat"};
 		recoilModifier[] = {0.8,0.7,1};	
 		swayModifier[] = {0.8,1,0.7};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -685,6 +695,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\zenit_b10m_b19.rvmat"};
 		recoilModifier[] = {0.5,0.7,1};	
 		swayModifier[] = {0.5,1,0.7};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -726,6 +737,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\RS47.rvmat"};
 		recoilModifier[] = {0.6,0.6,1};	
 		swayModifier[] = {0.5,1,0.8};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -876,6 +888,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\agressor.rvmat"};
 		recoilModifier[] = {0.6,0.5,1};	
 		swayModifier[] = {0.55,1,0.8};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -965,7 +978,7 @@ class cfgVehicles
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_xrsu47su.p3d";
 		inventorySlot[] = {"kr_aks74u_hndgrd"};
 		weight = 520;
-		itemSize[] = {2,1};
+		itemSize[] = {3,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\xrsu47su_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\xrsu47su.rvmat"};
 		recoilModifier[] = {0.4,0.45,1};	
@@ -984,7 +997,7 @@ class cfgVehicles
 		{
 			grip = 3;
 			light = 3;
-			holo = 2;
+			holo = 1;
 		};
 		attachments[] = {"kr_foregrip","kr_pointer_1","kr_light_right","kr_light_left"};
 		class DamageSystem
@@ -1118,6 +1131,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\vs_24_33c.rvmat"};
 		recoilModifier[] = {0.45,0.45,1};	
 		swayModifier[] = {0.55,1,0.55};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 9;
@@ -1186,6 +1200,7 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\zenit_b31c.rvmat"};
 		recoilModifier[] = {0.6,0.52,1};	
 		swayModifier[] = {0.6,1,0.8};
+		inventorySlot[] = {"kr_ak_hndgrd_short","kr_ak_hndgrd"};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -1222,7 +1237,7 @@ class cfgVehicles
 		descriptionShort = "$STR_kr_weapons_attachments_ak_hguard_alfa_arms_goliaf_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\support\ak_handguards\ak_handguard_alfa_arms_goliaf.p3d";
 		inventorySlot[] = {"kr_aks74u_hndgrd"};
-		weight = 150;
+		weight = 350;
 		itemSize[] = {3,1};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\alfa_arms_goliaf_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\support\ak_handguards\data\alfa_arms_goliaf.rvmat"};
@@ -1243,7 +1258,7 @@ class cfgVehicles
 		{
 			grip = 2;
 			light = 2;
-			holo = 1;
+			holo = 2;
 		};
 		class DamageSystem
 		{

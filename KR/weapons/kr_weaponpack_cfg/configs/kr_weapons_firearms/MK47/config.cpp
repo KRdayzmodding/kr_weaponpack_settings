@@ -43,7 +43,7 @@ class cfgWeapons
 		ejectType = 1;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {2,2,1.1};
-		simpleHiddenSelections[] = {"hide_barrel","hide_pistolgrip","hide_muzzle","fold","unfold","rear_sights","hide_tube"};
+		simpleHiddenSelections[] = {"hide_barrel","hide_pistolgrip","hide_muzzle","fold","unfold","rear_sights","hide_tube","hide_stockpart"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\MK47\data\mk47.rvmat"};
 		reloadAction = "ReloadM4";

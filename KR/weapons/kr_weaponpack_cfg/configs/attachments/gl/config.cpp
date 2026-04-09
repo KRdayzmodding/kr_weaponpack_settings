@@ -13,6 +13,9 @@ class Mode_Single;
 class Mode_SemiAuto;
 class Mode_kr_GL;
 class OpticsInfoRifle;
+
+class kr_Gunplay_Base;
+
 class cfgWeapons
 {
 	class Rifle_Base;
@@ -35,6 +38,16 @@ class cfgWeapons
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {1,1,1};
         inventorySlot[]+={"kr_gl"};
+
+		class kr_description
+		{
+			kr_tier = 1;
+		};
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics	= -15;
+		};
 
 		class NoiseShoot
 		{

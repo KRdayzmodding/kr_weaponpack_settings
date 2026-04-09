@@ -121,7 +121,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_9x19_quakemaker";
 		initSpeed = 290;
 		typicalSpeed = 290;
-		airFriction = -0.003;
+		airFriction = -0.0093;
 		damageBarrel = 263;
 		damageBarrelDestroyed = 263;
 		weight = 0.0084;
@@ -139,8 +139,8 @@ class CfgAmmo
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 1.0;
-			defaultDamageOverride[] = {{0.955, 1.0}, {0.941, 0.8}, {0.928, 0.5}, {0.914, 0.1}};
-			defaultDamageOverrideString = "{{0.955, 1.0}, {0.941, 0.8}, {0.928, 0.5}, {0.914, 0.1}}";
+			defaultDamageOverride[] = {{0.865, 1.0}, {0.825, 0.8}, {0.794, 0.5}, {0.761, 0.1}};
+			defaultDamageOverrideString = "{{0.865, 1.0}, {0.825, 0.8}, {0.794, 0.5}, {0.761, 0.1}}";
 
 			class Health
 			{
@@ -155,8 +155,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 40;
-				damageOverride[] = {{0.9,1.0}};
-				damageOverrideString = "{{0.9,1.0}}";
+				damageOverride[] = {{0.85,1.0}};
+				damageOverrideString = "{{0.85,1.0}}";
 			};
 		};
 	};
@@ -168,7 +168,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_9x19_rip";
 		initSpeed = 381;
 		typicalSpeed = 381;
-		airFriction = -0.005;
+		airFriction = -0.0108;
 		damageBarrel = 315;
 		damageBarrelDestroyed = 315;
 		weight = 0.0034;
@@ -179,15 +179,15 @@ class CfgAmmo
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			isHollowPoint = 1;
-			hollowPointMultiplier = 7.5;
+			hollowPointMultiplier = 8;
 		};
 		class DamageApplied
 		{
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 1.0;
-			defaultDamageOverride[] = {{0.927, 1.0}, {0.861, 0.8}, {0.819, 0.5}, {0.798, 0.1}};
-			defaultDamageOverrideString = "{{0.927, 1.0}, {0.861, 0.8}, {0.819, 0.5}, {0.798, 0.1}}";
+			defaultDamageOverride[] = {{0.851, 1.0}, {0.726, 0.8}, {0.649, 0.5}, {0.614, 0.1}};
+			defaultDamageOverrideString = "{{0.851, 1.0}, {0.726, 0.8}, {0.649, 0.5}, {0.614, 0.1}}";
 
 			class Health
 			{
@@ -202,8 +202,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 40;
-				damageOverride[] = {{0.98, 1.0}, {0.94, 0.5}, {0.78, 0.1}};
-				damageOverrideString = "{{0.98, 1.0}, {0.94, 0.5}, {0.78, 0.1}}";
+				damageOverride[] = {{0.851, 1.0}, {0.726, 0.5}, {0.649, 0.1}};
+				damageOverrideString = "{{0.851, 1.0}, {0.726, 0.5}, {0.649, 0.1}}";
 			};
 		};
 	};
@@ -504,7 +504,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_9x18_sp7_gz";
 		initSpeed = 290;
 		typicalSpeed = 290;
-		airFriction = -0.0015;
+		airFriction = -0.01354;
 		damageBarrel = 180;
 		damageBarrelDestroyed = 180;
 		weight = 0.0084;
@@ -515,19 +515,19 @@ class CfgAmmo
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			isHollowPoint = 1;
-			hollowPointMultiplier = 8;
+			hollowPointMultiplier = 7;
 		};
 		class DamageApplied
 		{
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 0.7;
-			defaultDamageOverride[] = {{0.993, 1.0}, {0.986, 0.8}, {0.979, 0.5}, {0.962, 0.1}};
-			defaultDamageOverrideString = "{{0.993, 1.0}, {0.986, 0.8}, {0.979, 0.5}, {0.962, 0.1}}";
+			defaultDamageOverride[] = {{0.850, 1.0}, {0.763, 0.8}, {0.715, 0.5}, {0.670, 0.1}};
+			defaultDamageOverrideString = "{{0.850, 1.0}, {0.763, 0.8}, {0.715, 0.5}, {0.670, 0.1}}";
 
 			class Health
 			{
-				damage = 8;
+				damage = 10;
 			};
 
 			class Blood
@@ -538,8 +538,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 15;
-				damageOverride[] = {{0.979, 1.0}, {0.962, 0.5}, {0.928, 0.1}};
-				damageOverrideString = "{{0.979, 1.0}, {0.962, 0.5}, {0.928, 0.1}}";
+				damageOverride[] = {{0.85, 1.0}, {0.763, 0.5}, {0.715, 0.1}};
+				damageOverrideString = "{{0.85, 1.0}, {0.763, 0.5}, {0.715, 0.1}}";
 			};
 		};
 	};
@@ -979,7 +979,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_762x25_HP";
 		initSpeed = 400;
 		typicalSpeed = 400;
-		airFriction = -0.0015;
+		airFriction = -0.01609;
 		damageBarrel = 310;
 		damageBarrelDestroyed = 310;
 		weight = 0.0084;
@@ -990,19 +990,19 @@ class CfgAmmo
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			isHollowPoint = 1;
-			hollowPointMultiplier = 8.5;
+			hollowPointMultiplier = 8;
 		};
 		class DamageApplied
 		{
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 0.7;
-			defaultDamageOverride[] = {{0.985, 1.0}, {0.978, 0.8}, {0.97, 0.5}, {0.963, 0.1}};
-			defaultDamageOverrideString = "{{0.985, 1.0}, {0.978, 0.8}, {0.97, 0.5}, {0.963, 0.1}}";
+			defaultDamageOverride[] = {{0.850, 1.0}, {0.783, 0.8}, {0.721, 0.5}, {0.669, 0.1}};
+			defaultDamageOverrideString = "{{0.850, 1.0}, {0.783, 0.8}, {0.721, 0.5}, {0.669, 0.1}}";
 
 			class Health
 			{
-				damage = 9;
+				damage = 10;
 			};
 
 			class Blood
@@ -1013,8 +1013,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 40;
-				damageOverride[] = {{1.0, 1.0},  {0.97, 0.5}, {0.94, 0.2}};
-				damageOverrideString = "{{1.0, 1.0},  {0.97, 0.5}, {0.94, 0.2}}";
+				damageOverride[] = {{1.0, 0.85},  {0.75, 0.5}, {0.7, 0.2}};
+				damageOverrideString = "{{1.0, 0.85},  {0.75, 0.5}, {0.7, 0.2}}";
 			};
 		};
 	};
@@ -1370,7 +1370,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_545x39_HP";
 		initSpeed = 450;
 		typicalSpeed = 450;
-		airFriction = -0.0017;
+		airFriction = -0.01519;
 		damageBarrel = 320;
 		damageBarrelDestroyed = 320;
 		weight = 0.009;
@@ -1380,19 +1380,19 @@ class CfgAmmo
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			isHollowPoint = 1;
-			hollowPointMultiplier = 14;
+			hollowPointMultiplier = 10;
 		};
 		class DamageApplied
 		{
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 0.7;
-			defaultDamageOverride[] = {{0.982, 1.0}, {0.967, 0.8}, {0.918, 0.5}, {0.844, 0.1}};
-			defaultDamageOverrideString = "{{0.982, 1.0}, {0.967, 0.8}, {0.918, 0.5}, {0.844, 0.1}}";
+			defaultDamageOverride[] = {{0.850, 1.0}, {0.742, 0.8}, {0.472, 0.5}, {0.213, 0.1}};
+			defaultDamageOverrideString = "{{0.850, 1.0}, {0.742, 0.8}, {0.472, 0.5}, {0.213, 0.1}}";
 
 			class Health
 			{
-				damage = 12;
+				damage = 15;
 			};
 
 			class Blood
@@ -1403,8 +1403,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 25;
-				damageOverride[] = {{0.97, 1.0},{0.7, 0.1}};
-				damageOverrideString = "{{0.97, 1.0},{0.7, 0.1}}";
+				damageOverride[] = {{{0.85, 1.0},{0.472, 0.1}}};
+				damageOverrideString = "{{0.85, 1.0},{0.213, 0.1}}";
 			};
 		};
 	};
@@ -1679,7 +1679,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_556x45_warmageddon";
 		initSpeed = 650;
 		typicalSpeed = 650;
-		airFriction = -0.0017;
+		airFriction = -0.01593;
 		damageBarrel = 320;
 		damageBarrelDestroyed = 320;
 		weight = 0.009;
@@ -1696,12 +1696,12 @@ class CfgAmmo
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 1.0;
-			defaultDamageOverride[] = {{0.983, 1.0}, {0.966, 0.8}, {0.918, 0.5}, {0.843, 0.1}};
-			defaultDamageOverrideString = "{{0.983, 1.0}, {0.966, 0.8}, {0.918, 0.5}, {0.843, 0.1}}";
+			defaultDamageOverride[] = {{0.850, 1.0}, {0.722, 0.8}, {0.452, 0.5}, {0.199, 0.1}};
+			defaultDamageOverrideString = "{{0.850, 1.0}, {0.722, 0.8}, {0.452, 0.5}, {0.199, 0.1}}";
 
 			class Health
 			{
-				damage = 12;
+				damage = 10;
 			};
 
 			class Blood
@@ -1712,8 +1712,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 40;
-				damageOverride[] = {{0.9, 1.0},{0.5, 0.1}};
-				damageOverrideString = "{{0.9, 1.0},{0.5, 0.1}}";
+				damageOverride[] = {{0.829, 1.0}, {0.214, 0.1}};
+				damageOverrideString = "{{0.829, 1.0}, {0.214, 0.1}}";
 			};
 		};
 	};
@@ -2079,7 +2079,7 @@ class CfgAmmo
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			isHollowPoint = 1;
-			hollowPointMultiplier = 16;
+			hollowPointMultiplier = 10;
 		};
 		class DamageApplied
 		{
@@ -2091,7 +2091,7 @@ class CfgAmmo
 
 			class Health
 			{
-				damage = 20;
+				damage = 17;
 			};
 
 			class Blood
@@ -2107,6 +2107,232 @@ class CfgAmmo
 			};
 		};
 	};
+
+
+	class kr_Bullet_300_Base: Bullet_Base
+	{
+		scope = 0;
+		round = "";
+		spawnPileType = "";
+		casing = "FxCartridge_kr_300";
+		hit = 9.5;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		airLock = 1;
+		initSpeed = 640;
+		typicalSpeed = 740;
+		airFriction = -0.0015;
+		caliber = 1.0;
+		deflecting = 10;
+		damageBarrel = 500;
+		damageBarrelDestroyed = 500;
+		weight = 0.008;
+		impactBehaviour = 0;
+		hitAnimation = 1;
+		unconRefillModifier = 4;
+		kr_caliber = "7.62x39";
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			defaultDamageOverrideString = "{{0.95,1.0}}";
+			class Health
+			{
+				damage = 110;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 110;
+				damageOverride[] = {{0.8,1.0}};
+				damageOverrideString = "{{0.8,1.0}}";
+			};
+		};
+		class NoiseHit
+		{
+			strength = 10;
+			type = "shot";
+		};
+	};
+
+	class Bullet_300_ap: kr_Bullet_300_Base
+	{
+		scope = 1;
+		round = "FxRound_300_ap";
+		spawnPileType = "kr_Ammo_300_ap";
+		initSpeed = 730;
+		typicalSpeed = 730;
+		airFriction = -0.002;
+		damageBarrel = 725;
+		damageBarrelDestroyed = 725;
+		weight = 0.008;
+		unconRefillModifier = 6;
+		dispersion = 0;
+
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.771, 1.0}, {0.670, 0.8}, {0.607, 0.5}, {0.527, 0.3}};
+			defaultDamageOverrideString = "{{0.771, 1.0}, {0.670, 0.8}, {0.607, 0.5}, {0.527, 0.3}}";
+
+			class Health
+			{
+				armorDamage = 3;
+				damage = 105;
+			};
+
+			class Blood
+			{
+				damage = 100;
+			};
+
+			class Shock
+			{
+				damage = 50;
+				damageOverride[] = {{0.8, 1.0},{0.4, 0.1}};
+				damageOverrideString = "{{0.8, 1.0},{0.4, 0.1}}";
+			};
+		};
+	};
+
+	class Bullet_300_bpz_fmj: kr_Bullet_300_Base
+	{
+		scope = 1;
+		round = "FxRound_300_bpz_fmj";
+		spawnPileType = "kr_Ammo_300_bpz_fmj";
+		initSpeed = 755;
+		typicalSpeed = 755;
+		airFriction = -0.0015;
+		damageBarrel = 500;
+		damageBarrelDestroyed = 500;
+		weight = 0.009;
+		unconRefillModifier = 6;
+		dispersion = 0;
+
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.823, 1.0}, {0.740, 0.8}, {0.687, 0.5}, {0.619, 0.3}};
+			defaultDamageOverrideString = "{{0.823, 1.0}, {0.740, 0.8}, {0.687, 0.5}, {0.619, 0.3}}";
+
+			class Health
+			{
+				damage = 90;
+			};
+
+			class Blood
+			{
+				damage = 100;
+			};
+
+			class Shock
+			{
+				damage = 40;
+				damageOverride[] = {{0.8, 1.0},{0.4, 0.1}};
+				damageOverrideString = "{{0.8, 1.0},{0.4, 0.1}}";
+			};
+		};
+	};
+	class Bullet_300_m62: kr_Bullet_300_Base
+	{
+		scope = 1;
+		round = "FxRound_300_m62";
+		spawnPileType = "kr_Ammo_300_m62";
+		initSpeed = 720;
+		typicalSpeed = 720;
+		airFriction = -0.002;
+		damageBarrel = 500;
+		damageBarrelDestroyed = 500;
+		weight = 0.007;
+		tracerScale = 2.0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 1;
+		model = "\KR\weapons\kr_weaponpack\ammunition\bullets\pistol_tracer_red.p3d";
+		unconRefillModifier = 6;
+		dispersion = -0.0003;
+
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.803, 1.0}, {0.697, 0.8}, {0.644, 0.5}, {0.571, 0.3}};
+			defaultDamageOverrideString = "{{0.803, 1.0}, {0.697, 0.8}, {0.644, 0.5}, {0.571, 0.3}}";
+
+			class Health
+			{
+				damage = 95;
+			};
+
+			class Blood
+			{
+				damage = 100;
+			};
+
+			class Shock
+			{
+				damage = 50;
+				damageOverride[] = {{0.8, 1.0},{0.4, 0.1}};
+				damageOverrideString = "{{0.8, 1.0},{0.4, 0.1}}";
+			};
+		};
+	};
+
+	class Bullet_300_vmax: kr_Bullet_300_Base
+	{
+		scope = 1;
+		round = "FxRound_300_vmax";
+		spawnPileType = "kr_Ammo_300_vmax";
+		initSpeed = 754;
+		typicalSpeed = 754;
+		airFriction = -0.0025;
+		damageBarrel = 520;
+		damageBarrelDestroyed = 520;
+		weight = 0.015;
+		unconRefillModifier = 6;
+		dispersion = 0.0045;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			isHollowPoint = 1;
+			hollowPointMultiplier = 10;
+		};
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 0.7;
+			defaultDamageOverride[] = {{0.939, 1.0}, {0.840, 0.8}, {0.798, 0.5}, {0.741, 0.1}};
+			defaultDamageOverrideString = "{{0.939, 1.0}, {0.840, 0.8}, {0.798, 0.5}, {0.741, 0.1}}";
+
+			class Health
+			{
+				damage = 17;
+			};
+
+			class Blood
+			{
+				damage = 100;
+			};
+
+			class Shock
+			{
+				damage = 50;
+				damageOverride[] = {{0.8, 1.0},{0.4, 0.1}};
+				damageOverrideString = "{{0.8, 1.0},{0.4, 0.1}}";
+			};
+		};
+	};
+
 
 	class kr_Bullet_762x51_Base: Bullet_Base
 	{
@@ -2396,7 +2622,7 @@ class CfgAmmo
 
 			class Health
 			{
-				damage = 23;
+				damage = 19;
 			};
 
 			class Blood
@@ -2535,7 +2761,7 @@ class CfgAmmo
 
 			class Health
 			{
-				damage = 23;
+				damage = 20;
 			};
 
 			class Blood
@@ -2987,7 +3213,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_9x39_HP";
 		initSpeed = 200;
 		typicalSpeed = 200;
-		airFriction = -0.0015;
+		airFriction = -0.00797;
 		damageBarrel = 400;
 		damageBarrelDestroyed = 400;
 		weight = 0.01;
@@ -2997,19 +3223,19 @@ class CfgAmmo
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			isHollowPoint = 1;
-			hollowPointMultiplier = 16;
+			hollowPointMultiplier = 18;
 		};
 		class DamageApplied
 		{
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 0.7;
-			defaultDamageOverride[] = {{0.970, 1.0}, {0.930, 0.8}, {0.900, 0.5}, {0.860, 0.1}};
-			defaultDamageOverrideString = "{{0.970, 1.0}, {0.930, 0.8}, {0.900, 0.5}, {0.860, 0.1}}";
+			defaultDamageOverride[] = {{0.850, 1.0}, {0.683, 0.8}, {0.570, 0.5}, {0.446, 0.1}};
+			defaultDamageOverrideString = "{{0.850, 1.0}, {0.683, 0.8}, {0.570, 0.5}, {0.446, 0.1}}";
 
 			class Health
 			{
-				damage = 19;
+				damage = 10;
 			};
 
 			class Blood
@@ -3020,8 +3246,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 40;
-				damageOverride[] = {{0.9, 1.0},{0.85, 0.5},{0.75, 0.1}};
-				damageOverrideString = "{{0.9, 1.0},{0.85, 0.5},{0.75, 0.1}}";
+				damageOverride[] = {{0.570, 1.0}, {0.463, 0.5}, {0.214, 0.1}};
+				damageOverrideString = "{{0.570, 1.0}, {0.463, 0.5}, {0.214, 0.1}}";
 			};
 		};
 	};
@@ -3208,7 +3434,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_366TKM_Geksa";
 		initSpeed = 550;
 		typicalSpeed = 550;
-		airFriction = -0.0015;
+		airFriction = -0.00663;
 		damageBarrel = 472.5;
 		damageBarrelDestroyed = 472.5;
 		weight = 0.01;
@@ -3218,19 +3444,19 @@ class CfgAmmo
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			isHollowPoint = 1;
-			hollowPointMultiplier = 15;
+			hollowPointMultiplier = 17;
 		};
 		class DamageApplied
 		{
 			type = "Projectile";
 			dispersion = 0.0;
 			bleedThreshold = 1.0;
-			defaultDamageOverride[] = {{0.964, 1.0}, {0.900, 0.8}, {0.875, 0.5}, {0.835, 0.1}};
-			defaultDamageOverrideString = "{{0.964, 1.0}, {0.900, 0.8}, {0.875, 0.5}, {0.835, 0.1}}";
+			defaultDamageOverride[] = {{0.850, 1.0}, {0.630, 0.8}, {0.556, 0.5}, {0.447, 0.1}};
+			defaultDamageOverrideString = "{{0.850, 1.0}, {0.630, 0.8}, {0.556, 0.5}, {0.447, 0.1}}";
 
 			class Health
 			{
-				damage = 20;
+				damage = 10;
 			};
 
 			class Blood
@@ -3241,8 +3467,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 80;
-				damageOverride[] = {{0.9, 1.0},{0.7, 0.1}};
-				damageOverrideString = "{{0.9, 1.0},{0.7, 0.1}}";
+				damageOverride[] = {{0.630, 1.0}, {0.204, 0.1}};
+				damageOverrideString = "{{0.630, 1.0}, {0.204, 0.1}}";
 			};
 		};
 	};
@@ -3440,7 +3666,7 @@ class CfgAmmo
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			isHollowPoint = 1;
-			hollowPointMultiplier = 16;
+			hollowPointMultiplier = 15;
 		};
 		class DamageApplied
 		{
@@ -3452,7 +3678,7 @@ class CfgAmmo
 
 			class Health
 			{
-				damage = 21;
+				damage = 15;
 			};
 
 			class Blood
@@ -4211,7 +4437,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_12x76_RIP";
 		initSpeed = 370;
 		typicalSpeed = 370;
-		airFriction = -0.0015;
+		airFriction = -0.01519;
 		damageBarrel = 1440;
 		damageBarrelDestroyed = 1440;
 		weight = 0.0084;
@@ -4228,8 +4454,8 @@ class CfgAmmo
 			type = "Projectile";
 			dispersion = 0.5;
 			bleedThreshold = 0.3;
-			defaultDamageOverride[] = {{0.984, 1.0}, {0.970, 0.8}, {0.957, 0.5}, {0.914, 0.1}};
-			defaultDamageOverrideString = "{{0.984, 1.0}, {0.970, 0.8}, {0.957, 0.5}, {0.914, 0.1}}";
+			defaultDamageOverride[] = {{0.850, 1.0}, {0.630, 0.8}, {0.556, 0.5}, {0.447, 0.1}};
+			defaultDamageOverrideString = "{{0.850, 1.0}, {0.630, 0.8}, {0.556, 0.5}, {0.447, 0.1}}";
 
 			class Health
 			{
@@ -4244,8 +4470,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 50;
-				damageOverride[] = {{0.9,1.0}};
-				damageOverrideString = "{{0.9,1.0}}";
+				damageOverride[] = {{0.630, 1.0}, {0.204, 0.1}};
+				damageOverrideString = "{{0.630, 1.0}, {0.204, 0.1}}";
 			};
 		};
 	};
@@ -4257,7 +4483,7 @@ class CfgAmmo
 		spawnPileType = "kr_Ammo_12x76_Grizzly40";
 		initSpeed = 360;
 		typicalSpeed = 360;
-		airFriction = -0.0015;
+		airFriction = -0.01729;
 		damageBarrel = 1280;
 		damageBarrelDestroyed = 1280;
 		weight = 0.0084;
@@ -4274,8 +4500,8 @@ class CfgAmmo
 			type = "Projectile";
 			dispersion = 0.2;
 			bleedThreshold = 0.8;
-			defaultDamageOverride[] = {{0.986, 1.0}, {0.978, 0.8}, {0.969, 0.5}, {0.942, 0.1}};
-			defaultDamageOverrideString = "{{0.986, 1.0}, {0.978, 0.8}, {0.969, 0.5}, {0.942, 0.1}}";
+			defaultDamageOverride[] = {{0.850, 1.0}, {0.774, 0.8}, {0.697, 0.5}, {0.506, 0.1}};
+			defaultDamageOverrideString = "{{0.850, 1.0}, {0.774, 0.8}, {0.697, 0.5}, {0.506, 0.1}}";
 
 			class Health
 			{
@@ -4290,8 +4516,8 @@ class CfgAmmo
 			class Shock
 			{
 				damage = 65;
-				damageOverride[] = {{0.9,1.0}};
-				damageOverrideString = "{{0.9,1.0}}";
+				damageOverride[] = {{0.298, 1.0}};
+				damageOverrideString = "{{0.298, 1.0}}";
 			};
 		};
 	};
@@ -4607,6 +4833,227 @@ class CfgAmmo
 		{
 			strength = 20;
 			type = "shot";
+		};
+	};
+
+	class kr_Bullet_303_British_Base: Bullet_Base
+	{
+		scope = 0;
+		round = "";
+		spawnPileType = "";
+		casing = "FxCartridge_kr_303_British";
+		hit = 9.5;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		airLock = 1;
+		initSpeed = 640;
+		typicalSpeed = 740;
+		airFriction = -0.0015;
+		caliber = 1.0;
+		deflecting = 10;
+		damageBarrel = 500;
+		damageBarrelDestroyed = 500;
+		weight = 0.008;
+		impactBehaviour = 0;
+		hitAnimation = 1;
+		unconRefillModifier = 4;
+		kr_caliber = ".303 British";
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.95,1.0}};
+			defaultDamageOverrideString = "{{0.95,1.0}}";
+			class Health
+			{
+				damage = 110;
+			};
+			class Blood
+			{
+				damage = 100;
+			};
+			class Shock
+			{
+				damage = 110;
+				damageOverride[] = {{0.8,1.0}};
+				damageOverrideString = "{{0.8,1.0}}";
+			};
+		};
+		class NoiseHit
+		{
+			strength = 10;
+			type = "shot";
+		};
+	};
+	class Bullet_303_British_AP: kr_Bullet_303_British_Base
+	{
+		scope = 1;
+		round = "FxRound_303_British_AP";
+		spawnPileType = "kr_Ammo_303_British_AP";
+		initSpeed = 730;
+		typicalSpeed = 730;
+		airFriction = -0.002;
+		damageBarrel = 725;
+		damageBarrelDestroyed = 725;
+		weight = 0.008;
+		unconRefillModifier = 6;
+		dispersion = 0;
+
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.771, 1.0}, {0.670, 0.8}, {0.607, 0.5}, {0.527, 0.3}};
+			defaultDamageOverrideString = "{{0.771, 1.0}, {0.670, 0.8}, {0.607, 0.5}, {0.527, 0.3}}";
+
+			class Health
+			{
+				armorDamage = 3;
+				damage = 100;
+			};
+
+			class Blood
+			{
+				damage = 100;
+			};
+
+			class Shock
+			{
+				damage = 50;
+				damageOverride[] = {{0.8, 1.0},{0.4, 0.1}};
+				damageOverrideString = "{{0.8, 1.0},{0.4, 0.1}}";
+			};
+		};
+	};
+	class Bullet_303_British: kr_Bullet_303_British_Base
+	{
+		scope = 1;
+		round = "FxRound_303_British";
+		spawnPileType = "kr_Ammo_303_British";
+		initSpeed = 755;
+		typicalSpeed = 755;
+		airFriction = -0.0015;
+		damageBarrel = 500;
+		damageBarrelDestroyed = 500;
+		weight = 0.009;
+		unconRefillModifier = 6;
+		dispersion = 0;
+
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.823, 1.0}, {0.740, 0.8}, {0.687, 0.5}, {0.619, 0.3}};
+			defaultDamageOverrideString = "{{0.823, 1.0}, {0.740, 0.8}, {0.687, 0.5}, {0.619, 0.3}}";
+
+			class Health
+			{
+				damage = 95;
+			};
+
+			class Blood
+			{
+				damage = 100;
+			};
+
+			class Shock
+			{
+				damage = 40;
+				damageOverride[] = {{0.8, 1.0},{0.4, 0.1}};
+				damageOverrideString = "{{0.8, 1.0},{0.4, 0.1}}";
+			};
+		};
+	};
+	class Bullet_303_British_T: kr_Bullet_303_British_Base
+	{
+		scope = 1;
+		round = "FxRound_303_British_T";
+		spawnPileType = "kr_Ammo_303_British_T";
+		initSpeed = 720;
+		typicalSpeed = 720;
+		airFriction = -0.002;
+		damageBarrel = 500;
+		damageBarrelDestroyed = 500;
+		weight = 0.007;
+		tracerScale = 2.0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 1;
+		model = "\KR\weapons\kr_weaponpack\ammunition\bullets\pistol_tracer_red.p3d";
+		unconRefillModifier = 6;
+		dispersion = -0.0003;
+
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 1.0;
+			defaultDamageOverride[] = {{0.803, 1.0}, {0.697, 0.8}, {0.644, 0.5}, {0.571, 0.3}};
+			defaultDamageOverrideString = "{{0.803, 1.0}, {0.697, 0.8}, {0.644, 0.5}, {0.571, 0.3}}";
+
+			class Health
+			{
+				damage = 95;
+			};
+
+			class Blood
+			{
+				damage = 100;
+			};
+
+			class Shock
+			{
+				damage = 50;
+				damageOverride[] = {{0.8, 1.0},{0.4, 0.1}};
+				damageOverrideString = "{{0.8, 1.0},{0.4, 0.1}}";
+			};
+		};
+	};
+	class Bullet_303_British_HP: kr_Bullet_303_British_Base
+	{
+		scope = 1;
+		round = "FxRound_303_British_HP";
+		spawnPileType = "kr_Ammo_303_British_HP";
+		initSpeed = 754;
+		typicalSpeed = 754;
+		airFriction = -0.0025;
+		damageBarrel = 520;
+		damageBarrelDestroyed = 520;
+		weight = 0.015;
+		unconRefillModifier = 6;
+		dispersion = 0.0045;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			isHollowPoint = 1;
+			hollowPointMultiplier = 10;
+		};
+		class DamageApplied
+		{
+			type = "Projectile";
+			dispersion = 0.0;
+			bleedThreshold = 0.7;
+			defaultDamageOverride[] = {{0.939, 1.0}, {0.840, 0.8}, {0.798, 0.5}, {0.741, 0.1}};
+			defaultDamageOverrideString = "{{0.939, 1.0}, {0.840, 0.8}, {0.798, 0.5}, {0.741, 0.1}}";
+
+			class Health
+			{
+				damage = 22;
+			};
+
+			class Blood
+			{
+				damage = 100;
+			};
+
+			class Shock
+			{
+				damage = 50;
+				damageOverride[] = {{0.8, 1.0},{0.4, 0.1}};
+				damageOverrideString = "{{0.8, 1.0},{0.4, 0.1}}";
+			};
 		};
 	};
 };
@@ -4959,7 +5406,41 @@ class CfgAmmoTypes
 		name = "Bullet_127x55_PS12HP";
 	};
 
+	class AType_Bullet_300_ap
+	{
+		name = "Bullet_300_ap";
+	};
+	class AType_Bullet_300_bpz_fmj
+	{
+		name = "Bullet_300_bpz_fmj";
+	};
+	class AType_Bullet_300_m62
+	{
+		name = "Bullet_300_m62";
+	};
+	class AType_Bullet_300_vmax
+	{
+		name = "Bullet_300_vmax";
+	};
+
+	class AType_Bullet_303_British_AP
+	{
+		name = "Bullet_303_British_AP";
+	};
+	class AType_Bullet_303_British
+	{
+		name = "Bullet_303_British";
+	};
+	class AType_Bullet_303_British_HP
+	{
+		name = "Bullet_303_British_HP";
+	};
+	class AType_Bullet_303_British_T
+	{
+		name = "Bullet_303_British_T";
+	};
 };
+
 class cfgVehicles
 {
 	class FxRound;
@@ -5700,5 +6181,48 @@ class cfgVehicles
 	class FxCartridge_kr_50BMG : FxCartridge
 	{
 		model = "KR\weapons\kr_weaponpack\ammunition\bullets\50bmg_case.p3d";
+	};
+
+	class FxCartridge_kr_300 : FxCartridge
+	{
+		model = "KR\weapons\kr_weaponpack_2\ammunition\bullets\300_case.p3d";
+	};
+	class FxRound_300_ap: FxRound
+	{
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\bullets\300_ap_SingleRound.p3d";
+	};
+	class FxRound_300_bpz_fmj: FxRound
+	{
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\bullets\300_bpz_fmj_SingleRound.p3d";
+	};
+	class FxRound_300_m62: FxRound
+	{
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\bullets\300_m62_SingleRound.p3d";
+	};
+	class FxRound_300_vmax: FxRound
+	{
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\bullets\300_vmax_SingleRound.p3d";
+	};
+
+	class FxRound_303_British_T: FxRound
+	{
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\bullets\303_British_T_SingleRound.p3d";
+	};
+	class FxRound_303_British_AP: FxRound
+	{
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\bullets\303_British_AP_SingleRound.p3d";
+	};
+	class FxRound_303_British: FxRound
+	{
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\bullets\303_British_SingleRound.p3d";
+	};
+	class FxRound_303_British_HP: FxRound
+	{
+		model = "\KR\weapons\kr_weaponpack_2\ammunition\bullets\303_British_HP_SingleRound.p3d";
+	};
+
+	class FxCartridge_kr_303_British : FxCartridge
+	{
+		model = "KR\weapons\kr_weaponpack_2\ammunition\bullets\303_British_case.p3d";
 	};
 };

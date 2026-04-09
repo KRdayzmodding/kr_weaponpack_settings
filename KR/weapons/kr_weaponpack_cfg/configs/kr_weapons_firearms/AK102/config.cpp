@@ -22,12 +22,13 @@ class cfgWeapons
 	{
 		scope = 0;
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_firearms\ak102\ak102.p3d";
-		attachments[] = {"kr_muzzle556","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle556","kr_ak_hndgrd_short","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
 		weight = 2400;
 		WeaponLength = 0.56;
 		itemSize[] = {8,3};
-		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
-		magazines[] = {"Mag_556x45_CWP_30Rnd","Mag_556x45_6L29_30Rnd"};
+		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_300_m62","kr_Ammo_300_ap","kr_Ammo_300_vmax","kr_Ammo_300_bpz_fmj"};
+		kr_bannedAmmo[] = {"Bullet_300_m62","Bullet_300_ap","Bullet_300_vmax","Bullet_300_bpz_fmj"};
+		magazines[] = {"Mag_556x45_CWP_30Rnd","Mag_556x45_6L29_30Rnd","Mag_556x45_molot_45Rnd"};
 		barrelArmor = 5.1;
 		initSpeedMultiplier = 1.1;
 		recoilModifier[] = {1.1,1.05,1.1};
@@ -40,7 +41,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			receiverSlotName = "kr_ak_receiver";
-			handguardSlotName = "kr_ak_hndgrd";
+			handguardSlotName = "kr_ak_hndgrd_short";
 			buttstockSlotName = "kr_ak_fstock";
 		};
 		class kr_description

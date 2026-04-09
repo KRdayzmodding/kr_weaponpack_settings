@@ -67,7 +67,7 @@ class cfgWeapons
 			{
 				class SmokeCloud
 				{
-					overrideParticle = "weapon_shot_silencer_01";
+					overrideParticle = "kr_weapon_shot_silencer_01";
 				};
 			};
 			class OnOverheating

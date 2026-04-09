@@ -17,6 +17,7 @@ class CfgMods
 		version = "1.3.11";
 		defines[] = 
 		{
+			"KR_NO_FOLIAGE",
 			//"KR_DAMAGE_DEBUG" //Запускает дебагер урона		
 		};
 
@@ -43,151 +44,176 @@ class CfgSlots
 	class Slot_kr_spas12_stock
 	{
 		name = "kr_spas12_stock";
-		displayName = "#STR_kr_slot_spas12_stock";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_spas12_stock";
 	};
 	class Slot_kr_ar_pistolgrip
 	{
 		name = "kr_ar_pistolgrip";
-		displayName = "#STR_kr_slot_m4_pistolgrip";
+		displayName = "#STR_kr_slot_pgrip";
 		ghostIcon = "set:kr_weapon_icons image:kr_pistolgrip";
 	};
 	class Slot_kr_fal_pistolgrip
 	{
 		name = "kr_fal_pistolgrip";
-		displayName = "#STR_kr_slot_fal_pistolgrip";
+		displayName = "#STR_kr_slot_pgrip";
 		ghostIcon = "set:kr_weapon_icons image:kr_fal_pistolgrip";
 	};
 	class Slot_kr_ak_pistolgrip
 	{
 		name = "kr_ak_pistolgrip";
-		displayName = "#STR_kr_slot_ak_pistolgrip";
+		displayName = "#STR_kr_slot_pgrip";
 		ghostIcon = "set:kr_weapon_icons image:kr_pistolgrip";
 	};
 	class Slot_kr_muzzle50bmg
 	{
 		name = "kr_muzzle50bmg";
-		displayName = "#STR_kr_slot_muzzle50bmg";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_50bmg";
+	};
+	class Slot_kr_muzzle45ACP
+	{
+		name = "kr_muzzle45ACP";
+		displayName = "#STR_kr_slot_muzzle";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle45ACP";
 	};
 	class Slot_kr_muzzle366
 	{
 		name = "kr_muzzle366";
-		displayName = "#STR_kr_slot_muzzle366";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_366";
 	};
 	class Slot_kr_muzzle545
 	{
 		name = "kr_muzzle545";
-		displayName = "#STR_kr_slot_muzzle545";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_545";
 	};
+
 	class Slot_kr_muzzle556
 	{
 		name = "kr_muzzle556";
-		displayName = "#STR_kr_slot_muzzle556";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_556";
 	};
 	class Slot_kr_muzzle338
 	{
 		name = "kr_muzzle338";
-		displayName = "#STR_kr_slot_muzzle338";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_338lm";
 	};
 	class Slot_kr_muzzle308
 	{
 		name = "kr_muzzle308";
-		displayName = "#STR_kr_slot_muzzle308";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_308";
 	};
 	class Slot_kr_muzzle762_39
 	{
 		name = "kr_muzzle762_39";
-		displayName = "#STR_kr_slot_muzzle762_39";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_762";
 	};
 	class Slot_kr_muzzle762_39_sks
 	{
 		name = "kr_muzzle762_39_sks";
-		displayName = "#STR_kr_slot_muzzle762_39_sks";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_762_sks";
 	};
 	class Slot_kr_muzzle762_54
 	{
 		name = "kr_muzzle762_54";
-		displayName = "#STR_kr_slot_muzzle762_54";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_762_54";
 	};
 	class Slot_kr_muzzle762_54_mosin
 	{
 		name = "kr_muzzle762_54_mosin";
-		displayName = "#STR_kr_slot_muzzle762_54_mosin";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_762_54_mosin";
 	};
 	class Slot_kr_muzzle12_76
 	{
 		name = "kr_muzzle12_76";
-		displayName = "#STR_kr_slot_kr_muzzle12_76";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_12";
 	};
 	class Slot_kr_muzzle127_55
 	{
 		name = "kr_muzzle127_55";
-		displayName = "#STR_kr_slot_muzzle127_55";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_127x55";
 	};
 	class Slot_kr_muzzle9_19
 	{
 		name = "kr_muzzle9_19";
-		displayName = "#STR_kr_slot_muzzle9_19";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_9_19";
 	};
 	class Slot_kr_muzzle9_18
 	{
 		name = "kr_muzzle9_18";
-		displayName = "#STR_kr_slot_muzzle9_18";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_9_18";
 	};
 	class Slot_kr_ak_stock
 	{
 		name = "kr_ak_stock";
-		displayName = "#STR_kr_slot_ak_bttstck";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_ak_stock";
 	};
 	class Slot_kr_ak_fstock
 	{
 		name = "kr_ak_fstock";
-		displayName = "#STR_kr_slot_ak_fbttstck";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_ak_fstock";
+	};
+	class Slot_kr_akms_stock
+	{
+		name = "kr_akms_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_akms_stock";
 	};
 	class Slot_kr_aks74u_hndgrd
 	{
 		name = "kr_aks74u_hndgrd";
-		displayName = "#STR_kr_slot_aks74u_hndgrd";
-		ghostIcon = "set:kr_weapon_icons image:kr_ak_handguard";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_aks74u_handguard";
 	};
 	class Slot_kr_ak_receiver
 	{
 		name = "kr_ak_receiver";
-		displayName = "#STR_kr_slot_ak_receiver";
+		displayName = "#STR_kr_slot_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak_receiver";
+	};
+	class Slot_kr_aks74u_receiver
+	{
+		name = "kr_aks74u_receiver";
+		displayName = "#STR_kr_slot_receiver";
 		ghostIcon = "set:kr_weapon_icons image:kr_ak_receiver";
 	};
 	class Slot_kr_ak_hndgrd
 	{
 		name = "kr_ak_hndgrd";
-		displayName = "#STR_kr_slot_ak_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak_handguard";
+	};
+	class Slot_kr_ak_hndgrd_short
+	{
+		name = "kr_ak_hndgrd_short";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_ak_handguard";
 	};
 	class Slot_kr_saiga_hndgrd
 	{
 		name = "kr_saiga_hndgrd";
-		displayName = "#STR_kr_slot_saiga_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_saiga_hndgrd";
 	};
 	class Slot_kr_pp19_receiver
 	{
 		name = "kr_pp19_receiver";
-		displayName = "#STR_kr_slot_pp19_receiver";
+		displayName = "#STR_kr_slot_receiver";
 		ghostIcon = "set:kr_weapon_icons image:kr_ak_receiver";
 	};
 	class Slot_kr_ar15_tube
@@ -211,7 +237,7 @@ class CfgSlots
 	class Slot_kr_ar10_hndgrd
 	{
 		name = "kr_ar10_hndgrd";
-		displayName = "#STR_kr_slot_ar10_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_ar10_handguard";
 	};
 
@@ -225,67 +251,97 @@ class CfgSlots
 	class Slot_kr_rpk16_hndgrd
 	{
 		name = "kr_rpk16_hndgrd";
-		displayName = "#STR_kr_slot_rpk16_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_rpk16_handguard";
 	};
 	class Slot_kr_mk18_hndgrd
 	{
 		name = "kr_mk18_hndgrd";
-		displayName = "#STR_kr_slot_mk18_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_mk18_handguard";
 	};
 	class Slot_kr_rpk16_stock
 	{
 		name = "kr_rpk16_stock";
-		displayName = "#STR_kr_slot_rpk16_bttstck";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_buttstock_tube";
 	};
 	class Slot_kr_ar_bttstck
 	{
 		name = "kr_ar_bttstck";
-		displayName = "#STR_kr_slot_kr_ar_bttstck";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_m4_stock";
 	};
 	class Slot_kr_hk416_hndgrd
 	{
 		name = "kr_hk416_hndgrd";
-		displayName = "#STR_kr_slot_hk416_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_hk416_handguard";
 	};
 	class Slot_kr_fal_stock
 	{
 		name = "kr_fal_stock";
-		displayName = "#STR_kr_slot_fal_bttstck";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_fal_stock";
 	};
 	class Slot_kr_fal_hndgrd
 	{
 		name = "kr_fal_hndgrd";
-		displayName = "#STR_kr_slot_fal_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_fal_handguard";
 	};
-	class Slot_kr_ar15_hndgrd
+	class Slot_kr_ar15_hndgrd_1
 	{
-		name = "kr_ar15_hndgrd";
-		displayName = "#STR_kr_slot_ar15_hndgrd";
+		name = "kr_ar15_hndgrd_1";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_m4_handguard";
+	};
+	class Slot_kr_ar15_hndgrd_2
+	{
+		name = "kr_ar15_hndgrd_2";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_m4_handguard";
+	};
+	class Slot_kr_ar15_hndgrd_3
+	{
+		name = "kr_ar15_hndgrd_3";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_m4_handguard";
+	};
+	class Slot_kr_ar15_hndgrd_4
+	{
+		name = "kr_ar15_hndgrd_4";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_m4_handguard";
+	};
+	class Slot_kr_ar15_hndgrd_5
+	{
+		name = "kr_ar15_hndgrd_5";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_m4_handguard";
 	};
 	class Slot_kr_m16_hndgrd
 	{
 		name = "kr_m16_hndgrd";
-		displayName = "#STR_kr_slot_m16_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_m16_handguard";
+	};
+	class Slot_kr_mount_m16
+	{
+		name = "kr_mount_m16";
+		displayName = "#STR_kr_slot_mount";
+		ghostIcon = "set:kr_weapon_icons image:kr_optics_top_mount";
 	};
 	class Slot_kr_g28_hndgrd
 	{
 		name = "kr_g28_hndgrd";
-		displayName = "#STR_kr_slot_g28_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_hk417_handguard";
 	};
 	class Slot_kr_fal_receiver
 	{
 		name = "kr_fal_receiver";
-		displayName = "#STR_kr_slot_fal_receiver";
+		displayName = "#STR_kr_slot_receiver";
 		ghostIcon = "set:kr_weapon_icons image:kr_fal_receiver";
 	};
 	class Slot_kr_ak_buttpad
@@ -315,25 +371,25 @@ class CfgSlots
 	class Slot_kr_m200_hndgrd
 	{
 		name = "kr_m200_hndgrd";
-		displayName = "#STR_kr_slot_m200_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_m200_hndgrd";
 	};
 	class Slot_kr_m200_stock
 	{
 		name = "kr_m200_stock";
-		displayName = "#STR_kr_slot_kr_m200_stock";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_m200_stock";
 	};
 	class Slot_kr_mp5_stock
 	{
 		name = "kr_mp5_stock";
-		displayName = "#STR_kr_slot_kr_mp5_stock";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_mp5_stock";
 	};
 	class Slot_kr_mp5_hndgrd
 	{
 		name = "kr_mp5_hndgrd";
-		displayName = "#STR_kr_slot_kr_mp5_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_mp5_hndgrd";
 	};
 	class Slot_kr_mp5_mount
@@ -345,13 +401,13 @@ class CfgSlots
 	class Slot_kr_val_stock
 	{
 		name = "kr_val_stock";
-		displayName = "#STR_kr_slot_kr_val_stock";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_val_stock";
 	};
 	class Slot_kr_val_pistolgrip
 	{
 		name = "kr_val_pistolgrip";
-		displayName = "#STR_kr_slot_kr_val_pistolgrip";
+		displayName = "#STR_kr_slot_pgrip";
 		ghostIcon = "set:kr_weapon_icons image:kr_val_pistolgrip";
 	};
 	class Slot_kr_val_mount
@@ -363,19 +419,19 @@ class CfgSlots
 	class Slot_kr_scar_stock
 	{
 		name = "kr_scar_stock";
-		displayName = "#STR_kr_slot_kr_scar_stock";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_scar_stock";
 	};
 	class Slot_kr_svd_stock
 	{
 		name = "kr_svd_stock";
-		displayName = "#STR_kr_slot_kr_svd_stock";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_svd_stock";
 	};
 	class Slot_kr_svd_hndgrd
 	{
 		name = "kr_svd_hndgrd";
-		displayName = "#STR_kr_slot_svd_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_svd_hndgrd";
 	};
 	class Slot_kr_mosin_mount
@@ -393,7 +449,7 @@ class CfgSlots
 	class Slot_weaponButtstockAK
 	{
 		name = "weaponButtstockAK";
-		displayName = "#STR_kr_slot_ak_bttstck";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_ak_stock";
 	};
 	class Slot_weaponOptics
@@ -525,7 +581,7 @@ class CfgSlots
 	class Slot_kr_muzzle_9_39_9a91
 	{
 		name = "kr_muzzle_9_39_9a91";
-		displayName = "#STR_kr_slot_muzzle_9_39_9a91";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_9_39_9a91";
 	};
 	class Slot_kr_foregrip
@@ -579,49 +635,49 @@ class CfgSlots
 	class Slot_kr_sg550_pistolgrip
 	{
 		name = "kr_sg550_pistolgrip";
-		displayName = "#STR_kr_slot_sg550_pistolgrip";
+		displayName = "#STR_kr_slot_pgrip";
 		ghostIcon = "set:kr_weapon_icons image:kr_sg550_pistolgrip";
 	};
 	class Slot_kr_sg550_hndgrd
 	{
 		name = "kr_sg550_hndgrd";
-		displayName = "#STR_kr_slot_sg550_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_sg550_hndgrd";
 	};
 	class Slot_kr_sg552_hndgrd
 	{
 		name = "kr_sg552_hndgrd";
-		displayName = "#STR_kr_slot_sg552_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_sg552_hndgrd";
 	};
 	class Slot_kr_sg550_stock
 	{
 		name = "kr_sg550_stock";
-		displayName = "#STR_kr_slot_sg550_stock";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_sg550_stock";
 	};
 	class Slot_kr_g36_stock
 	{
 		name = "kr_g36_stock";
-		displayName = "#STR_kr_slot_g36_stock";
+		displayName = "#STR_kr_slot_stock";
 		ghostIcon = "set:kr_weapon_icons image:kr_g36_stock";
 	};
 	class Slot_kr_g36c_handguard
 	{
 		name = "kr_g36c_handguard";
-		displayName = "#STR_kr_slot_g36c_handguard";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_g36c_handguard";
 	};
 	class Slot_kr_g36k_handguard
 	{
 		name = "kr_g36k_handguard";
-		displayName = "#STR_kr_slot_g36k_handguard";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_g36k_handguard";
 	};
 	class Slot_kr_g36_handguard
 	{
 		name = "kr_g36_handguard";
-		displayName = "#STR_kr_slot_g36_handguard";
+		displayName = "#STR_kr_slot_handguard";
 		ghostIcon = "set:kr_weapon_icons image:kr_g36_handguard";
 	};
 	class Slot_kr_weaponOpticsG36
@@ -639,7 +695,7 @@ class CfgSlots
 	class Slot_kr_g36_bipods
 	{
 		name = "kr_g36_bipods";
-		displayName = "#STR_kr_slot_g36_bipods";
+		displayName = "#STR_kr_slot_bipod";
 		ghostIcon = "set:kr_weapon_icons image:kr_g36_bipods";
 	};
 	class Slot_kr_tt_laser
@@ -657,7 +713,7 @@ class CfgSlots
 	class Slot_kr_muzzle762_25
 	{
 		name = "kr_muzzle762_25";
-		displayName = "#STR_kr_slot_muzzle762_25";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle762_25";
 	};
 	class Slot_kr_mp443_mount
@@ -759,13 +815,13 @@ class CfgSlots
 	class Slot_kr_sg550_bipods
 	{
 		name = "kr_sg550_bipods";
-		displayName = "#STR_kr_slot_sg550_bipods";
+		displayName = "#STR_kr_slot_bipod";
 		ghostIcon = "set:kr_weapon_icons image:kr_bipod";
 	};
 	class Slot_kr_csr50_bipods
 	{
 		name = "kr_csr50_bipods";
-		displayName = "#STR_kr_slot_csr50_bipods";
+		displayName = "#STR_kr_slot_bipod";
 		ghostIcon = "set:kr_weapon_icons image:kr_bipod";
 	};
 
@@ -841,7 +897,7 @@ class CfgSlots
 	class Slot_kr_muzzle127_55_vssk
 	{
 		name = "kr_muzzle127_55_vssk";
-		displayName = "#STR_kr_slot_muzzle127_55";
+		displayName = "#STR_kr_slot_muzzle";
 		ghostIcon = "set:kr_weapon_icons image:kr_muzzle127_55_vssk";
 	};
 	class Slot_kr_bipod_vssk
@@ -870,5 +926,104 @@ class CfgSlots
 		name = "kr_gl";
 		displayName = "#STR_kr_gl";
 		ghostIcon = "set:kr_weapon_icons image:kr_gl";
+	};
+
+
+//////// AK12
+	class Slot_kr_muzzleAK12
+	{
+		name = "kr_muzzleAK12";
+		displayName = "#STR_kr_slot_muzzle";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_AK12";
+	};
+	class Slot_kr_ak12_hndgrd
+	{
+		name = "kr_ak12_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak12_handguard";
+	};
+	class Slot_kr_ak12_stock
+	{
+		name = "kr_ak12_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_buttstock_tube";
+	};
+	class Slot_kr_ak12_receiver
+	{
+		name = "kr_ak12_receiver";
+		displayName = "#STR_kr_slot_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak12_receiver";
+	};
+
+///////////// AK545
+
+	class Slot_kr_ak545_hndgrd
+	{
+		name = "kr_ak545_hndgrd";
+		displayName = "#STR_kr_slot_handguard";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak545_handguard";
+	};
+	class Slot_kr_ak545_stock
+	{
+		name = "kr_ak545_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak545_stock";
+	};
+	class Slot_kr_ak545_receiver
+	{
+		name = "kr_ak545_receiver";
+		displayName = "#STR_kr_slot_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak545_receiver";
+	};
+
+//////// AK308
+	class Slot_kr_muzzleAK308
+	{
+		name = "kr_muzzleAK308";
+		displayName = "#STR_kr_slot_muzzle";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle_AK308";
+	};
+	class Slot_kr_ak308_receiver
+	{
+		name = "kr_ak308_receiver";
+		displayName = "#STR_kr_slot_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak308_receiver";
+	};
+
+///////////// АК50
+
+	class Slot_kr_muzzle50bmgAK
+	{
+		name = "kr_muzzle50bmgAK";
+		displayName = "#STR_kr_slot_muzzle";
+		ghostIcon = "set:kr_weapon_icons image:kr_muzzle50bmgAK";
+	};
+
+	class Slot_kr_ak50_receiver
+	{
+		name = "kr_ak50_receiver";
+		displayName = "#STR_kr_slot_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak50_receiver";
+	};
+
+	class Slot_kr_ak_receiver_v
+	{
+		name = "kr_ak_receiver_v";
+		displayName = "#STR_kr_slot_receiver";
+		ghostIcon = "set:kr_weapon_icons image:kr_ak_receiver";
+	};
+
+	class Slot_kr_vector_stock
+	{
+		name = "kr_vector_stock";
+		displayName = "#STR_kr_slot_stock";
+		ghostIcon = "set:kr_weapon_icons image:kr_vector_stock";
+	};
+
+	class Slot_kr_weaponOpticsSmle
+	{
+		name = "kr_weaponOpticsSmle";
+		displayName = "#STR_kr_slot_optics";
+		ghostIcon = "set:kr_weapon_icons image:weaponOpticsSmle";
 	};
 };

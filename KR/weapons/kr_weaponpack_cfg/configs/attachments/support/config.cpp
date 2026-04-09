@@ -263,12 +263,12 @@ class cfgVehicles
 	class kr_rpk16_fstock_Base: kr_stock_Base
 	{
 		scope = 0;
-		inventorySlot[] = {"kr_rpk16_stock"};
+		inventorySlot[] = {"kr_ak_fstock"};
 		soundImpactType = "metal";
 		class kr_description
 		{
 			kr_tier = 2;
-			kr_type = "RPK16";
+			kr_type = "AK12/RPK16";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -540,7 +540,7 @@ class cfgVehicles
 	{
 		scope = 0;
 		simpleHiddenSelections[] = {"hide_mount","fold","unfold","front_sights"};
-		inventorySlot[] = {"kr_ar15_hndgrd","kr_ar10_ar15_hndgrd"};
+		inventorySlot[] = {"kr_ar10_ar15_hndgrd"};
 		itemSize[] = {3,1};
 		soundImpactType = "metal";
 		class kr_description
@@ -557,6 +557,7 @@ class cfgVehicles
 	{
 		recoilModifier[] = {0.55,0.9,0.9};
 		swayModifier[] = {0.55,0.55,0.55};
+		inventorySlot[] = {"kr_ar10_ar15_hndgrd"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 4;
@@ -571,6 +572,7 @@ class cfgVehicles
 	{
 		recoilModifier[] = {0.5,0.85,0.85};
 		swayModifier[] = {0.5,0.5,0.5};
+		inventorySlot[] = {"kr_ar10_ar15_hndgrd"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 7;
@@ -585,6 +587,7 @@ class cfgVehicles
 	{
 		recoilModifier[] = {0.45,0.8,0.8};
 		swayModifier[] = {0.45,0.45,0.45};
+		inventorySlot[] = {"kr_ar10_ar15_hndgrd"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 10;
@@ -599,6 +602,7 @@ class cfgVehicles
 	{
 		recoilModifier[] = {0.35,0.75,0.75};
 		swayModifier[] = {0.4,0.4,0.4};
+		inventorySlot[] = {"kr_ar10_ar15_hndgrd"};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 11;
@@ -671,7 +675,7 @@ class cfgVehicles
 	class kr_ar10_hguard_Base: kr_hguard_Base
 	{
 		scope = 0;
-		inventorySlot[] = {"kr_ar10_ar15_hndgrd","kr_ar10_hndgrd"};
+		inventorySlot[] = {"kr_ar10_hndgrd","kr_ar10_ar15_hndgrd"};
 		itemSize[] = {4,1};
 		simpleHiddenSelections[] = {"hide_mount","fold","unfold","front_sights"};
 		soundImpactType = "metal";

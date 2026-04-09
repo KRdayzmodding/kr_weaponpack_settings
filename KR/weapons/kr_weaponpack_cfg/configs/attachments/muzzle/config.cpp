@@ -178,7 +178,7 @@ class cfgVehicles
 			{
 				class MuzzleFlash
 				{
-					overrideParticle = "weapon_shot_silencer_01";
+					overrideParticle = "kr_weapon_shot_silencer_01";
 					onlyWithinHealthLabel[] = {0,3};
 				};
 			};

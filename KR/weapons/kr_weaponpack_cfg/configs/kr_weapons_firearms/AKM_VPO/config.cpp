@@ -158,6 +158,7 @@ class cfgWeapons
 			soundSetShotExt[] = {{"AKM_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.13;
 			dispersion = 0.0035;
+			magazineSlot = "magazine";
 		};
 		class DamageSystem
 		{
@@ -197,6 +198,7 @@ class cfgWeapons
 			soundSetShotExt[] = {{"AKM_silencer_SoundSet","AK_silencerTail_SoundSet","AK_silencerInteriorTail_SoundSet"},{"AK_silencerHomeMade_SoundSet","AK_silencerHomeMadeTail_SoundSet","AK_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.09;
 			dispersion = 0.004;
+			magazineSlot = "magazine";
 		};
 		class DamageSystem
 		{

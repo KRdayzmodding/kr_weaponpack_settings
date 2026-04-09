@@ -68,13 +68,13 @@ class cfgWeapons
 			{
 				class SmokeCloud
 				{
-					overrideParticle = "weapon_shot_winded_smoke";
+					overrideParticle = "kr_weapon_shot_50BMG_smoke";
 				};
 				class MuzzleFlash
 				{
 					ignoreIfSuppressed = 1;
 					illuminateWorld = 1;
-					overrideParticle = "weapon_shot_50BMG";
+					overrideParticle = "kr_weapon_shot_50BMG";
 					overrideDirectionVector[] = {180,0,0};
 				};
 			};

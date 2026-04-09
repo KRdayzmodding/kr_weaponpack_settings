@@ -60,7 +60,7 @@ class cfgVehicles
 		};
 	};
 
-	class kr_mcx_spear_stock_std : kr_mcx_spear_stock_Base
+	class kr_mcx_spear_stock_std: kr_mcx_spear_stock_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_weapons_attachments_mcx_spear_stock_std";

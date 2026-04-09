@@ -15,6 +15,7 @@ class cfgVehicles
 	class kr_ar15_hguard_t1_Base;
 	class kr_ar15_hguard_t2_Base;
 	class kr_ar_stock_t2_Base;
+	class Inventory_Base;
 
 	class kr_m16a1_handguard_std: kr_ar15_hguard_t1_Base
 	{
@@ -50,7 +51,7 @@ class cfgVehicles
 		class kr_description
 		{
 			kr_tier = 1;
-			kr_type = "M16A2";
+			kr_type = "M16A1/A2";
 		};
 	};
 
@@ -71,12 +72,12 @@ class cfgVehicles
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 0;
+			ergonomics = 10;
 		};
 		class kr_description
 		{
 			kr_tier = 2;
-			kr_type = "M16A2";
+			kr_type = "M16A1/A2";
 		};
 		class DamageSystem
 		{
@@ -102,16 +103,17 @@ class cfgVehicles
 		swayModifier[] = {1,0.9,0.9};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\m16_stock_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\m16_stock.rvmat"};
+		itemSize[] = {3,1};
 
 		class kr_Gunplay: kr_Gunplay_Base
 		{
-			ergonomics = 14;
+			ergonomics = 0;
 		};
 
 		class kr_description
 		{
 			kr_tier = 2;
-			kr_type = "M4, M16, SR25";
+			kr_type = "M4, M16A1/A2, SR25";
 		};
 
 		class DamageSystem
@@ -126,5 +128,64 @@ class cfgVehicles
 			};
 		};
 		soundImpactType = "plastic";
+	};
+
+	class kr_mount_promag_delta_style: Inventory_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_mount_promag_delta_style";
+		descriptionShort = "$STR_kr_weapons_attachments_mount_promag_delta_style_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\mount_promag_delta_style.p3d";
+		rotationFlags = 17;
+		inventorySlot[] = {"kr_mount_m16"};
+		attachments[] = {};
+		weight = 85;
+		itemSize[] = {1,1};
+		recoilModifier[] = {1.0,1.0,1.0};
+		swayModifier[] = {1.0,1.0,1.0};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\promag_delta_style_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\promag_delta_style.rvmat"};
+		soundImpactType = "metal";
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_type = "M16A1/A2";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 10;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\promag_delta_style.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\promag_delta_style_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\promag_delta_style_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\promag_delta_style_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\m16a2_parts\data\promag_delta_style_destruct.rvmat"}}};
+				};
+			};
+		};
+		isMeleeWeapon = 1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo = "MeleeLightBlunt";
+				range = 1;
+			};
+			class Heavy
+			{
+				ammo = "MeleeLightBlunt_Heavy";
+				range = 1;
+			};
+			class Sprint
+			{
+				ammo = "MeleeLightBlunt_Heavy";
+				range = 2.8;
+			};
+		};
 	};
 };

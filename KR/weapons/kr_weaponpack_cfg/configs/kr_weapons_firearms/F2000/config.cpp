@@ -30,7 +30,8 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_300_m62","kr_Ammo_300_ap","kr_Ammo_300_vmax","kr_Ammo_300_bpz_fmj"};
+        kr_bannedAmmo[] = {"Bullet_300_m62","Bullet_300_ap","Bullet_300_vmax","Bullet_300_bpz_fmj"};	
 		magazineSwitchTime = 0.38;
 		ejectType = 1;
 		spawnDamageRange[] = {0.0,0.6};
@@ -56,7 +57,7 @@ class cfgWeapons
 			opticsZoomMin = 0.28;
 			opticsZoomMax = 0.28;
 			opticsZoomInit = 0.28;
-			distanceZoomMin = 300;
+			distanceZoomMin = 100;
 			distanceZoomMax = 300;
 		};
 		class InventorySlotsOffsets

@@ -206,6 +206,41 @@ class cfgVehicles
 			};
 		};
 	};
+	class kr_ak_fstock_akms: kr_ak_stock_t1_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_ak_fstock_akms";
+		descriptionShort = "$STR_kr_weapons_attachments_ak_fstock_akms_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\ak_stock_akms_std.p3d";
+		inventorySlot[] = {"kr_akms_stock"};
+		attachments[] = {"kr_ak_buttpad"};
+		simpleHiddenSelections[] = {};
+		weight = 200;
+		recoilModifier[] = {1,1,0.77};
+		swayModifier[] = {1,0.8,0.87};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\data\akms_stock_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\data\akms_stock.rvmat"};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 25;
+		};
+		class kr_description
+		{
+			kr_tier = 1;
+			kr_type = "#STR_kr_GUI_akmsstock";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 300;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\data\akms_stock.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\data\akms_stock_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\data\akms_stock_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\data\akms_stock_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\ak_parts\data\akms_stock_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
 	class kr_ak_stock_akts: kr_ak_stock_t1_Base
 	{
 		scope = 2;

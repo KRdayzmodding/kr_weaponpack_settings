@@ -17,7 +17,7 @@ class CfgMagazines
 	{
 		scope = 0;
 		ammo = "Bullet_556x45_FMJ";
-		ammoItems[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		ammoItems[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_300_m62","kr_Ammo_300_ap","kr_Ammo_300_vmax","kr_Ammo_300_bpz_fmj"};
 		weightPerQuantityUnit = 4;
 		recoilModifier[] = {1,1,1};	
 		swayModifier[] = {1,1,1};
@@ -50,6 +50,25 @@ class CfgMagazines
 		};
 	};
 
+	class kr_magazine_556x45_OTHER_Base: kr_magazine_Base
+	{
+		scope = 0;
+		ammo = "Bullet_556x45_FMJ";
+		ammoItems[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		weightPerQuantityUnit = 4;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1,1,1};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -3;
+		};
+		class kr_description
+		{
+			kr_tier = 1;
+			kr_caliber = "5.56x45";
+		};
+	};
+
 	class Mag_556x45_6L29_30Rnd: kr_magazine_556x45_Base
 	{
 		scope = 2;
@@ -61,6 +80,7 @@ class CfgMagazines
 		count = 30;
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\6L29.rvmat"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\magazine\556x45\data\6L29_co.paa"};
+		
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = -1;
@@ -563,7 +583,7 @@ class CfgMagazines
 		};
 		soundImpactType = "plastic";
 	};
-	class Mag_556x45_sg550_30Rnd: kr_magazine_556x45_Base
+	class Mag_556x45_sg550_30Rnd: kr_magazine_556x45_OTHER_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_556x45_sg550_30Rnd";
@@ -596,7 +616,7 @@ class CfgMagazines
 		};
 		soundImpactType = "plastic";
 	};
-	class Mag_556x45_sg550_60Rnd: kr_magazine_556x45_Base
+	class Mag_556x45_sg550_60Rnd: kr_magazine_556x45_OTHER_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_556x45_sg550_60Rnd";
@@ -698,7 +718,7 @@ class CfgMagazines
 		soundImpactType = "plastic";
 	};
 
-	class Mag_556x45_aug_10Rnd: kr_magazine_556x45_Base
+	class Mag_556x45_aug_10Rnd: kr_magazine_556x45_OTHER_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_556x45_aug_10Rnd";
@@ -738,7 +758,7 @@ class CfgMagazines
 		};
 		soundImpactType = "plastic";
 	};
-	class Mag_556x45_aug_30Rnd: kr_magazine_556x45_Base
+	class Mag_556x45_aug_30Rnd: kr_magazine_556x45_OTHER_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_556x45_aug_30Rnd";
@@ -778,7 +798,7 @@ class CfgMagazines
 		};
 		soundImpactType = "plastic";
 	};
-	class Mag_556x45_aug_42Rnd: kr_magazine_556x45_Base
+	class Mag_556x45_aug_42Rnd: kr_magazine_556x45_OTHER_Base
 	{
 		scope = 2;
 		displayName = "$STR_kr_magazines_556x45_aug_42Rnd";
@@ -813,6 +833,49 @@ class CfgMagazines
 						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd_damage.rvmat"}},
 						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd_badlydamage.rvmat"}},
 						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\aug_42rnd_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+		soundImpactType = "plastic";
+	};
+
+	class Mag_556x45_molot_45Rnd: kr_magazine_556x45_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_556x45_molot_45Rnd";
+		descriptionShort = "$STR_kr_magazines_556x45_molot_45Rnd_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\Mag_556x45_molot_45Rnd.p3d";
+		weight = 210;
+		itemSize[] = {1,4};
+		count = 45;
+		swayModifier[] = {1,1.1,1.1};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\molot.rvmat"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\molot_co.paa"};
+
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = "5.56x45";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -5;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = 
+					{
+						{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\molot.rvmat"}},
+						{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\molot_worn.rvmat"}},
+						{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\molot_damage.rvmat"}},
+						{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\molot_badlydamage.rvmat"}},
+						{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\556x45\data\molot_destruct.rvmat"}}
 					};
 				};
 			};

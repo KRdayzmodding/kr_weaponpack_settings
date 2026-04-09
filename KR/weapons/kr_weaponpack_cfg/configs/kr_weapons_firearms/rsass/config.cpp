@@ -34,7 +34,8 @@ class cfgWeapons
 			"hide_tube",
 			"fold",
 			"unfold",
-			"rear_sights"
+			"rear_sights",
+			"hide_stockpart"
 		};
 		chamberSize = 1;
 		chamberedRound = "";

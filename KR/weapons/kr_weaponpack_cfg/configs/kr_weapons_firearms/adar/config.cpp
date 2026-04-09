@@ -61,6 +61,7 @@ class cfgWeapons
 			reloadTime = 0.12;
 			dispersion = 0.0035;
 			magazineSlot = "magazine";
+			attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_3","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		};
 		class kr_description
 		{
@@ -70,7 +71,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			barreltype = 3;
-			handguardSlotName = "kr_ar15_hndgrd";
+			handguardSlotName = "kr_ar15_hndgrd_3";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{

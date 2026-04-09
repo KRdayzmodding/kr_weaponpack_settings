@@ -592,4 +592,73 @@ class CfgMagazines
 			};
 		};
 	};
+
+	class Mag_762x51_ak308_std_20Rnd: kr_magazine_762x51_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_762x51_ak308_std_20Rnd";
+		descriptionShort = "$STR_kr_magazines_762x51_ak308_std_20Rnd_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\Mag_762_51_ak308_std_20Rnd.p3d";
+		weight = 230;
+		weightPerQuantityUnit = 4;
+		itemSize[] = {1,2};
+		count = 20;
+		swayModifier[] = {1,1,1};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_std_20.rvmat"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_std_20_co.paa"};
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_caliber = ".308 (AK308)";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_std_20.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_std_20_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_std_20_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_std_20_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_std_20_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+	class Mag_762x51_ak308_promag_24Rnd: kr_magazine_762x51_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_magazines_762x51_ak308_promag_24Rnd";
+		descriptionShort = "$STR_kr_magazines_762x51_ak308_promag_24Rnd_dsc";
+		model = "KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\Mag_762_51_ak308_promag_24Rnd.p3d";
+		weight = 250;
+		weightPerQuantityUnit = 4;
+		itemSize[] = {1,2};
+		count = 24;
+		swayModifier[] = {1,1.1,1.1};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_promag_24.rvmat"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_promag_24_co.paa"};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_caliber = ".308 (AK308)";
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_promag_24.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_promag_24_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_promag_24_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_promag_24_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\magazine\762x51\data\ak308_promag_24_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
 };

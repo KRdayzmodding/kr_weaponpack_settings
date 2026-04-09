@@ -375,7 +375,7 @@ class cfgVehicles
 		displayName = "$STR_kr_weapons_attachments_muzzle308_suppressor_sig_SRD762Ti";
 		descriptionShort = "$STR_kr_weapons_attachments_muzzle308_suppressor_sig_SRD762Ti_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\muzzle308_suppressor_sig_SRD762Ti.p3d";
-		weight = 60;
+		weight = 250;
 		itemModelLength = 0.177;
 		inventorySlot[] = {"kr_muzzle308","kr_muzzle762_54"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\data\sig_SRD762Ti_co.paa"};
@@ -414,7 +414,7 @@ class cfgVehicles
 		displayName = "$STR_kr_weapons_attachments_muzzle308_suppressor_sig_srd762qd";
 		descriptionShort = "$STR_kr_weapons_attachments_muzzle308_suppressor_sig_srd762qd_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\muzzle308_suppressor_sig_srd762qd.p3d";
-		weight = 60;
+		weight = 250;
 		itemModelLength = 0.178;
 		inventorySlot[] = {"kr_muzzle308","kr_muzzle762_54"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\data\sig_srd762qd_co.paa"};
@@ -454,7 +454,7 @@ class cfgVehicles
 		displayName = "$STR_kr_weapons_attachments_muzzle308_suppressor_kac_prs_qdc";
 		descriptionShort = "$STR_kr_weapons_attachments_muzzle308_suppressor_kac_prs_qdc_dsc";
 		model = "\KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\muzzle308_suppressor_kac_prs_qdc.p3d";
-		weight = 60;
+		weight = 250;
 		itemModelLength = 0.233;
 		inventorySlot[] = {"kr_muzzle308","kr_muzzle762_54"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\data\kac_prs_qdc_co.paa"};
@@ -484,6 +484,46 @@ class cfgVehicles
 				{
 					hitpoints = 5;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\data\kac_prs_qdc.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\data\kac_prs_qdc_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\data\kac_prs_qdc_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\data\kac_prs_qdc_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\muzzle\muzzle308\data\kac_prs_qdc_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class kr_muzzle308_suppressor_ak308: kr_suppressor_t2_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_muzzle308_suppressor_ak308";
+		descriptionShort = "$STR_kr_weapons_attachments_muzzle308_suppressor_ak308_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\muzzle308_suppressor_ak308.p3d";
+		weight = 250;
+		itemModelLength = 0.305;
+		inventorySlot[] = {"kr_muzzleAK308"};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\data\ak308_silencer_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\data\ak308_silencer.rvmat"};
+		recoilModifier[] = {1.0,0.9,0.9};
+		swayModifier[] = {1.2,1.0,1.2};
+		dispersionModifier = 0.0001;
+		noiseShootModifier = -0.95;
+		barrelArmor = 6000;
+
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -8;
+		};
+
+		class kr_description
+		{
+			kr_tier = 2;
+			kr_caliber = "7.62x51";
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 5;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\data\ak308_silencer.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\data\ak308_silencer_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\data\ak308_silencer_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\data\ak308_silencer_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\muzzle\muzzle308\data\ak308_silencer_destruct.rvmat"}}};
 				};
 			};
 		};

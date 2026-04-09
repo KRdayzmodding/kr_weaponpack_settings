@@ -11,7 +11,6 @@ class CfgPatches
 
 class Mode_Single;
 class Mode_SemiAuto;
-class Mode_kr_GL;
 class OpticsInfoRifle;
 class cfgWeapons
 {
@@ -43,7 +42,7 @@ class cfgWeapons
 		};
 
 		modes[] = {"Single"};
-		class Single: Mode_kr_GL
+		class Single: Mode_Single
 		{
 			soundSetShot[] = {"M79_Shot_SoundSet","M79_Tail_SoundSet","M79_InteriorTail_SoundSet","M79_Slapback_SoundSet","M79_Tail_2D_SoundSet","M79_Shot_Interior_SoundSet"};
 			soundSetShotExt[] = {{"IZH18_silencerHomeMade_SoundSet","IZH18_silencerHomeMadeTail_SoundSet","IZH18_silencerInteriorHomeMadeTail_SoundSet"}};

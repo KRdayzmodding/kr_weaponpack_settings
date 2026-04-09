@@ -48,6 +48,8 @@ class cfgVehicles
 		soundImpactType = "plastic";
 	};
 
+	// Классы, наследующиеся от kr_Flashlight_Base
+
 	class kr_light_steiner_las_tac_2: kr_Flashlight_Base
 	{
 		scope = 2;
@@ -85,12 +87,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.01;
+			energyUsagePerSecond = 0.007; // Tier 1: 2 часа работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_light_surefire_xc1: kr_Flashlight_Base
 	{
 		scope = 2;
@@ -128,12 +131,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.005;
+			energyUsagePerSecond = 0.007; // Tier 1: 2 часа работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_light_insight_wmx200: kr_Flashlight_Base
 	{
 		scope = 2;
@@ -170,12 +174,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.01;
+			energyUsagePerSecond = 0.007; // Tier 1: 2 часа работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_light_armytek_xhp35: kr_Flashlight_Base
 	{
 		scope = 2;
@@ -212,12 +217,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.07;
+			energyUsagePerSecond = 0.014; // Tier 3: 1 час работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_light_ultrafire_WF501B: kr_Flashlight_Base
 	{
 		scope = 2;
@@ -254,12 +260,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.07;
+			energyUsagePerSecond = 0.014; // Tier 3: 1 час работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_light_zenit_2u: kr_Flashlight_Base
 	{
 		scope = 2;
@@ -296,12 +303,58 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.09;
+			energyUsagePerSecond = 0.028; // Tier 4: 30 минут работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
+	// Класс который наследуется от kr_Flashlight_Base, но работает как лазер
+	class kr_laser_insight_anpeq2: kr_Flashlight_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_attachments_laser_insight_anpeq2";
+		descriptionShort = "$STR_kr_attachments_laser_insight_anpeq2_dsc";
+		model = "\KR\weapons\kr_weaponpack\attachments\light\laser_insight_anpeq2.p3d";
+		weight = 210;
+		itemSize[] = {2,1};
+		class kr_description
+		{
+			kr_tier = 3;
+			kr_angle = 0;
+			kr_lumen = 0;
+			kr_distance = 0;
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics	= -5;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 70;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_destruct.rvmat"}}};
+				};
+			};
+		};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat"};
+		class EnergyManager
+		{
+			hasIcon = 1;
+			autoSwitchOffWhenInCargo = 1;
+			energyUsagePerSecond = 0.014; // Tier 3: 1 час работы (как фонарик, но работает как лазер)
+			plugType = 1;
+			attachmentAction = 1;
+			updateInterval = 40;
+		};
+	};
+
+	// Классы, наследующиеся от kr_TacticalBlock_Base
 
 	class kr_laser_steiner_dbal: kr_TacticalBlock_Base
 	{
@@ -340,12 +393,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.03;
+			energyUsagePerSecond = 0.007; // Tier 1: 2 часа работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_laser_olight_baldr_pro: kr_TacticalBlock_Base
 	{
 		scope = 2;
@@ -383,12 +437,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.07;
+			energyUsagePerSecond = 0.014; // Tier 3: 1 час работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_laser_surefire_x400: kr_TacticalBlock_Base
 	{
 		scope = 2;
@@ -426,12 +481,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.04;
+			energyUsagePerSecond = 0.014; // Tier 3: 1 час работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_laser_zenit_2p: kr_TacticalBlock_Base
 	{
 		scope = 2;
@@ -441,7 +497,6 @@ class cfgVehicles
 		weight = 170;
 		itemSize[] = {2,1};
 		inventorySlot[] = {"weaponFlashlight","helmetFlashlight","kr_pointer_1","kr_light_right","kr_light_bot","kr_light_left","kr_light_pistol"};
-
 		class kr_description
 		{
 			kr_tier = 4;
@@ -470,54 +525,16 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.04;
+			energyUsagePerSecond = 0.028; // Tier 4: 30 минут работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_insight_anpeq2: kr_Flashlight_Base
-	{
-		scope = 2;
-		displayName = "$STR_kr_attachments_laser_insight_anpeq2";
-		descriptionShort = "$STR_kr_attachments_laser_insight_anpeq2_dsc";
-		model = "\KR\weapons\kr_weaponpack\attachments\light\laser_insight_anpeq2.p3d";
-		weight = 210;
-		itemSize[] = {2,1};
-		class kr_description
-		{
-			kr_tier = 3;
-			kr_angle = 0;
-			kr_lumen = 0;
-			kr_distance = 0;
-		};
-		class kr_Gunplay: kr_Gunplay_Base
-		{
-			ergonomics	= -5;
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints = 70;
-					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_destruct.rvmat"}}};
-				};
-			};
-		};
-		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2_co.paa"};
-		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\insight_anpeq2.rvmat"};
-		class EnergyManager
-		{
-			hasIcon = 1;
-			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.005;
-			plugType = 1;
-			attachmentAction = 1;
-			updateInterval = 40;
-		};
-	};
+
+	// Классы, наследующиеся от kr_LaserPointer_Base
+	// Обратная логика: выше тир = больше времени работы
+
 	class kr_laser_anpeq15: kr_LaserPointer_Base
 	{
 		scope = 2;
@@ -554,12 +571,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.005;
+			energyUsagePerSecond = 0.0093; // Tier 2: 1.5 часа работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_laser_tt_dlp_tactical_precision: kr_LaserPointer_Base
 	{
 		scope = 2;
@@ -597,12 +615,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.005;
+			energyUsagePerSecond = 0.0093; // Tier 2: 1.5 часа работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_laser_zenit_perst_3: kr_LaserPointer_Base
 	{
 		scope = 2;
@@ -639,12 +658,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.005;
+			energyUsagePerSecond = 0.0093; // Tier 2: 1.5 часа работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
+
 	class kr_laser_insight_la5: kr_LaserPointer_Base
 	{
 		scope = 2;
@@ -681,55 +701,13 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.005;
+			energyUsagePerSecond = 0.0093; // Tier 2: 1.5 часа работы
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;
 		};
 	};
-	class kr_laser_holosun_ls321: kr_LaserPointer_Base
-	{
-		scope = 2;
-		displayName = "$STR_kr_attachments_laser_holosun_ls321";
-		descriptionShort = "$STR_kr_attachments_laser_holosun_ls321_dsc";
-		model = "\KR\weapons\kr_weaponpack\attachments\light\laser_holosun_ls321.p3d";
-		weight = 190;
-		itemSize[] = {2,1};
-		class kr_description
-		{
-			kr_tier = 4;
-			kr_angle = 0;
-			kr_lumen = 0;
-			kr_distance = 0;
-		};
-		class kr_Gunplay: kr_Gunplay_Base
-		{
-			ergonomics	= -5;
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints = 70;
-					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_destruct.rvmat"}}};
-				};
-			};
-		};
-		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_co.paa"};
-		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat"};
-		class EnergyManager
-		{
-			hasIcon = 1;
-			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.005;
-			plugType = 1;
-			attachmentAction = 1;
-			updateInterval = 40;
-		};
-	};
-	
+
 	class kr_laser_bemeyers_mawl_c1: kr_LaserPointer_Base
 	{
 		scope = 2;
@@ -766,7 +744,50 @@ class cfgVehicles
 		{
 			hasIcon = 1;
 			autoSwitchOffWhenInCargo = 1;
-			energyUsagePerSecond = 0.005;
+			energyUsagePerSecond = 0.0093; // Tier 2: 1.5 часа работы
+			plugType = 1;
+			attachmentAction = 1;
+			updateInterval = 40;
+		};
+	};
+
+	class kr_laser_holosun_ls321: kr_LaserPointer_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_attachments_laser_holosun_ls321";
+		descriptionShort = "$STR_kr_attachments_laser_holosun_ls321_dsc";
+		model = "\KR\weapons\kr_weaponpack\attachments\light\laser_holosun_ls321.p3d";
+		weight = 190;
+		itemSize[] = {2,1};
+		class kr_description
+		{
+			kr_tier = 4;
+			kr_angle = 0;
+			kr_lumen = 0;
+			kr_distance = 0;
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics	= -5;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 70;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_destruct.rvmat"}}};
+				};
+			};
+		};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_co.paa","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat","KR\weapons\kr_weaponpack\attachments\light\data\holosun_ls321.rvmat"};
+		class EnergyManager
+		{
+			hasIcon = 1;
+			autoSwitchOffWhenInCargo = 1;
+			energyUsagePerSecond = 0.007; // Tier 4: 2 часа работы (обратная логика)
 			plugType = 1;
 			attachmentAction = 1;
 			updateInterval = 40;

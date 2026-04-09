@@ -35,7 +35,8 @@ class cfgWeapons
 		initSpeedMultiplier = 0.9;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon"};
+		chamberableFrom[] = {"Ammo_556x45","Ammo_556x45Tracer","kr_Ammo_556x45_FMJ","kr_Ammo_556x45_m855","kr_Ammo_556x45_m855a1","kr_Ammo_556x45_m856","kr_Ammo_556x45_m995","kr_Ammo_556x45_warmageddon","kr_Ammo_300_m62","kr_Ammo_300_ap","kr_Ammo_300_vmax","kr_Ammo_300_bpz_fmj"};
+        kr_bannedAmmo[] = {"Bullet_300_m62","Bullet_300_ap","Bullet_300_vmax","Bullet_300_bpz_fmj"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\m4a1\data\m4a1_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\m4a1\data\m4a1.rvmat"};
 		magazines[] = {"Mag_STANAG_30Rnd","Mag_STANAGCoupled_30Rnd","Mag_STANAG_60Rnd","Mag_CMAG_10Rnd","Mag_CMAG_20Rnd","Mag_CMAG_30Rnd","Mag_CMAG_40Rnd","Mag_CMAG_10Rnd_Green","Mag_CMAG_20Rnd_Green","Mag_CMAG_30Rnd_Green","Mag_CMAG_40Rnd_Green","Mag_CMAG_10Rnd_Black","Mag_CMAG_20Rnd_Black","Mag_CMAG_30Rnd_Black","Mag_CMAG_40Rnd_Black","Mag_556x45_magpulp_60Rnd","Mag_556x45_colt_ar15_std_30Rnd","Mag_556x45_fn_mk16_std_30Rnd","Mag_556x45_hk_polymer_30Rnd","Mag_556x45_hk_gen_2_pm_30Rnd","Mag_556x45_magpulm3_10Rnd","Mag_556x45_magpulm3_20Rnd","Mag_556x45_magpulm3_30Rnd_blck","Mag_556x45_magpulm3_30Rnd_tan","Mag_556x45_magpulm3_40Rnd_Base","Mag_556x45_magpulm3_40Rnd_blck","Mag_556x45_magpulm3_40Rnd_tan","Mag_556x45_steel_maritime_30Rnd","Mag_556x45_srfr_mag5_60Rnd","Mag_556x45_srfr_mag5_100Rnd","Mag_556x45_troy_battlemag_30Rnd"};
@@ -43,7 +44,7 @@ class cfgWeapons
 		ejectType = 1;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {2,2,1.1};
-		simpleHiddenSelections[] = {"hide_charging","hide_gasblock","hide_gasblock_low","hide_pistolgrip","hide_sight_front","hide_sight_rear","hide_tube"};
+		simpleHiddenSelections[] = {"hide_charging","hide_gasblock","hide_gasblock_low","hide_pistolgrip","hide_sight_front","hide_sight_rear","hide_tube","hide_stockpart"};
 		reloadAction = "ReloadM4";
 		hiddenSelections[] = {"camo"};
 		class kr_Gunplay: kr_Gunplay_Base
@@ -151,6 +152,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_firearms_M4";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\m4a1\m4a1_260mm.p3d";
+		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_1","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		itemSize[] = {7,3};
 		weight = 3406;
 		WeaponLength = 0.646;
@@ -174,7 +176,7 @@ class cfgWeapons
 			type = "shot";
 		};
 
-		modes[] = {"SemiAuto","FullAuto","GL"};
+		modes[] = {"SemiAuto","FullAuto"};
 
 		class SemiAuto: Mode_SemiAuto
 		{
@@ -193,13 +195,6 @@ class cfgWeapons
 			magazineSlot = "magazine";
 		};
 
-		class GL: Mode_kr_GL
-		{
-			soundSetShot[] = {};
-			soundSetShotExt[] = {};
-			reloadTime = 0.1;
-			dispersion = 0.001;
-		};
 
 		class DamageSystem
 		{
@@ -223,6 +218,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_firearms_M4_370";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\m4a1\m4a1_370mm.p3d";
+		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_2","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		itemSize[] = {8,3};
 		weight = 3449;
 		WeaponLength = 0.744;
@@ -230,7 +226,7 @@ class cfgWeapons
 		barrelArmor = 9.1;
 		recoilModifier[] = {1.35,1.35,1.3};
 		swayModifier[] = {1.4,1.3,1.6};
-		modes[] = {"SemiAuto","FullAuto","GL"};
+		modes[] = {"SemiAuto","FullAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
 			soundSetShot[] = {"M4A1_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
@@ -247,13 +243,7 @@ class cfgWeapons
 			dispersion = 0.004;
 			magazineSlot = "magazine";
 		};
-		class GL: Mode_kr_GL
-		{
-			soundSetShot[] = {};
-			soundSetShotExt[] = {};
-			reloadTime = 0.1;
-			dispersion = 0.001;
-		};
+
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -290,6 +280,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_firearms_M4_406";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\m4a1\m4a1_406mm.p3d";
+		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_3","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		itemSize[] = {8,3};
 		weight = 3819;
 		WeaponLength = 0.772;
@@ -297,7 +288,7 @@ class cfgWeapons
 		barrelArmor = 10.1;
 		recoilModifier[] = {1.35,1.35,1.3};
 		swayModifier[] = {1.5,1.4,1.6};
-		modes[] = {"SemiAuto","FullAuto","GL"};
+		modes[] = {"SemiAuto","FullAuto"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -325,13 +316,7 @@ class cfgWeapons
 			dispersion = 0.0035;
 			magazineSlot = "magazine";
 		};
-		class GL: Mode_kr_GL
-		{
-			soundSetShot[] = {};
-			soundSetShotExt[] = {};
-			reloadTime = 0.1;
-			dispersion = 0.001;
-		};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -357,6 +342,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_firearms_M4_457";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\m4a1\m4a1_457mm.p3d";
+		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_4","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		itemSize[] = {9,3};
 		weight = 3839;
 		WeaponLength = 0.823;
@@ -364,7 +350,7 @@ class cfgWeapons
 		barrelArmor = 11.0;
 		recoilModifier[] = {1.4,1.4,1.3};
 		swayModifier[] = {1.55,1.45,1.65};
-		modes[] = {"SemiAuto","FullAuto","GL"};
+		modes[] = {"SemiAuto","FullAuto"};
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -392,13 +378,7 @@ class cfgWeapons
 			dispersion = 0.003;
 			magazineSlot = "magazine";
 		};
-		class GL: Mode_kr_GL
-		{
-			soundSetShot[] = {};
-			soundSetShotExt[] = {};
-			reloadTime = 0.1;
-			dispersion = 0.001;
-		};
+
 		class kr_description
 		{
 			kr_tier = 2;
@@ -424,6 +404,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_firearms_M4_508";
 		model = "KR\weapons\kr_weaponpack\kr_weapons_firearms\m4a1\m4a1_508mm.p3d";
+		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_5","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		itemSize[] = {9,3};
 		weight = 4034;
 		WeaponLength = 0.874;
@@ -431,7 +412,7 @@ class cfgWeapons
 		barrelArmor = 12.0;
 		recoilModifier[] = {1.4,1.4,1.3};
 		swayModifier[] = {1.6,1.5,1.7};
-		modes[] = {"SemiAuto","FullAuto","GL"};
+		modes[] = {"SemiAuto","FullAuto"};
 		class kr_description
 		{
 			kr_tier = 3;
@@ -453,13 +434,7 @@ class cfgWeapons
 			dispersion = 0.0025;
 			magazineSlot = "magazine";
 		};
-		class GL: Mode_kr_GL
-		{
-			soundSetShot[] = {};
-			soundSetShotExt[] = {};
-			reloadTime = 0.1;
-			dispersion = 0.001;
-		};
+
 		class DamageSystem
 		{
 			class GlobalHealth

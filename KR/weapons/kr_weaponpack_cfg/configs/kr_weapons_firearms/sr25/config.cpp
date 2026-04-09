@@ -27,7 +27,7 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {1,0.5,50,160,4,10};
 		attachments[] = {"kr_muzzle308","kr_ar10_hndgrd","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
-		simpleHiddenSelections[] = {"fold","unfold","hide_pistolgrip","rear_sights","hide_tube"};
+		simpleHiddenSelections[] = {"fold","unfold","hide_pistolgrip","rear_sights","hide_tube","hide_stockpart"};
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"kr_Ammo_762x51_bpz_fmj","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","Ammo_308Win","Ammo_308WinTracer"};
