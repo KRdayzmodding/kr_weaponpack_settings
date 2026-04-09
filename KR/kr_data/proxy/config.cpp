@@ -27,6 +27,13 @@ class CfgNonAIVehicles
 		model = "\KR\kr_data\proxy\weapons\attachments\support\ak_receiver.p3d";
 	};
 
+	class Proxyak_receiver_aks74u: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_aks74u_receiver";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\ak_receiver_aks74u.p3d";
+	};
+
 	class Proxyak_bttstck: ProxyAttachment
 	{
 		scope = 2;
@@ -69,6 +76,13 @@ class CfgNonAIVehicles
 		model = "\KR\kr_data\proxy\weapons\attachments\support\ak_handguard.p3d";
 	};
 
+	class Proxyak_handguard_short: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_hndgrd_short";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\ak_handguard_short.p3d";
+	};
+
 	class Proxyar_pistolgrip: ProxyAttachment
 	{
 		scope = 2;
@@ -90,11 +104,35 @@ class CfgNonAIVehicles
 		model = "\KR\kr_data\proxy\weapons\attachments\support\hk416_handguard.p3d";
 	};
 
-	class Proxyar15_handguard: ProxyAttachment
+	class Proxyar15_handguard_1: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "kr_ar15_hndgrd";
-		model = "\KR\kr_data\proxy\weapons\attachments\support\ar15_handguard.p3d";
+		inventorySlot = "kr_ar15_hndgrd_1";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\ar15_handguard_1.p3d";
+	};
+	class Proxyar15_handguard_2: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ar15_hndgrd_2";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\ar15_handguard_2.p3d";
+	};
+	class Proxyar15_handguard_3: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ar15_hndgrd_3";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\ar15_handguard_3.p3d";
+	};
+	class Proxyar15_handguard_4: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ar15_hndgrd_4";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\ar15_handguard_4.p3d";
+	};
+	class Proxyar15_handguard_5: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ar15_hndgrd_5";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\ar15_handguard_5.p3d";
 	};
 
 	class Proxyg28_handguard: ProxyAttachment
@@ -367,31 +405,31 @@ class CfgNonAIVehicles
 	class Proxykr_WeaponHolo1: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "WeaponHolo1";
+		inventorySlot = "weaponHolo1";
 		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_WeaponHolo1.p3d";
 	};
 	class Proxykr_WeaponHolo2: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "WeaponHolo2";
+		inventorySlot = "weaponHolo2";
 		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_WeaponHolo2.p3d";
 	};
 	class Proxykr_WeaponHolo3: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "WeaponHolo3";
+		inventorySlot = "weaponHolo3";
 		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_WeaponHolo3.p3d";
 	};
 	class Proxykr_WeaponHolo4: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "WeaponHolo4";
+		inventorySlot = "weaponHolo4";
 		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_WeaponHolo4.p3d";
 	};
 	class Proxykr_WeaponHolo5: ProxyAttachment
 	{
 		scope = 2;
-		inventorySlot = "WeaponHolo5";
+		inventorySlot = "weaponHolo5";
 		model = "KR\kr_data\proxy\weapons\attachments\optics\kr_WeaponHolo5.p3d";
 	};
 	class Proxykr_PistolHolo1: ProxyAttachment
@@ -449,5 +487,19 @@ class CfgNonAIVehicles
 		scope = 2;
 		inventorySlot = "kr_ar10_ar15_hndgrd";
 		model = "\KR\kr_data\proxy\weapons\attachments\support\ar10_ar15_handguard.p3d";
+	};
+
+	class Proxykr_gl: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_gl";
+		model = "\KR\kr_data\proxy\weapons\attachments\gl\kr_gl.p3d";
+	};
+
+	class Proxyvelociraptor_receiver: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_ak_receiver_v";
+		model = "\KR\kr_data\proxy\weapons\attachments\support\velociraptor_receiver.p3d";
 	};
 };
