@@ -45,6 +45,7 @@ class cfgWeapons
 			receiverSlotName = "kr_ak_receiver";
 			handguardSlotName = "kr_ak_hndgrd";
 			buttstockSlotName = "kr_ak_fstock";
+			proxyPart = "kr_proxy_ak74m_parts";
 		};
 		class FullAuto: Mode_FullAuto
 		{
@@ -93,7 +94,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_firearms_ak74m";
 		descriptionShort = "$STR_weapons_firearms_ak74m_dsc";
-		attachments[] = {"kr_muzzle545","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle545","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap","kr_proxyParts"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\ak74m\data\ak74m_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\ak74m\data\ak74m.rvmat"};
 		class kr_description

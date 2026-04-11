@@ -41,6 +41,7 @@ class cfgWeapons
 			receiverSlotName = "kr_ak_receiver";
 			handguardSlotName = "kr_ak_hndgrd_short";
 			buttstockSlotName = "kr_ak_fstock";
+			proxyPart = "kr_proxy_102_parts";
 		};
 		class kr_description
 		{
@@ -97,7 +98,7 @@ class cfgWeapons
 		{
 			"kr_muzzle545","kr_ak_hndgrd_short","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_fstock",
 			"weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT",
-			"kr_ak_handle","weaponWrap"
+			"kr_ak_handle","weaponWrap","kr_proxyParts"
 		};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak105\data\ak105_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\ak105\data\ak105.rvmat"};

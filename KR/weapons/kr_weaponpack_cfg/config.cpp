@@ -8,37 +8,7 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data","DZ_Scripts","kr_data"};
 	};
 };
-class CfgMods
-{
-	class kr_weaponpack_cfg_scr
-	{
-		type = "mod";
-		author = "Kramtsov Arms";
-		version = "1.3.11";
-		defines[] = 
-		{
-			"KR_NO_FOLIAGE",
-			//"KR_DAMAGE_DEBUG" //Запускает дебагер урона		
-		};
 
-		class defs
-		{
-			class imageSets
-			{
-				files[] = {"KR/weapons/kr_weaponpack_cfg/data/icons/kr_weapons_icons.imageset"};
-			};
-
-			class worldScriptModule
-			{
-				value="";
-				files[]=
-				{
-					"KR/weapons/kr_weaponpack_cfg/scripts/4_World"
-				};
-			};
-		};
-	};
-};
 class CfgSlots
 {
 	class Slot_kr_spas12_stock

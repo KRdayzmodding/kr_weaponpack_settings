@@ -47,6 +47,7 @@ class cfgWeapons
 			receiverSlotName = "kr_ak_receiver";
 			handguardSlotName = "kr_ak_hndgrd";
 			buttstockSlotName = "kr_akms_stock";
+			proxyPart = "kr_proxy_akm_parts";
 		};
 		class FullAuto: Mode_FullAuto
 		{
@@ -171,7 +172,7 @@ class cfgWeapons
 		descriptionShort = "$STR_weapons_firearms_akmsn_dsc";
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\akms\data\akms_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\akms\data\akms.rvmat"};
-		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_akms_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_akms_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap","kr_proxyParts"};
 	};
 	class kr_akms: kr_akms_Base
 	{

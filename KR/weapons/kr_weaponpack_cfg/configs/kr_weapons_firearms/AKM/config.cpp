@@ -47,6 +47,7 @@ class cfgWeapons
 			receiverSlotName = "kr_ak_receiver";
 			handguardSlotName = "kr_ak_hndgrd";
 			buttstockSlotName = "kr_ak_stock";
+			proxyPart = "kr_proxy_akm_parts";
 		};
 		class FullAuto: Mode_FullAuto
 		{

@@ -3283,4 +3283,7 @@ class CfgNonAIVehicles
 		inventorySlot = "kr_weaponOpticsSmle";
 		model = "\KR\weapons\kr_weaponpack_2\attachments\optics\other\scope_smle.p3d";
 	};
+
+///////////////////// INNER PARTS
+
 };

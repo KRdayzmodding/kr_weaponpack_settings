@@ -23,7 +23,7 @@ class cfgWeapons
 		scope = 0;
 		itemSize[] = {8,3};
 		weight = 3575;
-		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","kr_ak_handle","weaponWrap","kr_proxyParts"};
 		hiddenSelections[] = {"camo"};
 		WeaponLength = 0.7;
 		barrelArmor = 2.9;
@@ -41,6 +41,7 @@ class cfgWeapons
 			receiverSlotName = "kr_ak_receiver";
 			handguardSlotName = "kr_ak_hndgrd";
 			buttstockSlotName = "kr_ak_stock";
+			proxyPart = "kr_proxy_akm_parts";
 		};
 		class OpticsInfo: OpticsInfoRifle
 		{
@@ -178,7 +179,7 @@ class cfgWeapons
 		displayName = "$STR_weapons_firearms_vpo_209";
 		descriptionShort = "$STR_weapons_firearms_vpo_209_dsc";
 		model = "\KR\weapons\kr_weaponpack\kr_weapons_firearms\akm_vpo\akm_vpo_209.p3d";
-		attachments[] = {"kr_muzzle366","kr_ak_hndgrd","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle366","kr_ak_hndgrd","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","kr_ak_handle","weaponWrap","kr_proxyParts"};
 		initSpeedMultiplier = 1.0;
 		barrelArmor = 4.67;
 		recoilModifier[] = {1.2,1.2,1.2};

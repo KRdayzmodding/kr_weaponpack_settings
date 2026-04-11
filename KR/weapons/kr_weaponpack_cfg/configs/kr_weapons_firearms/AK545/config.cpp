@@ -34,7 +34,8 @@ class cfgWeapons
 			"weaponHolo1",
 			"weaponOptics",
 			"kr_ak_handle",
-			"weaponWrap"
+			"weaponWrap",
+			"kr_proxyParts"
 		};
 
 		chamberableFrom[] = {"kr_Ammo_545x39_T","kr_Ammo_545x39_PRS","kr_Ammo_545x39_US","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_PS","kr_Ammo_545x39_BT","kr_Ammo_545x39_HP","kr_Ammo_545x39_BS","Ammo_545x39Tracer","Ammo_545x39"};
@@ -48,6 +49,7 @@ class cfgWeapons
 			handguardSlotName = "kr_ak545_hndgrd";
 			buttstockSlotName = "kr_ak545_stock";
 			receiverSlotName = "kr_ak545_receiver";
+			proxyPart = "kr_proxy_ak545_parts";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{

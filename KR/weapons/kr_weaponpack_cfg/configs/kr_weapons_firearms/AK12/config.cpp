@@ -23,7 +23,7 @@ class cfgWeapons
 		scope = 0;
 		displayName = "$STR_weapons_firearms_ak12";
 		descriptionShort = "$STR_weapons_firearms_ak12_dsc";
-		attachments[] = {"kr_muzzleAK12","kr_ak12_hndgrd","kr_ak_pistolgrip","kr_ak12_receiver","kr_ak_fstock","weaponHolo1","weaponOptics","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzleAK12","kr_ak12_hndgrd","kr_ak_pistolgrip","kr_ak12_receiver","kr_ak_fstock","weaponHolo1","weaponOptics","kr_ak_handle","weaponWrap","kr_proxyParts"};
 		chamberableFrom[] = {"kr_Ammo_545x39_T","kr_Ammo_545x39_PRS","kr_Ammo_545x39_US","kr_Ammo_545x39_FMJ","kr_Ammo_545x39_PS","kr_Ammo_545x39_BT","kr_Ammo_545x39_HP","kr_Ammo_545x39_BS","Ammo_545x39Tracer","Ammo_545x39"};
 		magazines[] = {"Mag_545x39_6L18_45Rnd","Mag_545x39_6L20_30Rnd","Mag_545x39_6L23_30Rnd","Mag_545x39_6L23_plum_30Rnd","Mag_545x39_6L26_45Rnd","Mag_545x39_6L31_60Rnd","Mag_545x39_ak12_std_30Rnd","Mag_545x39_magpul_pmag_30Rnd","Mag_545x39_ak12_drum_95Rnd","Mag_545x39_saiga_545_10Rnd"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\ak12\data\ak12_co.paa"};
@@ -35,6 +35,7 @@ class cfgWeapons
 			handguardSlotName = "kr_ak12_hndgrd";
 			buttstockSlotName = "kr_ak_fstock";
 			receiverSlotName = "kr_ak12_receiver";
+			proxyPart = "kr_proxy_ak12_parts";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{

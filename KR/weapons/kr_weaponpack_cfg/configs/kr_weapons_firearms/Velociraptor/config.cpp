@@ -22,7 +22,7 @@ class cfgWeapons
 	{
 		scope = 0;
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_firearms\velociraptor\velociraptor.p3d";
-		attachments[] = {"weaponOpticsAK","kr_ak_receiver_v","kr_ak_pistolgrip","kr_ak_stock","weaponHolo1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		attachments[] = {"weaponOpticsAK","kr_ak_receiver_v","kr_ak_pistolgrip","kr_ak_stock","weaponHolo1","weaponOpticsDT","kr_ak_handle","weaponWrap","kr_proxyParts"};
 		weight = 3300;
 		WeaponLength = 0.66;
 		itemSize[] = {8,3};
@@ -63,6 +63,7 @@ class cfgWeapons
 			receiverSlotName = "kr_ak_receiver_v";
 			handguardSlotName = "";
 			buttstockSlotName = "kr_ak_stock";
+			proxyPart = "kr_proxy_velociraptor_parts";
 		};
 		class NoiseShoot
 		{

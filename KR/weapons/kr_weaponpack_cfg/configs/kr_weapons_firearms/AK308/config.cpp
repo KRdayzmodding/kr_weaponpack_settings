@@ -23,7 +23,7 @@ class cfgWeapons
 		scope = 0;
 		displayName = "$STR_weapons_firearms_ak308";
 		descriptionShort = "$STR_weapons_firearms_ak308_dsc";
-		attachments[] = {"kr_muzzleAK308","kr_ak12_hndgrd","kr_ak_pistolgrip","kr_ak308_receiver","kr_ak_fstock","weaponHolo1","weaponOptics","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzleAK308","kr_ak12_hndgrd","kr_ak_pistolgrip","kr_ak308_receiver","kr_ak_fstock","weaponHolo1","weaponOptics","kr_ak_handle","weaponWrap","kr_proxyParts"};
 		chamberableFrom[] = {"kr_Ammo_762x51_bpz_fmj","kr_Ammo_762x51_ultra_nosler","kr_Ammo_762x51_tpz_sp","kr_Ammo_762x51_m993","kr_Ammo_762x51_m80","kr_Ammo_762x51_m61","Ammo_308Win","Ammo_308WinTracer"};
 		magazines[] = {"Mag_762x51_ak308_std_20Rnd","Mag_762x51_ak308_promag_24Rnd"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\ak308\data\ak308_co.paa"};
@@ -35,6 +35,7 @@ class cfgWeapons
 			handguardSlotName = "kr_ak12_hndgrd";
 			buttstockSlotName = "kr_ak_fstock";
 			receiverSlotName = "kr_ak308_receiver";
+			proxyPart = "kr_proxy_ak308_parts";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
