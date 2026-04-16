@@ -152,10 +152,10 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_weapons_shotguns_mp133";
 		model = "\KR\weapons\kr_weaponpack_2\kr_weapons_shotguns\mp133\mp133.p3d";
-		attachments[] = {"kr_muzzle12_76","kr_shotgun_mag_mount","kr_shotgun_barrel_mount","weaponOptics","kr_optics_top_mount","weaponHolo1","weaponWrap"};
+		attachments[] = {"kr_muzzle12_76","kr_mp153_mag","kr_shotgun_mag_mount","kr_shotgun_barrel_mount","weaponOptics","kr_optics_top_mount","weaponHolo1","weaponWrap"};
 		itemSize[] = {8,3};
 		weight = 3300;
-		chamberSize = 5;
+		chamberSize = 9;
 		initSpeedMultiplier = 1.1;
 		WeaponLength = 1.03;
 		barrelArmor = 25;

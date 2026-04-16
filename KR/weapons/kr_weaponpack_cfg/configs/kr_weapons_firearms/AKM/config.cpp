@@ -172,7 +172,7 @@ class cfgWeapons
 		descriptionShort = "$STR_weapons_firearms_akm_dsc";
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm\data\akm_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm\data\akm.rvmat"};
-		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","weaponOpticsAK","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","weaponOpticsDT","kr_ak_handle","weaponWrap","kr_proxyParts"};
 	};
 	class kr_akm: kr_akm_Base
 	{
@@ -184,7 +184,7 @@ class cfgWeapons
 			kr_tier = 2;
 			kr_caliber = "7.62x39";
 		};
-		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","kr_ak_receiver","kr_ak_pistolgrip","kr_ak_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_handle","weaponWrap","kr_proxyParts"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm\data\akm_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack\kr_weapons_firearms\akm\data\akm.rvmat"};
 	};

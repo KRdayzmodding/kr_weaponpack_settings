@@ -150,10 +150,10 @@ class cfgWeapons
 	class kr_mp153: kr_mp153_Base
 	{
 		scope = 2;
-		attachments[] = {"kr_muzzle12_76","kr_shotgun_mag_mount","kr_shotgun_barrel_mount","weaponOptics","kr_optics_top_mount","weaponHolo1","weaponWrap"};
+		attachments[] = {"kr_muzzle12_76","kr_mp153_mag","kr_shotgun_mag_mount","kr_shotgun_barrel_mount","weaponOptics","kr_optics_top_mount","weaponHolo1","weaponWrap"};
 		barrelArmor = 25;
 		initSpeedMultiplier = 1;
-		chamberSize = 5;
+		chamberSize = 9;
 		recoilModifier[] = {1,1,1};
 		swayModifier[] = {0.8,0.8,0.8};
 		modes[] = {"SemiAuto"};

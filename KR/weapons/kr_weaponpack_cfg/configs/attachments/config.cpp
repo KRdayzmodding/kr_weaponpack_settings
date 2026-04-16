@@ -3286,4 +3286,29 @@ class CfgNonAIVehicles
 
 ///////////////////// INNER PARTS
 
+
+	class ProxyMag_12x70_mp153_8Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_mp153_mag";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\Mag_12x70_mp153_8Rnd.p3d";
+	};
+	class ProxyMag_12x70_mp153_7Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_mp153_mag";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\Mag_12x70_mp153_7Rnd.p3d";
+	};
+	class ProxyMag_12x70_mp153_6Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_mp153_mag";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\Mag_12x70_mp153_6Rnd.p3d";
+	};
+	class ProxyMag_12x70_mp153_5Rnd: ProxyAttachment
+	{
+		scope = 2;
+		inventorySlot = "kr_mp153_mag";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\Mag_12x70_mp153_5Rnd.p3d";
+	};
 };

@@ -33,6 +33,7 @@ class cfgWeapons
 		recoilModifier[] = {1.35,1.35,1.4};
 		swayModifier[] = {1.6,1.7,1.3};
 		modes[] = {"SemiAuto","FullAuto"};
+
 		class kr_Gunplay: kr_Gunplay_Base
 		{
 			ergonomics = 0;
@@ -49,6 +50,7 @@ class cfgWeapons
 			buttstockSlotName = "kr_akms_stock";
 			proxyPart = "kr_proxy_akm_parts";
 		};
+		
 		class FullAuto: Mode_FullAuto
 		{
 			soundSetShot[] = {"AKM_Shot_SoundSet","AK_Tail_SoundSet","AK_InteriorTail_SoundSet"};
@@ -184,7 +186,7 @@ class cfgWeapons
 			kr_tier = 2;
 			kr_caliber = "7.62x39";
 		};
-		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","kr_ak_receiver","kr_ak_pistolgrip","kr_akms_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_handle","weaponWrap"};
+		attachments[] = {"kr_muzzle762_39","kr_ak_hndgrd","kr_ak_receiver","kr_ak_pistolgrip","kr_akms_stock","weaponHolo1","weaponHolo2","weaponHolo3","weaponHolo4","weaponHolo5","weaponOptics","weaponOptics1","kr_ak_handle","weaponWrap","kr_proxyParts"};
 		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\akms\data\akms_co.paa"};
 		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\kr_weapons_firearms\akms\data\akms.rvmat"};
 	};

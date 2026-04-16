@@ -48,9 +48,9 @@ class cfgWeapons
 		modes[] = {"SemiAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"Colt1911_Shot_SoundSet","Colt1911_Tail_SoundSet","Colt1911_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"Colt1911_silencerPro_SoundSet","Colt1911_silencerTail_SoundSet","Colt1911_silencerInteriorTail_SoundSet"}};
-			reloadTime = 0.12;
+			soundSetShot[] = {"colt1911_Shot_SoundSet","colt1911_Tail_2D_SoundSet","colt1911_Shot_iterior_SoundSet","colt1911_Tail_SoundSet","colt1911_InteriorTail_SoundSet"};
+			soundSetShotExt[] = {{"colt1911_silencer_SoundSet","colt1911_silencerTail_SoundSet","colt1911_silencerInteriorTail_SoundSet"},{"colt1911_silencerHomeMade_SoundSet","colt1911_silencerHomeMadeTail_SoundSet","colt1911_silencerInteriorHomeMadeTail_SoundSet"}};
+				reloadTime = 0.12;
 			dispersion = 0.005;
 			magazineSlot = "magazine";
 		};

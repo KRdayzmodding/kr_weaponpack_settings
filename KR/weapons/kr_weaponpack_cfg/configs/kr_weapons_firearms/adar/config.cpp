@@ -34,6 +34,7 @@ class cfgWeapons
 		recoilModifier[] = {1.35,1.35,1.2};
 		swayModifier[] = {1.3,1.2,1.3};
 		modes[] = {"SemiAuto"};
+		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_3","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		class OpticsInfo: OpticsInfoRifle
 		{
 			memoryPointCamera = "eye";
@@ -61,7 +62,6 @@ class cfgWeapons
 			reloadTime = 0.12;
 			dispersion = 0.0035;
 			magazineSlot = "magazine";
-			attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_3","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		};
 		class kr_description
 		{

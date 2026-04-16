@@ -996,4 +996,11 @@ class CfgSlots
 		displayName = "#STR_kr_slot_optics";
 		ghostIcon = "set:kr_weapon_icons image:weaponOpticsSmle";
 	};
+
+	class Slot_kr_mp153_mag
+	{
+		name = "kr_mp153_mag";
+		displayName = "#STR_CfgMagazine0";
+		ghostIcon = "set:kr_weapon_icons image:kr_shotgun_mag";
+	};
 };

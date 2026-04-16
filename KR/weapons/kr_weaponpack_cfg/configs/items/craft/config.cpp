@@ -93,7 +93,7 @@ class cfgVehicles
 			{
 				class Health
 				{
-					hitpoints = 15;
+					hitpoints = 30;
 					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack\items\craft\data\multitool.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack\items\craft\data\multitool_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack\items\craft\data\multitool_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack\items\craft\data\multitool_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack\items\craft\data\multitool_destruct.rvmat"}}};
 				};
 			};

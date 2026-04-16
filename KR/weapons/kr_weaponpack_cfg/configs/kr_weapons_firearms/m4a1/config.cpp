@@ -29,7 +29,7 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		PPDOFProperties[] = {0,0.6,50,200,4,10};
 		//attachments[] = {"kr_muzzle556","kr_ar15_hndgrd","weaponOptics","kr_ar15_charging","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponFlashlight","weaponWrap"};
-		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
+		attachments[] = {"kr_muzzle556","kr_ar15_hndgrd_1","weaponOptics","kr_ar_pistolgrip","kr_ar15_tube","kr_ar_bttstck","weaponHolo1","weaponWrap"};
 		WeaponLength = 0.814784;
 		barrelArmor = 2.5;
 		initSpeedMultiplier = 0.9;
@@ -210,7 +210,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			barreltype = 1;
-			handguardSlotName = "kr_ar15_hndgrd";
+			handguardSlotName = "kr_ar15_hndgrd_1";
 		};
 	};
 	class kr_m4a1_370mm: kr_M4A1_Base
@@ -263,7 +263,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			barreltype = 2;
-			handguardSlotName = "kr_ar15_hndgrd";
+			handguardSlotName = "kr_ar15_hndgrd_2";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -325,7 +325,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			barreltype = 3;
-			handguardSlotName = "kr_ar15_hndgrd";
+			handguardSlotName = "kr_ar15_hndgrd_3";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -387,7 +387,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			barreltype = 2;
-			handguardSlotName = "kr_ar15_hndgrd";
+			handguardSlotName = "kr_ar15_hndgrd_4";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{
@@ -449,7 +449,7 @@ class cfgWeapons
 		class kr_firearms
 		{
 			barreltype = 5;
-			handguardSlotName = "kr_ar15_hndgrd";
+			handguardSlotName = "kr_ar15_hndgrd_5";
 		};
 		class kr_Gunplay: kr_Gunplay_Base
 		{

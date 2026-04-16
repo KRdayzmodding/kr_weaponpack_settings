@@ -1,4 +1,4 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class kr_attachments_shotgun_parts
 	{
@@ -13,6 +13,12 @@ class kr_Gunplay_Base;
 class cfgVehicles
 {
 	class kr_support_Base;
+	class Inventory_Base;
+	class kr_shotgun_inner_magazine_Base : Inventory_Base
+	{
+		scope = 0;
+	};
+
 	class kr_saiga_hguard_Base;
 	class kr_saiga12k_hguard_saiga12k_std: kr_saiga_hguard_Base
 	{
@@ -479,5 +485,157 @@ class cfgVehicles
 	{
 		displayName = "$STR_kr_weapons_attachments_handguard_m870_magpul_moe_raild";
 		attachments[] = {"kr_foregrip","kr_light_right","kr_light_left"};
+	};
+
+	class Mag_12x76_mp153_8Rnd: kr_shotgun_inner_magazine_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_Mag_12x76_mp153_8Rnd";
+		descriptionShort = "$STR_kr_weapons_attachments_Mag_12x76_mp153_8Rnd_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\Mag_12x70_mp153_8Rnd.p3d";
+		weight = 250;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1.0,1,1.2};
+		itemSize[] = {3,1};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine.rvmat"};
+		soundImpactType = "plastic";
+		inventorySlot[] = {"kr_mp153_mag"};
+		count = 9;
+
+		class kr_description
+		{
+			kr_type = "MP-133/MP-153";
+			kr_tier = 4;
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -10;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class Mag_12x76_mp153_7Rnd: kr_shotgun_inner_magazine_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_Mag_12x76_mp153_7Rnd";
+		descriptionShort = "$STR_kr_weapons_attachments_Mag_12x76_mp153_7Rnd_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\Mag_12x70_mp153_7Rnd.p3d";
+		weight = 200;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1.0,1,1.15};
+		itemSize[] = {2,1};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine.rvmat"};
+		soundImpactType = "plastic";
+		inventorySlot[] = {"kr_mp153_mag"};
+		count = 8;
+
+		class kr_description
+		{
+			kr_type = "MP-133/MP-153";
+			kr_tier = 4;
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -6;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class Mag_12x76_mp153_6Rnd: kr_shotgun_inner_magazine_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_Mag_12x76_mp153_6Rnd";
+		descriptionShort = "$STR_kr_weapons_attachments_Mag_12x76_mp153_6Rnd_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\Mag_12x70_mp153_7Rnd.p3d";
+		weight = 150;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1.0,1,1.1};
+		itemSize[] = {2,1};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine.rvmat"};
+		soundImpactType = "plastic";
+		inventorySlot[] = {"kr_mp153_mag"};
+		count = 7;
+
+		class kr_description
+		{
+			kr_type = "MP-133/MP-153";
+			kr_tier = 4;
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = -3;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+
+	class Mag_12x76_mp153_5Rnd: kr_shotgun_inner_magazine_Base
+	{
+		scope = 2;
+		displayName = "$STR_kr_weapons_attachments_Mag_12x76_mp153_5Rnd";
+		descriptionShort = "$STR_kr_weapons_attachments_Mag_12x76_mp153_5Rnd_dsc";
+		model = "\KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\Mag_12x70_mp153_5Rnd.p3d";
+		weight = 100;
+		recoilModifier[] = {1,1,1};	
+		swayModifier[] = {1.0,1,1.05};
+		itemSize[] = {1,1};
+		hiddenSelectionsTextures[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_co.paa"};
+		hiddenSelectionsMaterials[] = {"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine.rvmat"};
+		soundImpactType = "plastic";
+		inventorySlot[] = {"kr_mp153_mag"};
+		count = 6;
+
+		class kr_description
+		{
+			kr_type = "MP-133/MP-153";
+			kr_tier = 4;
+		};
+		class kr_Gunplay: kr_Gunplay_Base
+		{
+			ergonomics = 0;
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {{1.0,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine.rvmat"}},{0.7,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_worn.rvmat"}},{0.5,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_damage.rvmat"}},{0.3,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_badlydamage.rvmat"}},{0.0,{"KR\weapons\kr_weaponpack_2\attachments\support\shotguns_parts\data\mp153_magazine_destruct.rvmat"}}};
+				};
+			};
+		};
 	};
 };
